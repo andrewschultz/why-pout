@@ -8,7 +8,25 @@ book very general stuff
 
 table of main oronyms
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
-"nah"	"phase"	--	--	false	true	true	false	naff haze	vc-nah-phase rule	vr-nah-phase rule	--	--
+"nah|naah"	"phase"	--	--	false	true	true	false	naff haze	vc-nah-phase rule	vr-nah-phase rule	--	--
+"wipe"	"out"	--	--	false	true	true	false	naff haze	pre-wipe-out rule	post-wipe-out rule	--	--
+
+section naff haze scoring
+
+a wordtwisting rule (this is the pre-wipe-out rule):
+	if player is not in naff haze, unavailable;
+	if sco-wipe-out is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-wipe-out is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the post-wipe-out rule:
+	now sco-wipe-out is true;
+	say "Hooray! You figured what to do! You get a point!";
+
 
 section naff haze scoring
 
@@ -21,9 +39,7 @@ a wordtwisting rule (this is the vc-nah-phase rule):
 
 this is the vr-nah-phase rule:
 	now sco-nah-phase is true;
-	say "Hooray! You figured what to do! You get a point!";
-
-sco-nah-phase is a truth state that varies.
+	say "The haze seemed too thick at first. But you recognize it doesn't have to be there.";
 
 volume command parsing
 

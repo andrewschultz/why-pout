@@ -2,11 +2,19 @@
 
 volume includes
 
+section general
+
 include Trivial Niceties by Andrew Schultz.
+
+section semi-general
 
 include Spoonerism and Oronym Core by Andrew Schultz.
 
+section game-specific
+
 include Why Pout Tables by Andrew Schultz.
+
+include Why Pout Globals by Andrew Schultz.
 
 chapter may be changed
 
