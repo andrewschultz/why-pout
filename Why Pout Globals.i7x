@@ -2,6 +2,10 @@ Version 1/240720 of Why Pout Globals by Andrew Schultz begins here.
 
 "Globals file for Why Pout"
 
+volume game states
+
+know-name is a truth state that varies.
+
 volume point scoring variables
 
 section general

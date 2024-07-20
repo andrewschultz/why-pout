@@ -40,8 +40,16 @@ understand "dee klein" and "dee/klein" as Dee Klein when know-name is true.
 
 know-name is a truth state that varies.
 
-check examining Dee Klein when score is 0:
+check examining Dee Klein when know-name is false:
 	say "You think you have a name. You're not sure." instead;
+
+section temporary code to test remembering oneself
+
+the block thinking rule is not listed in any rulebook.
+
+check thinking:
+	say "You remember your name.";
+	now know-name is true;
 
 volume rooms
 
