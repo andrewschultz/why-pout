@@ -10,8 +10,21 @@ table of main oronyms
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "nah|naah"	"phase"	--	--	false	true	true	false	naff haze	vc-nah-phase rule	vr-nah-phase rule	--	--
 "wipe"	"out"	--	--	false	true	true	false	naff haze	pre-wipe-out rule	post-wipe-out rule	--	--
+"an"	"aim"	--	--	false	true	true	false	naff haze	pre-an-aim rule	post-an-aim rule	--	--
 
 section naff haze scoring
+
+a wordtwisting rule (this is the pre-an-aim rule):
+	if player is not in naff haze, unavailable;
+	if sco-an-aim is true:
+		vcal "You already found a name and an aim!";
+		already-done;
+	ready;
+
+this is the post-an-aim rule:
+	now sco-an-aim is true;
+	say "Yes. Now that you realize you want more than just to know your name, that you have bigger goals, you push a bit harder when you initially forget it. You remember patches of the past. You remember people harshly calling you by your last name, then your first.[paragraph break]Your name is Dee Cline.";
+
 
 a wordtwisting rule (this is the pre-wipe-out rule):
 	if player is not in naff haze, unavailable;
@@ -27,8 +40,6 @@ this is the post-wipe-out rule:
 	now sco-wipe-out is true;
 	say "Hooray! You figured what to do! You get a point!";
 
-
-section naff haze scoring
 
 a wordtwisting rule (this is the vc-nah-phase rule):
 	if player is not in naff haze, unavailable;

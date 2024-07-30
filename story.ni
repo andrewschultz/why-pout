@@ -27,6 +27,7 @@ universal is a region.
 to up-min: do nothing;
 
 core-score is a number that varies.
+
 to decide which region is mrlp: decide on map region of location of player.
 cur-bonus is a number that varies.
 
@@ -36,20 +37,19 @@ volume you
 
 Dee Klein is a privately-named person. the player is Dee Klein.
 
-understand "dee klein" and "dee/klein" as Dee Klein when know-name is true.
+understand "dee klein" and "dee/klein" as Dee Klein when sco-an-aim is true.
 
-know-name is a truth state that varies.
-
-check examining Dee Klein when know-name is false:
-	say "You think you have a name. You're not sure." instead;
+check examining Dee Klein when sco-an-aim is false:
+	say "You think you have a name. You're not sure.[paragraph break]You'd really like to have a purpose, too.[paragraph break]The weird thing is, you feel the two must be inter-related in some simple way. A way that will feel dumb once you figure it out. But you haven't, yet." instead;
 
 section temporary code to test remembering oneself
+
+understand the command "wipe" as something new.
 
 the block thinking rule is not listed in any rulebook.
 
 check thinking:
-	say "You remember your name.";
-	now know-name is true;
+	say "Put good-guess notes here.";
 
 volume rooms
 

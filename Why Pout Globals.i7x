@@ -4,12 +4,11 @@ Version 1/240720 of Why Pout Globals by Andrew Schultz begins here.
 
 volume game states
 
-know-name is a truth state that varies.
-
 volume point scoring variables
 
 section general
 
+sco-an-aim is a truth state that varies.
 sco-wipe-out is a truth state that varies.
 
 section naff haze
