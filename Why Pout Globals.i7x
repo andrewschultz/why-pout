@@ -15,6 +15,8 @@ section naff haze
 
 sco-nah-phase is a truth state that varies.
 
+sco-known-ocean is a truth state that varies.
+
 Why Pout Globals ends here.
 
 ---- DOCUMENTATION ----

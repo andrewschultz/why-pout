@@ -59,4 +59,5 @@ Naff Haze is a room in universal. "You feel like the haze is universal, and ther
 
 Policed is a room in universal. "You feel policed, here. You can't really move. Where would you go, anyway?"
 
-No Notion is a room in universal. "You simply have no notion what lies beyond here."
+NoNotion is a room in universal. "You simply have no notion what lies beyond here.". printed name of nonotion is "[if sco-known-ocean is false]No Notion[else]Known Ocean[end if]".
+

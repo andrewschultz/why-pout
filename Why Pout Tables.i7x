@@ -11,6 +11,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "an"	"aim"	--	--	false	true	true	false	eh raw air aww	pre-an-aim rule	post-an-aim rule	--	--
 "nah|naah"	"phase"	--	--	false	true	true	false	naff haze	vc-nah-phase rule	vr-nah-phase rule	--	--
 "wipe"	"out"	--	--	false	true	true	false	naff haze	pre-wipe-out rule	post-wipe-out rule	--	--
+"known"	"ocean"	--	--	false	true	true	false	NoNotion	pre-known-ocean rule	post-known-ocean rule	--	--
 
 section naff haze scoring
 
@@ -24,12 +25,14 @@ this is the post-an-aim rule:
 	now sco-an-aim is true;
 	say "Yes. Now that you realize you want more than just to know your name, that you have bigger goals, you push a bit harder when you initially forget it. You remember patches of the past. You remember people harshly calling you by your last name, then your first.[paragraph break]Your name is Dee Cline.";
 
-
 a wordtwisting rule (this is the pre-wipe-out rule):
 	if player is not in naff haze, unavailable;
 	if sco-wipe-out is true:
 		vcal "You already wiped out what you needed to!";
 		already-done;
+	if 1 is 1:
+		vcp "You aren't feeling too great, but you don't want or need to wipe yourself out, yet. Perhaps you can find the root of your problems and wipe it out one day, though.";
+		not-yet;
 	if 1 is 1:
 		vcp "You have nothing you need to wipe out right now.";
 		not-yet;
@@ -37,8 +40,7 @@ a wordtwisting rule (this is the pre-wipe-out rule):
 
 this is the post-wipe-out rule:
 	now sco-wipe-out is true;
-	say "Hooray! You figured what to do! You get a point!";
-
+	say "Well that does it! You win the game!";
 
 a wordtwisting rule (this is the vc-nah-phase rule):
 	if player is not in naff haze, unavailable;
@@ -50,6 +52,19 @@ a wordtwisting rule (this is the vc-nah-phase rule):
 this is the vr-nah-phase rule:
 	now sco-nah-phase is true;
 	say "The haze seemed too thick at first. But you recognize it doesn't have to be there.";
+
+section no notion scoring
+
+a wordtwisting rule (this is the pre-known-ocean rule):
+	if player is not in NoNotion, unavailable;
+	if sco-known-ocean is true:
+		vcal "But you already got a notion for the ocean. And you didn't even need a potion!";
+		already-done;
+	ready;
+
+this is the post-known-ocean rule:
+	now sco-known-ocean is true;
+	say "Ah, yes. Things clear up a bit now. There we go ... you see where an ocean should be, and ... yes, you dip your toe in some wetness. Things clear up.";
 
 volume command parsing
 
