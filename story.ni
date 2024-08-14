@@ -55,9 +55,29 @@ check thinking:
 
 volume rooms
 
+Eh Raw Air Aww is a room in universal. printed name is "Eh, Raw Air, Aww".
+
 Naff Haze is a room in universal. "You feel like the haze is universal, and there's no escaping from it.".
 
 Policed is a room in universal. "You feel policed, here. You can't really move. Where would you go, anyway?"
 
 NoNotion is a room in universal. "You simply have no notion what lies beyond here.". printed name of nonotion is "[if sco-known-ocean is false]No Notion[else]Known Ocean[end if]".
 
+volume scores
+
+check requesting the score:
+	say "You have scored [core-score] of [core-max] necessary points";
+	if cur-bonus > 0:
+		say " and [cur-bonus] bonus point[if cur-bonus is not 1]s[end if]";
+	say ".";
+	the rule succeeds;
+
+volume score stuff
+
+when play begins (this is the score and status tweak rule):
+	now the right hand status line is "[current-score][if doable-hinted > 0](+[doable-hinted])[end if]/[min-needed][if score is min-needed][else if min-needed is max-available]*[else]-[max-available][end if]";
+	force-status;
+	now the turn count is 1;
+
+to decide which number is doable-hinted:
+	decide on 0;
