@@ -1,10 +1,12 @@
-"Why Pout" by Andrew Schultz
+"Why Pout" by Mick Stupp
 
 volume includes
 
 section general
 
 include Trivial Niceties by Andrew Schultz.
+
+include Punctuation Stripper by Andrew Schultz.
 
 section semi-general
 
