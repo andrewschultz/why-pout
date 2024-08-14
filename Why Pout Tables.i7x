@@ -8,14 +8,13 @@ book very general stuff
 
 table of main oronyms
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
+"an"	"aim"	--	--	false	true	true	false	eh raw air aww	pre-an-aim rule	post-an-aim rule	--	--
 "nah|naah"	"phase"	--	--	false	true	true	false	naff haze	vc-nah-phase rule	vr-nah-phase rule	--	--
 "wipe"	"out"	--	--	false	true	true	false	naff haze	pre-wipe-out rule	post-wipe-out rule	--	--
-"an"	"aim"	--	--	false	true	true	false	naff haze	pre-an-aim rule	post-an-aim rule	--	--
 
 section naff haze scoring
 
 a wordtwisting rule (this is the pre-an-aim rule):
-	if player is not in naff haze, unavailable;
 	if sco-an-aim is true:
 		vcal "You already found a name and an aim!";
 		already-done;
@@ -28,12 +27,12 @@ this is the post-an-aim rule:
 
 a wordtwisting rule (this is the pre-wipe-out rule):
 	if player is not in naff haze, unavailable;
-	if sco-wipe-out is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-wipe-out is true:
-		vcal "You already did this!";
+		vcal "You already wiped out what you needed to!";
 		already-done;
+	if 1 is 1:
+		vcp "You have nothing you need to wipe out right now.";
+		not-yet;
 	ready;
 
 this is the post-wipe-out rule:
