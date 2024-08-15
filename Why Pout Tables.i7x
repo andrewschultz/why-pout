@@ -12,6 +12,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "nah|naah"	"phase"	--	--	false	true	true	false	naff haze	vc-nah-phase rule	vr-nah-phase rule	--	--
 "wipe"	"out"	--	--	false	true	true	false	naff haze	pre-wipe-out rule	post-wipe-out rule	--	--
 "known"	"ocean"	--	--	false	true	true	false	NoNotion	pre-known-ocean rule	post-known-ocean rule	--	--
+"well"	"own"	--	--	false	true	true	false	we loan	pre-well-own rule	post-well-own rule	--	--
+"whee"	"lone"	--	--	false	true	true	false	we loan	pre-whee-lone rule	post-whee-lone rule	--	--
 
 section naff haze scoring
 
@@ -65,6 +67,33 @@ a wordtwisting rule (this is the pre-known-ocean rule):
 this is the post-known-ocean rule:
 	now sco-known-ocean is true;
 	say "Ah, yes. Things clear up a bit now. There we go ... you see where an ocean should be, and ... yes, you dip your toe in some wetness. Things clear up.";
+
+section we loan scoring
+
+a wordtwisting rule (this is the pre-well-own rule):
+	if player is not in we loan, unavailable;
+	if sco-well-own is true:
+		vcal "You already exposed the shady side here.";
+		already-done;
+	ready;
+
+this is the post-well-own rule:
+	now sco-well-own is true;
+	say "Yes. There's a definite shady side.";
+
+a wordtwisting rule (this is the pre-whee-lone rule):
+	if player is not in we loan, unavailable;
+	if sco-whee-lone is false:
+		vcp "Well, maybe later...";
+		not-yet;
+	if sco-whee-lone is true:
+		vcal "You already got this place to yourself!";
+		already-done;
+	ready;
+
+this is the post-whee-lone rule:
+	now sco-whee-lone is true;
+	say "You get rid of the predatory loaners.";
 
 volume command parsing
 
