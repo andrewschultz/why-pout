@@ -68,7 +68,15 @@ volume rooms
 
 book Eh Raw Air Aww
 
-Eh Raw Air Aww is a room in universal. printed name is "Eh, Raw Air, Aww".
+Eh Raw Air Aww is a room in universal. printed name is "[if sco-an-aim is false]Eh, Raw Air, Aww[else]Tomb Apse[end if]". description is "[if sco-an-aim is false]The air chokes you a bit. It's too thick to see far beyond yourself. You barely know who you are, even. Ugh.[else]It's a bit clearer now. You still seem trapped. But there must be secrets hidden, and maybe one or more can get you out of here.[end if]"
+
+book High Plain
+
+High Plain is a room in universal.
+
+chapter Naff Haze
+
+Naff Haze is a thing. "A naff haze surrounds you. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it.". description is "You can't look very far though it. Just looking at it makes you feel hopeless you'll always be trapped in the fog."
 
 chapter short rail
 
@@ -77,18 +85,6 @@ the short rail is a thing. "A short rail leads -- well, not very far. You get th
 section shore trail
 
 the shore trail is a thing. "The shore trail you discovered leads south.". description is "There are no secret passages hidden in it."
-
-chapter tomb apse
-
-the tomb apse is a thing.
-
-section two maps
-
-there is a plural-named thing called two maps.
-
-book naff haze
-
-Naff Haze is a room in universal. "You feel like the haze is universal, and there's no escaping from it.".
 
 book policed
 

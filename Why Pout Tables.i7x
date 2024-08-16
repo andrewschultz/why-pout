@@ -22,19 +22,12 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 section air aww scoring
 
 a wordtwisting rule (this is the pre-two-maps rule):
-	if player is not in air aww, unavailable;
-	if sco-two-maps is false:
-		vcp "You still need to do something!";
-		not-yet;
-	if sco-two-maps is true:
-		vcal "You already did this!";
-		already-done;
+	if player is not in air aww or sco-an-aim is false, unavailable;
 	ready;
 
 this is the post-two-maps rule:
 	now sco-two-maps is true;
-	say "Hooray! You figured what to do! You get a point!";
-
+	say "You look around for secrets. You find one line that is a hash of horizontal linesand another that is a hash of vertical lines. You put them together ... and you see a passage out of the maze that traps you in!";
 
 section unsorted scoring
 
@@ -135,12 +128,11 @@ a wordtwisting rule (this is the pre-six-quid rule):
 this is the post-six-quid rule:
 	now sco-six-quid is true;
 	say "You have an idea what is bothering the squid. Yes, a few coins stuck. Surprisingly, it lets you help out.";
-	check-squid-map;
 	now player has quid;
 
-to check-squid-map:
+[to check-squid-flyer:
 	if player has maps:
-		say "[line break]The squid gestures towards the two maps, as if it can take you wherever you need to on the maps. But it does look a little exhausted. So you don't just want to summon it for a joyride.";
+		say "[line break]The squid gestures towards the two maps, as if it can take you wherever you need to on the maps. But it does look a little exhausted. So you don't just want to summon it for a joyride.";]
 
 section we loan scoring
 
