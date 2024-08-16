@@ -10,14 +10,14 @@ table of main oronyms
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "an"	"aim"	--	--	false	true	true	false	eh raw air aww	pre-an-aim rule	post-an-aim rule	--	--
 "two"	"maps"	--	--	false	true	true	false	eh raw air aww	pre-two-maps rule	post-two-maps rule	--	--
-"shore"	"trail"	--	--	false	true	true	false	eh raw air aww	pre-shore-trail rule	post-shore-trail rule	--	--
-"nah|naah"	"phase"	--	--	false	true	true	false	naff haze	vc-nah-phase rule	vr-nah-phase rule	--	--
-"wipe"	"out"	--	--	false	true	true	false	naff haze	pre-wipe-out rule	post-wipe-out rule	--	--
+"shore"	"trail"	--	--	false	true	true	false	Naff Haze	pre-shore-trail rule	post-shore-trail rule	--	--
+"nah|naah"	"phase"	--	--	false	true	true	false	Naff Haze	vc-nah-phase rule	vr-nah-phase rule	--	--
 "known"	"ocean"	--	--	false	true	true	false	NoNotion	pre-known-ocean rule	post-known-ocean rule	--	--
 "six"	"quid"	--	--	false	true	true	false	NoNotion	pre-six-quid rule	post-six-quid rule	--	--
 "well"	"own"	--	--	false	true	true	false	we loan	pre-well-own rule	post-well-own rule	--	--
 "whee"	"lone"	--	--	false	true	true	false	we loan	pre-whee-lone rule	post-whee-lone rule	--	--
 "boost"	"role"	--	--	false	true	true	false	--	pre-boost-role rule	post-boost-role rule	--	--
+"wipe"	"out"	--	--	false	true	true	false	--	pre-wipe-out rule	post-wipe-out rule	--	--
 
 section air aww scoring
 
@@ -28,6 +28,7 @@ a wordtwisting rule (this is the pre-two-maps rule):
 this is the post-two-maps rule:
 	now sco-two-maps is true;
 	say "You look around for secrets. You find one line that is a hash of horizontal linesand another that is a hash of vertical lines. You put them together ... and you see a passage out of the maze that traps you in!";
+	move player to Hype Lane;
 
 section unsorted scoring
 
@@ -54,13 +55,13 @@ a wordtwisting rule (this is the pre-an-aim rule):
 
 this is the post-an-aim rule:
 	now sco-an-aim is true;
-	say "Yes. Now that you realize you want more than just to know your name, that you have bigger goals, you push a bit harder when you initially forget it. You remember patches of the past. You remember people harshly calling you by your last name, then your first.[paragraph break]Your name is Dee Cline.[paragraph break]You look around a bit. You can see more, now.";
+	say "Yes. Now that you realize you want more than just to know your name, that you have bigger goals, you push a bit harder when you initially forget it. You remember patches of the past. You remember people harshly calling you by your last name, then your first.[paragraph break]Your name is Dee Cline.[paragraph break]You look around a bit. You can see more, now. You're in some sort of tomb apse. You could exit--there are exits each way--but you suspect there's some horrible maze you could easily get lost in.";
 	move short rail to Eh Raw Air Aww;
 
 section air aww scoring
 
 a wordtwisting rule (this is the pre-shore-trail rule):
-	if short rail is off-stage or player is not in air aww, unavailable;
+	if short rail is off-stage or player is not in naff haze, unavailable;
 	if sco-shore-trail is true:
 		vcal "But you already replaced the short rail!";
 		already-done;
