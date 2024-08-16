@@ -96,7 +96,7 @@ Reap Rest is a room. moot-room is Reap Rest.
 
 volume unsorted
 
-the booze troll is a thing.
+the booze troll is a follower in NoNotion.
 
 volume scores
 

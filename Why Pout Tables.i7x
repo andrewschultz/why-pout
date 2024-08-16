@@ -21,7 +21,7 @@ section unsorted scoring
 
 a wordtwisting rule (this is the pre-boost-role rule):
 	if booze troll is not touchable, unavailable;
-	if sco-booze-troll is true:
+	if sco-boost-role is true:
 		vcal "You already gave the booze troll a boost!";
 		already-done;
 	ready;
@@ -148,6 +148,12 @@ rule for printing a parser error (this is the check forks rule):
 		say "Hmm, no, you already did that, or something like that. You'll know if and when you need to flip between things.";
 		the rule succeeds;
 	continue the action;
+
+volume can't go that way
+
+table of noways
+noway-rm	noway-txt
+Eh Raw Air Aww	"[if sco-an-aim is false]You can't see anywhere. You know almost nothing. I mean, you don't even have a name. What would you do even if there was a passage?[else if number of viable directions is 0]You still can't find anywhere to go, yet. But there seem to be clues where to go, and how, if you look around.[else]You haven't made passage [noun] yet, though you can go [list of viable directions].[end if]"
 
 volume scoring to move [see RoL Defs if I add bonus points]
 
