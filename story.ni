@@ -20,6 +20,10 @@ include Why Pout Definitions by Andrew Schultz.
 
 include Why Pout Globals by Andrew Schultz.
 
+section not for release
+
+include Why Pout Tests by Andrew Schultz.
+
 chapter may be changed
 
 to game-specific-cleanup: do nothing;
