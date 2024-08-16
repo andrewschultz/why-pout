@@ -9,13 +9,32 @@ book very general stuff
 table of main oronyms
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "an"	"aim"	--	--	false	true	true	false	eh raw air aww	pre-an-aim rule	post-an-aim rule	--	--
+"two"	"maps"	--	--	false	true	true	false	eh raw air aww	pre-two-maps rule	post-two-maps rule	--	--
 "shore"	"trail"	--	--	false	true	true	false	eh raw air aww	pre-shore-trail rule	post-shore-trail rule	--	--
 "nah|naah"	"phase"	--	--	false	true	true	false	naff haze	vc-nah-phase rule	vr-nah-phase rule	--	--
 "wipe"	"out"	--	--	false	true	true	false	naff haze	pre-wipe-out rule	post-wipe-out rule	--	--
 "known"	"ocean"	--	--	false	true	true	false	NoNotion	pre-known-ocean rule	post-known-ocean rule	--	--
+"six"	"quid"	--	--	false	true	true	false	NoNotion	pre-six-quid rule	post-six-quid rule	--	--
 "well"	"own"	--	--	false	true	true	false	we loan	pre-well-own rule	post-well-own rule	--	--
 "whee"	"lone"	--	--	false	true	true	false	we loan	pre-whee-lone rule	post-whee-lone rule	--	--
 "boost"	"role"	--	--	false	true	true	false	--	pre-boost-role rule	post-boost-role rule	--	--
+
+section air aww scoring
+
+a wordtwisting rule (this is the pre-two-maps rule):
+	if player is not in air aww, unavailable;
+	if sco-two-maps is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-two-maps is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the post-two-maps rule:
+	now sco-two-maps is true;
+	say "Hooray! You figured what to do! You get a point!";
+
 
 section unsorted scoring
 
@@ -103,7 +122,25 @@ a wordtwisting rule (this is the pre-known-ocean rule):
 
 this is the post-known-ocean rule:
 	now sco-known-ocean is true;
-	say "Ah, yes. Things clear up a bit now. There we go ... you see where an ocean should be, and ... yes, you dip your toe in some wetness. Things clear up.";
+	say "Ah, yes. Things clear up a bit now. There we go ... you see where an ocean should be, and ... yes, you dip your toe in some wetness. Things clear up. You even see a sick squid! Maybe you can help it.";
+	move sick squid to NoNotion;
+
+a wordtwisting rule (this is the pre-six-quid rule):
+	if player is not in nonotion, unavailable;
+	if sco-six-quid is true:
+		vcal "You don't need any more money, and the squid doesn't need any more help.";
+		already-done;
+	ready;
+
+this is the post-six-quid rule:
+	now sco-six-quid is true;
+	say "You have an idea what is bothering the squid. Yes, a few coins stuck. Surprisingly, it lets you help out.";
+	check-squid-map;
+	now player has quid;
+
+to check-squid-map:
+	if player has maps:
+		say "[line break]The squid gestures towards the two maps, as if it can take you wherever you need to on the maps. But it does look a little exhausted. So you don't just want to summon it for a joyride.";
 
 section we loan scoring
 

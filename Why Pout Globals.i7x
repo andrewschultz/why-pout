@@ -33,6 +33,10 @@ section unsorted
 
 sco-boost-role is a truth state that varies.
 
+sco-six-quid is a truth state that varies.
+
+sco-two-maps is a truth state that varies.
+
 Why Pout Globals ends here.
 
 ---- DOCUMENTATION ----

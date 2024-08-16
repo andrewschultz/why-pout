@@ -70,9 +70,17 @@ chapter short rail
 
 the short rail is a thing. "A short rail leads -- well, not very far. You get the sense it should lead somewhere more.". description is "It's just ... not aligned right. Maybe if it were, it could lead somewhere, or make sense of this place, here.".
 
-chapter shore trail
+section shore trail
 
 the shore trail is a thing. "The shore trail you discovered leads south.". description is "There are no secret passages hidden in it."
+
+chapter tomb apse
+
+the tomb apse is a thing.
+
+section two maps
+
+there is a plural-named thing called two maps.
 
 book naff haze
 
@@ -84,7 +92,15 @@ Policed is a room in universal. "You feel policed, here. You can't really move. 
 
 book no notion
 
-NoNotion is a room in universal. "[if sco-known-ocean is false]You simply have no notion what lies beyond here[else]It looks like you have some idea where you want to go[end if]. You can go back north to where you started.". printed name of nonotion is "[if sco-known-ocean is false]No Notion[else]Known Ocean[end if]".
+NoNotion is a room in universal. "[if sco-known-ocean is false]You simply have no notion what lies beyond here[else]It looks like there is an ocean, or some large body of water, and maybe some islands in the distance. They are too far to swim to[end if]. You can go back north to where you started.". printed name of nonotion is "[if sco-known-ocean is false]No Notion[else]Known Ocean[end if]".
+
+chapter sick squid
+
+the sick squid is a thing. "A [if sco-six-quid is true]formerly (thanks to you) [end if]sick squid trundles about in the water here.". description is "[if sco-six-quid is false]It seems like it's half choking on something, not enough to strangle it, but enough to make it really uncomfortable[else]It looks back at you. Squids don't smile, but if it could, it would[end if]."
+
+section six quid
+
+there is a thing called six quid. description is "Well, it's money, and a good deal of it."
 
 book we loan
 
