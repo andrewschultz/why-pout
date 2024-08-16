@@ -10,8 +10,10 @@ table of main oronyms
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "an"	"aim"	--	--	false	true	true	false	eh raw air aww	pre-an-aim rule	post-an-aim rule	--	--
 "two"	"maps"	--	--	false	true	true	false	eh raw air aww	pre-two-maps rule	post-two-maps rule	--	--
-"shore"	"trail"	--	--	false	true	true	false	Naff Haze	pre-shore-trail rule	post-shore-trail rule	--	--
-"nah|naah"	"phase"	--	--	false	true	true	false	Naff Haze	vc-nah-phase rule	vr-nah-phase rule	--	--
+"pry"	"stalk"	--	--	false	true	true	false	hype lane	pre-pry-stalk rule	post-pry-stalk rule	--	--
+"high"	"plain"	--	--	false	true	true	false	hype lane	pre-high-plain rule	post-high-plain rule	--	--
+"shore"	"trail"	--	--	false	true	true	false	NaffHaze	pre-shore-trail rule	post-shore-trail rule	--	--
+"nah|naah"	"phase"	--	--	false	true	true	false	NaffHaze	vc-nah-phase rule	vr-nah-phase rule	--	--
 "known"	"ocean"	--	--	false	true	true	false	NoNotion	pre-known-ocean rule	post-known-ocean rule	--	--
 "six"	"quid"	--	--	false	true	true	false	NoNotion	pre-six-quid rule	post-six-quid rule	--	--
 "well"	"own"	--	--	false	true	true	false	we loan	pre-well-own rule	post-well-own rule	--	--
@@ -61,7 +63,7 @@ this is the post-an-aim rule:
 section air aww scoring
 
 a wordtwisting rule (this is the pre-shore-trail rule):
-	if short rail is off-stage or player is not in naff haze, unavailable;
+	if short rail is off-stage or player is not in NaffHaze, unavailable;
 	if sco-shore-trail is true:
 		vcal "But you already replaced the short rail!";
 		already-done;
@@ -72,8 +74,8 @@ this is the post-shore-trail rule:
 	say "There must be more to the short rail than you see. And you start tracing where it is, where it can be, where it should go. You find something to dig up. It's ... surprisingly malleable. You have nothing else to do, anyway. Soon it feels like pulling cable from a ground. It's tough, since you can't see around, but indeed, the short rail does lead to a shore trail that leads south.";
 	moot short rail;
 	move shore trail to eh raw air aww;
-	now NoNotion is mapped south of Eh Raw Air Aww;
-	now Eh Raw Air Aww is mapped north of NoNotion;
+	now NoNotion is mapped south of NaffHaze;
+	now NaffHaze is mapped north of NoNotion;
 
 a wordtwisting rule (this is the pre-wipe-out rule):
 	if player is not in naff haze, unavailable;
@@ -92,10 +94,35 @@ this is the post-wipe-out rule:
 	now sco-wipe-out is true;
 	say "Well that does it! You win the game!";
 
+section hype lane scoring
+
+a wordtwisting rule (this is the pre-pry-stalk rule):
+	if player is not in hype lane and prize talk is not in hype lane, unavailable;
+	if sco-pry-stalk is true:
+		vcal "You already pried a stalk!";
+		already-done;
+	ready;
+
+this is the post-pry-stalk rule:
+	now sco-pry-stalk is true;
+	say "Among all the chatter, you manage to pry away a stalk from someone who is flattered you listen. It feels icky, but hey, the stalk looks like it can grow. But the question is, where can it grow to?";
+
+a wordtwisting rule (this is the pre-high-plain rule):
+	if player is not in hype lane, unavailable;
+	if sco-pry-stalk is false:
+		vcp "That would be a nicer place! But you have nothing that could help you move up.";
+		not-yet;
+	ready;
+
+this is the post-high-plain rule:
+	now sco-high-plain is true;
+	say "You plant the stalk, which -- well, it's already a bit of a stalk, but it grows quickly and sturdily. It's not hard at all to climb. You are pretty sure you're aboveground, but it's hard to see for sure.";
+	move player to NaffHaze;
+
 section naff haze testing
 
 a wordtwisting rule (this is the vc-nah-phase rule):
-	if player is not in naff haze, unavailable;
+	if player is not in NaffHaze, unavailable;
 	if sco-nah-phase is true:
 		vcal "You already dispelled the haze!";
 		already-done;

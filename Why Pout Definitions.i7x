@@ -19,6 +19,13 @@ every turn (this is the followers follow you rule):
 		repeat with X running through leftbehind followers:
 			move X to location of player;
 
+volume stubs
+
+to open-psg (di - a direction) and (rm - a room): [from PPRR. Maybe we can put this in the core?]
+	let lp be location of player;
+	change di exit of lp to rm;
+	change (opposite of di) exit of rm to lp;
+
 volume definitions
 
 definition: a direction (called d) is viable:

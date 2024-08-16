@@ -4,7 +4,11 @@ Version 1/240816 of Why Pout Tests by Andrew Schultz begins here.
 
 volume IDE tests
 
-test w with "an aim/two maps/high plain/shore trail/s/known ocean/six quid/war file/grove isle".
+test w1 with "an aim/two maps/pry stalk/high plain"
+
+test ws with "nah phase/shore trail/s/known ocean/six quid/war file/grove isle".
+
+test w with "test w1/test ws".
 
 test misc with "the file/wipe out".
 
