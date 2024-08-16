@@ -24,6 +24,8 @@ section we loan
 sco-well-own is a truth state that varies.
 sco-whee-lone is a truth state that varies.
 
+sco-shore-trail is a truth state that varies.
+
 section unsorted
 
 Why Pout Globals ends here.

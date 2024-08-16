@@ -9,13 +9,14 @@ book very general stuff
 table of main oronyms
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "an"	"aim"	--	--	false	true	true	false	eh raw air aww	pre-an-aim rule	post-an-aim rule	--	--
+"shore"	"trail"	--	--	false	true	true	false	eh raw air aww	pre-shore-trail rule	post-shore-trail rule	--	--
 "nah|naah"	"phase"	--	--	false	true	true	false	naff haze	vc-nah-phase rule	vr-nah-phase rule	--	--
 "wipe"	"out"	--	--	false	true	true	false	naff haze	pre-wipe-out rule	post-wipe-out rule	--	--
 "known"	"ocean"	--	--	false	true	true	false	NoNotion	pre-known-ocean rule	post-known-ocean rule	--	--
 "well"	"own"	--	--	false	true	true	false	we loan	pre-well-own rule	post-well-own rule	--	--
 "whee"	"lone"	--	--	false	true	true	false	we loan	pre-whee-lone rule	post-whee-lone rule	--	--
 
-section naff haze scoring
+section eh raw air aww scoring
 
 a wordtwisting rule (this is the pre-an-aim rule):
 	if sco-an-aim is true:
@@ -25,7 +26,25 @@ a wordtwisting rule (this is the pre-an-aim rule):
 
 this is the post-an-aim rule:
 	now sco-an-aim is true;
-	say "Yes. Now that you realize you want more than just to know your name, that you have bigger goals, you push a bit harder when you initially forget it. You remember patches of the past. You remember people harshly calling you by your last name, then your first.[paragraph break]Your name is Dee Cline.";
+	say "Yes. Now that you realize you want more than just to know your name, that you have bigger goals, you push a bit harder when you initially forget it. You remember patches of the past. You remember people harshly calling you by your last name, then your first.[paragraph break]Your name is Dee Cline.[paragraph break]You look around a bit. You can see more, now.";
+	move short rail to Eh Raw Air Aww;
+
+section air aww scoring
+
+a wordtwisting rule (this is the pre-shore-trail rule):
+	if short rail is off-stage or player is not in air aww, unavailable;
+	if sco-shore-trail is true:
+		vcal "But you already replaced the short rail!";
+		already-done;
+	ready;
+
+this is the post-shore-trail rule:
+	now sco-shore-trail is true;
+	say "There must be more to the short rail than you see. And you start tracing where it is, where it can be, where it should go. You find something to dig up. It's ... surprisingly malleable. You have nothing else to do, anyway. Soon it feels like pulling cable from a ground. It's tough, since you can't see around, but indeed, the short rail does lead to a shore trail that leads south.";
+	moot short rail;
+	move shore trail to eh raw air aww;
+	now NoNotion is mapped south of Eh Raw Air Aww;
+	now Eh Raw Air Aww is mapped north of NoNotion;
 
 a wordtwisting rule (this is the pre-wipe-out rule):
 	if player is not in naff haze, unavailable;
@@ -43,6 +62,8 @@ a wordtwisting rule (this is the pre-wipe-out rule):
 this is the post-wipe-out rule:
 	now sco-wipe-out is true;
 	say "Well that does it! You win the game!";
+
+section naff haze testing
 
 a wordtwisting rule (this is the vc-nah-phase rule):
 	if player is not in naff haze, unavailable;

@@ -55,13 +55,27 @@ check thinking:
 
 volume rooms
 
+book Eh Raw Air Aww
+
 Eh Raw Air Aww is a room in universal. printed name is "Eh, Raw Air, Aww".
+
+chapter short rail
+
+the short rail is a thing. "A short rail leads -- well, not very far. You get the sense it should lead somewhere more.". description is "It's just ... not aligned right. Maybe if it were, it could lead somewhere, or make sense of this place, here.".
+
+chapter shore trail
+
+the shore trail is a thing. "The shore trail you discovered leads south.". description is "There are no secret passages hidden in it."
+
+book naff haze
 
 Naff Haze is a room in universal. "You feel like the haze is universal, and there's no escaping from it.".
 
 Policed is a room in universal. "You feel policed, here. You can't really move. Where would you go, anyway?"
 
-NoNotion is a room in universal. "You simply have no notion what lies beyond here.". printed name of nonotion is "[if sco-known-ocean is false]No Notion[else]Known Ocean[end if]".
+book no notion
+
+NoNotion is a room in universal. "You simply have no notion what lies beyond here. You can go back north to where you started.". printed name of nonotion is "[if sco-known-ocean is false]No Notion[else]Known Ocean[end if]".
 
 volume scores
 
