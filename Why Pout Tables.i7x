@@ -15,6 +15,22 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "known"	"ocean"	--	--	false	true	true	false	NoNotion	pre-known-ocean rule	post-known-ocean rule	--	--
 "well"	"own"	--	--	false	true	true	false	we loan	pre-well-own rule	post-well-own rule	--	--
 "whee"	"lone"	--	--	false	true	true	false	we loan	pre-whee-lone rule	post-whee-lone rule	--	--
+"boost"	"role"	--	--	false	true	true	false	--	pre-boost-role rule	post-boost-role rule	--	--
+
+section unsorted scoring
+
+a wordtwisting rule (this is the pre-boost-role rule):
+	if booze troll is not touchable, unavailable;
+	if sco-booze-troll is true:
+		vcal "You already gave the booze troll a boost!";
+		already-done;
+	ready;
+
+this is the post-boost-role rule:
+	now sco-boost-role is true;
+	say "You talk with the booze troll for a bit. They seem not to know who they are, and that gives you something in common with them. You begin chatting with them. You have a friend now.";
+	move booze troll to location of player;
+	now booze troll is friendly;
 
 section eh raw air aww scoring
 
