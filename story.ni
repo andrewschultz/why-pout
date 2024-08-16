@@ -16,6 +16,8 @@ section game-specific
 
 include Why Pout Tables by Andrew Schultz.
 
+include Why Pout Definitions by Andrew Schultz.
+
 include Why Pout Globals by Andrew Schultz.
 
 chapter may be changed
@@ -42,7 +44,7 @@ Dee Klein is a privately-named person. the player is Dee Klein.
 understand "dee klein" and "dee/klein" as Dee Klein when sco-an-aim is true.
 
 check examining Dee Klein when sco-an-aim is false:
-	say "You think you have a name. You're not sure.[paragraph break]You'd really like to have a purpose, too.[paragraph break]The weird thing is, you feel the two must be inter-related in some simple way. A way that will feel dumb once you figure it out. But you haven't, yet." instead;
+	say "You think you have a name. You're not sure.[paragraph break]You'd really like to have a purpose, too.[paragraph break]The weird thing is, you feel the two must be inter-related in some simple way. A way that will feel dumb once you figure it out. But you haven't, yet.[paragraph break]Hmm. A name. A name." instead;
 
 section temporary code to test remembering oneself
 
@@ -52,6 +54,11 @@ the block thinking rule is not listed in any rulebook.
 
 check thinking:
 	say "Put good-guess notes here.";
+
+volume verbs
+
+check taking:
+	say "You don't need to take anything in [this-game]. Everything you need will be taken implicitly." instead;
 
 volume rooms
 
@@ -71,11 +78,25 @@ book naff haze
 
 Naff Haze is a room in universal. "You feel like the haze is universal, and there's no escaping from it.".
 
+book policed
+
 Policed is a room in universal. "You feel policed, here. You can't really move. Where would you go, anyway?"
 
 book no notion
 
-NoNotion is a room in universal. "You simply have no notion what lies beyond here. You can go back north to where you started.". printed name of nonotion is "[if sco-known-ocean is false]No Notion[else]Known Ocean[end if]".
+NoNotion is a room in universal. "[if sco-known-ocean is false]You simply have no notion what lies beyond here[else]It looks like you have some idea where you want to go[end if]. You can go back north to where you started.". printed name of nonotion is "[if sco-known-ocean is false]No Notion[else]Known Ocean[end if]".
+
+book we loan
+
+We Loan is a room in universal. "You wonder if there is actually anyone here. It feels more sinister than it should."
+
+book meat rooms
+
+Reap Rest is a room. moot-room is Reap Rest.
+
+volume unsorted
+
+the booze troll is a thing.
 
 volume scores
 
