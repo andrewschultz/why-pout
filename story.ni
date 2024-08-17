@@ -136,7 +136,14 @@ Reap Rest is a room. moot-room is Reap Rest.
 
 volume unsorted
 
-the booze troll is a follower in NoNotion.
+the booze troll is a follower in NoNotion. "A booze troll sulks sullenly here."
+
+volume appearance
+
+for printing a locale paragraph about a follower (called fo):
+	if fo is not friendly, continue the action;
+	say "You see [list of friendly followers in location of player] tagging along.";
+	now all friendly followers are mentioned;
 
 volume scores
 
