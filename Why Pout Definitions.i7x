@@ -15,7 +15,11 @@ definition: a follower (called fo) is leftbehind:
 
 every turn (this is the followers follow you rule):
 	if number of leftbehind followers > 0:
-		say "The [list of leftbehind followers] follow[if number of leftbehind followers is 1]s[end if] you.";
+		let plurals be whether or not number of leftbehind followers > 1;
+		if plurals is false:
+			let rf be a random leftbehind follower;
+			if rf is plural-named, now plurals is true;
+		say "The [list of leftbehind followers] follow[if plurals is false]s[end if] you.";
 		repeat with X running through leftbehind followers:
 			move X to location of player;
 
