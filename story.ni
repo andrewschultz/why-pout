@@ -87,6 +87,9 @@ NaffHaze is a privately-named room in universal. "[if sco-nah-phase is false]A n
 
 the naff haze is scenery in NaffHaze. "You can't look very far though it. Just looking at it makes you feel hopeless you'll always be trapped in the fog."
 
+check going a viable direction in NaffHaze when sco-pole-east is false:
+	say "You'd like to, but you feel, well, policed." instead;
+
 chapter short rail
 
 the short rail is a thing. "A short rail leads -- well, not very far. You get the sense it should lead somewhere more.". description is "It's just ... not aligned right. Maybe if it were, it could lead somewhere, or make sense of this place, here.".
@@ -95,9 +98,13 @@ section shore trail
 
 the shore trail is a thing. "The shore trail you discovered leads south.". description is "There are no secret passages hidden in it."
 
-book policed
+book Lobe End
 
-Policed is a room in universal. "You feel policed, here. You can't really move. Where would you go, anyway?"
+Lobe End is a room in universal. "[if sco-low-bend is false]This lobe of land appears to end in all directions. Maybe you could look for something that might be a hill, even a steep one.[else]The low bend (former lobe end) now bends south.[end if]"
+
+book Storm Isle
+
+Storm Isle is a room in universal.
 
 book no notion
 

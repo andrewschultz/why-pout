@@ -21,6 +21,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "whee"	"lone"	--	--	false	true	true	false	we loan	pre-whee-lone rule	post-whee-lone rule	--	--
 "boost"	"role"	--	--	false	true	true	false	--	pre-boost-role rule	post-boost-role rule	--	--
 "wipe"	"out"	--	--	false	true	true	false	--	pre-wipe-out rule	post-wipe-out rule	--	--
+"low"	"bend"	--	--	false	true	true	false	lobe end	pre-low-bend rule	post-low-bend rule	--	--
 
 section air aww scoring
 
@@ -107,6 +108,21 @@ a wordtwisting rule (this is the pre-wipe-out rule):
 this is the post-wipe-out rule:
 	now sco-wipe-out is true;
 	say "Well that does it! You win the game!";
+
+section lobe end scoring
+
+a wordtwisting rule (this is the pre-low-bend rule):
+	if player is not in lobe end, unavailable;
+	if sco-low-bend is true:
+		vcal "You already found a low bend!";
+		already-done;
+	ready;
+
+this is the post-low-bend rule:
+	now sco-low-bend is true;
+	say "No, wait, there is a way out, or there can be. If you work your way down to the north like so ... there you go.";
+	now storm isle is mapped north of lobe end;
+	now lobe end is mapped south of storm isle;
 
 section hype lane scoring
 
