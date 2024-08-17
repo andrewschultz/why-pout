@@ -8,6 +8,10 @@ include Trivial Niceties by Andrew Schultz.
 
 include Punctuation Stripper by Andrew Schultz.
 
+include Bold Final Question Rows by Andrew Schultz.
+
+include Old School Verb Total Carnage by Andrew Schultz.
+
 section semi-general
 
 include Spoonerism and Oronym Core by Andrew Schultz.
