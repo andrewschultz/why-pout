@@ -6,7 +6,7 @@ volume IDE tests
 
 test w1 with "an aim/two maps/pry stalk/high plain"
 
-test we with "nah phase/pole east/e/low bend/n/store mile/s/w".
+test we with "nah phase/pole east/e/low bend/n/store mile/mice tall/s/w".
 
 test ws with "shore trail/s/known ocean/six quid/war file/grove isle".
 

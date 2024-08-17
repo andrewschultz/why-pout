@@ -112,7 +112,7 @@ My Stall is a thing.
 
 section mice tall
 
-the mice tall are a plural-named thing.
+the mice tall are a plural-named friendly followers. printed name is "mice (tall)". description is "Well, they're tall for mice. But they make up enough numbers to be pretty effective in a skirmish, if need be.".
 
 book no notion
 

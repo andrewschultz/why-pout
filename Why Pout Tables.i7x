@@ -23,6 +23,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "wipe"	"out"	--	--	false	true	true	false	--	pre-wipe-out rule	post-wipe-out rule	--	--
 "low"	"bend"	--	--	false	true	true	false	lobe end	pre-low-bend rule	post-low-bend rule	--	--
 "store"	"mile"	--	--	false	true	true	false	storm isle	pre-store-mile rule	post-store-mile rule	--	--
+"mice"	"tall"	--	--	false	true	true	false	storm isle	pre-mice-tall rule	post-mice-tall rule	--	--
 
 section air aww scoring
 
@@ -138,6 +139,22 @@ this is the post-store-mile rule:
 	now sco-store-mile is true;
 	say "The storms let up. It's not such a big isle after all, but it does turn out to hold a whole lot of stores. There's even a stall labeled MY STALL.";
 	move my stall to storm isle;
+
+a wordtwisting rule (this is the pre-mice-tall rule):
+	if player is not in storm isle, unavailable;
+	if sco-mice-tall is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-mice-tall is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the post-mice-tall rule:
+	now sco-mice-tall is true;
+	say "You look into the stall and hear chittering noises. Wait--there's something behind the wall! It's a bit easier to thud through on your side (a human's hands work better for that) and out come some mice, tall. They're tall for mice, though they really only come up above your knee.";
+	move mice tall to Storm Isle;
+	moot my stall;
 
 section hype lane scoring
 
