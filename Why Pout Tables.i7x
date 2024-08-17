@@ -22,6 +22,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "boost"	"role"	--	--	false	true	true	false	--	pre-boost-role rule	post-boost-role rule	--	--
 "wipe"	"out"	--	--	false	true	true	false	--	pre-wipe-out rule	post-wipe-out rule	--	--
 "low"	"bend"	--	--	false	true	true	false	lobe end	pre-low-bend rule	post-low-bend rule	--	--
+"store"	"mile"	--	--	false	true	true	false	storm isle	pre-store-mile rule	post-store-mile rule	--	--
 
 section air aww scoring
 
@@ -123,6 +124,20 @@ this is the post-low-bend rule:
 	say "No, wait, there is a way out, or there can be. If you work your way down to the north like so ... there you go.";
 	now storm isle is mapped north of lobe end;
 	now lobe end is mapped south of storm isle;
+
+section storm isle scoring
+
+a wordtwisting rule (this is the pre-store-mile rule):
+	if player is not in storm isle, unavailable;
+	if sco-store-mile is true:
+		vcal "But you already transformed the storm isle!";
+		already-done;
+	ready;
+
+this is the post-store-mile rule:
+	now sco-store-mile is true;
+	say "The storms let up. It's not such a big isle after all, but it does turn out to hold a whole lot of stores. There's even a stall labeled MY STALL.";
+	move my stall to storm isle;
 
 section hype lane scoring
 

@@ -44,6 +44,10 @@ sco-pole-east is a truth state that varies.
 
 sco-low-bend is a truth state that varies.
 
+sco-store-mile is a truth state that varies.
+
+sco-mice-tall is a truth state that varies.
+
 Why Pout Globals ends here.
 
 ---- DOCUMENTATION ----

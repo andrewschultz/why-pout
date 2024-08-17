@@ -104,7 +104,15 @@ Lobe End is a room in universal. "[if sco-low-bend is false]This lobe of land ap
 
 book Storm Isle
 
-Storm Isle is a room in universal.
+Storm Isle is a room in universal. "[if sco-store-mile is true]Well, you're in a sort of shopping mall now[else]On this storm isle, it's always rainy. It'd be nice to have some shelter inside.[end if]"
+
+chapter my stall
+
+My Stall is a thing.
+
+section mice tall
+
+the mice tall are a plural-named thing.
 
 book no notion
 

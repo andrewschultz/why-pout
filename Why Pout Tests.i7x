@@ -10,7 +10,7 @@ test we with "nah phase/pole east/e/low bend/n/store mile/s/w".
 
 test ws with "shore trail/s/known ocean/six quid/war file/grove isle".
 
-test w with "test w1/test we/test ws".
+test a with "test w1/test we/test ws".
 
 test misc with "the file/wipe out".
 
