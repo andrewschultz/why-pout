@@ -28,7 +28,43 @@ That clears so much up! But now that you can see more, you're more visible. Why 
 
 >pole east (1)
 
-What about that short rail, for starters?
+But we don't have to go east first! Let's clear things to the north. The gross tar can go.
+
+>grow star (1)
+
+>n
+
+High doubt.
+
+>hide out (1)
+
+>d
+
+Okay, a booze troll here needs some self-esteem.
+
+>boost role (1)
+
+>e
+
+The lobe end appears to be the end, except it isn't.
+
+>low bend (1)
+
+>n
+
+The storm isle is isolated! There's no way back!
+
+>store mile (1)
+
+What to do with My Stall?
+
+>mice tall (1)
+
+>s
+
+>w
+
+What about that short rail, now you're back?
 
 >shore trail (1)
 
@@ -47,3 +83,27 @@ But you can visit the wharf isle!
 You can also visit the grove isle!
 
 >grow vial (1)
+
+Note you can't tackle Thief Isle yet.
+
+=============================================================================
+
+So, in Worm-Eaten, you can finally do what you want.
+
+>were meetin (1)
+
+But how do you show leadership? It's inside you. More precisely, it's in your name.
+
+>my corps (1)
+
+Oh no! The doom end! Or so it seems. The most obvious choice doesn't work with the sea skull still there.
+
+>cease cull (1)
+
+The blood gets over a lot of people, but it's spread out, so nobody's killed.
+
+>wipe out (1)
+
+Now you have won, but where is the healing process?
+
+>do mend (1)
