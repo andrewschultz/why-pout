@@ -50,6 +50,8 @@ sco-mice-tall is a truth state that varies.
 
 sco-were-meetin is a truth state that varies.
 
+sco-my-corps is a truth state that varies.
+
 Why Pout Globals ends here.
 
 ---- DOCUMENTATION ----

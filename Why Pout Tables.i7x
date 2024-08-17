@@ -25,6 +25,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "store"	"mile"	--	--	false	true	true	false	storm isle	pre-store-mile rule	post-store-mile rule	--	--
 "mice"	"tall"	--	--	false	true	true	false	storm isle	pre-mice-tall rule	post-mice-tall rule	--	--
 "were"	"meetin"	--	--	false	true	true	false	worm eaten	pre-were-meetin rule	post-were-meetin rule	--	--
+"my"	"corps"	--	--	false	true	true	false	worm eaten	pre-my-corps rule	post-my-corps rule	--	--
 
 section air aww scoring
 
@@ -253,20 +254,44 @@ section worm eaten scoring
 
 a wordtwisting rule (this is the pre-were-meetin rule):
 	if player is not in worm eaten, unavailable;
+	if sco-were-meetin is true:
+		vcal "You already held a meeting! Too many meetings get in the way of doing.";
+		already-done;
+	abide by the followers-check rule;
+
+a wordtwisting rule (this is the followers-check rule):
 	if number of friendly followers is 0:
 		vcp "But you have no friends to meet with!";
 		not-yet;
 	if number of not friendly followers > 0:
 		vcp "You sense you don't have the gang together! [if number of not friendly followers is 1]But you must be very, very close[else]You may still be a way away[end if].";
 		not-yet;
-	if sco-were-meetin is true:
-		vcal "You already held a meeting! Too many meetings get in the way of doing.";
-		already-done;
 	ready;
 
 this is the post-were-meetin rule:
 	now sco-were-meetin is true;
 	say "You meet with the friends you've made over your adventure. You all have one goal in mind. And yet you don't have a rallying cry. Perhaps it can come from within you.";
+
+section worm eaten scoring
+
+a wordtwisting rule (this is the pre-my-corps rule):
+	if player is not in worm eaten, unavailable;
+	abide by the followers-check rule;
+	if player is not in worm eaten:
+		vcp "This doesn't seem like the right place.";
+		not-yet;
+	if sco-were-meetin is false:
+		vcp "You need to bring everyone together fully first.";
+		not-yet;
+	if sco-my-corps is true:
+		vcal "You already brought your corps a bit closer together!";
+		already-done;
+	ready;
+
+this is the post-my-corps rule:
+	now sco-my-corps is true;
+	say "Your pep talk brings everyone together. They are ready for ... well, whatever is next. This feels like the right place. You clear out a passage below. You swear a solemn pact that everyone will defend everyone else, regardless of what happens.";
+	now Doom End is mapped below Worm Eaten;
 
 volume command parsing
 

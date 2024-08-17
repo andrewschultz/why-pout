@@ -10,9 +10,9 @@ test we with "nah phase/pole east/e/low bend/n/store mile/mice tall/s/w".
 
 test ws with "shore trail/s/known ocean/six quid/war file/grove isle".
 
-test wc with "gonear worm eaten/were meetin".
+test wc with "gonear worm eaten/af/were meetin/my corps/d".
 
-test a with "test w1/test we/test ws/test wc".
+test a with "test w1/test we/test ws/test wc/wl".
 
 test misc with "the file/wipe out".
 
