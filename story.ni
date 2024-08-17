@@ -30,6 +30,9 @@ to game-specific-cleanup: do nothing;
 
 chapter move to global
 
+when play begins:
+	say "'Find a fine day' echoes in your head."
+
 universal is a region.
 
 to up-min: do nothing;
@@ -43,11 +46,11 @@ a region has a number called curregscore.
 
 volume you
 
-Dee Klein is a privately-named person. the player is Dee Klein.
+Mike Orr is a privately-named person. the player is Mike Orr.
 
-understand "dee klein" and "dee/klein" as Dee Klein when sco-an-aim is true.
+understand "mike orr" and "mike/orr" as Mike Orr when sco-an-aim is true.
 
-check examining Dee Klein when sco-an-aim is false:
+check examining Mike Orr when sco-an-aim is false:
 	say "You think you have a name. You're not sure.[paragraph break]You'd really like to have a purpose, too.[paragraph break]The weird thing is, you feel the two must be inter-related in some simple way. A way that will feel dumb once you figure it out. But you haven't, yet.[paragraph break]Hmm. A name. A name." instead;
 
 section temporary code to test remembering oneself

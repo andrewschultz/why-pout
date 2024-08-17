@@ -20,13 +20,14 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "well"	"own"	--	--	false	true	true	false	we loan	pre-well-own rule	post-well-own rule	--	--
 "whee"	"lone"	--	--	false	true	true	false	we loan	pre-whee-lone rule	post-whee-lone rule	--	--
 "boost"	"role"	--	--	false	true	true	false	--	pre-boost-role rule	post-boost-role rule	--	--
-"wipe"	"out"	--	--	false	true	true	false	--	pre-wipe-out rule	post-wipe-out rule	--	--
 "low"	"bend"	--	--	false	true	true	false	lobe end	pre-low-bend rule	post-low-bend rule	--	--
 "store"	"mile"	--	--	false	true	true	false	storm isle	pre-store-mile rule	post-store-mile rule	--	--
 "mice"	"tall"	--	--	false	true	true	false	storm isle	pre-mice-tall rule	post-mice-tall rule	--	--
 "were"	"meetin"	--	--	false	true	true	false	worm eaten	pre-were-meetin rule	post-were-meetin rule	--	--
 "my"	"corps"	--	--	false	true	true	false	worm eaten	pre-my-corps rule	post-my-corps rule	--	--
 "cease"	"cull"	--	--	false	true	true	false	doom end	pre-cease-cull rule	post-cease-cull rule	--	--
+"wipe"	"out"	--	--	false	true	true	false	doom end	pre-wipe-out rule	post-wipe-out rule	--	--
+"do|due"	"mend"	--	--	false	true	false	false	doom end	pre-do-due-mend rule	post-do-due-mend rule	--	--
 
 section air aww scoring
 
@@ -64,7 +65,7 @@ a wordtwisting rule (this is the pre-an-aim rule):
 
 this is the post-an-aim rule:
 	now sco-an-aim is true;
-	say "Yes. Now that you realize you want more than just to know your name, that you have bigger goals, you push a bit harder when you initially forget it. You remember patches of the past. You remember people harshly calling you by your last name, then your first.[paragraph break]Your name is Dee Cline.[paragraph break]You look around a bit. You can see more, now. You're in some sort of tomb apse. You could exit--there are exits each way--but you suspect there's some horrible maze you could easily get lost in.";
+	say "Yes. Now that you realize you want more than just to know your name, that you have bigger goals, you push a bit harder when you initially forget it. You remember patches of the past. You remember people harshly calling you by your last name, then your first.[paragraph break]Your name is Mike Orr. (Short for Michal, which everyone pronounced Michael until you just gave up, or ... well, Michael.)[paragraph break]You look around a bit. You can see more, now. You're in some sort of tomb apse. You could exit--there are exits each way--but you suspect there's some horrible maze you could easily get lost in.";
 	move short rail to NaffHaze;
 
 section NaffHaze scoring
@@ -98,21 +99,27 @@ this is the post-shore-trail rule:
 	now NaffHaze is mapped north of NoNotion;
 
 a wordtwisting rule (this is the pre-wipe-out rule):
-	if player is not in naff haze, unavailable;
 	if sco-wipe-out is true:
-		vcal "You already wiped out what you needed to!";
+		vcal "You already wiped out the sea skull! Now is the time for healing.";
 		already-done;
-	if 1 is 1:
+	if number of friendly followers is 0:
 		vcp "You aren't feeling too great, but you don't want or need to wipe yourself out, yet. Perhaps you can find the root of your problems and wipe it out one day, though.";
 		not-yet;
-	if 1 is 1:
-		vcp "You have nothing you need to wipe out right now.";
+	if number of not friendly followers > 0:
+		vcp "You don't want to wipe out the friendships you made.";
+		not-yet;
+	if player is not in doom end:
+		vcp "You don't have anyone terribly evil you want to wipe out.";
+		not-yet;
+	if sco-cease-cull is false:
+		vcp "You try to charge and wipe out the sea skull, but you bounce against an invisible barrier.";
 		not-yet;
 	ready;
 
 this is the post-wipe-out rule:
 	now sco-wipe-out is true;
-	say "Well that does it! You win the game!";
+	say "Well that does it! It's a big long fight, but you all prevail![paragraph break]Things are a bit of a mess, though. There is healing to do.";
+	moot sea skull;
 
 section lobe end scoring
 
@@ -276,13 +283,16 @@ this is the post-were-meetin rule:
 section worm eaten scoring
 
 a wordtwisting rule (this is the pre-my-corps rule):
-	if player is not in worm eaten, unavailable;
+	if sco-an-aim is false, unavailable;
 	abide by the followers-check rule;
 	if player is not in worm eaten:
 		vcp "This doesn't seem like the right place.";
 		not-yet;
 	if sco-were-meetin is false:
 		vcp "You need to bring everyone together fully first.";
+		not-yet;
+	if player is not in worm eaten:
+		vcp "This doesn't seem to be the right place to pep up the troops.";
 		not-yet;
 	if sco-my-corps is true:
 		vcal "You already brought your corps a bit closer together!";
@@ -306,6 +316,16 @@ a wordtwisting rule (this is the pre-cease-cull rule):
 this is the post-cease-cull rule:
 	now sco-cease-cull is true;
 	say "You'll probably have to alert the sea skull to your presence at some time. You try to sound authoritative when you do so. And ... well, you get its attention. It begins pouring out rivers of blood at you and your companions. But fortunately, you have so many, that by the time it gets to you, it is not so bad. Yet it's still depressing. You think back to the advice you got at the beginning ... how it seemed slightly off. What to do?";
+
+a wordtwisting rule (this is the pre-do-due-mend rule):
+	if player is not in doom end, unavailable;
+	ready;
+
+this is the post-do-due-mend rule:
+	now sco-do-due-mend is true;
+	say "Yes. It's time to get healing. You're not quite sure how, but at least you're sure of who you are. And your companions are, too.";
+	end the story finally saying "Goal: Earned! Go, learned!";
+	follow the shutdown rules;
 
 volume command parsing
 
