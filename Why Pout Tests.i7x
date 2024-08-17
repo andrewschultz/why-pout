@@ -14,6 +14,21 @@ test a with "test w1/test we/test ws".
 
 test misc with "the file/wipe out".
 
+volume cheats
+
+chapter afing
+
+afing is an action out of world.
+
+understand the command "af" as something new.
+
+understand "af" as afing.
+
+carry out afing:
+	now all followers are friendly;
+	now all followers are in location of player;
+	the rule succeeds;
+
 Why Pout Tests ends here.
 
 ---- DOCUMENTATION ----
