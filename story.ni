@@ -136,7 +136,7 @@ Reap Rest is a room. moot-room is Reap Rest.
 
 volume unconnected
 
-Worm Eaten is a room. printed name is "[if sco-were-meetin is false]Worm-Eaten[else]We're Meetin[']![end if]". "[if sco-were-meetin is false]This place seems very run-down. But it'd make a nice hideout to build camaraderie if it were in better shape[else]Having had your meeting here, there's not much else to do[end if]."
+Worm Eaten is a room in universal. printed name is "[if sco-were-meetin is false]Worm-Eaten[else]We're Meetin[']![end if]". "[if sco-were-meetin is false]This place seems very run-down. But it'd make a nice hideout to build camaraderie if it were in better shape[else]Having had your meeting here, there's not much else to do[end if]."
 
 volume unsorted
 
@@ -146,7 +146,8 @@ volume appearance
 
 for printing a locale paragraph about a follower (called fo):
 	if fo is not friendly, continue the action;
-	say "You see [list of friendly followers in location of player] tagging along.";
+	if fo is mentioned, continue the action;
+	say "You see [the list of friendly followers in location of player] tagging along.";
 	now all friendly followers are mentioned;
 
 volume scores
