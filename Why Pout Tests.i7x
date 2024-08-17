@@ -29,6 +29,40 @@ carry out afing:
 	now all followers are in location of player;
 	the rule succeeds;
 
+volume diagnostics
+
+chapter wling
+
+wling is an action out of world.
+
+understand the command "wl" as something new.
+
+understand "wl" as wling.
+
+to say critopt of (ts - a truth state):
+	if ts is true:
+		say "critical";
+	else:
+		say "optional";
+
+to track-criticals (ts - a truth state):
+	let any-yet be false;
+	repeat through table of main oronyms:
+		if core entry is not ts, continue the action;
+		if idid entry is false:
+			if any-yet is false:
+				now any-yet is true;
+				say "Missing [critopt of ts] points:[line break]";
+			say "Still need to try: [b][w1 entry in upper case] [w2 entry in upper case][r].";
+	if any-yet is false:
+		say "Got all [critopt of ts] points."
+
+carry out wling:
+	track-criticals true;
+	track-criticals false;
+	the rule succeeds;
+
+
 Why Pout Tests ends here.
 
 ---- DOCUMENTATION ----
