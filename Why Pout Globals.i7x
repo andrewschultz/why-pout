@@ -58,6 +58,8 @@ sco-do-due-mend is a truth state that varies.
 
 sco-grow-star is a truth state that varies.
 
+sco-hide-out is a truth state that varies.
+
 Why Pout Globals ends here.
 
 ---- DOCUMENTATION ----

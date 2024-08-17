@@ -111,7 +111,15 @@ the gross tar is a thing. "Gross tar blocks the way north into darkness.". descr
 
 book NorthRoom
 
-NorthRoom is a room in universal. "You can go back south. You feel high doubt here you can go anywhere else."
+NorthRoom is a room in universal. "You can go back south[if sco-hide-out is true], or you can go [b]DOWN[r] into the hideout you found[else]. You feel high doubt here you can go anywhere else[end if]."
+
+book Hideout
+
+Hideout is a room in universal. "You can only go back up. It wouldn't be a very good hideout if you had too many places to sneak around."
+
+chapter Booze Troll
+
+the booze troll is a follower in Hideout. "A booze troll sulks sullenly here."
 
 book Lobe End
 
@@ -160,8 +168,6 @@ chapter Sea Skull
 The Sea Skull is a thing in Doom End. "A sea skull [if sco-cease-cull is true] spews rivers of blood at you and your companions, but fortunately, you have so many companions, it's only a trickle. Still, you should do something about it[else]gloats evilly, with its back turned to you[end if]."
 
 volume unsorted
-
-the booze troll is a follower in NoNotion. "A booze troll sulks sullenly here."
 
 volume meta rooms
 

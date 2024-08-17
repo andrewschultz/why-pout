@@ -18,6 +18,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "shore"	"trail"	--	--	false	true	true	false	NaffHaze	pre-shore-trail rule	post-shore-trail rule	--	--
 "known"	"ocean"	--	--	false	true	true	false	NoNotion	pre-known-ocean rule	post-known-ocean rule	--	--
 "six"	"quid"	--	--	false	true	true	false	NoNotion	pre-six-quid rule	post-six-quid rule	--	--
+"hide"	"out"	--	--	false	true	true	false	northroom	pre-hide-out rule	post-hide-out rule	--	--
 "well"	"own"	--	--	false	true	true	false	we loan	pre-well-own rule	post-well-own rule	--	--
 "whee"	"lone"	--	--	false	true	true	false	we loan	pre-whee-lone rule	post-whee-lone rule	--	--
 "boost"	"role"	--	--	false	true	true	false	--	pre-boost-role rule	post-boost-role rule	--	--
@@ -98,8 +99,6 @@ this is the post-shore-trail rule:
 	now NoNotion is mapped south of NaffHaze;
 	now NaffHaze is mapped north of NoNotion;
 
-section naff haze scoring
-
 a wordtwisting rule (this is the pre-grow-star rule):
 	if player is not in NaffHaze and gross tar is not in NaffHaze, unavailable;
 	ready;
@@ -133,6 +132,21 @@ this is the post-wipe-out rule:
 	now sco-wipe-out is true;
 	say "Well that does it! It's a big long fight, but you all prevail![paragraph break]Things are a bit of a mess, though. There is healing to do.";
 	moot sea skull;
+
+chapter northroom scoring
+
+a wordtwisting rule (this is the pre-hide-out rule):
+	if player is not in northroom, unavailable;
+	if sco-hide-out is true:
+		vcal "You already dispelled doubt and found the hideout!";
+		already-done;
+	ready;
+
+this is the post-hide-out rule:
+	now sco-hide-out is true;
+	say "It's easy enough to say you should doubt yourself less. I mean, you'd feel stupid doubting it. But there's always a reason not to. Still, you involuntarily start a mantra: 'Fine, doubt? Find out!'[paragraph break]And what do you know? You find a hideout below!";
+	now hideout is mapped below Northroom;
+	now Northroom is mapped above hideout
 
 section lobe end scoring
 
