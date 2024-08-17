@@ -56,6 +56,8 @@ sco-cease-cull is a truth state that varies.
 
 sco-do-due-mend is a truth state that varies.
 
+sco-grow-star is a truth state that varies.
+
 Why Pout Globals ends here.
 
 ---- DOCUMENTATION ----

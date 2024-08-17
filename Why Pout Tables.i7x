@@ -13,8 +13,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "pry"	"stalk"	--	--	false	true	true	false	hype lane	pre-pry-stalk rule	post-pry-stalk rule	--	--
 "high"	"plain"	--	--	false	true	true	false	hype lane	pre-high-plain rule	post-high-plain rule	--	--
 "nah|naah"	"phase"	--	--	false	true	true	false	NaffHaze	vc-nah-phase rule	vr-nah-phase rule	--	--
-"shore"	"trail"	--	--	false	true	true	false	NaffHaze	pre-shore-trail rule	post-shore-trail rule	--	--
 "pole"	"east"	--	--	false	true	true	false	NaffHaze	pre-pole-east rule	post-pole-east rule	--	--
+"grow"	"star"	--	--	false	true	true	false	NaffHaze	pre-grow-star rule	post-grow-star rule	--	--
+"shore"	"trail"	--	--	false	true	true	false	NaffHaze	pre-shore-trail rule	post-shore-trail rule	--	--
 "known"	"ocean"	--	--	false	true	true	false	NoNotion	pre-known-ocean rule	post-known-ocean rule	--	--
 "six"	"quid"	--	--	false	true	true	false	NoNotion	pre-six-quid rule	post-six-quid rule	--	--
 "well"	"own"	--	--	false	true	true	false	we loan	pre-well-own rule	post-well-own rule	--	--
@@ -27,7 +28,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "my"	"corps"	--	--	false	true	true	false	worm eaten	pre-my-corps rule	post-my-corps rule	--	--
 "cease"	"cull"	--	--	false	true	true	false	doom end	pre-cease-cull rule	post-cease-cull rule	--	--
 "wipe"	"out"	--	--	false	true	true	false	doom end	pre-wipe-out rule	post-wipe-out rule	--	--
-"do|due"	"mend"	--	--	false	true	false	false	doom end	pre-do-due-mend rule	post-do-due-mend rule	--	--
+"do|due"	"mend"	--	--	false	true	true	false	doom end	pre-do-due-mend rule	post-do-due-mend rule	--	--
 
 section air aww scoring
 
@@ -66,7 +67,6 @@ a wordtwisting rule (this is the pre-an-aim rule):
 this is the post-an-aim rule:
 	now sco-an-aim is true;
 	say "Yes. Now that you realize you want more than just to know your name, that you have bigger goals, you push a bit harder when you initially forget it. You remember patches of the past. You remember people harshly calling you by your last name, then your first.[paragraph break]Your name is Mike Orr. (Short for Michal, which everyone pronounced Michael until you just gave up, or ... well, Michael.)[paragraph break]You look around a bit. You can see more, now. You're in some sort of tomb apse. You could exit--there are exits each way--but you suspect there's some horrible maze you could easily get lost in.";
-	move short rail to NaffHaze;
 
 section NaffHaze scoring
 
@@ -97,6 +97,19 @@ this is the post-shore-trail rule:
 	move shore trail to NaffHaze;
 	now NoNotion is mapped south of NaffHaze;
 	now NaffHaze is mapped north of NoNotion;
+
+section naff haze scoring
+
+a wordtwisting rule (this is the pre-grow-star rule):
+	if player is not in NaffHaze and gross tar is not in NaffHaze, unavailable;
+	ready;
+
+this is the post-grow-star rule:
+	now sco-grow-star is true;
+	say "You look at the gross tar, and you hope for a star in the sky to become brighter. It does, and clearly some of the tar is goopier than some of the other tar. You see a way to the north, and after you do, the tar isn't as relevant any more.";
+	moot gross tar;
+	now NorthRoom is mapped north of NaffHaze;
+	now NaffHaze is mapped south of NorthRoom;
 
 a wordtwisting rule (this is the pre-wipe-out rule):
 	if sco-wipe-out is true:
@@ -199,7 +212,10 @@ a wordtwisting rule (this is the vc-nah-phase rule):
 
 this is the vr-nah-phase rule:
 	now sco-nah-phase is true;
-	say "The haze seemed too thick at first. But you recognize it doesn't have to be there.";
+	say "The haze seemed too thick at first. But you recognize it doesn't have to be there. As you sift through it, you notice things that weren't there before. It lifts.";
+	move short rail to NaffHaze;
+	move gross tar to NaffHaze;
+	try looking;
 
 section no notion scoring
 

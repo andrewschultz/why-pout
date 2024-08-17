@@ -101,6 +101,14 @@ section shore trail
 
 the shore trail is a thing. "The shore trail you discovered leads south.". description is "There are no secret passages hidden in it."
 
+chapter gross tar
+
+the gross tar is a thing. "Gross tar blocks the way north into darkness.". description is "Maybe there's a way through, but it's a bit too dark now. At least it's not foggy any more."
+
+book NorthRoom
+
+NorthRoom is a room in universal. "You can go back south. You feel high doubt here you can go anywhere else."
+
 book Lobe End
 
 Lobe End is a room in universal. "[if sco-low-bend is false]This lobe of land appears to end in all directions. Maybe you could look for something that might be a hill, even a steep one.[else]The low bend (former lobe end) now bends south.[end if]"

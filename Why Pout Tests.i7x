@@ -8,11 +8,13 @@ test w1 with "an aim/two maps/pry stalk/high plain"
 
 test we with "nah phase/pole east/e/low bend/n/store mile/mice tall/s/w".
 
+test wn with "grow star/n/s".
+
 test ws with "shore trail/s/known ocean/six quid/war file/grove isle".
 
-test wc with "gonear worm eaten/af/were meetin/my corps/d/cease cull/wipe out/do mend".
+test wc with "gonear worm eaten/af/were meetin/my corps/d/cease cull/wipe out/wl/do mend".
 
-test a with "test w1/test we/test ws/test wc/wl".
+test a with "test w1/test we/test wn/test ws/test wc".
 
 test misc with "the file/wipe out".
 
