@@ -109,9 +109,9 @@ chapter gross tar
 
 the gross tar is a thing. "Gross tar blocks the way north into darkness.". description is "Maybe there's a way through, but it's a bit too dark now. At least it's not foggy any more."
 
-book NorthRoom
+book Lode Ore
 
-NorthRoom is a room in universal. "You can go back south[if sco-hide-out is true], or you can go [b]DOWN[r] into the hideout you found[else]. You feel high doubt here you can go anywhere else[end if]."
+Lode Ore is a room in universal. "You can go back south[if sco-hide-out is true], or you can go [b]DOWN[r] into the hideout you found[else]. You feel high doubt here you can go anywhere else[end if].". printed name is "[if sco-low-door is true]Low Door[else]Lode, Ore[end if]".
 
 book Hideout
 

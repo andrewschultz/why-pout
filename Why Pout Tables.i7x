@@ -18,7 +18,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "shore"	"trail"	--	--	false	true	true	false	NaffHaze	pre-shore-trail rule	post-shore-trail rule	--	--
 "known"	"ocean"	--	--	false	true	true	false	NoNotion	pre-known-ocean rule	post-known-ocean rule	--	--
 "six"	"quid"	--	--	false	true	true	false	NoNotion	pre-six-quid rule	post-six-quid rule	--	--
-"hide"	"out"	--	--	false	true	true	false	northroom	pre-hide-out rule	post-hide-out rule	--	--
+"hide"	"out"	--	--	false	true	true	false	Lode Ore	pre-hide-out rule	post-hide-out rule	--	--
+"low"	"door"	--	--	false	true	true	false	lode ore	pre-low-door rule	post-low-door rule	--	--
 "well"	"own"	--	--	false	true	true	false	we loan	pre-well-own rule	post-well-own rule	--	--
 "whee"	"lone"	--	--	false	true	true	false	we loan	pre-whee-lone rule	post-whee-lone rule	--	--
 "boost"	"role"	--	--	false	true	true	false	--	pre-boost-role rule	post-boost-role rule	--	--
@@ -107,8 +108,8 @@ this is the post-grow-star rule:
 	now sco-grow-star is true;
 	say "You look at the gross tar, and you hope for a star in the sky to become brighter. It does, and clearly some of the tar is goopier than some of the other tar. You see a way to the north, and after you do, the tar isn't as relevant any more.";
 	moot gross tar;
-	now NorthRoom is mapped north of NaffHaze;
-	now NaffHaze is mapped south of NorthRoom;
+	now Lode Ore is mapped north of NaffHaze;
+	now NaffHaze is mapped south of Lode Ore;
 
 a wordtwisting rule (this is the pre-wipe-out rule):
 	if sco-wipe-out is true:
@@ -133,10 +134,10 @@ this is the post-wipe-out rule:
 	say "Well that does it! It's a big long fight, but you all prevail![paragraph break]Things are a bit of a mess, though. There is healing to do.";
 	moot sea skull;
 
-chapter northroom scoring
+chapter Lode Ore scoring
 
 a wordtwisting rule (this is the pre-hide-out rule):
-	if player is not in northroom, unavailable;
+	if player is not in Lode Ore, unavailable;
 	if sco-hide-out is true:
 		vcal "You already dispelled doubt and found the hideout!";
 		already-done;
@@ -145,8 +146,21 @@ a wordtwisting rule (this is the pre-hide-out rule):
 this is the post-hide-out rule:
 	now sco-hide-out is true;
 	say "It's easy enough to say you should doubt yourself less. I mean, you'd feel stupid doubting it. But there's always a reason not to. Still, you involuntarily start a mantra: 'Fine, doubt? Find out!'[paragraph break]And what do you know? You find a hideout below!";
-	now hideout is mapped below Northroom;
-	now Northroom is mapped above hideout
+	now hideout is mapped below Lode Ore;
+	now Lode Ore is mapped above hideout
+
+section lode ore scoring
+
+a wordtwisting rule (this is the pre-low-door rule):
+	if player is not in lode ore, unavailable;
+	if sco-low-door is true:
+		vcal "You already found a low door in this mess!";
+		already-done;
+	ready;
+
+this is the post-low-door rule:
+	now sco-low-door is true;
+	say "The lode and the ore are tough to shift around, but beneath one of the piles, you actually do find a low door. Hooray!";
 
 section lobe end scoring
 
