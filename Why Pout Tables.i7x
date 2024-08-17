@@ -24,6 +24,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "low"	"bend"	--	--	false	true	true	false	lobe end	pre-low-bend rule	post-low-bend rule	--	--
 "store"	"mile"	--	--	false	true	true	false	storm isle	pre-store-mile rule	post-store-mile rule	--	--
 "mice"	"tall"	--	--	false	true	true	false	storm isle	pre-mice-tall rule	post-mice-tall rule	--	--
+"were"	"meetin"	--	--	false	true	true	false	worm eaten	pre-were-meetin rule	post-were-meetin rule	--	--
 
 section air aww scoring
 
@@ -142,11 +143,8 @@ this is the post-store-mile rule:
 
 a wordtwisting rule (this is the pre-mice-tall rule):
 	if player is not in storm isle, unavailable;
-	if sco-mice-tall is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-mice-tall is true:
-		vcal "You already did this!";
+		vcal "You already found the mice and destroyed the stall!";
 		already-done;
 	ready;
 
@@ -250,6 +248,25 @@ a wordtwisting rule (this is the pre-whee-lone rule):
 this is the post-whee-lone rule:
 	now sco-whee-lone is true;
 	say "You get rid of the predatory loaners.";
+
+section worm eaten scoring
+
+a wordtwisting rule (this is the pre-were-meetin rule):
+	if player is not in worm eaten, unavailable;
+	if number of friendly followers is 0:
+		vcp "But you have no friends to meet with!";
+		not-yet;
+	if number of not friendly followers > 0:
+		vcp "You sense you don't have the gang together! [if number of not friendly followers is 1]But you must be very, very close[else]You may still be a way away[end if].";
+		not-yet;
+	if sco-were-meetin is true:
+		vcal "You already held a meeting! Too many meetings get in the way of doing.";
+		already-done;
+	ready;
+
+this is the post-were-meetin rule:
+	now sco-were-meetin is true;
+	say "You meet with the friends you've made over your adventure. You all have one goal in mind. And yet you don't have a rallying cry. Perhaps it can come from within you.";
 
 volume command parsing
 

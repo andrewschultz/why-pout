@@ -134,6 +134,10 @@ book meat rooms
 
 Reap Rest is a room. moot-room is Reap Rest.
 
+volume unconnected
+
+Worm Eaten is a room. printed name is "[if sco-were-meetin is false]Worm-Eaten[else]We're Meetin[']![end if]". "[if sco-were-meetin is false]This place seems very run-down. But it'd make a nice hideout to build camaraderie if it were in better shape[else]Having had your meeting here, there's not much else to do[end if]."
+
 volume unsorted
 
 the booze troll is a follower in NoNotion. "A booze troll sulks sullenly here."
