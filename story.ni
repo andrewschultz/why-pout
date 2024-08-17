@@ -140,6 +140,10 @@ book Doom End
 
 Doom End is a room in universal. "Doom doom doom!"
 
+chapter Sea Skull
+
+The Sea Skull is a thing in Doom End. "A sea skull [if sco-cease-cull is true] spews rivers of blood at you and your companions, but fortunately, you have so many companions, it's only a trickle. Still, you should do something about it[else]gloats evilly, with its back turned to you[end if]."
+
 volume unsorted
 
 the booze troll is a follower in NoNotion. "A booze troll sulks sullenly here."

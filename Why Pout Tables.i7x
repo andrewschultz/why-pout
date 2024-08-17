@@ -26,6 +26,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "mice"	"tall"	--	--	false	true	true	false	storm isle	pre-mice-tall rule	post-mice-tall rule	--	--
 "were"	"meetin"	--	--	false	true	true	false	worm eaten	pre-were-meetin rule	post-were-meetin rule	--	--
 "my"	"corps"	--	--	false	true	true	false	worm eaten	pre-my-corps rule	post-my-corps rule	--	--
+"cease"	"cull"	--	--	false	true	true	false	doom end	pre-cease-cull rule	post-cease-cull rule	--	--
 
 section air aww scoring
 
@@ -292,6 +293,19 @@ this is the post-my-corps rule:
 	now sco-my-corps is true;
 	say "Your pep talk brings everyone together. They are ready for ... well, whatever is next. This feels like the right place. You clear out a passage below. You swear a solemn pact that everyone will defend everyone else, regardless of what happens.";
 	now Doom End is mapped below Worm Eaten;
+
+chapter doom end scoring
+
+a wordtwisting rule (this is the pre-cease-cull rule):
+	if player is not in doom end and sea skull is not in doom end, unavailable;
+	if sco-cease-cull is true:
+		vcal "You already played defense. Now's the time to go on offense!";
+		already-done;
+	ready;
+
+this is the post-cease-cull rule:
+	now sco-cease-cull is true;
+	say "You'll probably have to alert the sea skull to your presence at some time. You try to sound authoritative when you do so. And ... well, you get its attention. It begins pouring out rivers of blood at you and your companions. But fortunately, you have so many, that by the time it gets to you, it is not so bad. Yet it's still depressing. You think back to the advice you got at the beginning ... how it seemed slightly off. What to do?";
 
 volume command parsing
 

@@ -52,6 +52,8 @@ sco-were-meetin is a truth state that varies.
 
 sco-my-corps is a truth state that varies.
 
+sco-cease-cull is a truth state that varies.
+
 Why Pout Globals ends here.
 
 ---- DOCUMENTATION ----
