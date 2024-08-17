@@ -68,7 +68,10 @@ volume rooms
 
 book Eh Raw Air Aww
 
-Eh Raw Air Aww is a room in universal. printed name is "[if sco-an-aim is false]Eh, Raw Air, Aww[else]Tomb Apse[end if]". description is "[if sco-an-aim is false]The air chokes you a bit. It's too thick to see far beyond yourself. You barely know who you are, even. Ugh.[else]It's a bit clearer now. You still seem trapped. But there must be secrets hidden, and maybe one or more can get you out of here.[end if]"
+Eh Raw Air Aww is a room in universal. printed name is "[if sco-an-aim is false]Eh, Raw Air, Aww[else]Tomb Apse[end if]". description is "[if sco-an-aim is false]The air chokes you a bit. It's too thick to see far beyond yourself. You barely know who you are, even. Ugh.[else]It's a bit clearer now. You still seem trapped. But there must be secrets hidden, and maybe one or more can get you out of here.[pole-east-stuff][end if]"
+
+to say pole-east-stuff:
+	if sco-pole-east is false, say "[run paragraph on]You feel policed here. Where's this feeling coming from?"
 
 book Hype Lane
 
@@ -80,7 +83,7 @@ prize talk is a thing in hype lane. "Prize talk reverberates all about ... about
 
 chapter Naff Haze
 
-NaffHaze is a privately-named room in universal. "[if sco-nah-phase is false]A naff haze surrounds you. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it.[else]Things have opened up a bit now, with the naff haze lifted.[end if]".
+NaffHaze is a privately-named room in universal. "[if sco-nah-phase is false]A naff haze surrounds you. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it.[else]Things have opened up a bit now, with the naff haze lifted.[end if]". printed name is "[if sco-nah-phase is false]Naff Haze[else]High Plain[end if]".
 
 the naff haze is scenery in NaffHaze. "You can't look very far though it. Just looking at it makes you feel hopeless you'll always be trapped in the fog."
 

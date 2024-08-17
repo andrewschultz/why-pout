@@ -40,6 +40,8 @@ sco-two-maps is a truth state that varies.
 sco-pry-stalk is a truth state that varies.
 sco-high-plain is a truth state that varies.
 
+sco-pole-east is a truth state that varies.
+
 Why Pout Globals ends here.
 
 ---- DOCUMENTATION ----

@@ -6,7 +6,7 @@ volume IDE tests
 
 test w1 with "an aim/two maps/pry stalk/high plain"
 
-test ws with "nah phase/shore trail/s/known ocean/six quid/war file/grove isle".
+test ws with "nah phase/pole east/shore trail/s/known ocean/six quid/war file/grove isle".
 
 test w with "test w1/test ws".
 

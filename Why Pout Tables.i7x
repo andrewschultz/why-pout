@@ -12,8 +12,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "two"	"maps"	--	--	false	true	true	false	eh raw air aww	pre-two-maps rule	post-two-maps rule	--	--
 "pry"	"stalk"	--	--	false	true	true	false	hype lane	pre-pry-stalk rule	post-pry-stalk rule	--	--
 "high"	"plain"	--	--	false	true	true	false	hype lane	pre-high-plain rule	post-high-plain rule	--	--
-"shore"	"trail"	--	--	false	true	true	false	NaffHaze	pre-shore-trail rule	post-shore-trail rule	--	--
 "nah|naah"	"phase"	--	--	false	true	true	false	NaffHaze	vc-nah-phase rule	vr-nah-phase rule	--	--
+"shore"	"trail"	--	--	false	true	true	false	NaffHaze	pre-shore-trail rule	post-shore-trail rule	--	--
+"pole"	"east"	--	--	false	true	true	false	NaffHaze	pre-pole-east rule	post-pole-east rule	--	--
 "known"	"ocean"	--	--	false	true	true	false	NoNotion	pre-known-ocean rule	post-known-ocean rule	--	--
 "six"	"quid"	--	--	false	true	true	false	NoNotion	pre-six-quid rule	post-six-quid rule	--	--
 "well"	"own"	--	--	false	true	true	false	we loan	pre-well-own rule	post-well-own rule	--	--
@@ -58,9 +59,22 @@ a wordtwisting rule (this is the pre-an-aim rule):
 this is the post-an-aim rule:
 	now sco-an-aim is true;
 	say "Yes. Now that you realize you want more than just to know your name, that you have bigger goals, you push a bit harder when you initially forget it. You remember patches of the past. You remember people harshly calling you by your last name, then your first.[paragraph break]Your name is Dee Cline.[paragraph break]You look around a bit. You can see more, now. You're in some sort of tomb apse. You could exit--there are exits each way--but you suspect there's some horrible maze you could easily get lost in.";
-	move short rail to Eh Raw Air Aww;
+	move short rail to NaffHaze;
 
-section air aww scoring
+section NaffHaze scoring
+
+a wordtwisting rule (this is the pre-pole-east rule):
+	if player is not in naffhaze and sco-nah-phase is false, unavailable;
+	if sco-pole-east is true:
+		vcal "You already discovered how you were being policed!";
+		already-done;
+	ready;
+
+this is the post-pole-east rule:
+	now sco-pole-east is true;
+	say "Ah, yes. It makes sense. You find the pole. Strangely, there's just a single switch to flip. And even more strangely, the switch you flip causes the pole to revert into the ground. Yay!";
+	now Lobe End is mapped east of NaffHaze;
+	now NaffHaze is mapped west of Lobe End;
 
 a wordtwisting rule (this is the pre-shore-trail rule):
 	if short rail is off-stage or player is not in NaffHaze, unavailable;
@@ -73,7 +87,7 @@ this is the post-shore-trail rule:
 	now sco-shore-trail is true;
 	say "There must be more to the short rail than you see. And you start tracing where it is, where it can be, where it should go. You find something to dig up. It's ... surprisingly malleable. You have nothing else to do, anyway. Soon it feels like pulling cable from a ground. It's tough, since you can't see around, but indeed, the short rail does lead to a shore trail that leads south.";
 	moot short rail;
-	move shore trail to eh raw air aww;
+	move shore trail to NaffHaze;
 	now NoNotion is mapped south of NaffHaze;
 	now NaffHaze is mapped north of NoNotion;
 
