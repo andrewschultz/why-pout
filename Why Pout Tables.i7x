@@ -13,9 +13,10 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "pry"	"stalk"	--	--	false	true	true	false	hype lane	pre-pry-stalk rule	post-pry-stalk rule	--	--
 "high"	"plain"	--	--	false	true	true	false	hype lane	pre-high-plain rule	post-high-plain rule	--	--
 "nah|naah"	"phase"	--	--	false	true	true	false	NaffHaze	vc-nah-phase rule	vr-nah-phase rule	--	--
-"pole"	"east"	--	--	false	true	true	false	NaffHaze	pre-pole-east rule	post-pole-east rule	--	--
+"pole|pull"	"east"	--	--	false	true	true	false	NaffHaze	pre-pole-east rule	post-pole-east rule	--	--
 "grow"	"star"	--	--	false	true	true	false	NaffHaze	pre-grow-star rule	post-grow-star rule	--	--
 "shore"	"trail"	--	--	false	true	true	false	NaffHaze	pre-shore-trail rule	post-shore-trail rule	--	--
+"key"	"pillar"	--	--	false	true	true	false	NaffHaze	pre-key-pillar rule	post-key-pillar rule	--	--
 "known"	"ocean"	--	--	false	true	true	false	NoNotion	pre-known-ocean rule	post-known-ocean rule	--	--
 "six"	"quid"	--	--	false	true	true	false	NoNotion	pre-six-quid rule	post-six-quid rule	--	--
 "the"	"file"	--	--	false	true	true	false	nonotion	pre-the-file rule	post-the-file rule	--	--
@@ -245,7 +246,21 @@ this is the vr-nah-phase rule:
 	say "The haze seemed too thick at first. But you recognize it doesn't have to be there. As you sift through it, you notice things that weren't there before. It lifts.";
 	move short rail to NaffHaze;
 	move gross tar to NaffHaze;
-	try looking;
+	move keep iller to NaffHaze;
+	try looking; [pole east is implicitly moved that way]
+
+a wordtwisting rule (this is the pre-key-pillar rule):
+	if player is not in NaffHaze, unavailable;
+	if sco-nah-phase is false, unavailable;
+	if sco-key-pillar is true:
+		vcal "You already opened the keep (iller)!";
+		already-done;
+	ready;
+
+this is the post-key-pillar rule:
+	now sco-key-pillar is true;
+	say "You look around the pillars for a key, since there's no flowerpot to hide it under. You find one, and you open the way west.";
+	open-psg west and KeepIller;
 
 section no notion scoring
 

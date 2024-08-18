@@ -109,6 +109,14 @@ chapter gross tar
 
 the gross tar is a thing. "Gross tar blocks the way north into darkness.". description is "Maybe there's a way through, but it's a bit too dark now. At least it's not foggy any more."
 
+chapter keep iller
+
+the keep iller is a thing. "A keep, iller, rises to the west[if sco-key-pillar is false], but you see no way in[else], and you figured how to enter it[end if]."
+
+book Keep Iller
+
+KeepIller is a room in Universal. printed name is "Keep (Iller)". "This keep has seen better days. You can go back east."
+
 book Lode Ore
 
 Lode Ore is a room in universal. "You can go back south[if sco-hide-out is true], or you can go [b]DOWN[r] into the hideout you found[else]. You feel high doubt here you can go anywhere else[end if].". printed name is "[if sco-low-door is true]Low Door[else]Lode, Ore[end if]".

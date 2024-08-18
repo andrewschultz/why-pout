@@ -72,6 +72,8 @@ sco-the-file is a truth state that varies.
 sco-war-file is a truth state that varies.
 sco-grow-vial is a truth state that varies.
 
+sco-key-pillar is a truth state that varies.
+
 Why Pout Globals ends here.
 
 ---- DOCUMENTATION ----
