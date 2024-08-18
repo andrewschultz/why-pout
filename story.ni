@@ -133,9 +133,17 @@ section rogue old
 
 the rogue old is a follower.
 
-book Lode Ore
+book Wolf Rock
 
-Lode Ore is a room in universal. "You can go back south[if sco-hide-out is true], or you can go [b]DOWN[r] into the hideout you found[else]. You feel high doubt here you can go anywhere else[end if].". printed name is "[if sco-low-door is true]Low Door[else]Lode, Ore[end if]".
+Wolf Rock is a room in universal. "A big rock in the shape of a wolf looms impressively, blocking all passages except back south. [if sco-hide-out is true]You can also go [b]DOWN[r] into the hideout you found[else]You feel high doubt here you can go anywhere else[end if].[paragraph break]There's a huge pile of lode ore here, too, [if sco-low-door is true]and you found a low door inside it[else]and perhaps there's something in it[end if].".
+
+chapter wool frock
+
+the wool frock is a thing. description is "It's a bit too small for you."
+
+chapter lode ore
+
+the lode ore is scenery in Wolf Rock. "[if sco-low-door is true]You doubt there is anything more to find[else]Maybe it is hiding something[end if]."
 
 book Hideout
 
@@ -206,7 +214,7 @@ volume unsorted
 volume meta verbs
 
 report taking inventory when sco-six-quid is true and current-quid > 0:
-	say "You have [current-quid in words] quid left from helping the sick squid.";
+	say "You [if current-quid < 6]still [end if]have [current-quid in words] quid left from helping the sick squid.";
 	continue the action;
 
 volume meta rooms

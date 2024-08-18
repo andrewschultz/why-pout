@@ -22,8 +22,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "the"	"file"	--	--	false	true	true	false	nonotion	pre-the-file rule	post-the-file rule	--	--
 "war"	"file"	--	--	false	true	true	false	nonotion	pre-war-file rule	post-war-file rule	--	--
 "grow"	"vial"	--	--	false	true	true	false	nonotion	pre-grow-vial rule	post-grow-vial rule	--	--
-"hide"	"out"	--	--	false	true	true	false	Lode Ore	pre-hide-out rule	post-hide-out rule	--	--
-"low"	"door"	--	--	false	true	true	false	lode ore	pre-low-door rule	post-low-door rule	--	--
+"wool"	"frock"	--	--	false	true	true	false	Wolf Rock	pre-wool-frock rule	post-wool-frock rule	--	--
+"hide"	"out"	--	--	false	true	true	false	Wolf Rock	pre-hide-out rule	post-hide-out rule	--	--
+"low"	"door"	--	--	false	true	true	false	Wolf Rock	pre-low-door rule	post-low-door rule	--	--
 "well"	"own"	--	--	false	true	true	false	we loan	pre-well-own rule	post-well-own rule	--	--
 "summer"	"chant"	--	--	false	true	true	false	we loan	pre-summer-chant rule	post-summer-chant rule	--	--
 "bile"	"oh"	--	--	false	true	true	false	we loan	pre-bile-oh rule	post-bile-oh rule	--	--
@@ -115,7 +116,7 @@ this is the post-grow-star rule:
 	now sco-grow-star is true;
 	say "You look at the gross tar, and you hope for a star in the sky to become brighter. It does, and clearly some of the tar is goopier than some of the other tar. You see a way to the north, and after you do, the tar isn't as relevant any more.";
 	moot gross tar;
-	open-psg north and Lode Ore;
+	open-psg north and Wolf Rock;
 
 a wordtwisting rule (this is the pre-wipe-out rule):
 	if sco-wipe-out is true:
@@ -140,10 +141,22 @@ this is the post-wipe-out rule:
 	say "Well that does it! It's a big long fight, but you all prevail![paragraph break]Things are a bit of a mess, though. There is healing to do.";
 	moot sea skull;
 
-chapter Lode Ore scoring
+chapter Wolf Rock scoring
+
+a wordtwisting rule (this is the pre-wool-frock rule):
+	if player is not in wolf rock, unavailable;
+	if sco-wool-frock is true:
+		vcal "You already found one wool frock. You can't imagine you'd need two.";
+		already-done;
+	ready;
+
+this is the post-wool-frock rule:
+	now sco-wool-frock is true;
+	say "You rummage about and find a wool frock.";
+	now player has wool frock;
 
 a wordtwisting rule (this is the pre-hide-out rule):
-	if player is not in Lode Ore, unavailable;
+	if player is not in Wolf Rock, unavailable;
 	if sco-hide-out is true:
 		vcal "You already dispelled doubt and found the hideout!";
 		already-done;
@@ -154,10 +167,8 @@ this is the post-hide-out rule:
 	say "It's easy enough to say you should doubt yourself less. I mean, you'd feel stupid doubting it. But there's always a reason not to. Still, you involuntarily start a mantra: 'Fine, doubt? Find out!'[paragraph break]And what do you know? You find a hideout below!";
 	open-psg down and hideout;
 
-section lode ore scoring
-
 a wordtwisting rule (this is the pre-low-door rule):
-	if player is not in lode ore, unavailable;
+	if player is not in Wolf Rock, unavailable;
 	if sco-low-door is true:
 		vcal "You already found a low door in this mess!";
 		already-done;
@@ -410,6 +421,9 @@ section keepiller scoring
 
 a wordtwisting rule (this is the pre-gnome-old rule):
 	if player is not in keepiller, unavailable;
+	if sco-wool-frock is false:
+		say "You summon a gnome, old, to compliment them on keeping the keep looking so nice all these years. They thank you but mention they're a bit sick of it and they seek adventure. Yet they can't go adventuring in these tatty clothes.";
+		not-yet;
 	if sco-gnome-old is true:
 		vcal "You already summoned the gnome!";
 		already-done;
@@ -417,7 +431,7 @@ a wordtwisting rule (this is the pre-gnome-old rule):
 
 this is the post-gnome-old rule:
 	now sco-gnome-old is true;
-	say "A gnome, old, arrives. They will join you.";
+	say "A gnome, old, arrives. They offer to adventure with you, if you have suitable enough adventuring gear. As a matter of fact, you do. The wool frock works well.";
 	now gnome old is friendly;
 	move gnome old to keepiller;
 

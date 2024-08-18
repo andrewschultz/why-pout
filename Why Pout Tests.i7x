@@ -4,17 +4,21 @@ Version 1/240816 of Why Pout Tests by Andrew Schultz begins here.
 
 volume IDE tests
 
-test w1 with "an aim/two maps/pry stalk/high plain"
+test w1 with "an aim/two maps/pry stalk/high plain/nah phase"
 
 chapter new-tests
 
 test w2 with "pole east/shore trail/s/known ocean/six quid/n". [get the money]
 
-test w3 with "grow star/n/low door/hide out/well own/summer chant/bile oh/whee lone/oh flyer/out/s".
+test w3 with "grow star/n/wool frock/low door/hide out/d/boost role/u/low door/in/well own/summer chant/bile oh/whee lone/i/oh flyer/i/out/s".
+
+test w4 with "key pillar/w/gnome old/rogue old".
+
+test a with "test w1/test w2/test w3/test w4".
 
 chapter old-tests
 
-test we with "nah phase/pole east/e/low bend/n/store mile/mice tall/s/w".
+test we with "pole east/e/low bend/n/store mile/mice tall/s/w".
 
 test ww with "key pillar/w/rogue old/gnome old/e".
 
@@ -24,7 +28,7 @@ test ws with "shore trail/s/known ocean/six quid/war file/grow vial/the file".
 
 test wc with "gonear worm eaten/af/were meetin/my corps/d/cease cull/wipe out/wl/do mend".
 
-test a with "test w1/test we/test ww/test wn/test ws/test wc".
+test o with "test w1/test we/test ww/test wn/test ws/test wc".
 
 test misc with "the file/wipe out".
 
