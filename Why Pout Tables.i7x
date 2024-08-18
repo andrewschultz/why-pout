@@ -18,6 +18,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "shore"	"trail"	--	--	false	true	true	false	NaffHaze	pre-shore-trail rule	post-shore-trail rule	--	--
 "known"	"ocean"	--	--	false	true	true	false	NoNotion	pre-known-ocean rule	post-known-ocean rule	--	--
 "six"	"quid"	--	--	false	true	true	false	NoNotion	pre-six-quid rule	post-six-quid rule	--	--
+"the"	"file"	--	--	false	true	true	false	nonotion	pre-the-file rule	post-the-file rule	--	--
+"war"	"file"	--	--	false	true	true	false	nonotion	pre-war-file rule	post-war-file rule	--	--
+"grow"	"vial"	--	--	false	true	true	false	nonotion	pre-grow-vial rule	post-grow-vial rule	--	--
 "hide"	"out"	--	--	false	true	true	false	Lode Ore	pre-hide-out rule	post-hide-out rule	--	--
 "low"	"door"	--	--	false	true	true	false	lode ore	pre-low-door rule	post-low-door rule	--	--
 "well"	"own"	--	--	false	true	true	false	we loan	pre-well-own rule	post-well-own rule	--	--
@@ -273,6 +276,49 @@ this is the post-six-quid rule:
 [to check-squid-flyer:
 	if player has maps:
 		say "[line break]The squid gestures towards the two maps, as if it can take you wherever you need to on the maps. But it does look a little exhausted. So you don't just want to summon it for a joyride.";]
+
+a wordtwisting rule (this is the three-isle rule):
+	if player is in lobe end and sco-low-bend is true and player has flier:
+		vcp "No, this can't be the right place.";
+		not-yet;
+	if player is not in nonotion, unavailable;
+	if player does not have flier, unavailable;
+
+a wordtwisting rule (this is the pre-the-file rule):
+	abide by the three-isle rule;
+	if 1 is 1:
+		vcp "You know there is THE FILE, but which file is THE FILE? The thief isle has probably stolen a lot!";
+		not-yet;
+	if sco-the-file is true:
+		vcal "You already visited thief isle!";
+		already-done;
+	ready;
+
+this is the post-the-file rule:
+	now sco-the-file is true;
+	say "You have a clue what isle to look through. The thief isle. You get The File.";
+
+a wordtwisting rule (this is the pre-war-file rule):
+	abide by the three-isle rule;
+	if sco-war-file is true:
+		vcal "You already got the war file!";
+		already-done;
+	ready;
+
+this is the post-war-file rule:
+	now sco-war-file is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a wordtwisting rule (this is the pre-grow-vial rule):
+	abide by the three-isle rule;
+	if sco-grow-vial is true:
+		vcal "You already got a grow-vial!";
+		already-done;
+	ready;
+
+this is the post-grow-vial rule:
+	now sco-grow-vial is true;
+	say "Hooray! You figured what to do! You get a point!";
 
 chapter we loan scoring
 

@@ -68,6 +68,10 @@ sco-bile-oh is a truth state that varies.
 
 sco-summer-chant is a truth state that varies.
 
+sco-the-file is a truth state that varies.
+sco-war-file is a truth state that varies.
+sco-grow-vial is a truth state that varies.
+
 Why Pout Globals ends here.
 
 ---- DOCUMENTATION ----
