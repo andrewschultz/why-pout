@@ -30,6 +30,9 @@ to open-psg (di - a direction) and (rm - a room): [from PPRR. Maybe we can put t
 	change di exit of lp to rm;
 	change (opposite of di) exit of rm to lp;
 
+[to open-psg (rm - a room) and (di - a direction):
+	open-psg di and rm;]
+
 volume definitions
 
 definition: a direction (called d) is viable:

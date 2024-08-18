@@ -121,6 +121,10 @@ chapter Booze Troll
 
 the booze troll is a follower in Hideout. "A booze troll sulks sullenly here."
 
+book We Loan
+
+We Loan is a room in universal. printed name is "[if sco-well-own is false]We Loan[else if sco-whee-lone is false]We'll Own[else]Whee, Lone![end if]". "You can only go out here."
+
 book Lobe End
 
 Lobe End is a room in universal. "[if sco-low-bend is false]This lobe of land appears to end in all directions. Maybe you could look for something that might be a hill, even a steep one.[else]The low bend (former lobe end) now bends south.[end if]"
@@ -131,7 +135,7 @@ Storm Isle is a room in universal. "[if sco-store-mile is true]Well, you're in a
 
 chapter my stall
 
-My Stall is a thing.
+My Stall is a thing. "A stall labeled MY STALL sits here, abandoned, against a wall. You think you hear odd noises from behind it.". description is "As you get closer to My Stall, the odd noises grow a bit louder. You see nothing particularly special, though."
 
 section mice tall
 
@@ -148,10 +152,6 @@ the sick squid is a thing. "A [if sco-six-quid is true]formerly (thanks to you) 
 section six quid
 
 there is a thing called six quid. description is "Well, it's money, and a good deal of it."
-
-book we loan
-
-We Loan is a room in universal. "You wonder if there is actually anyone here. It feels more sinister than it should."
 
 volume endgame
 
