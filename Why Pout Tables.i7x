@@ -82,7 +82,7 @@ this is the post-an-aim rule:
 section NaffHaze scoring
 
 a wordtwisting rule (this is the pre-pole-east rule):
-	if player is not in naffhaze and sco-nah-phase is false, unavailable;
+	if player is not in naffhaze or sco-nah-phase is false, unavailable;
 	if sco-pole-east is true:
 		vcal "You already discovered how you were being policed!";
 		already-done;
@@ -287,8 +287,8 @@ a wordtwisting rule (this is the pre-six-quid rule):
 
 this is the post-six-quid rule:
 	now sco-six-quid is true;
-	say "You have an idea what is bothering the squid. Yes, a few coins stuck. Surprisingly, it lets you help out.";
-	now player has quid;
+	say "You have an idea what is bothering the squid. Yes, a few coins stuck. Surprisingly, it lets you help out. You offer to give it some of the coins it almost choked on, but it does not need them.";
+	now current-quid is 6;
 
 [to check-squid-flyer:
 	if player has maps:
@@ -394,13 +394,17 @@ this is the post-whee-lone rule:
 
 a wordtwisting rule (this is the pre-oh-flyer rule):
 	if player is not in we loan and oaf liar is not in we loan, unavailable;
+	if sco-six-quid is false:
+		vcp "[one of]You notice a flyer behind their back, and you nudge them as if to say, can I have it for free? No, no, you cannot[or]You still haven't found any way to pay for the flyer[stopping].";
+		not-yet;
 	ready;
 
 this is the post-oh-flyer rule:
 	now sco-oh-flyer is true;
-	say "You act distracted just right. The oaf liar tries to get your attention. Just ignoring them wouldn't work, but paying attention to a flyer ... well, there's something insulting about that.";
+	say "You act distracted just right. The oaf liar tries to get your attention. Just ignoring them wouldn't work, but paying attention to a flyer ... well, they take the hint that you aren't a high-rolling customer.";
 	moot oaf liar;
 	now player has flier;
+	quid-reduce 1;
 
 section keepiller scoring
 
@@ -419,6 +423,9 @@ this is the post-gnome-old rule:
 
 a wordtwisting rule (this is the pre-rogue-old rule):
 	if player is not in keepiller, unavailable;
+	if sco-six-quid is false:
+		vcp "A rogue, old, appears, but after some conversation, you realize you don't have any money to pay them with. They'd like to help, but they worked for free once and felt ripped off. Maybe later.";
+		not-yet;
 	if sco-rogue-old is true:
 		vcal "You already did this!";
 		already-done;
@@ -426,9 +433,16 @@ a wordtwisting rule (this is the pre-rogue-old rule):
 
 this is the post-rogue-old rule:
 	now sco-rogue-old is true;
-	say "A rogue, old, arrives. They will join you.";
+	say "A rogue, old, arrives. They mention they'd like to help you but, you know, the row (gold) needs maintenance. You offer to pay them three quid..";
 	now rogue old is friendly;
 	move rogue old to keepiller;
+	quid-reduce 3;
+
+to quid-reduce (nu - a number):
+	say "[line break]This transaction reduces your wealth from [current-quid in words] quid to [(current-quid - nu) in words] quid.";
+	decrease current-quid by nu;
+	if current-quid is 0:
+		say "[line break]Well, easy come, easy go. You're pretty sure you've visited everywhere and found everyone who might need money.";
 
 section worm eaten scoring
 

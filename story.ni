@@ -187,10 +187,6 @@ chapter sick squid
 
 the sick squid is a thing. "A [if sco-six-quid is true]formerly (thanks to you) [end if]sick squid trundles about in the water here.". description is "[if sco-six-quid is false]It seems like it's half choking on something, not enough to strangle it, but enough to make it really uncomfortable[else]It looks back at you. Squids don't smile, but if it could, it would[end if]."
 
-section six quid
-
-there is a thing called six quid. description is "Well, it's money, and a good deal of it."
-
 volume endgame
 
 book Worm Eaten
@@ -206,6 +202,12 @@ chapter Sea Skull
 The Sea Skull is a thing in Doom End. "A sea skull [if sco-cease-cull is true] spews rivers of blood at you and your companions, but fortunately, you have so many companions, it's only a trickle. Still, you should do something about it[else]gloats evilly, with its back turned to you[end if]."
 
 volume unsorted
+
+volume meta verbs
+
+report taking inventory when sco-six-quid is true and current-quid > 0:
+	say "You have [current-quid in words] quid left from helping the sick squid.";
+	continue the action;
 
 volume meta rooms
 

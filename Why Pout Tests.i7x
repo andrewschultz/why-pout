@@ -6,6 +6,14 @@ volume IDE tests
 
 test w1 with "an aim/two maps/pry stalk/high plain"
 
+chapter new-tests
+
+test w2 with "pole east/shore trail/s/known ocean/six quid/n". [get the money]
+
+test w3 with "grow star/n/low door/hide out/well own/summer chant/bile oh/whee lone/oh flyer/out/s".
+
+chapter old-tests
+
 test we with "nah phase/pole east/e/low bend/n/store mile/mice tall/s/w".
 
 test ww with "key pillar/w/rogue old/gnome old/e".

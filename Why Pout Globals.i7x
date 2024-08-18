@@ -4,6 +4,8 @@ Version 1/240720 of Why Pout Globals by Andrew Schultz begins here.
 
 volume game states and specifics
 
+current-quid is a number that varies. current-quid is 0.
+
 volume point scoring variables
 
 section general
