@@ -282,12 +282,16 @@ a wordtwisting rule (this is the pre-well-own rule):
 
 this is the post-well-own rule:
 	now sco-well-own is true;
-	say "Yes. There's a definite shady side.";
+	say "Yes. There's a definite shady side. You mumble to yourself, and then your mumbles get louder, and it attracts ... some merchant. They begin babbling about deals thry have, fake-friendly, about how you can buy low.";
+	move some merchant to We Loan;
 
 a wordtwisting rule (this is the pre-whee-lone rule):
 	if player is not in we loan, unavailable;
-	if sco-whee-lone is false:
-		vcp "Well, maybe later...";
+	if sco-well-own is false:
+		vcp "It's nice to be alone here. But you sense there's a challenge here, to earn solitude, first.";
+		not-yet;
+	if merchant is in we loan:
+		vcp "You can't enjoy solitude with that merchant around.";
 		not-yet;
 	if sco-whee-lone is true:
 		vcal "You already got this place to yourself!";

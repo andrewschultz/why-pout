@@ -123,7 +123,13 @@ the booze troll is a follower in Hideout. "A booze troll sulks sullenly here."
 
 book We Loan
 
-We Loan is a room in universal. printed name is "[if sco-well-own is false]We Loan[else if sco-whee-lone is false]We'll Own[else]Whee, Lone![end if]". "You can only go out here."
+We Loan is a room in universal. printed name is "[if sco-well-own is false]We Loan[else if sco-whee-lone is false]We'll Own[else if sco-oh-flyer is false]Whee, Lone?[else]Whee! [']Lone![end if]". "[if sco-oh-flyer is false]This area feels replete with the sort of double-talk all salesmen use. It will be tough to hang with all the way through, but if you do, maybe you'll get something out of it. [else]You've managed to navigte negotiations and wind up with ... a shiny new flyer! [end if]You can only go out here."
+
+chapter some merchant
+
+some merchant is a singular-named thing in We Loan. "Some merchant babbles on, all up in your personal space, suggesting you buy low.". description is "Their smile certainly is fake. They're not going to shut up until you get a resolution here."
+
+check going outside in we loan when merchant is in we loan: say "Alas, the merchant's magnetism is too strong." instead;
 
 book Lobe End
 

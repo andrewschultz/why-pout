@@ -62,6 +62,8 @@ sco-hide-out is a truth state that varies.
 
 sco-low-door is a truth state that varies.
 
+sco-oh-flyer is a truth state that varies.
+
 Why Pout Globals ends here.
 
 ---- DOCUMENTATION ----
