@@ -22,7 +22,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "low"	"door"	--	--	false	true	true	false	lode ore	pre-low-door rule	post-low-door rule	--	--
 "well"	"own"	--	--	false	true	true	false	we loan	pre-well-own rule	post-well-own rule	--	--
 "whee"	"lone"	--	--	false	true	true	false	we loan	pre-whee-lone rule	post-whee-lone rule	--	--
-"boost"	"role"	--	--	false	true	true	false	--	pre-boost-role rule	post-boost-role rule	--	--
+"summer"	"chant"	--	--	false	true	true	false	we loan	pre-summer-chant rule	post-summer-chant rule	--	--
+"bile"	"oh"	--	--	false	true	true	false	we loan	pre-bile-oh rule	post-bile-oh rule	--	--
+"boost"	"role"	--	--	false	true	true	false	hideout	pre-boost-role rule	post-boost-role rule	--	--
 "low"	"bend"	--	--	false	true	true	false	lobe end	pre-low-bend rule	post-low-bend rule	--	--
 "store"	"mile"	--	--	false	true	true	false	storm isle	pre-store-mile rule	post-store-mile rule	--	--
 "mice"	"tall"	--	--	false	true	true	false	storm isle	pre-mice-tall rule	post-mice-tall rule	--	--
@@ -271,7 +273,7 @@ this is the post-six-quid rule:
 	if player has maps:
 		say "[line break]The squid gestures towards the two maps, as if it can take you wherever you need to on the maps. But it does look a little exhausted. So you don't just want to summon it for a joyride.";]
 
-section we loan scoring
+chapter we loan scoring
 
 a wordtwisting rule (this is the pre-well-own rule):
 	if player is not in we loan, unavailable;
@@ -284,6 +286,29 @@ this is the post-well-own rule:
 	now sco-well-own is true;
 	say "Yes. There's a definite shady side. You mumble to yourself, and then your mumbles get louder, and it attracts ... some merchant. They begin babbling about deals thry have, fake-friendly, about how you can buy low.";
 	move some merchant to We Loan;
+
+a wordtwisting rule (this is the pre-summer-chant rule):
+	if player is not in we loan and merchant is not in we loan, unavailable;
+	if sco-summer-chant is true:
+		vcal "You already found cheeriness outside of the merchant!";
+		already-done;
+	ready;
+
+this is the post-summer-chant rule:
+	now sco-summer-chant is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a wordtwisting rule (this is the pre-bile-oh rule):
+	if player is not in we loan and merchant is not in we loan, unavailable;
+	if sco-summer-chant is false:
+		vcp "You need to find something positive to say, first. It doesn't have to be particularly rigorous, but it needs to be positive.";
+		not-yet;
+	ready;
+
+this is the post-bile-oh rule:
+	now sco-bile-oh is true;
+	say "You are able to dismiss the merchant. You can maybe enjoy some solitude now!";
+	moot merchant;
 
 a wordtwisting rule (this is the pre-whee-lone rule):
 	if player is not in we loan, unavailable;
