@@ -127,9 +127,17 @@ We Loan is a room in universal. printed name is "[if sco-well-own is false]We Lo
 
 chapter some merchant
 
-some merchant is a singular-named thing in We Loan. "Some merchant babbles on, all up in your personal space, suggesting you buy low.". description is "Their smile certainly is fake. They're not going to shut up until you get a resolution here."
+some merchant is a singular-named thing. "Some merchant babbles on, all up in your personal space, suggesting you buy low.". description is "Their smile certainly is fake. They're not going to shut up until you get a resolution here."
 
 check going outside in we loan when merchant is in we loan: say "Alas, the merchant's magnetism is too strong." instead;
+
+chapter oaf liar
+
+the oaf liar is a singular-named thing.
+
+section flier
+
+the flier is a thing. "The flier advertises places to go: a wharf isle, a thief isle, and a grove isle."
 
 book Lobe End
 

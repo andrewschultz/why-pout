@@ -21,9 +21,10 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "hide"	"out"	--	--	false	true	true	false	Lode Ore	pre-hide-out rule	post-hide-out rule	--	--
 "low"	"door"	--	--	false	true	true	false	lode ore	pre-low-door rule	post-low-door rule	--	--
 "well"	"own"	--	--	false	true	true	false	we loan	pre-well-own rule	post-well-own rule	--	--
-"whee"	"lone"	--	--	false	true	true	false	we loan	pre-whee-lone rule	post-whee-lone rule	--	--
 "summer"	"chant"	--	--	false	true	true	false	we loan	pre-summer-chant rule	post-summer-chant rule	--	--
 "bile"	"oh"	--	--	false	true	true	false	we loan	pre-bile-oh rule	post-bile-oh rule	--	--
+"whee"	"lone"	--	--	false	true	true	false	we loan	pre-whee-lone rule	post-whee-lone rule	--	--
+"oh"	"flier|flyer"	--	--	false	true	true	false	we loan	pre-oh-flyer rule	post-oh-flyer rule	--	--
 "boost"	"role"	--	--	false	true	true	false	hideout	pre-boost-role rule	post-boost-role rule	--	--
 "low"	"bend"	--	--	false	true	true	false	lobe end	pre-low-bend rule	post-low-bend rule	--	--
 "store"	"mile"	--	--	false	true	true	false	storm isle	pre-store-mile rule	post-store-mile rule	--	--
@@ -325,7 +326,18 @@ a wordtwisting rule (this is the pre-whee-lone rule):
 
 this is the post-whee-lone rule:
 	now sco-whee-lone is true;
-	say "You get rid of the predatory loaners.";
+	say "You enjoy your solitude, but ... wait. You lose track of time, and an oaf liar slips in just to babble at you.";
+	move oaf liar to we loan;
+
+a wordtwisting rule (this is the pre-oh-flyer rule):
+	if player is not in we loan and oaf liar is not in we loan, unavailable;
+	ready;
+
+this is the post-oh-flyer rule:
+	now sco-oh-flyer is true;
+	say "You act distracted just right. The oaf liar tries to get your attention. Just ignoring them wouldn't work, but paying attention to a flyer ... well, there's something insulting about that.";
+	moot oaf liar;
+	now player has flier;
 
 section worm eaten scoring
 
