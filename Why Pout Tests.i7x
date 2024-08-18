@@ -8,7 +8,7 @@ test w1 with "an aim/two maps/pry stalk/high plain"
 
 test we with "nah phase/pole east/e/low bend/n/store mile/mice tall/s/w".
 
-test ww with "key pillar/w/e".
+test ww with "key pillar/w/rogue old/gnome old/e".
 
 test wn with "grow star/n/hide out/d/boost role/u/low door/in/well own/summer chant/bile oh/whee lone/oh flyer/out/s".
 

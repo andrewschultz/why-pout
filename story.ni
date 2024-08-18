@@ -117,6 +117,22 @@ book Keep Iller
 
 KeepIller is a room in Universal. printed name is "Keep (Iller)". "This keep has seen better days. You can go back east."
 
+chapter no mold
+
+there is a thing called no mold. It is in Keep Iller.
+
+section gnome old
+
+the gnome old is a follower.
+
+chapter row gold
+
+there is a thing called row gold. printed name is "row (gold)".
+
+section rogue old
+
+the rogue old is a follower.
+
 book Lode Ore
 
 Lode Ore is a room in universal. "You can go back south[if sco-hide-out is true], or you can go [b]DOWN[r] into the hideout you found[else]. You feel high doubt here you can go anywhere else[end if].". printed name is "[if sco-low-door is true]Low Door[else]Lode, Ore[end if]".
@@ -161,7 +177,7 @@ My Stall is a thing. "A stall labeled MY STALL sits here, abandoned, against a w
 
 section mice tall
 
-the mice tall are a plural-named friendly followers. printed name is "mice (tall)". description is "Well, they're tall for mice. But they make up enough numbers to be pretty effective in a skirmish, if need be.".
+the mice tall are a plural-named followers. printed name is "mice (tall)". description is "Well, they're tall for mice. But they make up enough numbers to be pretty effective in a skirmish, if need be.".
 
 book no notion
 

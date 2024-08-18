@@ -33,6 +33,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "low"	"bend"	--	--	false	true	true	false	lobe end	pre-low-bend rule	post-low-bend rule	--	--
 "store"	"mile"	--	--	false	true	true	false	storm isle	pre-store-mile rule	post-store-mile rule	--	--
 "mice"	"tall"	--	--	false	true	true	false	storm isle	pre-mice-tall rule	post-mice-tall rule	--	--
+"gnome"	"old"	--	--	false	true	true	false	keepiller	pre-gnome-old rule	post-gnome-old rule	--	--
+"rogue"	"old"	--	--	false	true	true	false	keepiller	pre-rogue-old rule	post-rogue-old rule	--	--
 "were"	"meetin"	--	--	false	true	true	false	worm eaten	pre-were-meetin rule	post-were-meetin rule	--	--
 "my"	"corps"	--	--	false	true	true	false	worm eaten	pre-my-corps rule	post-my-corps rule	--	--
 "cease"	"cull"	--	--	false	true	true	false	doom end	pre-cease-cull rule	post-cease-cull rule	--	--
@@ -399,6 +401,34 @@ this is the post-oh-flyer rule:
 	say "You act distracted just right. The oaf liar tries to get your attention. Just ignoring them wouldn't work, but paying attention to a flyer ... well, there's something insulting about that.";
 	moot oaf liar;
 	now player has flier;
+
+section keepiller scoring
+
+a wordtwisting rule (this is the pre-gnome-old rule):
+	if player is not in keepiller, unavailable;
+	if sco-gnome-old is true:
+		vcal "You already summoned the gnome!";
+		already-done;
+	ready;
+
+this is the post-gnome-old rule:
+	now sco-gnome-old is true;
+	say "A gnome, old, arrives. They will join you.";
+	now gnome old is friendly;
+	move gnome old to keepiller;
+
+a wordtwisting rule (this is the pre-rogue-old rule):
+	if player is not in keepiller, unavailable;
+	if sco-rogue-old is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the post-rogue-old rule:
+	now sco-rogue-old is true;
+	say "A rogue, old, arrives. They will join you.";
+	now rogue old is friendly;
+	move rogue old to keepiller;
 
 section worm eaten scoring
 

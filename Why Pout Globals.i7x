@@ -74,6 +74,9 @@ sco-grow-vial is a truth state that varies.
 
 sco-key-pillar is a truth state that varies.
 
+sco-gnome-old is a truth state that varies.
+sco-rogue-old is a truth state that varies.
+
 Why Pout Globals ends here.
 
 ---- DOCUMENTATION ----
