@@ -12,6 +12,8 @@ a follower is a kind of thing.
 
 a follower can be unfriendly, friendly or donewith. a follower is usually unfriendly.
 
+a follower can be unchatted or chatted. a follower is usually unchatted.
+
 definition: a follower (called fo) is leftbehind:
 	unless fo is friendly, no;
 	if fo is in location of player, no;

@@ -307,11 +307,63 @@ The Sea Skull is a thing in Doom End. "A sea skull [if sco-cease-cull is true] s
 
 volume unsorted
 
-volume meta verbs
+volume verbs
+
+book inventory
 
 report taking inventory when sco-six-quid is true and current-quid > 0:
 	say "You [if current-quid < 6]still [end if]have [current-quid in words] quid left from helping the sick squid.";
 	continue the action;
+
+book t talking
+
+ting is an action applying to one thing.
+
+understand the command "t" as something new.
+
+understand "t" as ting.
+understand "t [thing]" as ting.
+
+rule for supplying a missing noun when ting:
+	if number of followers in location of player is 1:
+		now noun is random follower in location of player;
+		continue the action;
+	if number of friendly followers in location of player is 1:
+		now noun is random follower in location of player;
+		continue the action;
+	if number of followers in location of player > 1:
+		say "That's ambiguous--more than one you can chat with.";
+	else:
+		say "Nobody here to talk to.";
+	the rule fails;
+
+check ting:
+	if noun is skull, say "It's the big fight. You need action, not talk." instead;
+	if noun is not a follower, say "You don't get a response." instead;
+	if player has talk ache, say "That talk ache is a bit of a nuisance." instead;
+	if number of unchatted followers is 0, say "You've talked to everyone, but why not chat again?";
+
+carry out ting:
+	say "You chat with [the noun] a bit, learning more about the game's history and why you're here.";
+	the rule succeeds;
+
+report ting:
+	if noun is unchatted:
+		say "More useful information worth remembering.";
+		now noun is chatted;
+		if number of unchatted followers is 0:
+			say "That was a lot of talking. After all that time alone, you're not used to it. You develop a talk-ache.";
+			now player has talk ache;
+	continue the action;
+
+chapter talk ache
+
+the talk ache is a thing. description is "Not really annoying, but the sort of small nuisance that makes you feel a need to do something."
+
+book taking
+
+check taking:
+	if player does not have noun, say "Everything you need will be implicitly taken in [this-game]." instead;
 
 volume meta rooms
 
