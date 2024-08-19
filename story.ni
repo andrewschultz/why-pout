@@ -227,6 +227,16 @@ book Lobe End
 
 Lobe End is a room in universal. "[if sco-low-bend is false]This lobe of land appears to end in all directions. Maybe you could look for something that might be a hill, even a steep one.[else]The low bend (former lobe end) now bends south.[end if]"
 
+chapter We Craft Weak Raft
+
+the We Craft Weak Raft is a thing. printed name is "We-Craft Weak Raft".
+
+check going:
+	if ((room gone from is lobe end) and (room gone to is storm isle)) or ((room gone to is lobe end) and (room gone from is storm isle)):
+		say "You[if number of friendly followers > 0] and [the list of friendly followers][end if] make it across the water without incident.";
+		move raft to room gone to;
+		follow-you;
+
 book Storm Isle
 
 Storm Isle is a room in universal. "[if sco-store-mile is true]Well, you're in a sort of shopping mall now. You can see a passage leading north[else]On this storm isle, it's always rainy. It'd be nice to have some shelter inside[end if]."

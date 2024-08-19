@@ -24,8 +24,11 @@ every turn (this is the followers follow you rule):
 			let rf be a random leftbehind follower;
 			if rf is plural-named, now plurals is true;
 		say "The [list of leftbehind followers] follow[if plurals is false]s[end if] you.";
-		repeat with X running through leftbehind followers:
-			move X to location of player;
+		follow-you;
+
+to follow-you:
+	repeat with X running through leftbehind followers:
+		move X to location of player;
 
 volume stubs
 

@@ -219,6 +219,7 @@ this is the post-bay-sale rule:
 	say "You have money, and you are ready for a sale, and you get it. Unfortunately, though you were expecting a nice big ship, you get something a little humbler, namely a We-Craft Weak Raft. It seems sturdy enough, though, and it does have a sail.[paragraph break]You christen it with the base ale, and the bottle fragments shatter and float away in the water.";
 	quid-reduce 2;
 	moot base ale;
+	move We Craft Weak Raft to lobe end;
 	reveal Storm Isle to north;
 
 section storm isle scoring
