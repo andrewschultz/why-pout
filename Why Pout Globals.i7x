@@ -95,6 +95,8 @@ sco-plan-tracker is a truth state that varies.
 
 sco-tall-cake is a truth state that varies.
 
+sco-treat-all is a truth state that varies.
+
 Why Pout Globals ends here.
 
 ---- DOCUMENTATION ----

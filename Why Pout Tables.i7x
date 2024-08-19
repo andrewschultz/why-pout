@@ -38,6 +38,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "mensch"	"elf"	--	--	false	true	true	false	storm isle	pre-mensch-elf rule	post-mensch-elf rule	--	--
 "tree"	"small"	--	--	false	true	true	false	trees mall	pre-tree-small rule	post-tree-small rule	--	--
 "tall"	"cake"	--	--	false	true	true	false	trees mall	pre-tall-cake rule	post-tall-cake rule	--	--
+"treat"	"all"	--	--	false	true	true	false	trees mall	pre-treat-all rule	post-treat-all rule	--	--
 "gnome"	"old"	--	--	false	true	true	false	keepiller	pre-gnome-old rule	post-gnome-old rule	--	--
 "rogue"	"old"	--	--	false	true	true	false	keepiller	pre-rogue-old rule	post-rogue-old rule	--	--
 "manna"	"curb|kerb"	--	--	false	true	true	false	keepiller	pre-manna-curb rule	post-manna-curb rule	--	--
@@ -298,7 +299,26 @@ this is the post-tall-cake rule:
 	now sco-tall-cake is true;
 	say "All this preparing food means you don't talk a bit, and as a bonus, your talk-ache is gone.[paragraph break]But now where to eat the cake?";
 	moot talk ache;
+	moot manna;
 	now player has tall cake;
+
+section trees mall scoring
+
+a wordtwisting rule (this is the pre-treat-all rule):
+	if player is not in trees mall, unavailable;
+	if tree tall is not in trees mall, unavailable;
+	if player does not have tall cake:
+		vcp "You don't have something to treat your companions with!";
+		not-yet;
+	if sco-treat-all is true:
+		vcal "You already shared treats!";
+		already-done;
+	ready;
+
+this is the post-treat-all rule:
+	now sco-treat-all is true;
+	say "Well, that felt good. You trade more ideas while chatting. You think you have about everything figured out, now.";
+	moot tall cake;
 
 section hype lane scoring
 
