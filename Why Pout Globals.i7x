@@ -87,6 +87,8 @@ sco-knife-right is a truth state that varies.
 
 sco-tree-small is a truth state that varies.
 
+sco-mensch-elf is a truth state that varies.
+
 Why Pout Globals ends here.
 
 ---- DOCUMENTATION ----

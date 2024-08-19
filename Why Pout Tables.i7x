@@ -35,6 +35,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "bay"	"sail|sale"	--	--	false	true	true	false	lobe end	pre-bay-sale rule	post-bay-sale rule	--	--
 "store"	"mile"	--	--	false	true	true	false	storm isle	pre-store-mile rule	post-store-mile rule	--	--
 "mice"	"tall"	--	--	false	true	true	false	storm isle	pre-mice-tall rule	post-mice-tall rule	--	--
+"mensch"	"elf"	--	--	false	true	true	false	storm isle	pre-mensch-elf rule	post-mensch-elf rule	--	--
 "tree"	"small"	--	--	false	true	true	false	trees mall	pre-tree-small rule	post-tree-small rule	--	--
 "gnome"	"old"	--	--	false	true	true	false	keepiller	pre-gnome-old rule	post-gnome-old rule	--	--
 "rogue"	"old"	--	--	false	true	true	false	keepiller	pre-rogue-old rule	post-rogue-old rule	--	--
@@ -245,6 +246,19 @@ this is the post-mice-tall rule:
 	say "You look into the stall and hear chittering noises. Wait--there's something behind the wall! It's a bit easier to thud through on your side (a human's hands work better for that) and out come some mice, tall. They're tall for mice, though they really only come up above your knee.";
 	move mice tall to Storm Isle;
 	moot my stall;
+
+a wordtwisting rule (this is the pre-mensch-elf rule):
+	if player is not in storm isle and men shelf is not in storm isle, unavailable;
+	if sco-mensch-elf is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the post-mensch-elf rule:
+	now sco-mensch-elf is true;
+	say "Hooray! You figured what to do! You get a point!";
+	move mensch elf to storm isle;
+	now mensch elf is friendly;
 
 section trees mall scoring
 

@@ -14,7 +14,7 @@ test w3 with "grow star/n/wool frock/hide out/d/boost role/u/low door/in/well ow
 
 test w4 with "key pillar/w/gnome old/rogue old/s/knife right/e".
 
-test w5 with "s/grow vial/n/e/low bend/bay sale/n/store mile/mice tall/s/w".
+test w5 with "s/grow vial/n/e/low bend/bay sale/n/store mile/mensch elf/mice tall/s/w".
 
 test w6 with "n/low door/in/well own/summer chant/bile oh/whee lone/oh flyer/out/s".
 

@@ -223,6 +223,14 @@ section mice tall
 
 the mice tall are a plural-named followers. printed name is "mice (tall)". description is "Well, they're tall for mice. But they make up enough numbers to be pretty effective in a skirmish, if need be.".
 
+chapter men shelf
+
+the MEN shelf is a thing. "A MEN shelf sits here, barren. Which may be a good thing--there's no appalling stuff to buy. Or a bad thing--everything is in high demand."
+
+section mensch elf
+
+the mensch elf is a follower. description is "Smiling and ready to help."
+
 book Trees Mall
 
 Trees Mall is a room in universal. "This is a withered, run-down former mall that had the ceiling blow off. It's walled with pictures of large, but fake, trees. You can only go back [b]SOUTH[r]."
