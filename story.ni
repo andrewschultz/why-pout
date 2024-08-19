@@ -144,6 +144,14 @@ section rogue old
 
 the rogue old is a follower. printed name is "rogue (old)".
 
+chapter manic herb
+
+the manic herb is a thing in KeepIller. "There's a bunch of manic herb here[if sco-manna-curb is true] the mensch elf sifted through[else]. You don't know a lot about it, other than that some is really poisonous and some is okay. There's so much, perhaps it's hiding something[end if]. "
+
+chapter manna
+
+the manna is a thing. description is "Apparently, manna is supposed to be tasty. It looks sort of dull. Maybe it can be made into something cool. You don't know what."
+
 book Nigh Fright
 
 Nigh Fright is a room in Universal. it is south of KeepIller. "The only way back is east. You're lucky you have friends here to support you, or you'd be running away like crazy. You sense you'd better get what you want here, then get out."

@@ -39,6 +39,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "tree"	"small"	--	--	false	true	true	false	trees mall	pre-tree-small rule	post-tree-small rule	--	--
 "gnome"	"old"	--	--	false	true	true	false	keepiller	pre-gnome-old rule	post-gnome-old rule	--	--
 "rogue"	"old"	--	--	false	true	true	false	keepiller	pre-rogue-old rule	post-rogue-old rule	--	--
+"manna"	"curb|kerb"	--	--	false	true	true	false	keepiller	pre-manna-curb rule	post-manna-curb rule	--	--
 "knife"	"right"	--	--	false	true	true	false	nigh fright	pre-knife-right rule	post-knife-right rule	--	--
 "were"	"meetin"	--	--	false	true	true	false	worm eaten	pre-were-meetin rule	post-were-meetin rule	--	--
 "my"	"corps"	--	--	false	true	true	false	worm eaten	pre-my-corps rule	post-my-corps rule	--	--
@@ -513,6 +514,21 @@ to quid-reduce (nu - a number):
 	decrease current-quid by nu;
 	if current-quid is 0:
 		say "[line break]Well, easy come, easy go. You're pretty sure you've visited everywhere and found everyone who might need money.";
+
+a wordtwisting rule (this is the pre-manna-curb rule):
+	if player is not in keepiller, unavailable;
+	if sco-mensch-elf is false:
+		vcp "Perhaps there is a lot of good stuff beneath the manic herb, but you don't have the specialized knowledge to figure it out.";
+		not-yet;
+	if sco-manna-curb is true:
+		vcal "You already found enough manna beneath the manic herb!";
+		already-done;
+	ready;
+
+this is the post-manna-curb rule:
+	now sco-manna-curb is true;
+	say "You suspect there is manna beneath the manic herb, but you have no clue how to find it. Thankfully, the mensch elf steps up. You wind up with a lot of manna, whatever that is!";
+	now player has manna;
 
 section nigh fright scoring
 
