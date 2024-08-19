@@ -92,7 +92,7 @@ a wordtwisting rule (this is the pre-pole-east rule):
 this is the post-pole-east rule:
 	now sco-pole-east is true;
 	say "Ah, yes. It makes sense. You find the pole. Strangely, there's just a single switch to flip. And even more strangely, the switch you flip causes the pole to revert into the ground. Yay!";
-	open-psg east and Lobe End;
+	reveal Lobe End to east;
 
 a wordtwisting rule (this is the pre-shore-trail rule):
 	if short rail is off-stage or player is not in NaffHaze, unavailable;
@@ -106,7 +106,7 @@ this is the post-shore-trail rule:
 	say "There must be more to the short rail than you see. And you start tracing where it is, where it can be, where it should go. You find something to dig up. It's ... surprisingly malleable. You have nothing else to do, anyway. Soon it feels like pulling cable from a ground. It's tough, since you can't see around, but indeed, the short rail does lead to a shore trail that leads south.";
 	moot short rail;
 	move shore trail to NaffHaze;
-	open-psg south and NoNotion;
+	reveal NoNotion to south;
 
 a wordtwisting rule (this is the pre-grow-star rule):
 	if player is not in NaffHaze and gross tar is not in NaffHaze, unavailable;
@@ -116,7 +116,7 @@ this is the post-grow-star rule:
 	now sco-grow-star is true;
 	say "You look at the gross tar, and you hope for a star in the sky to become brighter. It does, and clearly some of the tar is goopier than some of the other tar. You see a way to the north, and after you do, the tar isn't as relevant any more.";
 	moot gross tar;
-	open-psg north and Wolf Rock;
+	reveal Wolf Rock to north;
 
 a wordtwisting rule (this is the pre-wipe-out rule):
 	if sco-wipe-out is true:
@@ -165,7 +165,7 @@ a wordtwisting rule (this is the pre-hide-out rule):
 this is the post-hide-out rule:
 	now sco-hide-out is true;
 	say "It's easy enough to say you should doubt yourself less. I mean, you'd feel stupid doubting it. But there's always a reason not to. Still, you involuntarily start a mantra: 'Fine, doubt? Find out!'[paragraph break]And what do you know? You find a hideout below!";
-	open-psg down and hideout;
+	reveal hideout to down;
 
 a wordtwisting rule (this is the pre-low-door rule):
 	if player is not in Wolf Rock, unavailable;
@@ -177,7 +177,7 @@ a wordtwisting rule (this is the pre-low-door rule):
 this is the post-low-door rule:
 	now sco-low-door is true;
 	say "The lode and the ore are tough to shift around, but beneath one of the piles, you actually do find a low door. Hooray!";
-	open-psg inside and We Loan;
+	reveal We Loan to inside;
 
 section lobe end scoring
 
@@ -191,7 +191,7 @@ a wordtwisting rule (this is the pre-low-bend rule):
 this is the post-low-bend rule:
 	now sco-low-bend is true;
 	say "No, wait, there is a way out, or there can be. If you work your way down to the north like so ... there you go.";
-	open-psg north and Storm Isle;
+	reveal Storm Isle to north;
 
 section storm isle scoring
 
@@ -273,7 +273,7 @@ a wordtwisting rule (this is the pre-key-pillar rule):
 this is the post-key-pillar rule:
 	now sco-key-pillar is true;
 	say "You look around the pillars for a key, since there's no flowerpot to hide it under. You find one, and you open the way west.";
-	open-psg west and KeepIller;
+	reveal KeepIller to west;
 
 section no notion scoring
 
