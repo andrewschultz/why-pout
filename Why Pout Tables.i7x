@@ -381,6 +381,12 @@ a wordtwisting rule (this is the pre-the-file rule):
 this is the post-the-file rule:
 	now sco-the-file is true;
 	say "You have a clue what isle to look through. The thief isle. You get The File.";
+	conditional-flier-mangle;
+
+to conditional-flier-mangle:
+	if flier-isle-score is 3:
+		say "[line break]You've visited all the locations in the flier. You crumple it up as if to throw it in a trash bin. The squid makes a gesture as if it wishes to gobble the flier. You're worried it might choke on the flier, as it did for the quid, but then -- well, the water washes the paper brochure down. Odd, but hooray for clearer inventory.";
+		moot flier;
 
 a wordtwisting rule (this is the pre-war-file rule):
 	abide by the three-isle rule;
@@ -395,6 +401,7 @@ a wordtwisting rule (this is the pre-war-file rule):
 this is the post-war-file rule:
 	now sco-war-file is true;
 	say "Hooray! You figured what to do! You get a point!";
+	conditional-flier-mangle;
 
 a wordtwisting rule (this is the pre-grow-vial rule):
 	abide by the three-isle rule;
@@ -407,6 +414,7 @@ this is the post-grow-vial rule:
 	now sco-grow-vial is true;
 	say "In the grove isle, you find a grow vial, which you take.";
 	now player has grow vial;
+	conditional-flier-mangle;
 
 chapter we loan scoring
 
