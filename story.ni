@@ -153,6 +153,10 @@ chapter Booze Troll
 
 the booze troll is a follower in Hideout. "A booze troll sulks sullenly here."
 
+chapter base ale
+
+the Base Ale is a thing. description is "Uck. It's a nasty color, really. But perhaps it will be useful."
+
 book We Loan
 
 We Loan is a room in universal. printed name is "[if sco-well-own is false]We Loan[else if sco-whee-lone is false]We'll Own[else if sco-oh-flyer is false]Whee, Lone?[else]Whee! [']Lone![end if]". "[if sco-oh-flyer is false]This area feels replete with the sort of double-talk all salesmen use. It will be tough to hang with all the way through, but if you do, maybe you'll get something out of it. [else]You've managed to navigte negotiations and wind up with ... a shiny new flyer! [end if]You can only go out here."

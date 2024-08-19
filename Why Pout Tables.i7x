@@ -32,6 +32,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "oh"	"flier|flyer"	--	--	false	true	true	false	we loan	pre-oh-flyer rule	post-oh-flyer rule	--	--
 "boost"	"role"	--	--	false	true	true	false	hideout	pre-boost-role rule	post-boost-role rule	--	--
 "low"	"bend"	--	--	false	true	true	false	lobe end	pre-low-bend rule	post-low-bend rule	--	--
+"bay"	"sail|sale"	--	--	false	true	true	false	lobe end	pre-bay-sale rule	post-bay-sale rule	--	--
 "store"	"mile"	--	--	false	true	true	false	storm isle	pre-store-mile rule	post-store-mile rule	--	--
 "mice"	"tall"	--	--	false	true	true	false	storm isle	pre-mice-tall rule	post-mice-tall rule	--	--
 "gnome"	"old"	--	--	false	true	true	false	keepiller	pre-gnome-old rule	post-gnome-old rule	--	--
@@ -64,9 +65,10 @@ a wordtwisting rule (this is the pre-boost-role rule):
 
 this is the post-boost-role rule:
 	now sco-boost-role is true;
-	say "You talk with the booze troll for a bit. They seem not to know who they are, and that gives you something in common with them. You begin chatting with them. You have a friend now.";
+	say "You talk with the booze troll for a bit. They seem not to know who they are, and that gives you something in common with them. They don't want to be a lousy boozer all their life. They are sick of drinking Base Ale.[paragraph break]You begin chatting with them. You mention you've been having an adventure, and they'd sort of like one, too. They hand you a bottle of Base Ale as thanks. Not that they want you to go down their road. But it might be useful in bartering.";
 	move booze troll to location of player;
 	now booze troll is friendly;
+	now player has Base Ale;
 
 section eh raw air aww scoring
 
@@ -190,7 +192,25 @@ a wordtwisting rule (this is the pre-low-bend rule):
 
 this is the post-low-bend rule:
 	now sco-low-bend is true;
-	say "No, wait, there is a way out, or there can be. If you work your way down to the north like so ... there you go.";
+	say "No, wait, there is a bit more to all this. If you work your way down a bit, well, there's a body of water. Which you can't cross at the moment, but maybe you'll figure a way.";
+
+section lobe end scoring
+
+a wordtwisting rule (this is the pre-bay-sale rule):
+	if player does not have base ale, unavailable;
+	if player is in NoNotion:
+		vcp "[if sco-known-ocean is true]There's water here, but it's much more than a bay[else]You can't make out what sort of body of water is here. Well, not yet[end if].";
+		not-yet;
+	if sco-six-quid is false:
+		vcp "You realize that, in order to participate in a bay sale for a bay sail, you need some form of currency. You don't have that yet.";
+		not-yet;
+	ready;
+
+this is the post-bay-sale rule:
+	now sco-bay-sale is true;
+	say "You have money, and you are ready for a sale, and you get it. Unfortunately, though you were expecting a nice big ship, you get something a little humbler, namely a We-Craft Weak Raft. It seems sturdy enough, though, and it does have a sail.[paragraph break]You christen it with the base ale, and the bottle fragments shatter and float away in the water.";
+	quid-reduce 2;
+	moot base ale;
 	reveal Storm Isle to north;
 
 section storm isle scoring

@@ -81,6 +81,8 @@ sco-rogue-old is a truth state that varies.
 
 sco-wool-frock is a truth state that varies.
 
+sco-bay-sale is a truth state that varies.
+
 Why Pout Globals ends here.
 
 ---- DOCUMENTATION ----
