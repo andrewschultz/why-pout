@@ -44,6 +44,9 @@ volume combo numbers
 to decide which number is init-exits:
 	decide on (boolval of sco-shore-trail);
 
+to decide which number is flier-isle-score:
+	decide on (boolval of sco-grow-vial) + (boolval of sco-the-file) + (boolval of sco-war-file);
+
 Why Pout Definitions ends here.
 
 ---- DOCUMENTATION ----

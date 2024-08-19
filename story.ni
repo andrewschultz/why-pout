@@ -169,7 +169,16 @@ the oaf liar is a singular-named thing.
 
 section flier
 
-the flier is a thing. "The flier advertises places to go: a wharf isle, a thief isle, and a grove isle."
+the flier is a thing. "The flier advertises places to go: a wharf isle, a thief isle, and a grove isle, each of which may hold odd treasures. It contains pretty clear directions, too. The only thing it lacks is where the directions start from.". understand "flyer" as flier.
+
+report examining the flier:
+	if flier-isle-score is 0:
+		say "You haven't found a way to get to any of the islands yet.";
+	else if flier-isle-score is 1:
+		say "So far you've only found [if sco-grow-vial is true]Grove[else if sco-war-file is true]Wharf[else]Thief[end if] Isle.";
+	else if flier-isle-score is 2:
+		say "You still need to find [if sco-grow-vial is false]Grove[else if sco-war-file is false]Wharf[else]Thief[end if] Isle.";
+	continue the action;
 
 book Lobe End
 
