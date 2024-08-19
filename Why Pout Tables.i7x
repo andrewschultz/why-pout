@@ -35,6 +35,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "bay"	"sail|sale"	--	--	false	true	true	false	lobe end	pre-bay-sale rule	post-bay-sale rule	--	--
 "store"	"mile"	--	--	false	true	true	false	storm isle	pre-store-mile rule	post-store-mile rule	--	--
 "mice"	"tall"	--	--	false	true	true	false	storm isle	pre-mice-tall rule	post-mice-tall rule	--	--
+"tree"	"small"	--	--	false	true	true	false	trees mall	pre-tree-small rule	post-tree-small rule	--	--
 "gnome"	"old"	--	--	false	true	true	false	keepiller	pre-gnome-old rule	post-gnome-old rule	--	--
 "rogue"	"old"	--	--	false	true	true	false	keepiller	pre-rogue-old rule	post-rogue-old rule	--	--
 "knife"	"right"	--	--	false	true	true	false	nigh fright	pre-knife-right rule	post-knife-right rule	--	--
@@ -241,6 +242,21 @@ this is the post-mice-tall rule:
 	move mice tall to Storm Isle;
 	moot my stall;
 
+section trees mall scoring
+
+a wordtwisting rule (this is the pre-tree-small rule):
+	if player is not in trees mall, unavailable;
+	if sco-tree-small is true:
+		vcal "You already got a tree (small) to grow!";
+		already-done;
+	ready;
+
+this is the post-tree-small rule:
+	now sco-tree-small is true;
+	say "Amidst all the fake trees, an actual organic small tree grows. You're a bit disappointed, but you realize you maybe shouldn't have expected much with so little letter-shuffling.";
+	move tree small to Trees Mall;
+	grow-the-tree;
+
 section hype lane scoring
 
 a wordtwisting rule (this is the pre-pry-stalk rule):
@@ -367,7 +383,8 @@ a wordtwisting rule (this is the pre-grow-vial rule):
 
 this is the post-grow-vial rule:
 	now sco-grow-vial is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "In the grove isle, you find a grow vial, which you take.";
+	now player has grow vial;
 
 chapter we loan scoring
 

@@ -209,7 +209,7 @@ Lobe End is a room in universal. "[if sco-low-bend is false]This lobe of land ap
 
 book Storm Isle
 
-Storm Isle is a room in universal. "[if sco-store-mile is true]Well, you're in a sort of shopping mall now[else]On this storm isle, it's always rainy. It'd be nice to have some shelter inside.[end if]"
+Storm Isle is a room in universal. "[if sco-store-mile is true]Well, you're in a sort of shopping mall now. You can see a passage leading north[else]On this storm isle, it's always rainy. It'd be nice to have some shelter inside[end if]."
 
 chapter my stall
 
@@ -219,6 +219,28 @@ section mice tall
 
 the mice tall are a plural-named followers. printed name is "mice (tall)". description is "Well, they're tall for mice. But they make up enough numbers to be pretty effective in a skirmish, if need be.".
 
+book Trees Mall
+
+Trees Mall is a room in universal. "This is a withered, run-down former mall that had the ceiling blow off. It's walled with pictures of large, but fake, trees. You can only go back [b]SOUTH[r]."
+
+to grow-the-tree:
+	if player has grow vial and tree small is in Trees Mall:
+		say "[line break]But wait! You can use the grow vial! It makes the tree (small) into a tree (tall)!";
+		moot tree small;
+		move tree tall to Trees Mall;
+
+after printing the locale description for Trees Mall:
+	grow-the-tree;
+	continue the action;
+
+chapter tree small
+
+the tree small is a thing. "A tree (small) grows here, or tries to, at least. It deserves to be bigger.". description is "It's a nice tree, but it's a bit small."
+
+chapter tree small
+
+the tree tall is a thing. "A tree (tall) has grown here, thanks to you. It feels very welcoming.". description is "It's a nice tree, but it's a bit small."
+
 book no notion
 
 NoNotion is a room in universal. "[if sco-known-ocean is false]You simply have no notion what lies beyond here[else]It looks like there is an ocean, or some large body of water, and maybe some islands in the distance. They are too far to swim to[end if]. You can go back north to where you started.". printed name of nonotion is "[if sco-known-ocean is false]No Notion[else]Known Ocean[end if]".
@@ -226,6 +248,10 @@ NoNotion is a room in universal. "[if sco-known-ocean is false]You simply have n
 chapter sick squid
 
 the sick squid is a thing. "A [if sco-six-quid is true]formerly (thanks to you) [end if]sick squid trundles about in the water here.". description is "[if sco-six-quid is false]It seems like it's half choking on something, not enough to strangle it, but enough to make it really uncomfortable[else]It looks back at you. Squids don't smile, but if it could, it would[end if]."
+
+chapter grow vial
+
+the grow vial is a thing. description is "It says it will help something grow, but it's potentially toxic to mammals."
 
 volume endgame
 

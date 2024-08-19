@@ -85,6 +85,8 @@ sco-bay-sale is a truth state that varies.
 
 sco-knife-right is a truth state that varies.
 
+sco-tree-small is a truth state that varies.
+
 Why Pout Globals ends here.
 
 ---- DOCUMENTATION ----
