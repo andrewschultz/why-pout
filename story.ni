@@ -148,9 +148,17 @@ chapter manic herb
 
 the manic herb is a thing in KeepIller. "There's a bunch of manic herb here[if sco-manna-curb is true] the mensch elf sifted through[else]. You don't know a lot about it, other than that some is really poisonous and some is okay. There's so much, perhaps it's hiding something[end if]. "
 
-chapter manna
+section manna
 
 the manna is a thing. description is "Apparently, manna is supposed to be tasty. It looks sort of dull. Maybe it can be made into something cool. You don't know what."
+
+chapter plant racker
+
+the plant racker is a thing in KeepIller. "A plant racker lies here, pretty much useless.". description is "It seems papery, broken beyond repair.".
+
+chapter plan tracker
+
+the plan tracker is a thing. "[if sco-war-file is true]You have notes for combat written in here[else]The plan tracker is currently blank, but maybe you can find plans for it[end if]."
 
 book Nigh Fright
 

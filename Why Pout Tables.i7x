@@ -40,6 +40,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "gnome"	"old"	--	--	false	true	true	false	keepiller	pre-gnome-old rule	post-gnome-old rule	--	--
 "rogue"	"old"	--	--	false	true	true	false	keepiller	pre-rogue-old rule	post-rogue-old rule	--	--
 "manna"	"curb|kerb"	--	--	false	true	true	false	keepiller	pre-manna-curb rule	post-manna-curb rule	--	--
+"plan"	"tracker"	--	--	false	true	true	false	keepiller	pre-plan-tracker rule	post-plan-tracker rule	--	--
 "knife"	"right"	--	--	false	true	true	false	nigh fright	pre-knife-right rule	post-knife-right rule	--	--
 "were"	"meetin"	--	--	false	true	true	false	worm eaten	pre-were-meetin rule	post-were-meetin rule	--	--
 "my"	"corps"	--	--	false	true	true	false	worm eaten	pre-my-corps rule	post-my-corps rule	--	--
@@ -384,6 +385,9 @@ this is the post-the-file rule:
 
 a wordtwisting rule (this is the pre-war-file rule):
 	abide by the three-isle rule;
+	if sco-plan-tracker is false:
+		vcp "A war file might be useful, but you'd have no way to organize the information right now.";
+		not-yet;
 	if sco-war-file is true:
 		vcal "You already got the war file!";
 		already-done;
@@ -529,6 +533,16 @@ this is the post-manna-curb rule:
 	now sco-manna-curb is true;
 	say "You suspect there is manna beneath the manic herb, but you have no clue how to find it. Thankfully, the mensch elf steps up. You wind up with a lot of manna, whatever that is!";
 	now player has manna;
+
+a wordtwisting rule (this is the pre-plan-tracker rule):
+	if player is not in keepiller or plant racker is not touchable, unavailable;
+	ready;
+
+this is the post-plan-tracker rule:
+	now sco-plan-tracker is true;
+	say "Wow! That was ... surprisingly simple. You find a rather new-looking plan tracker behind the plant racker, which crumbles to dust as you push it aside.";
+	moot plant racker;
+	now player has plan tracker;
 
 section nigh fright scoring
 
