@@ -208,6 +208,7 @@ a wordtwisting rule (this is the pre-bay-sale rule):
 	if player is in NoNotion:
 		vcp "[if sco-known-ocean is true]There's water here, but it's much more than a bay[else]You can't make out what sort of body of water is here. Well, not yet[end if].";
 		not-yet;
+	if player is not in lobe end, unavailable;
 	if sco-six-quid is false:
 		vcp "You realize that, in order to participate in a bay sale for a bay sail, you need some form of currency. You don't have that yet.";
 		not-yet;
@@ -238,6 +239,9 @@ this is the post-store-mile rule:
 
 a wordtwisting rule (this is the pre-mice-tall rule):
 	if player is not in storm isle, unavailable;
+	if sco-gnome-old is false:
+		vcp "Maybe there are mice behind there, but you can't figure a way to locate them. It requires some sort of clever inhuman perception, you'd think.";
+		not-yet;
 	if sco-mice-tall is true:
 		vcal "You already found the mice and destroyed the stall!";
 		already-done;
@@ -245,8 +249,8 @@ a wordtwisting rule (this is the pre-mice-tall rule):
 
 this is the post-mice-tall rule:
 	now sco-mice-tall is true;
-	say "You look into the stall and hear chittering noises. Wait--there's something behind the wall! It's a bit easier to thud through on your side (a human's hands work better for that) and out come some mice, tall. They're tall for mice, though they really only come up above your knee.";
-	move mice tall to Storm Isle;
+	say "You look into the stall and shrug your shoulders. Then the gnome (old) steps in and notes they hear something. Chittering noises! The gnome chitters back.[paragraph break]It takes a lot of negotiating, but you find where the mice are stuck. You and the gnome thud through and out come some mice, tall. They're tall for mice, though they really only come up above your knee.";
+	befriend mice tall;
 	moot my stall;
 
 a wordtwisting rule (this is the pre-mensch-elf rule):
