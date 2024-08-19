@@ -37,6 +37,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "mice"	"tall"	--	--	false	true	true	false	storm isle	pre-mice-tall rule	post-mice-tall rule	--	--
 "mensch"	"elf"	--	--	false	true	true	false	storm isle	pre-mensch-elf rule	post-mensch-elf rule	--	--
 "tree"	"small"	--	--	false	true	true	false	trees mall	pre-tree-small rule	post-tree-small rule	--	--
+"tall"	"cake"	--	--	false	true	true	false	trees mall	pre-tall-cake rule	post-tall-cake rule	--	--
 "gnome"	"old"	--	--	false	true	true	false	keepiller	pre-gnome-old rule	post-gnome-old rule	--	--
 "rogue"	"old"	--	--	false	true	true	false	keepiller	pre-rogue-old rule	post-rogue-old rule	--	--
 "manna"	"curb|kerb"	--	--	false	true	true	false	keepiller	pre-manna-curb rule	post-manna-curb rule	--	--
@@ -279,6 +280,25 @@ this is the post-tree-small rule:
 	say "Amidst all the fake trees, an actual organic small tree grows. You're a bit disappointed, but you realize you maybe shouldn't have expected much with so little letter-shuffling.";
 	move tree small to Trees Mall;
 	grow-the-tree;
+
+a wordtwisting rule (this is the pre-tall-cake rule):
+	if player does not have talk ache, unavailable;
+	if player does not have manna and player has knife:
+		vcp "You need ingredients to make a cake.";
+		not-yet;
+	if player has manna and player does not have knife:
+		vcp "You need some sort of utensil to process the manna.";
+		not-yet;
+	if player does not have manna and player does not have knife:
+		vcp "You have neither the utensils nor the ingredients to make a cake.";
+		not-yet;
+	ready;
+
+this is the post-tall-cake rule:
+	now sco-tall-cake is true;
+	say "All this preparing food means you don't talk a bit, and as a bonus, your talk-ache is gone.[paragraph break]But now where to eat the cake?";
+	moot talk ache;
+	now player has tall cake;
 
 section hype lane scoring
 
