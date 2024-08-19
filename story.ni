@@ -164,6 +164,10 @@ chapter lode ore
 
 the lode ore is scenery in Wolf Rock. "[if sco-low-door is true]You doubt there is anything more to find[else]Maybe it is hiding something[end if]."
 
+section low door
+
+the low door is scenery. "You can just barely fit through it, now the tall mice helped you to find and clear it."
+
 book Hideout
 
 Hideout is a room in universal. "You can only go back [b]UP[r]. It wouldn't be a very good hideout if you had too many places to sneak around."
@@ -192,7 +196,7 @@ the oaf liar is a singular-named thing.
 
 section flier
 
-the flier is a thing. "The flier advertises places to go: a wharf isle, a thief isle, and a grove isle, each of which may hold odd treasures. It contains pretty clear directions, too. The only thing it lacks is where the directions start from.". understand "flyer" as flier.
+the flier is a thing. description is "The flier advertises places to go: a wharf isle, a thief isle, and a grove isle, each of which may hold odd treasures. It contains pretty clear directions, too. The only thing it lacks is where the directions start from.". understand "flyer" as flier.
 
 report examining the flier:
 	if flier-isle-score is 0:

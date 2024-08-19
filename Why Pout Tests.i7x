@@ -10,13 +10,15 @@ chapter new-tests
 
 test w2 with "pole east/shore trail/s/known ocean/six quid/n". [get the money]
 
-test w3 with "grow star/n/wool frock/low door/hide out/d/boost role/u/low door/in/well own/summer chant/bile oh/whee lone/i/oh flyer/i/out/s".
+test w3 with "grow star/n/wool frock/hide out/d/boost role/u/low door/in/well own/summer chant/bile oh/whee lone/i/oh flyer/i/out/s".
 
 test w4 with "key pillar/w/gnome old/rogue old/s/knife right/e".
 
-test w5 with "s/grow vial/n/e/low bend/bay sale/n/store mile/n/tree small".
+test w5 with "s/grow vial/n/e/low bend/bay sale/n/store mile/mice tall/s/w".
 
-test a with "test w1/test w2/test w3/test w4/test w5".
+test w6 with "n/low door/in/well own/summer chant/bile oh/whee lone/oh flyer/out/s".
+
+test a with "test w1/test w2/test w3/test w4/test w5/test w6".
 
 chapter old-tests
 
@@ -77,9 +79,15 @@ to track-criticals (ts - a truth state):
 	if any-yet is false:
 		say "Got all [critopt of ts] points."
 
+to track-thinks:
+	repeat through table of main oronyms:
+		if think-cue entry is true and idid entry is false:
+			say "Tried [b][w1 entry in upper case] [w2 entry in upper case][r] but wasn't ready yet.";
+
 carry out wling:
 	track-criticals true;
 	track-criticals false;
+	track-thinks;
 	the rule succeeds;
 
 

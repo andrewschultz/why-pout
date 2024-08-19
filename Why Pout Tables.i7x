@@ -173,6 +173,9 @@ this is the post-hide-out rule:
 
 a wordtwisting rule (this is the pre-low-door rule):
 	if player is not in Wolf Rock, unavailable;
+	if sco-mice-tall is false:
+		vcp "Maybe there's a low door beneath the lode ore, but you don't have the ability to scrabble and scrape down through to find it[if number of friendly followers > 0], and nobody around can help you[end if].";
+		not-yet;
 	if sco-low-door is true:
 		vcal "You already found a low door in this mess!";
 		already-done;
@@ -228,6 +231,7 @@ this is the post-store-mile rule:
 	now sco-store-mile is true;
 	say "The storms let up. It's not such a big isle after all, but it does turn out to hold a whole lot of stores. There's even a stall labeled MY STALL.";
 	move my stall to storm isle;
+	reveal Trees Mall to north;
 
 a wordtwisting rule (this is the pre-mice-tall rule):
 	if player is not in storm isle, unavailable;
