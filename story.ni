@@ -132,7 +132,7 @@ there is a thing called no mold. It is in Keep Iller.
 
 section gnome old
 
-the gnome old is a follower.
+the gnome old is a follower. printed name is "gnome (old)".
 
 chapter row gold
 
@@ -140,7 +140,7 @@ there is a thing called row gold. printed name is "row (gold)".
 
 section rogue old
 
-the rogue old is a follower.
+the rogue old is a follower. printed name is "rogue (old)".
 
 book Nigh Fright
 
@@ -152,7 +152,7 @@ the knife right is a thing.
 
 book Wolf Rock
 
-Wolf Rock is a room in universal. "A big rock in the shape of a wolf looms impressively, blocking all passages except back south. [if sco-hide-out is true]You can also go [b]DOWN[r] into the hideout you found[else]You feel high doubt here you can go anywhere else[end if].[paragraph break]There's a huge pile of lode ore here, too, [if sco-low-door is true]and you found a low door inside it[else]and perhaps there's something in it[end if].".
+Wolf Rock is a room in universal. "A big rock in the shape of a wolf looms impressively, blocking all passages except back south. [if sco-hide-out is true]You can also go [b]DOWN[r] into the hideout you found[else]You feel high doubt here you can go anywhere else[end if].[paragraph break]There's a huge pile of lode ore here, too, [if sco-low-door is true]and you found a low door in it that leads [b]INSIDE[r][else]and perhaps there's something in it[end if].".
 
 chapter wool frock
 
@@ -164,7 +164,7 @@ the lode ore is scenery in Wolf Rock. "[if sco-low-door is true]You doubt there 
 
 book Hideout
 
-Hideout is a room in universal. "You can only go back up. It wouldn't be a very good hideout if you had too many places to sneak around."
+Hideout is a room in universal. "You can only go back [b]UP[r]. It wouldn't be a very good hideout if you had too many places to sneak around."
 
 chapter Booze Troll
 
@@ -176,7 +176,7 @@ the Base Ale is a thing. description is "Uck. It's a nasty color, really. But pe
 
 book We Loan
 
-We Loan is a room in universal. printed name is "[if sco-well-own is false]We Loan[else if sco-whee-lone is false]We'll Own[else if sco-oh-flyer is false]Whee, Lone?[else]Whee! [']Lone![end if]". "[if sco-oh-flyer is false]This area feels replete with the sort of double-talk all salesmen use. It will be tough to hang with all the way through, but if you do, maybe you'll get something out of it. [else]You've managed to navigte negotiations and wind up with ... a shiny new flyer! [end if]You can only go out here."
+We Loan is a room in universal. printed name is "[if sco-well-own is false]We Loan[else if sco-whee-lone is false]We'll Own[else if sco-oh-flyer is false]Whee, Lone?[else]Whee! [']Lone![end if]". "[if sco-oh-flyer is false]This area feels replete with the sort of double-talk all salesmen use. It will be tough to hang with all the way through, but if you do, maybe you'll get something out of it. [else]You've managed to navigte negotiations and wind up with ... a shiny new flyer! [end if]You can only go back [b]OUT[r] here."
 
 chapter some merchant
 
