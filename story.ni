@@ -115,7 +115,16 @@ the keep iller is a thing. "A keep, iller, rises to the west[if sco-key-pillar i
 
 book Keep Iller
 
-KeepIller is a room in Universal. printed name is "Keep (Iller)". "This keep has seen better days. You can go back east."
+KeepIller is a room in Universal. printed name is "Keep (Iller)". "This keep has seen better days. You can go back east. You also sense something fearsome from a passage south."
+
+check going south in KeepIller:
+	if sco-knife-right is true, say "You don't need or want to go back there." instead;
+	if number of friendly followers is 0:
+		say "You try to go west, but with no support, you're just too scared." instead;
+	else if number of friendly followers is 1:
+		say "Even with [the random friendly follower]'s support, you are still terrified of what is west. You may need just a bit more." instead;
+	else:
+		say "You get over your fears with a little help from your friends.";
 
 chapter no mold
 
@@ -132,6 +141,14 @@ there is a thing called row gold. printed name is "row (gold)".
 section rogue old
 
 the rogue old is a follower.
+
+book Nigh Fright
+
+Nigh Fright is a room in Universal. it is south of KeepIller. "The only way back is east. You're lucky you have friends here to support you, or you'd be running away like crazy. You sense you'd better get what you want here, then get out."
+
+chapter knife right
+
+the knife right is a thing.
 
 book Wolf Rock
 

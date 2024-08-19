@@ -37,6 +37,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "mice"	"tall"	--	--	false	true	true	false	storm isle	pre-mice-tall rule	post-mice-tall rule	--	--
 "gnome"	"old"	--	--	false	true	true	false	keepiller	pre-gnome-old rule	post-gnome-old rule	--	--
 "rogue"	"old"	--	--	false	true	true	false	keepiller	pre-rogue-old rule	post-rogue-old rule	--	--
+"knife"	"right"	--	--	false	true	true	false	nigh fright	pre-knife-right rule	post-knife-right rule	--	--
 "were"	"meetin"	--	--	false	true	true	false	worm eaten	pre-were-meetin rule	post-were-meetin rule	--	--
 "my"	"corps"	--	--	false	true	true	false	worm eaten	pre-my-corps rule	post-my-corps rule	--	--
 "cease"	"cull"	--	--	false	true	true	false	doom end	pre-cease-cull rule	post-cease-cull rule	--	--
@@ -477,6 +478,18 @@ to quid-reduce (nu - a number):
 	decrease current-quid by nu;
 	if current-quid is 0:
 		say "[line break]Well, easy come, easy go. You're pretty sure you've visited everywhere and found everyone who might need money.";
+
+section nigh fright scoring
+
+a wordtwisting rule (this is the pre-knife-right rule):
+	if player is not in nigh fright, unavailable;
+	ready;
+
+this is the post-knife-right rule:
+	now sco-knife-right is true;
+	say "With your friends boosting your spirits, you look for a sacred/profane weapon. It turns up. Eerie howling begins. You hightail it out of there.";
+	now player has knife right;
+	drop-player-at KeepIller;
 
 section worm eaten scoring
 

@@ -12,7 +12,7 @@ test w2 with "pole east/shore trail/s/known ocean/six quid/n". [get the money]
 
 test w3 with "grow star/n/wool frock/low door/hide out/d/boost role/u/low door/in/well own/summer chant/bile oh/whee lone/i/oh flyer/i/out/s".
 
-test w4 with "key pillar/w/gnome old/rogue old".
+test w4 with "key pillar/w/gnome old/rogue old/s/knife right".
 
 test a with "test w1/test w2/test w3/test w4".
 
