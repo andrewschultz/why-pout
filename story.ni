@@ -151,7 +151,7 @@ the manic herb is a thing in KeepIller. "There's a bunch of manic herb here[if s
 
 section manna
 
-the manna is a thing. description is "Apparently, manna is supposed to be tasty. It looks sort of dull. Maybe it can be made into something cool. You don't know what."
+some manna is a singular-named thing. description is "Apparently, manna is supposed to be tasty. It looks sort of dull. Maybe it can be made into something cool. You don't know what.". indefinite article of manna is "some".
 
 chapter plant racker
 
@@ -159,7 +159,7 @@ the plant racker is a thing in KeepIller. "A plant racker lies here, pretty much
 
 chapter plan tracker
 
-the plan tracker is a thing. "[if sco-war-file is true]You have notes for combat written in here[else]The plan tracker is currently blank, but maybe you can find plans for it[end if]."
+the plan tracker is a thing. description is "[if sco-war-file is true]You have notes for combat written in here[else]The plan tracker is currently blank, but maybe you can find plans for it[end if]."
 
 book Nigh Fright
 
@@ -167,7 +167,7 @@ Nigh Fright is a room in Universal. it is south of KeepIller. "The only way back
 
 chapter knife right
 
-the knife right is a thing.
+the knife right is a thing. printed name is "knife (right)".
 
 book Wolf Rock
 
@@ -230,11 +230,11 @@ Lobe End is a room in universal. "[if sco-low-bend is false]This lobe of land ap
 
 chapter We Craft Weak Raft
 
-the We Craft Weak Raft is a thing. printed name is "We-Craft Weak Raft".
+the We Craft Weak Raft is a thing. printed name is "We-Craft Weak Raft". description is "Well, it isn't fancy, but [if storm isle is unvisited]it looks sturdy enough[else]it got you across the water with no problem[end if]."
 
 check going:
 	if ((room gone from is lobe end) and (room gone to is storm isle)) or ((room gone to is lobe end) and (room gone from is storm isle)):
-		say "You[if number of friendly followers > 0] and [the list of friendly followers][end if] make it across the water without incident.";
+		say "You[if number of friendly followers is 1] and [the random friendly follower][else if number of friendly followers > 1] and your [number of friendly followers in words] companions[else][end if] make it across the water without incident.";
 		move raft to room gone to;
 		follow-you;
 
