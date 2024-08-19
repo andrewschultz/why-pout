@@ -14,6 +14,10 @@ a follower can be unfriendly, friendly or donewith. a follower is usually unfrie
 
 a follower can be unchatted or chatted. a follower is usually unchatted.
 
+to befriend (f - a follower):
+	now f is friendly;
+	move f to location of player;
+
 definition: a follower (called fo) is leftbehind:
 	unless fo is friendly, no;
 	if fo is in location of player, no;

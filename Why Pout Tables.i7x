@@ -71,8 +71,7 @@ a wordtwisting rule (this is the pre-boost-role rule):
 this is the post-boost-role rule:
 	now sco-boost-role is true;
 	say "You talk with the booze troll for a bit. They seem not to know who they are, and that gives you something in common with them. They don't want to be a lousy boozer all their life. They are sick of drinking Base Ale.[paragraph break]You begin chatting with them. You mention you've been having an adventure, and they'd sort of like one, too. They hand you a bottle of Base Ale as thanks. Not that they want you to go down their road. But it might be useful in bartering.";
-	move booze troll to location of player;
-	now booze troll is friendly;
+	befriend booze troll;
 	now player has Base Ale;
 
 section eh raw air aww scoring
@@ -259,9 +258,8 @@ a wordtwisting rule (this is the pre-mensch-elf rule):
 
 this is the post-mensch-elf rule:
 	now sco-mensch-elf is true;
-	say "Hooray! You figured what to do! You get a point!";
-	move mensch elf to storm isle;
-	now mensch elf is friendly;
+	say "You knock about the MEN shelf a bit, unable to find anything. It's really a collection of shelves that you disassemble and reassemble. Eventually, you're about to give up, and it all collapses, taking a chunk of wall with it. Our pops a mensch elf, quite grateful you helped them escape.";
+	befriend mensch elf;
 
 section trees mall scoring
 
@@ -494,8 +492,8 @@ a wordtwisting rule (this is the pre-gnome-old rule):
 this is the post-gnome-old rule:
 	now sco-gnome-old is true;
 	say "A gnome, old, arrives. They offer to adventure with you, if you have suitable enough adventuring gear. As a matter of fact, you do. The wool frock works well.";
-	now gnome old is friendly;
-	move gnome old to keepiller;
+	befriend gnome old;
+	moot wool frock; [now gnome has wool frock?]
 
 a wordtwisting rule (this is the pre-rogue-old rule):
 	if player is not in keepiller, unavailable;
@@ -510,8 +508,7 @@ a wordtwisting rule (this is the pre-rogue-old rule):
 this is the post-rogue-old rule:
 	now sco-rogue-old is true;
 	say "A rogue, old, arrives. They mention they'd like to help you but, you know, the row (gold) needs maintenance. You offer to pay them three quid..";
-	now rogue old is friendly;
-	move rogue old to keepiller;
+	befriend rogue old;
 	quid-reduce 3;
 
 to quid-reduce (nu - a number):
