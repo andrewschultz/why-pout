@@ -52,6 +52,9 @@ to decide which number is init-exits:
 to decide which number is flier-isle-score:
 	decide on (boolval of sco-grow-vial) + (boolval of sco-the-file) + (boolval of sco-war-file);
 
+to decide which number is plane-dir-score:
+	decide on (boolval of sco-pole-east) + (boolval of sco-grow-star) + (boolval of sco-shore-trail) + (boolval of sco-key-pillar);
+
 Why Pout Definitions ends here.
 
 ---- DOCUMENTATION ----

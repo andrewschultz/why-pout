@@ -101,6 +101,7 @@ this is the post-pole-east rule:
 	now sco-pole-east is true;
 	say "Ah, yes. It makes sense. You find the pole. Strangely, there's just a single switch to flip. And even more strangely, the switch you flip causes the pole to revert into the ground. Yay!";
 	reveal Lobe End to east;
+	check-worm-eaten;
 
 a wordtwisting rule (this is the pre-shore-trail rule):
 	if short rail is off-stage or player is not in NaffHaze, unavailable;
@@ -115,6 +116,7 @@ this is the post-shore-trail rule:
 	moot short rail;
 	move shore trail to NaffHaze;
 	reveal NoNotion to south;
+	check-worm-eaten;
 
 a wordtwisting rule (this is the pre-grow-star rule):
 	if player is not in NaffHaze and gross tar is not in NaffHaze, unavailable;
@@ -125,6 +127,7 @@ this is the post-grow-star rule:
 	say "You look at the gross tar, and you hope for a star in the sky to become brighter. It does, and clearly some of the tar is goopier than some of the other tar. You see a way to the north, and after you do, the tar isn't as relevant any more.";
 	moot gross tar;
 	reveal Wolf Rock to north;
+	check-worm-eaten;
 
 a wordtwisting rule (this is the pre-wipe-out rule):
 	if sco-wipe-out is true:
@@ -374,6 +377,12 @@ this is the post-key-pillar rule:
 	now sco-key-pillar is true;
 	say "You look around the pillars for a key, since there's no flowerpot to hide it under. You find one, and you open the way west.";
 	reveal KeepIller to west;
+	check-worm-eaten;
+
+to check-worm-eaten:
+	if plane-dir-score is 4:
+		say "[line break]You've changed the landscape a lot ... enough that you hear a rumbling that has created a passage beneath.";
+		reveal Worm Eaten to down;
 
 section no notion scoring
 
