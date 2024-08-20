@@ -41,6 +41,10 @@ to follow-you:
 
 volume stubs
 
+to say here-in of (rm - a room): say "[if rm is location of player]here[else]in [rm][end if]"
+
+to say once-now of (ts - a truth state): say "[if ts is true]now[else]once[end if]"
+
 volume definitions
 
 definition: a direction (called d) is viable:
