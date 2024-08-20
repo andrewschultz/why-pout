@@ -58,61 +58,119 @@ Wolf Rock!
 
 You've done all you can here. Well, you could deal with high doubt, but let's get through the low door first. It requires a detour.
 
-> s
+>s
 
-> key pillar (1)
+>key pillar (1)
 
-> w
+>w
 
 Let's get some companions!
 
-> gnome old (1)
+>gnome old (1)
 
 The wool frock fits nicely on the gnome and is removed from your inventory.
 
-> rogue old (1)
+>rogue old (1)
 
 The six quid you found come in handy to get a second companion. And the next thing needs no prep.
 
-> plan tracker (1)
+>plan tracker (1)
 
-> s
+>s
 
-> knife right (1)
+>knife right (1)
 
 You've done all you can here. You need another companion to deal with the manic herb.
 
-> e
+>e
 
-High doubt.
+Oh my! A passage opens down! Let's get another pal for later. (Note to self: this can be moved to the first trip north to save the user a few turns.)
+
+>d
+
+>gaunt raider (1)
+
+>u
+
+>n
 
 >hide out (1)
 
 >d
 
-Okay, a booze troll here needs some self-esteem.
-
 >boost role (1)
+
+And another pal! The item they give you is more useful than their presence. Well, until the final fight.
+
+>u
+
+>s
+
+Okay, let's really explore the east.
 
 >e
 
-The lobe end appears to be the end, except it isn't.
-
 >low bend (1)
+
+Again, the money comes in handy. And you still have some left over!
+
+>bay sale (1)
+
+Alternately, sail is okay because, well, you get a sale of sorts.
 
 >n
 
-The storm isle is isolated! There's no way back!
+Storm isle! How to get shelter?
 
 >store mile (1)
 
-What to do with My Stall?
+Ditch the MEN shelf.
+
+>mensch elf (1)
+
+What's in MY STALL?
 
 >mice tall (1)
+
+You couldn't have gotten them without the gnome's wisdom. Now the mice (tall) can help you where you would've gotten stuck elsewhere.
 
 >s
 
 >w
+
+>n
+
+>low door (1)
+
+>in
+
+"We Loan" offers "financial services." Put the lie to that, so someone comes out to try to correct you.
+
+>well own (1)
+
+Some merchant.
+
+>summer chant (1)
+
+Now you were positive, you can go negative.
+
+>bile oh (1)
+
+Gloat about your solutide!
+
+>whee lone (1)
+
+Oops, no more solitude, but the oaf-liar has something.
+
+>oh flyer (1)
+
+Finally, the last of your money!
+
+>out
+
+>s
+
+========================================
 
 But you can visit the wharf isle!
 
