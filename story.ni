@@ -359,6 +359,10 @@ rule for supplying a missing noun when ting:
 
 check ting:
 	if noun is skull, say "It's the big fight. You need action, not talk." instead;
+	if noun is the player:
+		if sco-an-aim is false:
+			say "You feel too grumpy for positive self-talk. You mumble 'I molder. I'm older.'" instead;
+		say "You motivate yourself with 'Goal: earn? Go learn!'" instead;
 	if noun is not a follower, say "You don't get a response." instead;
 	if player has talk ache, say "That talk ache is a bit of a nuisance." instead;
 	if number of unchatted followers is 0, say "You've talked to everyone, but why not chat again?";
