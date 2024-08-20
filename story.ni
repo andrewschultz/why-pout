@@ -317,6 +317,14 @@ after printing the locale description of Worm Eaten when sco-were-meetin is true
 	say "You feel like your companions are just about ready to go. But you still need to say something, something that can only come uniquely inside of you, to establish what a great team you are.";
 	continue the action;
 
+chapter gone trader
+
+The gone traitor is a thing in Worm Eaten. "[one of]Someone comes out from the depths. They introduce themselves as the gone traitor, someone who cozied up to the bad guys and ditched their friends, then ditched the bad guys. And only recently they ran away, but how can they ask for forgiveness? Surely it just doesn't happen like this? Just one small change and you have a new identity? Rubbish![or]The gone traitor continues to mope about here, looking for someone who can help convince them they're not so awful.[stopping]"
+
+section gaunt raider
+
+the gaunt raider is a follower. description is "They still look disturbed by who they were."
+
 book Doom End
 
 Doom End is a room in universal. "Doom doom doom!"

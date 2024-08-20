@@ -44,6 +44,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "manna"	"curb|kerb"	--	--	false	true	true	false	keepiller	pre-manna-curb rule	post-manna-curb rule	--	--
 "plan"	"tracker"	--	--	false	true	true	false	keepiller	pre-plan-tracker rule	post-plan-tracker rule	--	--
 "knife"	"right"	--	--	false	true	true	false	nigh fright	pre-knife-right rule	post-knife-right rule	--	--
+"gaunt"	"raider"	--	--	false	true	true	false	worm eaten	pre-gaunt-raider rule	post-gaunt-raider rule	--	--
 "were"	"meetin"	--	--	false	true	true	false	worm eaten	pre-were-meetin rule	post-were-meetin rule	--	--
 "my"	"corps"	--	--	false	true	true	false	worm eaten	pre-my-corps rule	post-my-corps rule	--	--
 "cease"	"cull"	--	--	false	true	true	false	doom end	pre-cease-cull rule	post-cease-cull rule	--	--
@@ -618,6 +619,16 @@ this is the post-knife-right rule:
 
 section worm eaten scoring
 
+a wordtwisting rule (this is the pre-gaunt-raider rule):
+	if player is not in worm eaten and gone traitor is not in worm eaten, unavailable;
+	ready;
+
+this is the post-gaunt-raider rule:
+	now sco-gaunt-raider is true;
+	say "After some discussion, you work out a plan to make the gone trader reframe what they did. Whoever they were, the evil powers, they rejected them instead of doubling down. Perhaps there is a way to get back at them. They know things you never could hope to.";
+	moot gone traitor;
+	befriend gaunt raider;
+
 a wordtwisting rule (this is the pre-were-meetin rule):
 	if player is not in worm eaten, unavailable;
 	if sco-were-meetin is true:
@@ -722,7 +733,7 @@ this is the score and thinking changes rule:
 
 section copied from PRPR globals
 
-core-max is a number that varies. core-max is 1.
+core-max is a number that varies. core-max is 42.
 
 max-bonus is a number that varies. max-bonus is 0.
 
