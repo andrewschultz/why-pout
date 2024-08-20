@@ -12,6 +12,8 @@ include Bold Final Question Rows by Andrew Schultz.
 
 include Old School Verb Total Carnage by Andrew Schultz.
 
+include Versioning and Extensions Tweak by Andrew Schultz.
+
 section semi-general
 
 include Spoonerism and Oronym Core by Andrew Schultz.
@@ -337,6 +339,20 @@ The Sea Skull is a thing in Doom End. "A sea skull [if sco-cease-cull is true] s
 volume unsorted
 
 volume verbs
+
+chapter versioning
+
+carry out versioning:
+	say "I don't expect there to be many versions of a relatively small game, but version 1 was release to IFComp on August 28, 2024.";
+	the rule succeeds;
+
+report exting:
+	unless can-show-spoilers, say "One extension has been temporarily removed from the list, as it may cause a spoiler. If you wish to see it, come back after you've scored two points.";
+	continue the action;
+
+to decide whether can-show-spoilers:
+	if current-score < 2, no;
+	yes;
 
 book inventory
 
