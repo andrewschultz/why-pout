@@ -383,6 +383,16 @@ book taking
 check taking:
 	if player does not have noun, say "Everything you need will be implicitly taken in [this-game]." instead;
 
+book waiting
+
+check waiting:
+	say "Ideally I-D-L-E!" instead;
+
+volume parser errors
+
+rule for printing a parser error when the latest parser error is the I beg your pardon error:
+	say "'Hum, blank,' you muse. No humble ankh pops into your hands, sadly.";
+
 volume meta rooms
 
 Reap Rest is a room. moot-room is Reap Rest.
