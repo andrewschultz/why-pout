@@ -10,15 +10,27 @@ chapter new-tests
 
 test w2 with "pole east/shore trail/s/known ocean/six quid/n". [get the money]
 
-test w3 with "grow star/n/wool frock/hide out/d/boost role/u/low door/in/well own/summer chant/bile oh/whee lone/i/oh flyer/i/out/s".
+test w3 with "grow star/n/wool frock/low door/in/well own/summer chant/bile oh/whee lone/i/oh flyer/i/out/s".
 
-test w4 with "key pillar/w/gnome old/rogue old/s/knife right/e".
+test w4 with "key pillar/w/gnome old/rogue old/plan tracker/s/knife right/e/d/gaunt raider/u".
 
-test w5 with "s/grow vial/n/e/low bend/bay sale/n/store mile/mensch elf/mice tall/s/w".
+test w5 with "n/hide out/d/boost role/u/s".
 
-test w6 with "n/low door/in/well own/summer chant/bile oh/whee lone/oh flyer/out/s".
+test w6 with "e/low bend/bay sale/n/store mile/mensch elf/mice tall/s/w".
 
-test a with "test w1/test w2/test w3/test w4/test w5/test w6".
+test w7 with "n/low door/in/well own/summer chant/bile oh/whee lone/oh flyer/out/s".
+
+test w8 with "w/manna curb/e".
+
+test w9 with "s/grow vial/war file/n".
+
+test w10 with "e/n/n/tree small/t elf/t mice/t gnome/t rogue/t troll/t raider/tall cake/treat all".
+
+test w11 with "s/s/w/s/the file/n".
+
+test w12 with "d/were meetin/my corps/d/cease cull/wipe out/wl/do mend".
+
+test a with "test w1/test w2/test w3/test w4/test w5/test w6/test w7/test w8/test w9/test w10/test w11/test w12".
 
 chapter old-tests
 
