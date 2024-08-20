@@ -17,6 +17,10 @@ a follower can be unchatted or chatted. a follower is usually unchatted.
 to befriend (f - a follower):
 	now f is friendly;
 	move f to location of player;
+	if number of unfriendly followers is 0:
+		say "[line break]Wow! You've got quite a group here. You can't imagine having a bigger one.";
+	if number of friendly followers - number of chatted followers > 2:
+		say "[line break]Hmm. You have a lot of friends following you around, but you haven't talked to them much. Perhaps you could learn something from them."
 
 definition: a follower (called fo) is leftbehind:
 	unless fo is friendly, no;

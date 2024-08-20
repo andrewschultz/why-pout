@@ -39,7 +39,11 @@ to game-specific-cleanup: do nothing;
 chapter move to global
 
 when play begins:
-	say "'You forget why your captors took you here, or how, or when. You just remember, every day, they regale you with 'Find a fine day.'[paragraph break]It's sort of hard to, when you're trapped like this. But this time -- you're trapped a little differently. Somewhere new. Maybe you can escape from your prison and your mental fog."
+	say "You forget why your captors took you here, or how, or when. You just remember, every day, they regale you with 'Find a fine day.'[paragraph break]It's sort of hard to, when you're trapped like this. But this time -- you're trapped a little differently. Somewhere new. Maybe you can escape from your prison and your mental fog."
+
+after printing the locale description of air aww when air aww is unvisited:
+	say "[i][bracket][b]NOTE[r][i]: to see general information about [this-game][i], type [b]ABOUT[r][i]. To see the verbs used, type [b]VERBS[r][i]. If you have trouble with the first few moves, there will be hints.[close bracket][r][line break]";
+	continue the action;
 
 universal is a region.
 
@@ -339,6 +343,57 @@ The Sea Skull is a thing in Doom End. "A sea skull [if sco-cease-cull is true] s
 volume unsorted
 
 volume verbs
+
+book meta stuff
+
+chapter abouting
+
+abouting is an action out of world.
+
+understand the command "about" as something new.
+
+understand "about" as abouting.
+
+carry out abouting:
+	say "[this-game] was written for IFComp 2024. It's something I originally thought about writing for EctoComp, but I never managed to mash enough ideas together.";
+	say "It reuses a lot of code from [i]Roads of Liches[r] and my [i]Prime Pro Rhyme Row[r] games, which have different mechanics but a similar conceit: guess the right two-word phrase. However, it's narrower in scope, and I didn't want to rely on too well-known examples of possible phrases for point scoring.";
+	say "I think I went ahead with it once I realized bigger projects weren't on the cards for IFComp 2024, and I started with something I could handle. The drip of ideas started February, 2020, according to my notes. But I wasn't getting anything really original, or so it seemed.";
+	say "My weekly writing file 20240429.txt contains the game title, and that's when things really started rolling. But of course there's nothing like a deadline to make things really fall into place.";
+	say "[line break][email] is my email, and [ghsite]/why-pout is the github site, where you can report issues. I'm open to transcripts.";
+	say "[line break]See [b]CREDITS[r] for people who helped make [this-game] a reality.  [b]EXT[r] shows the extensions listed, and [b]VERSION[r] or [b]VERSIONS[r] shows version info.";
+	the rule succeeds;
+
+chapter creditsing
+
+creditsing is an action out of world.
+
+understand the command "credit" as something new.
+understand the command "credits" as something new.
+
+understand "credit" as creditsing.
+understand "credits" as creditsing.
+
+carry out creditsing:
+	say "Thanks to everyone past and future involved in the administration of IFComp.";
+	say "Thanks to the I7 board on Intfiction.org for their help, as well as the people in the general topic.";
+	the rule succeeds;
+
+chapter verbsing
+
+verbsing is an action out of world.
+
+understand the command "verbs" as something new.
+
+understand "verbs" as verbsing.
+
+carry out verbsing:
+	say "[this-game] bypasses many of the standard Inform parser verbs, since it is word-puzzle based. Things are taken implicitly, and you don't need to drop anything.";
+	say "[line break]The four standard directions work, and you may go [b]IN[r], [b]OUT[r], [b]UP[r], and [b]DOWN[r], too.";
+	say "[line break]In addition, there are NPCs you may wish to [b]TALK TO[r], which can be shortened to [b]T[r].";
+	say "[line break]Finally, [b]ABOUT[r] gives basic information about [this-game] and also cues some other meta-commands.";
+	if current-score < 3:
+		say "[line break]Most point-scoring commands will consist of two words.";
+	the rule succeeds;
 
 chapter versioning
 

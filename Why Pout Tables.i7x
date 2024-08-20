@@ -425,8 +425,8 @@ a wordtwisting rule (this is the three-isle rule):
 
 a wordtwisting rule (this is the pre-the-file rule):
 	abide by the three-isle rule;
-	if sco-treat-all is false:
-		vcp "You know there is THE FILE, but which file is THE FILE? The thief isle has probably stolen a lot! You need information from others.";
+	if number of unchatted followers > 0:
+		vcp "You know there is THE FILE, but which file is THE FILE? The thief isle has probably stolen a lot! You need information from your companions[if number of not friendly followers > 0], or maybe just more companions[end if].";
 		not-yet;
 	if sco-the-file is true:
 		vcal "You already visited thief isle!";
@@ -715,6 +715,15 @@ rule for printing a parser error (this is the check forks rule):
 		say "Hmm, no, you already did that, or something like that. You'll know if and when you need to flip between things.";
 		the rule succeeds;
 	continue the action;
+
+rule for printing a parser error when the latest parser error is the not a verb I recognise error (this is the catch bad verbs rule):
+	if core-score is 0:
+		say "You're stuck with what to do right now. Perhaps you can look inward, to give you an idea of what you want.";
+	else if core-score is 1:
+		say "You need to find something that will get you out of the tomb apse. You remebered a name by finding an aim. What now?";
+	else:
+		say "I didn't understand that. [this-game] has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try [b]VERBS[r].";
+	the rule succeeds;
 
 volume can't go that way
 
