@@ -24,15 +24,65 @@ Okay, the one-way introduction is over. Now you can explore a bit more. Or you c
 
 >nah phase (1)
 
-That clears so much up! But now that you can see more, you're more visible. Why are you feeling policed? Where is this feeling coming from?
+That clears so much up! But now that you can see more, you're more visible. Passages will eventually open up in all four directions.
+
+But first, why are you feeling policed? Where is this feeling coming from?
 
 >pole east (1)
 
-But we don't have to go east first! Let's clear things to the north. The gross tar can go.
+But we don't have to go east first! There's some order we have to collect stuff in, though. Let's go south first and get some coin.
+
+>shore trail (1)
+
+>s
+
+You have no notion of the terrain or waterways.
+
+>no notion (1)
+
+A sick squid seems to be choking on something.
+
+>six quid (1)
+
+The money comes in handy elsewhere. You need an item to ask the squid where to go. So let's go back to the center.
+
+>n
 
 >grow star (1)
 
 >n
+
+Wolf Rock!
+
+>wool frock (1)
+
+You've done all you can here. Well, you could deal with high doubt, but let's get through the low door first. It requires a detour.
+
+> s
+
+> key pillar (1)
+
+> w
+
+Let's get some companions!
+
+> gnome old (1)
+
+The wool frock fits nicely on the gnome and is removed from your inventory.
+
+> rogue old (1)
+
+The six quid you found come in handy to get a second companion. And the next thing needs no prep.
+
+> plan tracker (1)
+
+> s
+
+> knife right (1)
+
+You've done all you can here. You need another companion to deal with the manic herb.
+
+> e
 
 High doubt.
 
@@ -64,18 +114,6 @@ What to do with My Stall?
 
 >w
 
-What about that short rail, now you're back?
-
->shore trail (1)
-
->s
-
-A sick squid seems to be choking on something.
-
->six quid (1)
-
-Now from the flyer, you have three possible places to go. The third isn't available, because it's too vague, and you don't want to make the squid work any harder than it has to.
-
 But you can visit the wharf isle!
 
 >war file (1)
@@ -85,6 +123,8 @@ You can also visit the grove isle!
 >grow vial (1)
 
 Note you can't tackle Thief Isle yet.
+
+Now from the flyer, you have three possible places to go. The third isn't available, because it's too vague, and you don't want to make the squid work any harder than it has to.
 
 =============================================================================
 
