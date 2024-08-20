@@ -96,7 +96,7 @@ volume rooms
 
 book Eh Raw Air Aww
 
-Eh Raw Air Aww is a room in universal. printed name is "[if sco-an-aim is false]Eh, Raw Air, Aww[else]Tomb Apse[end if]". description is "[if sco-an-aim is false]The air chokes you a bit. It's too thick to see far beyond yourself. You barely know who you are, even. Ugh.[else]It's a bit clearer now. You still seem trapped. But there must be secrets hidden, and maybe one or more can get you out of here.[end if]"
+Eh Raw Air Aww is a room in universal. printed name is "[if sco-an-aim is false]Eh, Raw Air, Aww[else]Tomb Apse[end if]". description is "[if sco-an-aim is false]The air chokes you a bit. It's too thick to see far beyond yourself. You barely know who you are, even. Ugh. You can't see much beyond yourself, really, so that'd be somewhere to start.[else]It's a bit clearer now. You still seem trapped. But there must be secrets hidden, and maybe one or more can get you out of here.[end if]"
 
 book Hype Lane
 
@@ -324,6 +324,9 @@ after printing the locale description of Worm Eaten when sco-were-meetin is true
 	say "You feel like your companions are just about ready to go. But you still need to say something, something that can only come uniquely inside of you, to establish what a great team you are.";
 	continue the action;
 
+check going down in Worm Eaten:
+	if sco-the-file is false, say "Hmm. You still feel like you're missing some plans, some intelligence, even though you have everything else." instead;
+
 chapter gone trader
 
 The gone traitor is a thing in Worm Eaten. "[one of]Someone comes out from the depths. They introduce themselves as the gone traitor, someone who cozied up to the bad guys and ditched their friends, then ditched the bad guys. And only recently they ran away, but how can they ask for forgiveness? Surely it just doesn't happen like this? Just one small change and you have a new identity? Rubbish![or]The gone traitor continues to mope about here, looking for someone who can help convince them they're not so awful.[stopping]"
@@ -423,6 +426,12 @@ understand the command "t" as something new.
 
 understand "t" as ting.
 understand "t [thing]" as ting.
+
+understand "talk to" as ting.
+understand "talk to [thing]" as ting.
+
+understand "talk" as ting.
+understand "talk [thing]" as ting.
 
 rule for supplying a missing noun when ting:
 	if number of followers in location of player is 1:
