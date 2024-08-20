@@ -170,38 +170,98 @@ Finally, the last of your money!
 
 >s
 
-========================================
+We can complete the keep now.
 
-But you can visit the wharf isle!
+> w
 
->war file (1)
+> manna curb (1)
 
-You can also visit the grove isle!
+>s
+
+The flyer tells you where to look or go.
 
 >grow vial (1)
 
-Note you can't tackle Thief Isle yet.
+(Note to self: run alternate way through in Tests.i7x file, bringing the vial to the small tree)
 
-Now from the flyer, you have three possible places to go. The third isn't available, because it's too vague, and you don't want to make the squid work any harder than it has to.
+This (grove isle) was always available, but the below (wharf isle) requires an instrument of battle.
 
-=============================================================================
+>war file (1)
 
-So, in Worm-Eaten, you can finally do what you want.
+>n
+>e
+>n
+>n
 
->were meetin (1)
+>tree small (1)
 
-But how do you show leadership? It's inside you. More precisely, it's in your name.
+Oh look! The grow vial helped the tree grow!
 
->my corps (1)
+A perfect place to get to know your friends! Well, this could've been done at any time. The game should have nagged you several times. But if this walkthrough was just too gloriously readable to pull your eyes away, well, I'm flattered. (I've been there with other walkthroughs!)
 
-Oh no! The doom end! Or so it seems. The most obvious choice doesn't work with the sea skull still there.
+> t elf
 
->cease cull (1)
+> t mice
 
-The blood gets over a lot of people, but it's spread out, so nobody's killed.
+> t gnome
 
->wipe out (1)
+> t rogue
 
-Now you have won, but where is the healing process?
+> t troll
 
->do mend (1)
+> t raider
+
+(Sorry, no points for all this. Also, the order doesn't matter.)
+
+Oh no! A talk-ache! But it gives you an idea.
+
+The knife and manna can make ...
+
+>tall cake (1)
+
+You can't eat it by yourself!
+
+> treat all (1)
+
+My, such lively discussion. We're ready for the big picture. One more isle on the flyer to visit!
+
+> s
+
+> s
+
+> w
+
+> s
+
+> the file (1)
+
+Now the endgame.
+
+> n
+
+> d
+
+Since everyone's here, ...
+
+> were meetin (1)
+
+Pep talk time!
+
+> my corps (1)
+
+> d
+
+The sea skull needs to be told what's what.
+
+> cease cull (1)
+
+Finally. You've been waiting all game for this! Or maybe you haven't.
+
+> wipe out (1)
+
+Now, to end things. Not with a Doom End but ...
+
+> do mend (1)
+
+"Due" also works. I hope you enjoyed this!
+
