@@ -425,8 +425,8 @@ a wordtwisting rule (this is the three-isle rule):
 
 a wordtwisting rule (this is the pre-the-file rule):
 	abide by the three-isle rule;
-	if 1 is 1:
-		vcp "You know there is THE FILE, but which file is THE FILE? The thief isle has probably stolen a lot!";
+	if sco-treat-all is false:
+		vcp "You know there is THE FILE, but which file is THE FILE? The thief isle has probably stolen a lot! You need information from others.";
 		not-yet;
 	if sco-the-file is true:
 		vcal "You already visited thief isle!";
@@ -663,6 +663,9 @@ a wordtwisting rule (this is the pre-my-corps rule):
 	if player is not in worm eaten:
 		vcp "This doesn't seem to be the right place to pep up the troops.";
 		not-yet;
+	if sco-treat-all is false:
+		vcp "They are your corps, and yet, there's something to share with them. Something to do together, first.";
+		not-yet;
 	if sco-my-corps is true:
 		vcal "You already brought your corps a bit closer together!";
 		already-done;
@@ -728,7 +731,7 @@ to say went-by (nu - a number): say "just went [if nu > 0]up[else]down[end if] b
 this is the score and thinking changes rule:
 	let sco-delt be current-score - last-current-score;
 	if sco-delt is 0, continue the action;
-	say "[line break]Your score just went up by [if sco-delt is 1]a point[else][sco-delt in words] points[end if]!";
+	say "[i][bracket]Your score just went up by [if sco-delt is 1]a point[else][sco-delt in words] points[end if]![close bracket][r][line break]";
 	now last-current-score is current-score;
 
 section copied from PRPR globals

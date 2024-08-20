@@ -281,6 +281,7 @@ to grow-the-tree:
 	if player has grow vial and tree small is in Trees Mall:
 		say "[line break]But wait! You can use the grow vial! It makes the tree (small) into a tree (tall)! Then it dissolves once empty.";
 		moot tree small;
+		moot grow vial;
 		move tree tall to Trees Mall;
 
 after printing the locale description for Trees Mall:
