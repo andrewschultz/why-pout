@@ -66,7 +66,20 @@ understand the command "wipe" as something new.
 the block thinking rule is not listed in any rulebook.
 
 check thinking:
-	say "Put good-guess notes here.";
+	let got-think be false;
+	say "You try and think of stuff you tried, but the time wasn't quite right.[paragraph break]";
+	repeat through table of main oronyms:
+		if think-cue entry is true:
+			now got-think is true;
+			if idid entry is true:
+				say "Oops, forgot to reset [w1 entry] [w2 entry]. Trivial bug--but please let me know!";
+			else:
+				if there is a think-advice entry:
+					say "[think-advice entry][line break]";
+				else:
+					say "[w1 entry] [w2 entry] is something you tried before it was perfectly ready. I should write in more details later.";
+	if got-think is false:
+		say "Nothing comes to mind."
 
 volume verbs
 
