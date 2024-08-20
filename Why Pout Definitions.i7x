@@ -29,7 +29,10 @@ every turn (this is the followers follow you rule):
 		if plurals is false:
 			let rf be a random leftbehind follower;
 			if rf is plural-named, now plurals is true;
-		say "The [list of leftbehind followers] follow[if plurals is false]s[end if] you.";
+		if number of leftbehind followers > 2:
+			say "Your [number of leftbehind followers in words] companions follow you.";
+		else:
+			say "The [list of leftbehind followers] follow[if plurals is false]s[end if] you.";
 		follow-you;
 
 to follow-you:

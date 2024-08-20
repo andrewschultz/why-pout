@@ -87,6 +87,7 @@ a wordtwisting rule (this is the pre-an-aim rule):
 this is the post-an-aim rule:
 	now sco-an-aim is true;
 	say "Yes. Now that you realize you want more than just to know your name, that you have bigger goals, you push a bit harder when you initially forget it. You remember patches of the past. You remember people harshly calling you by your last name, then your first.[paragraph break]Your name is Mike Orr. (Short for Michal, which everyone pronounced Michael until you just gave up, or ... well, Michael.)[paragraph break]You look around a bit. You can see more, now. You're in some sort of tomb apse. You could exit--there are exits each way--but you suspect there's some horrible maze you could easily get lost in.";
+	print-the-loc;
 
 section NaffHaze scoring
 
@@ -407,7 +408,7 @@ a wordtwisting rule (this is the pre-six-quid rule):
 
 this is the post-six-quid rule:
 	now sco-six-quid is true;
-	say "You have an idea what is bothering the squid. Yes, a few coins stuck. Surprisingly, it lets you help out. You offer to give it some of the coins it almost choked on, but it does not need them.";
+	say "You have an idea what is bothering the squid. Yes, a few coins stuck. Surprisingly, it lets you help out. 'Current, sea, currency,' you mutter as you poke around. Ah, there you go.[paragraph break]You offer to give it some of the coins it almost choked on, but it does not need them. It seems to wait around, as if to help you with travel to places you may get to go. It's willing to wait.[paragraph break]";
 	now current-quid is 6;
 
 [to check-squid-flyer:
@@ -552,7 +553,7 @@ a wordtwisting rule (this is the pre-gnome-old rule):
 
 this is the post-gnome-old rule:
 	now sco-gnome-old is true;
-	say "A gnome, old, arrives. They offer to adventure with you, if you have suitable enough adventuring gear. As a matter of fact, you do. The wool frock works well.";
+	say "A gnome, old, arrives from a room above in the keep. They offer to adventure with you, if you have suitable enough adventuring gear. As a matter of fact, you do. The wool frock works well.[paragraph break]'Less gnome attic, more nomadic,' they muse.";
 	befriend gnome old;
 	moot wool frock; [now gnome has wool frock?]
 
@@ -681,7 +682,7 @@ a wordtwisting rule (this is the pre-do-due-mend rule):
 this is the post-do-due-mend rule:
 	now sco-do-due-mend is true;
 	say "Yes. It's time to get healing. You're not quite sure how, but at least you're sure of who you are. And your companions are, too.";
-	end the story finally saying "Goal: Earned! Go, learned!";
+	end the story finally saying "Gray day?! Grade A!";
 	follow the shutdown rules;
 
 volume command parsing

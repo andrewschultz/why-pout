@@ -37,7 +37,7 @@ to game-specific-cleanup: do nothing;
 chapter move to global
 
 when play begins:
-	say "'Find a fine day' echoes in your head."
+	say "'You forget why your captors took you here, or how, or when. You just remember, every day, they regale you with 'Find a fine day.'[paragraph break]It's sort of hard to, when you're trapped like this. But this time -- you're trapped a little differently. Somewhere new. Maybe you can escape from your prison and your mental fog."
 
 universal is a region.
 
@@ -52,7 +52,7 @@ a region has a number called curregscore.
 
 volume you
 
-Mike Orr is a privately-named person. the player is Mike Orr.
+Mike Orr is a privately-named person. the player is Mike Orr. description is "You are Mike Orr. You know that now. [if sco-my-corps is true]You're glad of your name now, after giving that pep talk[else]Kind of pedestrian, you always thought. But you hoped it might have some greater meaning[end if]."
 
 understand "mike orr" and "mike/orr" as Mike Orr when sco-an-aim is true.
 
@@ -174,6 +174,8 @@ chapter plan tracker
 
 the plan tracker is a thing. description is "[if sco-war-file is true]You have notes for combat written in here[else]The plan tracker is currently blank, but maybe you can find plans for it[end if]."
 
+after printing the name of plan tracker when taking inventory: say " ([if sco-war-file is false]empty[else]full[end if] of ideas)"
+
 book Nigh Fright
 
 Nigh Fright is a room in Universal. it is south of KeepIller. "The only way back is east. You're lucky you have friends here to support you, or you'd be running away like crazy. You sense you'd better get what you want here, then get out."
@@ -277,7 +279,7 @@ Trees Mall is a room in universal. "This is a withered, run-down former mall tha
 
 to grow-the-tree:
 	if player has grow vial and tree small is in Trees Mall:
-		say "[line break]But wait! You can use the grow vial! It makes the tree (small) into a tree (tall)!";
+		say "[line break]But wait! You can use the grow vial! It makes the tree (small) into a tree (tall)! Then it dissolves once empty.";
 		moot tree small;
 		move tree tall to Trees Mall;
 
@@ -309,7 +311,11 @@ volume endgame
 
 book Worm Eaten
 
-Worm Eaten is a room in universal. printed name is "[if sco-were-meetin is false]Worm-Eaten[else]We're Meetin[']![end if]". "[if sco-were-meetin is false]This place seems very run-down. But it'd make a nice hideout to build camaraderie if it were in better shape[else]Having had your meeting here, there's not much else to do[end if]."
+Worm Eaten is a room in universal. printed name is "[if sco-were-meetin is false]Worm-Eaten[else]We're Meetin[']![end if]". "[if sco-were-meetin is false]This place seems very run-down. But it feels homey and inspires camaraderie in an odd way[else]Having had your meeting here, there's not much else to do[end if]."
+
+after printing the locale description of Worm Eaten when sco-were-meetin is true and sco-my-corps is false:
+	say "You feel like your companions are just about ready to go. But you still need to say something, something that can only come uniquely inside of you, to establish what a great team you are.";
+	continue the action;
 
 book Doom End
 
@@ -417,7 +423,7 @@ check requesting the score:
 volume score stuff
 
 when play begins (this is the score and status tweak rule):
-	now the right hand status line is "[current-score][if doable-hinted > 0](+[doable-hinted])[end if]/[min-needed][if score is min-needed][else if min-needed is max-available]*[else]-[max-available][end if]";
+	now the right hand status line is "[current-score][if doable-hinted > 0](+[doable-hinted])[end if]/[min-needed][if score is min-needed or max-bonus is 0][else if min-needed is max-available]*[else]-[max-available][end if]";
 	force-status;
 	now the turn count is 1;
 
