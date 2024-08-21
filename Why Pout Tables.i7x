@@ -44,6 +44,7 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "rogue"	"old"	--	--	false	true	true	false	keepiller	pre-rogue-old rule	post-rogue-old rule	--	"You may be able to recruit the [b]ROGUE OLD[r] [here-in of keepiller] [once-now of sco-six-quid] you have money."
 "manna"	"curb|kerb"	"mana"	--	false	true	true	false	keepiller	pre-manna-curb rule	post-manna-curb rule	--	"You may be able to find a [b]MANNA CURB[r] beneath the manna curb [here-in of keepiller] [once-now of sco-mensch-elf] you have someone with knowledge of wildlife and wildflowers."
 "plan"	"tracker"	--	--	false	true	true	false	keepiller	pre-plan-tracker rule	post-plan-tracker rule	--	--
+"see"	"design"	--	--	false	true	true	false	keep iller	pre-see-design rule	post-see-design rule	--	--
 "knife"	"right"	--	--	false	true	true	false	nigh fright	pre-knife-right rule	post-knife-right rule	--	--
 "gaunt"	"raider"	--	--	false	true	true	false	worm eaten	pre-gaunt-raider rule	post-gaunt-raider rule	--	--
 "were"	"meetin"	--	--	false	true	true	false	worm eaten	pre-were-meetin rule	post-were-meetin rule	--	--
@@ -629,6 +630,22 @@ this is the post-plan-tracker rule:
 	say "Wow! That was ... surprisingly simple. You find a rather new-looking plan tracker behind the plant racker, which crumbles to dust as you push it aside.";
 	moot plant racker;
 	now player has plan tracker;
+
+a wordtwisting rule (this is the pre-see-design rule):
+	if player is not in keepiller, unavailable;
+	if pals-made < 2:
+		vcp "You sort of want to see the design, but you're sort of scared what will happen once you do. You feel like you need some [if pals-made is 1]more [end if]support before really trying.";
+		not-yet;
+	if sco-see-design is true:
+		vcal "You already saw the design in the seedy sign. You don't need to redo things.";
+		already-done;
+	ready;
+
+this is the post-see-design rule:
+	now sco-see-design is true;
+	now block-followers is true;
+	say "You see the design in the seedy sign. It leads somewhere scary. Somewhere you don't want your friends to visit. Though you appreciate their support. You'll be right back. You think. You hope.";
+	move player to Nigh Fright;
 
 section nigh fright scoring
 

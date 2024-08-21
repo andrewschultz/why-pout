@@ -12,7 +12,7 @@ test w2 with "pole east/shore trail/s/known ocean/six quid/n". [get the money]
 
 test w3 with "grow star/n/wool frock/hide out/d/boost role/u/s".
 
-test w4 with "key pillar/w/gnome old/rogue old/plan tracker/s/knife right/e".
+test w4 with "key pillar/w/gnome old/rogue old/plan tracker/see design/knife right/e".
 
 test w5 with "d/gaunt raider/u".
 

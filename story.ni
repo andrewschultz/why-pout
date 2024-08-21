@@ -182,9 +182,13 @@ the plan tracker is a thing. description is "[if sco-war-file is true]You have n
 
 after printing the name of plan tracker when taking inventory: say " ([if sco-war-file is false]empty[else]full[end if] of ideas)"
 
+chapter seedy sign
+
+the seedy sign is a thing in KeepIller. "[if sco-see-design is false]A seedy sign stands here, advertising somewhere very risky indeed[else]That seedy sign stands off to the side here. It's no longer scary, but you don't wish to bother with it, any more[end if].". description is "[if sco-see-design is false]There are clues in here to figure what it hides, if you look the right way. You might be scared to[else]The design is clearer now--not that you want to go back[end if]."
+
 book Nigh Fright
 
-Nigh Fright is a room in Universal. it is south of KeepIller. "The only way back is east. You're lucky you have friends here to support you, or you'd be running away like crazy. You sense you'd better get what you want here, then get out."
+Nigh Fright is a room in Universal. "Whatever you need to do or find here, you only want to do it once. You don't want to have to come back. You're glad your friends supported you enough to get here, but you don't want to have to rely on them like that again.[paragraph break]So, what do you need to find, before getting out?"
 
 chapter knife right
 

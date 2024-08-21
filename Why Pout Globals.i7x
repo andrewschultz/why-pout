@@ -12,7 +12,7 @@ volume point scoring variables
 
 book integers
 
-core-max is a number that varies. core-max is 43.
+core-max is a number that varies. core-max is 44.
 
 max-bonus is a number that varies. max-bonus is 0.
 
@@ -132,6 +132,8 @@ sco-gnome-old is a truth state that varies.
 sco-rogue-old is a truth state that varies.
 
 sco-manna-curb is a truth state that varies.
+
+sco-see-design is a truth state that varies.
 
 section nigh fright
 
