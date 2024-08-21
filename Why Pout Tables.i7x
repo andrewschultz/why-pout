@@ -7,7 +7,7 @@ volume the main tables
 book very general stuff
 
 table of main oronyms
-w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
+w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "an"	"aim"	--	--	false	true	true	false	eh raw air aww	pre-an-aim rule	post-an-aim rule	--	--
 "two"	"maps"	--	--	false	true	true	false	eh raw air aww	pre-two-maps rule	post-two-maps rule	--	--
 "pry"	"stalk"	--	--	false	true	true	false	hype lane	pre-pry-stalk rule	post-pry-stalk rule	--	--
@@ -42,13 +42,13 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "treat"	"all"	--	--	false	true	true	false	trees mall	pre-treat-all rule	post-treat-all rule	--	"You may be able to [b]TREAT ALL[r] [here-in of trees mall] [once-now of sco-tall-cake] you have a tasty treat."
 "gnome"	"old"	--	--	false	true	true	false	keepiller	pre-gnome-old rule	post-gnome-old rule	--	"You may be able to recruit the [b]GNOME OLD[r] [here-in of keepiller] [once-now of sco-wool-frock] you have adventuring gear."
 "rogue"	"old"	--	--	false	true	true	false	keepiller	pre-rogue-old rule	post-rogue-old rule	--	"You may be able to recruit the [b]ROGUE OLD[r] [here-in of keepiller] [once-now of sco-six-quid] you have money."
-"manna"	"curb|kerb"	--	--	false	true	true	false	keepiller	pre-manna-curb rule	post-manna-curb rule	--	"You may be able to find a [b]MANNA CURB[r] beneath the manna curb [here-in of keepiller] [once-now of sco-mensch-elf] you have someone with knowledge of wildlife and wildflowers."
+"manna"	"curb|kerb"	"mana"	--	false	true	true	false	keepiller	pre-manna-curb rule	post-manna-curb rule	--	"You may be able to find a [b]MANNA CURB[r] beneath the manna curb [here-in of keepiller] [once-now of sco-mensch-elf] you have someone with knowledge of wildlife and wildflowers."
 "plan"	"tracker"	--	--	false	true	true	false	keepiller	pre-plan-tracker rule	post-plan-tracker rule	--	--
 "knife"	"right"	--	--	false	true	true	false	nigh fright	pre-knife-right rule	post-knife-right rule	--	--
 "gaunt"	"raider"	--	--	false	true	true	false	worm eaten	pre-gaunt-raider rule	post-gaunt-raider rule	--	--
 "were"	"meetin"	--	--	false	true	true	false	worm eaten	pre-were-meetin rule	post-were-meetin rule	--	--
 "my"	"corps"	--	--	false	true	true	false	worm eaten	pre-my-corps rule	post-my-corps rule	--	"You may be able to call your companions [b]MY CORPS[r] [once-now of sco-treat-all] [if pals-made < 2]you have companions[else]you've shared something together[end if]."
-"cease"	"cull"	--	--	false	true	true	false	doom end	pre-cease-cull rule	post-cease-cull rule	--	--
+"cease"	"cull"	"seize"	hom-cease-cull rule	false	true	true	false	doom end	pre-cease-cull rule	post-cease-cull rule	--	--
 "wipe"	"out"	--	--	false	true	true	false	doom end	pre-wipe-out rule	post-wipe-out rule	--	"You will want to [b]WIPE OUT[r] the cause of your problems [once-now of sco-cease-cull] you have them in your crosshairs."
 "do|due"	"mend"	--	--	false	true	true	false	doom end	pre-do-due-mend rule	post-do-due-mend rule	--	--
 
@@ -707,6 +707,9 @@ a wordtwisting rule (this is the pre-cease-cull rule):
 		vcal "You already played defense. Now's the time to go on offense!";
 		already-done;
 	ready;
+
+this is the hom-cease-cull rule:
+	say "No, seizing is the last thing you want the skull to do. And you aren't foolish enough to want to seize power."
 
 this is the post-cease-cull rule:
 	now sco-cease-cull is true;
