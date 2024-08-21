@@ -22,6 +22,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "the"	"file"	--	--	false	true	true	false	nonotion	pre-the-file rule	post-the-file rule	--	"You may be able to make sense of [b]THE FILE[r] [here-in of nonotion] [once-now of whether or not number of unchatted followers > 0] you've gotten enough information from companions."
 "war"	"file"	--	--	false	true	true	false	nonotion	pre-war-file rule	post-war-file rule	--	"You may be able to recover the [b]WAR FILE[r] on the wharf isle [here-in of nonotion] [once-now of sco-plan-tracker] you have something you can write down its main ideas in."
 "grow"	"vial"	--	--	false	true	true	false	nonotion	pre-grow-vial rule	post-grow-vial rule	--	--
+"wan"	"dwarf"	--	--	false	true	true	false	wand wharf	pre-wan-dwarf rule	post-wan-dwarf rule	--	--
 "wool"	"frock"	--	--	false	true	true	false	Wolf Rock	pre-wool-frock rule	post-wool-frock rule	--	--
 "hide"	"out"	--	--	false	true	true	false	Wolf Rock	pre-hide-out rule	post-hide-out rule	--	--
 "low"	"door"	--	--	false	true	true	false	Wolf Rock	pre-low-door rule	post-low-door rule	--	"You may be able to find a [b]LOW DOOR[r] [here-in of Wolf Rock] [once-now of sco-mice-tall] you have a companion or companions that are small enough to dig a bit better."
@@ -455,8 +456,15 @@ a wordtwisting rule (this is the pre-war-file rule):
 
 this is the post-war-file rule:
 	now sco-war-file is true;
-	say "Hooray! You figured what to do! You get a point!";
-	conditional-flier-mangle;
+	say "You realize you could reach the wharf isle for a war file. When you get there, you're a bit disappointed by what you see. There's a bit too much emphasis on magic and the implements thereof, all of which are at a much too hefty price for you. So equipment is out. Still, there's some ideas worth tracking. Yet you can't be the only person disappointed here...";
+	move player to Wand Wharf;
+	ride-squid;
+
+to ride-squid:
+	if player is in Wand Wharf:
+		if number of friendly followers >= 1:
+			say "There was more than enough room on the squid for [if number of friendly followers is 1][the random friendly follower][else if number of friendly followers is 2]both your companions[else]all your companions[end if], too.";
+	follow-you;
 
 a wordtwisting rule (this is the pre-grow-vial rule):
 	abide by the three-isle rule;
@@ -469,6 +477,20 @@ this is the post-grow-vial rule:
 	now sco-grow-vial is true;
 	say "In the grove isle, you find a grow vial, which you take.";
 	now player has grow vial;
+	conditional-flier-mangle;
+
+chapter wand wharf scoring
+
+a wordtwisting rule (this is the pre-wan-dwarf rule):
+	if player is not in wand wharf, unavailable;
+	ready;
+
+this is the post-wan-dwarf rule:
+	now sco-wan-dwarf is true;
+	say "You look around and uncover a wan dwarf who wasn't good enough to be a full fighter but rejected for magic training. You explain your situation. They're all in![paragraph break]There's not much left to do here, so you ride the squid back.";
+	befriend wan dwarf;
+	move player to NoNotion;
+	ride-squid;
 	conditional-flier-mangle;
 
 chapter we loan scoring
@@ -746,7 +768,7 @@ this is the score and thinking changes rule:
 
 section copied from PRPR globals
 
-core-max is a number that varies. core-max is 42.
+core-max is a number that varies. core-max is 43.
 
 max-bonus is a number that varies. max-bonus is 0.
 

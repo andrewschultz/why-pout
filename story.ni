@@ -314,6 +314,12 @@ chapter grow vial
 
 the grow vial is a thing. description is "It says it will help something grow, but it's potentially toxic to mammals."
 
+book wand wharf
+
+Wand Wharf is a room in universal.
+
+the wan dwarf is a follower. description is "Short and stocky. It wears glasses from what other dwarves would say was reading too much."
+
 volume endgame
 
 book Worm Eaten

@@ -23,9 +23,9 @@ test w7 with "n/low door/in/well own/summer chant/bile oh/whee lone/oh flyer/out
 test w8 with "w/manna curb/e".
 
 [test w9 with "s/grow vial/war file/n/e/n/n/tree small".]
-test w9 with "e/n/n/tree small/s/s/w/s/grow vial/war file/n/e/n/n".
+test w9 with "e/n/n/tree small/s/s/w/s/grow vial/war file/wan dwarf/n/e/n/n".
 
-test w10 with "t elf/t mice/t gnome/t rogue/t troll/t raider/tall cake/treat all".
+test w10 with "t elf/t mice/t gnome/t rogue/t troll/t raider/t dwarf/tall cake/treat all".
 
 test w11 with "s/s/w/s/the file/n".
 
