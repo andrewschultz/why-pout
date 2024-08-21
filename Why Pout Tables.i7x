@@ -19,7 +19,7 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "key"	"pillar"	--	--	false	true	true	false	NaffHaze	pre-key-pillar rule	post-key-pillar rule	--	--
 "known"	"ocean"	--	--	false	true	true	false	NoNotion	pre-known-ocean rule	post-known-ocean rule	--	--
 "six"	"quid"	--	--	false	true	true	false	NoNotion	pre-six-quid rule	post-six-quid rule	--	--
-"the"	"file"	--	--	false	true	true	false	nonotion	pre-the-file rule	post-the-file rule	--	"You may be able to make sense of [b]THE FILE[r] [here-in of nonotion] [once-now of whether or not number of unchatted followers > 0] you've gotten enough information from companions."
+"the"	"file"	--	--	false	true	true	false	nonotion	pre-the-file rule	post-the-file rule	--	"You may be able to make sense of [b]THE FILE[r] [here-in of nonotion] [once-now of whether or not number of unchatted followers is 0] you've gotten enough information from companions."
 "war"	"file"	--	--	false	true	true	false	nonotion	pre-war-file rule	post-war-file rule	--	"You may be able to recover the [b]WAR FILE[r] on the wharf isle [here-in of nonotion] [once-now of sco-plan-tracker] you have something you can write down its main ideas in."
 "grow"	"vial"	--	--	false	true	true	false	nonotion	pre-grow-vial rule	post-grow-vial rule	--	--
 "wan"	"dwarf"	--	--	false	true	true	false	wand wharf	pre-wan-dwarf rule	post-wan-dwarf rule	--	--
@@ -272,6 +272,7 @@ a wordtwisting rule (this is the pre-mensch-elf rule):
 this is the post-mensch-elf rule:
 	now sco-mensch-elf is true;
 	say "You knock about the MEN shelf a bit, unable to find anything. It's really a collection of shelves that you disassemble and reassemble. Eventually, you're about to give up, and it all collapses, taking a chunk of wall with it. Our pops a mensch elf, quite grateful you helped them escape.";
+	moot men shelf;
 	befriend mensch elf;
 
 section trees mall scoring
@@ -569,7 +570,7 @@ section keepiller scoring
 a wordtwisting rule (this is the pre-gnome-old rule):
 	if player is not in keepiller, unavailable;
 	if sco-wool-frock is false:
-		say "You summon a gnome, old, to compliment them on keeping the keep looking so nice all these years. They thank you but mention they're a bit sick of it and they seek adventure. Yet they can't go adventuring in these tatty clothes.";
+		vcp "You summon a gnome, old, to compliment them on keeping the keep looking so nice all these years. They thank you but mention they're a bit sick of it and they seek adventure. Yet they can't go adventuring in these tatty clothes.";
 		not-yet;
 	if sco-gnome-old is true:
 		vcal "You already summoned the gnome!";
