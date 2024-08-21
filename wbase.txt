@@ -1,8 +1,14 @@
 Why Pout, by Andrew Schultz
 
-A walkthrough.
+This is a walkthrough for Why Pout, my IFComp 2024 entry. While there is no precise order to do things in, you often need some companions or items to solve other puzzles.
 
-So there isn't much to look around at. Maybe at yourself. It feels a bit self-centered.
+This walkthrough attempts to be optimal. However, I may have missed ways to save a move here or there.
+
+Small obligatory warning: you may wish to try to at least get the first point before spoiling things.
+
+=============================================
+
+At first, there isn't much to look around at. Maybe at yourself. You feel a bit self-centered.
 
 You need a name. But you just can't find one.
 
@@ -56,6 +62,18 @@ Wolf Rock!
 
 >wool frock (1)
 
+Okay, now the high doubt.
+
+>hide out (1)
+
+>d
+
+>boost role (1)
+
+And another pal! The item they give you is more useful than their presence. Well, until the final fight.
+
+>u
+
 You've done all you can here. Well, you could deal with high doubt, but let's get through the low door first. It requires a detour.
 
 >s
@@ -84,27 +102,13 @@ You've done all you can here. You need another companion to deal with the manic 
 
 >e
 
-Oh my! A passage opens down! Let's get another pal for later. (Note to self: this can be moved to the first trip north to save the user a few turns.)
+Oh my! A passage opens down! Let's get another pal for later.
 
 >d
 
 >gaunt raider (1)
 
 >u
-
->n
-
->hide out (1)
-
->d
-
->boost role (1)
-
-And another pal! The item they give you is more useful than their presence. Well, until the final fight.
-
->u
-
->s
 
 Okay, let's really explore the east.
 
@@ -172,9 +176,9 @@ Finally, the last of your money!
 
 We can complete the keep now.
 
-> w
+>w
 
-> manna curb (1)
+>manna curb (1)
 
 >s
 
@@ -182,11 +186,15 @@ The flyer tells you where to look or go.
 
 >grow vial (1)
 
-(Note to self: run alternate way through in Tests.i7x file, bringing the vial to the small tree)
-
 This (grove isle) was always available, but the below (wharf isle) requires an instrument of battle.
 
 >war file (1)
+
+This kicks you to the Wand Wharf, where you can find an outcast...
+
+>wan dwarf (1)
+
+Now you're back to the Known Ocean.
 
 >n
 >e
@@ -199,17 +207,17 @@ Oh look! The grow vial helped the tree grow!
 
 A perfect place to get to know your friends! Well, this could've been done at any time. The game should have nagged you several times. But if this walkthrough was just too gloriously readable to pull your eyes away, well, I'm flattered. (I've been there with other walkthroughs!)
 
-> t elf
+>t elf
 
-> t mice
+>t mice
 
-> t gnome
+>t gnome
 
-> t rogue
+>t rogue
 
-> t troll
+>t troll
 
-> t raider
+>t raider
 
 (Sorry, no points for all this. Also, the order doesn't matter.)
 
@@ -221,47 +229,47 @@ The knife and manna can make ...
 
 You can't eat it by yourself!
 
-> treat all (1)
+>treat all (1)
 
 My, such lively discussion. We're ready for the big picture. One more isle on the flyer to visit!
 
-> s
+>s
 
-> s
+>s
 
-> w
+>w
 
-> s
+>s
 
-> the file (1)
+>the file (1)
 
 Now the endgame.
 
-> n
+>n
 
-> d
+>d
 
 Since everyone's here, ...
 
-> were meetin (1)
+>were meetin (1)
 
 Pep talk time!
 
-> my corps (1)
+>my corps (1)
 
-> d
+>d
 
 The sea skull needs to be told what's what.
 
-> cease cull (1)
+>cease cull (1)
 
 Finally. You've been waiting all game for this! Or maybe you haven't.
 
-> wipe out (1)
+>wipe out (1)
 
 Now, to end things. Not with a Doom End but ...
 
-> do mend (1)
+>do mend (1)
 
 "Due" also works. I hope you enjoyed this!
 
