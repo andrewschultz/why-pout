@@ -14,6 +14,8 @@ a follower can be unfriendly, friendly or donewith. a follower is usually unfrie
 
 a follower can be unchatted or chatted. a follower is usually unchatted.
 
+a follower has text called help-chat.
+
 to befriend (f - a follower):
 	now f is friendly;
 	move f to location of player;

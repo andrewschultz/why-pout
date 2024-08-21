@@ -154,7 +154,7 @@ there is a thing called no mold. It is in KeepIller. "You are really impressed b
 
 section gnome old
 
-the gnome old is a follower. printed name is "gnome (old)".
+the gnome old is a follower. printed name is "gnome (old)". help-chat is "The gnome (old) discusses ways of finding hidden psychic weaknesses in a very tough opponent. You also hear how whatever force there is, it only cares about things looking good on the outside. The gnome had so much mold to protect against and continually scrape away, even outside of the keep."
 
 chapter row gold
 
@@ -162,7 +162,7 @@ there is a thing called row gold. It is in KeepIller. printed name is "row (gold
 
 section rogue old
 
-the rogue old is a follower. printed name is "rogue (old)".
+the rogue old is a follower. printed name is "rogue (old)". help-chat is "The rogue (old) discusses ways to sneak around so vastly overpowered opponents can't blow you away, and you also learn not to feel guilty or shifty about being good at sneaking around, around much more unsavory entities than yourself."
 
 chapter manic herb
 
@@ -216,7 +216,7 @@ Hideout is a room in universal. "You can only go back [b]UP[r]. It wouldn't be a
 
 chapter Booze Troll
 
-the booze troll is a follower in Hideout. "A booze troll sulks sullenly here."
+the booze troll is a follower in Hideout. "A booze troll sulks sullenly here.". help-chat is "The booze troll relates ways to shake oneself free from despair (no! Really! It managd to for a while!) before relating more ways to avoid it in the first place, or help others you care about do the same."
 
 chapter base ale
 
@@ -273,7 +273,7 @@ My Stall is a thing. "A stall labeled MY STALL sits here, abandoned, against a w
 
 section mice tall
 
-the mice tall are a plural-named followers. printed name is "mice (tall)". description is "Well, they're tall for mice. But they make up enough numbers to be pretty effective in a skirmish, if need be.".
+the mice tall are a plural-named followers. printed name is "mice (tall)". description is "Well, they're tall for mice. But they make up enough numbers to be pretty effective in a skirmish, if need be.". help-chat is "[one of]You're surprised how easy it is to understand them and how easily they understand you. [or][stopping]They discuss how much bigger opponents can be brought down by, not just arrogance facing many small opponents, but by dexterity and quick maneuvers. Oh, also a lot about the evil in the land killing or corrupting or mutating animals. So presumably finding or destroying it will put a stop to the very worst bits."
 
 chapter men shelf
 
@@ -281,7 +281,7 @@ the MEN shelf is a thing. "A MEN shelf sits here, barren. Which may be a good th
 
 section mensch elf
 
-the mensch elf is a follower. description is "Smiling and ready to help."
+the mensch elf is a follower. description is "Smiling and ready to help.". help-chat is "The mensch elf discusses ways to identify people or situations that just need a bit of help, and how to do so without making them feel hopeless or in need of help, or that they got themselves in this position in the first place."
 
 book Trees Mall
 
@@ -322,7 +322,7 @@ book wand wharf
 
 Wand Wharf is a room in universal.
 
-the wan dwarf is a follower. description is "Short and stocky. It wears glasses from what other dwarves would say was reading too much."
+the wan dwarf is a follower. description is "Short and stocky. It wears glasses from what other dwarves would say was reading too much.". help-chat is "The dwarf provides an impressively nuanced view on how to balance magic skill with physical skill and fighting savvy. But the dwarf also notes how to be a good expert in specific areas if need be, as well as how to get experts and generalists to work together. However, the dwarf also expresses worry that this talk is all great in theory but hard in practice."
 
 volume endgame
 
@@ -343,7 +343,7 @@ The gone traitor is a thing in Worm Eaten. "[one of]Someone comes out from the d
 
 section gaunt raider
 
-the gaunt raider is a follower. description is "They still look disturbed by who they were."
+the gaunt raider is a follower. description is "They still look disturbed by who they were.". help-chat is "The gaunt raider discusses regret for their past actions, as well as some possibilities for how to use it to boost yourself to do the right thing, or when to just drop it without being drowned by guilt."
 
 book Doom End
 
@@ -486,12 +486,14 @@ check ting:
 			say "You feel too grumpy for positive self-talk. You mumble 'I molder. I'm older.'" instead;
 		say "You motivate yourself with 'Goal: earn? Go learn!'" instead;
 	if noun is not a follower, say "You don't get a response." instead;
+	if sco-my-corps is true, say "No time for talk. Time to end this thing." instead;
 	if noun is not friendly, say "You haven't gained [the noun]'s trust enough yet for a chat." instead;
 	if player has talk ache, say "That talk ache is a bit of a nuisance." instead;
 	if number of unchatted followers is 0, say "You've talked to everyone, but why not chat again?";
 
 carry out ting:
 	say "You chat with [the noun] a bit, [if noun is chatted]recapping[else]learning[end if] more about the game's history and why you're here.";
+	say "[line break][help-chat of noun][line break]";
 	the rule succeeds;
 
 report ting:
