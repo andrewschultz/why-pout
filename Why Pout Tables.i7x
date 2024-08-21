@@ -241,8 +241,9 @@ a wordtwisting rule (this is the pre-store-mile rule):
 
 this is the post-store-mile rule:
 	now sco-store-mile is true;
-	say "The storms let up. It's not such a big isle after all, but it does turn out to hold a whole lot of stores. There's even a stall labeled MY STALL.";
+	say "The storms let up. It's not such a big isle after all, but it does turn out to hold a whole lot of stores and vending areas. In particular, a stall labeled MY STALL, and a shelf labeled MEN SHELF.";
 	move my stall to storm isle;
+	move men shelf to storm isle;
 	reveal Trees Mall to north;
 
 a wordtwisting rule (this is the pre-mice-tall rule):
