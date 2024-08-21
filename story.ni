@@ -141,9 +141,9 @@ KeepIller is a room in Universal. printed name is "Keep (Iller)". "This keep has
 
 check going south in KeepIller:
 	if sco-knife-right is true, say "You don't need or want to go back there." instead;
-	if number of friendly followers is 0:
+	if pals-made is 0:
 		say "You try to go west, but with no support, you're just too scared." instead;
-	else if number of friendly followers is 1:
+	else if pals-made is 1:
 		say "Even with [the random friendly follower]'s support, you are still terrified of what is west. You may need just a bit more." instead;
 	else:
 		say "You get over your fears with a little help from your friends.";
@@ -255,7 +255,7 @@ the We Craft Weak Raft is a thing. printed name is "We-Craft Weak Raft". descrip
 
 check going:
 	if ((room gone from is lobe end) and (room gone to is storm isle)) or ((room gone to is lobe end) and (room gone from is storm isle)):
-		say "You[if number of friendly followers is 1] and [the random friendly follower][else if number of friendly followers > 1] and your [number of friendly followers in words] companions[else][end if] make it across the water without incident.";
+		say "You[if pals-made is 1] and [the random friendly follower][else if pals-made > 1] and your [pals-made in words] companions[else][end if] make it across the water without incident.";
 		move raft to room gone to;
 		follow-you;
 
@@ -451,10 +451,10 @@ rule for supplying a missing noun when ting:
 		now noun is random follower in location of player;
 		continue the action;
 	if number of friendly followers in location of player is 1:
-		now noun is random follower in location of player;
+		now noun is random friendly follower in location of player;
 		continue the action;
 	if number of followers in location of player > 1:
-		say "That's ambiguous--more than one you can chat with.";
+		say "That's ambiguous--more than one friend you can chat with.";
 	else:
 		say "Nobody here to talk to.";
 	the rule fails;

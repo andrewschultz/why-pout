@@ -47,7 +47,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "knife"	"right"	--	--	false	true	true	false	nigh fright	pre-knife-right rule	post-knife-right rule	--	--
 "gaunt"	"raider"	--	--	false	true	true	false	worm eaten	pre-gaunt-raider rule	post-gaunt-raider rule	--	--
 "were"	"meetin"	--	--	false	true	true	false	worm eaten	pre-were-meetin rule	post-were-meetin rule	--	--
-"my"	"corps"	--	--	false	true	true	false	worm eaten	pre-my-corps rule	post-my-corps rule	--	"You may be able to call your companions [b]MY CORPS[r] [once-now of sco-treat-all] [if number of friendly followers < 2]you have companions[else]you've shared something together[end if]."
+"my"	"corps"	--	--	false	true	true	false	worm eaten	pre-my-corps rule	post-my-corps rule	--	"You may be able to call your companions [b]MY CORPS[r] [once-now of sco-treat-all] [if pals-made < 2]you have companions[else]you've shared something together[end if]."
 "cease"	"cull"	--	--	false	true	true	false	doom end	pre-cease-cull rule	post-cease-cull rule	--	--
 "wipe"	"out"	--	--	false	true	true	false	doom end	pre-wipe-out rule	post-wipe-out rule	--	"You will want to [b]WIPE OUT[r] the cause of your problems [once-now of sco-cease-cull] you have them in your crosshairs."
 "do|due"	"mend"	--	--	false	true	true	false	doom end	pre-do-due-mend rule	post-do-due-mend rule	--	--
@@ -136,7 +136,7 @@ a wordtwisting rule (this is the pre-wipe-out rule):
 	if sco-wipe-out is true:
 		vcal "You already wiped out the sea skull! Now is the time for healing.";
 		already-done;
-	if number of friendly followers is 0:
+	if pals-made is 0:
 		vcp "You aren't feeling too great, but you don't want or need to wipe yourself out, yet. Perhaps you can find the root of your problems and wipe it out one day, though.";
 		not-yet;
 	if number of not friendly followers > 0:
@@ -184,7 +184,7 @@ this is the post-hide-out rule:
 a wordtwisting rule (this is the pre-low-door rule):
 	if player is not in Wolf Rock, unavailable;
 	if sco-mice-tall is false:
-		vcp "Maybe there's a low door beneath the lode ore, but you don't have the ability to scrabble and scrape down through to find it[if number of friendly followers > 0], and nobody around can help you[end if].";
+		vcp "Maybe there's a low door beneath the lode ore, but you don't have the ability to scrabble and scrape down through to find it[if pals-made > 0], and nobody around can help you[end if].";
 		not-yet;
 	if sco-low-door is true:
 		vcal "You already found a low door in this mess!";
@@ -463,8 +463,8 @@ this is the post-war-file rule:
 
 to ride-squid:
 	if player is in Wand Wharf:
-		if number of friendly followers >= 1:
-			say "There was more than enough room on the squid for [if number of friendly followers is 1][the random friendly follower][else if number of friendly followers is 2]both your companions[else]all your companions[end if], too.";
+		if pals-made >= 1:
+			say "There was more than enough room on the squid for [if pals-made is 1][the random friendly follower][else if pals-made is 2]both your companions[else]all your companions[end if], too.";
 	follow-you;
 
 a wordtwisting rule (this is the pre-grow-vial rule):
@@ -660,7 +660,7 @@ a wordtwisting rule (this is the pre-were-meetin rule):
 	abide by the followers-check rule;
 
 a wordtwisting rule (this is the followers-check rule):
-	if number of friendly followers is 0:
+	if pals-made is 0:
 		vcp "But you have no friends to meet with!";
 		not-yet;
 	if number of not friendly followers > 0:
