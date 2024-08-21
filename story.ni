@@ -419,10 +419,13 @@ to decide whether can-show-spoilers:
 	if current-score < 2, no;
 	yes;
 
-book inventory
+book regular verbs, modified
+
+chapter inventory
 
 check taking inventory:
-	if sco-wipe-out is false, say "Well, besides that voice ringing occasionally in your head asking 'Why pout?' ...";
+	if sco-wipe-out is false, say "There's that occasional voice ringing in your head asking 'Why pout?' But besides that ...";
+	now talk ache is mentioned;
 
 report taking inventory when sco-six-quid is true and current-quid > 0:
 	say "You [if current-quid < 6]still [end if]have [current-quid in words] quid left from helping the sick squid.";
@@ -432,7 +435,19 @@ report taking inventory when sco-my-corps is false and sco-an-aim is true:
 	say "You have a name, too, now, you remember: Mike Orr.";
 	continue the action;
 
-book t talking
+report taking inventory when player has talk ache:
+	say "Oh, man. You still have that talk ache, too.";
+	continue the action;
+
+chapter listening
+
+the block listening rule is not listed in any rulebook.
+
+check listening:
+	if player is in hype lane and prize talk is in hype lane, try examining prize talk instead;
+	say "Nothing that could help you." instead;
+
+chapter t talking
 
 ting is an action applying to one thing.
 
