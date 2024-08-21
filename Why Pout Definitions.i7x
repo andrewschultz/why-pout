@@ -27,7 +27,7 @@ definition: a follower (called fo) is leftbehind:
 	if fo is in location of player, no;
 	yes;	
 
-every turn (this is the followers follow you rule):
+every turn when block-followers is false (this is the followers follow you rule):
 	if number of leftbehind followers > 0:
 		let plurals be whether or not number of leftbehind followers > 1;
 		if plurals is false:

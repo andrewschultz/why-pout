@@ -457,7 +457,8 @@ a wordtwisting rule (this is the pre-war-file rule):
 
 this is the post-war-file rule:
 	now sco-war-file is true;
-	say "You realize you could reach the wharf isle for a war file. When you get there, you're a bit disappointed by what you see. There's a bit too much emphasis on magic and the implements thereof, all of which are at a much too hefty price for you. So equipment is out. Still, there's some ideas worth tracking. Yet you can't be the only person disappointed here...";
+	say "The squid gives you[if number of friendly followers > 0] and only you[end if] a ride a few miles across the ocean. You realize you could reach the wharf isle for a war file. When you get there, you're a bit disappointed by what you see. There's a bit too much emphasis on magic and the implements thereof, all of which are at a much too hefty price for you. So equipment is out. Still, there's some ideas worth tracking. Yet you can't be the only person disappointed here...";
+	now block-followers is true;
 	move player to Wand Wharf;
 	ride-squid;
 
@@ -491,7 +492,7 @@ this is the post-wan-dwarf rule:
 	say "You look around and uncover a wan dwarf who wasn't good enough to be a full fighter but rejected for magic training. You explain your situation. They're all in![paragraph break]There's not much left to do here, so you ride the squid back.";
 	befriend wan dwarf;
 	move player to NoNotion;
-	ride-squid;
+	now block-followers is false;
 	conditional-flier-mangle;
 
 chapter we loan scoring

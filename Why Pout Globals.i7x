@@ -6,6 +6,8 @@ volume game states and specifics
 
 current-quid is a number that varies. current-quid is 0.
 
+block-followers is a truth state that varies.
+
 volume point scoring variables
 
 book integers
