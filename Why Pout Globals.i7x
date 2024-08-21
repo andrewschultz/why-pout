@@ -8,6 +8,8 @@ current-quid is a number that varies. current-quid is 0.
 
 volume point scoring variables
 
+chapter start and center
+
 section general
 
 sco-wipe-out is a truth state that varies.
@@ -15,91 +17,109 @@ sco-wipe-out is a truth state that varies.
 section Eh Raw Air Aww
 
 sco-an-aim is a truth state that varies.
+sco-two-maps is a truth state that varies.
 
-sco-shore-trail is a truth state that varies.
+section Hype Lane
 
-section naff haze
+sco-pry-stalk is a truth state that varies.
+sco-high-plain is a truth state that varies.
+
+section naff haze / high plain
 
 sco-nah-phase is a truth state that varies.
 
-section known ocean
+sco-grow-star is a truth state that varies.
+sco-shore-trail is a truth state that varies.
+sco-pole-east is a truth state that varies.
+sco-key-pillar is a truth state that varies.
 
-sco-known-ocean is a truth state that varies.
+chapter north area
+
+section wolf rock
+
+sco-wool-frock is a truth state that varies.
+
+sco-hide-out is a truth state that varies.
+sco-low-door is a truth state that varies.
 
 section we loan
 
 sco-well-own is a truth state that varies.
 sco-whee-lone is a truth state that varies.
 
-section unsorted
+sco-summer-chant is a truth state that varies.
+sco-bile-oh is a truth state that varies.
+sco-oh-flyer is a truth state that varies.
+
+section hideout
 
 sco-boost-role is a truth state that varies.
 
+chapter south area
+
+section No Notion
+
+sco-known-ocean is a truth state that varies.
 sco-six-quid is a truth state that varies.
-
-sco-two-maps is a truth state that varies.
-
-sco-pry-stalk is a truth state that varies.
-sco-high-plain is a truth state that varies.
-
-sco-pole-east is a truth state that varies.
-
-sco-low-bend is a truth state that varies.
-
-sco-store-mile is a truth state that varies.
-
-sco-mice-tall is a truth state that varies.
-
-sco-were-meetin is a truth state that varies.
-
-sco-my-corps is a truth state that varies.
-
-sco-cease-cull is a truth state that varies.
-
-sco-do-due-mend is a truth state that varies.
-
-sco-grow-star is a truth state that varies.
-
-sco-hide-out is a truth state that varies.
-
-sco-low-door is a truth state that varies.
-
-sco-oh-flyer is a truth state that varies.
-
-sco-bile-oh is a truth state that varies.
-
-sco-summer-chant is a truth state that varies.
 
 sco-the-file is a truth state that varies.
 sco-war-file is a truth state that varies.
 sco-grow-vial is a truth state that varies.
 
-sco-key-pillar is a truth state that varies.
+section wand wharf
+
+sco-wan-dwarf is a truth state that varies.
+
+chapter east area
+
+section lobe end
+
+sco-low-bend is a truth state that varies.
+sco-bay-sale is a truth state that varies.
+
+section storm isle
+
+sco-store-mile is a truth state that varies.
+sco-mice-tall is a truth state that varies.
+
+sco-mensch-elf is a truth state that varies.
+
+section trees mall
+
+sco-tree-small is a truth state that varies.
+sco-tall-cake is a truth state that varies.
+sco-treat-all is a truth state that varies.
+
+chapter west area
+
+section keep iller
+
+sco-plan-tracker is a truth state that varies.
 
 sco-gnome-old is a truth state that varies.
 sco-rogue-old is a truth state that varies.
 
-sco-wool-frock is a truth state that varies.
+sco-manna-curb is a truth state that varies.
 
-sco-bay-sale is a truth state that varies.
+section nigh fright
 
 sco-knife-right is a truth state that varies.
 
-sco-tree-small is a truth state that varies.
+section unsorted
 
-sco-mensch-elf is a truth state that varies.
+chapter endgame
 
-sco-manna-curb is a truth state that varies.
-
-sco-plan-tracker is a truth state that varies.
-
-sco-tall-cake is a truth state that varies.
-
-sco-treat-all is a truth state that varies.
+section worm eaten
 
 sco-gaunt-raider is a truth state that varies.
 
-sco-wan-dwarf is a truth state that varies.
+sco-were-meetin is a truth state that varies.
+sco-my-corps is a truth state that varies.
+
+section doom end
+
+sco-cease-cull is a truth state that varies.
+sco-do-due-mend is a truth state that varies.
 
 Why Pout Globals ends here.
 
