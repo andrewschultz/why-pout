@@ -39,7 +39,7 @@ to game-specific-cleanup: do nothing;
 chapter move to global
 
 when play begins:
-	say "You forget why your captors took you here, or how, or when. You just remember, every day, they regale you with 'Find a fine day.'[paragraph break]It's sort of hard to, when you're trapped like this. But this time -- you're trapped a little differently. Somewhere new. Maybe you can escape from your prison and your mental fog."
+	say "You forget why your captors took you here, or how, or when. You just remember, every day, they regale you with 'Find a fine day.'[paragraph break]It's sort of hard to, when you're trapped like this. But this time -- you're trapped a little differently. Somewhere new. You overheard something about how they were bored watching over you, and it was your fault for not being very interesting. Maybe you can escape from your prison and your mental fog."
 
 after printing the locale description of air aww when air aww is unvisited:
 	say "[i][bracket][b]NOTE[r][i]: to see general information about [this-game][i], type [b]ABOUT[r][i]. To see the verbs used, type [b]VERBS[r][i]. If you have trouble with the first few moves, there will be hints.[close bracket][r][line break]";
@@ -144,13 +144,13 @@ check going south in KeepIller:
 	if pals-made is 0:
 		say "You try to go west, but with no support, you're just too scared." instead;
 	else if pals-made is 1:
-		say "Even with [the random friendly follower]'s support, you are still terrified of what is west. You may need just a bit more." instead;
+		say "Even with [the random friendly follower]'s support, you are still terrified of what is south. You may need just a bit more." instead;
 	else:
 		say "You get over your fears with a little help from your friends.";
 
 chapter no mold
 
-there is a thing called no mold. It is in Keep Iller.
+there is a thing called no mold. It is in KeepIller. "You are really impressed by how no mold grows here. Someone must be keeping it up well."
 
 section gnome old
 
@@ -158,7 +158,7 @@ the gnome old is a follower. printed name is "gnome (old)".
 
 chapter row gold
 
-there is a thing called row gold. printed name is "row (gold)".
+there is a thing called row gold. It is in KeepIller. printed name is "row (gold)". "A row (gold) shines in this otherwise forbidding keep."
 
 section rogue old
 
@@ -216,11 +216,11 @@ the booze troll is a follower in Hideout. "A booze troll sulks sullenly here."
 
 chapter base ale
 
-the Base Ale is a thing. description is "Uck. It's a nasty color, really. But perhaps it will be useful."
+the Base Ale is a thing. description is "Uck. It's a nasty color, really. But perhaps it will be useful.".  indefinite article of Base Ale is "some".
 
 book We Loan
 
-We Loan is a room in universal. printed name is "[if sco-well-own is false]We Loan[else if sco-whee-lone is false]We'll Own[else if sco-oh-flyer is false]Whee, Lone?[else]Whee! [']Lone![end if]". "[if sco-oh-flyer is false]This area feels replete with the sort of double-talk all salesmen use. It will be tough to hang with all the way through, but if you do, maybe you'll get something out of it. [else]You've managed to navigte negotiations and wind up with ... a shiny new flyer! [end if]You can only go back [b]OUT[r] here[if sco-well-own is false].[paragraph break]You don't really trust the whole 'financial services' vibe here. Maybe there's a double meaning to deduce[end if]."
+We Loan is a room in universal. printed name is "[if sco-well-own is false]We Loan[else if sco-whee-lone is false]We'll Own[else if sco-oh-flyer is false]Whee, Lone?[else]Whee! [']Lone![end if]". "[if sco-oh-flyer is false]This area feels replete with the sort of double-talk all salesmen use. It will be tough to hang with all the way through, but if you do, maybe you'll get something out of it. [else if sco-bile-oh is true and sco-whee-lone is false]It's nice and silent here, and maybe there's a specific way to enjoy that. [else]You've managed to navigte negotiations and wind up with ... a shiny new flyer! [end if]You can only go back [b]OUT[r] here[if sco-well-own is false].[paragraph break]You don't really trust the whole 'financial services' vibe here. Maybe there's a double meaning to deduce[end if]."
 
 chapter some merchant
 
@@ -247,11 +247,11 @@ report examining the flier:
 
 book Lobe End
 
-Lobe End is a room in universal. "[if sco-low-bend is false]This lobe of land appears to end in all directions. Maybe you could look for something that might be a hill, even a steep one.[else]The low bend (former lobe end) now bends south.[end if]"
+Lobe End is a room in universal. "[if sco-low-bend is false]This lobe of land appears to end in all directions except back west. Maybe you could look for something that might be a hill, even a steep one.[else]The low bend (former lobe end) now bends from west to north, where you see water, too much to cross on foot.[end if]"
 
 chapter We Craft Weak Raft
 
-the We Craft Weak Raft is a thing. printed name is "We-Craft Weak Raft". description is "Well, it isn't fancy, but [if storm isle is unvisited]it looks sturdy enough[else]it got you across the water with no problem[end if]."
+the We Craft Weak Raft is a thing. printed name is "We-Craft Weak Raft". description is "Well, it isn't fancy, but [if storm isle is unvisited]it looks sturdy enough[else]it got you across the water with no problem[end if].". "The We-Craft Weak Raft from the bay sale floats here, ready to take you [if player is in storm isle]south[else]north[end if] across the water and back, as many times as needed."
 
 check going:
 	if ((room gone from is lobe end) and (room gone to is storm isle)) or ((room gone to is lobe end) and (room gone from is storm isle)):
@@ -407,7 +407,8 @@ carry out verbsing:
 chapter versioning
 
 carry out versioning:
-	say "I don't expect there to be many versions of a relatively small game, but version 1 was release to IFComp on August 28, 2024.";
+	say "I don't expect there to be many versions of a relatively small game. But still, for posterity...[paragraph break]";
+	say "ersion 1 was released to IFComp on August 28, 2024.";
 	the rule succeeds;
 
 report exting:
@@ -479,13 +480,15 @@ report ting:
 		say "More useful information worth remembering.";
 		now noun is chatted;
 		if number of unchatted followers is 0:
-			say "That was a lot of talking. After all that time alone, you're not used to it. You develop a talk-ache.";
+			say "[line break]That was a lot of talking. After all that time alone, you're not used to it. You develop a talk-ache.";
 			now player has talk ache;
+	if noun is chatted and number of unchatted followers is 0:
+		say "[line break]Ouch! Still got that talk-ache.";
 	continue the action;
 
 chapter talk ache
 
-the talk ache is a thing. description is "Not really annoying, but the sort of small nuisance that makes you feel a need to do something."
+the talk ache is a thing. description is "Not really annoying, but the sort of small nuisance that makes you feel a need to do something.". printed name is "talk-ache".
 
 section tall cake
 

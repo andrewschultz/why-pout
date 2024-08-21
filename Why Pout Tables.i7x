@@ -193,7 +193,7 @@ a wordtwisting rule (this is the pre-low-door rule):
 
 this is the post-low-door rule:
 	now sco-low-door is true;
-	say "The lode and the ore are tough to shift around, but beneath one of the piles, you actually do find a low door. Hooray!";
+	say "The lode and the ore are tough to shift around, but beneath one of the piles, you actually do find a low door, which you can go [b]INSIDE[r]. Hooray!";
 	reveal We Loan to inside;
 
 section lobe end scoring
@@ -285,7 +285,7 @@ a wordtwisting rule (this is the pre-tree-small rule):
 
 this is the post-tree-small rule:
 	now sco-tree-small is true;
-	say "Amidst all the fake trees, an actual organic small tree grows. You're a bit disappointed, but you realize you maybe shouldn't have expected much with so little letter-shuffling.";
+	say "Amidst all the fake trees, an actual organic small tree grows. You're a bit disappointed, but you realize you maybe shouldn't have expected much with so little letter-shuffling. Maybe if you want a bigger tree, you'll need to do something else.";
 	move tree small to Trees Mall;
 	grow-the-tree;
 
@@ -528,7 +528,7 @@ a wordtwisting rule (this is the pre-bile-oh rule):
 
 this is the post-bile-oh rule:
 	now sco-bile-oh is true;
-	say "You are able to dismiss the merchant. You can maybe enjoy some solitude now!";
+	say "The mere suggestion that the merchant's aggression may be annoying seems to set them off. No, no, it's people like YOU who are the problem. Without dynamic positivity like theirs, you're totally screwed! You're just jealous you don't have it![paragraph break]You freeze up, confused by all this, and the merchant takes this as a sign of arrogant disrespect. You are not the first person to reject their positivity! They run into clueless crumb-bums all day![paragraph break]They storm off, presumably to find another crumb-bum to abuse for not having their brand of positivity.[paragraph break]Oh, hey, you can maybe enjoy some solitude now!";
 	moot merchant;
 
 a wordtwisting rule (this is the pre-whee-lone rule):
