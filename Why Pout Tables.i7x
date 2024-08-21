@@ -121,7 +121,7 @@ this is the post-shore-trail rule:
 	check-worm-eaten;
 
 a wordtwisting rule (this is the pre-grow-star rule):
-	if player is not in NaffHaze and gross tar is not in NaffHaze, unavailable;
+	if player is not in NaffHaze or gross tar is not in NaffHaze, unavailable;
 	ready;
 
 this is the post-grow-star rule:
@@ -261,7 +261,7 @@ this is the post-mice-tall rule:
 	moot my stall;
 
 a wordtwisting rule (this is the pre-mensch-elf rule):
-	if player is not in storm isle and men shelf is not in storm isle, unavailable;
+	if player is not in storm isle or men shelf is not in storm isle, unavailable;
 	if sco-mensch-elf is true:
 		vcal "You already did this!";
 		already-done;
@@ -328,7 +328,7 @@ this is the post-treat-all rule:
 section hype lane scoring
 
 a wordtwisting rule (this is the pre-pry-stalk rule):
-	if player is not in hype lane and prize talk is not in hype lane, unavailable;
+	if player is not in hype lane or prize talk is not in hype lane, unavailable;
 	if sco-pry-stalk is true:
 		vcal "You already pried a stalk!";
 		already-done;
@@ -486,7 +486,7 @@ this is the post-well-own rule:
 	move some merchant to We Loan;
 
 a wordtwisting rule (this is the pre-summer-chant rule):
-	if player is not in we loan and merchant is not in we loan, unavailable;
+	if player is not in we loan or merchant is not in we loan, unavailable;
 	if sco-summer-chant is true:
 		vcal "You already found cheeriness outside of the merchant!";
 		already-done;
@@ -497,7 +497,7 @@ this is the post-summer-chant rule:
 	say "Hooray! You figured what to do! You get a point!";
 
 a wordtwisting rule (this is the pre-bile-oh rule):
-	if player is not in we loan and merchant is not in we loan, unavailable;
+	if player is not in we loan or merchant is not in we loan, unavailable;
 	if sco-summer-chant is false:
 		vcp "You need to find something positive to say, first. It doesn't have to be particularly rigorous, but it needs to be positive.";
 		not-yet;
@@ -527,7 +527,7 @@ this is the post-whee-lone rule:
 	move oaf liar to we loan;
 
 a wordtwisting rule (this is the pre-oh-flyer rule):
-	if player is not in we loan and oaf liar is not in we loan, unavailable;
+	if player is not in we loan or oaf liar is not in we loan, unavailable;
 	if sco-six-quid is false:
 		vcp "[one of]You notice a flyer behind their back, and you nudge them as if to say, can I have it for free? No, no, you cannot[or]You still haven't found any way to pay for the flyer[stopping].";
 		not-yet;
@@ -620,7 +620,7 @@ this is the post-knife-right rule:
 section worm eaten scoring
 
 a wordtwisting rule (this is the pre-gaunt-raider rule):
-	if player is not in worm eaten and gone traitor is not in worm eaten, unavailable;
+	if player is not in worm eaten or gone traitor is not in worm eaten, unavailable;
 	ready;
 
 this is the post-gaunt-raider rule:
@@ -679,7 +679,7 @@ this is the post-my-corps rule:
 chapter doom end scoring
 
 a wordtwisting rule (this is the pre-cease-cull rule):
-	if player is not in doom end and sea skull is not in doom end, unavailable;
+	if player is not in doom end or sea skull is not in doom end, unavailable;
 	if sco-cease-cull is true:
 		vcal "You already played defense. Now's the time to go on offense!";
 		already-done;
