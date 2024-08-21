@@ -100,7 +100,7 @@ Eh Raw Air Aww is a room in universal. printed name is "[if sco-an-aim is false]
 
 book Hype Lane
 
-Hype Lane is a room in universal. "You feel you must be pretty far underground. People chatter all around about the adventure you find here."
+Hype Lane is a room in universal. "You feel you must be pretty far underground. People chatter all around about the adventure and confrontation and competition you find here. Why, it's so much more interesting here than above ground, with boring old nature and a lack of social progress and stuff!"
 
 chapter prize talk
 
@@ -220,7 +220,7 @@ the Base Ale is a thing. description is "Uck. It's a nasty color, really. But pe
 
 book We Loan
 
-We Loan is a room in universal. printed name is "[if sco-well-own is false]We Loan[else if sco-whee-lone is false]We'll Own[else if sco-oh-flyer is false]Whee, Lone?[else]Whee! [']Lone![end if]". "[if sco-oh-flyer is false]This area feels replete with the sort of double-talk all salesmen use. It will be tough to hang with all the way through, but if you do, maybe you'll get something out of it. [else]You've managed to navigte negotiations and wind up with ... a shiny new flyer! [end if]You can only go back [b]OUT[r] here."
+We Loan is a room in universal. printed name is "[if sco-well-own is false]We Loan[else if sco-whee-lone is false]We'll Own[else if sco-oh-flyer is false]Whee, Lone?[else]Whee! [']Lone![end if]". "[if sco-oh-flyer is false]This area feels replete with the sort of double-talk all salesmen use. It will be tough to hang with all the way through, but if you do, maybe you'll get something out of it. [else]You've managed to navigte negotiations and wind up with ... a shiny new flyer! [end if]You can only go back [b]OUT[r] here[if sco-well-own is false].[paragraph break]You don't really trust the whole 'financial services' vibe here. Maybe there's a double meaning to deduce[end if]."
 
 chapter some merchant
 
@@ -325,7 +325,7 @@ after printing the locale description of Worm Eaten when sco-were-meetin is true
 	continue the action;
 
 check going down in Worm Eaten:
-	if sco-the-file is false, say "Hmm. You still feel like you're missing some plans, some intelligence, even though you have everything else." instead;
+	if sco-the-file is false, say "Hmm. You still feel like you're missing some plans, some intelligence, even though you have everything else. The [raider] found it easy to get kicked out, but you need detailed plans how to get back in." instead;
 
 chapter gone trader
 
@@ -414,8 +414,15 @@ to decide whether can-show-spoilers:
 
 book inventory
 
+check taking inventory:
+	if sco-wipe-out is false, say "Well, besides that voice ringing occasionally in your head asking 'Why pout?' ...";
+
 report taking inventory when sco-six-quid is true and current-quid > 0:
 	say "You [if current-quid < 6]still [end if]have [current-quid in words] quid left from helping the sick squid.";
+	continue the action;
+
+report taking inventory when sco-my-corps is false and sco-an-aim is true:
+	say "You have a name, too, now, you remember: Mike Orr.";
 	continue the action;
 
 book t talking
@@ -453,11 +460,12 @@ check ting:
 			say "You feel too grumpy for positive self-talk. You mumble 'I molder. I'm older.'" instead;
 		say "You motivate yourself with 'Goal: earn? Go learn!'" instead;
 	if noun is not a follower, say "You don't get a response." instead;
+	if noun is not friendly, say "You haven't gained [the noun]'s trust enough yet for a chat." instead;
 	if player has talk ache, say "That talk ache is a bit of a nuisance." instead;
 	if number of unchatted followers is 0, say "You've talked to everyone, but why not chat again?";
 
 carry out ting:
-	say "You chat with [the noun] a bit, learning more about the game's history and why you're here.";
+	say "You chat with [the noun] a bit, [if noun is chatted]recapping[else]learning[end if] more about the game's history and why you're here.";
 	the rule succeeds;
 
 report ting:
