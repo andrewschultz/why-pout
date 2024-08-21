@@ -265,9 +265,6 @@ this is the post-mice-tall rule:
 
 a wordtwisting rule (this is the pre-mensch-elf rule):
 	if player is not in storm isle or men shelf is not in storm isle, unavailable;
-	if sco-mensch-elf is true:
-		vcal "You already did this!";
-		already-done;
 	ready;
 
 this is the post-mensch-elf rule:
@@ -520,7 +517,7 @@ a wordtwisting rule (this is the pre-summer-chant rule):
 
 this is the post-summer-chant rule:
 	now sco-summer-chant is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "You think up a summer chant you mumble under your breath. The merchant finds it a bit weird you like THAT as a way to keep positive. It doesn't seem like that sort of thing helps the economy. Their cheeriness slips slightly, with impressively-balanced potshots at people more and less successful than they are.";
 
 a wordtwisting rule (this is the pre-bile-oh rule):
 	if player is not in we loan or merchant is not in we loan, unavailable;
@@ -590,7 +587,7 @@ a wordtwisting rule (this is the pre-rogue-old rule):
 		vcp "A rogue, old, appears, but after some conversation, you realize you don't have any money to pay them with. They'd like to help, but they worked for free once and felt ripped off. Maybe later.";
 		not-yet;
 	if sco-rogue-old is true:
-		vcal "You already did this!";
+		vcal "But you already got the rogue (old) to join you!";
 		already-done;
 	ready;
 
@@ -685,7 +682,6 @@ a wordtwisting rule (this is the followers-check rule):
 	if number of not friendly followers > 0:
 		vcp "You sense you don't have the gang together! [if number of not friendly followers is 1]But you must be very, very close[else]You may still be a way away[end if].";
 		not-yet;
-	ready;
 
 this is the post-were-meetin rule:
 	now sco-were-meetin is true;
