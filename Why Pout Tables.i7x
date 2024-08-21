@@ -11,7 +11,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "an"	"aim"	--	--	false	true	true	false	eh raw air aww	pre-an-aim rule	post-an-aim rule	--	--
 "two"	"maps"	--	--	false	true	true	false	eh raw air aww	pre-two-maps rule	post-two-maps rule	--	--
 "pry"	"stalk"	--	--	false	true	true	false	hype lane	pre-pry-stalk rule	post-pry-stalk rule	--	--
-"high"	"plain"	--	--	false	true	true	false	hype lane	pre-high-plain rule	post-high-plain rule	--	"You can find a [b]HIGH PLAIN[r] [once-now of sco-pry-stalk] you have something that can reach that far up."
+"high"	"plain|plane"	--	--	false	true	true	false	hype lane	pre-high-plain rule	post-high-plain rule	--	"You can find a [b]HIGH PLAIN[r] [once-now of sco-pry-stalk] you have something that can reach that far up."
 "nah|naah"	"phase"	--	--	false	true	true	false	NaffHaze	vc-nah-phase rule	vr-nah-phase rule	--	--
 "pole|pull"	"east"	--	--	false	true	true	false	NaffHaze	pre-pole-east rule	post-pole-east rule	--	--
 "grow"	"star"	--	--	false	true	true	false	NaffHaze	pre-grow-star rule	post-grow-star rule	--	--
@@ -59,7 +59,7 @@ a wordtwisting rule (this is the pre-two-maps rule):
 
 this is the post-two-maps rule:
 	now sco-two-maps is true;
-	say "You look around for secrets. You find one line that is a hash of horizontal linesand another that is a hash of vertical lines. You put them together ... and you see a passage out of the maze that traps you in!";
+	say "You look around for secrets. You find one line that is a hash of horizontal lines and another that is a hash of vertical lines. You put them together ... and you see a passage out of the maze that traps you in!";
 	move player to Hype Lane;
 
 section unsorted scoring
@@ -87,7 +87,7 @@ a wordtwisting rule (this is the pre-an-aim rule):
 
 this is the post-an-aim rule:
 	now sco-an-aim is true;
-	say "Yes. Now that you realize you want more than just to know your name, that you have bigger goals, you push a bit harder when you initially forget it. You remember patches of the past. You remember people harshly calling you by your last name, then your first.[paragraph break]Your name is Mike Orr. (Short for Michal, which everyone pronounced Michael until you just gave up, or ... well, Michael.)[paragraph break]You look around a bit. You can see more, now. You're in some sort of tomb apse. You could exit--there are exits each way--but you suspect there's some horrible maze you could easily get lost in.";
+	say "Yes. Now that you realize you want more than just to know your name, that you have bigger goals, you push a bit harder when you initially forget it. You remember patches of the past. You remember people harshly calling you by your last name, then your first.[paragraph break]Your name is Mike Orr. You even remember it's -- well, one of these two things: short for Michal, which everyone pronounced Michael until you just gave up, or ... well, Michael.[paragraph break]You look around a bit. You can see more, now. You're in some sort of tomb apse. You could exit--there are exits each way--but you suspect there's some horrible maze you could easily get lost in.";
 	print-the-loc;
 
 section NaffHaze scoring
@@ -482,7 +482,7 @@ a wordtwisting rule (this is the pre-well-own rule):
 
 this is the post-well-own rule:
 	now sco-well-own is true;
-	say "Yes. There's a definite shady side. You mumble to yourself, and then your mumbles get louder, and it attracts ... some merchant. They begin babbling about deals thry have, fake-friendly, about how you can buy low.";
+	say "Yes. There's a definite shady side. You mumble to yourself, and then your mumbles get louder, and it attracts ... some merchant. They begin babbling about deals they have, fake-friendly, about how you can buy low.";
 	move some merchant to We Loan;
 
 a wordtwisting rule (this is the pre-summer-chant rule):
@@ -696,6 +696,7 @@ a wordtwisting rule (this is the pre-do-due-mend rule):
 this is the post-do-due-mend rule:
 	now sco-do-due-mend is true;
 	say "Yes. It's time to get healing. You're not quite sure how, but at least you're sure of who you are. And your companions are, too.";
+	follow the score and thinking changes rule;
 	end the story finally saying "Gray day?! Grade A!";
 	follow the shutdown rules;
 
@@ -720,7 +721,7 @@ rule for printing a parser error when the latest parser error is the not a verb 
 	if core-score is 0:
 		say "You're stuck with what to do right now. Perhaps you can look inward, to give you an idea of what you want.";
 	else if core-score is 1:
-		say "You need to find something that will get you out of the tomb apse. You remebered a name by finding an aim. What now?";
+		say "You need to find something that will get you out of the tomb apse. You remembered a name by finding an aim. What now?";
 	else:
 		say "I didn't understand that. [this-game] has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try [b]VERBS[r].";
 	the rule succeeds;
