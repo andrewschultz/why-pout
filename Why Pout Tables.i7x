@@ -767,34 +767,6 @@ this is the score and thinking changes rule:
 	say "[i][bracket]Your score just went up by [if sco-delt is 1]a point[else][sco-delt in words] points[end if]![close bracket][r][line break]";
 	now last-current-score is current-score;
 
-section copied from PRPR globals
-
-core-max is a number that varies. core-max is 43.
-
-max-bonus is a number that varies. max-bonus is 0.
-
-core-score is a number that varies.
-
-cur-bonus is a number that varies.
-
-last-cur-bonus is a number that varies.
-
-last-current-score is a number that varies.
-
-cur-max-bonus is a number that varies. [ what is achievable in the current game state? ]
-
-to decide which number is bonus-locked-out: decide on max-bonus - cur-max-bonus;
-
-when play begins (this is the set current max points to max points rule): now cur-max-bonus is max-bonus;
-
-to decide which number is current-score: decide on core-score + cur-bonus;
-
-to decide which number is min-needed: decide on core-max + cur-bonus.
-
-to decide which number is max-available: decide on core-max + cur-max-bonus.
-
-to decide which number is max-overall: decide on core-max + max-bonus.
-
 Why Pout Tables ends here.
 
 ---- DOCUMENTATION ----
