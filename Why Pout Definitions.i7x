@@ -8,6 +8,8 @@ include Revealing Passages by Andrew Schultz.
 
 volume new types
 
+book followers
+
 a follower is a kind of thing.
 
 a follower can be unfriendly, friendly or donewith. a follower is usually unfriendly.
@@ -56,6 +58,25 @@ every turn when block-followers is false (this is the followers follow you rule)
 to follow-you:
 	repeat with X running through leftbehind followers:
 		move X to location of player;
+
+book swearblobs
+
+a swearblob is a kind of thing. a swearblob is usually privately-named. a swearblob is usually scenery. a swearblob has text called swear-indicate-text.
+
+swear-index is a number variable. swear-index is 0.
+
+x is a list of things variable.
+
+when play begins:
+	now x is the list of swearblobs;
+	sort x in random order;
+
+every turn when number of entries in x > 0:
+	increment swear-index;
+	if swear-index > number of entries in x, now swear-index is 1;
+	let my-swear be entry swear-index in x;
+	if my-swear is not in brew, move my-swear to brew;
+	say "[description of my-swear][line break]";
 
 volume stubs
 

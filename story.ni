@@ -382,11 +382,23 @@ to zap-bruise-wares:
 
 chapter earls
 
-the grinch earls are a plural-named thing in Brew Swears. "Some [earls] parade around here, bragging about how they ruin boring people's fun with their dynamic ways and pointing out that it's easy to be nice if you're boring[if sco-grin-churls is false], though they're less effective than when they were self-styled earls[end if][if sco-weak-us is true]. You cut their 'we cuss' down to size, so they're now giving examples of how they cuss[else]. They constantly blather 'WE CUSS' and seem quite proud of that[end if].". printed name is "[if sco-grin-churls is true]grin churls[else]grinch earls[end if]."
+the grinch earls are a plural-named thing in Brew Swears. "Some [earls] parade around here, bragging about how they ruin boring people's fun with their dynamic ways and pointing out that it's easy to be nice if you're boring[if sco-grin-churls is false], though they're less effective than when they were self-styled earls[end if][if sco-weak-us is true]. You cut their 'we cuss' down to size, so they're now giving examples of how they cuss[else]. They constantly blather 'WE CUSS' and seem quite proud of that[end if].". printed name is "[if sco-grin-churls is true]grin churls[else]grinch earls[end if]".
 
 chapter crude orc
 
-the crude orc is an unneeded follower in Brew Swears. "A crude orc trundles around here[if sco-crew-dork is true], on your side, now[else if sco-weak-us is true], looking equally between you and [the earls][else], trying to impress [the earls][end if].". description is "[if sco-weak-us is false]Looking at you like their next target, to show they're tough enough for [the earls][else if sco-crew-dork is false]Unsure of themselves. They might be ready for a hard truth[else]Looking up to you a lot, for setting them straight[end if]."
+the crude orc is an unneeded follower in Brew Swears. "A crude orc trundles around here[if number of swearblobs in Brew Swears is 0], ready to follow you, with all the rough language taken care of[else if sco-crew-dork is true], on your side, now[else if sco-weak-us is true], looking equally between you and [the earls][else], trying to impress [the earls][end if].". description is "[if sco-weak-us is false]Looking at you like their next target, to show they're tough enough for [the earls][else if sco-crew-dork is false]Unsure of themselves. They might be ready for a hard truth[else if number of swearblobs in Brew Swears > 0]Looking up to you a lot, for setting [the grinch] straight[else]Ready to go along with you on your adventure[end if]."
+
+chapter swearblobs
+
+hush-it is a swearblob. "The [grinch] laugh and say 'Hush it.'".
+
+life-occurs is a swearblob. "The [grinch] take cheap shots and say 'Life occurs.'".
+
+heh-class is a swearblob. "The [grinch] mock you, or maybe boost themselves, with 'Heh, class!'"
+
+weird-icks is a swearblob. "The [grinch] launch 'Weird! Ick![']s at enmies real and imagined."
+
+bah-sturdy is a swearblob. "The [grinch] shake their heads at you: 'Bah! Sturdy?!'"
 
 volume endgame room
 
