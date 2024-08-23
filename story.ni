@@ -123,7 +123,7 @@ Hype Lane is a room in universal. "You feel you must be pretty far underground. 
 
 chapter prize talk
 
-prize talk is a thing in hype lane. "Prize talk reverberates all about ... about treasure, fame, and so forth.". description is "The prize talk also discusses things that aren't so worth it, like -- well, plants and stuff. BORING."
+prize talk is a thing. "You'd like to DO something about the prize talk. Or seek out something that would give you passage away from it.". description is "The prize talk also discusses things that aren't so worth it, like -- well, plants and stuff. BORING."
 
 chapter Naff Haze
 
@@ -392,11 +392,11 @@ understand "about" as abouting.
 
 carry out abouting:
 	say "[this-game] was written for IFComp 2024. It's something I originally thought about writing for EctoComp, but I never managed to mash enough ideas together.";
-	say "It reuses a lot of code from [i]Roads of Liches[r] and my [i]Prime Pro Rhyme Row[r] games, which have different mechanics but a similar conceit: guess the right two-word phrase. However, it's narrower in scope, and I didn't want to rely on too well-known examples of possible phrases for point scoring.";
-	say "I think I went ahead with it once I realized bigger projects weren't on the cards for IFComp 2024, and I started with something I could handle. The drip of ideas started February, 2020, according to my notes. But I wasn't getting anything really original, or so it seemed.";
-	say "My weekly writing file 20240429.txt contains the game title, and that's when things really started rolling. But of course there's nothing like a deadline to make things really fall into place.";
+	say "[line break]It reuses a lot of code from [i]Roads of Liches[r] and my [i]Prime Pro Rhyme Row[r] games, which have different mechanics but a similar conceit: guess the right two-word phrase. However, it's narrower in scope, and I didn't want to rely on too well-known examples of possible phrases for point scoring.";
+	say "[line break]Once I realized bigger projects weren't on the cards for IFComp 2024, I focused on something I could handle.";
+	say "While the drip of ideas started February, 2020, according to my notes, I wasn't getting anything really original, or so it seemed. But the idea was always there. Then my weekly writing file 20240429.txt contains the game title, and that's when things really started rolling. But of course there's nothing like a deadline to make things really fall into place, especially when you've got nothing else.";
 	say "[line break][email] is my email, and [ghsite]/why-pout is the github site, where you can report issues. I'm open to transcripts.";
-	say "[line break]See [b]CREDITS[r] for people who helped make [this-game] a reality.  [b]EXT[r] shows the extensions listed, and [b]VERSION[r] or [b]VERSIONS[r] shows version info.";
+	say "[line break][b]CREDITS[r] lists people who helped make [this-game] a reality, or a better version than it would've been without them.  [b]EXT[r] shows the extensions listed, and [b]VERSION[r] or [b]VERSIONS[r] shows version info.";
 	the rule succeeds;
 
 chapter creditsing
@@ -410,6 +410,8 @@ understand "credit" as creditsing.
 understand "credits" as creditsing.
 
 carry out creditsing:
+	say "Thanks to Wade Clarke, P. B. Parjeter (and others) for testing.";
+	say "[line break]GENERAL THANKS:[paragraph break]";
 	say "Thanks to everyone past and future involved in the administration of IFComp.";
 	say "Thanks to the I7 board on Intfiction.org for their help, as well as the people in the general topic.";
 	the rule succeeds;
@@ -426,6 +428,7 @@ carry out verbsing:
 	say "[this-game] bypasses many of the standard Inform parser verbs, since it is word-puzzle based. Things are taken implicitly, and you don't need to drop anything.";
 	say "[line break]The four standard directions work, and you may go [b]IN[r], [b]OUT[r], [b]UP[r], and [b]DOWN[r], too.";
 	say "[line break]In addition, there are NPCs you may wish to [b]TALK TO[r], which can be shortened to [b]T[r].";
+	say "[line break][b]THINK[r] will remind you of things you found, but the time wasn't right.";
 	say "[line break]Finally, [b]ABOUT[r] gives basic information about [this-game] and also cues some other meta-commands.";
 	if current-score < 3:
 		say "[line break]Most point-scoring commands will consist of two words.";
@@ -435,8 +438,10 @@ chapter versioning
 
 carry out versioning:
 	say "I don't expect there to be many versions of a relatively small game. But still, for posterity...[paragraph break]";
-	say "ersion 1 was released to IFComp on August 28, 2024.";
+	say "Version 1 was released to IFComp on August 28, 2024.";
 	the rule succeeds;
+
+[the text below is added to Versioning and Extensions Tweak]
 
 report exting:
 	unless can-show-spoilers, say "One extension has been temporarily removed from the list, as it may cause a spoiler. If you wish to see it, come back after you've scored two points.";
