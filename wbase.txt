@@ -2,13 +2,55 @@ Why Pout, by Andrew Schultz
 
 This is a walkthrough for Why Pout, my IFComp 2024 entry. While there is no precise order to do things in, you often need some companions or items to solve other puzzles.
 
+Why Pout was meant to be smaller than my usual IFComp efforts. It has 44 puzzle points and 15 rooms in the main area.
+
 This walkthrough attempts to be optimal. However, I may have missed ways to save a move here or there.
 
-Small obligatory warning: you may wish to try to at least get the first point before spoiling things.
+It also parrots my test commands in the file Why Pout.i7x.
+
+You can find the source with hidden fun at https://github.com/andrewschultz/why-pout, and any issues can be reported there.
+
+Small obligatory warning: you may wish to try to at least get the first point before spoiling things. That's why there's a lot of introductory text here, as well as extra lines.
 
 =============================================
 
-At first, there isn't much to look around at. Maybe at yourself. You feel a bit self-centered.
+At first, there isn't much to look around at. Maybe at yourself. You can't see much else, anyway, so it's not totally self-centered.
+
+You don't have to X ME to get the first point, but X ME may provide a few hints.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 You need a name. But you just can't find one.
 
