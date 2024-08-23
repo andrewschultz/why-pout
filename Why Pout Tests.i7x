@@ -4,9 +4,9 @@ Version 1/240816 of Why Pout Tests by Andrew Schultz begins here.
 
 volume IDE tests
 
-test w1 with "an aim/two maps/self owns/pry stalk/high plain/nah phase"
+chapter building blocks
 
-chapter new-tests
+test w1 with "an aim/two maps/self owns/pry stalk/high plain/nah phase"
 
 test w2 with "pole east/shore trail/s/known ocean/six quid/n". [get the money]
 
@@ -14,7 +14,7 @@ test w3 with "grow star/n/wool frock/hide out/d/boost role/u/s".
 
 test w4 with "key pillar/w/gnome old/rogue old/plan tracker/see design/knife right/e".
 
-test wb with "bruise wares/in/weak us/out".
+test wb with "brew swears/in/weak us/out".
 
 test w5 with "d/gaunt raider/u".
 
@@ -32,6 +32,10 @@ test w10 with "t elf/t mice/t gnome/t rogue/t troll/t raider/t dwarf/tall cake/t
 test w11 with "s/s/w/s/the file/n".
 
 test w12 with "d/were meetin/my corps/d/cease cull/wipe out/wl/do mend".
+
+chapter longer tests
+
+test bo with "test w1/test w2/test w3/test w4/test wb".
 
 test a with "test w1/test w2/test w3/test w4/test w5/test w6/test w7/test w8/test w9/test w10/test w11/test w12".
 

@@ -54,6 +54,7 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "cease"	"cull"	"seize"	hom-cease-cull rule	false	true	true	false	doom end	pre-cease-cull rule	post-cease-cull rule	--	--
 "wipe"	"out"	--	--	false	true	true	false	doom end	pre-wipe-out rule	post-wipe-out rule	--	"You will want to [b]WIPE OUT[r] the cause of your problems [once-now of sco-cease-cull] you have them in your crosshairs."
 "do|due"	"mend"	"dew"	--	false	true	true	false	doom end	pre-do-due-mend rule	post-do-due-mend rule	--	--
+"weak"	"us"	--	--	false	true	false	false	brew swears	pre-weak-us rule	post-weak-us rule	--	--
 
 section air aww scoring
 
@@ -778,6 +779,19 @@ this is the post-do-due-mend rule:
 	follow the score and thinking changes rule;
 	end the story finally saying "Gray day?! Grade A!";
 	follow the shutdown rules;
+
+chapter brew swears scoring
+
+a wordtwisting rule (this is the pre-weak-us rule):
+	if player is not in brew swears, unavailable;
+	if sco-weak-us is true:
+		vcal "You already established the [grinch] cursed out of weakness or, at least, not fully from strength!";
+		already-done;
+	ready;
+
+this is the post-weak-us rule:
+	now sco-weak-us is true;
+	say "You're surprised how just making a little shift can make the [grinch] seem much weaker. Their strength is the sort of brute force that doesn't life other people up.[paragraph break]They throw down the gauntlet at this point. Don't you know cussing shows higher intelligence? Some study or other showed that![paragraph break]The crude orc looks back and forth between you and the [grinch].";
 
 volume command parsing
 

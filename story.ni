@@ -48,10 +48,6 @@ after printing the locale description of air aww when air aww is unvisited:
 
 universal is a region.
 
-to up-min: do nothing;
-
-core-score is a number that varies.
-
 to decide which region is mrlp: decide on map region of location of player.
 cur-bonus is a number that varies.
 
@@ -367,7 +363,7 @@ Brew Swears is a room in universal. "If you thought Hype Lane was bad, this is e
 
 check going inside in NaffHaze:
 	if room gone to is Brew Swears:
-		say "Your companions stay behind. They recognize this is a spiritual fight for you.";
+		say "Your companions stay behind. They recognize this is a spiritual fight for you and you alone.";
 		now block-followers is true;
 
 check going outside in Brew Swears: now block-followers is false;
