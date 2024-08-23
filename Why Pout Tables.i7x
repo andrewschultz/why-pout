@@ -874,9 +874,14 @@ to say went-by (nu - a number): say "just went [if nu > 0]up[else]down[end if] b
 
 this is the score and thinking changes rule:
 	let sco-delt be current-score - last-current-score;
-	if sco-delt is 0, continue the action;
-	say "[i][bracket]Your score just went up by [if sco-delt is 1]a point[else][sco-delt in words] points[end if]![close bracket][r][line break]";
-	now last-current-score is current-score;
+	let bonus-delt be cur-bonus - last-cur-bonus;
+	if sco-delt is 0 and bonus-delt is 0, continue the action;
+	if sco-delt > 0:
+		say "[i][bracket]Your score just went up by [if sco-delt is 1]a point[else][sco-delt in words] points[end if]![close bracket][r][line break]";
+		now last-current-score is current-score;
+	else if bonus-delt > 0:
+		say "[i][bracket]Your score just went up by [if bonus-delt is 1]a bonus point[else][bonus-delt in words] bonus points[end if]![close bracket][r][line break]";
+		now last-cur-bonus is cur-bonus;
 
 Why Pout Tables ends here.
 
