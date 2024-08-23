@@ -62,7 +62,7 @@ a wordtwisting rule (this is the pre-two-maps rule):
 
 this is the post-two-maps rule:
 	now sco-two-maps is true;
-	say "You look around for secrets. You find one line that is a hash of horizontal lines and another that is a hash of vertical lines. You put them together ... and you see a passage out of the maze that traps you in!";
+	say "You look around for secrets. You find one line that is a hash of horizontal lines and another that is a hash of vertical lines. You put them together ... and you see a maze. You hope you can trace a passage out. And, with some effort, you do! Then you follow it. You hope it's right, and it leads somewhere better, or at least not as awful...";
 	move player to Hype Lane;
 
 section unsorted scoring
