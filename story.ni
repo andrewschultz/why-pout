@@ -89,6 +89,24 @@ check thinking:
 
 volume verbs
 
+the block saying no rule is not listed in any rulebook.
+the block saying yes rule is not listed in any rulebook.
+
+the block attacking rule is not listed in any rulebook.
+
+check attacking:
+	say "You aren't built for that[if pals-made > 0], but maybe you can lead companions to a big victory[end if]." instead;
+
+the block swearing obscenely rule is not listed in any rulebook.
+the block swearing mildly rule is not listed in any rulebook.
+
+check swearing obscenely:
+	if player is in Brew Swears, say "Yes. You're in the right place for that." instead;
+	if Brew Swears is visited, say "You had enough of that." instead;
+	say "There's an area for that, or there will be post-IFComp, [if player is in doom end], but you can't go back to visit it now[end if]." instead;
+
+check swearing mildly: try swearing obscenely instead;
+
 check taking:
 	say "You don't need to take anything in [this-game]. Everything you need will be taken implicitly." instead;
 
@@ -324,7 +342,11 @@ Wand Wharf is a room in universal.
 
 the wan dwarf is a follower. description is "Short and stocky. It wears glasses from what other dwarves would say was reading too much.". help-chat is "The dwarf provides an impressively nuanced view on how to balance magic skill with physical skill and fighting savvy. But the dwarf also notes how to be a good expert in specific areas if need be, as well as how to get experts and generalists to work together. However, the dwarf also expresses worry that this talk is all great in theory but hard in practice."
 
-volume endgame
+book (extra room)
+
+Brew Swears is a room in universal.
+
+volume endgame room
 
 book Worm Eaten
 
