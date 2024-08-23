@@ -451,6 +451,19 @@ to decide whether can-show-spoilers:
 	if current-score < 2, no;
 	yes;
 
+chapter xyzzying
+
+xyzzying is an action out of world.
+
+understand the command "xyzzy" as something new.
+
+understand "xyzzy" as xyzzying.
+
+carry out xyzzying:
+	say "You hear a[one of][or]nother[stopping] size-Z 'X! Why's [']e...'";
+	say "[one of][line break]No, I don't know whether size Z is super-big or super-small.[or][stopping]";
+	the rule succeeds;
+
 book regular verbs, modified
 
 chapter inventory
