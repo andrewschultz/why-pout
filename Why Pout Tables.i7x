@@ -10,6 +10,7 @@ table of main oronyms
 w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "an"	"aim"	--	--	false	true	true	false	eh raw air aww	pre-an-aim rule	post-an-aim rule	--	--
 "two"	"maps"	"too"	--	false	true	true	false	eh raw air aww	pre-two-maps rule	post-two-maps rule	--	--
+"self"	"owns"	--	--	false	true	true	false	hype lane	pre-self-owns rule	post-self-owns rule	--	--
 "pry"	"stalk"	--	--	false	true	true	false	hype lane	pre-pry-stalk rule	post-pry-stalk rule	--	--
 "high"	"plain|plane"	--	--	false	true	true	false	hype lane	pre-high-plain rule	post-high-plain rule	--	"You can find a [b]HIGH PLAIN[r] [once-now of sco-pry-stalk] you have something that can reach that far up."
 "nah|naah|naw"	"phase"	--	--	false	true	true	false	NaffHaze	vc-nah-phase rule	vr-nah-phase rule	--	--
@@ -328,8 +329,20 @@ this is the post-treat-all rule:
 
 section hype lane scoring
 
+a wordtwisting rule (this is the pre-self-owns rule):
+	if player is not in hype lane, unavailable;
+	if cell phones are not in hype lane, unavailable;
+	ready;
+
+this is the post-self-owns rule:
+	now sco-self-owns is true;
+	say "You take a step back from all the confident, constant chatter in the cell phones. You hear that, indeed, people are just repeating mantras, and they are not as smart as they think they are. You wonder if you should say something to the most egregious offenders ... and you eventually do! And they appear flustered. They attack you back for being too quiet. You mention that if they annoyed someone as too-quiet as you, they must have gone over the line.[paragraph break]Your confrontation did not go unnoticed by other cell phoners. They take the hint and moderate their voices.[paragraph break]However, now, a prize talk blasts through hidden loudspeakers. It exhorts you to find your dream, to find something that will help you move above and beyond everyone else. It's probably talking about money or power, but you're looking for something different.";
+	move prize talk to hype lane;
+	moot cell phones;
+
 a wordtwisting rule (this is the pre-pry-stalk rule):
-	if player is not in hype lane or prize talk is not in hype lane, unavailable;
+	if player is not in hype lane, unavailable;
+	if prize talk is not in hype lane, unavailable;
 	if sco-pry-stalk is true:
 		vcal "You already pried a stalk!";
 		already-done;

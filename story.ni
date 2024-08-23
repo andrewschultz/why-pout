@@ -119,7 +119,11 @@ Eh Raw Air Aww is a room in universal. printed name is "[if sco-an-aim is false]
 
 book Hype Lane
 
-Hype Lane is a room in universal. "You feel you must be pretty far underground. People chatter all around about the adventure and confrontation and competition you find here. Why, it's so much more interesting here than above ground, with boring old nature and a lack of social progress and stuff!"
+Hype Lane is a room in universal. "It's still pretty dark here. You must still be underground.[paragraph break]Around you, [if sco-self-owns is false]cell phones, cell phones everywhere. Such confident chatter. Or it seems confident. It distracts you and your bearings, trying to figure who you really are and get somewhere less dark[else]a prize talk booms from unseen speakers, exhorting you to do, or at least earn, more. The heck with being above ground, with boring old nature that distracts you from being all you can be. Well, for the economy, at least[end if]."
+
+chapter cell phones
+
+the cell phones are a plural-named thing in hype lane. understand "phone" and "cell phone" as cell phones. "You don't remember everything about your former self, but you remember you hated cell phones and how they distracted you. Maybe if the people yacking into them were taken down a peg, you could focus a bit more. Dang cell phones."
 
 chapter prize talk
 
@@ -489,7 +493,10 @@ chapter listening
 the block listening rule is not listed in any rulebook.
 
 check listening:
-	if player is in hype lane and prize talk is in hype lane, try examining prize talk instead;
+	if player is in hype lane:
+		if prize talk is in hype lane, try examining prize talk instead;
+		if cell phones are in hype lane, try examining cell phones instead;
+	if player is in air aww, say "Air, or ... a roar?!" instead;
 	say "Nothing that could help you." instead;
 
 chapter t talking

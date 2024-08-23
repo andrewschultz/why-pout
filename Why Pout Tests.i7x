@@ -4,7 +4,7 @@ Version 1/240816 of Why Pout Tests by Andrew Schultz begins here.
 
 volume IDE tests
 
-test w1 with "an aim/two maps/pry stalk/high plain/nah phase"
+test w1 with "an aim/two maps/self owns/pry stalk/high plain/nah phase"
 
 chapter new-tests
 
