@@ -8,6 +8,12 @@ current-quid is a number that varies. current-quid is 0.
 
 block-followers is a truth state that varies.
 
+gs-parser-error-note is a truth state that varies.
+
+gs-examined-self is a truth state that varies.
+
+first-point-clue-flag is a number that varies.
+
 volume point scoring variables
 
 book integers

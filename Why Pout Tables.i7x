@@ -769,12 +769,43 @@ rule for printing a parser error (this is the check forks rule):
 
 rule for printing a parser error when the latest parser error is the not a verb I recognise error (this is the catch bad verbs rule):
 	if core-score is 0:
-		say "You're stuck with what to do right now. Perhaps you can look inward, to give you an idea of what you want.";
+		say "You're stuck with what to do right now. Perhaps you can [if gs-examined-self is true]look inward again with X ME[else]look inward[end if], to give you an idea of what you want. You can't exactly look outward.";
+		increment first-point-clue-flag;
+		if gs-parser-error-note is false:
+			say "[line break][i][bracket][b]NOTE[r][i]: until the main area, parser verb errors like this will give occasional hints. So don't be afraid to try stuff.[close bracket][r][line break]";
+			now gs-parser-error-note is true;
+			the rule succeeds;
+		increment counter-zero-points;
+		if counter-zero-points > number of rows in table of zero point taunts:
+			now counter-zero-points is 1;
+		if first-point-clue-flag is 4:
+			now first-point-clue-flag is 0;
+			say "[line break][one of]A cruel voice mocks [or]That cruel voice, again. [stopping][one of]'Way to wait, ooh!'[or]'You'd be better off [b]WAIT[r]ing or typing nothing.'[or][random-taunt][stopping]";
 	else if core-score is 1:
-		say "You need to find something that will get you out of the tomb apse. You remembered a name by finding an aim. What now?";
+		say "You need to find something that will get you out of the tomb apse. You remembered a name (yours) by finding an aim. What now?";
 	else:
-		say "I didn't understand that. [this-game] has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try [b]VERBS[r].";
+		say "Trying that action brings up nothing. [this-game] has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try [b]VERBS[r].";
 	the rule succeeds;
+
+counter-zero-points is a number that varies.
+
+to say random-taunt:
+	choose row counter-zero-points in table of zero point taunts;
+	say "[taunt-text entry][if counter-zero-points is number of rows in table of zero point taunts] (that's the last of the specific hints.)";
+
+table of zero point taunts
+sortval	taunt-text
+-2	"'Way to wait, ooh!'"
+-1	"'Nothing you've tried has worked. You'd be better off [b]WAIT[r]ing or typing nothing.'"
+0	"'Bro, clues? Broke! Lose!'"
+0	"'Boost-op? Boo! Stop!'"
+0	"'Duh, DO?! Dud, ooh!'"
+0	"'Play some place, umm...'"
+0	"'Find a fine day,' just like your original captors."
+1	"'Take a look where you are.'"
+
+rule for printing a parser error when the latest parser error is the can't see any such thing error:
+	say "Nothing here like that[one of]. Note that room names are not usually worth examining, as you can just [b]L[r] or [b]LOOK[r][or][stopping]."
 
 volume can't go that way
 

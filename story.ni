@@ -63,7 +63,8 @@ Mike Orr is a privately-named person. the player is Mike Orr. description is "Yo
 understand "mike orr" and "mike/orr" as Mike Orr when sco-an-aim is true.
 
 check examining Mike Orr when sco-an-aim is false:
-	say "You think you have a name. You're not sure.[paragraph break]You'd really like to have a purpose, too.[paragraph break]The weird thing is, you feel the two must be inter-related in some simple way. A way that will feel dumb once you figure it out. But you haven't, yet.[paragraph break]Hmm. A name. A name." instead;
+	now gs-examined-self is true;
+	say "You think you have a name. Most people do, if you remember things correctly. For better or worse, you can't be special.[paragraph break]You'd really like to have a purpose, too.[paragraph break]The weird thing is, you feel the two must be inter-related in some simple way. A way that will feel dumb once you figure it out. But you haven't, yet.[paragraph break]Hmm. A name. A name." instead;
 
 section temporary code to test remembering oneself
 
