@@ -14,7 +14,7 @@ test w3 with "grow star/n/wool frock/hide out/d/boost role/u/s".
 
 test w4 with "key pillar/w/gnome old/rogue old/plan tracker/see design/knife right/e".
 
-test wb with "brew swears/in/weak us/crew dork/out".
+test wb with "brew swears/in/weak us/grin churls/crew dork/out".
 
 test w5 with "d/gaunt raider/u".
 
@@ -89,7 +89,7 @@ to say critopt of (ts - a truth state):
 to track-criticals (ts - a truth state):
 	let any-yet be false;
 	repeat through table of main oronyms:
-		if core entry is not ts, continue the action;
+		if core entry is not ts, next;
 		if idid entry is false:
 			if any-yet is false:
 				now any-yet is true;

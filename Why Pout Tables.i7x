@@ -797,9 +797,6 @@ this is the post-weak-us rule:
 
 a wordtwisting rule (this is the pre-grin-churls rule):
 	if player is not in brew swears, unavailable;
-	if sco-grin-churls is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-grin-churls is true:
 		vcal "You already cut [the grinch] down to size!";
 		already-done;
