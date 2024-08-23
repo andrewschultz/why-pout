@@ -14,7 +14,7 @@ test w3 with "grow star/n/wool frock/hide out/d/boost role/u/s".
 
 test w4 with "key pillar/w/gnome old/rogue old/plan tracker/see design/knife right/e".
 
-test wb with "brew swears/in/weak us/out".
+test wb with "brew swears/in/weak us/crew dork/out".
 
 test w5 with "d/gaunt raider/u".
 
@@ -27,7 +27,7 @@ test w8 with "w/manna curb/e".
 [test w9 with "s/grow vial/war file/n/e/n/n/tree small".]
 test w9 with "e/n/n/tree small/s/s/w/s/grow vial/war file/wan dwarf/n/e/n/n".
 
-test w10 with "t elf/t mice/t gnome/t rogue/t troll/t raider/t dwarf/tall cake/treat all".
+test w10 with "t elf/t mice/t gnome/t rogue/t troll/t raider/t dwarf/t orc/tall cake/treat all".
 
 test w11 with "s/s/w/s/the file/n".
 

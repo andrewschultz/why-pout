@@ -23,6 +23,11 @@ definition: a follower (called f) is still-needed:
 	if f is friendly, no;
 	yes;
 
+definition: a follower (called f) is still-chat-needed:
+	if f is unneeded, no;
+	if f is still-needed, yes;
+	no;
+
 to befriend (f - a follower):
 	now f is friendly;
 	move f to location of player;

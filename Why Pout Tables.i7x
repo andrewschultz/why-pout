@@ -56,6 +56,7 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "do|due"	"mend"	"dew"	--	false	true	true	false	doom end	pre-do-due-mend rule	post-do-due-mend rule	--	--
 "weak"	"us"	--	--	false	true	false	false	brew swears	pre-weak-us rule	post-weak-us rule	--	--
 "grin"	"churls"	--	--	false	true	false	false	brew swears	pre-grin-churls rule	post-grin-churls rule	--	--
+"crew"	"dork"	--	--	false	true	false	false	brew swears	pre-crew-dork rule	post-crew-dork rule	--	--
 
 section air aww scoring
 
@@ -457,7 +458,7 @@ a wordtwisting rule (this is the three-isle rule):
 
 a wordtwisting rule (this is the pre-the-file rule):
 	abide by the three-isle rule;
-	if number of unchatted followers > 0:
+	if number of still-chat-needed followers > 0:
 		vcp "You know there is THE FILE, but which file is THE FILE? The thief isle has probably stolen a lot! You need information from your companions[if number of still-needed followers > 0], or maybe just more companions[end if].";
 		not-yet;
 	if sco-the-file is true:
@@ -807,6 +808,21 @@ a wordtwisting rule (this is the pre-grin-churls rule):
 this is the post-grin-churls rule:
 	now sco-grin-churls is true;
 	say "You slip in a few sly digs and say 'grin, churls.' It's not fatal, but they look annoyed.";
+
+a wordtwisting rule (this is the pre-crew-dork rule):
+	if player is not in brew swears, unavailable;
+	if sco-weak-us is false:
+		vcp "The crude orc doesn't believe they're being used by [the grinch]. Why, it's part of the hazing! They have to show they're tough!";
+		not-yet;
+	if sco-crew-dork is true:
+		vcal "You already broke the truth to the crude orc as gently as you could!";
+		already-done;
+	ready;
+
+this is the post-crew-dork rule:
+	now sco-crew-dork is true;
+	say "You break the truth gently to the crude orc that, well, they're at the bottom of the totem pole for this crew. They'll use the crude orc, maybe even not let them into the clique, and then find the next sucker. The [grinch] surprisingly have little response to this besides, well, profanity.[paragraph break]You sense your job here is done, though you can continue to deflect profanity if you want.";
+	befriend crude orc;
 
 volume command parsing
 

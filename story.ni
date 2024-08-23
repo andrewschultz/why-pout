@@ -139,6 +139,10 @@ after printing the locale description for NaffHaze when Bruise Wares is off-stag
 	move Bruise Wares to NaffHaze;
 	continue the action;
 
+after going to NaffHaze when Bruise Wares is in NaffHaze and sco-treat-all is true:
+	say "Odd! BRUISE-WARES has vanished. Well, one less dead end to worry about.";
+	zap-bruise-wares;
+
 the naff haze is scenery in NaffHaze. "You can't look very far though it. Just looking at it makes you feel hopeless you'll always be trapped in the fog."
 
 check going a viable direction in NaffHaze when sco-pole-east is false:
@@ -362,15 +366,27 @@ book Brew Swears (optional)
 Brew Swears is a room in universal. "If you thought Hype Lane was bad, this is even worse.".
 
 check going inside in NaffHaze:
+	if BRUISE WARES is moot, say "BRUISE WARES is no longer available." instead;
 	if room gone to is Brew Swears:
 		say "Your companions stay behind. They recognize this is a spiritual fight for you and you alone.";
 		now block-followers is true;
 
-check going outside in Brew Swears: now block-followers is false;
+check going outside in Brew Swears:
+	now block-followers is false;
+	if orc is friendly, say "As you lead [the orc] out, BRUISE-WARES crumbles behind you.";
+	zap-bruise-wares;
+
+to zap-bruise-wares:
+	moot BRUISE WARES;
+	now nowhere is mapped inside NaffHaze;
+
+chapter earls
 
 the grinch earls are a plural-named thing in Brew Swears. "Some [earls] parade around here, bragging about how they ruin boring people's fun with their dynamic ways and pointing out that it's easy to be nice if you're boring[if sco-grin-churls is false], though they're less effective than when they were self-styled earls[end if][if sco-weak-us is true]. You cut their 'we cuss' down to size, so they're now giving examples of how they cuss[else]. They constantly blather 'WE CUSS' and seem quite proud of that[end if].". printed name is "[if sco-grin-churls is true]grin churls[else]grinch earls[end if]."
 
-the crude orc is a follower in Brew Swears. "A crude orc trundles around here, trying to impress much more aggressive types."
+chapter crude orc
+
+the crude orc is an unneeded follower in Brew Swears. "A crude orc trundles around here[if sco-crew-dork is true], on your side, now[else if sco-weak-us is true], looking equally between you and [the earls][else], trying to impress [the earls][end if].". description is "[if sco-weak-us is false]Looking at you like their next target, to show they're tough enough for [the earls][else if sco-crew-dork is false]Unsure of themselves. They might be ready for a hard truth[else]Looking up to you a lot, for setting them straight[end if]."
 
 volume endgame room
 
@@ -556,7 +572,9 @@ check ting:
 		say "You motivate yourself with 'Goal: earn? Go learn!'" instead;
 	if noun is not a follower, say "You don't get a response." instead;
 	if sco-my-corps is true, say "No time for talk. Time to end this thing." instead;
-	if noun is not friendly, say "You haven't gained [the noun]'s trust enough yet for a chat." instead;
+	if noun is not friendly:
+		if noun is orc, say "You'll have to win the argument with [the grinch] before any meaningful conversations." instead;
+		say "You haven't gained [the noun]'s trust enough yet for a chat." instead;
 	if player has talk ache, say "That talk ache is a bit of a nuisance." instead;
 	if number of unchatted followers is 0, say "You've talked to everyone, but why not chat again?";
 
@@ -569,7 +587,7 @@ report ting:
 	if noun is unchatted:
 		say "More useful information worth remembering.";
 		now noun is chatted;
-		if number of unchatted followers is 0:
+		if number of still-chat-needed followers is 0:
 			say "[line break]That was a lot of talking. After all that time alone, you're not used to it. You develop a talk-ache.";
 			now player has talk ache;
 	if noun is chatted and number of unchatted followers is 0:
