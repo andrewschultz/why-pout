@@ -12,7 +12,11 @@ gs-parser-error-note is a truth state that varies.
 
 gs-examined-self is a truth state that varies.
 
+section first point cue(s)
+
 first-point-clue-flag is a number that varies.
+
+counter-zero-points is a number that varies.
 
 volume point scoring variables
 

@@ -796,11 +796,20 @@ rule for printing a parser error when the latest parser error is the not a verb 
 			say "[line break][one of]A cruel voice mocks [or]That cruel voice, again. [stopping][one of]'Way to wait, ooh!'[or]'You'd be better off [b]WAIT[r]ing or typing nothing.'[or][random-taunt][stopping]";
 	else if core-score is 1:
 		say "You need to find something that will get you out of the tomb apse. You remembered a name (yours) by finding an aim. What now?";
+	else if core-score is 2:
+		say "Man! The chatter from those phones must be distracting you from what you want and need to do, or maybe see.";
+	else if core-score is 3:
+		say "The prize talk has you distracted. It's got a point: you need to find something to get where you want. What's the something? [where-get-hype]";
 	else:
-		say "Trying that action brings up nothing. [this-game] has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try [b]VERBS[r].";
+		say "That thought/action/observation/request brings up nothing. [this-game] has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try [b]VERBS[r].";
 	the rule succeeds;
 
-counter-zero-points is a number that varies.
+to say where-get-hype:
+	choose row with check-rule of pre-high-plain rule in table of main oronyms;
+	if think-cue entry is false:
+		say "Where do you want to get?";
+	else:
+		say "You know where you want to get, the high plain/plane."
 
 to say random-taunt:
 	choose row counter-zero-points in table of zero point taunts;
@@ -808,13 +817,14 @@ to say random-taunt:
 
 table of zero point taunts
 sortval	taunt-text
--2	"'Way to wait, ooh!'"
--1	"'Nothing you've tried has worked. You'd be better off [b]WAIT[r]ing or typing nothing.'"
+-3	"'Way to wait, ooh!'"
+-2	"'Nothing you've tried has worked. You'd be better off [b]WAIT[r]ing or typing nothing.'"
+-1	"'Find a fine day,' just like your original captors."
 0	"'Bro, clues? Broke! Lose!'"
 0	"'Boost-op? Boo! Stop!'"
 0	"'Duh, DO?! Dud, ooh!'"
 0	"'Play some place, umm...'"
-0	"'Find a fine day,' just like your original captors."
+0	"'Be strong? Beast, WRONG!'"
 1	"'Take a look where you are.'"
 
 rule for printing a parser error when the latest parser error is the can't see any such thing error:

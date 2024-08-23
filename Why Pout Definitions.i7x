@@ -70,6 +70,12 @@ to decide which number is flier-isle-score:
 to decide which number is plane-dir-score:
 	decide on (boolval of sco-pole-east) + (boolval of sco-grow-star) + (boolval of sco-shore-trail) + (boolval of sco-key-pillar);
 
+volume begin play
+
+when play begins:
+	sort table of zero point taunts in random order;
+	sort table of zero point taunts in sortval order;
+
 Why Pout Definitions ends here.
 
 ---- DOCUMENTATION ----
