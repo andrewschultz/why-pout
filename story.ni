@@ -357,7 +357,7 @@ Wand Wharf is a room in universal.
 
 the wan dwarf is a follower. description is "Short and stocky. It wears glasses from what other dwarves would say was reading too much.". help-chat is "The dwarf provides an impressively nuanced view on how to balance magic skill with physical skill and fighting savvy. But the dwarf also notes how to be a good expert in specific areas if need be, as well as how to get experts and generalists to work together. However, the dwarf also expresses worry that this talk is all great in theory but hard in practice."
 
-book (Brew Swears (optional)
+book Brew Swears (optional)
 
 Brew Swears is a room in universal. "If you thought Hype Lane was bad, this is even worse.".
 
@@ -368,7 +368,7 @@ check going inside in NaffHaze:
 
 check going outside in Brew Swears: now block-followers is false;
 
-the grinch earls are a plural-named thing in Brew Swears. "Grinch earls parade around here, bragging about how they ruin boring people's fun with their dynamic ways. They constantly blather 'WE CUSS' and seem quite proud of that."
+the grinch earls are a plural-named thing in Brew Swears. "Some [earls] parade around here, bragging about how they ruin boring people's fun with their dynamic ways and pointing out that it's easy to be nice if you're boring[if sco-grin-churls is false], though they're less effective than when they were self-styled earls[end if][if sco-weak-us is true]. You cut their 'we cuss' down to size, so they're now giving examples of how they cuss[else]. They constantly blather 'WE CUSS' and seem quite proud of that[end if].". printed name is "[if sco-grin-churls is true]grin churls[else]grinch earls[end if]."
 
 the crude orc is a follower in Brew Swears. "A crude orc trundles around here, trying to impress much more aggressive types."
 

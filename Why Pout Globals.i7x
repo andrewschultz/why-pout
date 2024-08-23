@@ -24,7 +24,7 @@ book integers
 
 core-max is a number that varies. core-max is 45.
 
-max-bonus is a number that varies. max-bonus is 2.
+max-bonus is a number that varies. max-bonus is 3.
 
 core-score is a number that varies.
 
@@ -172,6 +172,8 @@ sco-brew-swears is a truth state that varies.
 sco-weak-us is a truth state that varies.
 
 sco-crew-dork is a truth state that varies.
+
+sco-grin-churls is a truth state that varies.
 
 Why Pout Globals ends here.
 

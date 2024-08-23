@@ -55,6 +55,7 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "wipe"	"out"	--	--	false	true	true	false	doom end	pre-wipe-out rule	post-wipe-out rule	--	"You will want to [b]WIPE OUT[r] the cause of your problems [once-now of sco-cease-cull] you have them in your crosshairs."
 "do|due"	"mend"	"dew"	--	false	true	true	false	doom end	pre-do-due-mend rule	post-do-due-mend rule	--	--
 "weak"	"us"	--	--	false	true	false	false	brew swears	pre-weak-us rule	post-weak-us rule	--	--
+"grin"	"churls"	--	--	false	true	false	false	brew swears	pre-grin-churls rule	post-grin-churls rule	--	--
 
 section air aww scoring
 
@@ -792,6 +793,20 @@ a wordtwisting rule (this is the pre-weak-us rule):
 this is the post-weak-us rule:
 	now sco-weak-us is true;
 	say "You're surprised how just making a little shift can make the [grinch] seem much weaker. Their strength is the sort of brute force that doesn't life other people up.[paragraph break]They throw down the gauntlet at this point. Don't you know cussing shows higher intelligence? Some study or other showed that![paragraph break]The crude orc looks back and forth between you and the [grinch].";
+
+a wordtwisting rule (this is the pre-grin-churls rule):
+	if player is not in brew swears, unavailable;
+	if sco-grin-churls is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-grin-churls is true:
+		vcal "You already cut [the grinch] down to size!";
+		already-done;
+	ready;
+
+this is the post-grin-churls rule:
+	now sco-grin-churls is true;
+	say "You slip in a few sly digs and say 'grin, churls.' It's not fatal, but they look annoyed.";
 
 volume command parsing
 
