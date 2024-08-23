@@ -12,15 +12,22 @@ a follower is a kind of thing.
 
 a follower can be unfriendly, friendly or donewith. a follower is usually unfriendly.
 
+a follower can be needed or unneeded. a follower is usually needed.
+
 a follower can be unchatted or chatted. a follower is usually unchatted.
 
 a follower has text called help-chat.
 
+definition: a follower (called f) is still-needed:
+	if f is unneeded, no;
+	if f is friendly, no;
+	yes;
+
 to befriend (f - a follower):
 	now f is friendly;
 	move f to location of player;
-	if number of unfriendly followers is 0:
-		say "[line break]Wow! You've got quite a group here. You can't imagine having a bigger one.";
+	if number of still-needed followers is 0:
+		say "[line break]Wow! You've got quite a group here. You can't imagine needing a bigger one[if number of unfriendly followers > 0], though there's BRUISE-WARES[end if].";
 	if pals-made - number of chatted followers > 2:
 		say "[line break]Hmm. You have a lot of friends following you around, but you haven't talked to them much. Perhaps you could learn something from them."
 

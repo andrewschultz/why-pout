@@ -18,6 +18,7 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "grow"	"star"	--	--	false	true	true	false	NaffHaze	pre-grow-star rule	post-grow-star rule	--	--
 "shore"	"trail"	--	--	false	true	true	false	NaffHaze	pre-shore-trail rule	post-shore-trail rule	--	--
 "key"	"pillar"	--	--	false	true	true	false	NaffHaze	pre-key-pillar rule	post-key-pillar rule	--	--
+"brew"	"swears"	--	--	false	true	false	false	NaffHaze	pre-brew-swears rule	post-brew-swears rule	--	--
 "known"	"ocean"	--	--	false	true	true	false	NoNotion	pre-known-ocean rule	post-known-ocean rule	--	--
 "six"	"quid"	--	--	false	true	true	false	NoNotion	pre-six-quid rule	post-six-quid rule	--	--
 "the"	"file"	--	--	false	true	true	false	nonotion	pre-the-file rule	post-the-file rule	--	"You may be able to make sense of [b]THE FILE[r] [here-in of nonotion] [once-now of whether or not number of unchatted followers is 0] you've gotten enough information from companions."
@@ -399,6 +400,21 @@ to check-worm-eaten:
 	if plane-dir-score is 4:
 		say "[line break]You've changed the landscape a lot ... enough that you hear a rumbling that has created a passage beneath.";
 		reveal Worm Eaten to down;
+
+section naffhaze scoring
+
+a wordtwisting rule (this is the pre-brew-swears rule):
+	if player is not in NaffHaze, unavailable;
+	if Bruise Wares is not in NaffHaze, unavailable;
+	if sco-brew-swears is true:
+		vcal "But you've already opened the passage through BRUISE WARES!";
+		already-done;
+	ready;
+
+this is the post-brew-swears rule:
+	now sco-brew-swears is true;
+	say "Yes. That's what BRUISE WARES is really for. Enter at your own risk. It's ... an adventure, of its own sort.";
+	reveal Brew Swears to inside;
 
 section no notion scoring
 

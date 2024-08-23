@@ -130,12 +130,17 @@ chapter prize talk
 
 prize talk is a thing. "You'd like to DO something about the prize talk. Or seek out something that would give you passage away from it.". description is "The prize talk also discusses things that aren't so worth it, like -- well, plants and stuff. BORING."
 
-chapter Naff Haze
+book Naff Haze
 
 NaffHaze is a privately-named room in universal. "[if sco-nah-phase is false]A naff haze surrounds you. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it[else]Things have opened up a bit now, with the naff haze lifted[end if][if sco-pole-east is true]. You feel less policed, too, and you found a path east[end if][if sco-grow-star is true].[paragraph break]You got rid of the gross tar blocking your way north[end if].". printed name is "[if sco-nah-phase is false]Naff Haze[else]High Plain[end if]".
 
 after printing the locale description for NaffHaze when sco-nah-phase is true and sco-pole-east is false:
 	say "[run paragraph on]You feel policed here. Where and what is this feeling coming from?";
+	continue the action;
+
+after printing the locale description for NaffHaze when Bruise Wares is off-stage and current-score >= 20:
+	say "An ominous new construction appears here. It's called BRUISE WARES. Perhaps you should ignore it. Often one doesn't want to engage that sort of thing. But you may feel that much more accomplished doing so.";
+	move Bruise Wares to NaffHaze;
 	continue the action;
 
 the naff haze is scenery in NaffHaze. "You can't look very far though it. Just looking at it makes you feel hopeless you'll always be trapped in the fog."
@@ -158,6 +163,14 @@ the gross tar is a thing. "Gross tar blocks the way north into darkness.". descr
 chapter keep iller
 
 the keep iller is a thing. "A keep, iller, rises to the west[if sco-key-pillar is false], but you see no way in[else], and you figured how to enter it[end if]."
+
+chapter Bruise Wares
+
+Bruise Wares is a thing. "BRUISE WARES, some sort of odd disturbing shop, has popped up here. You can probably figure why it's forbidding and such. But perhaps it is only for a certain sort of adventurer.". description is "Looking at BRUISE WARES, it sort of overdoes the whole 'you might not be ready for this' schtick. And, you figure, if you know what's really there, it's not something you will put up with unless you have to.[paragraph break]Seriously, dealing with it is up to you."
+
+check entering Bruise Wares:
+	if sco-brew-swears is false, say "You probably shouldn't go in there until you divine its true meaning." instead;
+	try going inside instead;
 
 book Keep Iller
 
@@ -348,9 +361,20 @@ Wand Wharf is a room in universal.
 
 the wan dwarf is a follower. description is "Short and stocky. It wears glasses from what other dwarves would say was reading too much.". help-chat is "The dwarf provides an impressively nuanced view on how to balance magic skill with physical skill and fighting savvy. But the dwarf also notes how to be a good expert in specific areas if need be, as well as how to get experts and generalists to work together. However, the dwarf also expresses worry that this talk is all great in theory but hard in practice."
 
-book (extra room)
+book (Brew Swears (optional)
 
-Brew Swears is a room in universal.
+Brew Swears is a room in universal. "If you thought Hype Lane was bad, this is even worse.".
+
+check going inside in NaffHaze:
+	if room gone to is Brew Swears:
+		say "Your companions stay behind. They recognize this is a spiritual fight for you.";
+		now block-followers is true;
+
+check going outside in Brew Swears: now block-followers is false;
+
+the grinch earls are a plural-named thing in Brew Swears. "Grinch earls parade around here, bragging about how they ruin boring people's fun with their dynamic ways. They constantly blather 'WE CUSS' and seem quite proud of that."
+
+the crude orc is a follower in Brew Swears. "A crude orc trundles around here, trying to impress much more aggressive types."
 
 volume endgame room
 

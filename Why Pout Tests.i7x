@@ -14,6 +14,8 @@ test w3 with "grow star/n/wool frock/hide out/d/boost role/u/s".
 
 test w4 with "key pillar/w/gnome old/rogue old/plan tracker/see design/knife right/e".
 
+test wb with "bruise wares/in/weak us/out".
+
 test w5 with "d/gaunt raider/u".
 
 test w6 with "e/low bend/bay sale/n/store mile/mensch elf/mice tall/s/w".
