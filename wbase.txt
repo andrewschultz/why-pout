@@ -86,7 +86,7 @@ But we don't have to go east first! There's some order we have to collect stuff 
 
 You have no notion of the terrain or waterways.
 
->no notion (1)
+>known ocean (1)
 
 A sick squid seems to be choking on something.
 
@@ -224,7 +224,7 @@ We can complete the keep now.
 
 >manna curb (1)
 
->s
+>e
 
 The flyer tells you where to look or go.
 
