@@ -96,6 +96,10 @@ the block saying yes rule is not listed in any rulebook.
 
 the block attacking rule is not listed in any rulebook.
 
+the block singing rule is not listed in any rulebook.
+
+check singing: say "Funny, you feel a taste of icing." instead;
+
 check attacking:
 	say "You aren't built for that[if pals-made > 0], but maybe you can lead companions to a big victory[end if]." instead;
 
@@ -454,11 +458,16 @@ understand "about" as abouting.
 carry out abouting:
 	say "[this-game] was written for IFComp 2024. It's something I originally thought about writing for EctoComp, but I never managed to mash enough ideas together.";
 	say "[line break]It reuses a lot of code from [i]Roads of Liches[r] and my [i]Prime Pro Rhyme Row[r] games, which have different mechanics but a similar conceit: guess the right two-word phrase. However, it's narrower in scope, and I didn't want to rely on too well-known examples of possible phrases for point scoring.";
-	say "[line break]Once I realized bigger projects weren't on the cards for IFComp 2024, I focused on something I could handle.";
-	say "While the drip of ideas started February, 2020, according to my notes, I wasn't getting anything really original, or so it seemed. But the idea was always there. Then my weekly writing file 20240429.txt contains the game title, and that's when things really started rolling. But of course there's nothing like a deadline to make things really fall into place, especially when you've got nothing else.";
+	say "[line break]Once I realized bigger projects weren't on the cards for IFComp 2024, I focused on something I could handle. I wound up making forty or so puzzle instead of the usual eighty.";
+	say "[line break]While the drip of ideas started February, 2020, according to my notes, I wasn't getting anything really original, or so it seemed. But the idea was always there. In my weekly writing file 20240429.txt, there's the game's title, and that's when significant ideas started appearing. But it wasn't until I registered for IFComp in July that ideas started clicking together. Deadlines are funny like that!";
+	say "[line break]Like most of my games, [this-game] rates merciful on the Zarfian cruelty scale. However, in this case, I want the puzzles to be more merciful on the player's psyche than usual."
+
+report abouting:
+	if bruise wares is off-stage:
+		say "[line break]Note that an optional room will appear about midway through the game. It may contain profanity, which I hope is amusing, but I don't blame you if you wish to skip it.";
 	say "[line break][email] is my email, and [ghsite]/why-pout is the github site, where you can report issues. I'm open to transcripts.";
 	say "[line break][b]CREDITS[r] lists people who helped make [this-game] a reality, or a better version than it would've been without them.  [b]EXT[r] shows the extensions listed, and [b]VERSION[r] or [b]VERSIONS[r] shows version info.";
-	the rule succeeds;
+	continue the action;
 
 chapter creditsing
 
@@ -471,7 +480,7 @@ understand "credit" as creditsing.
 understand "credits" as creditsing.
 
 carry out creditsing:
-	say "Thanks to Wade Clarke, P. B. Parjeter (and others) for testing.";
+	say "Thanks to Wade Clarke, P. B. Parjeter, Daniel Stelzer (and possibly others) for testing.";
 	say "[line break]GENERAL THANKS:[paragraph break]";
 	say "Thanks to everyone past and future involved in the administration of IFComp.";
 	say "Thanks to the I7 board on Intfiction.org for their help, as well as the people in the general topic.";
