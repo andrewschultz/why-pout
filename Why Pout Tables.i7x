@@ -915,7 +915,7 @@ rule for printing a parser error (this is the check forks rule):
 	abide by the main-wordtwisting-checker rule for table of main oronyms;
 	[if mrlp is valid, abide by the main-wordtwisting-checker rule for spoontable of mrlp;]
 	if partial-row > 0:
-		say "Hmm. You are on the right track, there.";
+		say "A voice in your head encourages you: 'Seem, or see, more!' You've got SOMETHING right, here.";
 		the rule succeeds;
 	if got-partial-done is true:
 		say "Hmm, no, you already did that, or something like that. You'll know if and when you need to flip between things.";

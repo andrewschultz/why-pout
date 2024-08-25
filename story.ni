@@ -85,7 +85,7 @@ check thinking:
 				if there is a think-advice entry:
 					say "[think-advice entry][line break]";
 				else:
-					say "[w1 entry] [w2 entry] is something you tried before it was perfectly ready. I should write in more details later.";
+					say "[first-of-ors of w1 entry] [first-of-ors of w2 entry] is something you tried before it was perfectly ready. I should write in more details later.";
 	if got-think is false:
 		say "Nothing comes to mind."
 
@@ -646,6 +646,9 @@ check waiting:
 	say "Ideally I-D-L-E!" instead;
 
 volume parser errors
+
+rule for printing a parser error when the latest parser error is the only understood as far as error:
+	say "You may have used a word or two too many or made a typo in the final word.";
 
 rule for printing a parser error when the latest parser error is the I beg your pardon error:
 	say "'Hum, blank,' you muse. No humble ankh pops into your hands, sadly.";
