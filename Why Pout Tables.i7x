@@ -195,7 +195,7 @@ this is the post-hide-out rule:
 a wordtwisting rule (this is the pre-low-door rule):
 	if player is not in Wolf Rock, unavailable;
 	if sco-mice-tall is false:
-		vcp "Maybe there's a low door beneath the lode ore, but you don't have the ability to scrabble and scrape down through to find it[if pals-made > 0], and nobody around can help you[end if].";
+		vcp "Maybe there's a low door beneath the lode ore, which definitely has small holes. But not small enough for you to fit through and scrabble and scrape to find one[if pals-made > 0], and nobody around can help you. Well, yet[end if].";
 		not-yet;
 	if sco-low-door is true:
 		vcal "You already found a low door in this mess!";
@@ -204,7 +204,7 @@ a wordtwisting rule (this is the pre-low-door rule):
 
 this is the post-low-door rule:
 	now sco-low-door is true;
-	say "The lode and the ore are tough to shift around, but beneath one of the piles, you actually do find a low door, which you can go [b]INSIDE[r]. Hooray!";
+	say "The lode and the ore are tough to shift around for someone as big as yourself. But the tall mice manage to get into those small niches you can't. They locate a low door, then, point to where you can remove the ore to create a passage. You'll have to duck a bit to get in, but you can now go [b]INSIDE[r]. Hooray!";
 	reveal We Loan to inside;
 
 section lobe end scoring
@@ -411,7 +411,7 @@ this is the post-key-pillar rule:
 
 to check-worm-eaten:
 	if plane-dir-score is 4:
-		say "[line break]You've changed the landscape a lot ... enough that you hear a rumbling that has created a passage beneath.";
+		say "[line break]You've changed the landscape a lot, north, south, east and west. But there's more! You hear a rumbling beneath you, and another passage opens up!";
 		reveal Worm Eaten to down;
 
 section naffhaze scoring
