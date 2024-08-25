@@ -66,9 +66,13 @@ The cell phones distract you terribly.
 
 >self owns (1)
 
-The prize talk, in particular, is annoying. But there are some booby prizes for suckers.
+Oops! With those cleared, you can't help hearing prize talk.
+
+Fortunately there are booby prizes for suckers. But they're just what you need!
 
 >pry stalk (1)
+
+A stalk can reach upwards...
 
 >high plane (1)
 
@@ -254,6 +258,8 @@ Now you're back to the Known Ocean.
 Oh look! The grow vial helped the tree grow!
 
 A perfect place to get to know your friends! Well, this could've been done at any time. The game should have nagged you several times. But if this walkthrough was just too gloriously readable to pull your eyes away, well, I'm flattered. (I've been there with other walkthroughs!)
+
+>t dwarf
 
 >t elf
 
