@@ -589,6 +589,8 @@ rule for supplying a missing noun when ting:
 		continue the action;
 	if number of followers in location of player > 1:
 		say "That's ambiguous--more than one friend you can chat with.";
+		if number of still-chat-needed followers in location of player > 0:
+			say "[line break]However, you still haven't talked with [the list of still-chat-needed followers in location of player].";
 	else:
 		say "Nobody here to talk to.";
 	the rule fails;
@@ -599,16 +601,18 @@ check ting:
 		if sco-an-aim is false:
 			say "You feel too grumpy for positive self-talk. You mumble 'I molder. I'm older.'" instead;
 		say "You motivate yourself with 'Goal: earn? Go learn!'" instead;
+	if noun is oaf liar, say "The oaf liar is talking over you. Perhaps you can shut them up by buying something really cheap." instead;
+	if noun is merchant, say "You want to figure a way to kill conversation, instead." instead;
 	if noun is not a follower, say "You don't get a response." instead;
 	if sco-my-corps is true, say "No time for talk. Time to end this thing." instead;
 	if noun is not friendly:
 		if noun is orc, say "You'll have to win the argument with [the grinch] before any meaningful conversations." instead;
 		say "You haven't gained [the noun]'s trust enough yet for a chat." instead;
-	if player has talk ache, say "That talk ache is a bit of a nuisance." instead;
+	if player has talk ache, say "That talk ache is a bit of a nuisance. You've probably got the information you need from your friends." instead;
 	if number of unchatted followers is 0, say "You've talked to everyone, but why not chat again?";
 
 carry out ting:
-	say "You chat with [the noun] a bit, [if noun is chatted]recapping[else]learning[end if] more about the game's history and why you're here.";
+	say "You chat with [the noun] a bit, [if noun is chatted]recapping[else]learning[end if] more about the history of the area you're exploring and why you're here. It fills in some blanks in your memory.";
 	say "[line break][help-chat of noun][line break]";
 	the rule succeeds;
 
