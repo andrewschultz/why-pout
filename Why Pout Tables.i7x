@@ -697,6 +697,7 @@ this is the post-knife-right rule:
 	now sco-knife-right is true;
 	say "With your friends boosting your spirits, you look for a sacred/profane weapon. It turns up. Eerie howling begins. You hightail it out of there.";
 	now player has knife right;
+	now block-followers is false;
 	drop-player-at KeepIller;
 
 section worm eaten scoring
