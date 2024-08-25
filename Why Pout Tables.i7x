@@ -13,7 +13,7 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "self"	"owns"	--	--	false	true	true	false	hype lane	pre-self-owns rule	post-self-owns rule	--	--
 "pry"	"stalk"	--	--	false	true	true	false	hype lane	pre-pry-stalk rule	post-pry-stalk rule	--	--
 "high"	"plain|plane"	--	--	false	true	true	false	hype lane	pre-high-plain rule	post-high-plain rule	--	"You can find a [b]HIGH PLAIN[r] [once-now of sco-pry-stalk] you have something that can reach that far up."
-"nah|naah|naw"	"phase"	--	--	false	true	true	false	NaffHaze	vc-nah-phase rule	vr-nah-phase rule	--	--
+"nah|naah|naw"	"phase"	"phaze"	hom-nah-phaze rule	false	true	true	false	NaffHaze	pre-nah-phase rule	post-nah-phase rule	--	--
 "pole|pull"	"east"	--	--	false	true	true	false	NaffHaze	pre-pole-east rule	post-pole-east rule	--	--
 "grow"	"star"	--	--	false	true	true	false	NaffHaze	pre-grow-star rule	post-grow-star rule	--	--
 "shore"	"trail"	--	--	false	true	true	false	NaffHaze	pre-shore-trail rule	post-shore-trail rule	--	--
@@ -26,12 +26,12 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "grow"	"vial"	"vile"	--	false	true	true	false	nonotion	pre-grow-vial rule	post-grow-vial rule	--	--
 "wan"	"dwarf"	--	--	false	true	true	false	wand wharf	pre-wan-dwarf rule	post-wan-dwarf rule	--	--
 "wool"	"frock"	--	--	false	true	true	false	Wolf Rock	pre-wool-frock rule	post-wool-frock rule	--	--
-"hide"	"out"	--	--	false	true	true	false	Wolf Rock	pre-hide-out rule	post-hide-out rule	--	--
+"hide"	"out"	--	--	false	true	true	false	Wolf Rock	pre-hide-out rule	post-hide-out rule	"hide out" or "hideout"	--
 "low"	"door"	--	--	false	true	true	false	Wolf Rock	pre-low-door rule	post-low-door rule	--	"You may be able to find a [b]LOW DOOR[r] [here-in of Wolf Rock] [once-now of sco-mice-tall] you have a companion or companions that are small enough to dig a bit better."
-"well"	"own"	--	--	false	true	true	false	we loan	pre-well-own rule	post-well-own rule	--	--
+"well"	"own"	"wheel"	hom-wheel-own rule	false	true	true	false	we loan	pre-well-own rule	post-well-own rule	--	--
 "summer"	"chant"	--	--	false	true	true	false	we loan	pre-summer-chant rule	post-summer-chant rule	--	--
 "bile"	"oh"	--	--	false	true	true	false	we loan	pre-bile-oh rule	post-bile-oh rule	--	"You may be able to expose some merchant's [b]BILE OH[r] [once-now of sco-summer-chant] you find something positive to say to prep yourself."
-"whee"	"lone"	--	--	false	true	true	false	we loan	pre-whee-lone rule	post-whee-lone rule	--	"You may be able to enjoy your solitude with [b]WHEE LONE[r] [here-in of we loan] [once-now of sco-bile-oh] you actually have solitude."
+"whee"	"lone"	"wee|loan"	--	false	true	true	false	we loan	pre-whee-lone rule	post-whee-lone rule	--	"You may be able to enjoy your solitude with [b]WHEE LONE[r] [here-in of we loan] [once-now of sco-bile-oh] you actually have solitude."
 "oh"	"flier|flyer"	"owe"	--	false	true	true	false	we loan	pre-oh-flyer rule	post-oh-flyer rule	--	"You may be able to say [b]OH FLIER[r] around the oaf liar [once-now of sco-six-quid] you have money."
 "boost"	"role"	"roll"	--	false	true	true	false	hideout	pre-boost-role rule	post-boost-role rule	--	--
 "low"	"bend"	--	--	false	true	true	false	lobe end	pre-low-bend rule	post-low-bend rule	--	--
@@ -44,13 +44,13 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "treat"	"all"	"awl"	--	false	true	true	false	trees mall	pre-treat-all rule	post-treat-all rule	--	"You may be able to [b]TREAT ALL[r] [here-in of trees mall] [once-now of sco-tall-cake] you have a tasty treat."
 "gnome"	"old"	--	--	false	true	true	false	keepiller	pre-gnome-old rule	post-gnome-old rule	--	"You may be able to recruit the [b]GNOME OLD[r] [here-in of keepiller] [once-now of sco-wool-frock] you have adventuring gear."
 "rogue"	"old"	--	--	false	true	true	false	keepiller	pre-rogue-old rule	post-rogue-old rule	--	"You may be able to recruit the [b]ROGUE OLD[r] [here-in of keepiller] [once-now of sco-six-quid] you have money."
-"manna"	"curb|kerb"	"mana"	vh-my-mana-curb rule	false	true	true	false	keepiller	pre-manna-curb rule	post-manna-curb rule	--	"You may be able to find a [b]MANNA CURB[r] beneath the manna curb [here-in of keepiller] [once-now of sco-mensch-elf] you have someone with knowledge of wildlife and wildflowers."
+"manna"	"curb|kerb"	"mana"	hom-mana-curb rule	false	true	true	false	keepiller	pre-manna-curb rule	post-manna-curb rule	--	"You may be able to find a [b]MANNA CURB[r] beneath the manna curb [here-in of keepiller] [once-now of sco-mensch-elf] you have someone with knowledge of wildlife and wildflowers."
 "plan"	"tracker"	--	--	false	true	true	false	keepiller	pre-plan-tracker rule	post-plan-tracker rule	--	--
-"see"	"design"	"c|sea"	vh-c-sea-design rule	false	true	true	false	keep iller	pre-see-design rule	post-see-design rule	--	--
+"see"	"design"	"c|sea"	hom-c-sea-design rule	false	true	true	false	keep iller	pre-see-design rule	post-see-design rule	--	"You may be able to [b]SEE DESIGN[r] [here-in of keepiller] [once-now of whether or not pals-made >= 2] you have more support and are less scared."
 "knife"	"right"	"rite"	--	false	true	true	false	nigh fright	pre-knife-right rule	post-knife-right rule	--	--
 "gaunt"	"raider"	--	--	false	true	true	false	worm eaten	pre-gaunt-raider rule	post-gaunt-raider rule	--	--
-"were"	"meetin"	"whirr"	--	false	true	true	false	worm eaten	pre-were-meetin rule	post-were-meetin rule	--	--
-"my"	"corps"	"core"	vh-my-core rule	false	true	true	false	worm eaten	pre-my-corps rule	post-my-corps rule	--	"You may be able to call your companions [b]MY CORPS[r] [once-now of sco-treat-all] [if pals-made < 2]you have companions[else]you've shared something together[end if]."
+"were"	"meetin"	"whirr|warm|eden|war"	hom-whirr-meetin rule	false	true	true	false	worm eaten	pre-were-meetin rule	post-were-meetin rule	--	--
+"my"	"corps"	"core"	hom-my-core rule	false	true	true	false	worm eaten	pre-my-corps rule	post-my-corps rule	--	"You may be able to call your companions [b]MY CORPS[r] [once-now of sco-treat-all] [if pals-made < 2]you have companions[else]you've shared something together[end if]."
 "cease"	"cull"	"seize"	hom-cease-cull rule	false	true	true	false	doom end	pre-cease-cull rule	post-cease-cull rule	--	--
 "wipe"	"out"	--	--	false	true	true	false	doom end	pre-wipe-out rule	post-wipe-out rule	--	"You will want to [b]WIPE OUT[r] the cause of your problems [once-now of sco-cease-cull] you have them in your crosshairs."
 "do|due"	"mend"	"dew"	--	false	true	true	false	doom end	pre-do-due-mend rule	post-do-due-mend rule	--	--
@@ -377,14 +377,17 @@ this is the post-high-plain rule:
 
 section naff haze testing
 
-a wordtwisting rule (this is the vc-nah-phase rule):
+a wordtwisting rule (this is the pre-nah-phase rule):
 	if player is not in NaffHaze, unavailable;
 	if sco-nah-phase is true:
 		vcal "You already dispelled the haze!";
 		already-done;
 	ready;
 
-this is the vr-nah-phase rule:
+this is the hom-nah-phaze rule:
+	say "You sense you don't want the naff haze to faze you, but you want a noun, here, to reject."
+
+this is the post-nah-phase rule:
 	now sco-nah-phase is true;
 	say "The haze seemed too thick at first. But you recognize it doesn't have to be there. As you sift through it, you notice things that weren't there before. It lifts.";
 	move short rail to NaffHaze;
@@ -542,6 +545,9 @@ a wordtwisting rule (this is the pre-well-own rule):
 		already-done;
 	ready;
 
+this is the hom-wheel-own rule:
+	say "This is a seedy financial services provider, not a seedy used car dealer. Still, you must be on the right track."
+
 this is the post-well-own rule:
 	now sco-well-own is true;
 	say "Yes. There's a definite shady side. You mumble to yourself, and then your mumbles get louder, and it attracts ... some merchant. They begin babbling about deals they have, fake-friendly, about how you can buy low.";
@@ -652,7 +658,7 @@ a wordtwisting rule (this is the pre-manna-curb rule):
 		already-done;
 	ready;
 
-this is the vh-my-mana-curb rule:
+this is the hom-mana-curb rule:
 	say "You do not have any magic points, so you don't need them refreshed. But you must be close!"
 
 this is the post-manna-curb rule:
@@ -670,7 +676,7 @@ this is the post-plan-tracker rule:
 	moot plant racker;
 	now player has plan tracker;
 
-this is the vh-c-sea-design rule:
+this is the hom-c-sea-design rule:
 	say "Close, but an action is needed here."
 
 a wordtwisting rule (this is the pre-see-design rule):
@@ -729,6 +735,12 @@ a wordtwisting rule (this is the followers-check rule):
 		vcp "You sense you don't have the gang together! [if number of still-needed followers is 1]But you must be very, very close[else]You may still be a way away[end if].";
 		not-yet;
 
+this is the hom-whirr-meetin rule:
+	if the player's command includes "whirr":
+		say "Close, but you don't need a whirr noise.";
+	else:
+		say "You don't need to change this place's complexion here. It's cozy, a place for people to be together. But how?"
+
 this is the post-were-meetin rule:
 	now sco-were-meetin is true;
 	say "You meet with the friends you've made over your adventure. You all have one goal in mind. And yet you don't have a rallying cry. Perhaps it can come from within you.";
@@ -755,7 +767,7 @@ a wordtwisting rule (this is the pre-my-corps rule):
 		already-done;
 	ready;
 
-this is the vh-my-core rule:
+this is the hom-my-core rule:
 	say "You always want to strengthen your own core, but you have a feeling you're looking too inward, here. Though you must be close."
 
 this is the post-my-corps rule:
