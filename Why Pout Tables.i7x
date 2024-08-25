@@ -297,6 +297,7 @@ this is the post-tree-small rule:
 	now sco-tree-small is true;
 	say "Amidst all the fake trees, an actual organic small tree grows. You're a bit disappointed, but you realize you maybe shouldn't have expected much with so little letter-shuffling. Maybe if you want a bigger tree, you'll need to do something else.";
 	move tree small to Trees Mall;
+	if player has grow vial, say "[line break]";
 	grow-the-tree;
 
 a wordtwisting rule (this is the pre-tall-cake rule):
