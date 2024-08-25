@@ -294,6 +294,10 @@ book Lobe End
 
 Lobe End is a room in universal. "[if sco-low-bend is false]This lobe of land appears to end in all directions except back west. Maybe you could look for something that might be a hill, even a steep one.[else]The low bend (former lobe end) now bends from west to north, where you see water, too much to cross on foot.[end if]"
 
+check going north in lobe end when sco-low-bend is true and sco-bay-sale is false: say "You have no way across the water, yet." instead;
+
+the water north is scenery. "[if sco-bay-sale is true]Easy to cross with the raft[else]You need a vessel to cross the water. The other side is too far away[end if]."
+
 chapter We Craft Weak Raft
 
 the We Craft Weak Raft is a thing. printed name is "We-Craft Weak Raft". description is "Well, it isn't fancy, but [if storm isle is unvisited]it looks sturdy enough[else]it got you across the water with no problem[end if].". "The We-Craft Weak Raft from the bay sale floats here, ready to take you [if player is in storm isle]south[else]north[end if] across the water and back, as many times as needed."

@@ -239,6 +239,7 @@ this is the post-bay-sale rule:
 	quid-reduce 2;
 	moot base ale;
 	move We Craft Weak Raft to lobe end;
+	move water north to Lobe End;
 	reveal Storm Isle to north;
 
 section storm isle scoring
