@@ -30,6 +30,8 @@ include Why Pout Definitions by Andrew Schultz.
 
 include Why Pout Globals by Andrew Schultz.
 
+include Why Pout Mistakes by Andrew Schultz.
+
 include Why Pout I6 Replacements by Andrew Schultz.
 
 section not for release
