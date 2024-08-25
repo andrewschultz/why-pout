@@ -57,6 +57,11 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "weak"	"us"	--	--	false	true	false	false	brew swears	pre-weak-us rule	post-weak-us rule	--	--
 "grin"	"churls"	--	--	false	true	false	false	brew swears	pre-grin-churls rule	post-grin-churls rule	--	--
 "crew"	"dork"	--	--	false	true	false	false	brew swears	pre-crew-dork rule	post-crew-dork rule	--	--
+"huh"	"shit"	--	--	false	true	false	false	brew swears	pre-huh-shit rule	post-huh-shit rule	--	--
+"lie"	"fuckers"	--	--	false	true	false	false	brew swears	pre-lie-fuckers rule	post-lie-fuckers rule	--	--
+"heckle"	"ass"	--	--	false	true	false	false	brew swears	pre-heckle-ass rule	post-heckle-ass rule	--	--
+"were"	"dicks"	--	--	false	true	false	false	brew swears	pre-were-dicks rule	post-were-dicks rule	--	--
+"bastard"	"e+h*"	--	--	false	true	false	false	brew swears	pre-bastard-eee rule	post-bastard-eee rule	--	--
 
 section air aww scoring
 
@@ -820,6 +825,65 @@ this is the post-crew-dork rule:
 	now sco-crew-dork is true;
 	say "You break the truth gently to the crude orc that, well, they're at the bottom of the totem pole for this crew. They'll use the crude orc, maybe even not let them into the clique, and then find the next sucker. The [grinch] surprisingly have little response to this besides, well, profanity.[paragraph break]You sense your job here is done, though you can continue to deflect profanity if you want.";
 	befriend crude orc;
+
+a wordtwisting rule (this is the pre-huh-shit rule):
+	if player is not in brew swears, unavailable;
+	if hush-it is not in brew swears, unavailable;
+	ready;
+
+this is the post-huh-shit rule:
+	now sco-huh-shit is true;
+	say "You reject [the grinch]['] 'urbane' attempts at shutting you up. They're a bit surprised at you.";
+	moot hush-it;
+	recalibrate-swears;
+
+a wordtwisting rule (this is the pre-lie-fuckers rule):
+	if player is not in brew swears, unavailable;
+	if life-occurs is not in brew swears, unavailable;
+	ready;
+
+this is the post-lie-fuckers rule:
+	now sco-lie-fuckers is true;
+	say "You cut down [the grinch] for making things more bleak than they are. Sure, life is awful, but that's no excuse to make it even more awful. They give a 'whatever,' but you see the point touched home.";
+	moot life-occurs;
+
+a wordtwisting rule (this is the pre-were-dicks rule):
+	if player is not in brew swears, unavailable;
+	if weird-icks is not in brew swears, unavailable;
+	ready;
+
+this is the post-were-dicks rule:
+	now sco-were-dicks is true;
+	say "You mock [the grinch] back, giving at least as good as you get, noting there's always a hole in these sorts of attacks.";
+	moot weird-icks;
+
+a wordtwisting rule (this is the pre-bastard-eee rule):
+	if player is not in brew swears, unavailable;
+	if bah-sturdy is not in brew swears, unavailable;
+	ready;
+
+this is the post-bastard-eee rule:
+	now sco-bastard-eee is true;
+	say "You show you're sturdy and then some, with just the right tone of exasperation. They pretend not to be impressed, but they don't have a comeback.";
+	moot bah-sturdy;
+	recalibrate-swears;
+
+to recalibrate-swears:
+	if number of not moot swearblobs is 0:
+		say "[line break]The [grinch], out of insults, give up on you, claiming you got boring. But you know better.";
+		continue the action;
+	follow the followers follow you rule;
+
+section brew swears scoring
+
+a wordtwisting rule (this is the pre-heckle-ass rule):
+	if player is not in brew swears, unavailable;
+	if heh-class is not in brew swears, unavailable;
+	ready;
+
+this is the post-heckle-ass rule:
+	now sco-heckle-ass is true;
+	say "You give back at least as good as you got, showing you don't need to use the big cuss words to get a point in as well.";
 
 volume command parsing
 
