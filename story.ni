@@ -14,6 +14,10 @@ include Old School Verb Total Carnage by Andrew Schultz.
 
 include Versioning and Extensions Tweak by Andrew Schultz.
 
+section beta testing - not for release
+
+include Why Pout Beta Testing by Andrew Schultz.
+
 section semi-general
 
 include Spoonerism and Oronym Core by Andrew Schultz.
