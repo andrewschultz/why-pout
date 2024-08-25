@@ -972,6 +972,21 @@ volume can't go that way
 table of noways
 noway-rm	noway-txt
 Eh Raw Air Aww	"[if sco-an-aim is false]You can't see anywhere. You know almost nothing. I mean, you don't even have a name. What would you do even if there was a passage?[else if number of viable directions is 0]You still can't find anywhere to go, yet. But there seem to be clues where to go, and how, if you look around.[else]You haven't made passage [noun] yet, though you can go [list of viable directions].[end if]"
+Hype Lane	"[if noun is up]You need to find something that will help you go up[else]No sense faffing around horizontally. You're sick of being stuck underground[end if]."
+NaffHaze	"[if sco-nah-phase is true]You can go any of the cardinal directions, once you've unblocked them.[else]Too tough to stumble around until the haze lifts, but how?[end if]"
+KeepIller	"Apart from finding a way beyond the seedy sign, the keep doesn't have many twisty passages."
+Nigh Fright	"You could leave, but then you'd have to come back. Just figure what to do here."
+Lobe End	"[if sco-low-bend is true]The bend only curves west to north[else]You can only go back west. Well, for now[end if]."
+Storm Isle	"You can only go back south to Lobe End[if sco-store-mile is true] or north to the rest of the mall[end if]."
+Trees Mall	"You can only go back south."
+Wolf Rock	"Wolf Rock blocks every normal passage except back south[if sco-low-door is true]. Well, you can go [b]IN[r] where the lode ore was as well[end if][if sco-hide-out is true]. There's a hideout above as well[end if]."
+We Loan	"You can only go back [b]OUT[r] here."
+Hideout	"You can only go back up. If it had too many passages, it'd risk being a less effective hideout."
+NoNotion	"You can only go back north[if squid is in NoNotion] or, if you know where you want to go, ask the squid for help getting there[end if]."
+Wand Wharf	"You're not in the mood for exploring the wharf. It seems like a good way to get lost. Maybe there's someone or something nearby you can pick up, then leave."
+Worm Eaten	"No tricky passages here, just up back to safer ground or down to your fate."
+Doom End	"[if sco-wipe-out is true]You need to prep for making things right in general. Then, once the game's over, you'll leave[else]Unsurprisingly, all the action is here[end if]."
+Brew Swears	"You don't want to get into the guts of this place. Just get the crude orc, if you can, then get out."
 
 volume scoring to move [see RoL Defs if I add bonus points]
 
