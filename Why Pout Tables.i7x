@@ -227,7 +227,9 @@ a wordtwisting rule (this is the pre-bay-sale rule):
 	if player is in NoNotion:
 		vcp "[if sco-known-ocean is true]There's water here, but it's much more than a bay[else]You can't make out what sort of body of water is here. Well, not yet[end if].";
 		not-yet;
-	if player is not in lobe end, unavailable;
+	if player is not in lobe end:
+		vcp "No water here. Maybe somewhere else.";
+		not-yet;
 	if sco-six-quid is false:
 		vcp "You realize that, in order to participate in a bay sale for a bay sail, you need some form of currency. You don't have that yet.";
 		not-yet;
@@ -445,6 +447,7 @@ this is the post-known-ocean rule:
 
 a wordtwisting rule (this is the pre-six-quid rule):
 	if player is not in nonotion, unavailable;
+	if sco-known-ocean is false, unavailable;
 	if sco-six-quid is true:
 		vcal "You don't need any more money, and the squid doesn't need any more help.";
 		already-done;
@@ -460,11 +463,13 @@ this is the post-six-quid rule:
 		say "[line break]The squid gestures towards the two maps, as if it can take you wherever you need to on the maps. But it does look a little exhausted. So you don't just want to summon it for a joyride.";]
 
 a wordtwisting rule (this is the three-isle rule):
-	if player is in lobe end and sco-low-bend is true and player has flier:
-		vcp "No, this can't be the right place.";
+	if (player is in lobe end or player is in storm isle) and sco-low-bend is true and player has flier:
+		vcp "No, there's water here, but this can't be the right place.";
 		not-yet;
-	if player is not in nonotion, unavailable;
 	if player does not have flier, unavailable;
+	if player is not in nonotion:
+		vcp "This isn't the right place to look for the grove isle. No large body of water nearby.";
+		not-yet;
 
 a wordtwisting rule (this is the pre-the-file rule):
 	abide by the three-isle rule;

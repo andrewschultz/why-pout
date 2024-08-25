@@ -73,7 +73,7 @@ when play begins:
 	now x is the list of swearblobs;
 	sort x in random order;
 
-every turn when number of entries in x > 0:
+every turn when player is in brew swears and sco-weak-us is true and number of entries in x > 0:
 	increment swear-index;
 	if swear-index > number of entries in x, now swear-index is 1;
 	let my-swear be entry swear-index in x;
