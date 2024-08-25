@@ -128,7 +128,7 @@ Hype Lane is a room in universal. "It's still pretty dark here. You must still b
 
 chapter cell phones
 
-the cell phones are a plural-named thing in hype lane. understand "phone" and "cell phone" as cell phones. "You don't remember everything about your former self, but you remember you hated cell phones and how they distracted you. Maybe if the people yacking into them were taken down a peg, you could focus a bit more. Dang cell phones."
+the cell phones are a plural-named thing in hype lane. understand "phone" and "cell phone" as cell phones. "You don't remember everything about your former self, but you remember you hated cell phones and how they distracted you. Maybe if the people yacking into them were taken down a peg, you could focus a bit more. Dang cell phones.". description is "Whether or not they're the latest models, you don't want to pay attention to them too much. Just figure out a way for a harmless calamity that may make their users quiet down a bit."
 
 chapter prize talk
 
@@ -195,23 +195,23 @@ check going south in KeepIller:
 
 chapter no mold
 
-there is a thing called no mold. It is in KeepIller. "You are really impressed by how no mold grows here. Someone must be keeping it up well."
+there is a thing called no mold. It is in KeepIller. "You are really impressed by how no mold grows here. Someone must be keeping it up well.". description is "You can't see the absence of mold, but you appreciate it nonetheless. Someone must be, ahem, keeping the keep up well.".
 
 section gnome old
 
-the gnome old is a follower. printed name is "gnome (old)". help-chat is "The gnome (old) discusses ways of finding hidden psychic weaknesses in a very tough opponent. You also hear how whatever force there is, it only cares about things looking good on the outside. The gnome had so much mold to protect against and continually scrape away, even outside of the keep."
+the gnome old is a follower. printed name is "gnome (old)". help-chat is "The gnome (old) discusses ways of finding hidden psychic weaknesses in a very tough opponent. You also hear how whatever force there is, it only cares about things looking good on the outside. The gnome had so much mold to protect against and continually scrape away, even outside of the keep.". description is "Still full of vigor, like they don't deserve to be schlepped out in a garden--though keeping mold away as they did is certainly good-gardening-adjacent!"
 
 chapter row gold
 
-there is a thing called row gold. It is in KeepIller. printed name is "row (gold)". "A row (gold) shines in this otherwise forbidding keep."
+there is a thing called row gold. It is in KeepIller. printed name is "row (gold)". "A row (gold) shines in this otherwise forbidding keep.". description is "You're surprised someone hasn't taken it yet. Perhaps it has an unseen guardian."
 
 section rogue old
 
-the rogue old is a follower. printed name is "rogue (old)". help-chat is "The rogue (old) discusses ways to sneak around so vastly overpowered opponents can't blow you away, and you also learn not to feel guilty or shifty about being good at sneaking around, around much more unsavory entities than yourself."
+the rogue old is a follower. printed name is "rogue (old)". help-chat is "The rogue (old) discusses ways to sneak around so vastly overpowered opponents can't blow you away, and you also learn not to feel guilty or shifty about being good at sneaking around, around much more unsavory entities than yourself.". description is "Moves a bit slowly, but also very quietly."
 
 chapter manic herb
 
-the manic herb is a thing in KeepIller. "There's a bunch of manic herb here[if sco-manna-curb is true] the mensch elf sifted through[else]. You don't know a lot about it, other than that some is really poisonous and some is okay. There's so much, perhaps it's hiding something[end if]. "
+the manic herb is a thing in KeepIller. "There's a bunch of manic herb here[if sco-manna-curb is true] the mensch elf sifted through[else]. You don't know a lot about it, other than that some is really poisonous and some is okay. There's so much, perhaps it's hiding something[end if]. ". description is "You're unable to see through it, to determine what's safe[if sco-manna-curb is true], but you don't need to[else], and it'll probably require someone else's knowledge, once you know what to look for[end if]."
 
 section manna
 
@@ -237,7 +237,7 @@ Nigh Fright is a room in Universal. "Whatever you need to do or find here, you o
 
 chapter knife right
 
-the knife right is a thing. printed name is "knife (right)".
+the knife right is a thing. printed name is "knife (right)". description is "Well, it's sharp. And it's probably, like, sacred and stuff, since you got it in a rite."
 
 book Wolf Rock
 
@@ -261,7 +261,7 @@ Hideout is a room in universal. "You can only go back [b]UP[r]. It wouldn't be a
 
 chapter Booze Troll
 
-the booze troll is a follower in Hideout. "A booze troll sulks sullenly here.". help-chat is "The booze troll relates ways to shake oneself free from despair (no! Really! It managd to for a while!) before relating more ways to avoid it in the first place, or help others you care about do the same."
+the booze troll is a follower in Hideout. "A booze troll sulks sullenly here.". help-chat is "The booze troll relates ways to shake oneself free from despair (no! Really! It managed to for a while!) before relating more ways to avoid it in the first place, or help others you care about do the same.". description is "Won't win any beauty contests, but [if sco-boost-role is true]seems to look eagerly towards you for what to do next[else]not exactly mean, just downtrodden[end if]."
 
 chapter base ale
 
@@ -269,7 +269,7 @@ the Base Ale is a thing. description is "Uck. It's a nasty color, really. But pe
 
 book We Loan
 
-We Loan is a room in universal. printed name is "[if sco-well-own is false]We Loan[else if sco-whee-lone is false]We'll Own[else if sco-oh-flyer is false]Whee, Lone?[else]Whee! [']Lone![end if]". "[if sco-oh-flyer is false]This area feels replete with the sort of double-talk all salesmen use. It will be tough to hang with all the way through, but if you do, maybe you'll get something out of it. [else if sco-bile-oh is true and sco-whee-lone is false]It's nice and silent here, and maybe there's a specific way to enjoy that. [else]You've managed to navigte negotiations and wind up with ... a shiny new flyer! [end if]You can only go back [b]OUT[r] here[if sco-well-own is false].[paragraph break]You don't really trust the whole 'financial services' vibe here. Maybe there's a double meaning to deduce[end if]."
+We Loan is a room in universal. printed name is "[if sco-well-own is false]We Loan[else if sco-whee-lone is false]We'll Own[else if sco-oh-flyer is false]Whee, Lone?[else]Whee! [']Lone![end if]". "[if sco-oh-flyer is false]This area feels replete with the sort of double-talk all salesmen use. It will be tough to hang with all the way through, but if you do, maybe you'll get something out of it. [else if sco-bile-oh is true and sco-whee-lone is false]It's nice and silent here, and maybe there's a specific way to enjoy that. [else]You've managed to navigate negotiations and wind up with ... a shiny new flyer! [end if]You can only go back [b]OUT[r] here[if sco-well-own is false].[paragraph break]You don't really trust the whole 'financial services' vibe here. Maybe there's a double meaning to deduce[end if]."
 
 chapter some merchant
 
@@ -279,11 +279,11 @@ check going outside in we loan when merchant is in we loan: say "Alas, the merch
 
 chapter oaf liar
 
-the oaf liar is a singular-named thing.
+the oaf liar is a singular-named thing. "An oaf liar blathers away here, with stuff that's likely, but not provably false. They seem quite proud of their salesmanship skill, which is more persistence than anything else.". description is "Smarmy and well-dressed.".
 
 section flier
 
-the flier is a thing. description is "The flier advertises places to go: a wharf isle, a thief isle, and a grove isle, each of which may hold odd treasures. It contains pretty clear directions, too. The only thing it lacks is where the directions start from.". understand "flyer" as flier.
+the flier is a thing. description is "The flier advertises places to go: a wharf isle, a thief isle, and a grove isle, each of which may hold odd treasures. It contains pretty clear directions, too. The only thing it lacks is where the directions start from[if flier-isle-score > 0]. You now know to start [here-in of NoNotion][end if].". understand "flyer" as flier.
 
 report examining the flier:
 	if flier-isle-score is 0:
@@ -326,7 +326,7 @@ the mice tall are a plural-named followers. printed name is "mice (tall)". descr
 
 chapter men shelf
 
-the MEN shelf is a thing. "A MEN shelf sits here, barren. Which may be a good thing--there's no appalling stuff to buy. Or a bad thing--everything is in high demand."
+the MEN shelf is a thing. "A MEN shelf sits here, barren. Which may be a good thing--there's no appalling stuff to buy. Or a bad thing--everything it displayed was in such high demand.". description is "Empty. Well, it's a system of shelves, really. Perhaps there is something or someone under or behind. Someone too decent to buy anything from such a bold MEN shelf."
 
 section mensch elf
 
@@ -369,7 +369,7 @@ the grow vial is a thing. description is "It says it will help something grow, b
 
 book wand wharf
 
-Wand Wharf is a room in universal.
+Wand Wharf is a room in universal. "You rode the squid here, and there are all sorts of magical symbols here. It's a bit intimidating for someone like you who is clueless about magic. Maybe it's intimidating and depressing for someone else."
 
 the wan dwarf is a follower. description is "Short and stocky. It wears glasses from what other dwarves would say was reading too much.". help-chat is "The dwarf provides an impressively nuanced view on how to balance magic skill with physical skill and fighting savvy. But the dwarf also notes how to be a good expert in specific areas if need be, as well as how to get experts and generalists to work together. However, the dwarf also expresses worry that this talk is all great in theory but hard in practice."
 
@@ -394,7 +394,7 @@ to zap-bruise-wares:
 
 chapter earls
 
-the grinch earls are a plural-named thing in Brew Swears. "Some [earls] parade around here, bragging about how they ruin boring people's fun with their dynamic ways and pointing out that it's easy to be nice if you're boring[if sco-grin-churls is false], though they're less effective than when they were self-styled earls[end if][if sco-weak-us is true]. You cut their 'we cuss' down to size, so they're now giving examples of how they cuss[else]. They constantly blather 'WE CUSS' and seem quite proud of that[end if].". printed name is "[if sco-grin-churls is true]grin churls[else]grinch earls[end if]".
+the grinch earls are a plural-named thing in Brew Swears. "Some [earls] parade around here, bragging about how they ruin boring people's fun with their dynamic ways and pointing out that it's easy to be nice if you're boring[if sco-grin-churls is false], though they're less effective than when they were self-styled earls[end if][if sco-weak-us is true]. You cut their 'we cuss' down to size, so they're now giving examples of how they cuss[else]. They constantly blather 'WE CUSS' and seem quite proud of that[end if].". printed name is "[if sco-grin-churls is true]grin churls[else]grinch earls[end if]". description is "Bleah. They remind you of popular kids (you know, the ones who beat up kids who claimed they weren't popular--it was effective) from back in school, except all grown up."
 
 chapter crude orc
 
@@ -427,7 +427,7 @@ check going down in Worm Eaten:
 
 chapter gone trader
 
-The gone traitor is a thing in Worm Eaten. "[one of]Someone comes out from the depths. They introduce themselves as the gone traitor, someone who cozied up to the bad guys and ditched their friends, then ditched the bad guys. And only recently they ran away, but how can they ask for forgiveness? Surely it just doesn't happen like this? Just one small change and you have a new identity? Rubbish![or]The gone traitor continues to mope about here, looking for someone who can help convince them they're not so awful.[stopping]"
+The gone traitor is a thing in Worm Eaten. "[one of]Someone comes out from the depths. They introduce themselves as the gone traitor, someone who cozied up to the bad guys and ditched their friends, then ditched the bad guys. And only recently they ran away, but how can they ask for forgiveness? Surely it just doesn't happen like this? Just one small change and you have a new identity? Rubbish![or]The gone traitor continues to mope about here, looking for someone who can help convince them they're not so awful.[stopping]". description is "[if sco-gaunt-raider is true]Still pretty gaunt, but no longer with a look of despair on their face. They're ready to redeem themselves, you imagine[else]Despairing, shaking their head, barely able to look you in the eye. You dare not ask all they did. But they seem sorry for the big stuff[end if]."
 
 section gaunt raider
 
@@ -439,7 +439,7 @@ Doom End is a room in universal. "Doom doom doom!"
 
 chapter Sea Skull
 
-The Sea Skull is a thing in Doom End. "A sea skull [if sco-cease-cull is true] spews rivers of blood at you and your companions, but fortunately, you have so many companions, it's only a trickle. Still, you should do something about it[else]gloats evilly, with its back turned to you[end if]."
+The Sea Skull is a thing in Doom End. "A sea skull [if sco-cease-cull is true] spews rivers of blood at you and your companions, but fortunately, with so many companions, the rivers aren't very deep. Still, you should do something about it[else]gloats evilly, with its back turned to you[end if].". description is "[if sco-cease-cull is true]It looks upset you've disturbed its, err, work[else]You can't see its face, which must be evil. You may need to yell something at it to get the, uh, conversation started[end if]."
 
 volume unsorted
 
@@ -648,7 +648,7 @@ rule for printing a parser error when the latest parser error is the I beg your 
 
 volume meta rooms
 
-Reap Rest is a room. moot-room is Reap Rest.
+Reap Rest is a room. moot-room is Reap Rest. "You should never get here."
 
 volume appearance
 
