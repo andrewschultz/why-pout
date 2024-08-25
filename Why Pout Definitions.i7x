@@ -94,14 +94,14 @@ volume combo numbers
 
 to decide which number is pals-made: decide on number of friendly followers;
 
-to decide which number is init-exits:
-	decide on (boolval of sco-shore-trail);
-
 to decide which number is flier-isle-score:
 	decide on (boolval of sco-grow-vial) + (boolval of sco-the-file) + (boolval of sco-war-file);
 
 to decide which number is plane-dir-score:
 	decide on (boolval of sco-pole-east) + (boolval of sco-grow-star) + (boolval of sco-shore-trail) + (boolval of sco-key-pillar);
+
+to decide which number is keep-score:
+	decide on (boolval of sco-gnome-old) + (boolval of sco-rogue-old) + (boolval of sco-manna-curb) + (boolval of sco-plan-tracker) + (boolval of sco-see-design) + (boolval of sco-knife-right);
 
 volume begin play
 
