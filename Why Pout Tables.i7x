@@ -12,7 +12,7 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "two"	"maps"	"too"	--	false	true	true	false	eh raw air aww	pre-two-maps rule	post-two-maps rule	--	--
 "self"	"owns"	--	--	false	true	true	false	hype lane	pre-self-owns rule	post-self-owns rule	--	--
 "pry"	"stalk"	--	--	false	true	true	false	hype lane	pre-pry-stalk rule	post-pry-stalk rule	--	--
-"high"	"plain|plane"	--	--	false	true	true	false	hype lane	pre-high-plain rule	post-high-plain rule	--	"You can find a [b]HIGH PLAIN[r] [once-now of sco-pry-stalk] you have something that can reach that far up."
+"high"	"plain|plane"	"hi"	--	false	true	true	false	hype lane	pre-high-plain rule	post-high-plain rule	--	"You can find a [b]HIGH PLAIN[r] [once-now of sco-pry-stalk] you have something that can reach that far up."
 "nah|naah|naw"	"phase"	"phaze"	hom-nah-phaze rule	false	true	true	false	NaffHaze	pre-nah-phase rule	post-nah-phase rule	--	--
 "pole|pull"	"east"	--	--	false	true	true	false	NaffHaze	pre-pole-east rule	post-pole-east rule	--	--
 "grow"	"star"	--	--	false	true	true	false	NaffHaze	pre-grow-star rule	post-grow-star rule	--	--
@@ -469,7 +469,7 @@ a wordtwisting rule (this is the three-isle rule):
 		not-yet;
 	if player does not have flier, unavailable;
 	if player is not in nonotion:
-		vcp "This isn't the right place to look for the grove isle. No large body of water nearby.";
+		vcp "This isn't the right place to look for an isle. No large body of water nearby.";
 		not-yet;
 
 a wordtwisting rule (this is the pre-the-file rule):
@@ -799,6 +799,9 @@ this is the post-cease-cull rule:
 
 a wordtwisting rule (this is the pre-do-due-mend rule):
 	if player is not in doom end, unavailable;
+	if sco-wipe-out is false:
+		vcp "You'll have to dispose of the sea skull first.";
+		not-yet;
 	ready;
 
 this is the post-do-due-mend rule:
@@ -865,7 +868,7 @@ a wordtwisting rule (this is the pre-lie-fuckers rule):
 
 this is the post-lie-fuckers rule:
 	now sco-lie-fuckers is true;
-	say "You cut down [the grinch] for making things more bleak than they are. Sure, life is awful, but that's no excuse to make it even more awful. They give a 'whatever,' but you see the point touched home.";
+	say "You cut down [the grinch] for making things more bleak than they are. Sure, life can be cruel, but that's no excuse to make it even more cruel. They give a 'whatever,' but you see the point touched home.";
 	moot life-occurs;
 
 a wordtwisting rule (this is the pre-were-dicks rule):
@@ -978,7 +981,7 @@ volume can't go that way
 table of noways
 noway-rm	noway-txt
 Eh Raw Air Aww	"[if sco-an-aim is false]You can't see anywhere. You know almost nothing. I mean, you don't even have a name. What would you do even if there was a passage?[else if number of viable directions is 0]You still can't find anywhere to go, yet. But there seem to be clues where to go, and how, if you look around.[else]You haven't made passage [noun] yet, though you can go [list of viable directions].[end if]"
-Hype Lane	"[if noun is up]You need to find something that will help you go up[else]No sense faffing around horizontally. You're sick of being stuck underground[end if]."
+Hype Lane	"[if noun is not up]No sense faffing around horizontally. You're sick of being stuck underground[else if sco-pry-stalk is false]You need to find something that will help you go up[else]You need to figure where to go up[end if]."
 NaffHaze	"[if sco-nah-phase is true]You can go any of the cardinal directions, once you've unblocked them.[else]Too tough to stumble around until the haze lifts, but how?[end if]"
 KeepIller	"Apart from finding a way beyond the seedy sign, the keep doesn't have many twisty passages."
 Nigh Fright	"You could leave, but then you'd have to come back. Just figure what to do here."

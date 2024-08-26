@@ -468,8 +468,8 @@ carry out abouting:
 
 report abouting:
 	if bruise wares is off-stage:
-		say "[line break]Note that an optional room will appear about midway through the game. It may contain profanity, which I hope is amusing, but I don't blame you if you wish to skip it.";
-	say "[line break][email] is my email, and [ghsite]/why-pout is the github site, where you can report issues. I'm open to transcripts.";
+		say "Note that an optional room will appear about midway through the game. It may contain profanity, which I hope is amusing, but I don't blame you if you wish to skip it.[paragraph break]";
+	say "[email] is my email, and [ghsite]/why-pout is the github site, where you can report issues. I'm open to transcripts.";
 	say "[line break][b]CREDITS[r] lists people who helped make [this-game] a reality, or a better version than it would've been without them.  [b]EXT[r] shows the extensions listed, and [b]VERSION[r] or [b]VERSIONS[r] shows version info.";
 	continue the action;
 

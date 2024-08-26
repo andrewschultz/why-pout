@@ -234,6 +234,8 @@ We can complete the keep now.
 
 >e
 
+>s
+
 The flyer tells you where to look or go.
 
 >grow vial (1)
