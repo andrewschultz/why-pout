@@ -105,6 +105,18 @@ to decide which number is plane-dir-score:
 to decide which number is keep-score:
 	decide on (boolval of sco-gnome-old) + (boolval of sco-rogue-old) + (boolval of sco-manna-curb) + (boolval of sco-plan-tracker) + (boolval of sco-see-design) + (boolval of sco-knife-right);
 
+book meta scoring
+
+to decide which number is pre-acts:
+	let return-value be 0;
+	repeat through table of main oronyms:
+		if everfail entry is true, increment return-value;
+	decide on return-value;
+
+when play begins:
+	repeat through table of main oronyms:
+		if there is a think-advice entry, increment pre-max;
+
 volume begin play
 
 when play begins:

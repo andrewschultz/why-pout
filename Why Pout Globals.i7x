@@ -20,6 +20,8 @@ counter-zero-points is a number that varies.
 
 volume point scoring variables
 
+pre-max is a number that varies. [determined in DEFINITIONS so I don't have to keep processing it, since it remains constant throughout the game]
+
 book integers
 
 core-max is a number that varies. core-max is 45.

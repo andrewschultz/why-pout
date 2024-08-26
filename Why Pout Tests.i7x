@@ -109,6 +109,27 @@ carry out wling:
 	track-thinks;
 	the rule succeeds;
 
+chapter mising
+
+mising is an action out of world.
+
+understand the command "mis" as something new.
+
+understand "mis" as mising.
+
+carry out mising:
+	let everfails be 0;
+	let possfails be 0;
+	repeat through table of main oronyms:
+		if everfail entry is true, increment everfails;
+		if there is a think-advice entry, increment possfails;
+		if everfail entry is false and there is a think-advice entry:
+			say "[check-rule entry] has not been tripped yet.";
+	repeat through table of main oronyms:
+		if everfail entry is true and there is a think-advice entry:
+			say "[b][check-rule entry][r] tripped.";
+	say "[everfails] fails out of [possfails] possible.";
+	the rule succeeds;
 
 Why Pout Tests ends here.
 
