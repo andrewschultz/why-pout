@@ -12,6 +12,8 @@ gs-parser-error-note is a truth state that varies.
 
 gs-examined-self is a truth state that varies.
 
+gs-overpay-flyer is a truth state that varies. [OH FLYER with >1 quid remaining]
+
 section first point cue(s)
 
 first-point-clue-flag is a number that varies.

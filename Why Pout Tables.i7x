@@ -609,11 +609,20 @@ a wordtwisting rule (this is the pre-oh-flyer rule):
 	if sco-six-quid is false:
 		vcp "[one of]You notice a flyer behind their back, and you nudge them as if to say, can I have it for free? No, no, you cannot[or]You still haven't found any way to pay for the flyer[stopping].";
 		not-yet;
+	if current-quid > 1:
+		vcp "[opflyer]You try and pull out one quid, but you wind up pulling them all out. The oaf liar's eyes get big. And you instinctively say, no, I'm not getting taken like that.[paragraph break]'Have it your way. Information's valuable. Don't try to lowball me.'";
+		not-yet;
 	ready;
+
+to say opflyer:
+	now gs-overpay-flyer is true;
 
 this is the post-oh-flyer rule:
 	now sco-oh-flyer is true;
-	say "You act distracted just right. The oaf liar tries to get your attention. Just ignoring them wouldn't work, but paying attention to a flyer ... well, they take the hint that you aren't a high-rolling customer.";
+	if gs-overpay-flyer is true:
+		say "You offer the only quid you have left. The oaf liar, being a liar, suspects you're being a liar, too. They demand you show proof you couldn't possibly have any more money on you.[paragraph break]You feel guilty about this subterfuge, except for how the oaf liar seemed too eager to trade. You stood your ground in negotiations, and that's something. You hope the flier is worth it.";
+	else:
+		say "You act distracted just right. The oaf liar tries to get your attention. Just ignoring them wouldn't work, but paying attention to a flier ... well, they take the hint that you aren't a high-rolling customer. They try to wheedle more money out of you, but of course, that's all you have. So you trade your final quid for the flier. The oaf liar thanks you for not totally wasting their time. They seem to snicker as they depart.";
 	moot oaf liar;
 	now player has flier;
 	quid-reduce 1;

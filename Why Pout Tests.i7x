@@ -47,21 +47,23 @@ test m2 with "pole east/grow star/n/low door/hideout/d/boost role/u/s/shore trai
 
 test m3 with "e/n/wool frock/s/s/bay sale/known ocean/six quid/n/e/bay sale/low bend/bay sale/n/store mile/mice tall/s/w/w/gnome old/e/e/n/mice tall".
 
-test m4 with "s/w/n/low door/in/well own/whee lone/bile oh/summer chant/bile oh/whee lone/oh flyer/the file/grow vial/war file".
+test m4 with "s/w/n/low door/in/well own/whee lone/bile oh/summer chant/bile oh/whee lone/oh flyer".
 
-test m5 with "out/s/w/gnome old/rogue old/see design/knife rite/plan tracker/e/s/war file/wan dwarf/grow vial/n".
+test m5 with "out/s/w/gnome old/rogue old/see design/knife rite/plan tracker/e".
 
-test m6 with "e/n/mensch elf/n/tree small/treat all".
+test m6 with "n/in/oh flier/the file/grow vial/war file/out/s/s/war file/wan dwarf/grow vial/n".
 
-test m7 with "s/s/w/d/gaunt raider/t elf/t raider/t dwarf/t gnome/t rogue/t mice/t troll".
+test m7 with "e/n/mensch elf/n/tree small/treat all".
 
-test m8 with "tall cake/u/w/manna curb/e/e/n/n/treat all/tall cake/treat all".
+test m8 with "s/s/w/d/gaunt raider/t elf/t raider/t dwarf/t gnome/t rogue/t mice/t troll".
 
-test m9 with "s/s/w/s/the file/n/d/were meetin/my corps/d".
+test m9 with "tall cake/u/w/manna curb/e/e/n/n/treat all/tall cake/treat all".
 
-test m10 with "do mend/cease cull/wipe out".
+test m10 with "s/s/w/s/the file/n/d/were meetin/my corps/d".
 
-test mis with "test m1/test m2/test m3/test m4/test m5/test m6/test m7/test m8/test m9/test m10/score/mis/do mend".
+test m11 with "do mend/cease cull/wipe out".
+
+test mis with "test m1/test m2/test m3/test m4/test m5/test m6/test m7/test m8/test m9/test m10/test m11/score/mis/do mend".
 
 volume cheats
 
