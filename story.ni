@@ -1,6 +1,12 @@
 "Why Pout" by Mick Stupp
 
-volume includes
+volume top level stuff
+
+release along with a website.
+
+release along with the "Parchment" interpreter.
+
+book includes
 
 section general
 
@@ -450,6 +456,9 @@ volume unsorted
 volume verbs
 
 book meta stuff
+
+check quitting the game:
+	say "A voice taunts you 'What? Changing your name to Ike Witt?'";
 
 chapter abouting
 
