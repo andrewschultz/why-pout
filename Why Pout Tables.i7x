@@ -77,16 +77,17 @@ this is the post-two-maps rule:
 section unsorted scoring
 
 a wordtwisting rule (this is the pre-boost-role rule):
-	if booze troll is not touchable, unavailable;
-	if sco-boost-role is true:
-		vcal "You already gave the booze troll a boost!";
+	if new troll is touchable and sco-boost-role is true:
+		vcal "You already gave the new troll a boost!";
 		already-done;
+	if booze troll is not touchable, unavailable;
 	ready;
 
 this is the post-boost-role rule:
 	now sco-boost-role is true;
 	say "You talk with the booze troll for a bit. They seem not to know who they are, and that gives you something in common with them. They don't want to be a lousy boozer all their life. They are sick of drinking Base Ale.[paragraph break]You begin chatting with them. You mention you've been having an adventure, and they'd sort of like one, too. They hand you a bottle of Base Ale as thanks. Not that they want you to go down their road. But it might be useful in bartering.";
-	befriend booze troll;
+	befriend new troll;
+	moot booze troll;
 	now player has Base Ale;
 
 section eh raw air aww scoring

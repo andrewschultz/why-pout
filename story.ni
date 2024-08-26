@@ -138,10 +138,10 @@ prize talk is a thing. "You'd like to DO something about the prize talk. Or seek
 
 book Naff Haze
 
-NaffHaze is a privately-named room in universal. "[if sco-nah-phase is false]A naff haze surrounds you. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it[else]Things have opened up a bit now, with the naff haze lifted[end if][if sco-pole-east is true]. You feel less policed, too, and you found a path east[end if][if sco-grow-star is true].[paragraph break]You got rid of the gross tar blocking your way north[end if].". printed name is "[if sco-nah-phase is false]Naff Haze[else]High Plain[end if]".
+NaffHaze is a privately-named room in universal. "[if sco-nah-phase is false]A naff haze surrounds you. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it[else]Things have opened up a bit now, with the naff haze lifted[end if][if sco-pole-east is true]. You feel less policed, too, and you found a path [b]EAST[r][end if][if sco-grow-star is true].[paragraph break]You got rid of the gross tar blocking your way north[end if].". printed name is "[if sco-nah-phase is false]Naff Haze[else]High Plain[end if]".
 
 after printing the locale description for NaffHaze when sco-nah-phase is true and sco-pole-east is false:
-	say "[run paragraph on]You feel policed here. Where and what is this feeling coming from?";
+	say "You feel policed here. Where and what is this feeling coming from?";
 	continue the action;
 
 after printing the locale description for NaffHaze when Bruise Wares is off-stage and current-score >= 20:
@@ -164,15 +164,15 @@ the short rail is a thing. "A short rail leads -- well, not very far. You get th
 
 section shore trail
 
-the shore trail is a thing. "The shore trail you discovered leads south.". description is "There are no secret passages hidden in it."
+the shore trail is a thing. "The shore trail you discovered leads [b]SOUTH[r].". description is "There are no secret passages hidden in it."
 
 chapter gross tar
 
-the gross tar is a thing. "Gross tar blocks the way north into darkness.". description is "Maybe there's a way through, but it's a bit too dark now. At least it's not foggy any more."
+the gross tar is a thing. "Gross tar blocks the way [b]NORTH[r] into darkness.". description is "Maybe there's a way through, but it's a bit too dark now. At least it's not foggy any more."
 
 chapter keep iller
 
-the keep iller is a thing. "A keep, iller, rises to the west[if sco-key-pillar is false], but you see no way in[else], and you figured how to enter it[end if].". description is "It [if keepiller is visited]wasn't[else]doesn't look[end if] dangerous, but then, it's not exactly a tourist attraction. Still, [if keep-score < 6]there's plenty to do there[else]it helped you a lot[end if]."
+the keep iller is a thing. "A keep, iller, rises to the [b]WEST[r][if sco-key-pillar is false], but you see no way in[else], and you figured how to enter it[end if].". description is "It [if keepiller is visited]wasn't[else]doesn't look[end if] dangerous, but then, it's not exactly a tourist attraction. Still, [if keep-score < 6]there's plenty to do there[else]it helped you a lot[end if]."
 
 chapter Bruise Wares
 
@@ -263,7 +263,9 @@ Hideout is a room in universal. "You can only go back [b]UP[r]. It wouldn't be a
 
 chapter Booze Troll
 
-the booze troll is a follower in Hideout. "A booze troll sulks sullenly here.". help-chat is "The booze troll relates ways to shake oneself free from despair (no! Really! It managed to for a while!) before relating more ways to avoid it in the first place, or help others you care about do the same.". description is "Won't win any beauty contests, but [if sco-boost-role is true]seems to look eagerly towards you for what to do next[else]not exactly mean, just downtrodden[end if]."
+the booze troll is a thing in Hideout. "A booze troll sulks sullenly here.". description is "For all the troll's sulkiness, it doesn't appear evil. Perhaps it's reacted badly to ... well, the same people who stuffed you beneath the tomb apse.".
+
+the new troll is a follower in Hideout. "A new troll looks around with purpose.". help-chat is "The new troll relates ways to shake oneself free from despair (no! Really! It managed to for a while!) before relating more ways to avoid it in the first place, or help others you care about do the same.". description is "Won't win any beauty contests, but the troll seems to look eagerly towards you for what to do next."
 
 chapter base ale
 
@@ -400,7 +402,7 @@ the grinch earls are a plural-named thing in Brew Swears. "Some [earls] parade a
 
 chapter crude orc
 
-the crude orc is an unneeded follower in Brew Swears. "A crude orc trundles around here[if number of swearblobs in Brew Swears is 0], ready to follow you, with all the rough language taken care of[else if sco-crew-dork is true], on your side, now[else if sco-weak-us is true], looking equally between you and [the earls][else], trying to impress [the earls][end if].". description is "[if sco-weak-us is false]Looking at you like their next target, to show they're tough enough for [the earls][else if sco-crew-dork is false]Unsure of themselves. They might be ready for a hard truth[else if number of swearblobs in Brew Swears > 0]Looking up to you a lot, for setting [the grinch] straight[else]Ready to go along with you on your adventure[end if]."
+the crude orc is an unneeded follower in Brew Swears. "A crude orc trundles around here[if sco-weak-us is true], trying to impress [the earls][else if number of swearblobs in Brew Swears is 0], ready to follow you, with all the rough language taken care of[else if sco-crew-dork is true], on your side, now[else], looking equally between you and [the earls][end if].". description is "[if sco-weak-us is false]Looking at you like their next target, to show they're tough enough for [the earls][else if sco-crew-dork is false]Unsure of themselves. They might be ready for a hard truth[else if number of swearblobs in Brew Swears > 0]Looking up to you a lot, for setting [the grinch] straight[else]Ready to go along with you on your adventure[end if].". help-chat of crude orc is "The crude orc doesn't have any strategy, per se. It's still young and naive. But it asks the sort of questions you forgot you had. Perhaps others youths have these questions, too, or they would, with -- well, whatever force that kidnapped you -- not pressing on them so much."
 
 chapter swearblobs
 
@@ -605,13 +607,18 @@ check ting:
 		say "You motivate yourself with 'Goal: earn? Go learn!'" instead;
 	if noun is oaf liar, say "The oaf liar is talking over you. Perhaps you can shut them up by buying something really cheap." instead;
 	if noun is merchant, say "You want to figure a way to kill conversation, instead." instead;
+	if noun is booze troll, say "The booze troll doesn't seem interested in useful conversation, at least not in their present form." instead;
 	if noun is not a follower, say "You don't get a response." instead;
 	if sco-my-corps is true, say "No time for talk. Time to end this thing." instead;
 	if noun is not friendly:
 		if noun is orc, say "You'll have to win the argument with [the grinch] before any meaningful conversations." instead;
 		say "You haven't gained [the noun]'s trust enough yet for a chat." instead;
 	if player has talk ache, say "That talk ache is a bit of a nuisance. You've probably got the information you need from your friends." instead;
-	if number of unchatted followers is 0, say "You've talked to everyone, but why not chat again?";
+	if number of still-needed followers is 0:
+		if noun is unchatted:
+			say "Sure, why not chat a bit more?";
+		else:
+			say "You've talked to everyone you needed to, but why not chat again?";
 
 carry out ting:
 	say "You chat with [the noun] a bit, [if noun is chatted]recapping[else]learning[end if] more about the history of the area you're exploring and why you're here. It fills in some blanks in your memory.";
@@ -619,14 +626,26 @@ carry out ting:
 	the rule succeeds;
 
 report ting:
-	if noun is unchatted:
-		say "More useful information worth remembering.";
+	if noun is chatted:
+		if talk ache is moot, continue the action;
+		if number of still-needed followers is 0:
+			say "[line break]Ouch! Still got that talk-ache.";
+			continue the action;
+		say "That was a nice refresher, though ";
+		if number of unchatted followers in location of player > 0:
+			let RF be random unchatted follower in location of player;
+			say "[RF] seem[if rf is not plural-named]s[end if] to want to cut in a bit for their turn some time.";
+		else:
+			say "it didn't reveal anything new.";
+	else:
+		if number of chatted followers is 0:
+			say "Wow! Things are starting to make sense. Maybe talking to others will help make even more sense.";
+		else:
+			say "Well, that's [one of]even [or][stopping]more useful information worth remembering.";
 		now noun is chatted;
 		if number of still-chat-needed followers is 0:
 			say "[line break]That was a lot of talking. After all that time alone, you're not used to it. You develop a talk-ache.";
 			now player has talk ache;
-	if noun is chatted and number of unchatted followers is 0:
-		say "[line break]Ouch! Still got that talk-ache.";
 	continue the action;
 
 chapter talk ache
