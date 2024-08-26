@@ -144,7 +144,7 @@ prize talk is a thing. "You'd like to DO something about the prize talk. Or seek
 
 book Naff Haze
 
-NaffHaze is a privately-named room in universal. "[if sco-nah-phase is false]A naff haze surrounds you. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it[else]Things have opened up a bit now, with the naff haze lifted[end if][if sco-pole-east is true]. You feel less policed, too, and you found a path [b]EAST[r][end if][if sco-grow-star is true].[paragraph break]You got rid of the gross tar blocking your way north[end if].". printed name is "[if sco-nah-phase is false]Naff Haze[else]High Plain[end if]".
+NaffHaze is a privately-named room in universal. "[if sco-nah-phase is false]A naff haze surrounds you. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it[else]Things have opened up a bit now, with the naff haze lifted[end if][if sco-pole-east is true]. You feel less policed, too, and you found a path [b]EAST[r][end if][if sco-grow-star is true].[paragraph break]You got rid of the gross tar blocking your way [b]NORTH[r][end if].". printed name is "[if sco-nah-phase is false]Naff Haze[else]High Plain[end if]".
 
 after printing the locale description for NaffHaze when sco-nah-phase is true and sco-pole-east is false:
 	say "You feel policed here. Where and what is this feeling coming from?";
@@ -191,7 +191,7 @@ check entering Bruise Wares:
 
 book Keep Iller
 
-KeepIller is a room in Universal. printed name is "Keep (Iller)". "This keep has seen better days. You can go back east. You also sense something fearsome from a passage south."
+KeepIller is a room in Universal. printed name is "Keep (Iller)". "This keep has seen better days, but there seems to be a lot in its ruins. You can go back [b]EAST[r]. You also sense something fearsome from a passage south."
 
 check going south in KeepIller:
 	if sco-knife-right is true, say "You don't need or want to go back there." instead;
@@ -250,7 +250,7 @@ the knife right is a thing. printed name is "knife (right)". description is "Wel
 
 book Wolf Rock
 
-Wolf Rock is a room in universal. "A big rock in the shape of a wolf looms impressively, blocking all passages except back south. [if sco-hide-out is true]You can also go [b]DOWN[r] into the hideout you found[else]You feel high doubt here you can go anywhere else[end if].[paragraph break]There's a huge pile of lode ore here, too, [if sco-low-door is true]and you found a low door in it that leads [b]INSIDE[r][else]and perhaps there's something in it[end if].".
+Wolf Rock is a room in universal. "A big rock in the shape of a wolf looms impressively, blocking all passages except back [b]SOUTH[r]. [if sco-hide-out is true]You can also go [b]DOWN[r] into the hideout you found[else]You feel high doubt here you can go anywhere else[end if].[paragraph break]There's a huge pile of lode ore here, too, [if sco-low-door is true]and you found a low door in it that leads [b]INSIDE[r][else]and perhaps there's something in it[end if].".
 
 chapter wool frock
 
@@ -325,7 +325,7 @@ check going:
 
 book Storm Isle
 
-Storm Isle is a room in universal. "[if sco-store-mile is true]Well, you're in a sort of shopping mall now. You can see a passage leading north[else]On this storm isle, it's always rainy. It'd be nice to have some shelter inside[end if]."
+Storm Isle is a room in universal. "[if sco-store-mile is true]Well, you're in a sort of shopping mall now. You can see a passage leading north[else]On this storm isle, it's always rainy. It'd be nice to have some shelter inside[end if].". printed name is "[if sco-store-mile is true]Store Mile[else]Storm Isle[end if]".
 
 chapter my stall
 
