@@ -748,6 +748,7 @@ a wordtwisting rule (this is the pre-were-meetin rule):
 		vcal "You already held a meeting! Too many meetings get in the way of doing.";
 		already-done;
 	abide by the followers-check rule;
+	ready;
 
 a wordtwisting rule (this is the followers-check rule):
 	if pals-made is 0:

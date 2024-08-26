@@ -144,7 +144,7 @@ prize talk is a thing. "You'd like to DO something about the prize talk. Or seek
 
 book Naff Haze
 
-NaffHaze is a privately-named room in universal. "[if sco-nah-phase is false]A naff haze surrounds you. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it[else]Things have opened up a bit now, with the naff haze lifted[end if][if sco-pole-east is true]. You feel less policed, too, and you found a path [b]EAST[r][end if][if sco-grow-star is true].[paragraph break]You got rid of the gross tar blocking your way [b]NORTH[r][end if].". printed name is "[if sco-nah-phase is false]Naff Haze[else]High Plain[end if]".
+NaffHaze is a privately-named room in universal. "[if sco-nah-phase is false]A naff haze surrounds you. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it[else]Things have opened up a bit now, with the naff haze lifted[end if][if sco-pole-east is true]. You feel less policed, too, and you found a path [b]EAST[r][end if][if sco-grow-star is true].[paragraph break]You got rid of the gross tar blocking your way [b]NORTH[r][end if][if plane-dir-score is 4].[paragraph break]There's also a way [b]DOWN[r] that opened up once you found passages in all cardinal directions[end if].". printed name is "[if sco-nah-phase is false]Naff Haze[else]High Plain[end if]".
 
 after printing the locale description for NaffHaze when sco-nah-phase is true and sco-pole-east is false:
 	say "You feel policed here. Where and what is this feeling coming from?";
@@ -315,7 +315,7 @@ report examining the flier:
 
 book Lobe End
 
-Lobe End is a room in universal. "[if sco-low-bend is false]This lobe of land appears to end in all directions except back west. Maybe you could look for something that might be a hill, even a steep one.[else]The low bend (former lobe end) now bends from west to north, where you see water, too much to cross on foot.[end if]"
+Lobe End is a room in universal. "[if sco-low-bend is false]This lobe of land appears to end in all directions except back west. Maybe you could look for something that might be a hill, even a steep one.[else]The low bend (former lobe end) now bends from west to north, where you see water, too much to cross on foot.[end if]". printed name is "[if sco-low-bend is true]Low Bend[else]Lobe End[end if]".
 
 check going north in lobe end when sco-low-bend is true and sco-bay-sale is false: say "You have no way across the water, yet." instead;
 
