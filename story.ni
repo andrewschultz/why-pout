@@ -423,7 +423,7 @@ weird-icks is a swearblob. "The [grinch] launch 'Weird! Ick![']s at enmies real 
 
 bah-sturdy is a swearblob. "The [grinch] shake their heads at you: 'Bah! Sturdy?!'"
 
-volume endgame room
+volume endgame rooms
 
 book Worm Eaten
 
@@ -444,13 +444,21 @@ section gaunt raider
 
 the gaunt raider is a follower. description is "They still look disturbed by who they were.". help-chat is "The gaunt raider discusses regret for their past actions, as well as some possibilities for how to use it to boost yourself to do the right thing, or when to just drop it without being drowned by guilt."
 
-book Doom End
+book Doom Ending
 
-Doom End is a room in universal. "Doom doom doom!"
+Doom Ending is a room in universal. "[if sco-wide-vision is true]This place is much less scary now that you shared your wide vision. But now you need to put it into practice![else if sco-wipe-out is true]Well, it turns out the doom ending was for the sea skull, not for you. But you're still a bit frustrated. How do you go forward from here?[else]The gaunt raider wasn't joking around when they said they came from some place awful! You just hope your companions can help you enough here.[end if]"
+
+after printing the locale description for Doom Ending when Doom Ending is unvisited:
+	say "Everyone whispers some variation of 'We're stuck! Worst, UCK!' to each other. But surely there must be a way through.";
+	continue the action;
 
 chapter Sea Skull
 
-The Sea Skull is a thing in Doom End. "A sea skull [if sco-cease-cull is true] spews rivers of blood at you and your companions, but fortunately, with so many companions, the rivers aren't very deep. Still, you should do something about it[else]gloats evilly, with its back turned to you[end if].". description is "[if sco-cease-cull is true]It looks upset you've disturbed its, err, work[else]You can't see its face, which must be evil. You may need to yell something at it to get the, uh, conversation started[end if]."
+The Sea Skull is a thing in Doom Ending. "A sea skull [if sco-cease-cull is true] spews rivers of blood at you and your companions, but fortunately, with so many companions, the rivers aren't very deep. Still, you should do something about it[else]gloats evilly, with its back turned to you[end if].". description is "[if sco-cease-cull is true]It looks upset you've disturbed its, err, work[else]You can't see its face, which must be evil. You may need to yell something at it to get the, uh, conversation started[end if]."
+
+chapter why division
+
+the why division is a thing. "Why-division has settled in among your companions. Everyone's done what they can. Why should they do more? They've saved their skin, and a lot of others['], too, and they'll be safe for a while!". description is "It's not something physical. It's more a general mood. You worry you have not experienced enough to dispel it."
 
 volume unsorted
 
@@ -615,6 +623,10 @@ check ting:
 		if sco-an-aim is false:
 			say "You feel too grumpy for positive self-talk. You mumble 'I molder. I'm older.'" instead;
 		say "You motivate yourself with 'Goal: earn? Go learn!'" instead;
+	if player is in doom ending:
+		if sco-wide-vision is true, say "You've already shared your vision. Now's the time to put it into action." instead;
+		if sco-wipe-out is true, say "The only thing left to do is dispel the why-division, if you can." instead;
+		say "Now's not the time for chat." instead;
 	if noun is oaf liar, say "The oaf liar is talking over you. Perhaps you can shut them up by buying something really cheap." instead;
 	if noun is merchant, say "You want to figure a way to kill conversation, instead." instead;
 	if noun is booze troll, say "The booze troll doesn't seem interested in useful conversation, at least not in their present form." instead;

@@ -115,7 +115,7 @@ to decide which number is pre-acts:
 
 when play begins:
 	repeat through table of main oronyms:
-		if there is a think-advice entry, increment pre-max;
+		if there is a think-advice entry and check-rule entry is not pre-wide-vision rule, increment pre-max;
 
 volume begin play
 

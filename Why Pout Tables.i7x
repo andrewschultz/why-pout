@@ -51,9 +51,10 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "gaunt"	"raider"	--	--	false	true	true	false	false	worm eaten	pre-gaunt-raider rule	post-gaunt-raider rule	--	--
 "were"	"meetin"	"whirr|warm|eden|war"	hom-whirr-meetin rule	false	true	true	false	false	worm eaten	pre-were-meetin rule	post-were-meetin rule	--	--
 "my"	"corps"	"core"	hom-my-core rule	false	true	true	false	false	worm eaten	pre-my-corps rule	post-my-corps rule	--	"You may be able to call your companions [b]MY CORPS[r] [once-now of sco-treat-all] [if pals-made < 2]you have companions[else]you've shared something together[end if]."
-"cease"	"cull"	"seize"	hom-cease-cull rule	false	true	true	false	false	doom end	pre-cease-cull rule	post-cease-cull rule	--	--
-"wipe"	"out"	--	--	false	true	true	false	false	doom end	pre-wipe-out rule	post-wipe-out rule	--	"You will want to [b]WIPE OUT[r] the cause of your problems [once-now of sco-cease-cull] you have them in your crosshairs."
-"do|due"	"mend"	"dew"	--	false	true	true	false	false	doom end	pre-do-due-mend rule	post-do-due-mend rule	--	"You can think [b]DO/DUE MEND[r] [once-now of sco-wipe-out] you've disposed of the sea skull."
+"cease"	"cull"	"seize"	hom-cease-cull rule	false	true	true	false	false	Doom Ending	pre-cease-cull rule	post-cease-cull rule	--	--
+"wipe"	"out"	--	--	false	true	true	false	false	Doom Ending	pre-wipe-out rule	post-wipe-out rule	--	"You will want to [b]WIPE OUT[r] the cause of your problems [once-now of sco-cease-cull] you have them in your crosshairs."
+"wide"	"vision"	--	--	false	true	false	false	false	Doom Ending	pre-wide-vision rule	post-wide-vision rule	--	"Sadly, you didn't quite experience enough to spread your wide vision."
+"do|due"	"mend|mending"	"dew"	--	false	true	true	false	false	Doom Ending	pre-do-due-mend rule	post-do-due-mend rule	--	"You can think [b]DO/DUE MEND[r] [once-now of sco-wipe-out] you've disposed of the sea skull."
 "weak"	"us"	--	--	false	true	false	false	false	brew swears	pre-weak-us rule	post-weak-us rule	--	--
 "grin"	"churls"	--	--	false	true	false	false	false	brew swears	pre-grin-churls rule	post-grin-churls rule	--	--
 "crew"	"dork"	--	--	false	true	false	false	false	brew swears	pre-crew-dork rule	post-crew-dork rule	--	--
@@ -154,7 +155,7 @@ a wordtwisting rule (this is the pre-wipe-out rule):
 	if number of still-follow-needed followers > 0:
 		vcp "You don't want to wipe out the friendships you made.";
 		not-yet;
-	if player is not in doom end:
+	if player is not in Doom Ending:
 		vcp "You don't have anyone terribly evil you want to wipe out.";
 		not-yet;
 	if sco-cease-cull is false:
@@ -164,7 +165,8 @@ a wordtwisting rule (this is the pre-wipe-out rule):
 
 this is the post-wipe-out rule:
 	now sco-wipe-out is true;
-	say "Well that does it! It's a big long fight, but you all prevail![paragraph break]Things are a bit of a mess, though. There is healing to do.";
+	say "Well that does it! It's a big long fight, but you all prevail![paragraph break]Things are a bit of a mess, though. You feel something odd come between you and your companions now you're done. They wonder why they need to do any more. You could call the whole zeitgeist a why-division.";
+	move why division to Doom Ending;
 	moot sea skull;
 
 chapter Wolf Rock scoring
@@ -792,12 +794,12 @@ this is the hom-my-core rule:
 this is the post-my-corps rule:
 	now sco-my-corps is true;
 	say "Your pep talk brings everyone together. They are ready for ... well, whatever is next. This feels like the right place. You clear out a passage below. You swear a solemn pact that everyone will defend everyone else, regardless of what happens.";
-	now Doom End is mapped below Worm Eaten;
+	now Doom Ending is mapped below Worm Eaten;
 
-chapter doom end scoring
+chapter Doom Ending scoring
 
 a wordtwisting rule (this is the pre-cease-cull rule):
-	if player is not in doom end or sea skull is not in doom end, unavailable;
+	if player is not in Doom Ending or sea skull is not in Doom Ending, unavailable;
 	if sco-cease-cull is true:
 		vcal "You already played defense. Now's the time to go on offense!";
 		already-done;
@@ -808,10 +810,23 @@ this is the hom-cease-cull rule:
 
 this is the post-cease-cull rule:
 	now sco-cease-cull is true;
-	say "You'll probably have to alert the sea skull to your presence at some time. You try to sound authoritative when you do so. And ... well, you get its attention. It begins pouring out rivers of blood at you and your companions. But fortunately, you have so many, that by the time it gets to you, it is not so bad. Yet it's still depressing. You think back to the advice you got at the beginning ... how it seemed slightly off. What to do?";
+	say "You'll probably have to alert the sea skull to your presence at some time. You try to sound authoritative when you do so. And ... well, you get its attention.[paragraph break]'DONE, OH?!?! DUH, NO!' it roars.[paragraph break]It begins pouring out rivers of blood at you and your companions. But fortunately, you have so many, that by the time it gets to you, it is not so bad. Yet it's still depressing. You think back to advice you got at the beginning ... how it seemed slightly off. What to do?";
+
+a wordtwisting rule (this is the pre-wide-vision rule):
+	if player is not in doom ending, unavailable;
+	if why division is not in doom ending, unavailable;
+	if pre-acts < pre-max:
+		vcp "[one of]You try to declare a wide vision, but sadly you trip yourself up a bit. Wide vision? Why division? You get tripped up on spelling and pronunciation details, and you just can't fight through them. Perhaps if you'd fought through more setbacks, you might be able to, but you can't, right now[or]You are unable to express your wide vision. You'll have to settle for just repairing things pretty well[stopping].";
+		not-yet;
+	ready;
+
+this is the post-wide-vision rule:
+	now sco-wide-vision is true;
+	moot why division;
+	say "Your experiences and failures give you a leadership you don't know you had. You convince your companions to do more than just save their own hides. You lay out a vision so scourges from the likes of the sea skull are less likely to happen again, or it will take longer. And everyone listens![paragraph break]They're eager for the final step, to get out there. You look around. It's pretty clear what must occur, or it will be, soon.";
 
 a wordtwisting rule (this is the pre-do-due-mend rule):
-	if player is not in doom end, unavailable;
+	if player is not in Doom Ending, unavailable;
 	if sco-wipe-out is false:
 		vcp "You'll have to dispose of the sea skull first.";
 		not-yet;
@@ -819,9 +834,12 @@ a wordtwisting rule (this is the pre-do-due-mend rule):
 
 this is the post-do-due-mend rule:
 	now sco-do-due-mend is true;
-	say "Yes. It's time to get healing. You're not quite sure how, but at least you're sure of who you are. And your companions are, too.";
+	if sco-wide-vision is false:
+		say "Yes. It's time to get healing. Your companions don't have as much time or energy to help as you hoped they would, but they do enough. Everyone feels better for their part in defeating the sea skull. And yet you worry it, or something like it, may be back sooner rather than later, and your companions have gone their separate ways for good. Still, you should be pleased with yourself.";
+	else:
+		say "You and your companions work together not just to make sure bad things won't happen right away, but to help prevent evil from spawning. Perhaps it will happen some day. But everyone remembers how they got sidetracked into irrelevance or worse, and they work to make sure others risk the same fate much less.";
 	follow the score and thinking changes rule;
-	end the story finally saying "Gray day?! Grade A!";
+	end the story finally saying "[if sco-wide-vision is true]Beat all! Be tall![else]Gray day?! Grade A![end if]";
 	follow the shutdown rules;
 
 chapter brew swears scoring
@@ -1007,7 +1025,7 @@ Hideout	"You can only go back up. If it had too many passages, it'd risk being a
 NoNotion	"You can only go back north[if squid is in NoNotion] or, if you know where you want to go, ask the squid for help getting there[end if]."
 Wand Wharf	"You're not in the mood for exploring the wharf. It seems like a good way to get lost. Maybe there's someone or something nearby you can pick up, then leave."
 Worm Eaten	"No tricky passages here, just up back to safer ground or down to your fate."
-Doom End	"[if sco-wipe-out is true]You need to prep for making things right in general. Then, once the game's over, you'll leave[else]Unsurprisingly, all the action is here[end if]."
+Doom Ending	"[if sco-wipe-out is true]You need to prep for making things right in general. Then, once the game's over, you'll leave[else]Unsurprisingly, all the action is here[end if]."
 Brew Swears	"You don't want to get into the guts of this place. Just get the crude orc, if you can, then get out."
 
 volume scoring to move [see RoL Defs if I add bonus points]
