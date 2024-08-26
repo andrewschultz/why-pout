@@ -117,7 +117,7 @@ the block swearing mildly rule is not listed in any rulebook.
 check swearing obscenely:
 	if player is in Brew Swears, say "Yes. You're in the right place for that." instead;
 	if Brew Swears is visited, say "You had enough of that." instead;
-	say "There's an area for that, or there will be post-IFComp, [if player is in doom end], but you can't go back to visit it now[end if]." instead;
+	say "There's an area for that[if bruise wares is moot], but you can't go back to visit it now.[else if bruise wares is off-stage], but it hasn't appeared yet.[else if player is in naff haze]. Why, you can just walk in once you know what to call it![else]. Look around.[end if]" instead;
 
 check swearing mildly: try swearing obscenely instead;
 
@@ -637,7 +637,7 @@ check ting:
 	if noun is merchant, say "You want to figure a way to kill conversation, instead." instead;
 	if noun is booze troll, say "The booze troll doesn't seem interested in useful conversation, at least not in their present form." instead;
 	if noun is not a follower, say "You don't get a response." instead;
-	if sco-my-corps is true, say "No time for talk. Time to end this thing." instead;
+	if sco-my-corps is true, say "Motivational talk is through. Time to end this thing." instead;
 	if noun is not friendly:
 		if noun is orc, say "You'll have to win the argument with [the grinch] before any meaningful conversations." instead;
 		say "You haven't gained [the noun]'s trust enough yet for a chat." instead;

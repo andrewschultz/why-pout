@@ -63,7 +63,7 @@ test m10 with "s/s/w/s/the file/n/d/were meetin/my corps/d".
 
 test m11 with "do mend/cease cull/wipe out".
 
-test mis with "test m1/test m2/test m3/test m4/test m5/test m6/test m7/test m8/test m9/test m10/test m11/score/mis/do mend".
+test mis with "test m1/test m2/test m3/test m4/test m5/test m6/test m7/test m8/test m9/test m10/test m11/score/wide vision/mis/do mend".
 
 volume cheats
 
