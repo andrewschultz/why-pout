@@ -6,6 +6,8 @@ volume IDE tests
 
 chapter building blocks
 
+test tall with "t elf/t raider/t dwarf/t gnome/t rogue/t mice/t troll".
+
 test w1 with "an aim/two maps/self owns/pry stalk/high plain/nah phase"
 
 test w2 with "pole east/shore trail/s/known ocean/six quid/n". [get the money]
@@ -27,7 +29,7 @@ test w8 with "w/manna curb/e".
 [test w9 with "s/grow vial/war file/n/e/n/n/tree small".]
 test w9 with "e/n/n/tree small/s/s/w/s/grow vial/war file/wan dwarf/n/e/n/n".
 
-test w10 with "t elf/t mice/t gnome/t rogue/t troll/t raider/t dwarf/t orc/tall cake/treat all".
+test w10 with "test tall/t orc/tall cake/treat all".
 
 test w11 with "s/s/w/s/the file/n".
 
@@ -55,7 +57,7 @@ test m6 with "n/in/oh flier/the file/grow vial/war file/out/s/s/war file/wan dwa
 
 test m7 with "e/n/mensch elf/n/tree small/treat all".
 
-test m8 with "s/s/w/d/gaunt raider/t elf/t raider/t dwarf/t gnome/t rogue/t mice/t troll".
+test m8 with "s/s/w/d/gaunt raider/test tall".
 
 test m9 with "tall cake/u/w/manna curb/e/e/n/n/treat all/tall cake/treat all".
 
@@ -64,6 +66,24 @@ test m10 with "s/s/w/s/the file/n/d/were meetin/my corps/d".
 test m11 with "do mend/cease cull/wipe out".
 
 test mis with "test m1/test m2/test m3/test m4/test m5/test m6/test m7/test m8/test m9/test m10/test m11/score/wide vision/mis/do mend".
+
+chapter war pawn
+
+test c1 with "purloin war pawn/warp on/warp on/warp on/warp on/warp on/warp on/warp on/warp on/warp on/warp on".
+
+test c2 with "n/warp on/warp on/d/warp on/u/s/w/warp on/warp on/warp on/warp on/e/s/warp on/warp on"
+
+test c3 with "n/w/warp on/e/e/warp on/warp on/n/warp on/warp on/warp on/n/warp on/s/w/s/w".
+
+test c4 with "n/warp on/in/warp on/warp on/warp on/warp on/warp on/out/s/s/warp on/warp on/warp on".
+
+test c5 with "n/d/warp on/u/w/warp on/e/e/n/test tall/warp on/e/n/warp on/s/s/w/s".
+
+test c6 with "warp on/n/d/warp on/warp on".
+
+test c7 with "d/warp on/warp on/warp on".
+
+test cheat with "test c1/test c2/test c3/test c4/test c5/test c6/test c7".
 
 volume cheats
 
