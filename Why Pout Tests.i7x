@@ -39,21 +39,29 @@ test bo with "test w1/test w2/test w3/test w4/test wb".
 
 test a with "test w1/test w2/test w3/test w4/test w5/test w6/test w7/test w8/test w9/test w10/test w11/test w12".
 
-chapter old-tests
+chapter best ending test(s)
 
-test we with "pole east/e/low bend/n/store mile/mice tall/s/w".
+test m1 with "an aim/wipe out/my corps/two maps/self owns/high plane/pry stalk/high plain/nah phase".
 
-test ww with "key pillar/w/rogue old/gnome old/e".
+test m2 with "pole east/grow star/n/low door/hideout/d/boost role/u/s/shore trail/key pillar/w/gnome old/rogue old/see design/manna curb".
 
-test wn with "grow star/n/hide out/d/boost role/u/low door/in/well own/summer chant/bile oh/whee lone/oh flyer/out/s".
+test m3 with "e/n/wool frock/s/s/bay sale/known ocean/six quid/n/e/bay sale/low bend/bay sale/n/store mile/mice tall/s/w/w/gnome old/e/e/n/mice tall".
 
-test ws with "shore trail/s/known ocean/six quid/war file/grow vial/the file".
+test m4 with "s/w/n/low door/in/well own/whee lone/bile oh/summer chant/bile oh/whee lone/oh flyer/the file/grow vial/war file".
 
-test wc with "gonear worm eaten/af/were meetin/my corps/d/cease cull/wipe out/wl/do mend".
+test m5 with "out/s/w/gnome old/rogue old/see design/knife rite/plan tracker/e/s/war file/wan dwarf/grow vial/n".
 
-test o with "test w1/test we/test ww/test wn/test ws/test wc".
+test m6 with "e/n/mensch elf/n/tree small/treat all".
 
-test misc with "the file/wipe out".
+test m7 with "s/s/w/d/gaunt raider/t elf/t raider/t dwarf/t gnome/t rogue/t mice/t troll".
+
+test m8 with "tall cake/u/w/manna curb/e/e/n/n/treat all/tall cake/treat all".
+
+test m9 with "s/s/w/s/the file/n/d/were meetin/my corps/d".
+
+test m10 with "do mend/cease cull/wipe out".
+
+test mis with "test m1/test m2/test m3/test m4/test m5/test m6/test m7/test m8/test m9/test m10/score/mis/do mend".
 
 volume cheats
 
