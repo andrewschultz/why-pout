@@ -469,6 +469,12 @@ book meta stuff
 check quitting the game:
 	say "A voice taunts you 'What? Changing your name to Ike Witt?'";
 
+check restarting the game:
+	say "A voice cackles 'Done, ooh? Duh, new!'";
+
+check saving the game:
+	say "A voice taunts 'Save?! I'll say, VILE!'";
+
 chapter abouting
 
 abouting is an action out of world.
@@ -482,7 +488,7 @@ carry out abouting:
 	say "[line break]It reuses a lot of code from [i]Roads of Liches[r] and my [i]Prime Pro Rhyme Row[r] games, which have different mechanics but a similar conceit: guess the right two-word phrase. However, it's narrower in scope, and I didn't want to rely on too well-known examples of possible phrases for point scoring.";
 	say "[line break]Once I realized bigger projects weren't on the cards for IFComp 2024, I focused on something I could handle. I wound up making forty or so puzzle instead of the usual eighty.";
 	say "[line break]While the drip of ideas started February, 2020, according to my notes, I wasn't getting anything really original, or so it seemed. But the idea was always there. In my weekly writing file 20240429.txt, there's the game's title, and that's when significant ideas started appearing. But it wasn't until I registered for IFComp in July that ideas started clicking together. Deadlines are funny like that!";
-	say "[line break]Like most of my games, [this-game] rates merciful on the Zarfian cruelty scale. However, in this case, I want the puzzles to be more merciful on the player's psyche than usual."
+	say "[line break]Like most of my games, [this-game] rates merciful on the Zarfian cruelty scale. However, in this case, I want the puzzles to be more merciful in terms of general difficulty on the player's psyche than usual."
 
 report abouting:
 	if bruise wares is off-stage:
@@ -502,10 +508,10 @@ understand "credit" as creditsing.
 understand "credits" as creditsing.
 
 carry out creditsing:
-	say "Thanks to Wade Clarke, P. B. Parjeter, Daniel Stelzer (and possibly others) for testing.";
+	say "Thanks to Wade Clarke, P. B. Parjeter, Fred Snyder, Daniel Stelzer (and possibly others) for testing. They found stuff I just didn't have the time to find, or stuff I convinced myself I checked, or even stuff I said, well, I'm muddled here and not sure how to test things. Oh and they inspired several ideas, too. It's always hard to ask someone for their time and energy, but I appreciate it so much!";
 	say "[line break]GENERAL THANKS:[paragraph break]";
 	say "Thanks to everyone past and future involved in the administration of IFComp.";
-	say "Thanks to the I7 board on Intfiction.org for their help, as well as the people in the general topic.";
+	say "Thanks to the I7 board on Intfiction.org for their help, as well as the people in the general topics as we discussed our plans.";
 	the rule succeeds;
 
 chapter verbsing
