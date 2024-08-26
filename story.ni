@@ -623,7 +623,7 @@ check ting:
 		if noun is orc, say "You'll have to win the argument with [the grinch] before any meaningful conversations." instead;
 		say "You haven't gained [the noun]'s trust enough yet for a chat." instead;
 	if player has talk ache, say "That talk ache is a bit of a nuisance. You've probably got the information you need from your friends." instead;
-	if number of still-needed followers is 0:
+	if number of still-chat-needed followers is 0:
 		if noun is unchatted:
 			say "Sure, why not chat a bit more?";
 		else:
@@ -637,7 +637,7 @@ carry out ting:
 report ting:
 	if noun is chatted:
 		if talk ache is moot, continue the action;
-		if number of still-needed followers is 0:
+		if number of still-chat-needed followers is 0:
 			say "[line break]Ouch! Still got that talk-ache.";
 			continue the action;
 		say "That was a nice refresher, though ";
@@ -692,7 +692,7 @@ volume appearance
 for printing a locale paragraph about a follower (called fo):
 	if fo is not friendly, continue the action;
 	if fo is mentioned, continue the action;
-	say "You see [the list of friendly followers in location of player] tagging along.";
+	say "[The list of friendly followers in location of player] waiting for what to do or where to go next.";
 	now all friendly followers are mentioned;
 
 volume scores

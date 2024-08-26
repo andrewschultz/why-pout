@@ -20,22 +20,22 @@ a follower can be unchatted or chatted. a follower is usually unchatted.
 
 a follower has text called help-chat.
 
-definition: a follower (called f) is still-needed:
+definition: a follower (called f) is still-follow-needed:
 	if f is unneeded, no;
 	if f is friendly, no;
 	yes;
 
 definition: a follower (called f) is still-chat-needed:
+	if f is chatted, no;
 	if f is unneeded, no;
-	if f is still-needed, yes;
-	no;
+	yes;
 
 to befriend (f - a follower):
 	now f is friendly;
 	move f to location of player;
 	if number of friendly followers is 1:
 		say "It looks like [the f] will be following you around. All that silence might get awkward, so you may wish to [b]T[r] or [b]TALK[r] ([b]TO[r]) them.";
-	else if number of still-needed followers is 0:
+	else if number of still-follow-needed followers is 0:
 		say "[line break]Wow! You've got quite a group here. You can't imagine needing a bigger one[if number of unfriendly followers > 0], though there's BRUISE-WARES[end if].";
 	else if pals-made - number of chatted followers > 2:
 		say "[line break]Hmm. You have a lot of friends following you around, but you haven't talked to them much. Perhaps you could learn something from them."

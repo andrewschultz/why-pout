@@ -151,7 +151,7 @@ a wordtwisting rule (this is the pre-wipe-out rule):
 	if pals-made is 0:
 		vcp "You aren't feeling too great, but you don't want or need to wipe yourself out, yet. Perhaps you can find the root of your problems and wipe it out one day, though.";
 		not-yet;
-	if number of still-needed followers > 0:
+	if number of still-follow-needed followers > 0:
 		vcp "You don't want to wipe out the friendships you made.";
 		not-yet;
 	if player is not in doom end:
@@ -475,7 +475,7 @@ a wordtwisting rule (this is the three-isle rule):
 a wordtwisting rule (this is the pre-the-file rule):
 	abide by the three-isle rule;
 	if number of still-chat-needed followers > 0:
-		vcp "You know there is THE FILE, but which file is THE FILE? The thief isle has probably stolen a lot! You need information from your companions[if number of still-needed followers > 0], or maybe just more companions[end if].";
+		vcp "You know there is THE FILE, but which file is THE FILE? The thief isle has probably stolen a lot! You need information from your companions[if number of still-follow-needed followers > 0], or maybe just more companions[end if].";
 		not-yet;
 	if sco-the-file is true:
 		vcal "You already visited thief isle!";
@@ -737,8 +737,8 @@ a wordtwisting rule (this is the followers-check rule):
 	if pals-made is 0:
 		vcp "But you have no friends to meet with!";
 		not-yet;
-	if number of still-needed followers > 0:
-		vcp "You sense you don't have the gang together! [if number of still-needed followers is 1]But you must be very, very close[else]You may still be a way away[end if].";
+	if number of still-follow-needed followers > 0:
+		vcp "You sense you don't have the gang together! [if number of still-follow-needed followers is 1]But you must be very, very close[else]You may still be a way away[end if].";
 		not-yet;
 
 this is the hom-whirr-meetin rule:
