@@ -158,6 +158,7 @@ after printing the locale description for NaffHaze when Bruise Wares is off-stag
 after going to NaffHaze when Bruise Wares is in NaffHaze and sco-treat-all is true:
 	say "Odd! BRUISE-WARES has vanished. Well, one less dead end to worry about.";
 	zap-bruise-wares;
+	continue the action;
 
 the naff haze is scenery in NaffHaze. "You can't look very far though it. Just looking at it makes you feel hopeless you'll always be trapped in the fog."
 

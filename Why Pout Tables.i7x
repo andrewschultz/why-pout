@@ -231,6 +231,9 @@ a wordtwisting rule (this is the pre-bay-sale rule):
 	if player is not in lobe end:
 		vcp "No water here. Maybe somewhere else.";
 		not-yet;
+	if player is in lobe end and sco-low-bend is false:
+		vcp "No water visible here right now. Maybe if the landscape rearranged.";
+		not-yet;
 	if sco-six-quid is false:
 		vcp "You realize that, in order to participate in a bay sale for a bay sail, you need some form of currency. You don't have that yet.";
 		not-yet;
@@ -263,6 +266,7 @@ this is the post-store-mile rule:
 
 a wordtwisting rule (this is the pre-mice-tall rule):
 	if player is not in storm isle, unavailable;
+	if sco-store-mile is false, unavailable;
 	if sco-gnome-old is false:
 		vcp "Maybe there are mice behind there, but you can't figure a way to locate them. It requires some sort of clever inhuman perception, you'd think.";
 		not-yet;
