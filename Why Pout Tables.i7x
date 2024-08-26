@@ -115,7 +115,8 @@ a wordtwisting rule (this is the pre-pole-east rule):
 
 this is the post-pole-east rule:
 	now sco-pole-east is true;
-	say "Ah, yes. It makes sense. You find the pole. Strangely, there's just a single switch to flip. And even more strangely, the switch you flip causes the pole to revert into the ground. Yay!";
+	say "Ah, yes. It makes sense. You find the pole. Strangely, there's just a single switch to flip. And even more strangely, the switch you flip causes the pole to revert into the ground. Yay![paragraph break]But there's more! A war pawn, like a chess piece, rolls into view. It looks pretty powerful. Maybe you see how to use it, but maybe you shouldn't use it right away.";
+	now player has war pawn;
 	reveal Lobe End to east;
 	check-worm-eaten;
 

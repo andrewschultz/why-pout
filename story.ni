@@ -165,6 +165,14 @@ the naff haze is scenery in NaffHaze. "You can't look very far though it. Just l
 check going a viable direction in NaffHaze when sco-pole-east is false:
 	say "You'd like to, but you feel, well, policed." instead;
 
+chapter war pawn
+
+the war pawn is a thing. description is "Looking at it from many different angles gets you all sorts of weird ideas. Perhaps it could help you when you run out of them on your quest. You may wish to wait until you really need to use it, though of course, you don't want to wait too late.".
+
+after examining war pawn for the first time:
+	say "If you want to resist the temptation of this cheat item, [b]DROP[r] it. There is no penalty for using it.";
+	continue the action;
+
 chapter short rail
 
 the short rail is a thing. "A short rail leads -- well, not very far. You get the sense it should lead somewhere more.". description is "It's just ... not aligned right. Maybe if it were, it could lead somewhere, or make sense of this place, here.".
@@ -693,6 +701,45 @@ book waiting
 
 check waiting:
 	say "Ideally I-D-L-E!" instead;
+
+volume cheating
+
+chapter warponing
+
+warponing is an action out of world.
+
+understand the command "warp on" as something new.
+
+understand "warp on" as warponing.
+
+carry out warponing:
+	now verb-dont-print is true;
+	repeat through table of main oronyms:
+		unless there is a core entry, next;
+		if core entry is false, next;
+		if idid entry is true, next;
+		process the check-rule entry;
+		let vr be the outcome of the rulebook;
+		if check-rule entry is pre-were-meetin rule:
+			say "[check-rule entry]: [vr].";
+		if vr is the ready outcome:
+			say "After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: ";
+			say "[b][first-of-ors of w1 entry]";
+			if there is a w2 entry, say " [first-of-ors of w2 entry]";
+			say "[r]...[paragraph break]";
+			now idid entry is true;
+			now think-cue entry is false;
+			process the run-rule entry;
+			if debug-state is true:
+				say "[line break]Keeping war pawn.";
+			else:
+				moot war pawn;
+			up-reg;
+			follow the score and thinking changes rule;
+			the rule succeeds;
+	say "The war pawn does nothing. There's nothing to do here. Well, at least, at the moment.";
+	now verb-dont-print is false;
+	the rule succeeds;
 
 volume parser errors
 
