@@ -218,9 +218,11 @@ Gloat about your solutide!
 
 Oops, no more solitude, but the oaf-liar has something.
 
->oh flyer (1)
+>oh flier (1)
 
 Finally, the last of your money!
+
+(By the way, if you try to get the flier earlier, you don't pay right away. The oaf-liar gets greedy and wants more than just one quid. So you have to come back when you're almost broke.)
 
 >out
 

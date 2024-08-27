@@ -32,7 +32,7 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "summer"	"chant"	--	--	false	true	true	false	false	we loan	pre-summer-chant rule	post-summer-chant rule	--	--
 "bile"	"oh"	--	--	false	true	true	false	false	we loan	pre-bile-oh rule	post-bile-oh rule	--	"You may be able to expose some merchant's [b]BILE OH[r] [once-now of sco-summer-chant] you find something positive to say to prep yourself."
 "whee"	"lone"	"wee|loan"	--	false	true	true	false	false	we loan	pre-whee-lone rule	post-whee-lone rule	--	"You may be able to enjoy your solitude with [b]WHEE LONE[r] [here-in of we loan] [once-now of sco-bile-oh] you actually have solitude."
-"oh"	"flier|flyer"	"owe"	--	false	true	true	false	false	we loan	pre-oh-flyer rule	post-oh-flyer rule	--	"You may be able to say [b]OH FLIER[r] around the oaf liar [once-now of sco-six-quid] you have money."
+"oh"	"flier|flyer"	"owe"	--	false	true	true	false	false	we loan	pre-oh-flier rule	post-oh-flier rule	--	"You may be able to say [b]OH FLIER[r] around the oaf liar [if current-quid is 0]once you've got some money[else if gs-overpay-flier is true][once-now of whether or not current-quid is 1] you have exactly one quid left[else]since you have money[end if]."
 "boost"	"role"	"roll"	--	false	true	true	false	false	hideout	pre-boost-role rule	post-boost-role rule	--	--
 "low"	"bend"	--	--	false	true	true	false	false	lobe end	pre-low-bend rule	post-low-bend rule	--	--
 "bay"	"sail|sale"	--	--	false	true	true	false	false	lobe end	pre-bay-sale rule	post-bay-sale rule	--	"You may be able to participate in a [b]BAY SALE[r] if you've found the right location and [once-now of sco-six-quid] you have money." [?? very detailed fix: we need to set a boolean somehow if this was guessed in Lobe End ]
@@ -466,7 +466,7 @@ this is the post-six-quid rule:
 	say "You have an idea what is bothering the squid. Yes, a few coins stuck. Surprisingly, it lets you help out. 'Current, sea, currency,' you mutter as you poke around. Ah, there you go.[paragraph break]You offer to give it some of the coins it almost choked on, but it does not need them. It seems to wait around, as if to help you with travel to places you may get to go. It's willing to wait.[paragraph break]";
 	now current-quid is 6;
 
-[to check-squid-flyer:
+[to check-squid-flier:
 	if player has maps:
 		say "[line break]The squid gestures towards the two maps, as if it can take you wherever you need to on the maps. But it does look a little exhausted. So you don't just want to summon it for a joyride.";]
 
@@ -607,22 +607,22 @@ this is the post-whee-lone rule:
 	say "You enjoy your solitude, but ... wait. You lose track of time, and an oaf liar slips in just to babble at you.";
 	move oaf liar to we loan;
 
-a wordtwisting rule (this is the pre-oh-flyer rule):
+a wordtwisting rule (this is the pre-oh-flier rule):
 	if player is not in we loan or oaf liar is not in we loan, unavailable;
 	if sco-six-quid is false:
-		vcp "[one of]You notice a flyer behind their back, and you nudge them as if to say, can I have it for free? No, no, you cannot[or]You still haven't found any way to pay for the flyer[stopping].";
+		vcp "[one of]You notice a flier behind their back, and you nudge them as if to say, can I have it for free? No, no, you cannot[or]You still haven't found any way to pay for the flier[stopping].";
 		not-yet;
 	if current-quid > 1:
-		vcp "[opflyer]You try and pull out one quid, but you wind up pulling them all out. The oaf liar's eyes get big. And you instinctively say, no, I'm not getting taken like that.[paragraph break]'Have it your way. Information's valuable. Don't try to lowball me.'";
+		vcp "[opflier]You try and pull out one quid, but you wind up pulling them all out. The oaf liar's eyes get big. And you instinctively say, no, I'm not getting taken like that.[paragraph break]'Have it your way. Information's valuable. Don't try to lowball me.'";
 		not-yet;
 	ready;
 
-to say opflyer:
-	now gs-overpay-flyer is true;
+to say opflier:
+	now gs-overpay-flier is true;
 
-this is the post-oh-flyer rule:
-	now sco-oh-flyer is true;
-	if gs-overpay-flyer is true:
+this is the post-oh-flier rule:
+	now sco-oh-flier is true;
+	if gs-overpay-flier is true:
 		say "You offer the only quid you have left. The oaf liar, being a liar, suspects you're being a liar, too. They demand you show proof you couldn't possibly have any more money on you.[paragraph break]You feel guilty about this subterfuge, except for how the oaf liar seemed too eager to trade. You stood your ground in negotiations, and that's something. You hope the flier is worth it.";
 	else:
 		say "You act distracted just right. The oaf liar tries to get your attention. Just ignoring them wouldn't work, but paying attention to a flier ... well, they take the hint that you aren't a high-rolling customer. They try to wheedle more money out of you, but of course, that's all you have. So you trade your final quid for the flier. The oaf liar thanks you for not totally wasting their time. They seem to snicker as they depart.";

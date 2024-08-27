@@ -288,7 +288,7 @@ the Base Ale is a thing. description is "Uck. It's a nasty color, really. But pe
 
 book We Loan
 
-We Loan is a room in universal. printed name is "[if sco-well-own is false]We Loan[else if sco-whee-lone is false]We'll Own[else if sco-oh-flyer is false]Whee, Lone?[else]Whee! [']Lone![end if]". "[if sco-oh-flyer is false]This area feels replete with the sort of double-talk all salesmen use. It will be tough to hang with all the way through, but if you do, maybe you'll get something out of it. [else if sco-bile-oh is true and sco-whee-lone is false]It's nice and silent here, and maybe there's a specific way to enjoy that. [else]You've managed to navigate negotiations and wind up with ... a shiny new flyer! [end if]You can only go back [b]OUT[r] here[if sco-well-own is false].[paragraph break]You don't really trust the whole 'financial services' vibe here. Maybe there's a double meaning to deduce[end if]."
+We Loan is a room in universal. printed name is "[if sco-well-own is false]We Loan[else if sco-whee-lone is false]We'll Own[else if sco-oh-flier is false]Whee, Lone?[else]Whee! [']Lone![end if]". "[if sco-oh-flier is false]This area feels replete with the sort of double-talk all salesmen use. It will be tough to hang with all the way through, but if you do, maybe you'll get something out of it. [else if sco-bile-oh is true and sco-whee-lone is false]It's nice and silent here, and maybe there's a specific way to enjoy that. [else]You've managed to navigate negotiations and wind up with ... a shiny new flier! [end if]You can only go back [b]OUT[r] here[if sco-well-own is false].[paragraph break]You don't really trust the whole 'financial services' vibe here. Maybe there's a double meaning to deduce[end if]."
 
 chapter some merchant
 

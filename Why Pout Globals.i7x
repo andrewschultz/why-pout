@@ -12,7 +12,7 @@ gs-parser-error-note is a truth state that varies.
 
 gs-examined-self is a truth state that varies.
 
-gs-overpay-flyer is a truth state that varies. [OH FLYER with >1 quid remaining]
+gs-overpay-flier is a truth state that varies. [OH FLIER with >1 quid remaining]
 
 section first point cue(s)
 
@@ -97,7 +97,7 @@ sco-whee-lone is a truth state that varies.
 
 sco-summer-chant is a truth state that varies.
 sco-bile-oh is a truth state that varies.
-sco-oh-flyer is a truth state that varies.
+sco-oh-flier is a truth state that varies.
 
 section hideout
 
