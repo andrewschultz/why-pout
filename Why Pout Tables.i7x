@@ -655,6 +655,7 @@ a wordtwisting rule (this is the pre-gnome-old rule):
 this is the post-gnome-old rule:
 	now sco-gnome-old is true;
 	say "A gnome, old, arrives from a room above in the keep. They offer to adventure with you, if you have suitable enough adventuring gear. As a matter of fact, you do. The wool frock works well.[paragraph break]'Less gnome attic, more nomadic,' they muse.[paragraph break]Funnily, you stop specifically noticing the lack of mold now your new companion's joined you. But you still appreciate their efforts deep down!";
+	moot mold;
 	befriend gnome old;
 	moot wool frock; [now gnome has wool frock?]
 
