@@ -544,6 +544,21 @@ volume unsorted
 
 volume verbs
 
+the can't exit when not inside anything rule is not listed in any rulebook.
+the convert exit into go out rule is not listed in any rulebook.
+
+check exiting: try going outside instead;
+
+check going outside:
+	if outside is not viable:
+		if number of viable directions is 1:
+			let RVD be random viable direction;
+			say "(going [RVD], the only viable direction)[paragraph break]";
+			try going RVD instead;
+		if number of viable directions > 2:
+			say "That's vague, as you can go [list of viable directions]." instead;
+[		say "You can't find any viable directions. Perhaps you need to solve a puzzle to get out of here." instead;]
+
 book meta stuff
 
 check quitting the game:
