@@ -141,8 +141,43 @@ check swearing obscenely:
 
 check swearing mildly: try swearing obscenely instead;
 
-check taking:
-	say "You don't need to take anything in [this-game]. Everything you need will be taken implicitly." instead;
+book other regular verbs to zap
+
+understand the command "pull" as something new.
+understand the command "push" as something new.
+understand the command "show" as something new.
+
+book taking and dropping
+
+Rule for deciding whether all includes something: it does not.
+
+rule for printing a parser error when the latest parser error is the nothing to do error:
+	if action-to-be is the ting action:
+		say "You can't talk to more than one companion at once. To get an overview of whom you haven't talked to yet, try [b]T[r].";
+	else:
+		say "It looks like you tried to act on multiple things. You don't need to act on more than one thing at a time in [this-game].";
+
+drop2ing is an action applying to one thing.
+
+understand the command "drop" as something new.
+understand "drop [thing]" as drop2ing.
+understand "drop" as drop2ing.
+
+check drop2ing:
+	if noun is war pawn:
+		moot war pawn;
+		say "It blows away violently. It must've been in Zugzwang or something." instead;
+	say "You don't need to [b]DROP[r] anything in [this-game]. Most of what gets in your inventory will disappear when used successfully[if player has war pawn]. However, you may [b]DROP[r] the war pawn to remove the temptation to skip a puzzle[end if]." instead;
+
+rule for supplying a missing noun when drop2ing:
+	now noun is the player;
+
+rule for supplying a missing noun when taking:
+	now noun is the player;
+
+the can't drop yourself rule is not listed in any rulebook.
+[the very unlikely to mean dropping what's already carried rule is not listed in any rulebook.]
+the very unlikely to mean taking what's already carried rule is not listed in any rulebook.
 
 volume rooms
 
