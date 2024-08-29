@@ -708,11 +708,14 @@ rule for supplying a missing noun when touching: now the noun is the player.
 
 chapter t talking
 
+understand the command "ask" as something new.
+
 ting is an action applying to one thing.
 
 understand the command "t" as something new.
 
 understand "t" as ting.
+understand "t all" as ting.
 understand "t [thing]" as ting.
 
 understand "talk to" as ting.
@@ -720,6 +723,9 @@ understand "talk to [thing]" as ting.
 
 understand "talk" as ting.
 understand "talk [thing]" as ting.
+
+understand "ask" as ting.
+understand "ask [thing]" as ting.
 
 rule for supplying a missing noun when ting:
 	if number of followers in location of player is 1:
