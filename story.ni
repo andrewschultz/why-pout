@@ -77,6 +77,14 @@ check examining Mike Orr when sco-an-aim is false:
 
 section temporary code to test remembering oneself
 
+the can't search unless container or supporter rule is not listed in any rulebook.
+
+check searching:
+	if gs-search-warn is false:
+		say "(One-time note: searching is functionally equivalent to examining in [this-game]. So [b]X THING[r] may be quicker in the future.)[paragraph break]";
+	now gs-search-warn is true;
+	try examining noun instead;
+
 understand the command "wipe" as something new.
 
 the block thinking rule is not listed in any rulebook.
