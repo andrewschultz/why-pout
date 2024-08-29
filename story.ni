@@ -603,7 +603,8 @@ understand "credit" as creditsing.
 understand "credits" as creditsing.
 
 carry out creditsing:
-	say "Thanks to Wade Clarke, P. B. Parjeter, Fred Snyder, Daniel Stelzer (and possibly others) for testing. They found stuff I just didn't have the time to find, or stuff I convinced myself I checked, or even stuff I said, well, I'm muddled here and not sure how to test things. Oh and they inspired several ideas, too. It's always hard to ask someone for their time and energy, but I appreciate it so much!";
+	say "Thanks to Michael Baltes, Wade Clarke, Hanon Ondricek, P. B. Parjeter, Fred Snyder, and Daniel Stelzer for testing. They found stuff I just didn't have the time to find, or stuff I convinced myself I'd checked, honest I did, or even broke down cases for stuff where I was muddled and not sure how to test stuff. Oh and they inspired several ideas, too. It's always hard to ask someone for their time and energy, but I appreciate it so much![paragraph break]Michael, Fred and Daniel have IFComp [']24 entries as well, and I always appreciate being able to trade testing with a fellow competitor, so it doesn't feel cutthroat.";
+	say "[line break]The cover art is my fault, and my fault alone.";
 	say "[line break]GENERAL THANKS:[paragraph break]";
 	say "Thanks to everyone past and future involved in the administration of IFComp.";
 	say "Thanks to the I7 board on Intfiction.org for their help, as well as the people in the general topics as we discussed our plans.";
@@ -619,7 +620,7 @@ understand "verbs" as verbsing.
 
 carry out verbsing:
 	say "[this-game] bypasses many of the standard Inform parser verbs, since it is word-puzzle based. Things are taken implicitly, and you don't need to drop anything.";
-	say "[line break]The four standard directions work, and you may go [b]IN[r], [b]OUT[r], [b]UP[r], and [b]DOWN[r], too.";
+	say "[line break]The four standard directions ([b]NORTH[r], [b]SOUTH[r], [b]EAST[r] and [b]WEST[r]) work, and some passages lead [b]IN[r], [b]OUT[r], [b]UP[r], and [b]DOWN[r], too.";
 	say "[line break]In addition, there are NPCs you may wish to [b]TALK TO[r], which can be shortened to [b]T[r].";
 	say "[line break][b]THINK[r] will remind you of things you found, but the time wasn't right.";
 	say "[line break]Finally, [b]ABOUT[r] gives basic information about [this-game] and also cues some other meta-commands.";
@@ -630,8 +631,9 @@ carry out verbsing:
 chapter versioning
 
 carry out versioning:
-	say "I don't expect there to be many versions of a relatively small game. But still, for posterity...[paragraph break]";
 	say "Version 1 was released to IFComp on August 28, 2024.";
+	say "[line break]Version 2 is expected to be released shortly post-IFComp. I had a great idea for a hint device. The only thing not-great was the timing: six hours before the comp deadline!";
+	say "[line break]I don't expect much beyond that, since this is a relatively short game.";
 	the rule succeeds;
 
 [the text below is added to Versioning and Extensions Tweak]
