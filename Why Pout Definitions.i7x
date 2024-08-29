@@ -45,16 +45,18 @@ definition: a follower (called fo) is leftbehind:
 	if fo is in location of player, no;
 	yes;	
 
+to decide whether say-plural-followers:
+	if number of leftbehind followers > 1, yes;
+	let rf be a random leftbehind follower;
+	if rf is plural-named, yes;
+	no;
+
 every turn when block-followers is false (this is the followers follow you rule):
 	if number of leftbehind followers > 0:
-		let plurals be whether or not number of leftbehind followers > 1;
-		if plurals is false:
-			let rf be a random leftbehind follower;
-			if rf is plural-named, now plurals is true;
 		if number of leftbehind followers > 2:
 			say "Your [number of leftbehind followers in words] companions follow you.";
 		else:
-			say "The [list of leftbehind followers] follow[if plurals is false]s[end if] you.";
+			say "The [list of leftbehind followers] follow[if not say-plural-followers]s[end if] you.";
 		follow-you;
 
 to follow-you:
