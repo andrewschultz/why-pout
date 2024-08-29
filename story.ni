@@ -202,7 +202,7 @@ book Naff Haze
 NaffHaze is a privately-named room in universal. "[if sco-nah-phase is false]You're surrounded by some really naff haze. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it[else]Things have opened up a bit now, with the naff haze lifted[end if][if sco-pole-east is true]. You feel less policed, too, and you found a path [b]EAST[r][end if][if sco-grow-star is true].[paragraph break]You got rid of the gross tar blocking your way [b]NORTH[r][end if][if plane-dir-score is 4].[paragraph break]There's also a way [b]DOWN[r] that opened up once you found passages in all cardinal directions[end if].". printed name is "[if sco-nah-phase is false]Naff Haze[else]High Plain[end if]".
 
 after printing the locale description for NaffHaze when sco-nah-phase is true and sco-pole-east is false:
-	say "You feel policed here. Where and what is this feeling coming from?";
+	say "You feel policed here. And it's the mean American gung-ho militarized sort of policed, not the (usually) kinder UK brand. Where and what is this policed feeling coming from?";
 	continue the action;
 
 after printing the locale description for NaffHaze when Bruise Wares is off-stage and current-score >= 20:
@@ -243,6 +243,8 @@ the gross tar is a thing. "Gross tar blocks the way [b]NORTH[r] into darkness.".
 chapter keep iller
 
 the keep iller is a thing. "A keep, iller, rises to the [b]WEST[r][if sco-key-pillar is false], but you see no way in[else], and you figured how to enter it[end if].". description is "It [if keepiller is visited]wasn't[else]doesn't look[end if] dangerous, but then, it's not exactly a tourist attraction. Still, [if keep-score < 6]there's plenty to do there[else]it helped you a lot[end if]."
+
+check entering keep iller: try going west instead;
 
 chapter Bruise Wares
 
