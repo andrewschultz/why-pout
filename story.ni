@@ -878,6 +878,13 @@ check requesting the score:
 	say ".";
 	the rule succeeds;
 
+volume painful parser stuff
+
+after reading a command:
+	if player is in brew swears and bah-sturdy is in brew swears:
+		if the player's command matches "bastardy":
+			change the text of the player's command to "bastard eee";
+
 volume score stuff
 
 when play begins (this is the score and status tweak rule):
