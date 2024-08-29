@@ -199,7 +199,7 @@ this is the post-hide-out rule:
 a wordtwisting rule (this is the pre-low-door rule):
 	if player is not in Wolf Rock, unavailable;
 	if sco-mice-tall is false:
-		vcp "Maybe there's a low door beneath the lode ore, which definitely has small holes. But not small enough for you to fit through and scrabble and scrape to find one[if pals-made > 0], and nobody around can help you. Well, yet[end if].";
+		vcp "Maybe there's a low door beneath the lode ore, which definitely has small holes. But not small enough for you to fit through and scrabble and scrape to find one[if pals-made > 0], and nobody around is quite small enough to help you. Well, yet[end if].";
 		not-yet;
 	if sco-low-door is true:
 		vcal "You already found a low door in this mess!";
@@ -222,7 +222,7 @@ a wordtwisting rule (this is the pre-low-bend rule):
 
 this is the post-low-bend rule:
 	now sco-low-bend is true;
-	say "No, wait, there is a bit more to all this. If you work your way down a bit, well, there's a body of water. Which you can't cross at the moment, but maybe you'll figure a way.";
+	say "You almost despair for a minute that you reached a dead end so soon. You page through all the possible ways out, proving to yourself you're right, hoping against hope you're wrong.[paragraph break]And looking around, you see youi are! There is a bit more to all this. A very thin and reasonably sloped path north leads down to some water. Which you can't cross at the moment, but maybe you'll figure a way.";
 
 section lobe end scoring
 
@@ -371,12 +371,12 @@ a wordtwisting rule (this is the pre-pry-stalk rule):
 
 this is the post-pry-stalk rule:
 	now sco-pry-stalk is true;
-	say "Among all the chatter, you manage to pry away a stalk from someone who is flattered you listen. It feels icky, but hey, the stalk looks like it can grow. But the question is, where can it grow to?";
+	say "Among all the chatter, you discover a disused booth. Someone is preaching on about environmental stuff, and it's so much less painful than cell phone chat. You worry they're just going to blab on forever, but they're so grateful you listened as long as you did. They hand you a stalk they think can grow quickly. Their own special formula. It looks weird and glittery, and if anything can reach up out of here, this can. But the question is, where can it grow to?";
 
 a wordtwisting rule (this is the pre-high-plain rule):
 	if player is not in hype lane, unavailable;
 	if sco-pry-stalk is false:
-		vcp "That would be a nicer place! But you have nothing that could help you move up.";
+		vcp "That would be a nicer place! But you have nothing that could help you move up yet. You'll have to observe the general area a bit more.";
 		not-yet;
 	ready;
 
@@ -644,7 +644,7 @@ a wordtwisting rule (this is the pre-gnome-old rule):
 
 this is the post-gnome-old rule:
 	now sco-gnome-old is true;
-	say "A gnome, old, arrives from a room above in the keep. They offer to adventure with you, if you have suitable enough adventuring gear. As a matter of fact, you do. The wool frock works well.[paragraph break]'Less gnome attic, more nomadic,' they muse.";
+	say "A gnome, old, arrives from a room above in the keep. They offer to adventure with you, if you have suitable enough adventuring gear. As a matter of fact, you do. The wool frock works well.[paragraph break]'Less gnome attic, more nomadic,' they muse.[paragraph break]Funnily, you stop specifically noticing the lack of mold now your new companion's joined you. But you still appreciate their efforts deep down!";
 	befriend gnome old;
 	moot wool frock; [now gnome has wool frock?]
 
@@ -699,12 +699,12 @@ this is the post-plan-tracker rule:
 	now player has plan tracker;
 
 this is the hom-c-sea-design rule:
-	say "Close, but an action is needed here."
+	say "Close, but there are other waterways. Action (well, sort of) is needed here."
 
 a wordtwisting rule (this is the pre-see-design rule):
 	if player is not in keepiller, unavailable;
 	if pals-made < 2:
-		vcp "You sort of want to see the design, but you're sort of scared what will happen once you do. You feel like you need some [if pals-made is 1]more [end if]support before really trying.";
+		vcp "You sort of want to see the hidden design, but you're sort of scared what will happen once you do. [if pals-made is 1][The random friendly follower] can only help so much. [end if]You feel like you need some [if pals-made is 1]more [end if]support before you can give it your all.";
 		not-yet;
 	if sco-see-design is true:
 		vcal "You already saw the design in the seedy sign. You don't need to redo things.";
@@ -752,7 +752,7 @@ a wordtwisting rule (this is the pre-were-meetin rule):
 
 a wordtwisting rule (this is the followers-check rule):
 	if pals-made is 0:
-		vcp "But you have no friends to meet with!";
+		vcp "Sadly, you have no friends to bring together yet! Yet.";
 		not-yet;
 	if number of still-follow-needed followers > 0:
 		vcp "You sense you don't have the gang together! [if number of still-follow-needed followers is 1]But you must be very, very close[else]You may still be a way away[end if].";
@@ -825,7 +825,7 @@ a wordtwisting rule (this is the pre-wide-vision rule):
 this is the post-wide-vision rule:
 	now sco-wide-vision is true;
 	moot why division;
-	say "Your experiences and failures give you a leadership you don't know you had. You convince your companions to do more than just save their own hides. You lay out a vision so scourges from the likes of the sea skull are less likely to happen again, or it will take longer. And everyone listens![paragraph break]They're eager for the final step, to get out there. You look around. It's pretty clear what must occur, or it will be, soon.";
+	say "Your experiences and failures give you a leadership you don't know you had. You convince your companions to do more than just save their own hides. You lay out a vision so scourges from the likes of the sea skull are less likely to happen again, or it will take longer. And everyone listens! A few even say 'Worth inking, we're thinking!'[paragraph break]They're eager for the final step, to get out there. You look around. It's pretty clear what must occur, or it will be, soon.";
 
 a wordtwisting rule (this is the pre-do-due-mend rule):
 	if player is not in Doom Ending, unavailable;
@@ -959,9 +959,15 @@ rule for printing a parser error (this is the check forks rule):
 		the rule succeeds;
 	continue the action;
 
+check thinking when current-score is 0:
+	say "An inner voice says 'Fry! Twist!' You feel fright, wist. It's hard not to, since you don't have a name or a purpose. For some reason, you're focused on getting a name, but you've got thins nagging feeling that's not quite it.[paragraph break][one of]Perhaps if you press a bit more, some thoughts may come out[or]Well, not quite a purpose, but ... what's the word? [one of]'Aww, flake! Awful ache!'[or]'Dumb pit. Dump it!'[in random order] you think to yourself. Which sounds slightly off, but it's all you have to go on[stopping].";
+	if pre-acts > 0:
+		say "[line break]You've already tried to [b]WIPE OUT[r] in response to taunts of 'why pout,' and you wonder if this all is easier. [if gs-examined-self is false]Perhaps you should [b]X ME[r][else]Maybe your search for a name will turn up something meaningful, regardless of what your name is[end if].";
+	the rule succeeds;
+
 rule for printing a parser error when the latest parser error is the not a verb I recognise error (this is the catch bad verbs rule):
 	if core-score is 0:
-		say "You're stuck with what to do right now. Perhaps you can [if gs-examined-self is true]look inward again with X ME[else]look inward[end if], to give you an idea of what you want. You can't exactly look outward.";
+		say "You're stuck with what to do right now. Perhaps you can use your senses for clues, or [b]THINK[r], or look inward[if gs-examined-self is true] again with X ME[end if], to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.";
 		increment first-point-clue-flag;
 		if gs-parser-error-note is false:
 			say "[line break][i][bracket][b]NOTE[r][i]: until the main area, parser verb errors like this will give occasional hints. So don't be afraid to try stuff.[close bracket][r][line break]";

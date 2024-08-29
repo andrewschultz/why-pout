@@ -81,7 +81,7 @@ understand "mike orr" and "mike/orr" as Mike Orr when sco-an-aim is true.
 
 check examining Mike Orr when sco-an-aim is false:
 	now gs-examined-self is true;
-	say "You think you have a name. Most people do, if you remember things correctly. For better or worse, you can't be special.[paragraph break]You'd really like to have a purpose, too.[paragraph break]The weird thing is, you feel the two must be inter-related in some simple way. A way that will feel dumb once you figure it out. But you haven't, yet.[paragraph break]Hmm. A name. A name." instead;
+	say "You think you have a name. Most people do, if you remember things correctly. For better or worse, you can't be special.[paragraph break]You'd really like to have a purpose, too.[paragraph break]The weird thing is, you feel the two must be inter-related in some simple way. A way that will feel dumb once you figure it out. But you haven't, yet.[paragraph break]Hmm. A name. A name. You're focused on finding [b]A NAME[r], and yet, if you just shook up this focus a bit, you might get something else... something that could kick-start you, no matter what your name is." instead;
 
 section temporary code to test remembering oneself
 
@@ -156,7 +156,7 @@ Hype Lane is a room in universal. "It's still pretty dark here. You must still b
 
 chapter cell phones
 
-the cell phones are a plural-named thing in hype lane. understand "phone" and "cell phone" as cell phones. "You don't remember everything about your former self, but you remember you hated cell phones and how they distracted you. Maybe if the people yacking into them were taken down a peg, you could focus a bit more. Dang cell phones.". description is "Whether or not they're the latest models, you don't want to pay attention to them too much. Just figure out a way for a harmless calamity that may make their users quiet down a bit."
+the cell phones are a plural-named thing in hype lane. understand "phone" and "cell phone" as cell phones. "You don't remember everything about your former self, but you remember you hated cell phones and how they distracted you. Maybe if the people yacking into them were taken down a peg, you could focus a bit more. Dang cell phones.". description is "Whether or not the cell phones are the latest models, you don't want to pay attention to them too much. Just figure out a way for a harmless calamity that may make their users quiet down a bit."
 
 chapter prize talk
 
@@ -164,7 +164,7 @@ prize talk is a thing. "You'd like to DO something about the prize talk. Or seek
 
 book Naff Haze
 
-NaffHaze is a privately-named room in universal. "[if sco-nah-phase is false]A naff haze surrounds you. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it[else]Things have opened up a bit now, with the naff haze lifted[end if][if sco-pole-east is true]. You feel less policed, too, and you found a path [b]EAST[r][end if][if sco-grow-star is true].[paragraph break]You got rid of the gross tar blocking your way [b]NORTH[r][end if][if plane-dir-score is 4].[paragraph break]There's also a way [b]DOWN[r] that opened up once you found passages in all cardinal directions[end if].". printed name is "[if sco-nah-phase is false]Naff Haze[else]High Plain[end if]".
+NaffHaze is a privately-named room in universal. "[if sco-nah-phase is false]You're surrounded by some really naff haze. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it[else]Things have opened up a bit now, with the naff haze lifted[end if][if sco-pole-east is true]. You feel less policed, too, and you found a path [b]EAST[r][end if][if sco-grow-star is true].[paragraph break]You got rid of the gross tar blocking your way [b]NORTH[r][end if][if plane-dir-score is 4].[paragraph break]There's also a way [b]DOWN[r] that opened up once you found passages in all cardinal directions[end if].". printed name is "[if sco-nah-phase is false]Naff Haze[else]High Plain[end if]".
 
 after printing the locale description for NaffHaze when sco-nah-phase is true and sco-pole-east is false:
 	say "You feel policed here. Where and what is this feeling coming from?";
@@ -183,7 +183,7 @@ after going to NaffHaze when Bruise Wares is in NaffHaze and sco-treat-all is tr
 the naff haze is scenery in NaffHaze. "You can't look very far though it. Just looking at it makes you feel hopeless you'll always be trapped in the fog."
 
 check going a viable direction in NaffHaze when sco-pole-east is false:
-	say "You'd like to, but you feel, well, policed." instead;
+	say "You'd like to go [noun], but you feel, well, policed." instead;
 
 chapter war pawn
 
@@ -232,7 +232,7 @@ check going south in KeepIller:
 
 chapter no mold
 
-there is a thing called no mold. It is in KeepIller. "You are really impressed by how no mold grows here. Someone must be keeping it up well.". description is "You can't see the absence of mold, but you appreciate it nonetheless. Someone must be, ahem, keeping the keep up well.".
+there is a thing called no mold. It is in KeepIller. "You are really impressed by how no mold grows here. Someone must be keeping it up well. Who?". description is "You can't see the absence of mold, but you appreciate it nonetheless. Someone must be, ahem, keeping the keep up well. Who?".
 
 section gnome old
 
@@ -248,7 +248,7 @@ the rogue old is a follower. printed name is "rogue (old)". help-chat is "The ro
 
 chapter manic herb
 
-the manic herb is a thing in KeepIller. "There's a bunch of manic herb here[if sco-manna-curb is true] the mensch elf sifted through[else]. You don't know a lot about it, other than that some is really poisonous and some is okay. There's so much, perhaps it's hiding something[end if]. ". description is "You're unable to see through it, to determine what's safe[if sco-manna-curb is true], but you don't need to[else], and it'll probably require someone else's knowledge, once you know what to look for[end if]."
+the manic herb is a thing in KeepIller. "There's a bunch of manic herb here[if sco-manna-curb is true] the mensch elf sifted through[else]. You don't know a lot about it, other than that some is really poisonous and some is okay. There's so much, perhaps it's hiding something[end if]. ". description is "You're unable to see through it, to determine what's safe[if sco-manna-curb is true], but you don't need to[else], and it'll probably require someone else's knowledge, from times way past, maybe even Biblical, once you know what to look for[end if]."
 
 section manna
 
@@ -256,7 +256,7 @@ some manna is a singular-named thing. description is "Apparently, manna is suppo
 
 chapter plant racker
 
-the plant racker is a thing in KeepIller. "A plant racker lies here, pretty much useless.". description is "It seems papery, broken beyond repair.".
+the plant racker is a thing in KeepIller. "A plant racker lies here, pretty much useless.". description is "It seems papery, broken beyond repair, at least in its current state.".
 
 chapter plan tracker
 
@@ -286,7 +286,7 @@ the wool frock is a thing. description is "It's a bit too small for you."
 
 chapter lode ore
 
-the lode ore is scenery in Wolf Rock. "[if sco-low-door is true]You doubt there is anything more to find[else]Maybe it is hiding something[end if]."
+the pile of lode ore is scenery in Wolf Rock. "[if sco-low-door is true]You doubt there is anything more to find[else]Maybe it is hiding something. If it were a pile of anything else, it might not be so interesting[end if]."
 
 section low door
 
@@ -308,7 +308,15 @@ the Base Ale is a thing. description is "Uck. It's a nasty color, really. But pe
 
 book We Loan
 
-We Loan is a room in universal. printed name is "[if sco-well-own is false]We Loan[else if sco-whee-lone is false]We'll Own[else if sco-oh-flier is false]Whee, Lone?[else]Whee! [']Lone![end if]". "[if sco-oh-flier is false]This area feels replete with the sort of double-talk all salesmen use. It will be tough to hang with all the way through, but if you do, maybe you'll get something out of it. [else if sco-bile-oh is true and sco-whee-lone is false]It's nice and silent here, and maybe there's a specific way to enjoy that. [else]You've managed to navigate negotiations and wind up with ... a shiny new flier! [end if]You can only go back [b]OUT[r] here[if sco-well-own is false].[paragraph break]You don't really trust the whole 'financial services' vibe here. Maybe there's a double meaning to deduce[end if]."
+We Loan is a room in universal. printed name is "[if sco-well-own is false]We Loan[else if sco-whee-lone is false]We'll Own[else if sco-oh-flier is false]Whee, Lone?[else]Whee! [']Lone![end if]". "[loan-starter]You can only go back [b]OUT[r] here[if sco-well-own is false].[paragraph break]You don't really trust the whole 'financial services' vibe here. Maybe there's a double meaning to deduce[end if]."
+
+to say loan-starter:
+	if sco-bile-oh is false:
+		say "This area feels replete with the sort of double-talk all salesmen use. You can almost hear all the dropped and excess apostrophes. It will be tough to hang with all the way through, but if you do, maybe you'll get something out of it.[line break]";
+	 else if sco-whee-lone is false:
+		say "It's nice and silent here, and maybe there's a specific way to enjoy that.[line break]";
+	else if sco-oh-flier is true:
+		say "You've managed to navigate negotiations and wind up with ... a shiny new flier! What more could you ask for?[line break]"
 
 chapter some merchant
 
@@ -335,7 +343,10 @@ report examining the flier:
 
 book Lobe End
 
-Lobe End is a room in universal. "[if sco-low-bend is false]This lobe of land appears to end in all directions except back west. Maybe you could look for something that might be a hill, even a steep one.[else]The low bend (former lobe end) now bends from west to north, where you see water, too much to cross on foot.[end if]". printed name is "[if sco-low-bend is true]Low Bend[else]Lobe End[end if]".
+Lobe End is a room in universal. "[if sco-low-bend is false]This lobe of land appears to end in all directions except back west. Maybe you could look for something that might be a hill, even a steep one.[else]The low bend (former lobe end) now bends from west to north, where you see water, too much to cross on foot[raft-clue].[end if]". printed name is "[if sco-low-bend is true]Low Bend[else]Lobe End[end if]".
+
+to say raft-clue:
+	if sco-bay-sale is false, say ". Well, nobody's probably going to give you transport north for free. Maybe you can summon or find someone who will"
 
 check going north in lobe end when sco-low-bend is true and sco-bay-sale is false: say "You have no way across the water, yet." instead;
 
@@ -433,7 +444,7 @@ to zap-bruise-wares:
 
 chapter earls
 
-the grinch earls are a plural-named thing in Brew Swears. "Some [earls] parade around here, bragging about how they ruin boring people's fun with their dynamic ways and pointing out that it's easy to be nice if you're boring[if sco-grin-churls is false], though they're less effective than when they were self-styled earls[end if][if sco-weak-us is true]. You cut their 'we cuss' down to size, so they're now giving examples of how they cuss[else]. They constantly blather 'WE CUSS' and seem quite proud of that[end if].". printed name is "[if sco-grin-churls is true]grin churls[else]grinch earls[end if]". description is "Bleah. They remind you of popular kids (you know, the ones who beat up kids who claimed they weren't popular--it was effective) from back in school, except all grown up."
+the grinch earls are a plural-named thing in Brew Swears. "Some [earls] parade around here, bragging about how they ruin boring people's fun with their dynamic ways and pointing out that it's easy to be nice if you're boring. They fix you with a 'We parse: weep, arse' gaze[if sco-grin-churls is false], though they're less effective than when they were self-styled earls[end if][if sco-weak-us is true]. You cut their 'we cuss' down to size, so they're now giving examples of how they cuss[else]. They constantly blather 'WE CUSS' and seem quite proud of that[end if].". printed name is "[if sco-grin-churls is true]grin churls[else]grinch earls[end if]". description is "Bleah. They remind you of popular kids (you know, the ones who beat up kids who claimed they weren't popular--it was effective) from back in school, except all grown up."
 
 chapter crude orc
 
@@ -470,7 +481,7 @@ The gone traitor is a thing in Worm Eaten. "[one of]Someone comes out from the d
 
 section gaunt raider
 
-the gaunt raider is a follower. description is "They still look disturbed by who they were.". help-chat is "The gaunt raider discusses regret for their past actions, as well as some possibilities for how to use it to boost yourself to do the right thing, or when to just drop it without being drowned by guilt."
+the gaunt raider is a follower. description is "Tall and imposing. They still look disturbed by who they were.". help-chat is "The gaunt raider discusses regret for their past actions, as well as some possibilities for how to use it to boost yourself to do the right thing, or when to just drop it without being drowned by guilt."
 
 book Doom Ending
 
