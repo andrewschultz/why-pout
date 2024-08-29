@@ -2,9 +2,17 @@
 
 volume top level stuff
 
+the release number is 1.
+
 release along with a website.
 
+release along with cover art.
+
 release along with the "Parchment" interpreter.
+
+the story description is "Ow! Trot out rot?!".
+
+the story headline is "My IFComp 2024 entry. Wordplay.".
 
 book includes
 
