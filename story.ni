@@ -442,11 +442,13 @@ the tree tall is a thing. "A tree (tall) has grown here, thanks to you. It feels
 
 book no notion
 
-NoNotion is a room in universal. "[if sco-known-ocean is false]You simply have no notion what lies beyond here[else]It looks like there is an ocean, or some large body of water, and maybe some islands in the distance. They are too far to swim to[end if]. You can go back north to where you started.". printed name of nonotion is "[if sco-known-ocean is false]No Notion[else]Known Ocean[end if]".
+NoNotion is a room in universal. "[if sco-known-ocean is false]You simply have no notion what lies beyond here. Surely the shore trail didn't just lead to a dead end! [else]It looks like there is an ocean, or some large body of water, and maybe some islands in the distance. They are too far to swim to. [end if]You can go back north to where you started.". printed name of nonotion is "[if sco-known-ocean is false]No Notion[else]Known Ocean[end if]".
 
 chapter sick squid
 
-the sick squid is a thing. "A [if sco-six-quid is true]formerly (thanks to you) [end if]sick squid trundles about in the water here.". description is "[if sco-six-quid is false]It seems like it's half choking on something, not enough to strangle it, but enough to make it really uncomfortable[else]It looks back at you. Squids don't smile, but if it could, it would[end if]."
+the sick squid is a thing. "A [if sco-six-quid is true]formerly (thanks to you) [end if]sick squid trundles about in the water here.". description is "[if sco-six-quid is false]It seems like it's half choking on something, not enough to strangle it, but enough to make it really uncomfortable[else]It looks back at you. Squids don't smile, but if it could, it would. Perhaps, if you know of an island nearby in the ocean, it will take you there[end if]."
+
+check entering squid: say "It might not have the energy for joyriding. You need to show it where to go, maybe with [if player has flier]that flier of yours[else]a map or something[end if]." instead;
 
 chapter grow vial
 
@@ -752,6 +754,7 @@ check ting:
 		if sco-wide-vision is true, say "You've already shared your vision. Now's the time to put it into action." instead;
 		if sco-wipe-out is true, say "The only thing left to do is dispel the why-division, if you can." instead;
 		say "Now's not the time for chat." instead;
+	if noun is squid, say "[if sco-six-quid is true]It seems to be choking a bit[else]The squid can't speak, but you get very good vibes from it. It will understand English when it needs to[end if]." instead;
 	if noun is oaf liar, say "The oaf liar is talking over you. Perhaps you can shut them up by buying something really cheap." instead;
 	if noun is merchant, say "You want to figure a way to kill conversation, instead." instead;
 	if noun is booze troll, say "The booze troll doesn't seem interested in useful conversation, at least not in their present form." instead;
