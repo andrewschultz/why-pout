@@ -148,7 +148,9 @@ The wool frock fits nicely on the gnome and is removed from your inventory.
 
 >rogue old (1)
 
-The six quid you found come in handy to get a second companion. And the next thing needs no prep.
+The six quid you found come in handy to get a second companion. This costs you three. You should have three left, now.
+
+But the next thing needs no prep.
 
 >plan tracker (1)
 
@@ -180,7 +182,7 @@ Again, the money comes in handy. And you still have some left over!
 
 >bay sale (1)
 
-Alternately, sail is okay because, well, you get a sale of sorts.
+Alternately, sail is okay because, well, you get a sale of sorts. The raft you get is indeed on sale. It costs two quid. You should have one quid left, now.
 
 >n
 
@@ -220,17 +222,17 @@ Now you were positive, you can go negative.
 
 >bile oh (1)
 
-Gloat about your solutide!
+Gloat about your solitude!
 
 >whee lone (1)
 
-Oops, no more solitude, but the oaf-liar has something.
+Oops, no more solitude, but the oaf-liar has something. You can misspell it with a y, if you'd like.
 
 >oh flier (1)
 
 Finally, the last of your money!
 
-(By the way, if you try to get the flier earlier, you don't pay right away. The oaf-liar gets greedy and wants more than just one quid. So you have to come back when you're almost broke.)
+(By the way, if you try to get the flier earlier, you don't pay right away. The oaf-liar gets greedy and wants more than just one quid. So you have to come back when you're almost broke. Just to check, you should have given the rogue and the bay sale three and two quid each.)
 
 >out
 
@@ -240,13 +242,15 @@ We can complete the keep now.
 
 >w
 
+The manic herb is tricky.
+
 >manna curb (1)
 
 >e
 
 >s
 
-The flyer tells you where to look or go.
+The flier tells you where to look or go.
 
 >grow vial (1)
 
@@ -297,7 +301,7 @@ You can't eat it by yourself!
 
 >treat all (1)
 
-My, such lively discussion. We're ready for the big picture. One more isle on the flyer to visit!
+My, such lively discussion. We're ready for the big picture. One more isle on the flier to visit!
 
 >s
 
