@@ -110,6 +110,10 @@ volume verbs
 the block saying no rule is not listed in any rulebook.
 the block saying yes rule is not listed in any rulebook.
 
+carry out saying yes: say "Black? White? Blah! Quite!" instead;
+
+carry out saying no: try saying yes instead;
+
 the block attacking rule is not listed in any rulebook.
 
 the block singing rule is not listed in any rulebook.
@@ -117,7 +121,7 @@ the block singing rule is not listed in any rulebook.
 check singing: say "Funny, you feel a taste of icing." instead;
 
 check attacking:
-	say "You aren't built for that[if pals-made > 0], but maybe you can lead companions to a big victory[end if]." instead;
+	say "'Gore? I'd go ride,' you think, randomly. You aren't built for that[if pals-made > 0], but maybe you can lead companions to a big victory[end if]." instead;
 
 the block swearing obscenely rule is not listed in any rulebook.
 the block swearing mildly rule is not listed in any rulebook.
@@ -598,7 +602,7 @@ report taking inventory when player has talk ache:
 	say "Oh, man. You still have that talk ache, too.";
 	continue the action;
 
-chapter listening
+chapter sensing
 
 the block listening rule is not listed in any rulebook.
 
@@ -608,6 +612,22 @@ check listening:
 		if cell phones are in hype lane, try examining cell phones instead;
 	if player is in air aww, say "Air, or ... a roar?!" instead;
 	say "Nothing that could help you." instead;
+
+the block smelling rule is not listed in any rulebook.
+
+check smelling: say "No funk, or fun. Cor!" instead;
+
+the block tasting rule is not listed in any rulebook.
+
+check tasting: say "A voice: 'No tastings note. Eh?' Stings!" instead;
+
+the report touching yourself rule is not listed in any rulebook.
+
+check touching: say "An internal voice says 'We poke, eh? Weep, okay?'" instead;
+
+understand "touch" as touching.
+
+rule for supplying a missing noun when touching: now the noun is the player.
 
 chapter t talking
 
