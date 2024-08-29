@@ -916,6 +916,7 @@ this is the post-lie-fuckers rule:
 	now sco-lie-fuckers is true;
 	say "You cut down [the grinch] for making things more bleak than they are. Sure, life can be cruel, but that's no excuse to make it even more cruel. They give a 'whatever,' but you see the point touched home.";
 	moot life-occurs;
+	recalibrate-swears;
 
 a wordtwisting rule (this is the pre-were-dicks rule):
 	if player is not in brew swears, unavailable;
@@ -926,6 +927,7 @@ this is the post-were-dicks rule:
 	now sco-were-dicks is true;
 	say "You mock [the grinch] back, giving at least as good as you get, noting there's always a hole in these sorts of attacks.";
 	moot weird-icks;
+	recalibrate-swears;
 
 a wordtwisting rule (this is the pre-bastard-eee rule):
 	if player is not in brew swears, unavailable;
@@ -938,14 +940,6 @@ this is the post-bastard-eee rule:
 	moot bah-sturdy;
 	recalibrate-swears;
 
-to recalibrate-swears:
-	if number of not moot swearblobs is 0:
-		say "[line break]The [grinch], out of insults, give up on you, claiming you got boring. But you know better.";
-		continue the action;
-	follow the followers follow you rule;
-
-section brew swears scoring
-
 a wordtwisting rule (this is the pre-heckle-ass rule):
 	if player is not in brew swears, unavailable;
 	if heh-class is not in brew swears, unavailable;
@@ -954,6 +948,14 @@ a wordtwisting rule (this is the pre-heckle-ass rule):
 this is the post-heckle-ass rule:
 	now sco-heckle-ass is true;
 	say "You give back at least as good as you got, showing you don't need to use the big cuss words to get a point in as well.";
+	moot heh-class;
+	recalibrate-swears;
+
+to recalibrate-swears:
+	if number of not moot swearblobs is 0:
+		say "[line break]The [grinch], out of insults, give up on you, claiming you got boring. But you know better.";
+		continue the action;
+	follow the followers follow you rule;
 
 volume command parsing
 
