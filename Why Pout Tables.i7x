@@ -458,6 +458,7 @@ this is the post-known-ocean rule:
 	now sco-known-ocean is true;
 	say "Ah, yes. Things clear up a bit now. There we go ... you see where an ocean should be, and ... yes, you dip your toe in some wetness. Things clear up. You even see a sick squid! Maybe you can help it.";
 	move sick squid to NoNotion;
+	move ocean to NoNotion;
 
 a wordtwisting rule (this is the pre-six-quid rule):
 	if player is not in nonotion, unavailable;

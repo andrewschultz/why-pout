@@ -417,6 +417,12 @@ chapter grow vial
 
 the grow vial is a thing. description is "It says it will help something grow, but it's potentially toxic to mammals."
 
+chapter ocean
+
+the ocean is scenery. "Well, you'll need help to cross it."
+
+check entering ocean: try going west instead;
+
 book wand wharf
 
 Wand Wharf is a room in universal. "You rode the squid here, and there are all sorts of magical symbols here. It's a bit intimidating for someone like you who is clueless about magic. Maybe it's intimidating and depressing for someone else."
