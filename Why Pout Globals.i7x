@@ -14,6 +14,8 @@ gs-examined-self is a truth state that varies.
 
 gs-overpay-flier is a truth state that varies. [OH FLIER with >1 quid remaining]
 
+gs-t-special-note is a truth state that varies.
+
 section first point cue(s)
 
 first-point-clue-flag is a number that varies.

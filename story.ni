@@ -673,6 +673,9 @@ report ting:
 			say "[RF] seem[if rf is not plural-named]s[end if] to want to cut in a bit for their turn some time.";
 		else:
 			say "it didn't reveal anything new.";
+		if gs-t-special-note is false:
+			say "[line break][i][bracket][b]NOTE:[r][i] if you want to see whom you haven't talked to yet, [b]T[r][i] by itself will do the trick. If there's only one companion you haven't talked to, you will talk to them[close bracket][r][line break]";
+			now gs-t-special-note is true;
 	else:
 		if number of chatted followers is 0:
 			say "Wow! Things are starting to make sense. Maybe talking to others will help make even more sense.";
