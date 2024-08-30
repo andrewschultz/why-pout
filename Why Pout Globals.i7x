@@ -18,6 +18,8 @@ gs-t-special-note is a truth state that varies.
 
 gs-search-warn is a truth state that varies.
 
+gs-penalized-why-division is a truth state that varies.
+
 section first point cue(s)
 
 first-point-clue-flag is a number that varies.

@@ -832,9 +832,14 @@ a wordtwisting rule (this is the pre-wide-vision rule):
 	if player is not in doom ending, unavailable;
 	if why division is not in doom ending, unavailable;
 	if pre-acts < pre-max:
-		vcp "[one of]You try to declare a wide vision, but sadly you trip yourself up a bit. Wide vision? Why division? You get tripped up on spelling and pronunciation details, and you just can't fight through them. Perhaps if you'd fought through more setbacks, you might be able to, but you can't, right now[or]You are unable to express your wide vision. You'll have to settle for just repairing things pretty well[stopping].";
+		vcp "[remove-widevision-bonus][one of]You try to declare a wide vision, but sadly you trip yourself up a bit. Wide vision? Why division? You get tripped up on spelling and pronunciation details, and you just can't fight through them. Perhaps if you'd fought through more setbacks, you might be able to, but you can't, right now[or]You are unable to express your wide vision. You'll have to settle for just repairing things pretty well[stopping].";
 		not-yet;
 	ready;
+
+to say remove-widevision-bonus:
+	if gs-penalized-why-division is false:
+		decrement cur-max-bonus;
+		now gs-penalized-why-division is true;
 
 this is the post-wide-vision rule:
 	now sco-wide-vision is true;
