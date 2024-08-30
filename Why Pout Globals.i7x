@@ -18,6 +18,8 @@ gs-t-special-note is a truth state that varies.
 
 gs-search-warn is a truth state that varies.
 
+gs-swear-bonus-removed is a truth state that varies.
+
 gs-penalized-why-division is a truth state that varies.
 
 section first point cue(s)
@@ -34,7 +36,7 @@ book integers
 
 core-max is a number that varies. core-max is 45.
 
-max-bonus is a number that varies. max-bonus is 9.
+max-bonus is a number that varies. max-bonus is 10.
 
 core-score is a number that varies.
 

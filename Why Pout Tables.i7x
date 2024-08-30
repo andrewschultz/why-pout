@@ -963,6 +963,11 @@ to recalibrate-swears:
 		continue the action;
 	follow the followers follow you rule;
 
+to remove-swear-bonus:
+	if gs-swear-bonus-removed is false:
+		decrease cur-max-bonus by (9 - brew-swears-score);
+		now gs-swear-bonus-removed is true;
+
 volume command parsing
 
 the check forks rule is listed first in the for printing a parser error rulebook.

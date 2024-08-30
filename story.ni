@@ -213,6 +213,7 @@ after printing the locale description for NaffHaze when Bruise Wares is off-stag
 after going to NaffHaze when Bruise Wares is in NaffHaze and sco-treat-all is true:
 	say "Odd! BRUISE-WARES has vanished. Well, one less dead end to worry about.";
 	zap-bruise-wares;
+	remove-swear-bonus;
 	continue the action;
 
 the naff haze is scenery in NaffHaze. "You can't look very far though it. Just looking at it makes you feel hopeless you'll always be trapped in the fog."
@@ -482,6 +483,7 @@ check going outside in Brew Swears:
 	now block-followers is false;
 	if orc is friendly, say "As you lead [the orc] out, BRUISE-WARES crumbles behind you.";
 	zap-bruise-wares;
+	remove-swear-bonus;
 
 to zap-bruise-wares:
 	moot BRUISE WARES;
@@ -519,6 +521,7 @@ after printing the locale description of Worm Eaten when sco-were-meetin is true
 
 check going down in Worm Eaten:
 	if sco-the-file is false, say "Hmm. You still feel like you're missing some plans, some intelligence, even though you have everything else. The [raider] found it easy to get kicked out, but you need detailed plans how to get back in." instead;
+	remove-swear-bonus;
 
 chapter gone trader
 
