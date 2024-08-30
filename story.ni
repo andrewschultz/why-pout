@@ -862,6 +862,9 @@ carry out warponing:
 		process the check-rule entry;
 		let vr be the outcome of the rulebook;
 		if vr is the ready outcome:
+			if think-cue entry is true:
+				say "[one of]The war pawn glows hot in your hand. You drop it and pick it up. Why didn't it give a hint?[paragraph break]As you [b]THINK[r] a bit, you wonder if some things you tried, things that seemed like they should work, might work now.[or]The war pawn glows hot in your hand again. You must've made more progress than you assumed--good time to [b]THINK[r], again.[stopping]";
+				the rule succeeds;
 			say "After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: ";
 			say "[b][first-of-ors of w1 entry]";
 			if there is a w2 entry, say " [first-of-ors of w2 entry]";
