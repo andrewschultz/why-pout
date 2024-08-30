@@ -201,23 +201,17 @@ book Naff Haze
 
 NaffHaze is a privately-named room in universal. "[if sco-nah-phase is false]You're surrounded by some really naff haze. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it[else]Things have opened up a bit now, with the naff haze lifted[end if][if sco-pole-east is true]. You feel less policed, too, and you found a path [b]EAST[r][end if][if sco-grow-star is true].[paragraph break]You got rid of the gross tar blocking your way [b]NORTH[r][end if].". printed name is "[if sco-nah-phase is false]Naff Haze[else]High Plain[end if]".
 
-after printing the locale description for NaffHaze when plane-dir-score is 4 (this is the down-from-naff rule):
-	say "There's also a way [b]DOWN[r] that opened up once you found passages in all cardinal directions.";
-	continue the action;
-
 after printing the locale description for NaffHaze when sco-nah-phase is true and sco-pole-east is false:
 	say "You feel policed here. And it's the mean American gung-ho militarized sort of policed, not the (usually) kinder UK brand. Where and what is this policed feeling coming from?";
 	continue the action;
 
 after printing the locale description for NaffHaze when Bruise Wares is off-stage and current-score >= 20 (this is the show-bruise-wares rule):
-	say "[line break]An ominous new construction appears here. It's called BRUISE WARES. Perhaps you should ignore it. Often one doesn't want to engage that sort of thing. But you may feel that much more accomplished doing so.";
+	say "An ominous new construction appears here. It's called BRUISE WARES. Perhaps you should ignore it. Often one doesn't want to engage that sort of thing. But you may feel that much more accomplished doing so.";
 	move Bruise Wares to NaffHaze;
 	continue the action;
 
-the down-from-naff rule is listed before the show-bruise-wares rule in the after printing the locale description rulebook.
-
 after going to NaffHaze when Bruise Wares is in NaffHaze and sco-treat-all is true:
-	say "[line break]Odd! BRUISE-WARES has vanished. Well, one less dead end to worry about.";
+	say "Odd! BRUISE-WARES has vanished. Well, one less dead end to worry about.";
 	zap-bruise-wares;
 	remove-swear-bonus;
 	continue the action;
@@ -268,6 +262,10 @@ check entering keep iller:
 	say "Going [b]WEST[r] inside the keep...[paragraph break]";
 	try going west instead;
 
+chapter waydown
+
+the waydown is a privately-named thing. description is "You shouldn't see this description, since waydown is privately-named.". "There's also a way [b]DOWN[r] that opened up once you found passages in all cardinal directions.".
+
 chapter Bruise Wares
 
 Bruise Wares is a thing. "BRUISE WARES, some sort of odd disturbing shop, has popped up here. You can probably figure why it's forbidding and such. But perhaps it is only for a certain sort of adventurer.". description is "Looking at BRUISE WARES, it sort of overdoes the whole 'you might not be ready for this' schtick. And, you figure, if you know what's really there, it's not something you will put up with unless you have to.[paragraph break]Seriously, dealing with it is up to you."
@@ -276,6 +274,7 @@ rule for choosing notable locale objects (this is the put followers at the botto
 	repeat with item running through things in location of player:
 		if item is a follower, set the locale priority of the item to 10;
 		if item is Bruise Wares, set the locale priority of the item to 8;
+		if item is waydown, set the locale priority of the item to 9;
 
 check entering Bruise Wares:
 	if sco-brew-swears is false, say "You probably shouldn't go in there until you divine its true meaning." instead;
