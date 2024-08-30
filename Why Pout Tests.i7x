@@ -162,6 +162,21 @@ carry out mising:
 	say "[everfails] fails out of [possfails] possible.";
 	the rule succeeds;
 
+chapter woing
+
+woing is an action out of world.
+
+understand the command "wo" as something new.
+
+understand "wo" as woing.
+
+carry out woing:
+	if player does not have war pawn:
+		say "Getting war pawn...";
+		now player has war pawn;
+	try warponing;
+	the rule succeeds;
+
 Why Pout Tests ends here.
 
 ---- DOCUMENTATION ----
