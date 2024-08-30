@@ -898,7 +898,7 @@ volume appearance
 for printing a locale paragraph about a follower (called fo):
 	if fo is not friendly, continue the action;
 	if fo is mentioned, continue the action;
-	say "[The list of friendly followers in location of player] wait[if not say-plural-followers]s[end if] here for what to do or where to go next.";
+	say "[The list of friendly followers in location of player] wait[if not say-plural-stationary-followers]s[end if] here for what to do or where to go next.";
 	now all friendly followers are mentioned;
 
 volume scores
