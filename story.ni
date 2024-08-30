@@ -210,14 +210,14 @@ after printing the locale description for NaffHaze when sco-nah-phase is true an
 	continue the action;
 
 after printing the locale description for NaffHaze when Bruise Wares is off-stage and current-score >= 20 (this is the show-bruise-wares rule):
-	say "An ominous new construction appears here. It's called BRUISE WARES. Perhaps you should ignore it. Often one doesn't want to engage that sort of thing. But you may feel that much more accomplished doing so.";
+	say "[line break]An ominous new construction appears here. It's called BRUISE WARES. Perhaps you should ignore it. Often one doesn't want to engage that sort of thing. But you may feel that much more accomplished doing so.";
 	move Bruise Wares to NaffHaze;
 	continue the action;
 
 the down-from-naff rule is listed before the show-bruise-wares rule in the after printing the locale description rulebook.
 
 after going to NaffHaze when Bruise Wares is in NaffHaze and sco-treat-all is true:
-	say "Odd! BRUISE-WARES has vanished. Well, one less dead end to worry about.";
+	say "[line break]Odd! BRUISE-WARES has vanished. Well, one less dead end to worry about.";
 	zap-bruise-wares;
 	remove-swear-bonus;
 	continue the action;
@@ -226,6 +226,18 @@ the naff haze is scenery in NaffHaze. "You can't look very far though it. Just l
 
 check going a viable direction in NaffHaze when sco-pole-east is false:
 	say "You'd like to go [noun], but you feel, well, policed." instead;
+
+check going inside in NaffHaze:
+	if sco-nah-phase is false, continue the action;
+	if BRUISE WARES is moot and Brew Swears is visited:
+		say "(BRUISE WARES is no longer available, so I assume you mean the keep.)[paragraph break]";
+		try going west instead;
+	if BRUISE WARES is off-stage:
+		try entering keep iller instead;
+		try going west instead;
+	if room gone to is Brew Swears:
+		say "Your companions stay behind. They recognize this is a spiritual fight for you and you alone.";
+		now block-followers is true;
 
 chapter war pawn
 
@@ -251,11 +263,19 @@ chapter keep iller
 
 the keep iller is a thing. "A keep, iller, rises to the [b]WEST[r][if sco-key-pillar is false], but you see no way in[else], and you figured how to enter it[end if].". description is "It [if keepiller is visited]wasn't[else]doesn't look[end if] dangerous, but then, it's not exactly a tourist attraction. Still, [if keep-score < 6]there's plenty to do there[else]it helped you a lot[end if]."
 
-check entering keep iller: try going west instead;
+check entering keep iller:
+	if sco-key-pillar is false, say "You will enter the keep to the west, once you find a way. But you haven't, yet." instead;
+	say "Going [b]WEST[r] inside the keep...[paragraph break]";
+	try going west instead;
 
 chapter Bruise Wares
 
 Bruise Wares is a thing. "BRUISE WARES, some sort of odd disturbing shop, has popped up here. You can probably figure why it's forbidding and such. But perhaps it is only for a certain sort of adventurer.". description is "Looking at BRUISE WARES, it sort of overdoes the whole 'you might not be ready for this' schtick. And, you figure, if you know what's really there, it's not something you will put up with unless you have to.[paragraph break]Seriously, dealing with it is up to you."
+
+rule for choosing notable locale objects (this is the put followers at the bottom rule):
+	repeat with item running through things in location of player:
+		if item is a follower, set the locale priority of the item to 10;
+		if item is Bruise Wares, set the locale priority of the item to 8;
 
 check entering Bruise Wares:
 	if sco-brew-swears is false, say "You probably shouldn't go in there until you divine its true meaning." instead;
@@ -478,12 +498,6 @@ the wan dwarf is a follower. description is "Short and stocky. It wears glasses 
 book Brew Swears (optional)
 
 Brew Swears is a room in universal. "If you thought Hype Lane was bad, this is even worse.".
-
-check going inside in NaffHaze:
-	if BRUISE WARES is moot, say "BRUISE WARES is no longer available." instead;
-	if room gone to is Brew Swears:
-		say "Your companions stay behind. They recognize this is a spiritual fight for you and you alone.";
-		now block-followers is true;
 
 check going outside in Brew Swears:
 	now block-followers is false;

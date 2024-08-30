@@ -427,7 +427,7 @@ this is the post-key-pillar rule:
 
 to check-worm-eaten:
 	if plane-dir-score is 4:
-		say "[line break]You've changed the landscape a lot, north, south, east and west. But there's more! You hear a rumbling beneath you, and another passage opens up!";
+		say "[line break]You've changed the landscape a lot, north, south, east and west. But there's more! You hear a rumbling beneath you, opening a passage [b]DOWN[r]!";
 		reveal Worm Eaten to down;
 
 section naffhaze scoring
@@ -1050,7 +1050,7 @@ table of noways
 noway-rm	noway-txt
 Eh Raw Air Aww	"[if sco-an-aim is false][one of]'Grey trek? Great wreck!' [or]'I sit? Ice it!' [stopping]you moon. You can't see anywhere. You know almost nothing. I mean, you don't even have a name. What would you do even if there was a passage?[else if number of viable directions is 0]You still can't find anywhere to go, yet. But there seem to be clues where to go, and how, if you look around.[else]You haven't made passage [noun] yet, though you can go [list of viable directions].[end if]"
 Hype Lane	"[if noun is not up]No sense faffing around horizontally. You're sick of being stuck underground[else if sco-pry-stalk is false]You need to find something that will help you go up[else]You need to figure where to go up[end if]."
-NaffHaze	"[if sco-nah-phase is true]You can go any of the cardinal directions, [once-now of whether or not plane-dir-score is 4] you've unblocked them.[else]Too tough to stumble around until the haze lifts, but how?[end if]"
+NaffHaze	"[if sco-nah-phase is true]You can go any of the cardinal directions, [once-now of whether or not plane-dir-score is 4] you've unblocked them.[else]Too tough to stumble around until the haze lifts. How to make that happen?[end if]"
 KeepIller	"Apart from finding a way beyond the seedy sign, the keep doesn't have many twisty passages. Well, any."
 Nigh Fright	"You could leave, but then you'd have to come back. Just figure what to do here."
 Lobe End	"[if sco-low-bend is true]The bend only curves west to north[else]You can only go back west. Well, for now[end if]."
