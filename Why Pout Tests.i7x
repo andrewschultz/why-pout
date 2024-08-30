@@ -4,6 +4,10 @@ Version 1/240816 of Why Pout Tests by Andrew Schultz begins here.
 
 volume IDE tests
 
+chapter warp unit tests
+
+test warpthink with "wo/wo/wo/wo/wo/wo/wo/wo/wo/wo/w/gnome old/e/n/wo/wo/wo/s/w/wo/wo".
+
 chapter building blocks
 
 test tall with "t elf/t raider/t dwarf/t gnome/t rogue/t mice/t troll".

@@ -870,6 +870,8 @@ carry out warponing:
 			say "[b][first-of-ors of w1 entry]";
 			if there is a w2 entry, say " [first-of-ors of w2 entry]";
 			say "[r]...[paragraph break]";
+			if idid entry is false, up-reg;
+			if run-rule entry is post-do-due-mend rule, decrement cur-max-bonus;
 			now idid entry is true;
 			now think-cue entry is false;
 			process the run-rule entry;
@@ -877,7 +879,6 @@ carry out warponing:
 				say "[line break]Keeping war pawn.";
 			else:
 				moot war pawn;
-			up-reg;
 			follow the score and thinking changes rule;
 			the rule succeeds;
 		else if vr is the not-yet outcome:

@@ -37,8 +37,8 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "low"	"bend"	--	--	false	true	true	false	false	lobe end	pre-low-bend rule	post-low-bend rule	--	--
 "bay"	"sail|sale"	--	--	false	true	true	false	false	lobe end	pre-bay-sale rule	post-bay-sale rule	--	"You may be able to participate in a [b]BAY SALE[r] if you've found the right location and [once-now of sco-six-quid] you have money." [?? very detailed fix: we need to set a boolean somehow if this was guessed in Lobe End ]
 "store"	"mile"	--	--	false	true	true	false	false	storm isle	pre-store-mile rule	post-store-mile rule	--	--
-"mice"	"tall"	--	--	false	true	true	false	false	storm isle	pre-mice-tall rule	post-mice-tall rule	--	"You may be able to locate the [b]MICE TALL[r] [here-in of storm isle] [once-now of sco-gnome-old] you have a companion with good perception."
 "mensch"	"elf"	"mensh|mench|munch"	hom-mencsh-elf rule	false	true	true	false	false	storm isle	pre-mensch-elf rule	post-mensch-elf rule	--	--
+"mice"	"tall"	--	--	false	true	true	false	false	storm isle	pre-mice-tall rule	post-mice-tall rule	--	"You may be able to locate the [b]MICE TALL[r] [here-in of storm isle] [once-now of sco-gnome-old] you have a companion with good perception."
 "tree"	"small"	--	--	false	true	true	false	false	trees mall	pre-tree-small rule	post-tree-small rule	--	--
 "tall"	"cake"	--	--	false	true	true	false	false	trees mall	pre-tall-cake rule	post-tall-cake rule	--	"You may be able to create a [b]TALL CAKE[r] [once-now of pre-tall-cake rule] you have ingredients and cooking instruments."
 "treat"	"all"	"awl"	--	false	true	true	false	false	trees mall	pre-treat-all rule	post-treat-all rule	--	"You may be able to [b]TREAT ALL[r] [here-in of trees mall] [once-now of sco-tall-cake] you have a tasty treat."
