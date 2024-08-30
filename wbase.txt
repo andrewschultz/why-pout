@@ -14,16 +14,19 @@ Small obligatory warning: you may wish to try to at least get the first point be
 
 Also, another warning: this doesn't give the best ending. I want to leave that as a challenge.
 
-It also neglects the cheat item that you find once you reach the main area. You should be able to figure what the command for that is, once you see it.
+It also neglects the one-time cheat item that you find once you reach the main area. You should be able to figure what the command for that is, once you see it. You do not get a point for using that command.
 
-Alternate spellings should work as well for many of the solutions. If they don't, let me know. That's easy to add.
+Alternate spellings should work as well for many of the solutions. If they don't, let me know. That's easy to add. It's one of those cases where you see 90% of what you need to, but there are 30 puzzles, so something gets overlooked. And I don't mind adding relatively plausible similar words.
+
+There's also an optional area I won't provide a walkthrough for, because it is totally optional. There's another reason, too. You'll know once you manage to enter it. If you got that far, you'll understand what that area is about.
 
 =============================================
 
-At first, there isn't much to look around at. Maybe at yourself. You can't see much else, anyway, so it's not totally self-centered.
+At first, there isn't much to look around at. Maybe at yourself. You can't see much else, anyway, so it's not totally self-centered to do so. You're not exactly getting a lot of help, here.
 
 You don't have to X ME to get the first point, but X ME may provide a few hints.
 
+There are other ways to figure that first point, too. The game should clue you to use your senses. (SEE doesn't work.) Default Inform verbs also work. If you keep hitting parser errors, a few clue phrases cycle.
 
 
 
@@ -336,6 +339,8 @@ The sea skull needs to be told what's what.
 Finally. You've been waiting all game for this! Or maybe you haven't.
 
 >wipe out (1)
+
+You'll notice that there is why-division, now. There is an alternate ending where you can change it into something better, but I didn't include it here.
 
 Now, to end things. Not with a Doom End but ...
 
