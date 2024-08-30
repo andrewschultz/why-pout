@@ -199,16 +199,22 @@ prize talk is a thing. "You'd like to DO something about the prize talk. Or seek
 
 book Naff Haze
 
-NaffHaze is a privately-named room in universal. "[if sco-nah-phase is false]You're surrounded by some really naff haze. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it[else]Things have opened up a bit now, with the naff haze lifted[end if][if sco-pole-east is true]. You feel less policed, too, and you found a path [b]EAST[r][end if][if sco-grow-star is true].[paragraph break]You got rid of the gross tar blocking your way [b]NORTH[r][end if][if plane-dir-score is 4].[paragraph break]There's also a way [b]DOWN[r] that opened up once you found passages in all cardinal directions[end if].". printed name is "[if sco-nah-phase is false]Naff Haze[else]High Plain[end if]".
+NaffHaze is a privately-named room in universal. "[if sco-nah-phase is false]You're surrounded by some really naff haze. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it[else]Things have opened up a bit now, with the naff haze lifted[end if][if sco-pole-east is true]. You feel less policed, too, and you found a path [b]EAST[r][end if][if sco-grow-star is true].[paragraph break]You got rid of the gross tar blocking your way [b]NORTH[r][end if].". printed name is "[if sco-nah-phase is false]Naff Haze[else]High Plain[end if]".
+
+after printing the locale description for NaffHaze when plane-dir-score is 4 (this is the down-from-naff rule):
+	say "There's also a way [b]DOWN[r] that opened up once you found passages in all cardinal directions.";
+	continue the action;
 
 after printing the locale description for NaffHaze when sco-nah-phase is true and sco-pole-east is false:
 	say "You feel policed here. And it's the mean American gung-ho militarized sort of policed, not the (usually) kinder UK brand. Where and what is this policed feeling coming from?";
 	continue the action;
 
-after printing the locale description for NaffHaze when Bruise Wares is off-stage and current-score >= 20:
+after printing the locale description for NaffHaze when Bruise Wares is off-stage and current-score >= 20 (this is the show-bruise-wares rule):
 	say "An ominous new construction appears here. It's called BRUISE WARES. Perhaps you should ignore it. Often one doesn't want to engage that sort of thing. But you may feel that much more accomplished doing so.";
 	move Bruise Wares to NaffHaze;
 	continue the action;
+
+the down-from-naff rule is listed before the show-bruise-wares rule in the after printing the locale description rulebook.
 
 after going to NaffHaze when Bruise Wares is in NaffHaze and sco-treat-all is true:
 	say "Odd! BRUISE-WARES has vanished. Well, one less dead end to worry about.";
