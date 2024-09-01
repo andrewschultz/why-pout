@@ -6,7 +6,58 @@ volume includes
 
 include Revealing Passages by Andrew Schultz.
 
+volume cheat item stuff
+
+a thing has a number called eyes-number.
+
+a room has a number called eyes-number.
+
+chapter eyeing
+
+the sly size slice eyes are a plural-named thing. eyes-number of sly size slice eyes is 1. printed name is "sly size-slice eyes".
+
+eyering is an action out of world.
+
+understand the command "eye" as something new.
+understand the command "eyes" as something new.
+
+understand "eye" as eyering.
+understand "eyes" as eyering.
+
+eyeing is an action out of world applying to one thing.
+
+understand "eye [thing]" as eyeing.
+understand "eyes [thing]" as eyeing.
+
+eyeguessing a number (called n):
+	if sly size slice eyes are moot, say "But you ditched [the eyes], so you can't [b]EYE[r] any more." instead;
+	if player does not have sly size slice eyes, say "But you don't have what you need to [b]EYE[r] anything." instead;
+	let thing-grammar be whether or not current action is eyering;
+	if n is -1:
+		say "The eyes show nothing. You've done everything you need to [if thing-grammar is true]here[else]with [the noun]." instead;
+	else if n is 0 or n is 1:
+		say "The eyes show nothing. Probably don't need to do anything [if thing-grammar is true]here[else]with [the noun]." instead;
+	say "The eyes show [n / 10] dots, then [remainder after dividing n by 10] dots.";
+
+eyeguessing is a number based rulebook.
+
+carry out eyeing:
+	abide by the eyeguessing rulebook for eyes-number of noun;
+	the rule succeeds;
+
+carry out eyering:
+	abide by the eyeguessing rulebook for eyes-number of location of player;
+	the rule succeeds;
+
+to declue-here: now eyes-number of location of player is -1
+
+to declue (th - a thing): now eyes-number of th is -1
+
 volume new types
+
+section get eyes - not for release
+
+when play begins: now player has eyes;
 
 book followers
 
