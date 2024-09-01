@@ -199,7 +199,7 @@ prize talk is a thing. "You'd like to DO something about the prize talk. Or seek
 
 section stalk
 
-the stalk is a thing. description is "Apparently, it's magical or something, and if you know where you want to go and plant it, it will lead you there.".
+the stalk is a thing. description is "Apparently, it's magical or something, and if you know where you want to go and plant it, it will lead you there.". eyes-number of stalk is -1.
 
 book Naff Haze
 
