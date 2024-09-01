@@ -116,13 +116,17 @@ carry out afing:
 
 volume diagnostics
 
-chapter wling
+chapter pointsmisseding
 
-wling is an action out of world.
+pointsmisseding is an action out of world.
 
-understand the command "wl" as something new.
+understand the command "pm" as something new.
+understand the command "point" as something new.
+understand the command "points" as something new.
 
-understand "wl" as wling.
+understand "pm" as pointsmisseding.
+understand "point" as pointsmisseding.
+understand "points" as pointsmisseding.
 
 to say critopt of (ts - a truth state):
 	if ts is true:
@@ -147,21 +151,21 @@ to track-thinks:
 		if think-cue entry is true and idid entry is false:
 			say "Tried [b][w1 entry in upper case] [w2 entry in upper case][r] but wasn't ready yet.";
 
-carry out wling:
+carry out pointsmisseding (this is the track missed points rule):
 	track-criticals true;
 	track-criticals false;
 	track-thinks;
 	the rule succeeds;
 
-chapter mising
+chapter tting
 
-mising is an action out of world.
+tting is an action out of world.
 
-understand the command "mis" as something new.
+understand the command "tt" as something new.
 
-understand "mis" as mising.
+understand "tt" as tting.
 
-carry out mising:
+carry out tting (this is the show tripthinking rule):
 	let everfails be 0;
 	let possfails be 0;
 	repeat through table of main oronyms:
