@@ -432,6 +432,7 @@ to check-worm-eaten:
 	if plane-dir-score is 4:
 		say "[line break]You've changed the landscape a lot, north, south, east and west. But there's more! You hear a rumbling beneath you, opening a passage [b]DOWN[r]!";
 		reveal Worm Eaten to down;
+		move waydown to naffhaze;
 
 section naffhaze scoring
 
