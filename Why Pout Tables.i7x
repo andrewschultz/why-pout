@@ -222,7 +222,7 @@ a wordtwisting rule (this is the pre-low-bend rule):
 
 this is the post-low-bend rule:
 	now sco-low-bend is true;
-	say "You almost despair for a minute that you reached a dead end so soon. You page through all the possible ways out, proving to yourself you're right, hoping against hope you're wrong.[paragraph break]And looking around, you see youi are! There is a bit more to all this. A very thin and reasonably sloped path north leads down to some water. Which you can't cross at the moment, but maybe you'll figure a way.";
+	say "You almost despair for a minute that you reached a dead end so soon. You page through all the possible ways out, proving to yourself you're right, hoping against hope you're wrong.[paragraph break]And looking around, you see you are! There is a bit more to all this. A very thin and reasonably sloped path north leads down to some water. Which you can't cross at the moment, but maybe you'll figure a way.";
 
 section lobe end scoring
 
@@ -1083,6 +1083,7 @@ this is the score and thinking changes rule:
 		say "[i][bracket]Your score just went up by [if bonus-delt is 1]a bonus point[else][bonus-delt in words] bonus points[end if]![close bracket][r][line break]";
 		now last-cur-bonus is cur-bonus;
 		now last-current-score is last-current-score + bonus-delt;
+		now sco-delt is sco-delt - bonus-delt;
 	if sco-delt > 0:
 		if bonus-delt > 0, say "[line break]";
 		say "[i][bracket]Your score just went up by [if sco-delt is 1]a point[else][sco-delt in words] points[end if]![close bracket][r][line break]";

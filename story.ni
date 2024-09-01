@@ -528,7 +528,7 @@ life-occurs is a swearblob. "The [grinch] take cheap shots and say 'Life occurs.
 
 heh-class is a swearblob. "The [grinch] mock you, or maybe boost themselves, with 'Heh, class!'"
 
-weird-icks is a swearblob. "The [grinch] launch 'Weird! Ick![']s at enmies real and imagined."
+weird-icks is a swearblob. "The [grinch] launch 'Weird! Ick!''s at enemies real and imagined."
 
 bah-sturdy is a swearblob. "The [grinch] shake their heads at you: 'Bah! Sturdy?!'"
 
