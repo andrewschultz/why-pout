@@ -8,6 +8,12 @@ chapter warp unit tests
 
 test warpthink with "wo/wo/wo/wo/wo/wo/wo/wo/wo/wo/w/gnome old/e/n/wo/wo/wo/s/w/wo/wo".
 
+chapter bonus point test(s)
+
+test wb with "brew swears/in/weak us/grin churls/crew dork/out".
+
+test wall with "brew swears/in/weak us/grin churls/crew dork/z/z/z/z/z/z/z/z/bastardy/lie fuckers/huh shit/heckle ass/were dicks/out".
+
 chapter building blocks
 
 test tall with "t elf/t raider/t dwarf/t gnome/t rogue/t mice/t troll".
@@ -19,8 +25,6 @@ test w2 with "pole east/shore trail/s/known ocean/six quid/n". [get the money]
 test w3 with "grow star/n/wool frock/hide out/d/boost role/u/s".
 
 test w4 with "key pillar/w/gnome old/rogue old/plan tracker/see design/knife right/e".
-
-test wb with "brew swears/in/weak us/grin churls/crew dork/out".
 
 test w5 with "d/gaunt raider/u".
 
@@ -44,6 +48,8 @@ chapter longer tests
 test bo with "test w1/test w2/test w3/test w4/test wb".
 
 test a with "test w1/test w2/test w3/test w4/test w5/test w6/test w7/test w8/test w9/test w10/test w11/test w12".
+
+test as with "test w1/test w2/test w3/test w4/test w5/test w6/test wall/test w7/test w8/test w9/test w10/test w11/test w12".
 
 chapter best ending test(s)
 
@@ -71,6 +77,8 @@ test m11 with "do mend/cease cull/wipe out".
 
 test mis with "test m1/test m2/test m3/test m4/test m5/test m6/test m7/test m8/test m9/test m10/test m11/score/wide vision/mis/do mend".
 
+test misbo with "test m1/test m2/test m3/test m4/test m5/test m6/test wall/test m7/test m8/test m9/test m10/test m11/score/wide vision/mis/do mend".
+
 chapter war pawn
 
 test c1 with "purloin war pawn/warp on/warp on/warp on/warp on/warp on/warp on/warp on/warp on/warp on/warp on".
@@ -79,15 +87,17 @@ test c2 with "n/warp on/warp on/d/warp on/u/s/w/warp on/warp on/warp on/warp on/
 
 test c3 with "n/w/warp on/e/e/warp on/warp on/n/warp on/warp on/warp on/n/warp on/s/w/s/w".
 
-test c4 with "n/warp on/in/warp on/warp on/warp on/warp on/warp on/out/s/s/warp on/warp on/warp on".
+test c4 with "n/warp on/in/warp on/warp on/warp on/warp on/warp on/out/s/s/warp on/warp on/warp on/n".
 
-test c5 with "n/d/warp on/u/w/warp on/e/e/n/test tall/warp on/e/n/warp on/s/s/w/s".
+test c5 with "d/warp on/u/w/warp on/e/e/n/test tall/warp on/e/n/warp on/s/s/w/s".
 
 test c6 with "warp on/n/d/warp on/warp on".
 
 test c7 with "d/warp on/warp on/warp on".
 
 test cheat with "test c1/test c2/test c3/test c4/test c5/test c6/test c7".
+
+test cheatbo with "test c1/test c2/test c3/test c4/test wall/test c5/test c6/test c7".
 
 volume cheats
 
