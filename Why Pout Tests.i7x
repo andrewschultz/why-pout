@@ -8,6 +8,10 @@ chapter warp unit tests
 
 test warpthink with "wo/wo/wo/wo/wo/wo/wo/wo/wo/wo/w/gnome old/e/n/wo/wo/wo/s/w/wo/wo".
 
+chapter in IFComp tests
+
+test comp1 with "test w1/test w2/test w3/test w4/l/d/were meetin/think". [A DiBianca: THINK hosed We're Meeting. (Also, TALL CAKE but that's harder to test!)]
+
 chapter bonus point test(s)
 
 test wb with "brew swears/in/weak us/grin churls/crew dork/out".
@@ -67,7 +71,7 @@ test m6 with "n/in/oh flier/the file/grow vial/war file/out/s/s/war file/wan dwa
 
 test m7 with "e/n/mensch elf/n/tree small/treat all".
 
-test m8 with "s/s/w/d/gaunt raider/test tall".
+test m8 with "s/s/w/d/were meetin/gaunt raider/test tall".
 
 test m9 with "tall cake/u/w/manna curb/e/e/n/n/treat all/tall cake/treat all".
 

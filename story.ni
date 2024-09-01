@@ -638,6 +638,7 @@ understand "credits" as creditsing.
 
 carry out creditsing:
 	say "Thanks to Michael Baltes, Clem Bing-Storrs, Wade Clarke, Hanon Ondricek, P. B. Parjeter, Fred Snyder, and Daniel Stelzer for testing. They found stuff I just didn't have the time to find, or stuff I convinced myself I'd checked, honest I did, or even broke down cases for stuff where I was muddled and not sure how to test stuff. Oh and they inspired several ideas, too. It's always hard to ask someone for their time and energy, but I appreciate it so much![paragraph break]Michael, Fred and Daniel have IFComp [']24 entries as well, and I always appreciate being able to trade testing with a fellow competitor, so it doesn't feel cutthroat.";
+	say "[line break]B. J. Best and Arthur DiBianca, who've written a lot of good stuff, both found bugs within two hours of IFComp starting. So thanks to them!";
 	say "[line break]The cover art is my fault, and my fault alone.";
 	say "[line break]GENERAL THANKS:[paragraph break]";
 	say "Thanks to everyone past and future involved in the administration of IFComp.";
