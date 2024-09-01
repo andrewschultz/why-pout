@@ -73,6 +73,7 @@ a wordtwisting rule (this is the pre-two-maps rule):
 this is the post-two-maps rule:
 	now sco-two-maps is true;
 	say "You look around for secrets. You find one line that is a hash of horizontal lines and another that is a hash of vertical lines. You put them together ... and you see a maze. You hope you can trace a passage out. And, with some effort, you do! Then you follow it. You hope it's right, and it leads somewhere better, or at least not as awful...";
+	declue-here;
 	move player to Hype Lane;
 
 section unsorted scoring
@@ -102,6 +103,7 @@ a wordtwisting rule (this is the pre-an-aim rule):
 this is the post-an-aim rule:
 	now sco-an-aim is true;
 	say "Yes. Now that you realize you want more than just to know your name, that you have bigger goals, you push a bit harder when you initially forget it. You remember patches of the past. You remember people harshly calling you by your last name, then your first.[paragraph break]Your name is Mike Orr. You even remember it's -- well, one of these two things: short for Michal, which everyone pronounced Michael until you just gave up, or ... well, Michael.[paragraph break]You look around a bit. You can see more, now. You're in some sort of tomb apse. You could exit--there are exits each way--but you suspect there's some horrible maze you could easily get lost in.";
+	now eyes-number of mike orr is 25;
 	print-the-loc;
 
 section NaffHaze scoring
@@ -118,6 +120,7 @@ this is the post-pole-east rule:
 	say "Ah, yes. It makes sense. You find the pole. Strangely, there's just a single switch to flip. And even more strangely, the switch you flip causes the pole to revert into the ground. Yay![paragraph break]But there's more! A war pawn, like a chess piece, rolls into view. It looks pretty powerful. Maybe you see how to use it, but maybe you shouldn't use it right away.";
 	now player has war pawn;
 	reveal Lobe End to east;
+	declue-here;
 	check-worm-eaten;
 
 a wordtwisting rule (this is the pre-shore-trail rule):
@@ -183,6 +186,10 @@ this is the post-wool-frock rule:
 	now sco-wool-frock is true;
 	say "You rummage about and find a wool frock.";
 	now player has wool frock;
+	if sco-hide-out is false:
+		now eyes-number of Wolf Rock is 43;
+	else:
+		declue-here;
 
 a wordtwisting rule (this is the pre-hide-out rule):
 	if player is not in Wolf Rock, unavailable;
@@ -195,6 +202,7 @@ this is the post-hide-out rule:
 	now sco-hide-out is true;
 	say "It's easy enough to say you should doubt yourself less. I mean, you'd feel stupid doubting it. But there's always a reason not to. Still, you involuntarily start a mantra: 'Fine, doubt? Find out!'[paragraph break]And what do you know? You find a hideout below!";
 	reveal hideout to down;
+	if sco-wool-frock is true, declue-here
 
 a wordtwisting rule (this is the pre-low-door rule):
 	if player is not in Wolf Rock, unavailable;
@@ -210,6 +218,7 @@ this is the post-low-door rule:
 	now sco-low-door is true;
 	say "The lode and the ore are tough to shift around for someone as big as yourself. But the tall mice manage to get into those small niches you can't. They locate a low door, then, point to where you can remove the ore to create a passage. You'll have to duck a bit to get in, but you can now go [b]INSIDE[r]. Hooray!";
 	reveal We Loan to inside;
+	declue lode ore;
 
 section lobe end scoring
 
@@ -223,6 +232,7 @@ a wordtwisting rule (this is the pre-low-bend rule):
 this is the post-low-bend rule:
 	now sco-low-bend is true;
 	say "You almost despair for a minute that you reached a dead end so soon. You page through all the possible ways out, proving to yourself you're right, hoping against hope you're wrong.[paragraph break]And looking around, you see youi are! There is a bit more to all this. A very thin and reasonably sloped path north leads down to some water. Which you can't cross at the moment, but maybe you'll figure a way.";
+	now eyes-number of lobe end is 34;
 
 section lobe end scoring
 
@@ -250,6 +260,7 @@ this is the post-bay-sale rule:
 	move We Craft Weak Raft to lobe end;
 	move water north to Lobe End;
 	reveal Storm Isle to north;
+	declue-here;
 
 section storm isle scoring
 
@@ -266,6 +277,7 @@ this is the post-store-mile rule:
 	move my stall to storm isle;
 	move men shelf to storm isle;
 	reveal Trees Mall to north;
+	declue-here;
 
 a wordtwisting rule (this is the pre-mice-tall rule):
 	if player is not in storm isle, unavailable;
@@ -314,6 +326,7 @@ this is the post-tree-small rule:
 	say "Amidst all the fake trees, an actual organic small tree grows. You're a bit disappointed, but you realize you maybe shouldn't have expected much with so little letter-shuffling. Maybe if you want a bigger tree, you'll need to do something else.";
 	move tree small to Trees Mall;
 	if player has grow vial, say "[line break]";
+	declue-here;
 	grow-the-tree;
 
 a wordtwisting rule (this is the pre-tall-cake rule):
@@ -353,6 +366,7 @@ this is the post-treat-all rule:
 	now sco-treat-all is true;
 	say "Well, that felt good. You trade more ideas while chatting. You think you have about everything figured out, now.";
 	moot tall cake;
+	declue tree tall;
 
 section hype lane scoring
 
@@ -379,6 +393,7 @@ this is the post-pry-stalk rule:
 	now sco-pry-stalk is true;
 	now player has stalk;
 	say "Among all the chatter, you discover a disused booth. Someone is preaching on about environmental stuff, and it's so much less painful than cell phone chat. You worry they're just going to blab on forever, but they're so grateful you listened as long as you did. They hand you a stalk they think can grow quickly. Their own special formula. It looks weird and glittery, and if anything can reach up out of here, this can. But the question is, where can it grow to?";
+	declue prize talk;
 
 a wordtwisting rule (this is the pre-high-plain rule):
 	if player is not in hype lane, unavailable;
@@ -391,6 +406,7 @@ this is the post-high-plain rule:
 	now sco-high-plain is true;
 	say "You plant the stalk, which -- well, it's already a bit of a stalk, but it grows quickly and sturdily. It's not hard at all to climb. You are pretty sure you're aboveground, but it's hard to see for sure.";
 	moot stalk;
+	declue-here;
 	move player to NaffHaze;
 
 section naff haze testing
@@ -413,6 +429,7 @@ this is the post-nah-phase rule:
 	move gross tar to NaffHaze;
 	move keep iller to NaffHaze;
 	try looking; [pole east is implicitly moved that way]
+	now eyes-number of NaffHaze is 44; [pole east]
 
 a wordtwisting rule (this is the pre-key-pillar rule):
 	if player is not in NaffHaze, unavailable;
@@ -426,6 +443,7 @@ this is the post-key-pillar rule:
 	now sco-key-pillar is true;
 	say "You look around the pillars for a key, since there's no flowerpot to hide it under. You find one, and you open the way west.";
 	reveal KeepIller to west;
+	declue keep iller;
 	check-worm-eaten;
 
 to check-worm-eaten:
@@ -462,6 +480,7 @@ this is the post-known-ocean rule:
 	say "Ah, yes. Things clear up a bit now. There we go ... you see where an ocean should be, and ... yes, you dip your toe in some wetness. Things clear up. You even see a sick squid! Maybe you can help it.";
 	move sick squid to NoNotion;
 	move ocean to NoNotion;
+	declue-here;
 
 a wordtwisting rule (this is the pre-six-quid rule):
 	if player is not in nonotion, unavailable;
@@ -475,6 +494,7 @@ this is the post-six-quid rule:
 	now sco-six-quid is true;
 	say "You have an idea what is bothering the squid. Yes, a few coins stuck. Surprisingly, it lets you help out. 'Current, sea, currency,' you mutter as you poke around. Ah, there you go.[paragraph break]You offer to give it some of the coins it almost choked on, but it does not need them. It seems to wait around, as if to help you with travel to places you may get to go. It's willing to wait.[paragraph break]";
 	now current-quid is 6;
+	declue sick squid;
 
 [to check-squid-flier:
 	if player has maps:
@@ -505,6 +525,11 @@ this is the post-the-file rule:
 	conditional-flier-mangle;
 
 to conditional-flier-mangle:
+	if flier-isle-score is 2:
+		if sco-grow-vial is false:
+			now eyes-number of flier is 44;
+		else: [maybe not necessary but I don't want things going bad if I change flier's default eyes-number]
+			now eyes-number of flier is 34;
 	if flier-isle-score is 3:
 		say "[line break]You've visited all the locations in the flier. You crumple it up as if to throw it in a trash bin. The squid makes a gesture as if it wishes to gobble the flier. You're worried it might choke on the flier, as it did for the quid, but then -- well, the water washes the paper brochure down. Odd, but hooray for clearer inventory.";
 		moot flier;
@@ -555,6 +580,7 @@ this is the post-wan-dwarf rule:
 	now sco-wan-dwarf is true;
 	say "You look around and uncover a wan dwarf who wasn't good enough to be a full fighter but rejected for magic training. You explain your situation. They're all in![paragraph break]There's not much left to do here, so you ride the squid back.";
 	befriend wan dwarf;
+	declue-here;
 	move player to NoNotion;
 	now block-followers is false;
 	conditional-flier-mangle;
@@ -575,6 +601,7 @@ this is the post-well-own rule:
 	now sco-well-own is true;
 	say "Yes. There's a definite shady side. You mumble to yourself, and then your mumbles get louder, and it attracts ... some merchant. They begin babbling about deals they have, fake-friendly, about how you can buy low.";
 	move some merchant to We Loan;
+	now eyes-number of We Loan is 44;
 
 a wordtwisting rule (this is the pre-summer-chant rule):
 	if player is not in we loan or merchant is not in we loan, unavailable;
@@ -619,6 +646,7 @@ this is the post-whee-lone rule:
 	now sco-whee-lone is true;
 	say "You enjoy your solitude, but ... wait. You lose track of time, and an oaf liar slips in just to babble at you.";
 	move oaf liar to we loan;
+	declue-here;
 
 a wordtwisting rule (this is the pre-oh-flier rule):
 	if player is not in we loan or oaf liar is not in we loan, unavailable;
@@ -679,6 +707,7 @@ this is the post-rogue-old rule:
 	now sco-rogue-old is true;
 	say "A rogue, old, arrives. They mention they'd like to help you but, you know, the row (gold) needs maintenance. You offer to pay them three quid..";
 	befriend rogue old;
+	declue row gold;
 	quid-reduce 3;
 
 to quid-reduce (nu - a number):
@@ -704,6 +733,7 @@ this is the post-manna-curb rule:
 	now sco-manna-curb is true;
 	say "You suspect there is manna beneath the manic herb, but you have no clue how to find it. Thankfully, the mensch elf steps up. You wind up with a lot of manna, whatever that is!";
 	now player has manna;
+	declue manic herb;
 
 a wordtwisting rule (this is the pre-plan-tracker rule):
 	if player is not in keepiller or plant racker is not touchable, unavailable;
@@ -732,6 +762,7 @@ this is the post-see-design rule:
 	now sco-see-design is true;
 	now block-followers is true;
 	say "You see the design in the seedy sign. It leads somewhere scary. Somewhere you don't want your friends to visit. Though you appreciate their support. You'll be right back. You think. You hope.";
+	declue seedy sign;
 	move player to Nigh Fright;
 
 section nigh fright scoring
@@ -745,6 +776,7 @@ this is the post-knife-right rule:
 	say "With your friends boosting your spirits, you look for a sacred/profane weapon. It turns up. Eerie howling begins. You hightail it out of there.";
 	now player has knife right;
 	now block-followers is false;
+	declue-here;
 	drop-player-at KeepIller;
 
 section worm eaten scoring
@@ -784,6 +816,7 @@ this is the hom-whirr-meetin rule:
 this is the post-were-meetin rule:
 	now sco-were-meetin is true;
 	say "You meet with the friends you've made over your adventure. You all have one goal in mind. And yet you don't have a rallying cry. Perhaps it can come from within you.";
+	declue-here;
 
 section worm eaten scoring
 
@@ -814,6 +847,7 @@ this is the post-my-corps rule:
 	now sco-my-corps is true;
 	say "Your pep talk brings everyone together. They are ready for ... well, whatever is next. This feels like the right place. You clear out a passage below. You swear a solemn pact that everyone will defend everyone else, regardless of what happens.";
 	now Doom Ending is mapped below Worm Eaten;
+	declue Mike Orr;
 
 chapter Doom Ending scoring
 
@@ -878,6 +912,7 @@ a wordtwisting rule (this is the pre-weak-us rule):
 this is the post-weak-us rule:
 	now sco-weak-us is true;
 	say "You're surprised how just making a little shift can make the [grinch] seem much weaker. Their strength is the sort of brute force that doesn't life other people up.[paragraph break]They throw down the gauntlet at this point. Don't you know cussing shows higher intelligence? Some study or other showed that![paragraph break]The crude orc looks back and forth between you and the [grinch].";
+	declue-here;
 
 a wordtwisting rule (this is the pre-grin-churls rule):
 	if player is not in brew swears, unavailable;
@@ -889,6 +924,7 @@ a wordtwisting rule (this is the pre-grin-churls rule):
 this is the post-grin-churls rule:
 	now sco-grin-churls is true;
 	say "You slip in a few sly digs and say 'grin, churls.' It's not fatal, but they look annoyed.";
+	declue grinch earls;
 
 a wordtwisting rule (this is the pre-crew-dork rule):
 	if player is not in brew swears, unavailable;
@@ -904,6 +940,7 @@ this is the post-crew-dork rule:
 	now sco-crew-dork is true;
 	say "You break the truth gently to the crude orc that, well, they're at the bottom of the totem pole for this crew. They'll use the crude orc, maybe even not let them into the clique, and then find the next sucker. The [grinch] surprisingly have little response to this besides, well, profanity.[paragraph break]You sense your job here is done, though you can continue to deflect profanity if you want.";
 	befriend crude orc;
+	declue crude orc;
 
 a wordtwisting rule (this is the pre-huh-shit rule):
 	if player is not in brew swears, unavailable;
