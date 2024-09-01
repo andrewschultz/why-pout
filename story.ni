@@ -532,6 +532,10 @@ weird-icks is a swearblob. "The [grinch] launch 'Weird! Ick![']s at enmies real 
 
 bah-sturdy is a swearblob. "The [grinch] shake their heads at you: 'Bah! Sturdy?!'"
 
+section swearblob sorting alphabetically - not for release
+
+alphorder of bah-sturdy is 1. alphorder of heh-class is 2. alphorder of hush-it is 3. alphorder of life-occurs is 4. alphorder of weird-icks is 5.
+
 volume endgame rooms
 
 book Worm Eaten

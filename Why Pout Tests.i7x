@@ -166,6 +166,30 @@ carry out mising:
 	say "[everfails] fails out of [possfails] possible.";
 	the rule succeeds;
 
+chapter aoing
+
+ever-swear-sorted is a truth state that varies.
+
+aoing is an action out of world.
+
+understand the command "ao" as something new.
+
+understand "ao" as aoing.
+
+carry out aoing:
+	if sco-weak-us is true:
+		if player is not in brew swears, say "It's too late to test anything when we re-sort the list count." instead;
+		say "Resetting the list counter to 0 as well...[paragraph break]";
+		now swear-index is 0;
+	if ever-swear-sorted is true:
+		say "You already un-random-sorted the list, but no harm in doing so again.";
+	else:
+		say "Un-random-sorting the list.";
+	now ever-swear-sorted is true;
+	sort swears-order in alphorder order;
+	say "[line break]The new list is [swears-order].";
+	the rule succeeds;
+
 chapter woing
 
 woing is an action out of world.
