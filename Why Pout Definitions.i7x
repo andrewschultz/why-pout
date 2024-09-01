@@ -73,20 +73,28 @@ book swearblobs
 
 a swearblob is a kind of thing. a swearblob is usually privately-named. a swearblob is usually scenery. a swearblob has text called swear-indicate-text.
 
+most-recent-swear is a swearblob that varies.
+
 swear-index is a number variable. swear-index is 0.
 
-x is a list of things variable.
+swears-order is a list of things variable.
 
 when play begins:
-	now x is the list of swearblobs;
-	sort x in random order;
+	now swears-order is the list of swearblobs;
+	sort swears-order in random order;
 
-every turn when player is in brew swears and sco-weak-us is true and number of entries in x > 0:
+most-recent-swear is a swearblob that varies.
+
+every turn when player is in brew swears and sco-weak-us is true and number of entries in swears-order > 0 (this is the cycle swears randomly rule):
 	increment swear-index;
-	if swear-index > number of entries in x, now swear-index is 1;
-	let my-swear be entry swear-index in x;
-	if my-swear is not in brew, move my-swear to brew;
-	say "[description of my-swear][line break]";
+	if swear-index > number of entries in swears-order, now swear-index is 1;
+	now most-recent-swear is entry swear-index in swears-order;
+	if most-recent-swear is not in brew, move most-recent-swear to brew;
+	say "[one of]Your observation has caused something to 'righteously' snap in the [grinch]. And boy, are they going to firehose you with their 'best!'[paragraph break][or][stopping][description of most-recent-swear][line break]";
+
+chapter alphorder - not for release
+
+a swearblob has a number called alphorder.
 
 volume stubs
 

@@ -878,6 +878,7 @@ a wordtwisting rule (this is the pre-weak-us rule):
 this is the post-weak-us rule:
 	now sco-weak-us is true;
 	say "You're surprised how just making a little shift can make the [grinch] seem much weaker. Their strength is the sort of brute force that doesn't life other people up.[paragraph break]They throw down the gauntlet at this point. Don't you know cussing shows higher intelligence? Some study or other showed that![paragraph break]The crude orc looks back and forth between you and the [grinch].";
+	follow the cycle swears randomly rule;
 
 a wordtwisting rule (this is the pre-grin-churls rule):
 	if player is not in brew swears, unavailable;
