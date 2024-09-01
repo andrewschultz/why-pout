@@ -41,7 +41,7 @@ test w10 with "test tall/t orc/tall cake/treat all".
 
 test w11 with "s/s/w/s/the file/n".
 
-test w12 with "d/were meetin/my corps/d/cease cull/wipe out/wl/do mend".
+test w12 with "d/were meetin/my corps/d/cease cull/wipe out/do mend/pm".
 
 chapter longer tests
 
@@ -75,9 +75,9 @@ test m10 with "s/s/w/s/the file/n/d/were meetin/my corps/d".
 
 test m11 with "do mend/cease cull/wipe out".
 
-test mis with "test m1/test m2/test m3/test m4/test m5/test m6/test m7/test m8/test m9/test m10/test m11/score/wide vision/mis/do mend".
+test tt with "test m1/test m2/test m3/test m4/test m5/test m6/test m7/test m8/test m9/test m10/test m11/score/wide vision/do mend/tt".
 
-test misbo with "test m1/test m2/test m3/test m4/test m5/test m6/test wall/test m7/test m8/test m9/test m10/test m11/score/wide vision/mis/do mend".
+test ttbo with "test m1/test m2/test m3/test m4/test m5/test m6/test wall/test m7/test m8/test m9/test m10/test m11/score/wide vision/do mend/tt".
 
 chapter war pawn
 
@@ -218,6 +218,13 @@ carry out woing:
 		now player has war pawn;
 	try warponing;
 	the rule succeeds;
+
+volume final question options for debug only
+
+table of final question options (continued)
+final question wording	only if victorious	topic	final response rule	final response activity
+"see rules that tripped [b]THINK[r] with [b]TT[r]" 	true	"tt/think"	show tripthinking rule	--
+"see points missed with [b]PM[r]/[b]POINT[r]/[b]POINTS[r]" 	true	"pm/point/points"	track missed points rule	--
 
 Why Pout Tests ends here.
 
