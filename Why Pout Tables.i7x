@@ -377,6 +377,7 @@ a wordtwisting rule (this is the pre-pry-stalk rule):
 
 this is the post-pry-stalk rule:
 	now sco-pry-stalk is true;
+	now player has stalk;
 	say "Among all the chatter, you discover a disused booth. Someone is preaching on about environmental stuff, and it's so much less painful than cell phone chat. You worry they're just going to blab on forever, but they're so grateful you listened as long as you did. They hand you a stalk they think can grow quickly. Their own special formula. It looks weird and glittery, and if anything can reach up out of here, this can. But the question is, where can it grow to?";
 
 a wordtwisting rule (this is the pre-high-plain rule):
@@ -389,6 +390,7 @@ a wordtwisting rule (this is the pre-high-plain rule):
 this is the post-high-plain rule:
 	now sco-high-plain is true;
 	say "You plant the stalk, which -- well, it's already a bit of a stalk, but it grows quickly and sturdily. It's not hard at all to climb. You are pretty sure you're aboveground, but it's hard to see for sure.";
+	moot stalk;
 	move player to NaffHaze;
 
 section naff haze testing
@@ -405,6 +407,7 @@ this is the hom-nah-phaze rule:
 
 this is the post-nah-phase rule:
 	now sco-nah-phase is true;
+	moot naff haze;
 	say "The haze seemed too thick at first. But you recognize it doesn't have to be there. As you sift through it, you notice things that weren't there before. It lifts.";
 	move short rail to NaffHaze;
 	move gross tar to NaffHaze;
