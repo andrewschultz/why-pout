@@ -181,6 +181,41 @@ carry out woing:
 	try warponing;
 	the rule succeeds;
 
+chapter ediaging
+
+ediaging is an action out of world.
+
+understand the command "ediag" as something new.
+
+understand "ediag" as ediaging.
+
+carry out ediaging:
+	let count be 0;
+	repeat with X running through rooms:
+		if player is in doom ending:
+			if X is doom ending, next;
+			if eyes-number of X > 1 or eyes-number of X < -1:
+				increment count;
+				say "[count] At the end of the game, [x] should have a value of -1 or 1.";
+				next;
+		if eyes-number of X is 0:
+			increment count;
+			say "[count] Assign eyes-number to room [X].";
+	if count is 0, say "All rooms fixed!";
+	now count is 0;
+	repeat with X running through things:
+		if player is in doom ending:
+			if eyes-number of X > 1 or eyes-number of X < -1:
+				if X is not moot:
+					increment count;
+					say "[count] At the end of the game, [x] should have a value of -1 or 1.";
+					next;
+		if eyes-number of X is 0:
+			increment count;
+			say "[count] Assign eyes-number to thing [X].";
+	if count is 0, say "All things fixed!";
+	the rule succeeds;
+
 Why Pout Tests ends here.
 
 ---- DOCUMENTATION ----
