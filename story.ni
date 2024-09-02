@@ -239,7 +239,7 @@ check going inside in NaffHaze:
 
 chapter war pawn
 
-the war pawn is a thing. description is "Looking at it from many different angles gets you all sorts of weird ideas. Perhaps it could help you when you run out of them on your quest. You may wish to wait until you really need to use it, though of course, you don't want to wait too late.".
+the war pawn is a thing. description is "It's a grey chess pawn with a frown and mean glare carved in the rounded top. If it had fists, you are pretty sure they'd be doubled up in a fighting posture, but it doesn't even have arms.[paragraph break]Looking at it from many different angles gets you all sorts of weird ideas. Perhaps it could help you when you run out of them on your quest. You may wish to wait until you really need to use it, though of course, you don't want to wait too late.".
 
 after examining war pawn for the first time:
 	say "If you want to resist the temptation of this cheat item, [b]DROP[r] it. There is no penalty for using it.";

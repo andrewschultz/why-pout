@@ -6,19 +6,19 @@ Why Pout was meant to be smaller than my usual IFComp efforts. It has 44 puzzle 
 
 This walkthrough attempts to be optimal. However, I may have missed ways to save a move here or there.
 
-It also parrots my test commands in the file Why Pout.i7x.
+It also parrots my test commands (w1-w12) in the file Why Pout Tests.i7x.
 
-You can find the source with hidden fun at https://github.com/andrewschultz/why-pout, and any issues can be reported there.
+You can find the source at https://github.com/andrewschultz/why-pout, and any issues can be reported there.
 
 Small obligatory warning: you may wish to try to at least get the first point before spoiling things. That's why there's a lot of introductory text here, as well as extra lines.
 
-Also, another warning: this doesn't give the best ending. I want to leave that as a challenge.
+Also, another warning: this doesn't give the very-best ending. You can, in fact, keep the gang together after defeating the big baddie. I want to leave that as a challenge.
 
 It also neglects the one-time cheat item that you find once you reach the main area. You should be able to figure what the command for that is, once you see it. You do not get a point for using that command.
 
 Alternate spellings should work as well for many of the solutions. If they don't, let me know. That's easy to add. It's one of those cases where you see 90% of what you need to, but there are 30 puzzles, so something gets overlooked. And I don't mind adding relatively plausible similar words.
 
-There's also an optional area I won't provide a walkthrough for, because it is totally optional. There's another reason, too. You'll know once you manage to enter it. If you got that far, you'll understand what that area is about.
+There's also an optional area I won't provide a walkthrough for, because it does not affect the final ending in any way besides "you missed a point or two." In fact, there is no MISSED command at the end of the game for it. There's a reason for this, and I think it's a decent one. You'll know once you manage to enter it. If you got that far, you'll understand what that area is about. If you really want to know everything, you can find the answers in the source code or test scripts.
 
 =============================================
 
@@ -340,11 +340,13 @@ Finally. You've been waiting all game for this! Or maybe you haven't.
 
 >wipe out (1)
 
-You'll notice that there is why-division, now. There is an alternate ending where you can change it into something better, but I didn't include it here.
+You'll notice that there is why-division, now. There is an alternate ending where you can change it into something better, but you're locked out of it at this moment.
 
 Now, to end things. Not with a Doom End but ...
 
->do mend (1)
+>do mending (1)
 
-"Due" also works. I hope you enjoyed this!
+"Due mend/mending" or "do mend" also works. Trivia: the room was originally called Doom End, but Ending seemed to give a clearer puzzle answer.
+
+I hope you enjoyed this!
 
