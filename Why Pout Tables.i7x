@@ -30,9 +30,9 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "low"	"door"	--	--	false	true	true	false	false	Wolf Rock	pre-low-door rule	post-low-door rule	--	"You may be able to find a [b]LOW DOOR[r] [here-in of Wolf Rock] [once-now of sco-mice-tall] you have a companion or companions that are small enough to dig a bit better."
 "well"	"own"	"wheel"	hom-wheel-own rule	false	true	true	false	false	we loan	pre-well-own rule	post-well-own rule	--	--
 "summer"	"chant"	--	--	false	true	true	false	false	we loan	pre-summer-chant rule	post-summer-chant rule	--	--
-"bile"	"oh|o"	"owe"	hom-owe-flyer rule	false	true	true	false	false	we loan	pre-bile-oh rule	post-bile-oh rule	--	"You may be able to expose some merchant's [b]BILE OH[r] [once-now of sco-summer-chant] you find something positive to say to prep yourself."
+"bile"	"oh|o"	"owe"	hom-bile-owe rule	false	true	true	false	false	we loan	pre-bile-oh rule	post-bile-oh rule	--	"You may be able to expose some merchant's [b]BILE OH[r] [once-now of sco-summer-chant] you find something positive to say to prep yourself."
 "whee"	"lone"	"wee|loan"	--	false	true	true	false	false	we loan	pre-whee-lone rule	post-whee-lone rule	--	"You may be able to enjoy your solitude with [b]WHEE LONE[r] [here-in of we loan] [once-now of sco-bile-oh] you actually have solitude."
-"oh"	"flier|flyer"	"owe"	--	false	true	true	false	false	we loan	pre-oh-flier rule	post-oh-flier rule	--	"You may be able to say [b]OH FLIER[r] around the oaf liar [if current-quid is 0]once you've got some money[else if gs-overpay-flier is true][once-now of whether or not current-quid is 1] you have exactly one quid left[else]since you have money[end if]."
+"oh"	"flier|flyer"	"owe"	hom-owe-flier rule	false	true	true	false	false	we loan	pre-oh-flier rule	post-oh-flier rule	--	"You may be able to say [b]OH FLIER[r] around the oaf liar [if current-quid is 0]once you've got some money[else if gs-overpay-flier is true][once-now of whether or not current-quid is 1] you have exactly one quid left[else]since you have money[end if]."
 "boost"	"role"	"roll"	--	false	true	true	false	false	hideout	pre-boost-role rule	post-boost-role rule	--	--
 "low"	"bend"	--	--	false	true	true	false	false	lobe end	pre-low-bend rule	post-low-bend rule	--	--
 "bay"	"sail|sale"	--	--	false	true	true	false	false	lobe end	pre-bay-sale rule	post-bay-sale rule	--	"You may be able to participate in a [b]BAY SALE[r] if you've found the right location and [once-now of sco-six-quid] you have money." [?? very detailed fix: we need to set a boolean somehow if this was guessed in Lobe End ]
@@ -595,8 +595,8 @@ a wordtwisting rule (this is the pre-bile-oh rule):
 		not-yet;
 	ready;
 
-this is the hom-owe-flyer rule:
-	say "You don't owe the oaf liar anything, and they don't owe you a flier, even if they might be wasting your time. How to call attention to a flier, though?"
+this is the hom-bile-owe rule:
+	say "Neither you nor the merchant owe each other anything, for better or for worse. You're close. Perhaps you should just  see things as they are and emote slightly."
 
 this is the post-bile-oh rule:
 	now sco-bile-oh is true;
@@ -622,7 +622,8 @@ this is the post-whee-lone rule:
 	move oaf liar to we loan;
 
 a wordtwisting rule (this is the pre-oh-flier rule):
-	if player is not in we loan or oaf liar is not in we loan, unavailable;
+	if player is not in we loan, unavailable;
+	if oaf liar is not in we loan, unavailable;
 	if sco-six-quid is false:
 		vcp "[one of]You notice a flier behind their back, and you nudge them as if to say, can I have it for free? No, no, you cannot[or]You still haven't found any way to pay for the flier[stopping].";
 		not-yet;
@@ -630,6 +631,9 @@ a wordtwisting rule (this is the pre-oh-flier rule):
 		vcp "[opflier]You try and pull out one quid, but you wind up pulling them all out. The oaf liar's eyes get big. And you instinctively say, no, I'm not getting taken like that.[paragraph break]'Have it your way. Information's valuable. Don't try to lowball me.'";
 		not-yet;
 	ready;
+
+this is the hom-owe-flier rule:
+	say "You don't owe the oaf liar anything, and they don't owe you a flier, even if they might be wasting your time. How to call attention to a flier, though?"
 
 to say opflier:
 	now gs-overpay-flier is true;
@@ -986,7 +990,10 @@ rule for printing a parser error (this is the check forks rule):
 		if partial-now is true:
 			say "A voice in your head encourages you: 'Seem, or see, more!' You've got SOMETHING right, here.";
 		else:
-			say "Not much happens, but you feel like that might help with something way down the road, at least halfway.";
+			if debug-state is true:
+				choose row partial-row in table of main oronyms;
+				say "([check-rule entry] tripped) ";
+			say "Not much happens, but you feel like that might help, at least halfway, some time later. Much later, or just a little, you can't tell.";
 		the rule succeeds;
 	if got-partial-done is true:
 		say "Hmm, no, you already did that, or something like that. You'll know if and when you need to flip between things.";
