@@ -49,7 +49,7 @@ test w10 with "test tall/t orc/tall cake/treat all".
 
 test w11 with "s/s/w/s/the file/n".
 
-test w12 with "d/were meetin/my corps/d/cease cull/wipe out/do mend/pm".
+test w12 with "d/were meetin/my corps/d/cease cull/wipe out/do mending/pm".
 
 chapter longer tests
 
@@ -127,9 +127,15 @@ to track-criticals (ts - a truth state):
 		say "Got all [critopt of ts] points."
 
 to track-thinks:
+	let unreadies be 0;
 	repeat through table of main oronyms:
 		if think-cue entry is true and idid entry is false:
+			increment unreadies;
 			say "Tried [b][w1 entry in upper case] [w2 entry in upper case][r] but wasn't ready yet.";
+	if unreadies > 0:
+		say "[unreadies] point-scoring command[if unreadies is 1]s[end if] tried before you were ready.";
+	else:
+		say "No commands in THINK limbo."
 
 carry out pointsmisseding (this is the track missed points rule):
 	track-criticals true;
@@ -138,6 +144,8 @@ carry out pointsmisseding (this is the track missed points rule):
 	the rule succeeds;
 
 chapter tting
+
+[ think tripping - which commands did we trip? ]
 
 tting is an action out of world.
 
@@ -161,6 +169,8 @@ carry out tting (this is the show tripthinking rule):
 	the rule succeeds;
 
 chapter aoing
+
+[this sorts the swear list, ao=alphabetical order, so I can run fixed tests]
 
 ever-swear-sorted is a truth state that varies.
 
@@ -186,6 +196,8 @@ carry out aoing:
 
 chapter woing
 
+[because I got too lazy to type PURLOIN WAR and then WARP ON a lot, even with the up-arrow.]
+
 woing is an action out of world.
 
 understand the command "wo" as something new.
@@ -199,7 +211,9 @@ carry out woing:
 	try warponing;
 	the rule succeeds;
 
-volume final question options for debug only
+volume final question options for testing only
+
+[A small hook so the test scripts can try diagnostics once the game is won.]
 
 table of final question options (continued)
 final question wording	only if victorious	topic	final response rule	final response activity
