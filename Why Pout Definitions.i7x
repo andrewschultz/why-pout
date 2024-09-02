@@ -6,6 +6,12 @@ volume includes
 
 include Revealing Passages by Andrew Schultz.
 
+volume game specific definitions
+
+definition: a rule (called ru) is thinkblocking:
+	if ru is pre-wide-vision rule, yes;
+	no;
+
 volume new types
 
 book followers
@@ -131,6 +137,13 @@ to decide which number is pre-acts:
 	repeat through table of main oronyms:
 		if everfail entry is true, increment return-value;
 	decide on return-value;
+
+to decide which number is thinkcue-index:
+	let WVRE be number of entries in wide-vision-rejects;
+	if pre-acts is 0, decide on 1;
+	if pre-acts is pre-max - 1, decide on WVRE;
+	[say "[pre-acts - 1] * [WVRE - 2] / [pre-max - 2] = ";]
+	decide on 2 + (((pre-acts - 1) * (WVRE - 2)) / (pre-max - 2)); [the arithmetic here is, 1 THINK cue starts you at 2, while 19 THINK cues of 20 end you at exactly 11 = # of WVR. 1->2, 19->11.]
 
 when play begins:
 	repeat through table of main oronyms:

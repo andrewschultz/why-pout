@@ -836,7 +836,7 @@ a wordtwisting rule (this is the pre-wide-vision rule):
 	if player is not in doom ending, unavailable;
 	if why division is not in doom ending, unavailable;
 	if pre-acts < pre-max:
-		vcp "[remove-widevision-bonus][one of]You try to declare a wide vision, but sadly you trip yourself up a bit. Wide vision? Why division? You get tripped up on spelling and pronunciation details, and you just can't fight through them. Perhaps if you'd fought through more setbacks, you might be able to, but you can't, right now[or]You are unable to express your wide vision. You'll have to settle for just repairing things pretty well[stopping].";
+		vcp "[remove-widevision-bonus][one of]You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.[paragraph break][entry thinkcue-index of wide-vision-rejects][line break][or]You are unable to express your wide vision. You'll have to settle for just repairing things pretty well.[line break][stopping]";
 		not-yet;
 	ready;
 

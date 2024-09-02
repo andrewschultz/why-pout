@@ -28,6 +28,22 @@ first-point-clue-flag is a number that varies.
 
 counter-zero-points is a number that varies.
 
+section list but not quite table
+
+wide-vision-rejects is a list of text variable. wide-vision-rejects is {
+  "You come off as someone who just glided through things, knowing exactly what to do, when and where, encountering little, if any, REAL adversity. Surely, your companions muse, you'll be able to get the whole leadership thing right without them! It stings a bit.",
+  "You only barely got your feet wet with tough problems. You come off as someone who is way too concerned about getting things right the first time.",
+  "You mention a few detours you had, and the wisdom you allegedly gained from them, but mentioning them does feel sort of like pandering.",
+  "You had some struggles beyond just 'what do do now,' sure, and said struggles were interesting, but your companions had many, many more. Your words feel inadequate.",
+  "You relate how some of the time, you had to put off what you really wanted to do for something else, but you have to admit, there weren't all that many roadblocks. There could have been more. Maybe you zoomed past a few.",
+  "While you often ran into situations where you felt unprepared, and there was a good deal of temporary failure along the way, you wound up seeing and feeling nothing crushing from all this delay and distraction. So you don't communicate your vision of growth all that well.",
+  "You've had struggles figuring what to do, sure, but so have they, and the dialogue degenerates into who struggled more. Nothing gets done.",
+  "You look back on your journey, bringing up many hurdles and barriers, mental and physical. It doesn't totally hit the mark. Your companions assure you you've inspired them to do something someday. But your store hasn't quite captured their imaginations and hearts.",
+  "You're pretty good with words. (You had to be, to make it this far.) You learned what to say, and then you learned when and how. But you haven't quite learned enough to persuade your companions your leadership should carry over.",
+  "You discuss your journey and its ups and downs. It seems like you have just about everyone on board. They want to put their doubts aside, but for whatever reason, they just can't quite go along with you.",
+  "You make your sales pitch for more than just saving one's own skin. And it's more than a sales pitch! You try not to worry whether you have a captive audience, and you don't, until -- one small glib slip, where you were pretty sure you had to be right, but you weren't. Ouch. Your companions say there's nobody else they'd rather have lead them. Why, they look up to you almost as much as their parents! It hurts them to move on. And the issue is finely balanced. But they'll need to, with things done here. They'll take this lesson back to their villages, or wherever. Honest they will!"
+}
+
 volume point scoring variables
 
 pre-max is a number that varies. [determined in DEFINITIONS so I don't have to keep processing it, since it remains constant throughout the game]
