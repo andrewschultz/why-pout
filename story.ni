@@ -863,7 +863,8 @@ understand the command "warp on" as something new.
 understand "warp on" as warponing.
 
 carry out warponing:
-	let say-later be false;
+	let flag-almost-cheat be false;
+	let flag-this-room be false;
 	now verb-dont-print is true;
 	repeat through table of main oronyms:
 		unless there is a core entry, next;
@@ -890,13 +891,17 @@ carry out warponing:
 				moot war pawn;
 			follow the score and thinking changes rule;
 			the rule succeeds;
-		else if vr is the not-yet outcome:
-			if there is a best-room entry and best-room entry is location of player:
-				now say-later is true;
-	if say-later is true:
-		say "The war pawn grows rattles briefly in your hand, like it means to do something, but it's not ready. Or maybe you aren't. Yet.";
+		else if there is a best-room entry and best-room entry is location of player:
+			if vr is the not-yet outcome:
+				now flag-almost-cheat is true;
+			else:
+				now flag-this-room is true;
+	if flag-almost-cheat is true:
+		say "The war pawn rattles briefly in your hand, like it means to do something, but it's not ready. Or maybe you aren't. Yet.";
+	else if flag-this-room is true:
+		say "The war pawn seems to warm up very briefly. Perhaps there's a bit left to do here, but that may be a way down the road.";
 	else:
-		say "The war pawn does nothing. There's nothing to do here. Well, at least, at the moment.";
+		say "The war pawn stays still and even feels a bit cold. Perhaps there's nothing left that specifically needs doing here.";
 	now verb-dont-print is false;
 	the rule succeeds;
 
