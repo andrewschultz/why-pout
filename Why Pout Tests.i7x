@@ -49,15 +49,19 @@ test w10 with "test tall/t orc/tall cake/treat all".
 
 test w11 with "s/s/w/s/the file/n".
 
-test w12 with "d/were meetin/my corps/d/cease cull/wipe out/do mending/pm".
+test w12 with "d/were meetin/my corps/d".
+
+test w13 with "cease cull/wipe out/do mending/pm".
 
 chapter longer tests
 
 test bo with "test w1/test w2/test w3/test w4/test wb".
 
-test a with "test w1/test w2/test w3/test w4/test w5/test w6/test w7/test w8/test w9/test w10/test w11/test w12".
+test almost with "test w1/test w2/test w3/test w4/test w5/test w6/test w7/test w8/test w9/test w10/test w11/test w12".
 
-test as with "test w1/test w2/test w3/test w4/test w5/test w6/test wall/test w7/test w8/test w9/test w10/test w11/test w12".
+test a with "test almost/test w13".
+
+test as with "test w1/test w2/test w3/test w4/test w5/test w6/test wall/test w7/test w8/test w9/test w10/test w11/test w12/test w13".
 
 chapter war pawn
 
@@ -83,6 +87,8 @@ volume cheats
 
 chapter afing
 
+[get all friends -- this may break the game in standard testing, but it's helpful to test the TALK/T command]
+
 afing is an action out of world.
 
 understand the command "af" as something new.
@@ -97,6 +103,8 @@ carry out afing:
 volume diagnostics
 
 chapter pointsmisseding
+
+[well points missed AND thought commands to still get working]
 
 pointsmisseding is an action out of world.
 

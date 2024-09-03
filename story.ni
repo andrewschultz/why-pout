@@ -568,7 +568,7 @@ after printing the locale description for Doom Ending when Doom Ending is unvisi
 
 chapter Sea Skull
 
-The Sea Skull is a thing in Doom Ending. "A sea skull [if sco-cease-cull is true] spews rivers of blood at you and your companions, but fortunately, with so many companions, the rivers aren't very deep. Still, you should do something about it[else]gloats evilly, with its back turned to you[end if].". description is "[if sco-cease-cull is true]It looks upset you've disturbed its, err, work[else]You can't see its face, which must be evil. You may need to yell something at it to get the, uh, conversation started[end if]."
+The Sea Skull is a thing in Doom Ending. "A sea skull [if sco-cease-cull is true]spews rivers of blood at you and your companions, but fortunately, with so many companions, the rivers aren't very deep. Still, you should do something about it[else]gloats evilly, with its back turned to you[end if].". description is "[if sco-cease-cull is true]It looks upset you've disturbed its, err, work[else]You can't see its face, which must be evil. You may need to yell something at it to get the, uh, conversation started[end if]."
 
 chapter why division
 
@@ -865,6 +865,7 @@ understand "warp on" as warponing.
 carry out warponing:
 	let flag-almost-cheat be false;
 	let flag-this-room be false;
+	now gs-war-pawn-try is true;
 	now verb-dont-print is true;
 	repeat through table of main oronyms:
 		unless there is a core entry, next;

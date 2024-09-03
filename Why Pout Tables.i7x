@@ -840,9 +840,15 @@ a wordtwisting rule (this is the pre-wide-vision rule):
 	if player is not in doom ending, unavailable;
 	if why division is not in doom ending, unavailable;
 	if pre-acts < pre-max:
-		vcp "[remove-widevision-bonus][one of]You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.[paragraph break][entry thinkcue-index of wide-vision-rejects][line break][or]You are unable to express your wide vision. You'll have to settle for just repairing things pretty well.[line break][stopping]";
+		vcp "[remove-widevision-bonus][one of]You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.[paragraph break]But surely you must give it a try![paragraph break][entry thinkcue-index of wide-vision-rejects][war-pawn-musings][or]You are unable to express your wide vision. You'll have to settle for just repairing things pretty well.[line break][stopping]";
 		not-yet;
 	ready;
+
+to say war-pawn-musings:
+	if gs-war-pawn-try is true:
+		say "[paragraph break]'I? Low. I'll ... oh ...' you moan, preparing to bare your guilty soul. 'I feel kinda bad about [if war pawn is moot]using[else]trying to use[end if] that war pawn, now. Lesson learnt.'[paragraph break]But your companions stare at you blankly. No, it must have been something else.";
+	else:
+		say "[line break]"
 
 to say remove-widevision-bonus:
 	if gs-penalized-why-division is false:

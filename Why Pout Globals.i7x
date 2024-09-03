@@ -20,6 +20,8 @@ gs-search-warn is a truth state that varies.
 
 gs-swear-bonus-removed is a truth state that varies.
 
+gs-war-pawn-try is a truth state that varies.
+
 gs-penalized-why-division is a truth state that varies.
 
 section first point cue(s)
