@@ -951,4 +951,7 @@ when play begins (this is the score and status tweak rule):
 	now the turn count is 1;
 
 to decide which number is doable-hinted:
-	decide on 0;
+	let temp be 0;
+	repeat through table of main oronyms:
+		if think-cue entry is true and idid entry is false and core entry is true, increment temp;
+	decide on temp;
