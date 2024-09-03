@@ -1,0 +1,40 @@
+List of in-comp updates
+
+9/3/2024 updates (1.04)
+--clarified in-game that using cheat/warp item doesn't lock out best ending
+--there are now 3 levels of rejecting cheap/warp item usage (nothing here, nothing here you can guess right now, something here you can guess but not succeed at)
+--implemented +1/+2 in right hand status line, with explanation of what it does after first THINK
+--trivial text cleanup
+--big ZIP binary now contains source code (except for redacted best-ending test code)
+
+9/2/2024 updates (1.03)
+--fixed case where homonym rule was in the wrong main table row (the right rule was absent, so I wrote it in, too)
+--renamed wbase.txt to walkthrough.txt, since wbase.txt was originally meant to fork to walkthrough.txt and walkthrough-full.txt, and I've opted not to give a full walkthrough
+--better cluing of approximately how close you are to the tricky point at/near the end on reject
+--war pawn's description tuned up
+--CSS issue on web version fixed so cursor doesn't bleed into Parchment link
+--forgot to mention in 9/1(b): wow, people finding bugs <2 hours after release, nice work!
+
+9/1/2024(b) updates (1.02)
+--fixed bug for missing THINK text in room below hub
+--fix in non-game-specific code also fixed excess THINK text for the ache you get later
+--fixed regression bug where 9/1/2024(a) reorganization of hub exits forgot to mention DOWN when it was there
+--forgot to mention 9/1(a) also fixed double appearance of "score went up/bonus points went up"
+
+9/1/2024(a) bug fixes (1.01)
+
+Cheat item improvements:
+--cheat item no longer used up if its suggested available solution is something you guessed before but weren't ready to execute yet
+--cheat item now rattles (not just stays silent) if you are in a room with something to do, but you can't do it yet
+--switched a few rows in table of puzzle solutions, so trickier puzzle comes first, to maximize the cheat item's value
+
+Game text improvements:
+--removed debug text that sometimes appeared in jump-ahead cheat
+--some conjugation cases with multiple companions "a and b follows you north" fixed
+--maximum possible remaining score, not tracked at all in the initial submission, is now tracked properly
+--Haze/main hub room rearranged print order of exits, with current companions pushed to the bottom for continuity/readability
+--scenery item removed in Haze/main hub room after solving first puzzle makes it superfluous
+--to jibe with the narrative, an item briefly appears in inventory before climbing to the Haze/main hub room
+
+Miscellaneous improvements:
+--walkthrough tweaks
