@@ -210,12 +210,12 @@ after printing the locale description for NaffHaze when sco-nah-phase is true an
 	continue the action;
 
 after printing the locale description for NaffHaze when Bruise Wares is off-stage and current-score >= 20 (this is the show-bruise-wares rule):
-	say "An ominous new construction appears here. It's called BRUISE WARES. Perhaps you should ignore it. Often one doesn't want to engage that sort of thing. But you may feel that much more accomplished doing so.";
+	say "An ominous new construction appears here. It's called [b]BRUISE WARES[r]. Perhaps you should ignore it. Often one doesn't want to engage that sort of thing. But you may feel that much more accomplished tackling whatever is behind there.";
 	move Bruise Wares to NaffHaze;
 	continue the action;
 
 after going to NaffHaze when Bruise Wares is in NaffHaze and sco-treat-all is true:
-	say "Odd! BRUISE-WARES has vanished. Well, one less dead end to worry about.";
+	say "Odd! [b]BRUISE WARES[r] has vanished. Well, one less dead end to worry about.";
 	zap-bruise-wares;
 	remove-swear-bonus;
 	continue the action;
@@ -228,7 +228,7 @@ check going a viable direction in NaffHaze when sco-pole-east is false:
 check going inside in NaffHaze:
 	if sco-nah-phase is false, continue the action;
 	if BRUISE WARES is moot and Brew Swears is visited:
-		say "(BRUISE WARES is no longer available, so I assume you mean the keep.)[paragraph break]";
+		say "([b]BRUISE WARES[r] is no longer available, so I assume you mean the keep.)[paragraph break]";
 		try going west instead;
 	if BRUISE WARES is off-stage:
 		try entering keep iller instead;
@@ -272,7 +272,7 @@ the waydown is a privately-named thing. description is "You shouldn't see this d
 
 chapter Bruise Wares
 
-Bruise Wares is a thing. "BRUISE WARES, some sort of odd disturbing shop, has popped up here. You can probably figure why it's forbidding and such. But perhaps it is only for a certain sort of adventurer.". description is "Looking at BRUISE WARES, it sort of overdoes the whole 'you might not be ready for this' schtick. And, you figure, if you know what's really there, it's not something you will put up with unless you have to.[paragraph break]Seriously, dealing with it is up to you."
+Bruise Wares is a thing. "[b]BRUISE WARES[r], some sort of odd disturbing shop, has popped up here. You can probably figure why it's forbidding and such. But perhaps it is only for a certain sort of adventurer.". description is "Looking at [b]BRUISE WARES[r], it sort of overdoes the whole 'you might not be ready for this' schtick. And, you figure, if you know what's really there, it's not something you will put up with unless you have to.[paragraph break]Seriously, dealing with it is up to you."
 
 rule for choosing notable locale objects (this is the put followers at the bottom rule):
 	repeat with item running through things in location of player:
@@ -516,21 +516,23 @@ chapter earls
 
 the grinch earls are a plural-named thing in Brew Swears. "Some [earls] parade around here, bragging about how they ruin boring people's fun with their dynamic ways and pointing out that it's easy to be nice if you're boring. They fix you with a 'We parse: weep, arse' gaze[if sco-grin-churls is false], though they're less effective than when they were self-styled earls[end if][if sco-weak-us is true]. You cut their 'we cuss' down to size, so they're now giving examples of how they cuss[else]. They constantly blather 'WE CUSS' and seem quite proud of that[end if].". printed name is "[if sco-grin-churls is true]grin churls[else]grinch earls[end if]". description is "Bleah. They remind you of popular kids (you know, the ones who beat up kids who claimed they weren't popular--it was effective) from back in school, except all grown up."
 
+understand "grin churls" and "grin/churls" as grinch earls when sco-grin-churls is true.
+
 chapter crude orc
 
 the crude orc is an unneeded follower in Brew Swears. "A crude orc trundles around here[if sco-weak-us is true], trying to impress [the earls][else if number of swearblobs in Brew Swears is 0], ready to follow you, with all the rough language taken care of[else if sco-crew-dork is true], on your side, now[else], looking equally between you and [the earls][end if].". description is "[if sco-weak-us is false]Looking at you like their next target, to show they're tough enough for [the earls][else if sco-crew-dork is false]Unsure of themselves. They might be ready for a hard truth[else if number of swearblobs in Brew Swears > 0]Looking up to you a lot, for setting [the grinch] straight[else]Ready to go along with you on your adventure[end if].". help-chat of crude orc is "The crude orc doesn't have any strategy, per se. It's still young and naive. But it asks the sort of questions you forgot you had. Perhaps others youths have these questions, too, or they would, with -- well, whatever force that kidnapped you -- not pressing on them so much."
 
 chapter swearblobs
 
+bah-sturdy is a swearblob. "The [grinch] shake their heads at you: 'Bah! Sturdy?!'"
+
+heh-class is a swearblob. "The [grinch] mock you, or maybe boost themselves, with 'Heh, class!'"
+
 hush-it is a swearblob. "The [grinch] laugh and say 'Hush it.'".
 
 life-occurs is a swearblob. "The [grinch] take cheap shots and say 'Life occurs.'".
 
-heh-class is a swearblob. "The [grinch] mock you, or maybe boost themselves, with 'Heh, class!'"
-
-weird-icks is a swearblob. "The [grinch] launch 'Weird! Ick!''s at enemies real and imagined."
-
-bah-sturdy is a swearblob. "The [grinch] shake their heads at you: 'Bah! Sturdy?!'"
+weird-icks is a swearblob. "The [grinch] launch 'Weird! Ick!'[']s at enemies real and imagined."
 
 section swearblob sorting alphabetically - not for release
 
