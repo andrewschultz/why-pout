@@ -520,7 +520,15 @@ understand "grin churls" and "grin/churls" as grinch earls when sco-grin-churls 
 
 chapter crude orc
 
-the crude orc is an unneeded follower in Brew Swears. "A crude orc trundles around here[if sco-weak-us is true], trying to impress [the earls][else if number of swearblobs in Brew Swears is 0], ready to follow you, with all the rough language taken care of[else if sco-crew-dork is true], on your side, now[else], looking equally between you and [the earls][end if].". description is "[if sco-weak-us is false]Looking at you like their next target, to show they're tough enough for [the earls][else if sco-crew-dork is false]Unsure of themselves. They might be ready for a hard truth[else if number of swearblobs in Brew Swears > 0]Looking up to you a lot, for setting [the grinch] straight[else]Ready to go along with you on your adventure[end if].". help-chat of crude orc is "The crude orc doesn't have any strategy, per se. It's still young and naive. But it asks the sort of questions you forgot you had. Perhaps others youths have these questions, too, or they would, with -- well, whatever force that kidnapped you -- not pressing on them so much."
+the crude orc is an unneeded follower in Brew Swears. "A crude orc trundles around here, [orc-desc].". description is "[if sco-weak-us is false]Looking at you like their next target, to show they're tough enough for [the earls][else if sco-crew-dork is false]Unsure of themselves. They might be ready for a hard truth[else if number of swearblobs in Brew Swears > 0]Looking up to you a lot, for setting [the grinch] straight[else]So over this place and ready to go along with you on your adventure[end if].". help-chat of crude orc is "The crude orc doesn't have any strategy, per se. It's still young and naive. But it asks the sort of questions you forgot you had. Perhaps others youths have these questions, too, or they would, with -- well, whatever force that kidnapped you -- not pressing on them so much. And while impressing kids with mean swears isn't overarching evil, it's a gateway to nastier things. Kids like the orc are worth helping."
+
+to say orc-desc:
+	if orc-score is 0:
+		say "trying to impress [the earls]";
+	else if orc-score is 1:
+		say "looking equally between you and [the earls]";
+	else:
+		say "[if grinch earls are in Brew Swears]looking with distaste at the grinch earls, [end if]ready to leave when you are"
 
 chapter swearblobs
 

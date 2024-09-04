@@ -127,6 +127,9 @@ to decide which number is plane-dir-score:
 to decide which number is keep-score:
 	decide on (boolval of sco-gnome-old) + (boolval of sco-rogue-old) + (boolval of sco-manna-curb) + (boolval of sco-plan-tracker) + (boolval of sco-see-design) + (boolval of sco-knife-right);
 
+to decide which number is orc-score:
+	decide on (boolval of sco-weak-us) + (boolval of sco-crew-dork);
+
 to decide which number is brew-swears-score:
 	decide on (boolval of sco-brew-swears) + (boolval of sco-weak-us) + (boolval of sco-grin-churls) + (boolval of sco-crew-dork) + (boolval of sco-huh-shit) + (boolval of sco-lie-fuckers) + (boolval of sco-heckle-ass) + (boolval of sco-were-dicks) + (boolval of sco-bastard-eee) [yes, it's possible we could define a function called boolsum of brew-swears but this does the job for now]
 
