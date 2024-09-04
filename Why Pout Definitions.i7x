@@ -40,7 +40,7 @@ to befriend (f - a follower):
 	now f is friendly;
 	move f to location of player;
 	if number of friendly followers is 1:
-		say "It looks like [the f] will be following you around. All that silence might get awkward, so you may wish to [b]T[r] or [b]TALK[r] ([b]TO[r]) them.";
+		say "[line break]It looks like [the f] will be following you around. All that silence might get awkward, so you may wish to [b]T[r] or [b]TALK[r] ([b]TO[r]) them.";
 	else if number of still-follow-needed followers is 0:
 		say "[line break]Wow! You've got quite a group here. You can't imagine needing a bigger one[if number of unfriendly followers > 0], though there's BRUISE-WARES[end if].";
 	else if pals-made - number of chatted followers > 2:

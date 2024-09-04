@@ -154,10 +154,10 @@ a wordtwisting rule (this is the pre-wipe-out rule):
 		vcp "You aren't feeling too great, but you don't want or need to wipe yourself out, yet. Perhaps you can find the root of your problems and wipe it out one day, though.";
 		not-yet;
 	if number of still-follow-needed followers > 0:
-		vcp "You don't want to wipe out the friendships you made.";
+		vcp "You don't want to wipe out the friendship[if number of friendly followers > 0]s[end if] you made.";
 		not-yet;
 	if player is not in Doom Ending:
-		vcp "You don't have anyone terribly evil you want to wipe out.";
+		vcp "You haven't identified anyone terribly evil you want to wipe out.";
 		not-yet;
 	if sco-cease-cull is false:
 		vcp "You try to charge and wipe out the sea skull, but you bounce against an invisible barrier.";
@@ -223,6 +223,7 @@ a wordtwisting rule (this is the pre-low-bend rule):
 this is the post-low-bend rule:
 	now sco-low-bend is true;
 	say "You almost despair for a minute that you reached a dead end so soon. You page through all the possible ways out, proving to yourself you're right, hoping against hope you're wrong.[paragraph break]And looking around, you see you are! There is a bit more to all this. A very thin and reasonably sloped path north leads down to some water. Which you can't cross at the moment, but maybe you'll figure a way.";
+	print-the-loc;
 
 section lobe end scoring
 
@@ -266,6 +267,7 @@ this is the post-store-mile rule:
 	move my stall to storm isle;
 	move men shelf to storm isle;
 	reveal Trees Mall to north;
+	print-the-loc;
 
 a wordtwisting rule (this is the pre-mice-tall rule):
 	if player is not in storm isle, unavailable;
@@ -463,6 +465,7 @@ this is the post-known-ocean rule:
 	say "Ah, yes. Things clear up a bit now. There we go ... you see where an ocean should be, and ... yes, you dip your toe in some wetness. Things clear up. You even see a sick squid! Maybe you can help it.";
 	move sick squid to NoNotion;
 	move ocean to NoNotion;
+	print-the-loc;
 
 a wordtwisting rule (this is the pre-six-quid rule):
 	if player is not in nonotion, unavailable;
@@ -576,6 +579,7 @@ this is the post-well-own rule:
 	now sco-well-own is true;
 	say "Yes. There's a definite shady side. You mumble to yourself, and then your mumbles get louder, and it attracts ... some merchant. They begin babbling about deals they have, fake-friendly, about how you can buy low.";
 	move some merchant to We Loan;
+	print-the-loc;
 
 a wordtwisting rule (this is the pre-summer-chant rule):
 	if player is not in we loan or merchant is not in we loan, unavailable;
@@ -620,6 +624,7 @@ this is the post-whee-lone rule:
 	now sco-whee-lone is true;
 	say "You enjoy your solitude, but ... wait. You lose track of time, and an oaf liar slips in just to babble at you.";
 	move oaf liar to we loan;
+	print-the-loc;
 
 a wordtwisting rule (this is the pre-oh-flier rule):
 	if player is not in we loan, unavailable;
@@ -647,6 +652,7 @@ this is the post-oh-flier rule:
 	moot oaf liar;
 	now player has flier;
 	quid-reduce 1;
+	print-the-loc;
 
 section keepiller scoring
 
@@ -789,6 +795,7 @@ this is the hom-whirr-meetin rule:
 this is the post-were-meetin rule:
 	now sco-were-meetin is true;
 	say "You meet with the friends you've made over your adventure. You all have one goal in mind. And yet you don't have a rallying cry. Perhaps it can come from within you.";
+	print-the-loc;
 
 section worm eaten scoring
 
@@ -900,7 +907,7 @@ a wordtwisting rule (this is the pre-grin-churls rule):
 
 this is the post-grin-churls rule:
 	now sco-grin-churls is true;
-	say "You slip in a few sly digs and say 'grin, churls.' It's not fatal, but they look annoyed.";
+	say "You slip in a few sly digs and say 'grin, churls.' They shake their heads, annoyed.";
 
 a wordtwisting rule (this is the pre-crew-dork rule):
 	if player is not in brew swears, unavailable;
