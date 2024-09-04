@@ -895,8 +895,9 @@ a wordtwisting rule (this is the pre-weak-us rule):
 
 this is the post-weak-us rule:
 	now sco-weak-us is true;
-	say "You're surprised how just making a little shift can make the [grinch] seem much weaker. Their strength is the sort of brute force that doesn't life other people up.[paragraph break]They throw down the gauntlet at this point. Don't you know cussing shows higher intelligence? Some study or other showed that![paragraph break]The crude orc looks back and forth between you and the [grinch].";
-	follow the cycle swears randomly rule;
+	say "You're surprised how just making a little shift can make the [grinch] seem much weaker. Their strength is the sort of brute force that doesn't lift other people up.[paragraph break]They throw down the gauntlet at this point. Don't you know cussing shows higher intelligence? Some study or other showed that!";
+	check-orc-friendliness;
+	follow the cycle swears rule;
 
 a wordtwisting rule (this is the pre-grin-churls rule):
 	if player is not in brew swears, unavailable;
@@ -908,6 +909,7 @@ a wordtwisting rule (this is the pre-grin-churls rule):
 this is the post-grin-churls rule:
 	now sco-grin-churls is true;
 	say "You slip in a few sly digs and say 'grin, churls.' They shake their heads, annoyed.";
+	grinch-go-check;
 
 a wordtwisting rule (this is the pre-crew-dork rule):
 	if player is not in brew swears, unavailable;
@@ -921,8 +923,16 @@ a wordtwisting rule (this is the pre-crew-dork rule):
 
 this is the post-crew-dork rule:
 	now sco-crew-dork is true;
-	say "You break the truth gently to the crude orc that, well, they're at the bottom of the totem pole for this crew. They'll use the crude orc, maybe even not let them into the clique, and then find the next sucker. The [grinch] surprisingly have little response to this besides, well, profanity.[paragraph break]You sense your job here is done, though you can continue to deflect profanity if you want.";
-	befriend crude orc;
+	say "You break the truth gently to the crude orc that, well, they're at the bottom of the totem pole for this crew. They'll use the crude orc, maybe even not let them into the clique, and then find the next sucker. The [grinch] surprisingly have little response to this besides, well, profanity.";
+	check-orc-friendliness;
+
+to check-orc-friendliness:
+	if orc-score is 2:
+		say "[line break]The crude orc sees it now. [The earls] weren't as friendly as they seemed. They wanted to use some trusting kid and corrupt them. The crude orc shakes their head. They ask if they can be seen as an orc and not, well, a dork. You say sure.";
+		say "[line break]You've gained a friend! [if grinch earls are moot]There's really nothing left to do here[else]You can stick around to torment the grinch earls further, or you can go on your way[end if].";
+		befriend crude orc;
+	else if orc-score is 1:
+		say "[line break]The crude orc looks back and forth between you and the [grinch], glaring at them a bit, but not yet ready to break free. Just a bit more, and you may gain a friend.";
 
 a wordtwisting rule (this is the pre-huh-shit rule):
 	if player is not in brew swears, unavailable;
@@ -932,7 +942,7 @@ a wordtwisting rule (this is the pre-huh-shit rule):
 this is the post-huh-shit rule:
 	now sco-huh-shit is true;
 	say "You reject [the grinch]['] 'urbane' attempts at shutting you up. They're a bit surprised at you.";
-	moot hush-it;
+	swearzap hush-it;
 	recalibrate-swears;
 
 a wordtwisting rule (this is the pre-lie-fuckers rule):
@@ -943,7 +953,7 @@ a wordtwisting rule (this is the pre-lie-fuckers rule):
 this is the post-lie-fuckers rule:
 	now sco-lie-fuckers is true;
 	say "You cut down [the grinch] for making things more bleak than they are. Sure, life can be cruel, but that's no excuse to make it even more cruel. They give a 'whatever,' but you see the point touched home.";
-	moot life-occurs;
+	swearzap life-occurs;
 	recalibrate-swears;
 
 a wordtwisting rule (this is the pre-were-dicks rule):
@@ -954,7 +964,7 @@ a wordtwisting rule (this is the pre-were-dicks rule):
 this is the post-were-dicks rule:
 	now sco-were-dicks is true;
 	say "You mock [the grinch] back, giving at least as good as you get, noting there's always a hole in these sorts of attacks.";
-	moot weird-icks;
+	swearzap weird-icks;
 	recalibrate-swears;
 
 a wordtwisting rule (this is the pre-bastard-eee rule):
@@ -965,7 +975,7 @@ a wordtwisting rule (this is the pre-bastard-eee rule):
 this is the post-bastard-eee rule:
 	now sco-bastard-eee is true;
 	say "You show you're sturdy and then some, with just the right tone of exasperation. They pretend not to be impressed, but they don't have a comeback.";
-	moot bah-sturdy;
+	swearzap bah-sturdy;
 	recalibrate-swears;
 
 a wordtwisting rule (this is the pre-heckle-ass rule):
@@ -976,19 +986,31 @@ a wordtwisting rule (this is the pre-heckle-ass rule):
 this is the post-heckle-ass rule:
 	now sco-heckle-ass is true;
 	say "You give back at least as good as you got, showing you don't need to use the big cuss words to get a point in as well.";
-	moot heh-class;
+	swearzap heh-class;
 	recalibrate-swears;
 
 to recalibrate-swears:
 	if number of not moot swearblobs is 0:
 		say "[line break]The [grinch], out of insults, give up on you, claiming you got boring. But you know better.";
+		grinch-go-check;
 		continue the action;
-	follow the followers follow you rule;
+	follow the cycle swears rule;
 
 to remove-swear-bonus:
 	if gs-swear-bonus-removed is false:
 		decrease cur-max-bonus by (9 - brew-swears-score);
 		now gs-swear-bonus-removed is true;
+
+to swearzap (sw - a swearblob):
+	moot sw;
+	if number of not moot swearblobs > 0:
+		now next-swear of (prev-swear of sw) is next-swear of sw;
+		now prev-swear of (next-swear of sw) is prev-swear of sw;
+
+to grinch-go-check:
+	if sco-grin-churls is true and number of not moot swearblobs is 0:
+		say "[line break]The [grinch] remark that you seemed so nice, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do.";
+		moot grinch earls;
 
 volume command parsing
 

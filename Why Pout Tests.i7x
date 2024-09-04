@@ -207,17 +207,14 @@ understand the command "ao" as something new.
 understand "ao" as aoing.
 
 carry out aoing:
-	if sco-weak-us is true:
-		if player is not in brew swears, say "It's too late to test anything when we re-sort the list count." instead;
-		say "Resetting the list counter to 0 as well...[paragraph break]";
-		now swear-index is 0;
+	if brew swears is visited and sco-weak-us is true, say "You need to activate alphabetical swears before WE CUSS." instead;
 	if ever-swear-sorted is true:
 		say "You already un-random-sorted the list, but no harm in doing so again.";
 	else:
 		say "Un-random-sorting the list.";
 	now ever-swear-sorted is true;
 	sort swears-order in alphorder order;
-	say "[line break]The new list is [swears-order].";
+	swear-prev-next-from-order;
 	the rule succeeds;
 
 section swearblob sorting alphabetically - not for release

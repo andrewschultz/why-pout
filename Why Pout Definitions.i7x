@@ -77,25 +77,31 @@ to follow-you:
 
 book swearblobs
 
-a swearblob is a kind of thing. a swearblob is usually privately-named. a swearblob is usually scenery. a swearblob has text called swear-indicate-text.
+a swearblob is a kind of thing. a swearblob is usually privately-named. a swearblob is usually scenery. a swearblob has a swearblob called prev-swear. a swearblob has a swearblob called next-swear.
 
 most-recent-swear is a swearblob that varies.
-
-swear-index is a number variable. swear-index is 0.
 
 swears-order is a list of things variable.
 
 when play begins:
 	now swears-order is the list of swearblobs;
 	sort swears-order in random order;
+	swear-prev-next-from-order;
 
-most-recent-swear is a swearblob that varies.
+to swear-prev-next-from-order: [ make a linked list from the sorted list. This could have been done right away, but the code still would've been tricky. We'd need "a swear-blob can be linked-yet" then "let first-swear be (random swear)" then let next-swear be a random not linked-yet swear" and add prev/next. Then when none are linked, let prev-swear of first be last. That seemed trickier than this. ]
+	now prev-swear of (entry 1 in swears-order) is entry (number of swearblobs) in swears-order;
+	now next-swear of entry (number of swearblobs) in swears-order is (entry 1 in swears-order);
+	repeat with X running from 2 to number of swearblobs:
+		now prev-swear of (entry X in swears-order) is (entry (X - 1) in swears-order);
+		now next-swear of (entry (X - 1) in swears-order) is (entry X in swears-order);
+	now most-recent-swear is entry (number of swearblobs) of swears-order;
+[	if debug-state is true:
+		repeat with X running through swearblobs:
+			say "[x] [prev-swear of x] [next-swear of x].";]
 
-every turn when player is in brew swears and sco-weak-us is true and number of entries in swears-order > 0 (this is the cycle swears randomly rule):
-	increment swear-index;
-	if swear-index > number of entries in swears-order, now swear-index is 1;
-	now most-recent-swear is entry swear-index in swears-order;
-	if most-recent-swear is not in brew, move most-recent-swear to brew;
+every turn when player is in brew swears and sco-weak-us is true and number of not moot swearblobs > 0 (this is the cycle swears rule):
+	now most-recent-swear is next-swear of most-recent-swear;
+	if most-recent-swear is not in brew and most-recent-swear is not moot, move most-recent-swear to brew;
 	say "[one of]Your observation has caused something to 'righteously' snap in the [grinch]. And boy, are they going to firehose you with their 'best!'[paragraph break][or][stopping][description of most-recent-swear][line break]";
 
 chapter alphorder - not for release
