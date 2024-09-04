@@ -852,8 +852,10 @@ a wordtwisting rule (this is the pre-wide-vision rule):
 	ready;
 
 to say war-pawn-musings:
+	say "[line break]'I? Low. I'll ... oh ...' you moan, preparing to bare your guilty soul.[line break]";
+	say "'It was BRUISE-WARES, wasn't it?' you ask. 'I shouldn't have [if sco-brew-swears is false]ignored it[else]chickened out once I found a way in[else if brew-swears-score < 9]left things undone[else]enjoyed tearing through it all[end if].[paragraph break]Your companions shake their heads slightly.";
 	if gs-war-pawn-try is true:
-		say "[paragraph break]'I? Low. I'll ... oh ...' you moan, preparing to bare your guilty soul. 'I feel kinda bad about [if war pawn is moot]using[else]trying to use[end if] that war pawn, now. Lesson learnt.'[paragraph break]But your companions stare at you blankly. No, it must have been something else.";
+		say "[line break]'Oh! Must be [if war pawn is moot]using[else]trying to use[end if] that war pawn, now. Lesson learnt.'[paragraph break]But your companions change to I-saw-ice-aww expressions. No, it must have been something else.";
 	else:
 		say "[line break]"
 
