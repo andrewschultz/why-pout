@@ -150,7 +150,8 @@ to decide which number is thinkcue-index:
 
 when play begins:
 	repeat through table of main oronyms:
-		if there is a think-advice entry and check-rule entry is not pre-wide-vision rule, increment pre-max;
+		if there is a think-advice entry:
+			if check-rule entry is not pre-wide-vision rule and check-rule entry is not pre-crew-dork rule, increment pre-max;
 
 volume begin play
 
