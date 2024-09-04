@@ -12,6 +12,10 @@ chapter warp unit tests
 
 test warpthink with "wo/wo/wo/wo/wo/wo/wo/wo/wo/wo/w/gnome old/e/n/wo/wo/wo/s/w/wo/wo".
 
+chapter brew test starter
+
+test brew with "wo/wo/wo/wo/wo/wo/wo/wo/wo/wo/ao/gonear brew/weak us/crew dork".
+
 chapter in IFComp tests
 
 test comp1 with "test w1/test w2/test w3/test w4/l/d/were meetin/think". [A DiBianca: THINK hosed We're Meeting. (Also, TALL CAKE but that's harder to test!)]
@@ -176,6 +180,20 @@ carry out tting (this is the show tripthinking rule):
 	say "[everfails] fails out of [possfails] possible.";
 	the rule succeeds;
 
+chapter swearshowing
+
+swearshowing is an action out of world.
+
+understand the command "swearshow" as something new.
+
+understand "swearshow" as swearshowing.
+
+carry out swearshowing:
+	repeat with X running through swearblobs:
+		say "[X] [location of X]: next = [next-swear of X]. prev = [prev-swear of X].";
+	say "[swears-order] is the order they should appear.";
+	the rule succeeds;
+
 chapter aoing
 
 [this sorts the swear list, ao=alphabetical order, so I can run fixed tests]
@@ -201,6 +219,10 @@ carry out aoing:
 	sort swears-order in alphorder order;
 	say "[line break]The new list is [swears-order].";
 	the rule succeeds;
+
+section swearblob sorting alphabetically - not for release
+
+alphorder of bah-sturdy is 1. alphorder of heh-class is 2. alphorder of hush-it is 3. alphorder of life-occurs is 4. alphorder of weird-icks is 5.
 
 chapter woing
 
