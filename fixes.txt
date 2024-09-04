@@ -1,5 +1,15 @@
 List of in-comp updates
 
+9/4/2024 updates (1.10)
+--optional room puzzles now always disappear when solved
+--clarified in-game that (lack of) progress in optional room doesn't lock out best ending
+--added THINK note for command that needs prep (in optional room)
+--crude orc description/appearance improved based on game state
+--earls in optional room now have synonym when appropriate
+--room-specific "can't go that way" messages were polished
+--note everywhere a point-scoring activity causes room name to changes in game text, not just header
+--fixed trivial typos including one "if X is false" that should've been "if X is true"
+
 9/3/2024 updates (1.04)
 --clarified in-game that using cheat/warp item doesn't lock out best ending
 --there are now 3 levels of rejecting cheap/warp item usage (nothing here, nothing here you can guess right now, something here you can guess but not succeed at)

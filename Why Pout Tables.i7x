@@ -1097,22 +1097,22 @@ volume can't go that way
 
 table of noways
 noway-rm	noway-txt
-Eh Raw Air Aww	"[if sco-an-aim is false][one of]'Grey trek? Great wreck!' [or]'I sit? Ice it!' [stopping]you moon. You can't see anywhere. You know almost nothing. I mean, you don't even have a name. What would you do even if there was a passage?[else if number of viable directions is 0]You still can't find anywhere to go, yet. But there seem to be clues where to go, and how, if you look around.[else]You haven't made passage [noun] yet, though you can go [list of viable directions].[end if]"
+Eh Raw Air Aww	"[if sco-an-aim is false][one of]'Grey trek? Great wreck!' [or]'I sit? Ice it!' [stopping]you moon. You can't see anywhere. You know almost nothing. I mean, you don't even have a name. What would you do even if there was a passage?[else]It looks like there are ways out, but you're disoriented enough, directions don't matter. You sure would like a way to see where you're going.[end if]"
 Hype Lane	"[if noun is not up]No sense faffing around horizontally. You're sick of being stuck underground[else if sco-pry-stalk is false]You need to find something that will help you go up[else]You need to figure where to go up[end if]."
-NaffHaze	"[if sco-nah-phase is true]You can go any of the cardinal directions, [once-now of whether or not plane-dir-score is 4] you've unblocked them.[else]Too tough to stumble around until the haze lifts. How to make that happen?[end if]"
-KeepIller	"Apart from finding a way beyond the seedy sign, the keep doesn't have many twisty passages. Well, any."
+NaffHaze	"[if sco-nah-phase is false]Too tough to stumble around until the haze lifts. How to make that happen?[else if number of viable directions is 0]You feel like eventually you should be able to wander around, but you can't see anywhere to go, yet. There seem to be clues where to go, and how, if you look around.[else if number of viable directions is 4]You can go in the usual directions here.[else]You can't go [noun], but you can go [list of viable directions].[end if]"
+KeepIller	"Apart from finding a way beyond the seedy sign[if sco-see-design is true], which you don't need to again[end if], the keep doesn't have many twisty passages. Well, any."
 Nigh Fright	"You could leave, but then you'd have to come back. Just figure what to do here."
 Lobe End	"[if sco-low-bend is true]The bend only curves west to north[else]You can only go back west. Well, for now[end if]."
 Storm Isle	"You can only go back south to Lobe End[if sco-store-mile is true] or north to the rest of the mall[end if]."
 Trees Mall	"You can only go back south."
-Wolf Rock	"Wolf Rock blocks every normal passage except back south[if sco-low-door is true]. Well, you can go [b]IN[r] where the lode ore was as well[end if][if sco-hide-out is true]. There's a hideout above as well[end if]."
+Wolf Rock	"Wolf Rock blocks every planar passage except back [b]SOUTH[r][if sco-low-door is true]. Well, you can go [b]IN[r] where the lode ore was as well[end if][if sco-hide-out is true]. There's a hideout above as well[end if]."
 We Loan	"You can only go back [b]OUT[r] here."
-Hideout	"You can only go back up. If it had too many passages, it'd risk being a less effective hideout."
-NoNotion	"You can only go back north[if squid is in NoNotion] or, if you know where you want to go, give the squid instructions where to go[else], or that's your notion, right now[end if]."
+Hideout	"You can only go back [b]UP[r]. If it had too many passages, it'd risk being a less effective hideout."
+NoNotion	"You can only go back [b]NORTH[r][if squid is in NoNotion] or, if you know where you want to go, give the squid instructions where to go[else], or that's your notion, right now[end if]."
 Wand Wharf	"You're not in the mood for exploring the wharf. It seems like a good way to get lost. Maybe there's someone or something nearby you can pick up, then leave."
-Worm Eaten	"No tricky passages here, just up back to safer ground or down to your fate."
+Worm Eaten	"No tricky passages here, just [b]UP[r] back to safer ground or [b]DOWN[r] to your fate."
 Doom Ending	"[if sco-wipe-out is true]You need to prep for making things right in general. Then, once the game's over, you'll leave[else]Unsurprisingly, all the action is here[end if]."
-Brew Swears	"You don't want to get into the guts of this place. Just get the crude orc, if you can, then get out."
+Brew Swears	"You don't want to get into the guts of this place. [if sco-crew-dork is true]You've gotten the crude orc on your side, and the only way is[else]Just get the crude orc, if you can, then get[end if] [b]OUT[r]."
 
 volume scoring to move [see RoL Defs if I add bonus points]
 
