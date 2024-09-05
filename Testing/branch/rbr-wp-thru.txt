@@ -14,6 +14,20 @@ file=reg-wp-thru-mistakes.txt,mis,walkthrough testing all mistakes
 file=reg-wp-thru-homonyms.txt,hom,walkthrough testing homonyms
 file=reg-wp-thru-goto.txt,goto/gt/go,walkthrough testing GOTO
 
+##--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
+#--strict-file: this says that the project requires strict section marking e.g. @all instead of ==t1.
+
+}$REJECT1=You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+}$REJECT2=That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+}}MAX=55
+}}CURMAX=55
+}}SCORE=0
+}}CURMIN=45
+}}CURMINBONUS=0
+}}CURMAXBONUS=10
+}}MAXBONUS=10
+
 ## *FILE
 ## *FORK
 
@@ -28,7 +42,282 @@ file=reg-wp-thru-goto.txt,goto/gt/go,walkthrough testing GOTO
 #testcase-room-names-eh-raw-air-aww
 `Eh, Raw Air, Aww
 
+@goto
+#testcase-goto-table-of-noways-eh-raw-air-aww
+>n
+"Grey trek? Great wreck!" you moon. You can't see anywhere. You know almost nothing. I mean, you don't even have a name. What would you do even if there was a passage?
+\\
+#+testcase-goto-table-of-noways-eh-raw-air-aww
+>e
+"I sit? Ice it!" you moon. You can't see anywhere. You know almost nothing. I mean, you don't even have a name. What would you do even if there was a passage?
+
 >z
+
+@rej
+#testcase-check-pre-bastard-eee-rule-if-player-is-not-in-brew-swears
+#testcase-reject-start-table-of-main-oronyms-pre-bastard-eee-rule
+>bastard eee
+{$REJECT1}
+\\
+#testcase-check-pre-bay-sale-rule-if-player-does-not-have-base-ale
+#testcase-reject-start-table-of-main-oronyms-pre-bay-sale-rule
+>bay sale
+{$REJECT1}
+\\
+#testcase-check-pre-bile-oh-rule-if-player-is-not-in-we-loan-or-merchant-is-not-in-we-loan
+#testcase-reject-start-table-of-main-oronyms-pre-bile-oh-rule
+>bile oh
+{$REJECT1}
+\\
+#testcase-check-pre-boost-role-rule-if-booze-troll-is-not-touchable
+#testcase-reject-start-table-of-main-oronyms-pre-boost-role-rule
+>boost role
+{$REJECT1}
+\\
+#testcase-check-pre-brew-swears-rule-if-player-is-not-in-naffhaze
+#testcase-reject-start-table-of-main-oronyms-pre-brew-swears-rule
+>brew swears
+{$REJECT1}
+\\
+#testcase-check-pre-cease-cull-rule-if-player-is-not-in-doom-ending-or-sea-skull-is-not-in-doom-ending
+#testcase-reject-start-table-of-main-oronyms-pre-cease-cull-rule
+>cease cull
+{$REJECT1}
+\\
+#testcase-check-pre-crew-dork-rule-if-player-is-not-in-brew-swears
+#testcase-reject-start-table-of-main-oronyms-pre-crew-dork-rule
+>crew dork
+{$REJECT1}
+\\
+#testcase-check-pre-do-due-mend-rule-if-player-is-not-in-doom-ending
+#testcase-reject-start-table-of-main-oronyms-pre-do-due-mend-rule
+>do mending
+{$REJECT1}
+\\
+#testcase-check-pre-gaunt-raider-rule-if-player-is-not-in-worm-eaten-or-gone-traitor-is-not-in-worm-eaten
+#testcase-reject-start-table-of-main-oronyms-pre-gaunt-raider-rule
+>gaunt raider
+{$REJECT1}
+\\
+#testcase-check-pre-gnome-old-rule-if-player-is-not-in-keepiller
+#testcase-reject-start-table-of-main-oronyms-pre-gnome-old-rule
+>gnome old
+{$REJECT1}
+\\
+#testcase-check-pre-grin-churls-rule-if-player-is-not-in-brew-swears
+#testcase-reject-start-table-of-main-oronyms-pre-grin-churls-rule
+>grin churls
+{$REJECT1}
+\\
+#testcase-check-pre-grow-star-rule-if-player-is-not-in-naffhaze-or-gross-tar-is-not-in-naffhaze
+#testcase-reject-start-table-of-main-oronyms-pre-grow-star-rule
+>grow star
+{$REJECT1}
+\\
+#testcase-check-pre-grow-vial-rule-abide-by-the-three-isle-rule
+#testcase-reject-start-table-of-main-oronyms-pre-grow-vial-rule
+>grow vial
+{$REJECT1}
+\\
+#testcase-check-pre-heckle-ass-rule-if-player-is-not-in-brew-swears
+#testcase-reject-start-table-of-main-oronyms-pre-heckle-ass-rule
+>heckle ass
+{$REJECT1}
+\\
+#testcase-check-pre-hide-out-rule-if-player-is-not-in-wolf-rock
+#testcase-reject-start-table-of-main-oronyms-pre-hide-out-rule
+>hide out
+{$REJECT1}
+\\
+#testcase-check-pre-high-plain-rule-if-player-is-not-in-hype-lane
+#testcase-reject-start-table-of-main-oronyms-pre-high-plain-rule
+>high plain
+{$REJECT1}
+\\
+#testcase-check-pre-huh-shit-rule-if-player-is-not-in-brew-swears
+#testcase-reject-start-table-of-main-oronyms-pre-huh-shit-rule
+>huh shit
+{$REJECT1}
+\\
+#testcase-check-pre-key-pillar-rule-if-player-is-not-in-naffhaze
+#testcase-reject-start-table-of-main-oronyms-pre-key-pillar-rule
+>key pillar
+{$REJECT1}
+\\
+#testcase-check-pre-knife-right-rule-if-player-is-not-in-nigh-fright
+#testcase-reject-start-table-of-main-oronyms-pre-knife-right-rule
+>knife right
+{$REJECT1}
+\\
+#testcase-check-pre-known-ocean-rule-if-player-is-not-in-nonotion
+#testcase-reject-start-table-of-main-oronyms-pre-known-ocean-rule
+>known ocean
+{$REJECT1}
+\\
+#testcase-check-pre-lie-fuckers-rule-if-life-occurs-is-not-in-brew-swears
+#testcase-reject-start-table-of-main-oronyms-pre-lie-fuckers-rule
+>lie fuckers
+{$REJECT1}
+\\
+#testcase-check-pre-low-bend-rule-if-player-is-not-in-lobe-end
+#testcase-reject-start-table-of-main-oronyms-pre-low-bend-rule
+>low bend
+{$REJECT1}
+\\
+#testcase-check-pre-low-door-rule-if-player-is-not-in-wolf-rock
+#testcase-reject-start-table-of-main-oronyms-pre-low-door-rule
+>low door
+{$REJECT1}
+\\
+#testcase-check-pre-manna-curb-rule-if-player-is-not-in-keepiller
+#testcase-reject-start-table-of-main-oronyms-pre-manna-curb-rule
+>manna curb
+{$REJECT1}
+\\
+#testcase-check-pre-mensch-elf-rule-if-player-is-not-in-storm-isle
+#testcase-reject-start-table-of-main-oronyms-pre-mensch-elf-rule
+>mensch elf
+{$REJECT1}
+\\
+#testcase-check-pre-mice-tall-rule-if-player-is-not-in-storm-isle
+#testcase-reject-start-table-of-main-oronyms-pre-mice-tall-rule
+>mice tall
+{$REJECT1}
+\\
+#testcase-check-pre-my-corps-rule-if-sco-an-aim-is-false
+#testcase-reject-start-table-of-main-oronyms-pre-my-corps-rule
+>my corps
+{$REJECT1}
+\\
+#testcase-check-pre-nah-phase-rule-if-player-is-not-in-naffhaze
+#testcase-reject-start-table-of-main-oronyms-pre-nah-phase-rule
+>nah phase
+{$REJECT1}
+\\
+#testcase-check-pre-oh-flier-rule-if-player-is-not-in-we-loan
+#testcase-reject-start-table-of-main-oronyms-pre-oh-flier-rule
+>oh flier
+{$REJECT1}
+\\
+#testcase-check-pre-plan-tracker-rule-if-player-is-not-in-keepiller-or-plant-racker-is-not-touchable
+#testcase-reject-start-table-of-main-oronyms-pre-plan-tracker-rule
+>plan tracker
+{$REJECT1}
+\\
+#testcase-check-pre-pole-east-rule-if-player-is-not-in-naffhaze
+#testcase-reject-start-table-of-main-oronyms-pre-pole-east-rule
+>pole east
+{$REJECT1}
+\\
+#testcase-check-pre-pry-stalk-rule-if-player-is-not-in-hype-lane
+#testcase-reject-start-table-of-main-oronyms-pre-pry-stalk-rule
+>pry stalk
+{$REJECT1}
+\\
+#testcase-check-pre-rogue-old-rule-if-player-is-not-in-keepiller
+#testcase-reject-start-table-of-main-oronyms-pre-rogue-old-rule
+>rogue old
+{$REJECT1}
+\\
+#testcase-check-pre-see-design-rule-if-player-is-not-in-keepiller
+#testcase-reject-start-table-of-main-oronyms-pre-see-design-rule
+>see design
+{$REJECT1}
+\\
+#testcase-check-pre-self-owns-rule-if-player-is-not-in-hype-lane
+#testcase-reject-start-table-of-main-oronyms-pre-self-owns-rule
+>self owns
+{$REJECT1}
+\\
+#testcase-check-pre-shore-trail-rule-if-player-is-not-in-naffhaze
+#testcase-reject-start-table-of-main-oronyms-pre-shore-trail-rule
+>shore trail
+{$REJECT1}
+\\
+#testcase-check-pre-six-quid-rule-if-player-is-not-in-nonotion
+#testcase-reject-start-table-of-main-oronyms-pre-six-quid-rule
+>six quid
+{$REJECT1}
+\\
+#testcase-check-pre-store-mile-rule-if-player-is-not-in-storm-isle
+#testcase-reject-start-table-of-main-oronyms-pre-store-mile-rule
+>store mile
+{$REJECT1}
+\\
+#testcase-check-pre-summer-chant-rule-if-player-is-not-in-we-loan-or-merchant-is-not-in-we-loan
+#testcase-reject-start-table-of-main-oronyms-pre-summer-chant-rule
+>summer chant
+{$REJECT1}
+\\
+#testcase-check-pre-tall-cake-rule-if-player-does-not-have-talk-ache
+#testcase-reject-start-table-of-main-oronyms-pre-tall-cake-rule
+>tall cake
+{$REJECT1}
+\\
+#testcase-check-pre-the-file-rule-abide-by-the-three-isle-rule
+#testcase-reject-start-table-of-main-oronyms-pre-the-file-rule
+>the file
+{$REJECT1}
+\\
+#testcase-check-pre-treat-all-rule-if-player-is-not-in-trees-mall
+#testcase-reject-start-table-of-main-oronyms-pre-treat-all-rule
+>treat all
+{$REJECT1}
+\\
+#testcase-check-pre-tree-small-rule-if-player-is-not-in-trees-mall
+#testcase-reject-start-table-of-main-oronyms-pre-tree-small-rule
+>tree small
+{$REJECT1}
+\\
+#testcase-check-pre-two-maps-rule-if-player-is-not-in-air-aww-or-sco-an-aim-is-false
+#testcase-reject-start-table-of-main-oronyms-pre-two-maps-rule
+>two maps
+{$REJECT1}
+\\
+#testcase-check-pre-wan-dwarf-rule-if-player-is-not-in-wand-wharf
+#testcase-reject-start-table-of-main-oronyms-pre-wan-dwarf-rule
+>wan dwarf
+{$REJECT1}
+\\
+#testcase-check-pre-war-file-rule-abide-by-the-three-isle-rule
+#testcase-reject-start-table-of-main-oronyms-pre-war-file-rule
+>war file
+{$REJECT1}
+\\
+#testcase-check-pre-weak-us-rule-if-player-is-not-in-brew-swears
+#testcase-reject-start-table-of-main-oronyms-pre-weak-us-rule
+>weak us
+{$REJECT1}
+\\
+#testcase-check-pre-well-own-rule-if-player-is-not-in-we-loan
+#testcase-reject-start-table-of-main-oronyms-pre-well-own-rule
+>well own
+{$REJECT1}
+\\
+#testcase-check-pre-were-dicks-rule-if-weird-icks-is-not-in-brew-swears
+#testcase-reject-start-table-of-main-oronyms-pre-were-dicks-rule
+>were dicks
+{$REJECT1}
+\\
+#testcase-check-pre-were-meetin-rule-if-player-is-not-in-worm-eaten
+#testcase-reject-start-table-of-main-oronyms-pre-were-meetin-rule
+>were meetin
+{$REJECT1}
+\\
+#testcase-check-pre-whee-lone-rule-if-player-is-not-in-we-loan
+#testcase-reject-start-table-of-main-oronyms-pre-whee-lone-rule
+>whee lone
+{$REJECT1}
+\\
+#testcase-check-pre-wide-vision-rule-if-player-is-not-in-doom-ending
+#testcase-reject-start-table-of-main-oronyms-pre-wide-vision-rule
+>wide vision
+{$REJECT1}
+\\
+#testcase-check-pre-wool-frock-rule-if-player-is-not-in-wolf-rock
+#testcase-reject-start-table-of-main-oronyms-pre-wool-frock-rule
+>wool frock
+{$REJECT1}
 
 >an aim
 by a point
@@ -59,12 +348,22 @@ by a point
 #testcase-room-names-hype-lane
 `Hype Lane
 
+@gt
+#testcase-goto-table-of-noways-hype-lane
+>w
+No sense faffing around horizontally. You're sick of being stuck underground.
+\\
+#+testcase-goto-table-of-noways-hype-lane
+>u
+You need to find something that will help you go up.
+
 @rej
 >high plane
-WRONG
+That would be a nicer place! But you have nothing that could help you move up yet. You'll have to observe the general area a bit more.
 \\
 >high plain
-WRONG
+That would be a nicer place! But you have nothing that could help you move up yet. You'll have to observe the general area a bit more.
+Hmph. That still doesn't quite work! You'll figure out the how and when and where, though.
 
 >self owns
 by a point
@@ -80,12 +379,22 @@ by a point
 \\
 >undo
 
+@gt
+#+testcase-goto-table-of-noways-hype-lane
+>u
+You need to name where to go up to.
+
 >high plain
 by a point
 
 @all
 #testcase-room-names-naff-haze
 `Naff Haze
+
+@gt
+#testcase-goto-table-of-noways-naffhaze
+>n
+Too tough to stumble around until the haze lifts. How to make that happen?
 
 @alt
 ##balance undos
@@ -117,6 +426,11 @@ by a point
 #+testcase-room-names-naff-haze
 `High Plain
 
+@gt
+#+testcase-goto-table-of-noways-naffhaze
+>n
+You feel like eventually you should be able to wander around, but you can't see anywhere to go, yet. There seem to be clues where to go, and how, if you look around.
+
 @alt
 ##balance undos
 #testcase-alt-words-table-of-main-oronyms-7-pole-pull-east
@@ -128,6 +442,11 @@ by a point
 >pole east
 by a point
 
+@gt
+#+testcase-goto-table-of-noways-naffhaze
+>w
+You can't go west, but you can go east.
+
 >shore trail
 by a point
 
@@ -137,12 +456,22 @@ by a point
 #testcase-room-names-no-notion
 `No Notion
 
+@gt
+#testcase-goto-table-of-noways-nonotion
+>w
+You can only go back NORTH, or that's your notion, right now.
+
 >known ocean
 by a point
 
 @all
 #+testcase-room-names-no-notion
 `Known Ocean
+
+@gt
+#+testcase-goto-table-of-noways-nonotion
+>e
+You can only go back NORTH or, if you know where you want to go, give the squid instructions where to go.
 
 >six quid
 by a point
@@ -158,8 +487,20 @@ by a point
 #testcase-room-names-wolf-rock
 `Wolf Rock
 
+@gt
+#testcase-goto-table-of-noways-wolf-rock
+>n
+Wolf Rock blocks every planar passage except back SOUTH.
+!lode ore
+!hideout
+
 >wool frock
 by a point
+
+@rej
+#testcase-check-pre-wool-frock-rule-if-sco-wool-frock-is-true
+>wool frock
+You already found one wool frock. You can't imagine you'd need two.
 
 @alt
 >hideout
@@ -176,6 +517,11 @@ by a point
 #testcase-room-names-hide-out
 `Hideout
 
+@gt
+#testcase-goto-table-of-noways-hideout
+>w
+You can only go back UP. If this hideout had too many passages, it'd risk being less effective.
+
 >boost role
 by a point
 
@@ -185,6 +531,11 @@ by a point
 
 >key pillar
 by a point
+
+@rej
+#testcase-check-pre-key-pillar-rule-if-sco-key-pillar-is-true
+>key pillar
+You already opened the keep (iller)!
 
 >w
 
@@ -198,7 +549,7 @@ by a point
 @rej
 #testcase-check-pre-wipe-out-rule-if-player-is-not-in-doom-ending
 >wipe out
-You haven't identified anyone terribly evil you want to wipe out.
+You don't want to wipe out the friendships you made.
 
 >rogue old
 by a point
@@ -206,12 +557,22 @@ by a point
 >plan tracker
 by a point
 
+@gt
+#testcase-goto-table-of-noways-keepiller
+>w
+Apart from finding a way beyond the seedy sign, the keep doesn't have many twisty passages. Well, any.
+
 >see design
 by a point
 
 @all
 #testcase-room-names-nigh-fright
 `Nigh Fright
+
+@gt
+#testcase-goto-table-of-noways-nigh-fright
+>e
+You could leave, but then you'd have to come back. Just figure what to do here.
 
 @alt
 ##balance undos
@@ -223,6 +584,11 @@ by a point
 
 >knife right
 by a point
+
+@gt
+#+testcase-goto-table-of-noways-keepiller
+>w
+Apart from finding a way beyond the seedy sign, which you don't need to again, the keep doesn't have many twisty passages. Well, any.
 
 >e
 
@@ -239,6 +605,32 @@ by a bonus point
 #testcase-room-names-brew-swears
 `Brew Swears
 
+@gt
+#testcase-goto-table-of-noways-brew-swears
+>e
+You don't want to get into the guts of this place. Just get the crude orc, if you'd like, then get OUT.
+
+@rej
+#testcase-check-pre-bastard-eee-rule-if-bah-sturdy-is-not-in-brew-swears
+>bastardy
+{$REJECT2}
+\\
+#testcase-check-pre-heckle-ass-rule-if-heh-class-is-not-in-brew-swears
+>heckle ass
+{$REJECT2}
+\\
+#testcase-check-pre-huh-shit-rule-if-hush-it-is-not-in-brew-swears
+>huh shit
+{$REJECT2}
+\\
+#testcase-check-pre-lie-fuckers-rule-if-player-is-not-in-brew-swears
+>lie fuckers
+{$REJECT2}
+\\
+#testcase-check-pre-were-dicks-rule-if-player-is-not-in-brew-swears
+>were dicks
+{$REJECT2}
+
 @!min
 >weak us
 by a bonus point
@@ -246,7 +638,12 @@ by a bonus point
 >crew dork
 by a bonus point
 
-@!min+
+@gt
+#+testcase-goto-table-of-noways-brew-swears
+>w
+You don't want to get into the guts of this place. You've gotten the crude orc on your side, and the only way to go is OUT.
+
+@!min
 >bastard eee
 by a bonus point
 \\
@@ -281,6 +678,11 @@ The grin churls remark that you seemed so nice, really, and they're all for a bi
 \\
 >out
 
+@gt
+#+testcase-goto-table-of-noways-naffhaze
+>u
+You can go down or in the cardinal directions, but not up.
+
 >d
 
 @all
@@ -298,6 +700,11 @@ by a point
 #testcase-room-names-lobe-end
 `Lobe End
 
+@gt
+#testcase-goto-table-of-noways-lobe-end
+>n
+You can only go back west. Well, for now.
+
 >low bend
 by a point
 
@@ -313,6 +720,11 @@ by a point
 \\
 >undo
 
+@gt
+#+testcase-goto-table-of-noways-lobe-end
+>e
+The bend only curves west to north.
+
 >bay sale
 by a point
 
@@ -321,6 +733,11 @@ by a point
 @all
 #testcase-room-names-store-mile
 `Storm Isle
+
+@gt
+#testcase-goto-table-of-noways-storm-isle
+>n
+You can only go back south to Lobe End.
 
 >store mile
 by a point
@@ -335,6 +752,11 @@ by a point
 >mice tall
 by a point
 
+@gt
+#+testcase-goto-table-of-noways-storm-isle
+>e
+You can only go back south to Lobe End or north to the rest of the mall.
+
 >s
 
 >w
@@ -344,11 +766,21 @@ by a point
 >low door
 by a point
 
+@gt
+#+testcase-goto-table-of-noways-wolf-rock
+>n
+Wolf Rock blocks every planar passage except back SOUTH. Well, you can go IN where the lode ore was as well. There's a hideout above as well.
+
 >in
 
 @all
 #testcase-room-names-we-loan
 `We Loan
+
+@gt
+#testcase-goto-table-of-noways-we-loan
+>e
+You can only go back OUT here.
 
 >well own
 by a point
@@ -356,6 +788,11 @@ by a point
 @all
 #+testcase-room-names-we-loan
 `We'll Own
+
+@rej
+#testcase-check-pre-well-own-rule-if-sco-well-own-is-true
+>well own
+You already exposed the shady side here.
 
 >summer chant
 by a point
@@ -388,6 +825,11 @@ by a point
 
 >oh flier
 by a point
+
+@rej
+#testcase-check-pre-whee-lone-rule-if-sco-whee-lone-is-true
+>whee lone
+You already got this place to yourself!
 
 @all
 #+testcase-room-names-we-loan
@@ -425,6 +867,11 @@ by a point
 >tree small
 by a point
 
+@gt
+#testcase-goto-table-of-noways-trees-mall
+>n
+You can only go back south.
+
 >s
 
 >s
@@ -442,6 +889,11 @@ by a point
 @all
 #testcase-room-names-wand-wharf
 `Wand Wharf
+
+@gt
+#testcase-goto-table-of-noways-wand-wharf
+>e
+You're not in the mood for exploring the wharf. It seems like a good way to get lost. Maybe there's someone or something nearby you can pick up, then leave.
 
 >wan dwarf
 by a point
@@ -494,6 +946,11 @@ by a point
 
 >d
 
+@gt
+#testcase-goto-table-of-noways-worm-eaten
+>w
+No tricky passages here, just UP back to safer ground or DOWN to your fate.
+
 >were meetin
 by a point
 
@@ -501,8 +958,16 @@ by a point
 #+testcase-room-names-worm-eaten
 `We're Meetin'!
 
+@rej
+>wipe out
+You haven't identified anyone terribly evil you want to wipe out.
+
 >my corps
 by a point
+
+@rej
+>my corps
+You already brought your corps a bit closer together!
 
 >d
 
@@ -516,11 +981,22 @@ by a point
 You will want to WIPE OUT the cause of your problems once you have them in your crosshairs.
 !not for a while
 
+@gt
+#testcase-goto-table-of-noways-doom-ending
+>n
+Unsurprisingly, all the action is here.
+
 >cease cull
 by a point
 
 @rej
+#testcase-check-pre-cease-cull-rule-if-sco-cease-cull-is-true
+>cease cull
+You already played defense. Now's the time to go on offense!
+
+@rej+
 #+testcase-think-table-of-main-oronyms-pre-wipe-out-rule
+>think
 You will want to WIPE OUT the cause of your problems now you have them in your crosshairs.
 !not for a while
 
@@ -528,9 +1004,11 @@ You will want to WIPE OUT the cause of your problems now you have them in your c
 by a point
 
 @rej
+#testcase-check-pre-wide-vision-rule-if-pre-acts-<-pre-max
 >wide vision
 You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.
 \\
+#+testcase-check-pre-wide-vision-rule-if-pre-acts-<-pre-max
 >wide vision
 You are unable to express your wide vision. You'll have to settle for just repairing things pretty well.
 \\
@@ -555,8 +1033,223 @@ by a point
 >undo
 
 @rej
+#testcase-check-pre-wipe-out-rule-if-sco-wipe-out-is-true
 >wipe out
 You already wiped out the sea skull! Now is the time for healing.
+
+@rej+
+#testcase-reject-end-table-of-main-oronyms-pre-bastard-eee-rule
+>bastard eee
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-bay-sale-rule
+>bay sail
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-bile-oh-rule
+>bile oh
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-boost-role-rule
+>boost role
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-brew-swears-rule
+>brew swears
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-cease-cull-rule
+>cease cull
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-crew-dork-rule
+>crew dork
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-gaunt-raider-rule
+>gaunt raider
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-gnome-old-rule
+>gnome old
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-grin-churls-rule
+>grin churls
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-grow-star-rule
+>grow star
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-grow-vial-rule
+>grow vial
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-heckle-ass-rule
+>heckle ass
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-hide-out-rule
+>hide out
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-high-plain-rule
+>high plain
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-huh-shit-rule
+>huh shit
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-key-pillar-rule
+>key pillar
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-knife-right-rule
+>knife right
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-known-ocean-rule
+>known ocean
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-lie-fuckers-rule
+>lie fuckers
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-low-bend-rule
+>low bend
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-low-door-rule
+>low door
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-manna-curb-rule
+>manna curb
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-mensch-elf-rule
+>mensch elf
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-mice-tall-rule
+>mice tall
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-nah-phase-rule
+>nah phase
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-oh-flier-rule
+>oh flier
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-plan-tracker-rule
+>plan tracker
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-pole-east-rule
+>pole east
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-pry-stalk-rule
+>pry stalk
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-rogue-old-rule
+>rogue old
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-see-design-rule
+>see design
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-self-owns-rule
+>self owns
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-shore-trail-rule
+>shore trail
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-six-quid-rule
+>six quid
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-store-mile-rule
+>store mile
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-summer-chant-rule
+>summer chant
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-tall-cake-rule
+>tall cake
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-the-file-rule
+>the file
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-treat-all-rule
+>treat all
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-tree-small-rule
+>tree small
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-two-maps-rule
+>two maps
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-wan-dwarf-rule
+>wan dwarf
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-war-file-rule
+>war file
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-weak-us-rule
+>weak us
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-well-own-rule
+>well own
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-were-dicks-rule
+>were dicks
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-were-meetin-rule
+>were meetin
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-whee-lone-rule
+>whee lone
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-wide-vision-rule
+>wide vision
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-wipe-out-rule
+>wipe out
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-wool-frock-rule
+>wool frock
+{$REJECT2}
+
+@gt
+#+testcase-goto-table-of-noways-doom-ending
+>e
+You need to prep for making things right in general. Then, once the game's over, you'll leave.
 
 >do mending
 by a point

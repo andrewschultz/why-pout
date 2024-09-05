@@ -8,6 +8,14 @@
 
 * main-thru
 
+#testcase-goto-table-of-noways-eh-raw-air-aww
+>n
+"Grey trek? Great wreck!" you moon. You can't see anywhere. You know almost nothing. I mean, you don't even have a name. What would you do even if there was a passage?
+
+#+testcase-goto-table-of-noways-eh-raw-air-aww
+>e
+"I sit? Ice it!" you moon. You can't see anywhere. You know almost nothing. I mean, you don't even have a name. What would you do even if there was a passage?
+
 >z
 
 >an aim
@@ -16,28 +24,60 @@ by a point
 >two maps
 by a point
 
+#testcase-goto-table-of-noways-hype-lane
+>w
+No sense faffing around horizontally. You're sick of being stuck underground.
+
+#+testcase-goto-table-of-noways-hype-lane
+>u
+You need to find something that will help you go up.
+
 >self owns
 by a point
 
 >pry stalk
 by a point
 
+#+testcase-goto-table-of-noways-hype-lane
+>u
+You need to name where to go up to.
+
 >high plain
 by a point
+
+#testcase-goto-table-of-noways-naffhaze
+>n
+Too tough to stumble around until the haze lifts. How to make that happen?
 
 >nah phase
 by a point
 
+#+testcase-goto-table-of-noways-naffhaze
+>n
+You feel like eventually you should be able to wander around, but you can't see anywhere to go, yet. There seem to be clues where to go, and how, if you look around.
+
 >pole east
 by a point
+
+#+testcase-goto-table-of-noways-naffhaze
+>w
+You can't go west, but you can go east.
 
 >shore trail
 by a point
 
 >s
 
+#testcase-goto-table-of-noways-nonotion
+>w
+You can only go back NORTH, or that's your notion, right now.
+
 >known ocean
 by a point
+
+#+testcase-goto-table-of-noways-nonotion
+>e
+You can only go back NORTH or, if you know where you want to go, give the squid instructions where to go.
 
 >six quid
 by a point
@@ -49,6 +89,12 @@ by a point
 
 >n
 
+#testcase-goto-table-of-noways-wolf-rock
+>n
+Wolf Rock blocks every planar passage except back SOUTH.
+!lode ore
+!hideout
+
 >wool frock
 by a point
 
@@ -56,6 +102,10 @@ by a point
 by a point
 
 >d
+
+#testcase-goto-table-of-noways-hideout
+>w
+You can only go back UP. If this hideout had too many passages, it'd risk being less effective.
 
 >boost role
 by a point
@@ -78,11 +128,23 @@ by a point
 >plan tracker
 by a point
 
+#testcase-goto-table-of-noways-keepiller
+>w
+Apart from finding a way beyond the seedy sign, the keep doesn't have many twisty passages. Well, any.
+
 >see design
 by a point
 
+#testcase-goto-table-of-noways-nigh-fright
+>e
+You could leave, but then you'd have to come back. Just figure what to do here.
+
 >knife right
 by a point
+
+#+testcase-goto-table-of-noways-keepiller
+>w
+Apart from finding a way beyond the seedy sign, which you don't need to again, the keep doesn't have many twisty passages. Well, any.
 
 >e
 
@@ -94,11 +156,19 @@ by a bonus point
 
 >in
 
+#testcase-goto-table-of-noways-brew-swears
+>e
+You don't want to get into the guts of this place. Just get the crude orc, if you'd like, then get OUT.
+
 >weak us
 by a bonus point
 
 >crew dork
 by a bonus point
+
+#+testcase-goto-table-of-noways-brew-swears
+>w
+You don't want to get into the guts of this place. You've gotten the crude orc on your side, and the only way to go is OUT.
 
 >bastard eee
 by a bonus point
@@ -121,6 +191,10 @@ The grin churls remark that you seemed so nice, really, and they're all for a bi
 
 >out
 
+#+testcase-goto-table-of-noways-naffhaze
+>u
+You can go in all cardinal directions here, or down.
+
 >d
 
 >gaunt raider
@@ -130,13 +204,25 @@ by a point
 
 >e
 
+#testcase-goto-table-of-noways-lobe-end
+>n
+You can only go back west. Well, for now.
+
 >low bend
 by a point
+
+#+testcase-goto-table-of-noways-lobe-end
+>e
+The bend only curves west to north.
 
 >bay sale
 by a point
 
 >n
+
+#testcase-goto-table-of-noways-storm-isle
+>n
+You can only go back south to Lobe End.
 
 >store mile
 by a point
@@ -147,6 +233,10 @@ by a point
 >mice tall
 by a point
 
+#+testcase-goto-table-of-noways-storm-isle
+>e
+You can only go back south to Lobe End or north to the rest of the mall.
+
 >s
 
 >w
@@ -156,7 +246,15 @@ by a point
 >low door
 by a point
 
+#+testcase-goto-table-of-noways-wolf-rock
+>n
+Wolf Rock blocks every planar passage except back SOUTH. Well, you can go IN where the lode ore was as well. There's a hideout above as well.
+
 >in
+
+#testcase-goto-table-of-noways-we-loan
+>e
+You can only go back OUT here.
 
 >well own
 by a point
@@ -193,6 +291,10 @@ by a point
 >tree small
 by a point
 
+#testcase-goto-table-of-noways-trees-mall
+>n
+You can only go back south.
+
 >s
 
 >s
@@ -206,6 +308,10 @@ by a point
 
 >war file
 by a point
+
+#testcase-goto-table-of-noways-wand-wharf
+>e
+You're not in the mood for exploring the wharf. It seems like a good way to get lost. Maybe there's someone or something nearby you can pick up, then leave.
 
 >wan dwarf
 by a point
@@ -255,6 +361,10 @@ by a point
 
 >d
 
+#testcase-goto-table-of-noways-worm-eaten
+>w
+No tricky passages here, just UP back to safer ground or DOWN to your fate.
+
 >were meetin
 by a point
 
@@ -263,11 +373,19 @@ by a point
 
 >d
 
+#testcase-goto-table-of-noways-doom-ending
+>n
+Unsurprisingly, all the action is here.
+
 >cease cull
 by a point
 
 >wipe out
 by a point
+
+#+testcase-goto-table-of-noways-doom-ending
+>e
+You need to prep for making things right in general. Then, once the game's over, you'll leave.
 
 >do mending
 by a point
