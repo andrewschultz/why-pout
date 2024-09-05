@@ -67,6 +67,12 @@ by a point
 >shore trail
 by a point
 
+>grow star
+by a point
+
+>key pillar
+by a point
+
 >s
 
 >known ocean
@@ -76,9 +82,6 @@ by a point
 by a point
 
 >n
-
->grow star
-by a point
 
 >n
 
@@ -101,9 +104,6 @@ by a point
 >u
 
 >s
-
->key pillar
-by a point
 
 >w
 

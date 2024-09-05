@@ -126,7 +126,7 @@ file=reg-wp-thru-goto.txt,goto/gt/go,walkthrough testing GOTO
 \\
 #testcase-check-pre-hide-out-rule-if-player-is-not-in-wolf-rock
 #testcase-reject-start-table-of-main-oronyms-pre-hide-out-rule
->hide out
+>hideout
 {$REJECT1}
 \\
 #testcase-check-pre-high-plain-rule-if-player-is-not-in-hype-lane
@@ -325,7 +325,9 @@ by a point
 @all,rej
 {--rej}#testcase-check-pre-an-aim-rule-fallthrough
 {--all}#testcase-run-post-an-aim-rule-default
-WRONG
+Yes. Now that you realize you want more than just to know your name, that you have bigger goals, you push a bit harder when you initially forget it. You remember patches of the past. You remember people harshly calling you by your last name, then your first.
+Your name is Mike Orr. You even remember it's -- well, one of these two things: short for Michal, which everyone pronounced Michael until you just gave up, or ... well, Michael.
+You look around a bit. You can see more, now. You're in some sort of tomb apse. You could exit--there are exits each way--but you suspect there's some horrible maze you could easily get lost in.
 
 @all
 `Tomb Apse
@@ -385,7 +387,9 @@ by a point
 @all,rej
 {--rej}#testcase-check-pre-self-owns-rule-fallthrough
 {--all}#testcase-run-post-self-owns-rule-default
-WRONG
+You take a step back from all the confident, constant chatter in the cell phones. You hear that, indeed, people are just repeating mantras, and they are not as smart as they think they are. You wonder if you should say something to the most egregious offenders ... and you eventually do! And they appear flustered. They attack you back for being too quiet. You mention that if they annoyed someone as too-quiet as you, they must have gone over the line.
+Your confrontation did not go unnoticed by other cell phoners. They take the hint and moderate their voices.
+However, now, a prize talk blasts through hidden loudspeakers. It exhorts you to find your dream, to find something that will help you move above and beyond everyone else. It's probably talking about money or power, but you're looking for something different.
 
 >pry stalk
 by a point
@@ -393,7 +397,7 @@ by a point
 @all,rej
 {--rej}#testcase-check-pre-pry-stalk-rule-fallthrough
 {--all}#testcase-run-post-pry-stalk-rule-default
-WRONG
+Among all the chatter, you discover a disused booth. Someone is preaching on about environmental stuff, and it's so much less painful than cell phone chat. You worry they're just going to blab on forever, but they're so grateful you listened as long as you did. They hand you a stalk they think can grow quickly. Their own special formula. It looks weird and glittery, and if anything can reach up out of here, this can. But the question is, where can it grow to?
 
 @alt
 ##balance undos
@@ -414,7 +418,7 @@ by a point
 @all,rej
 {--rej}#testcase-check-pre-high-plain-rule-fallthrough
 {--all}#testcase-run-post-high-plain-rule-default
-WRONG
+You plant the stalk, which -- well, it's already a bit of a stalk, but it grows quickly and sturdily. It's not hard at all to climb. You are pretty sure you're aboveground, but it's hard to see for sure.
 
 @all
 #testcase-room-names-naff-haze
@@ -459,7 +463,7 @@ by a point
 @all,rej
 {--rej}#testcase-check-pre-nah-phase-rule-fallthrough
 {--all}#testcase-run-post-nah-phase-rule-default
-WRONG
+The haze seemed too thick at first. But you recognize it doesn't have to be there. As you sift through it, you notice things that weren't there before. It lifts.
 
 @all
 #+testcase-room-names-naff-haze
@@ -484,7 +488,8 @@ by a point
 @all,rej
 {--rej}#testcase-check-pre-pole-east-rule-fallthrough
 {--all}#testcase-run-post-pole-east-rule-default
-WRONG
+Ah, yes. It makes sense. You find the pole. Strangely, there's just a single switch to flip. And even more strangely, the switch you flip causes the pole to revert into the ground. Yay!
+But there's more! A war pawn, like a chess piece, rolls into view. It looks pretty powerful. Maybe you see how to use it, but maybe you shouldn't use it right away.
 
 @gt
 #+testcase-goto-table-of-noways-naffhaze
@@ -497,7 +502,52 @@ by a point
 @all,rej
 {--rej}#testcase-check-pre-shore-trail-rule-fallthrough
 {--all}#testcase-run-post-shore-trail-rule-default
-WRONG
+There must be more to the short rail than you see. And you start tracing where it is, where it can be, where it should go. You find something to dig up. It's ... surprisingly malleable. You have nothing else to do, anyway. Soon it feels like pulling cable from a ground. It's tough, since you can't see around, but indeed, the short rail does lead to a shore trail that leads south.
+
+>grow star
+by a point
+
+@all,rej
+{--rej}#testcase-check-pre-grow-star-rule-fallthrough
+{--all}#testcase-run-post-grow-star-rule-default
+You look at the gross tar, and you hope for a star in the sky to become brighter. It does, and clearly some of the tar is goopier than some of the other tar. You see a way to the north, and after you do, the tar isn't as relevant any more.
+
+>key pillar
+by a point
+
+@all,rej
+{--rej}#testcase-check-pre-key-pillar-rule-fallthrough
+{--all}#testcase-run-post-key-pillar-rule-default
+You look around the pillars for a key, since there's no flowerpot to hide it under. You find one, and you open the way west.
+You've changed the landscape a lot, north, south, east and west. But there's more! You hear a rumbling beneath you, opening a passage DOWN!
+
+@rej
+#testcase-check-pre-key-pillar-rule-if-sco-key-pillar-is-true
+>key pillar
+You already opened the keep (iller)!
+
+@rej+
+>w
+\\
+>gnome old
+You summon a gnome, old, to compliment them on keeping the keep looking so nice all these years. They thank you but mention they're a bit sick of it and they seek adventure. Yet they can't go adventuring in these tatty clothes.
+\\
+>rogue old
+A rogue, old, appears, but after some conversation, you realize you don't have any money to pay them with. They'd like to help, but they worked for free once and felt ripped off. Maybe later.
+\\
+>manna curb
+Perhaps there is a lot of good stuff beneath the manic herb, but you don't have the specialized knowledge to figure it out.
+\\
+>see design
+You sort of want to see the hidden design, but you're sort of scared what will happen once you do. You feel like you need some support before you can give it your all.
+\\
+>think
+You may be able to recruit the GNOME OLD here once you have adventuring gear.
+You may be able to recruit the ROGUE OLD here once you have money.
+You may be able to find a MANNA CURB beneath the manna curb here once you have someone with knowledge of wildlife and wildflowers.
+You may be able to SEE DESIGN here once you have more support and are less scared.
+\\
+>e
 
 >s
 
@@ -536,14 +586,6 @@ by a point
 WRONG
 
 >n
-
->grow star
-by a point
-
-@all,rej
-{--rej}#testcase-check-pre-grow-star-rule-fallthrough
-{--all}#testcase-run-post-grow-star-rule-default
-WRONG
 
 >n
 
@@ -607,19 +649,6 @@ WRONG
 >u
 
 >s
-
->key pillar
-by a point
-
-@all,rej
-{--rej}#testcase-check-pre-key-pillar-rule-fallthrough
-{--all}#testcase-run-post-key-pillar-rule-default
-WRONG
-
-@rej
-#testcase-check-pre-key-pillar-rule-if-sco-key-pillar-is-true
->key pillar
-You already opened the keep (iller)!
 
 >w
 

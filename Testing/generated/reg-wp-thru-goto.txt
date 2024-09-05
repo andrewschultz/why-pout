@@ -66,6 +66,12 @@ You can't go west, but you can go east.
 >shore trail
 by a point
 
+>grow star
+by a point
+
+>key pillar
+by a point
+
 >s
 
 #testcase-goto-table-of-noways-nonotion
@@ -83,9 +89,6 @@ You can only go back NORTH or, if you know where you want to go, give the squid 
 by a point
 
 >n
-
->grow star
-by a point
 
 >n
 
@@ -113,9 +116,6 @@ by a point
 >u
 
 >s
-
->key pillar
-by a point
 
 >w
 
