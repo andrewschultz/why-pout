@@ -1,0 +1,349 @@
+## reg-wp-thru-all.txt
+## GENERATOR FILE: rbr-wp-thru.txt
+
+## walkthrough with all points and potential neutral retries
+
+** game: /home/andrew/prt/debug-why-pout.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+#testcase-room-names-eh-raw-air-aww
+`Eh, Raw Air, Aww
+
+>z
+
+>an aim
+by a point
+
+`Tomb Apse
+
+>two maps
+by a point
+
+#testcase-room-names-hype-lane
+`Hype Lane
+
+>self owns
+by a point
+
+>pry stalk
+by a point
+
+>high plain
+by a point
+
+#testcase-room-names-naff-haze
+`Naff Haze
+
+>nah phase
+by a point
+
+#+testcase-room-names-naff-haze
+`High Plain
+
+>pole east
+by a point
+
+>shore trail
+by a point
+
+>s
+
+#testcase-room-names-no-notion
+`No Notion
+
+>known ocean
+by a point
+
+#+testcase-room-names-no-notion
+`Known Ocean
+
+>six quid
+by a point
+
+>n
+
+>grow star
+by a point
+
+>n
+
+#testcase-room-names-wolf-rock
+`Wolf Rock
+
+>wool frock
+by a point
+
+>hide out
+by a point
+
+>d
+
+#testcase-room-names-hide-out
+`Hideout
+
+>boost role
+by a point
+
+>u
+
+>s
+
+>key pillar
+by a point
+
+>w
+
+#testcase-room-names-keep-iller
+`Keep (Iller)
+
+>gnome old
+by a point
+
+>rogue old
+by a point
+
+>plan tracker
+by a point
+
+>see design
+by a point
+
+#testcase-room-names-nigh-fright
+`Nigh Fright
+
+>knife right
+by a point
+
+>e
+
+#unscramble the order the swears appear in
+>ao
+
+>brew swears
+by a bonus point
+
+>in
+
+#testcase-room-names-brew-swears
+`Brew Swears
+
+>weak us
+by a bonus point
+
+>crew dork
+by a bonus point
+
+>bastard eee
+by a bonus point
+
+>heckle ass
+by a bonus point
+
+>huh shit
+by a bonus point
+
+>lie fuckers
+by a bonus point
+
+>were dicks
+by a bonus point
+
+>grin churls
+by a bonus point
+The grin churls remark that you seemed so nice, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up.
+
+>out
+
+>d
+
+#testcase-room-names-worm-eaten
+`Worm-Eaten
+
+>gaunt raider
+by a point
+
+>u
+
+>e
+
+#testcase-room-names-lobe-end
+`Lobe End
+
+>low bend
+by a point
+
+#+testcase-room-names-lobe-end
+`Low Bend
+
+>bay sale
+by a point
+
+>n
+
+#testcase-room-names-store-mile
+`Storm Isle
+
+>store mile
+by a point
+
+#+testcase-room-names-store-mile
+`Store Mile
+
+>mensch elf
+by a point
+
+>mice tall
+by a point
+
+>s
+
+>w
+
+>n
+
+>low door
+by a point
+
+>in
+
+#testcase-room-names-we-loan
+`We Loan
+
+>well own
+by a point
+
+#+testcase-room-names-we-loan
+`We'll Own
+
+>summer chant
+by a point
+
+>bile oh
+by a point
+
+>whee lone
+by a point
+
+#+testcase-room-names-we-loan
+`Whee, Lone?
+
+>oh flier
+by a point
+
+#+testcase-room-names-we-loan
+`Whee! 'Lone!
+
+>out
+
+>s
+
+>w
+
+>manna curb
+by a point
+
+>e
+
+>e
+
+>n
+
+>n
+
+#testcase-room-names-trees-mall
+`Trees Mall
+
+>tree small
+by a point
+
+>s
+
+>s
+
+>w
+
+>s
+
+>grow vial
+by a point
+
+>war file
+by a point
+
+#testcase-room-names-wand-wharf
+`Wand Wharf
+
+>wan dwarf
+by a point
+
+>n
+
+>e
+
+>n
+
+>n
+
+>t dwarf
+
+>t elf
+
+>t gnome
+
+>t rogue
+
+>t raider
+
+>t mice
+
+>t troll
+
+talk-ache
+
+>t orc
+
+>tall cake
+by a point
+
+>treat all
+by a point
+
+>s
+
+>s
+
+>w
+
+>s
+
+>the file
+by a point
+
+>n
+
+>d
+
+>were meetin
+by a point
+
+#+testcase-room-names-worm-eaten
+`We're Meetin'!
+
+>my corps
+by a point
+
+>d
+
+#testcase-room-names-doom-ending
+`Doom Ending
+
+>cease cull
+by a point
+
+>wipe out
+by a point
+
+>do mending
+by a point

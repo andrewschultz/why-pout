@@ -1,0 +1,238 @@
+## reg-wp-thru-min.txt
+## GENERATOR FILE: rbr-wp-thru.txt
+
+## minimum walkthrough
+
+** game: /home/andrew/prt/debug-why-pout.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>z
+
+>an aim
+by a point
+
+>two maps
+by a point
+
+>self owns
+by a point
+
+>pry stalk
+by a point
+
+>high plain
+by a point
+
+>nah phase
+by a point
+
+>pole east
+by a point
+
+>shore trail
+by a point
+
+>s
+
+>known ocean
+by a point
+
+>six quid
+by a point
+
+>n
+
+>grow star
+by a point
+
+>n
+
+>wool frock
+by a point
+
+>hide out
+by a point
+
+>d
+
+>boost role
+by a point
+
+>u
+
+>s
+
+>key pillar
+by a point
+
+>w
+
+>gnome old
+by a point
+
+>rogue old
+by a point
+
+>plan tracker
+by a point
+
+>see design
+by a point
+
+>knife right
+by a point
+
+>e
+
+>d
+
+>gaunt raider
+by a point
+
+>u
+
+>e
+
+>low bend
+by a point
+
+>bay sale
+by a point
+
+>n
+
+>store mile
+by a point
+
+>mensch elf
+by a point
+
+>mice tall
+by a point
+
+>s
+
+>w
+
+>n
+
+>low door
+by a point
+
+>in
+
+>well own
+by a point
+
+>summer chant
+by a point
+
+>bile oh
+by a point
+
+>whee lone
+by a point
+
+>oh flier
+by a point
+
+>out
+
+>s
+
+>w
+
+>manna curb
+by a point
+
+>e
+
+>e
+
+>n
+
+>n
+
+>tree small
+by a point
+
+>s
+
+>s
+
+>w
+
+>s
+
+>grow vial
+by a point
+
+>war file
+by a point
+
+>wan dwarf
+by a point
+
+>n
+
+>e
+
+>n
+
+>n
+
+>t dwarf
+
+>t elf
+
+>t gnome
+
+>t rogue
+
+>t raider
+
+>t mice
+
+>t troll
+
+>t orc
+
+>tall cake
+by a point
+
+>treat all
+by a point
+
+>s
+
+>s
+
+>w
+
+>s
+
+>the file
+by a point
+
+>n
+
+>d
+
+>were meetin
+by a point
+
+>my corps
+by a point
+
+>d
+
+>cease cull
+by a point
+
+>wipe out
+by a point
+
+>do mending
+by a point

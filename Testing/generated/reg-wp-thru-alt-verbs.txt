@@ -1,0 +1,365 @@
+## reg-wp-thru-alt-verbs.txt
+## GENERATOR FILE: rbr-wp-thru.txt
+
+## walkthrough with altverb tests
+
+** game: /home/andrew/prt/debug-why-pout.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>z
+
+>an aim
+by a point
+
+>two maps
+by a point
+
+>self owns
+by a point
+
+>pry stalk
+by a point
+
+#testcase-alt-words-table-of-main-oronyms-5-high-plain-plane
+>high plane
+by a point
+
+>undo
+
+>high plain
+by a point
+
+#testcase-alt-words-table-of-main-oronyms-6-nah-naah-naw-naa-na-phase
+>naah phase
+by a point
+
+>undo
+
+>naw phase
+by a point
+
+>undo
+
+>naa phase
+by a point
+
+>undo
+
+>na phase
+by a point
+
+>undo
+
+>nah phase
+by a point
+
+#testcase-alt-words-table-of-main-oronyms-7-pole-pull-east
+>pull east
+by a point
+
+>undo
+
+>pole east
+by a point
+
+>shore trail
+by a point
+
+>s
+
+>known ocean
+by a point
+
+>six quid
+by a point
+
+>n
+
+>grow star
+by a point
+
+>n
+
+>wool frock
+by a point
+
+>hideout
+by a point
+
+>undo
+
+>hide out
+by a point
+
+>d
+
+>boost role
+by a point
+
+>u
+
+>s
+
+>key pillar
+by a point
+
+>w
+
+>gnome old
+by a point
+
+>rogue old
+by a point
+
+>plan tracker
+by a point
+
+>see design
+by a point
+
+#testcase-alt-words-table-of-main-oronyms-40-knife-right-rite
+>knife rite
+by a point
+
+>undo
+
+>knife right
+by a point
+
+>e
+
+#unscramble the order the swears appear in
+>ao
+
+>brew swears
+by a bonus point
+
+>in
+
+>weak us
+by a bonus point
+
+>crew dork
+by a bonus point
+
+>bastard eee
+by a bonus point
+
+>heckle ass
+by a bonus point
+
+>huh shit
+by a bonus point
+
+>lie fuckers
+by a bonus point
+
+>grin churls
+by a bonus point
+
+>were dicks
+The grin churls remark that you seemed so nice, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up.
+by a bonus point
+
+>undo
+>undo
+
+>were dicks
+by a bonus point
+
+>grin churls
+by a bonus point
+The grin churls remark that you seemed so nice, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up.
+
+>out
+
+>d
+
+>gaunt raider
+by a point
+
+>u
+
+>e
+
+>low bend
+by a point
+
+#testcase-alt-words-table-of-main-oronyms-28-bay-sail-sale
+>bay sail
+by a point
+
+>undo
+
+>bay sale
+by a point
+
+>n
+
+>store mile
+by a point
+
+>mensch elf
+by a point
+
+>mice tall
+by a point
+
+>s
+
+>w
+
+>n
+
+>low door
+by a point
+
+>in
+
+>well own
+by a point
+
+>summer chant
+by a point
+
+#testcase-alt-words-table-of-main-oronyms-23-bile-oh-o
+>bile o
+by a point
+
+>undo
+
+>bile oh
+by a point
+
+>whee lone
+by a point
+
+#testcase-alt-words-table-of-main-oronyms-25-oh-flier-flyer
+>oh flyer
+by a point
+
+>undo
+
+>oh flier
+by a point
+
+>out
+
+>s
+
+>w
+
+#testcase-alt-words-table-of-main-oronyms-37-manna-curb-kerb
+>manna kerb
+by a point
+
+>undo
+
+>manna curb
+by a point
+
+>e
+
+>e
+
+>n
+
+>n
+
+>tree small
+by a point
+
+>s
+
+>s
+
+>w
+
+>s
+
+>grow vial
+by a point
+
+>war file
+by a point
+
+>wan dwarf
+by a point
+
+>n
+
+>e
+
+>n
+
+>n
+
+>t dwarf
+
+>t elf
+
+>t gnome
+
+>t rogue
+
+>t raider
+
+>t mice
+
+>t troll
+
+>t orc
+
+>tall cake
+by a point
+
+>treat all
+by a point
+
+>s
+
+>s
+
+>w
+
+>s
+
+>the file
+by a point
+
+>n
+
+>d
+
+>were meetin
+by a point
+
+>my corps
+by a point
+
+>d
+
+>cease cull
+by a point
+
+>wipe out
+by a point
+
+#testcase-alt-words-table-of-main-oronyms-47-do-due-mend-mending
+>due mending
+by a point
+
+>undo
+>due mend
+by a point
+
+>undo
+>do mend
+by a point
+
+>undo
+
+>do mending
+by a point

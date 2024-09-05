@@ -1,0 +1,562 @@
+#-- rbr-wp-thru.txt
+#-- main branch file for Why Pout walkthroughs
+#
+#-- TTC.PY generates test cases not found here
+#--
+
+#NOTE: PRC.PY has a bug where it double-prints the text at the end if the final command fails
+
+file=reg-wp-thru-min.txt,min,minimum walkthrough
+file=reg-wp-thru-all.txt,all,walkthrough with all points and potential neutral retries
+file=reg-wp-thru-reject.txt,rej,walkthrough with all rejections and THINK
+file=reg-wp-thru-alt-verbs.txt,alt,walkthrough with altverb tests
+file=reg-wp-thru-mistakes.txt,mis,walkthrough testing all mistakes
+file=reg-wp-thru-homonyms.txt,hom,walkthrough testing homonyms
+file=reg-wp-thru-goto.txt,goto/gt/go,walkthrough testing GOTO
+
+## *FILE
+## *FORK
+
+## *DESCRIPTION
+
+** game: /home/andrew/prt/debug-why-pout.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+@all
+#testcase-room-names-eh-raw-air-aww
+`Eh, Raw Air, Aww
+
+>z
+
+>an aim
+by a point
+
+@all
+`Tomb Apse
+
+@rej
+#testcase-check-pre-wipe-out-rule-if-pals-made-is-0
+>wipe out
+You aren't feeling too great, but you don't want or need to wipe yourself out, yet. Perhaps you can find the root of your problems and wipe it out one day, though.
+\\
+>my corps
+Sadly, you have no friends to bring together yet! Yet.
+\\
+#testcase-think-table-of-main-oronyms-pre-wipe-out-rule
+>think
+You will want to WIPE OUT the cause of your problems once you have them in your crosshairs. That's probably not for a while, though.
+\\
+#testcase-check-pre-an-aim-rule-if-sco-an-aim-is-true
+>an aim
+You already found a name and an aim!
+
+>two maps
+by a point
+
+@all
+#testcase-room-names-hype-lane
+`Hype Lane
+
+@rej
+>high plane
+WRONG
+\\
+>high plain
+WRONG
+
+>self owns
+by a point
+
+>pry stalk
+by a point
+
+@alt
+##balance undos
+#testcase-alt-words-table-of-main-oronyms-5-high-plain-plane
+>high plane
+by a point
+\\
+>undo
+
+>high plain
+by a point
+
+@all
+#testcase-room-names-naff-haze
+`Naff Haze
+
+@alt
+##balance undos
+#testcase-alt-words-table-of-main-oronyms-6-nah-naah-naw-naa-na-phase
+>naah phase
+by a point
+\\
+>undo
+\\
+>naw phase
+by a point
+\\
+>undo
+\\
+>naa phase
+by a point
+\\
+>undo
+\\
+>na phase
+by a point
+\\
+>undo
+
+>nah phase
+by a point
+
+@all
+#+testcase-room-names-naff-haze
+`High Plain
+
+@alt
+##balance undos
+#testcase-alt-words-table-of-main-oronyms-7-pole-pull-east
+>pull east
+by a point
+\\
+>undo
+
+>pole east
+by a point
+
+>shore trail
+by a point
+
+>s
+
+@all
+#testcase-room-names-no-notion
+`No Notion
+
+>known ocean
+by a point
+
+@all
+#+testcase-room-names-no-notion
+`Known Ocean
+
+>six quid
+by a point
+
+>n
+
+>grow star
+by a point
+
+>n
+
+@all
+#testcase-room-names-wolf-rock
+`Wolf Rock
+
+>wool frock
+by a point
+
+@alt
+>hideout
+by a point
+\\
+>undo
+
+>hide out
+by a point
+
+>d
+
+@all
+#testcase-room-names-hide-out
+`Hideout
+
+>boost role
+by a point
+
+>u
+
+>s
+
+>key pillar
+by a point
+
+>w
+
+@all
+#testcase-room-names-keep-iller
+`Keep (Iller)
+
+>gnome old
+by a point
+
+@rej
+#testcase-check-pre-wipe-out-rule-if-player-is-not-in-doom-ending
+>wipe out
+You haven't identified anyone terribly evil you want to wipe out.
+
+>rogue old
+by a point
+
+>plan tracker
+by a point
+
+>see design
+by a point
+
+@all
+#testcase-room-names-nigh-fright
+`Nigh Fright
+
+@alt
+##balance undos
+#testcase-alt-words-table-of-main-oronyms-40-knife-right-rite
+>knife rite
+by a point
+\\
+>undo
+
+>knife right
+by a point
+
+>e
+
+@!min
+#unscramble the order the swears appear in
+>ao
+\\
+>brew swears
+by a bonus point
+\\
+>in
+
+@all
+#testcase-room-names-brew-swears
+`Brew Swears
+
+@!min
+>weak us
+by a bonus point
+\\
+>crew dork
+by a bonus point
+
+@!min+
+>bastard eee
+by a bonus point
+\\
+>heckle ass
+by a bonus point
+\\
+>huh shit
+by a bonus point
+\\
+>lie fuckers
+by a bonus point
+
+@alt
+##balance undos
+>grin churls
+by a bonus point
+\\
+>were dicks
+The grin churls remark that you seemed so nice, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up.
+by a bonus point
+\\
+>undo
+>undo
+
+@!min
+>were dicks
+by a bonus point
+\\
+>grin churls
+by a bonus point
+The grin churls remark that you seemed so nice, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up.
+\\
+>out
+
+>d
+
+@all
+#testcase-room-names-worm-eaten
+`Worm-Eaten
+
+>gaunt raider
+by a point
+
+>u
+
+>e
+
+@all
+#testcase-room-names-lobe-end
+`Lobe End
+
+>low bend
+by a point
+
+@all
+#+testcase-room-names-lobe-end
+`Low Bend
+
+@alt
+##balance undos
+#testcase-alt-words-table-of-main-oronyms-28-bay-sail-sale
+>bay sail
+by a point
+\\
+>undo
+
+>bay sale
+by a point
+
+>n
+
+@all
+#testcase-room-names-store-mile
+`Storm Isle
+
+>store mile
+by a point
+
+@all
+#+testcase-room-names-store-mile
+`Store Mile
+
+>mensch elf
+by a point
+
+>mice tall
+by a point
+
+>s
+
+>w
+
+>n
+
+>low door
+by a point
+
+>in
+
+@all
+#testcase-room-names-we-loan
+`We Loan
+
+>well own
+by a point
+
+@all
+#+testcase-room-names-we-loan
+`We'll Own
+
+>summer chant
+by a point
+
+@alt
+##balance undos
+#testcase-alt-words-table-of-main-oronyms-23-bile-oh-o
+>bile o
+by a point
+\\
+>undo
+
+>bile oh
+by a point
+
+>whee lone
+by a point
+
+@all
+#+testcase-room-names-we-loan
+`Whee, Lone?
+
+@alt
+##balance undos
+#testcase-alt-words-table-of-main-oronyms-25-oh-flier-flyer
+>oh flyer
+by a point
+\\
+>undo
+
+>oh flier
+by a point
+
+@all
+#+testcase-room-names-we-loan
+`Whee! 'Lone!
+
+>out
+
+>s
+
+>w
+
+@alt
+##balance undos
+#testcase-alt-words-table-of-main-oronyms-37-manna-curb-kerb
+>manna kerb
+by a point
+\\
+>undo
+
+>manna curb
+by a point
+
+>e
+
+>e
+
+>n
+
+>n
+
+@all
+#testcase-room-names-trees-mall
+`Trees Mall
+
+>tree small
+by a point
+
+>s
+
+>s
+
+>w
+
+>s
+
+>grow vial
+by a point
+
+>war file
+by a point
+
+@all
+#testcase-room-names-wand-wharf
+`Wand Wharf
+
+>wan dwarf
+by a point
+
+>n
+
+>e
+
+>n
+
+>n
+
+>t dwarf
+
+>t elf
+
+>t gnome
+
+>t rogue
+
+>t raider
+
+>t mice
+
+>t troll
+
+@all
+talk-ache
+
+>t orc
+
+>tall cake
+by a point
+
+>treat all
+by a point
+
+>s
+
+>s
+
+>w
+
+>s
+
+>the file
+by a point
+
+>n
+
+>d
+
+>were meetin
+by a point
+
+@all
+#+testcase-room-names-worm-eaten
+`We're Meetin'!
+
+>my corps
+by a point
+
+>d
+
+@all
+#testcase-room-names-doom-ending
+`Doom Ending
+
+@rej
+#+testcase-think-table-of-main-oronyms-pre-wipe-out-rule
+>think
+You will want to WIPE OUT the cause of your problems once you have them in your crosshairs.
+!not for a while
+
+>cease cull
+by a point
+
+@rej
+#+testcase-think-table-of-main-oronyms-pre-wipe-out-rule
+You will want to WIPE OUT the cause of your problems now you have them in your crosshairs.
+!not for a while
+
+>wipe out
+by a point
+
+@rej
+>wide vision
+You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.
+\\
+>wide vision
+You are unable to express your wide vision. You'll have to settle for just repairing things pretty well.
+\\
+#testcase-think-table-of-main-oronyms-pre-wide-vision-rule
+>think
+Sadly, you didn't quite experience enough to spread your wide vision.
+
+@alt
+##balance undos
+#testcase-alt-words-table-of-main-oronyms-47-do-due-mend-mending
+>due mending
+by a point
+\\
+>undo
+>due mend
+by a point
+\\
+>undo
+>do mend
+by a point
+\\
+>undo
+
+@rej
+>wipe out
+You already wiped out the sea skull! Now is the time for healing.
+
+>do mending
+by a point
