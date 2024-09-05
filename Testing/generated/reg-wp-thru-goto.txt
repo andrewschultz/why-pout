@@ -193,7 +193,7 @@ The grin churls remark that you seemed so nice, really, and they're all for a bi
 
 #+testcase-goto-table-of-noways-naffhaze
 >u
-You can go in all cardinal directions here, or down.
+You can go down or in the cardinal directions, but not up.
 
 >d
 

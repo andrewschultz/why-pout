@@ -13,6 +13,10 @@
 >an aim
 by a point
 
+#testcase-homonym-detail-hom-my-core-rule-default
+>my core
+You always want to strengthen your own core, but you have a feeling you're looking too inward, here. Though you must be close.
+
 >two maps
 by a point
 
@@ -24,6 +28,10 @@ by a point
 
 >high plain
 by a point
+
+#testcase-homonym-detail-hom-nah-phaze-rule-default
+>nah phaze
+You sense you don't want the naff haze to faze you, but you want a noun, here, to reject.
 
 >nah phase
 by a point
@@ -72,11 +80,22 @@ by a point
 >gnome old
 by a point
 
+#testcase-homonym-detail-hom-rouge-old-rule-default
+>rogue old
+Rouge ... no, too foreign, also, too abstract. But you need a person, not a color. That'll get you a point in this game, not just Canadian football.
+
 >rogue old
 by a point
 
 >plan tracker
 by a point
+
+#testcase-homonym-detail-hom-c-sea-design-rule-default
+>sea design
+Close, but there are other waterways. Action (well, sort of) is needed here.
+
+>c design
+Close, but there are other waterways. Action (well, sort of) is needed here.
 
 >see design
 by a point
@@ -141,6 +160,14 @@ by a point
 >store mile
 by a point
 
+#testcase-homonym-detail-hom-mencsh-elf-rule-if-the-player's-command-includes-munch
+>munch elf
+No, a sort of person. This one's a bit obscure.
+
+#+testcase-homonym-detail-hom-mencsh-elf-rule-if-the-player's-command-includes-munch
+>mensh elf
+Oh, man. Sorry to be playing spelling police with you here, but you have the pronunciation right.
+
 >mensch elf
 by a point
 
@@ -158,17 +185,29 @@ by a point
 
 >in
 
+#testcase-homonym-detail-hom-wheel-own-rule-default
+>wheel own
+This is a seedy financial services provider, not a seedy used car dealer. Still, you must be on the right track.
+
 >well own
 by a point
 
 >summer chant
 by a point
 
+#testcase-homonym-detail-hom-bile-owe-rule-default
+>bile owe
+Neither you nor the merchant owe each other anything, for better or for worse. You're close. Perhaps you should just see things as they are and emote slightly.
+
 >bile oh
 by a point
 
 >whee lone
 by a point
+
+#testcase-homonym-detail-hom-owe-flier-rule-default
+>owe flier
+You don't owe the oaf liar anything, and they don't owe you a flier, even if they might be wasting your time. How to call attention to a flier, though?
 
 >oh flier
 by a point
@@ -178,6 +217,10 @@ by a point
 >s
 
 >w
+
+#testcase-homonym-detail-hom-mana-curb-rule-default
+>mana curb
+You do not have any magic points, so you don't need them refreshed. But you must be close!
 
 >manna curb
 by a point
@@ -255,6 +298,14 @@ by a point
 
 >d
 
+#testcase-homonym-detail-hom-whirr-meetin-rule-if-the-player's-command-includes-whirr
+>whirr meetin
+Close, but you don't need a whirr noise.
+
+#testcase-homonym-detail-hom-whirr-meetin-rule-if-the-player's-command-includes-whirr
+>warm meetin
+You don't need to change this place's complexion here. It's cozy, a place for people to be together. But how?
+
 >were meetin
 by a point
 
@@ -262,6 +313,10 @@ by a point
 by a point
 
 >d
+
+#testcase-homonym-detail-hom-cease-cull-rule-default
+>seize cull
+No, seizing is the last thing you want the skull to do. And you aren't foolish enough to want to seize power.
 
 >cease cull
 by a point
