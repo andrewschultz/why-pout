@@ -16,10 +16,15 @@
 >an aim
 by a point
 
+#testcase-run-post-an-aim-rule-default
+WRONG
+
 `Tomb Apse
 
 >two maps
 by a point
+
+#testcase-run-post-two-maps-rule-default
 
 #testcase-room-names-hype-lane
 `Hype Lane
@@ -27,11 +32,20 @@ by a point
 >self owns
 by a point
 
+#testcase-run-post-self-owns-rule-default
+WRONG
+
 >pry stalk
 by a point
 
+#testcase-run-post-pry-stalk-rule-default
+WRONG
+
 >high plain
 by a point
+
+#testcase-run-post-high-plain-rule-default
+WRONG
 
 #testcase-room-names-naff-haze
 `Naff Haze
@@ -39,14 +53,23 @@ by a point
 >nah phase
 by a point
 
+#testcase-run-post-nah-phase-rule-default
+WRONG
+
 #+testcase-room-names-naff-haze
 `High Plain
 
 >pole east
 by a point
 
+#testcase-run-post-pole-east-rule-default
+WRONG
+
 >shore trail
 by a point
+
+#testcase-run-post-shore-trail-rule-default
+WRONG
 
 >s
 
@@ -56,16 +79,25 @@ by a point
 >known ocean
 by a point
 
+#testcase-run-post-known-ocean-rule-default
+WRONG
+
 #+testcase-room-names-no-notion
 `Known Ocean
 
 >six quid
 by a point
 
+#testcase-run-post-six-quid-rule-default
+WRONG
+
 >n
 
 >grow star
 by a point
+
+#testcase-run-post-grow-star-rule-default
+WRONG
 
 >n
 
@@ -75,8 +107,14 @@ by a point
 >wool frock
 by a point
 
+#testcase-run-post-wool-frock-rule-default
+WRONG
+
 >hide out
 by a point
+
+#testcase-run-post-hide-out-rule-default
+WRONG
 
 >d
 
@@ -86,12 +124,18 @@ by a point
 >boost role
 by a point
 
+#testcase-run-post-boost-role-rule-default
+WRONG
+
 >u
 
 >s
 
 >key pillar
 by a point
+
+#testcase-run-post-key-pillar-rule-default
+WRONG
 
 >w
 
@@ -101,20 +145,35 @@ by a point
 >gnome old
 by a point
 
+#testcase-run-post-gnome-old-rule-default
+WRONG
+
 >rogue old
 by a point
+
+#testcase-run-post-rogue-old-rule-default
+WRONG
 
 >plan tracker
 by a point
 
+#testcase-run-post-plan-tracker-rule-default
+WRONG
+
 >see design
 by a point
+
+#testcase-run-post-see-design-rule-default
+WRONG
 
 #testcase-room-names-nigh-fright
 `Nigh Fright
 
 >knife right
 by a point
+
+#testcase-run-post-knife-right-rule-default
+WRONG
 
 >e
 
@@ -126,33 +185,60 @@ by a bonus point
 
 >in
 
+#testcase-run-post-brew-swears-rule-default
+WRONG
+
 #testcase-room-names-brew-swears
 `Brew Swears
 
 >weak us
 by a bonus point
 
+#testcase-run-post-weak-us-rule-default
+WRONG
+
 >crew dork
 by a bonus point
+
+#testcase-run-post-crew-dork-rule-default
+WRONG
 
 >bastard eee
 by a bonus point
 
+#testcase-run-post-bastard-eee-rule-default
+WRONG
+
 >heckle ass
 by a bonus point
+
+#testcase-run-post-heckle-ass-rule-default
+WRONG
 
 >huh shit
 by a bonus point
 
+#testcase-run-post-huh-shit-rule-default
+WRONG
+
 >lie fuckers
 by a bonus point
+
+#testcase-run-post-lie-fuckers-rule-default
+WRONG
 
 >were dicks
 by a bonus point
 
+#testcase-run-post-were-dicks-rule-default
+WRONG
+
 >grin churls
 by a bonus point
 The grin churls remark that you seemed so nice, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up.
+
+#testcase-run-post-grin-churls-rule-default
+WRONG
 
 >out
 
@@ -164,6 +250,9 @@ The grin churls remark that you seemed so nice, really, and they're all for a bi
 >gaunt raider
 by a point
 
+#testcase-run-post-gaunt-raider-rule-default
+WRONG
+
 >u
 
 >e
@@ -174,11 +263,17 @@ by a point
 >low bend
 by a point
 
+#testcase-run-post-low-bend-rule-default
+WRONG
+
 #+testcase-room-names-lobe-end
 `Low Bend
 
 >bay sale
 by a point
+
+#testcase-run-post-bay-sale-rule-default
+WRONG
 
 >n
 
@@ -188,14 +283,23 @@ by a point
 >store mile
 by a point
 
+#testcase-run-post-store-mile-rule-default
+WRONG
+
 #+testcase-room-names-store-mile
 `Store Mile
 
 >mensch elf
 by a point
 
+#testcase-run-post-mensch-elf-rule-default
+WRONG
+
 >mice tall
 by a point
+
+#testcase-run-post-mice-tall-rule-default
+WRONG
 
 >s
 
@@ -206,6 +310,9 @@ by a point
 >low door
 by a point
 
+#testcase-run-post-low-door-rule-default
+WRONG
+
 >in
 
 #testcase-room-names-we-loan
@@ -214,23 +321,38 @@ by a point
 >well own
 by a point
 
+#testcase-run-post-well-own-rule-default
+WRONG
+
 #+testcase-room-names-we-loan
 `We'll Own
 
 >summer chant
 by a point
 
+#testcase-run-post-summer-chant-rule-default
+WRONG
+
 >bile oh
 by a point
 
+#testcase-run-post-bile-oh-rule-default
+WRONG
+
 >whee lone
 by a point
+
+#testcase-run-post-whee-lone-rule-default
+WRONG
 
 #+testcase-room-names-we-loan
 `Whee, Lone?
 
 >oh flier
 by a point
+
+#testcase-run-post-oh-flier-rule-default
+WRONG
 
 #+testcase-room-names-we-loan
 `Whee! 'Lone!
@@ -243,6 +365,9 @@ by a point
 
 >manna curb
 by a point
+
+#testcase-run-post-manna-curb-rule-default
+WRONG
 
 >e
 
@@ -258,6 +383,9 @@ by a point
 >tree small
 by a point
 
+#testcase-run-post-tree-small-rule-default
+WRONG
+
 >s
 
 >s
@@ -266,14 +394,23 @@ by a point
 
 >s
 
+#testcase-run-post-grow-vial-rule-default
+WRONG
+
 >grow vial
 by a point
+
+#testcase-run-post-war-file-rule-default
+WRONG
 
 >war file
 by a point
 
 #testcase-room-names-wand-wharf
 `Wand Wharf
+
+#testcase-run-post-wan-dwarf-rule-default
+WRONG
 
 >wan dwarf
 by a point
@@ -307,8 +444,14 @@ talk-ache
 >tall cake
 by a point
 
+#testcase-run-post-tall-cake-rule-default
+WRONG
+
 >treat all
 by a point
+
+#testcase-run-post-treat-all-rule-default
+WRONG
 
 >s
 
@@ -321,6 +464,9 @@ by a point
 >the file
 by a point
 
+#testcase-run-post-the-file-rule-default
+WRONG
+
 >n
 
 >d
@@ -328,11 +474,17 @@ by a point
 >were meetin
 by a point
 
+#testcase-run-post-were-meetin-rule-default
+WRONG
+
 #+testcase-room-names-worm-eaten
 `We're Meetin'!
 
 >my corps
 by a point
+
+#testcase-run-post-my-corps-rule-default
+WRONG
 
 >d
 
@@ -342,8 +494,17 @@ by a point
 >cease cull
 by a point
 
+#testcase-run-post-cease-cull-rule-default
+WRONG
+
 >wipe out
 by a point
 
+#testcase-run-post-wipe-out-rule-default
+WRONG
+
 >do mending
 by a point
+
+#testcase-run-post-do-due-mend-rule-default
+WRONG

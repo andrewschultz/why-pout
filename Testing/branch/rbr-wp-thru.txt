@@ -322,6 +322,11 @@ file=reg-wp-thru-goto.txt,goto/gt/go,walkthrough testing GOTO
 >an aim
 by a point
 
+@all,rej
+{--rej}#testcase-check-pre-an-aim-rule-fallthrough
+{--all}#testcase-run-post-an-aim-rule-default
+WRONG
+
 @all
 `Tomb Apse
 
@@ -349,6 +354,10 @@ You already found a name and an aim!
 >two maps
 by a point
 
+@all,rej
+{--rej}#testcase-check-pre-two-maps-rule-fallthrough
+{--all}#testcase-run-post-two-maps-rule-default
+
 @all
 #testcase-room-names-hype-lane
 `Hype Lane
@@ -373,8 +382,18 @@ Hmph. That still doesn't quite work! You'll figure out the how and when and wher
 >self owns
 by a point
 
+@all,rej
+{--rej}#testcase-check-pre-self-owns-rule-fallthrough
+{--all}#testcase-run-post-self-owns-rule-default
+WRONG
+
 >pry stalk
 by a point
+
+@all,rej
+{--rej}#testcase-check-pre-pry-stalk-rule-fallthrough
+{--all}#testcase-run-post-pry-stalk-rule-default
+WRONG
 
 @alt
 ##balance undos
@@ -391,6 +410,11 @@ You need to name where to go up to.
 
 >high plain
 by a point
+
+@all,rej
+{--rej}#testcase-check-pre-high-plain-rule-fallthrough
+{--all}#testcase-run-post-high-plain-rule-default
+WRONG
 
 @all
 #testcase-room-names-naff-haze
@@ -432,6 +456,11 @@ You sense you don't want the naff haze to faze you, but you want a noun, here, t
 >nah phase
 by a point
 
+@all,rej
+{--rej}#testcase-check-pre-nah-phase-rule-fallthrough
+{--all}#testcase-run-post-nah-phase-rule-default
+WRONG
+
 @all
 #+testcase-room-names-naff-haze
 `High Plain
@@ -452,6 +481,11 @@ by a point
 >pole east
 by a point
 
+@all,rej
+{--rej}#testcase-check-pre-pole-east-rule-fallthrough
+{--all}#testcase-run-post-pole-east-rule-default
+WRONG
+
 @gt
 #+testcase-goto-table-of-noways-naffhaze
 >w
@@ -459,6 +493,11 @@ You can't go west, but you can go east.
 
 >shore trail
 by a point
+
+@all,rej
+{--rej}#testcase-check-pre-shore-trail-rule-fallthrough
+{--all}#testcase-run-post-shore-trail-rule-default
+WRONG
 
 >s
 
@@ -474,6 +513,11 @@ You can only go back NORTH, or that's your notion, right now.
 >known ocean
 by a point
 
+@all,rej
+{--rej}#testcase-check-pre-known-ocean-rule-fallthrough
+{--all}#testcase-run-post-known-ocean-rule-default
+WRONG
+
 @all
 #+testcase-room-names-no-notion
 `Known Ocean
@@ -486,10 +530,20 @@ You can only go back NORTH or, if you know where you want to go, give the squid 
 >six quid
 by a point
 
+@all,rej
+{--rej}#testcase-check-pre-six-quid-rule-fallthrough
+{--all}#testcase-run-post-six-quid-rule-default
+WRONG
+
 >n
 
 >grow star
 by a point
+
+@all,rej
+{--rej}#testcase-check-pre-grow-star-rule-fallthrough
+{--all}#testcase-run-post-grow-star-rule-default
+WRONG
 
 >n
 
@@ -507,6 +561,11 @@ Wolf Rock blocks every planar passage except back SOUTH.
 >wool frock
 by a point
 
+@all,rej
+{--rej}#testcase-check-pre-wool-frock-rule-fallthrough
+{--all}#testcase-run-post-wool-frock-rule-default
+WRONG
+
 @rej
 #testcase-check-pre-wool-frock-rule-if-sco-wool-frock-is-true
 >wool frock
@@ -520,6 +579,11 @@ by a point
 
 >hide out
 by a point
+
+@all,rej
+{--rej}#testcase-check-pre-hide-out-rule-fallthrough
+{--all}#testcase-run-post-hide-out-rule-default
+WRONG
 
 >d
 
@@ -535,12 +599,22 @@ You can only go back UP. If this hideout had too many passages, it'd risk being 
 >boost role
 by a point
 
+@all,rej
+{--rej}#testcase-check-pre-boost-role-rule-fallthrough
+{--all}#testcase-run-post-boost-role-rule-default
+WRONG
+
 >u
 
 >s
 
 >key pillar
 by a point
+
+@all,rej
+{--rej}#testcase-check-pre-key-pillar-rule-fallthrough
+{--all}#testcase-run-post-key-pillar-rule-default
+WRONG
 
 @rej
 #testcase-check-pre-key-pillar-rule-if-sco-key-pillar-is-true
@@ -553,8 +627,17 @@ You already opened the keep (iller)!
 #testcase-room-names-keep-iller
 `Keep (Iller)
 
+@rej
+>rogue old
+WRONG
+
 >gnome old
 by a point
+
+@all,rej
+{--rej}#testcase-check-pre-gnome-old-rule-fallthrough
+{--all}#testcase-run-post-gnome-old-rule-default
+WRONG
 
 @rej
 #testcase-check-pre-wipe-out-rule-if-player-is-not-in-doom-ending
@@ -566,11 +649,26 @@ You don't want to wipe out the friendships you made.
 >rogue old
 Rouge ... no, too foreign, also, too abstract. But you need a person, not a color. That'll get you a point in this game, not just Canadian football.
 
+@rej
+#testcase-think-table-of-main-oronyms-pre-rogue-old-rule
+>think
+You may be able to recruit the ROGUE OLD here now you have money.
+
 >rogue old
 by a point
 
+@all,rej
+{--rej}#testcase-check-pre-rogue-old-rule-fallthrough
+{--all}#testcase-run-post-rogue-old-rule-default
+WRONG
+
 >plan tracker
 by a point
+
+@all,rej
+{--rej}#testcase-check-pre-plan-tracker-rule-fallthrough
+{--all}#testcase-run-post-plan-tracker-rule-default
+WRONG
 
 @gt
 #testcase-goto-table-of-noways-keepiller
@@ -587,6 +685,11 @@ Close, but there are other waterways. Action (well, sort of) is needed here.
 
 >see design
 by a point
+
+@all,rej
+{--rej}#testcase-check-pre-see-design-rule-fallthrough
+{--all}#testcase-run-post-see-design-rule-default
+WRONG
 
 @all
 #testcase-room-names-nigh-fright
@@ -608,6 +711,11 @@ by a point
 >knife right
 by a point
 
+@all,rej
+{--rej}#testcase-check-pre-knife-right-rule-fallthrough
+{--all}#testcase-run-post-knife-right-rule-default
+WRONG
+
 @gt
 #+testcase-goto-table-of-noways-keepiller
 >w
@@ -623,6 +731,11 @@ Apart from finding a way beyond the seedy sign, which you don't need to again, t
 by a bonus point
 \\
 >in
+
+@all,rej
+{--rej}#testcase-check-pre-brew-swears-rule-fallthrough
+{--all}#testcase-run-post-brew-swears-rule-default
+WRONG
 
 @all
 #testcase-room-names-brew-swears
@@ -657,9 +770,20 @@ You don't want to get into the guts of this place. Just get the crude orc, if yo
 @!min
 >weak us
 by a bonus point
-\\
+
+@all,rej
+{--rej}#testcase-check-pre-weak-us-rule-fallthrough
+{--all}#testcase-run-post-weak-us-rule-default
+WRONG
+
+@!min
 >crew dork
 by a bonus point
+
+@all,rej
+{--rej}#testcase-check-pre-crew-dork-rule-fallthrough
+{--all}#testcase-run-post-crew-dork-rule-default
+WRONG
 
 @gt
 #+testcase-goto-table-of-noways-brew-swears
@@ -669,15 +793,38 @@ You don't want to get into the guts of this place. You've gotten the crude orc o
 @!min
 >bastard eee
 by a bonus point
-\\
+
+@all,rej
+{--rej}#testcase-check-pre-bastard-eee-rule-fallthrough
+{--all}#testcase-run-post-bastard-eee-rule-default
+WRONG
+
+@!min
 >heckle ass
 by a bonus point
-\\
+
+@all,rej
+{--rej}#testcase-check-pre-heckle-ass-rule-fallthrough
+{--all}#testcase-run-post-heckle-ass-rule-default
+WRONG
+
+@!min
 >huh shit
 by a bonus point
-\\
+
+@all,rej
+{--rej}#testcase-check-pre-huh-shit-rule-fallthrough
+{--all}#testcase-run-post-huh-shit-rule-default
+WRONG
+
+@!min
 >lie fuckers
 by a bonus point
+
+@all,rej
+{--rej}#testcase-check-pre-lie-fuckers-rule-fallthrough
+{--all}#testcase-run-post-lie-fuckers-rule-default
+WRONG
 
 @alt
 ##balance undos
@@ -694,11 +841,23 @@ by a bonus point
 @!min
 >were dicks
 by a bonus point
-\\
+
+@all,rej
+{--rej}#testcase-check-pre-were-dicks-rule-fallthrough
+{--all}#testcase-run-post-were-dicks-rule-default
+WRONG
+
+@!min
 >grin churls
 by a bonus point
 The grin churls remark that you seemed so nice, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up.
-\\
+
+@all,rej
+{--rej}#testcase-check-pre-grin-churls-rule-fallthrough
+{--all}#testcase-run-post-grin-churls-rule-default
+WRONG
+
+@!min
 >out
 
 @gt
@@ -712,8 +871,21 @@ You can go down or in the cardinal directions, but not up.
 #testcase-room-names-worm-eaten
 `Worm-Eaten
 
+@rej
+>were meetin
+WRONG
+\\
+#testcase-think-table-of-main-oronyms-pre-were-meetin-rule
+>think
+You will be able to say WERE MEETIN once you have a full party available.
+
 >gaunt raider
 by a point
+
+@all,rej
+{--rej}#testcase-check-pre-gaunt-raider-rule-fallthrough
+{--all}#testcase-run-post-gaunt-raider-rule-default
+WRONG
 
 >u
 
@@ -730,6 +902,11 @@ You can only go back west. Well, for now.
 
 >low bend
 by a point
+
+@all,rej
+{--rej}#testcase-check-pre-low-bend-rule-fallthrough
+{--all}#testcase-run-post-low-bend-rule-default
+WRONG
 
 @all
 #+testcase-room-names-lobe-end
@@ -751,6 +928,11 @@ The bend only curves west to north.
 >bay sale
 by a point
 
+@all,rej
+{--rej}#testcase-check-pre-bay-sale-rule-fallthrough
+{--all}#testcase-run-post-bay-sale-rule-default
+WRONG
+
 >n
 
 @all
@@ -764,6 +946,11 @@ You can only go back south to Lobe End.
 
 >store mile
 by a point
+
+@all,rej
+{--rej}#testcase-check-pre-store-mile-rule-fallthrough
+{--all}#testcase-run-post-store-mile-rule-default
+WRONG
 
 @all
 #+testcase-room-names-store-mile
@@ -781,8 +968,18 @@ Oh, man. Sorry to be playing spelling police with you here, but you have the pro
 >mensch elf
 by a point
 
+@all,rej
+{--rej}#testcase-check-pre-mensch-elf-rule-fallthrough
+{--all}#testcase-run-post-mensch-elf-rule-default
+WRONG
+
 >mice tall
 by a point
+
+@all,rej
+{--rej}#testcase-check-pre-mice-tall-rule-fallthrough
+{--all}#testcase-run-post-mice-tall-rule-default
+WRONG
 
 @gt
 #+testcase-goto-table-of-noways-storm-isle
@@ -797,6 +994,11 @@ You can only go back south to Lobe End or north to the rest of the mall.
 
 >low door
 by a point
+
+@all,rej
+{--rej}#testcase-check-pre-low-door-rule-fallthrough
+{--all}#testcase-run-post-low-door-rule-default
+WRONG
 
 @gt
 #+testcase-goto-table-of-noways-wolf-rock
@@ -822,6 +1024,11 @@ You can only go back OUT here.
 >well own
 by a point
 
+@all,rej
+{--rej}#testcase-check-pre-well-own-rule-fallthrough
+{--all}#testcase-run-post-well-own-rule-default
+WRONG
+
 @all
 #+testcase-room-names-we-loan
 `We'll Own
@@ -833,6 +1040,11 @@ You already exposed the shady side here.
 
 >summer chant
 by a point
+
+@all,rej
+{--rej}#testcase-check-pre-summer-chant-rule-fallthrough
+{--all}#testcase-run-post-summer-chant-rule-default
+WRONG
 
 @alt
 ##balance undos
@@ -850,8 +1062,18 @@ Neither you nor the merchant owe each other anything, for better or for worse. Y
 >bile oh
 by a point
 
+@all,rej
+{--rej}#testcase-check-pre-bile-oh-rule-fallthrough
+{--all}#testcase-run-post-bile-oh-rule-default
+WRONG
+
 >whee lone
 by a point
+
+@all,rej
+{--rej}#testcase-check-pre-whee-lone-rule-fallthrough
+{--all}#testcase-run-post-whee-lone-rule-default
+WRONG
 
 @all
 #+testcase-room-names-we-loan
@@ -872,6 +1094,11 @@ You don't owe the oaf liar anything, and they don't owe you a flier, even if the
 
 >oh flier
 by a point
+
+@all,rej
+{--rej}#testcase-check-pre-oh-flier-rule-fallthrough
+{--all}#testcase-run-post-oh-flier-rule-default
+WRONG
 
 @rej
 #testcase-check-pre-whee-lone-rule-if-sco-whee-lone-is-true
@@ -904,6 +1131,11 @@ You do not have any magic points, so you don't need them refreshed. But you must
 >manna curb
 by a point
 
+@all,rej
+{--rej}#testcase-check-pre-manna-curb-rule-fallthrough
+{--all}#testcase-run-post-manna-curb-rule-default
+WRONG
+
 >e
 
 >e
@@ -919,6 +1151,11 @@ by a point
 >tree small
 by a point
 
+@all,rej
+{--rej}#testcase-check-pre-tree-small-rule-fallthrough
+{--all}#testcase-run-post-tree-small-rule-default
+WRONG
+
 @gt
 #testcase-goto-table-of-noways-trees-mall
 >n
@@ -932,8 +1169,18 @@ You can only go back south.
 
 >s
 
+@all,rej
+{--rej}#testcase-check-pre-grow-vial-rule-fallthrough
+{--all}#testcase-run-post-grow-vial-rule-default
+WRONG
+
 >grow vial
 by a point
+
+@all,rej
+{--rej}#testcase-check-pre-war-file-rule-fallthrough
+{--all}#testcase-run-post-war-file-rule-default
+WRONG
 
 >war file
 by a point
@@ -946,6 +1193,11 @@ by a point
 #testcase-goto-table-of-noways-wand-wharf
 >e
 You're not in the mood for exploring the wharf. It seems like a good way to get lost. Maybe there's someone or something nearby you can pick up, then leave.
+
+@all,rej
+{--rej}#testcase-check-pre-wan-dwarf-rule-fallthrough
+{--all}#testcase-run-post-wan-dwarf-rule-default
+WRONG
 
 >wan dwarf
 by a point
@@ -980,8 +1232,18 @@ talk-ache
 >tall cake
 by a point
 
+@all,rej
+{--rej}#testcase-check-pre-tall-cake-rule-fallthrough
+{--all}#testcase-run-post-tall-cake-rule-default
+WRONG
+
 >treat all
 by a point
+
+@all,rej
+{--rej}#testcase-check-pre-treat-all-rule-fallthrough
+{--all}#testcase-run-post-treat-all-rule-default
+WRONG
 
 >s
 
@@ -993,6 +1255,11 @@ by a point
 
 >the file
 by a point
+
+@all,rej
+{--rej}#testcase-check-pre-the-file-rule-fallthrough
+{--all}#testcase-run-post-the-file-rule-default
+WRONG
 
 >n
 
@@ -1012,19 +1279,38 @@ Close, but you don't need a whirr noise.
 >warm meetin
 You don't need to change this place's complexion here. It's cozy, a place for people to be together. But how?
 
+@rej
+#testcase-think-table-of-main-oronyms-pre-were-meetin-rule
+>think
+You will be able to say WERE MEETIN now you have a full party available.
+
 >were meetin
 by a point
+
+@all,rej
+{--rej}#testcase-check-pre-were-meetin-rule-fallthrough
+{--all}#testcase-run-post-were-meetin-rule-default
+WRONG
 
 @all
 #+testcase-room-names-worm-eaten
 `We're Meetin'!
 
 @rej
+#+testcase-check-pre-were-meetin-rule-if-sco-were-meetin-is-true
+>were meetin
+You already held a meeting! Too many meetings get in the way of doing.
+\\
 >wipe out
 You haven't identified anyone terribly evil you want to wipe out.
 
 >my corps
 by a point
+
+@all,rej
+{--rej}#testcase-check-pre-my-corps-rule-fallthrough
+{--all}#testcase-run-post-my-corps-rule-default
+WRONG
 
 @rej
 >my corps
@@ -1055,6 +1341,11 @@ No, seizing is the last thing you want the skull to do. And you aren't foolish e
 >cease cull
 by a point
 
+@all,rej
+{--rej}#testcase-check-pre-cease-cull-rule-fallthrough
+{--all}#testcase-run-post-cease-cull-rule-default
+WRONG
+
 @rej
 #testcase-check-pre-cease-cull-rule-if-sco-cease-cull-is-true
 >cease cull
@@ -1068,6 +1359,11 @@ You will want to WIPE OUT the cause of your problems now you have them in your c
 
 >wipe out
 by a point
+
+@all,rej
+{--rej}#testcase-check-pre-wipe-out-rule-fallthrough
+{--all}#testcase-run-post-wipe-out-rule-default
+WRONG
 
 @rej
 #testcase-check-pre-wide-vision-rule-if-pre-acts-<-pre-max
@@ -1319,3 +1615,8 @@ You need to prep for making things right in general. Then, once the game's over,
 
 >do mending
 by a point
+
+@all,rej
+{--rej}#testcase-check-pre-do-due-mend-rule-fallthrough
+{--all}#testcase-run-post-do-due-mend-rule-default
+WRONG

@@ -278,6 +278,9 @@ You're stuck with what to do right now. Perhaps you can use your senses for clue
 >an aim
 by a point
 
+#testcase-check-pre-an-aim-rule-fallthrough
+WRONG
+
 #testcase-check-pre-wipe-out-rule-if-pals-made-is-0
 >wipe out
 You aren't feeling too great, but you don't want or need to wipe yourself out, yet. Perhaps you can find the root of your problems and wipe it out one day, though.
@@ -296,6 +299,8 @@ You already found a name and an aim!
 >two maps
 by a point
 
+#testcase-check-pre-two-maps-rule-fallthrough
+
 >high plane
 That would be a nicer place! But you have nothing that could help you move up yet. You'll have to observe the general area a bit more.
 
@@ -306,38 +311,68 @@ Hmph. That still doesn't quite work! You'll figure out the how and when and wher
 >self owns
 by a point
 
+#testcase-check-pre-self-owns-rule-fallthrough
+WRONG
+
 >pry stalk
 by a point
+
+#testcase-check-pre-pry-stalk-rule-fallthrough
+WRONG
 
 >high plain
 by a point
 
+#testcase-check-pre-high-plain-rule-fallthrough
+WRONG
+
 >nah phase
 by a point
+
+#testcase-check-pre-nah-phase-rule-fallthrough
+WRONG
 
 >pole east
 by a point
 
+#testcase-check-pre-pole-east-rule-fallthrough
+WRONG
+
 >shore trail
 by a point
+
+#testcase-check-pre-shore-trail-rule-fallthrough
+WRONG
 
 >s
 
 >known ocean
 by a point
 
+#testcase-check-pre-known-ocean-rule-fallthrough
+WRONG
+
 >six quid
 by a point
+
+#testcase-check-pre-six-quid-rule-fallthrough
+WRONG
 
 >n
 
 >grow star
 by a point
 
+#testcase-check-pre-grow-star-rule-fallthrough
+WRONG
+
 >n
 
 >wool frock
 by a point
+
+#testcase-check-pre-wool-frock-rule-fallthrough
+WRONG
 
 #testcase-check-pre-wool-frock-rule-if-sco-wool-frock-is-true
 >wool frock
@@ -346,10 +381,16 @@ You already found one wool frock. You can't imagine you'd need two.
 >hide out
 by a point
 
+#testcase-check-pre-hide-out-rule-fallthrough
+WRONG
+
 >d
 
 >boost role
 by a point
+
+#testcase-check-pre-boost-role-rule-fallthrough
+WRONG
 
 >u
 
@@ -357,6 +398,9 @@ by a point
 
 >key pillar
 by a point
+
+#testcase-check-pre-key-pillar-rule-fallthrough
+WRONG
 
 #testcase-check-pre-key-pillar-rule-if-sco-key-pillar-is-true
 >key pillar
@@ -367,6 +411,9 @@ You already opened the keep (iller)!
 >gnome old
 by a point
 
+#testcase-check-pre-gnome-old-rule-fallthrough
+WRONG
+
 #testcase-check-pre-wipe-out-rule-if-player-is-not-in-doom-ending
 >wipe out
 You don't want to wipe out the friendships you made.
@@ -374,14 +421,26 @@ You don't want to wipe out the friendships you made.
 >rogue old
 by a point
 
+#testcase-check-pre-rogue-old-rule-fallthrough
+WRONG
+
 >plan tracker
 by a point
+
+#testcase-check-pre-plan-tracker-rule-fallthrough
+WRONG
 
 >see design
 by a point
 
+#testcase-check-pre-see-design-rule-fallthrough
+WRONG
+
 >knife right
 by a point
+
+#testcase-check-pre-knife-right-rule-fallthrough
+WRONG
 
 >e
 
@@ -392,6 +451,9 @@ by a point
 by a bonus point
 
 >in
+
+#testcase-check-pre-brew-swears-rule-fallthrough
+WRONG
 
 #testcase-check-pre-bastard-eee-rule-if-bah-sturdy-is-not-in-brew-swears
 >bastardy
@@ -416,34 +478,68 @@ That thought/action/observation/request brings up nothing. Why Pout has a limite
 >weak us
 by a bonus point
 
+#testcase-check-pre-weak-us-rule-fallthrough
+WRONG
+
 >crew dork
 by a bonus point
+
+#testcase-check-pre-crew-dork-rule-fallthrough
+WRONG
 
 >bastard eee
 by a bonus point
 
+#testcase-check-pre-bastard-eee-rule-fallthrough
+WRONG
+
 >heckle ass
 by a bonus point
+
+#testcase-check-pre-heckle-ass-rule-fallthrough
+WRONG
 
 >huh shit
 by a bonus point
 
+#testcase-check-pre-huh-shit-rule-fallthrough
+WRONG
+
 >lie fuckers
 by a bonus point
 
+#testcase-check-pre-lie-fuckers-rule-fallthrough
+WRONG
+
 >were dicks
 by a bonus point
+
+#testcase-check-pre-were-dicks-rule-fallthrough
+WRONG
 
 >grin churls
 by a bonus point
 The grin churls remark that you seemed so nice, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up.
 
+#testcase-check-pre-grin-churls-rule-fallthrough
+WRONG
+
 >out
 
 >d
 
+>were meetin
+WRONG
+
+#testcase-think-table-of-main-oronyms-pre-were-meetin-rule
+>think
+You will be able to say WERE MEETIN once you have a full party available.
+
 >gaunt raider
 by a point
+
+#testcase-check-pre-gaunt-raider-rule-fallthrough
+WRONG
 
 >u
 
@@ -452,19 +548,34 @@ by a point
 >low bend
 by a point
 
+#testcase-check-pre-low-bend-rule-fallthrough
+WRONG
+
 >bay sale
 by a point
+
+#testcase-check-pre-bay-sale-rule-fallthrough
+WRONG
 
 >n
 
 >store mile
 by a point
 
+#testcase-check-pre-store-mile-rule-fallthrough
+WRONG
+
 >mensch elf
 by a point
 
+#testcase-check-pre-mensch-elf-rule-fallthrough
+WRONG
+
 >mice tall
 by a point
+
+#testcase-check-pre-mice-tall-rule-fallthrough
+WRONG
 
 >s
 
@@ -475,10 +586,16 @@ by a point
 >low door
 by a point
 
+#testcase-check-pre-low-door-rule-fallthrough
+WRONG
+
 >in
 
 >well own
 by a point
+
+#testcase-check-pre-well-own-rule-fallthrough
+WRONG
 
 #testcase-check-pre-well-own-rule-if-sco-well-own-is-true
 >well own
@@ -487,14 +604,26 @@ You already exposed the shady side here.
 >summer chant
 by a point
 
+#testcase-check-pre-summer-chant-rule-fallthrough
+WRONG
+
 >bile oh
 by a point
+
+#testcase-check-pre-bile-oh-rule-fallthrough
+WRONG
 
 >whee lone
 by a point
 
+#testcase-check-pre-whee-lone-rule-fallthrough
+WRONG
+
 >oh flier
 by a point
+
+#testcase-check-pre-oh-flier-rule-fallthrough
+WRONG
 
 #testcase-check-pre-whee-lone-rule-if-sco-whee-lone-is-true
 >whee lone
@@ -509,6 +638,9 @@ You already got this place to yourself!
 >manna curb
 by a point
 
+#testcase-check-pre-manna-curb-rule-fallthrough
+WRONG
+
 >e
 
 >e
@@ -520,6 +652,9 @@ by a point
 >tree small
 by a point
 
+#testcase-check-pre-tree-small-rule-fallthrough
+WRONG
+
 >s
 
 >s
@@ -528,11 +663,20 @@ by a point
 
 >s
 
+#testcase-check-pre-grow-vial-rule-fallthrough
+WRONG
+
 >grow vial
 by a point
 
+#testcase-check-pre-war-file-rule-fallthrough
+WRONG
+
 >war file
 by a point
+
+#testcase-check-pre-wan-dwarf-rule-fallthrough
+WRONG
 
 >wan dwarf
 by a point
@@ -564,8 +708,14 @@ by a point
 >tall cake
 by a point
 
+#testcase-check-pre-tall-cake-rule-fallthrough
+WRONG
+
 >treat all
 by a point
+
+#testcase-check-pre-treat-all-rule-fallthrough
+WRONG
 
 >s
 
@@ -578,18 +728,35 @@ by a point
 >the file
 by a point
 
+#testcase-check-pre-the-file-rule-fallthrough
+WRONG
+
 >n
 
 >d
 
+#testcase-think-table-of-main-oronyms-pre-were-meetin-rule
+>think
+You will be able to say WERE MEETIN now you have a full party available.
+
 >were meetin
 by a point
+
+#testcase-check-pre-were-meetin-rule-fallthrough
+WRONG
+
+#+testcase-check-pre-were-meetin-rule-if-sco-were-meetin-is-true
+>were meetin
+You already held a meeting! Too many meetings get in the way of doing.
 
 >wipe out
 You haven't identified anyone terribly evil you want to wipe out.
 
 >my corps
 by a point
+
+#testcase-check-pre-my-corps-rule-fallthrough
+WRONG
 
 >my corps
 You already brought your corps a bit closer together!
@@ -604,6 +771,9 @@ You will want to WIPE OUT the cause of your problems once you have them in your 
 >cease cull
 by a point
 
+#testcase-check-pre-cease-cull-rule-fallthrough
+WRONG
+
 #testcase-check-pre-cease-cull-rule-if-sco-cease-cull-is-true
 >cease cull
 You already played defense. Now's the time to go on offense!
@@ -615,6 +785,9 @@ You will want to WIPE OUT the cause of your problems now you have them in your c
 
 >wipe out
 by a point
+
+#testcase-check-pre-wipe-out-rule-fallthrough
+WRONG
 
 #testcase-check-pre-wide-vision-rule-if-pre-acts-<-pre-max
 >wide vision
@@ -842,3 +1015,6 @@ That thought/action/observation/request brings up nothing. Why Pout has a limite
 
 >do mending
 by a point
+
+#testcase-check-pre-do-due-mend-rule-fallthrough
+WRONG
