@@ -57,12 +57,17 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "do|due"	"mend|mending"	"dew"	--	false	true	true	false	false	Doom Ending	pre-do-due-mend rule	post-do-due-mend rule	--	"You can think [b]DO/DUE MEND[r] [once-now of sco-wipe-out] you've disposed of the sea skull."
 "weak"	"us"	--	--	false	true	false	false	false	brew swears	pre-weak-us rule	post-weak-us rule	--	--
 "grin"	"churls"	--	--	false	true	false	false	false	brew swears	pre-grin-churls rule	post-grin-churls rule	--	--
-"crew"	"dork"	--	--	false	true	false	false	false	brew swears	pre-crew-dork rule	post-crew-dork rule	--	"You can explain [the earls] see the crude orc as a [b]CREW DORK[r] [once-now of sco-weak-us] they seem a bit less strong."
+"crew"	"dork"	--	--	false	true	false	false	false	brew swears	pre-crew-dork rule	post-crew-dork rule	--	"[if doom ending is visited][dork-lockout][else]You can explain [the earls] see the crude orc as a [b]CREW DORK[r] [once-now of sco-weak-us] they seem a bit less strong[end if]."
 "huh"	"shit"	--	--	false	true	false	false	false	brew swears	pre-huh-shit rule	post-huh-shit rule	--	--
 "lie"	"fuckers"	--	--	false	true	false	false	false	brew swears	pre-lie-fuckers rule	post-lie-fuckers rule	--	--
 "heckle"	"ass"	--	--	false	true	false	false	false	brew swears	pre-heckle-ass rule	post-heckle-ass rule	--	--
 "were"	"dicks"	--	--	false	true	false	false	false	brew swears	pre-were-dicks rule	post-were-dicks rule	--	--
 "bastard"	"e+h*"	--	--	false	true	false	false	false	brew swears	pre-bastard-eee rule	post-bastard-eee rule	--	--
+
+section main table text replacements
+
+to say dork-lockout:
+	say "You lost the chance to say [b]CREW DORK[r] to the crude orc a bit more gently, [if sco-weak-us is true]even though you weakened[else]as you didn't figure a way to diminish[end if] [the earls]"
 
 section air aww scoring
 
@@ -1117,7 +1122,7 @@ NoNotion	"You can only go back [b]NORTH[r][if squid is in NoNotion] or, if you k
 Wand Wharf	"You're not in the mood for exploring the wharf. It seems like a good way to get lost. Maybe there's someone or something nearby you can pick up, then leave."
 Worm Eaten	"No tricky passages here, just [b]UP[r] back to safer ground or [b]DOWN[r] to your fate."
 Doom Ending	"[if sco-wipe-out is true]You need to prep for making things right in general. Then, once the game's over, you'll leave[else]Unsurprisingly, all the action is here[end if]."
-Brew Swears	"You don't want to get into the guts of this place. [if sco-crew-dork is true]You've gotten the crude orc on your side, and the only way is[else]Just get the crude orc, if you can, then get[end if] [b]OUT[r]."
+Brew Swears	"You don't want to get into the guts of this place. [if sco-crew-dork is true]You've gotten the crude orc on your side, and the only way to go is[else]Just get the crude orc, if you'd like, then get[end if] [b]OUT[r]."
 
 volume scoring to move [see RoL Defs if I add bonus points]
 

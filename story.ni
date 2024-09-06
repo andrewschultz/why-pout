@@ -504,9 +504,10 @@ Brew Swears is a room in universal. "If you thought Hype Lane was bad, this [if 
 
 check going outside in Brew Swears:
 	now block-followers is false;
-	if orc is friendly, say "As you lead [the orc] out, BRUISE-WARES crumbles behind you.";
-	zap-bruise-wares;
-	remove-swear-bonus;
+	if orc is friendly:
+		say "As you lead [the orc] out, BRUISE-WARES crumbles behind you.";
+		zap-bruise-wares;
+		remove-swear-bonus;
 
 to zap-bruise-wares:
 	moot BRUISE WARES;
