@@ -9,12 +9,12 @@ book very general stuff
 table of main oronyms
 w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idid	everfail	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "an"	"aim"	--	--	false	true	true	false	false	eh raw air aww	pre-an-aim rule	post-an-aim rule	--	--
-"two"	"maps"	"too"	--	false	true	true	false	false	eh raw air aww	pre-two-maps rule	post-two-maps rule	--	--
+"two"	"maps"	"too"	hom-too-maps rule	false	true	true	false	false	eh raw air aww	pre-two-maps rule	post-two-maps rule	--	--
 "self"	"owns"	--	--	false	true	true	false	false	hype lane	pre-self-owns rule	post-self-owns rule	--	--
 "pry"	"stalk"	--	--	false	true	true	false	false	hype lane	pre-pry-stalk rule	post-pry-stalk rule	--	--
 "high"	"plain|plane"	"hi"	--	false	true	true	false	false	hype lane	pre-high-plain rule	post-high-plain rule	--	"You can find a [b]HIGH PLAIN[r] [once-now of sco-pry-stalk] you have something that can reach that far up."
 "nah|naah|naw|naa|na"	"phase"	"phaze"	hom-nah-phaze rule	false	true	true	false	false	NaffHaze	pre-nah-phase rule	post-nah-phase rule	--	--
-"pole|pull"	"east"	"poll|paul"	--	false	true	true	false	false	NaffHaze	pre-pole-east rule	post-pole-east rule	--	--
+"pole|pull"	"east"	"poll|paul|pall"	--	false	true	true	false	false	NaffHaze	pre-pole-east rule	post-pole-east rule	--	--
 "grow"	"star"	--	--	false	true	true	false	false	NaffHaze	pre-grow-star rule	post-grow-star rule	--	--
 "shore"	"trail"	--	--	false	true	true	false	false	NaffHaze	pre-shore-trail rule	post-shore-trail rule	--	--
 "key"	"pillar"	--	--	false	true	true	false	false	NaffHaze	pre-key-pillar rule	post-key-pillar rule	--	--
@@ -69,6 +69,14 @@ section air aww scoring
 a wordtwisting rule (this is the pre-two-maps rule):
 	if player is not in air aww or sco-an-aim is false, unavailable;
 	ready;
+
+this is the hom-too-maps rule:
+	say "Sounds right, but be more specific how MUCH of ";
+	if the player's command includes "maps":
+		say "the maps";
+	else:
+		say "something else";
+	say " you want."
 
 this is the post-two-maps rule:
 	now sco-two-maps is true;
