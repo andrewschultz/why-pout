@@ -6,7 +6,7 @@ volume mistakes
 
 chapter we loan
 
-understand "babylon" as a mistake ("It isn't as easy to whisk someone who'll babble on back there, but hey, clever try.") when merchant is touchable.
+understand "babylon" as a mistake ("It's a bit beyond your power to whisk someone who'll babble on back to Babylon, but I must salute your clever try! I missed it, but a tester saw it.") when merchant is touchable.
 
 chapter hideout
 

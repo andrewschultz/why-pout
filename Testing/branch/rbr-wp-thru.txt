@@ -538,6 +538,15 @@ by a point
 Ah, yes. It makes sense. You find the pole. Strangely, there's just a single switch to flip. And even more strangely, the switch you flip causes the pole to revert into the ground. Yay!
 But there's more! A war pawn, like a chess piece, rolls into view. It looks pretty powerful. Maybe you see how to use it, but maybe you shouldn't use it right away.
 
+@mis
+#testcase-mistake-why-pout-warp-warp-text
+>warp
+Yes, the war pawn will help you warp, but permit me some pedantry: which way? Backwards?
+\\
+#+testcase-mistake-why-pout-warp-warp-text
+>warp text
+Yes, the war pawn will help you warp, but permit me some pedantry: which way? Backwards?
+
 @rej
 #testcase-check-pre-pole-east-rule-if-sco-pole-east-is-true
 >pole east
@@ -698,6 +707,11 @@ You can only go back UP. If this hideout had too many passages, it'd risk being 
 >boost roll
 {$REJHOM}
 
+@mis
+#testcase-mistake-why-pout-boo-stroll
+>boo stroll
+No, the booze troll shouldn't be blown off! They can become a better ... entity.
+
 >boost role
 by a point
 
@@ -705,6 +719,24 @@ by a point
 {--rej}#testcase-check-pre-boost-role-rule-fallthrough
 {--all}#testcase-run-post-boost-role-rule-default
 WRONG
+
+@mis
+#testcase-mistake-why-pout-neutral
+>neutral
+No, the new troll's on your side! Don't reject help!
+\\
+#testcase-mistake-why-pout-newt-roll-nude-roll-newt-role-nude-role
+>newt roll
+That would change the new troll for the worse!
+\\
+>nude roll
+That would change the new troll for the worse!
+\\
+>newt role
+That would change the new troll for the worse!
+\\
+>nude role
+That would change the new troll for the worse!
 
 >u
 
@@ -1136,6 +1168,11 @@ WRONG
 #testcase-check-pre-well-own-rule-if-sco-well-own-is-true
 >well own
 You already exposed the shady side here.
+
+@mis
+#testcase-mistake-why-pout-babylon
+>babylon
+It's a bit beyond your power to whisk someone who'll babble on back to Babylon, but I must salute your clever try! I missed it, but a tester saw it.
 
 >summer chant
 by a point
@@ -1763,5 +1800,6 @@ by a point
 {--all}#testcase-run-post-do-due-mend-rule-fallthrough
 {--all}#testcase-run-post-do-due-mend-rule-follow-the-score-and-thinking-changes-rule
 {--all}#testcase-run-post-do-due-mend-rule-follow-the-shutdown-rules
+{--all}#testcase-run-post-do-due-mend-rule-if-sco-wide-vision-is-false
 Yes. It's time to get healing. Your companions don't have as much time or energy to help as you hoped they would, but they do enough. Everyone feels better for their part in defeating the sea skull. And yet you worry it, or something like it, may be back sooner rather than later, and your companions have gone their separate ways for good. Still, you should be pleased with yourself.
 !not just to make

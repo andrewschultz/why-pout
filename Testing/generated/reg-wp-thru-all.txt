@@ -517,5 +517,6 @@ by a point
 #testcase-run-post-do-due-mend-rule-fallthrough
 #testcase-run-post-do-due-mend-rule-follow-the-score-and-thinking-changes-rule
 #testcase-run-post-do-due-mend-rule-follow-the-shutdown-rules
+#testcase-run-post-do-due-mend-rule-if-sco-wide-vision-is-false
 Yes. It's time to get healing. Your companions don't have as much time or energy to help as you hoped they would, but they do enough. Everyone feels better for their part in defeating the sea skull. And yet you worry it, or something like it, may be back sooner rather than later, and your companions have gone their separate ways for good. Still, you should be pleased with yourself.
 !not just to make

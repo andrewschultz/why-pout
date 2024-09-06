@@ -31,6 +31,14 @@ by a point
 >pole east
 by a point
 
+#testcase-mistake-why-pout-warp-warp-text
+>warp
+Yes, the war pawn will help you warp, but permit me some pedantry: which way? Backwards?
+
+#+testcase-mistake-why-pout-warp-warp-text
+>warp text
+Yes, the war pawn will help you warp, but permit me some pedantry: which way? Backwards?
+
 >shore trail
 by a point
 
@@ -60,8 +68,29 @@ by a point
 
 >d
 
+#testcase-mistake-why-pout-boo-stroll
+>boo stroll
+No, the booze troll shouldn't be blown off! They can become a better ... entity.
+
 >boost role
 by a point
+
+#testcase-mistake-why-pout-neutral
+>neutral
+No, the new troll's on your side! Don't reject help!
+
+#testcase-mistake-why-pout-newt-roll-nude-roll-newt-role-nude-role
+>newt roll
+That would change the new troll for the worse!
+
+>nude roll
+That would change the new troll for the worse!
+
+>newt role
+That would change the new troll for the worse!
+
+>nude role
+That would change the new troll for the worse!
 
 >u
 
@@ -160,6 +189,10 @@ by a point
 
 >well own
 by a point
+
+#testcase-mistake-why-pout-babylon
+>babylon
+It's a bit beyond your power to whisk someone who'll babble on back to Babylon, but I must salute your clever try! I missed it, but a tester saw it.
 
 >summer chant
 by a point
