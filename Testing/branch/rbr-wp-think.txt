@@ -1,0 +1,1530 @@
+#-- rbr-wp-think.txt
+#-- longer Why Pout walkthrough, with THINK that make Why Division work
+#
+#-- TTC.PY generates test cases not found here
+#--
+
+#NOTE: PRC.PY has a bug where it double-prints the text at the end if the final command fails
+
+file=reg-wp-think-min.txt,min,minimum walkthrough
+file=reg-wp-think-div.txt,div/rej,walkthrough with all relevant THINK
+
+##--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
+#--strict-file: this says that the project requires strict section marking e.g. @all instead of ==t1.
+
+}$REJECT2=That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+
+## rbr-wp-think.txt
+** game: /home/andrew/prt/debug-why-pout.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+# I copied the reg-wp-lone-division.txt test file where you get all the rejects in here
+
+* main
+
+>z
+
+@rej
+>wipe out
+THINK
+
+@rej+
+#testcase-check-pre-bastard-eee-rule-if-player-is-not-in-brew-swears
+#testcase-reject-start-table-of-main-oronyms-pre-bastard-eee-rule
+>bastard eee
+{$REJECT1}
+\\
+#testcase-check-pre-bay-sale-rule-if-player-does-not-have-base-ale
+#testcase-reject-start-table-of-main-oronyms-pre-bay-sale-rule
+>bay sale
+{$REJECT1}
+\\
+#testcase-check-pre-bile-oh-rule-if-player-is-not-in-we-loan-or-merchant-is-not-in-we-loan
+#testcase-reject-start-table-of-main-oronyms-pre-bile-oh-rule
+>bile oh
+{$REJECT1}
+\\
+#testcase-check-pre-boost-role-rule-if-booze-troll-is-not-touchable
+#testcase-reject-start-table-of-main-oronyms-pre-boost-role-rule
+>boost role
+{$REJECT1}
+\\
+#testcase-check-pre-brew-swears-rule-if-player-is-not-in-naffhaze
+#testcase-reject-start-table-of-main-oronyms-pre-brew-swears-rule
+>brew swears
+{$REJECT1}
+\\
+#testcase-check-pre-cease-cull-rule-if-player-is-not-in-doom-ending-or-sea-skull-is-not-in-doom-ending
+#testcase-reject-start-table-of-main-oronyms-pre-cease-cull-rule
+>cease cull
+{$REJECT1}
+\\
+#testcase-check-pre-crew-dork-rule-if-player-is-not-in-brew-swears
+#testcase-reject-start-table-of-main-oronyms-pre-crew-dork-rule
+>crew dork
+{$REJECT1}
+\\
+#testcase-check-pre-do-due-mend-rule-if-player-is-not-in-doom-ending
+#testcase-reject-start-table-of-main-oronyms-pre-do-due-mend-rule
+>do mending
+{$REJECT1}
+\\
+#testcase-check-pre-gaunt-raider-rule-if-player-is-not-in-worm-eaten-or-gone-traitor-is-not-in-worm-eaten
+#testcase-reject-start-table-of-main-oronyms-pre-gaunt-raider-rule
+>gaunt raider
+{$REJECT1}
+\\
+#testcase-check-pre-gnome-old-rule-if-player-is-not-in-keepiller
+#testcase-reject-start-table-of-main-oronyms-pre-gnome-old-rule
+>gnome old
+{$REJECT1}
+\\
+#testcase-check-pre-grin-churls-rule-if-player-is-not-in-brew-swears
+#testcase-reject-start-table-of-main-oronyms-pre-grin-churls-rule
+>grin churls
+{$REJECT1}
+\\
+#testcase-check-pre-grow-star-rule-if-player-is-not-in-naffhaze
+#testcase-reject-start-table-of-main-oronyms-pre-grow-star-rule
+>grow star
+{$REJECT1}
+\\
+#testcase-check-pre-grow-vial-rule-abide-by-the-three-isle-rule
+#testcase-reject-start-table-of-main-oronyms-pre-grow-vial-rule
+>grow vial
+{$REJECT1}
+\\
+#testcase-check-pre-heckle-ass-rule-if-player-is-not-in-brew-swears
+#testcase-reject-start-table-of-main-oronyms-pre-heckle-ass-rule
+>heckle ass
+{$REJECT1}
+\\
+#testcase-check-pre-hide-out-rule-if-player-is-not-in-wolf-rock
+#testcase-reject-start-table-of-main-oronyms-pre-hide-out-rule
+>hideout
+{$REJECT1}
+\\
+#testcase-check-pre-high-plain-rule-if-player-is-not-in-hype-lane
+#testcase-reject-start-table-of-main-oronyms-pre-high-plain-rule
+>high plain
+{$REJECT1}
+\\
+#testcase-check-pre-huh-shit-rule-if-player-is-not-in-brew-swears
+#testcase-reject-start-table-of-main-oronyms-pre-huh-shit-rule
+>huh shit
+{$REJECT1}
+\\
+#testcase-check-pre-key-pillar-rule-if-player-is-not-in-naffhaze
+#testcase-reject-start-table-of-main-oronyms-pre-key-pillar-rule
+>key pillar
+{$REJECT1}
+\\
+#testcase-check-pre-knife-right-rule-if-player-is-not-in-nigh-fright
+#testcase-reject-start-table-of-main-oronyms-pre-knife-right-rule
+>knife right
+{$REJECT1}
+\\
+#testcase-check-pre-known-ocean-rule-if-player-is-not-in-nonotion
+#testcase-reject-start-table-of-main-oronyms-pre-known-ocean-rule
+>known ocean
+{$REJECT1}
+\\
+#testcase-check-pre-lie-fuckers-rule-if-life-occurs-is-not-in-brew-swears
+#testcase-reject-start-table-of-main-oronyms-pre-lie-fuckers-rule
+>lie fuckers
+{$REJECT1}
+\\
+#testcase-check-pre-low-bend-rule-if-player-is-not-in-lobe-end
+#testcase-reject-start-table-of-main-oronyms-pre-low-bend-rule
+>low bend
+{$REJECT1}
+\\
+#testcase-check-pre-low-door-rule-if-player-is-not-in-wolf-rock
+#testcase-reject-start-table-of-main-oronyms-pre-low-door-rule
+>low door
+{$REJECT1}
+\\
+#testcase-check-pre-manna-curb-rule-if-player-is-not-in-keepiller
+#testcase-reject-start-table-of-main-oronyms-pre-manna-curb-rule
+>manna curb
+{$REJECT1}
+\\
+#testcase-check-pre-mensch-elf-rule-if-player-is-not-in-storm-isle
+#testcase-reject-start-table-of-main-oronyms-pre-mensch-elf-rule
+>mensch elf
+{$REJECT1}
+\\
+#testcase-check-pre-mice-tall-rule-if-player-is-not-in-storm-isle
+#testcase-reject-start-table-of-main-oronyms-pre-mice-tall-rule
+>mice tall
+{$REJECT1}
+\\
+#testcase-check-pre-my-corps-rule-if-sco-an-aim-is-false
+#testcase-reject-start-table-of-main-oronyms-pre-my-corps-rule
+>my corps
+{$REJECT1}
+\\
+#testcase-check-pre-nah-phase-rule-if-player-is-not-in-naffhaze
+#testcase-reject-start-table-of-main-oronyms-pre-nah-phase-rule
+>nah phase
+{$REJECT1}
+\\
+#testcase-check-pre-oh-flier-rule-if-player-is-not-in-we-loan
+#testcase-reject-start-table-of-main-oronyms-pre-oh-flier-rule
+>oh flier
+{$REJECT1}
+\\
+#testcase-check-pre-plan-tracker-rule-if-player-is-not-in-keepiller-or-plant-racker-is-not-touchable
+#testcase-reject-start-table-of-main-oronyms-pre-plan-tracker-rule
+>plan tracker
+{$REJECT1}
+\\
+#testcase-check-pre-pole-east-rule-if-player-is-not-in-naffhaze
+#testcase-reject-start-table-of-main-oronyms-pre-pole-east-rule
+>pole east
+{$REJECT1}
+\\
+#testcase-check-pre-pry-stalk-rule-if-player-is-not-in-hype-lane
+#testcase-reject-start-table-of-main-oronyms-pre-pry-stalk-rule
+>pry stalk
+{$REJECT1}
+\\
+#testcase-check-pre-rogue-old-rule-if-player-is-not-in-keepiller
+#testcase-reject-start-table-of-main-oronyms-pre-rogue-old-rule
+>rogue old
+{$REJECT1}
+\\
+#testcase-check-pre-see-design-rule-if-player-is-not-in-keepiller
+#testcase-reject-start-table-of-main-oronyms-pre-see-design-rule
+>see design
+{$REJECT1}
+\\
+#testcase-check-pre-self-owns-rule-if-player-is-not-in-hype-lane
+#testcase-reject-start-table-of-main-oronyms-pre-self-owns-rule
+>self owns
+{$REJECT1}
+\\
+#testcase-check-pre-shore-trail-rule-if-player-is-not-in-naffhaze
+#testcase-reject-start-table-of-main-oronyms-pre-shore-trail-rule
+>shore trail
+{$REJECT1}
+\\
+#testcase-check-pre-six-quid-rule-if-player-is-not-in-nonotion
+#testcase-reject-start-table-of-main-oronyms-pre-six-quid-rule
+>six quid
+{$REJECT1}
+\\
+#testcase-check-pre-store-mile-rule-if-player-is-not-in-storm-isle
+#testcase-reject-start-table-of-main-oronyms-pre-store-mile-rule
+>store mile
+{$REJECT1}
+\\
+#testcase-check-pre-summer-chant-rule-if-player-is-not-in-we-loan-or-merchant-is-not-in-we-loan
+#testcase-reject-start-table-of-main-oronyms-pre-summer-chant-rule
+>summer chant
+{$REJECT1}
+\\
+#testcase-check-pre-tall-cake-rule-if-player-does-not-have-talk-ache
+#testcase-reject-start-table-of-main-oronyms-pre-tall-cake-rule
+>tall cake
+{$REJECT1}
+\\
+#testcase-check-pre-the-file-rule-abide-by-the-three-isle-rule
+#testcase-reject-start-table-of-main-oronyms-pre-the-file-rule
+>the file
+{$REJECT1}
+\\
+#testcase-check-pre-treat-all-rule-if-player-is-not-in-trees-mall
+#testcase-reject-start-table-of-main-oronyms-pre-treat-all-rule
+>treat all
+{$REJECT1}
+\\
+#testcase-check-pre-tree-small-rule-if-player-is-not-in-trees-mall
+#testcase-reject-start-table-of-main-oronyms-pre-tree-small-rule
+>tree small
+{$REJECT1}
+\\
+#testcase-check-pre-two-maps-rule-if-player-is-not-in-air-aww-or-sco-an-aim-is-false
+#testcase-reject-start-table-of-main-oronyms-pre-two-maps-rule
+>two maps
+{$REJECT1}
+\\
+#testcase-check-pre-wan-dwarf-rule-if-player-is-not-in-wand-wharf
+#testcase-reject-start-table-of-main-oronyms-pre-wan-dwarf-rule
+>wan dwarf
+{$REJECT1}
+\\
+#testcase-check-pre-war-file-rule-abide-by-the-three-isle-rule
+#testcase-reject-start-table-of-main-oronyms-pre-war-file-rule
+>war file
+{$REJECT1}
+\\
+#testcase-check-pre-weak-us-rule-if-player-is-not-in-brew-swears
+#testcase-reject-start-table-of-main-oronyms-pre-weak-us-rule
+>weak us
+{$REJECT1}
+\\
+#testcase-check-pre-well-own-rule-if-player-is-not-in-we-loan
+#testcase-reject-start-table-of-main-oronyms-pre-well-own-rule
+>well own
+{$REJECT1}
+\\
+#testcase-check-pre-were-dicks-rule-if-weird-icks-is-not-in-brew-swears
+#testcase-reject-start-table-of-main-oronyms-pre-were-dicks-rule
+>were dicks
+{$REJECT1}
+\\
+#testcase-check-pre-were-meetin-rule-if-player-is-not-in-worm-eaten
+#testcase-reject-start-table-of-main-oronyms-pre-were-meetin-rule
+>were meetin
+{$REJECT1}
+\\
+#testcase-check-pre-whee-lone-rule-if-player-is-not-in-we-loan
+#testcase-reject-start-table-of-main-oronyms-pre-whee-lone-rule
+>whee lone
+{$REJECT1}
+\\
+#testcase-check-pre-wide-vision-rule-if-player-is-not-in-doom-ending
+#testcase-reject-start-table-of-main-oronyms-pre-wide-vision-rule
+>wide vision
+{$REJECT1}
+\\
+#testcase-check-pre-wool-frock-rule-if-player-is-not-in-wolf-rock
+#testcase-reject-start-table-of-main-oronyms-pre-wool-frock-rule
+>wool frock
+{$REJECT1}
+
+>an aim
+by a point
+
+@rej
+#testcase-check-pre-wipe-out-rule-if-pals-made-is-0
+>wipe out
+You aren't feeling too great, but you don't want or need to wipe yourself out, yet. Perhaps you can find the root of your problems and wipe it out one day, though.
+!THINK
+\\
+>my corps
+Sadly, you have no friends to bring together yet! Yet.
+\\
+#testcase-think-table-of-main-oronyms-pre-wipe-out-rule
+#testcase-think-table-of-main-oronyms-pre-my-corps-rule
+>think
+You will want to WIPE OUT the cause of your problems once you have them in your crosshairs. That's probably not for a while, though.
+You can call your companions MY CORPS once you have companions.
+\\
+#testcase-check-pre-an-aim-rule-if-sco-an-aim-is-true
+>an aim
+You already found a name and an aim!
+
+>two maps
+by a point
+
+@rej
+#testcase-check-pre-pry-stalk-rule-if-prize-talk-is-not-in-hype-lane
+>pry stalk
+Man! The chatter from those phones must be distracting you from what you want and need to do, or maybe see.
+\\
+#testcase-check-pre-high-plain-rule-if-sco-pry-stalk-is-false
+>high plane
+That would be a nicer place! But you have nothing that could help you move up yet. You'll have to observe the general area a bit more.
+\\
+>high plain
+That would be a nicer place! But you have nothing that could help you move up yet. You'll have to observe the general area a bit more.
+Hmph. That still doesn't quite work! You'll figure out the how and when and where, though.
+!THINK
+\\
+#testcase-think-table-of-main-oronyms-pre-high-plain-rule
+>think
+You can find a HIGH PLAIN once you have something that can reach that far up.
+
+>self owns
+by a point
+
+@rej
+#testcase-check-pre-self-owns-rule-if-cell-phones-are-not-in-hype-lane
+>self owns
+The prize talk has you distracted. It's got a point: you need to find something to get where you want. What's the something? You know where you want to get, the high plain/plane.
+
+>pry stalk
+by a point
+
+@rej
+#testcase-check-pre-pry-stalk-rule-if-sco-pry-stalk-is-true
+>pry stalk
+You already pried a stalk!
+
+@rej+
+#+testcase-think-table-of-main-oronyms-pre-high-plain-rule
+>think
+You can find a HIGH PLAIN now you have something that can reach that far up.
+
+>high plain
+by a point
+
+@rej
+#testcase-check-pre-pole-east-rule-if-sco-nah-phase-is-false
+>pole east
+{$REJECT2}
+\\
+#testcase-check-pre-grow-star-rule-if-sco-nah-phase-is-false
+>grow star
+{$REJECT2}
+\\
+#testcase-check-pre-shore-trail-rule-if-sco-nah-phase-is-false
+>shore trail
+{$REJECT2}
+\\
+#testcase-check-pre-key-pillar-rule-if-sco-nah-phase-is-false
+>keep iller
+{$REJECT2}
+\\
+#testcase-check-pre-brew-swears-rule-if-bruise-wares-is-not-in-naffhaze
+>brew swears
+{$REJECT2}
+
+>nah phase
+by a point
+
+>pole east
+by a point
+
+@rej
+#testcase-check-pre-pole-east-rule-if-sco-pole-east-is-true
+>pole east
+You already discovered how you were being policed!
+
+>grow star
+by a point
+
+>key pillar
+by a point
+
+@rej
+#testcase-check-pre-key-pillar-rule-if-sco-key-pillar-is-true
+>key pillar
+You already opened the keep (iller)!
+\\
+>w
+\\
+#+testcase-check-pre-see-design-rule-if-pals-made-<-2
+>see design
+You sort of want to see the hidden design, but you're sort of scared what will happen once you do. You feel like you need some support before you can give it your all.
+THINK
+\\
+>e
+
+>shore trail
+by a point
+
+@rej
+#testcase-check-pre-shore-trail-rule-if-sco-shore-trail-is-true
+>shore trail
+But you already replaced the short rail!
+
+@rej+
+>d
+#testcase-check-pre-were-meetin-rule-abide-by-the-followers-check-rule
+>were meetin
+THINK
+Sadly, you have no friends to bring together yet! Yet.
+\\
+>u
+
+>n
+
+@rej
+#testcase-check-pre-low-door-rule-if-sco-mice-tall-is-false
+>low door
+Maybe there's a low door beneath the lode ore, which definitely has small holes. But not small enough for you to fit through and scrabble and scrape to find one.
+THINK
+\\
+#testcase-think-table-of-main-oronyms-pre-low-door-rule
+>think
+You may be able to find a LOW DOOR here once you have a companion or companions small enough to dig a bit better.
+
+>hideout
+by a point
+
+@rej
+#testcase-check-pre-hide-out-rule-if-sco-hide-out-is-true
+>hideout
+You already dispelled doubt and found the hideout!
+
+>d
+
+>boost role
+by a point
+
+@rej
+#testcase-check-pre-boost-role-rule-if-new-troll-is-touchable-and-sco-boost-role-is-true-and-player-is-not-in-doom-ending
+>boost role
+You already gave the new troll a boost!
+\\
+#testcase-check-pre-bay-sale-rule-if-player-is-not-in-lobe-end
+>bay sale
+THINK
+No water here. Maybe somewhere else.
+\\
+#testcase-think-table-of-main-oronyms-pre-bay-sale-rule
+>think
+You may be able to participate in a BAY SALE if you've found the right location and once you have money.
+
+>u
+
+>s
+
+@rej
+>d
+\\
+#testcase-check-pre-were-meetin-rule-abide-by-the-followers-check-rule
+>were meetin
+You sense you don't have the gang together! You may still be a way away.
+>u
+
+>w
+
+@rej
+#testcase-check-pre-gnome-old-rule-if-sco-wool-frock-is-false
+>gnome old
+You summon a gnome, old, to compliment them on keeping the keep looking so nice all these years. They thank you but mention they're a bit sick of it and they seek adventure. Yet they can't go adventuring in these tatty clothes.
+THINK
+\\
+#testcase-check-pre-rogue-old-rule-if-sco-six-quid-is-false
+>rogue old
+A rogue, old, appears, but after some conversation, you realize you don't have any money to pay them with. They'd like to help, but they worked for free once and felt ripped off. Maybe later.
+THINK
+\\
+#testcase-check-pre-manna-curb-rule-if-sco-mensch-elf-is-false
+>manna curb
+Perhaps there is a lot of good stuff beneath the manic herb, but you don't have the specialized knowledge to figure it out.
+THINK
+\\
+#testcase-check-pre-see-design-rule-if-pals-made-<-2
+>see design
+You sort of want to see the hidden design, but you're sort of scared what will happen once you do. The new troll can only help so much. You feel like you need some more support before you can give it your all.
+\\
+#testcase-think-table-of-main-oronyms-pre-see-design-rule
+#testcase-think-table-of-main-oronyms-pre-gnome-old-rule
+#testcase-think-table-of-main-oronyms-pre-manna-curb-rule
+>think
+You may be able to recruit the GNOME OLD here once you have adventuring gear.
+You may be able to recruit the ROGUE OLD here once you have money.
+You may be able to find a MANNA CURB beneath the manna curb here once you have someone with knowledge of wildlife and wildflowers.
+You may be able to SEE DESIGN here once you have more support and are less scared.
+
+@rej+
+#testcase-check-pre-wipe-out-rule-if-number-of-still-follow-needed-followers->-0
+>wipe out
+You don't want to wipe out the friendship you made.
+
+>e
+
+>n
+
+>wool frock
+by a point
+
+@rej
+#testcase-check-pre-wool-frock-rule-if-sco-wool-frock-is-true
+>wool frock
+You already found one wool frock. You can't imagine you'd need two.
+\\
+#+testcase-think-table-of-main-oronyms-pre-gnome-old-rule
+>think
+You may be able to recruit the GNOME OLD in Keep (Iller) now you have adventuring gear.
+
+>s
+
+@rej
+##balance undos
+>e
+\\
+#testcase-check-pre-bay-sale-rule-if-sco-six-quid-is-false
+>bay sale
+No water visible here right now. Maybe if the landscape rearranged.
+\\
+>low bend
+by a point
+\\
+#+testcase-check-pre-bay-sale-rule-if-sco-six-quid-is-false
+>bay sale
+You realize that, in order to participate in a bay sale for a bay sail, you need some form of currency. You don't have that yet.
+\\
+>undo
+>undo
+>undo
+>undo
+
+>s
+
+@rej
+#testcase-check-pre-six-quid-rule-if-sco-known-ocean-is-false
+>six quid
+{$REJECT2}
+\\
+#testcase-check-pre-bay-sale-rule-if-player-is-in-nonotion
+>bay sale
+You can't make out what sort of body of water is here. Well, not yet.
+
+>known ocean
+by a point
+
+@rej
+#testcase-check-pre-known-ocean-rule-if-sco-known-ocean-is-true
+>known ocean
+But you already got a notion for the ocean. And you didn't even need a potion!
+\\
+#+testcase-check-pre-bay-sale-rule-if-player-is-in-nonotion
+>bay sale
+There's water here, but it's much more than a bay.
+
+>six quid
+by a point
+
+@rej
+#testcase-check-pre-six-quid-rule-if-sco-six-quid-is-true
+>six quid
+You don't need any more money, and the squid doesn't need any more help.
+
+@rej+
+#+testcase-think-table-of-main-oronyms-pre-see-design-rule
+>think
+You may be able to recruit the ROGUE OLD in Keep (Iller) now you have money.
+You may be able to SEE DESIGN in Keep (Iller) once you have more support and are less scared.
+
+>n
+
+>e
+
+>low bend
+by a point
+
+@rej
+#testcase-check-pre-low-bend-rule-if-sco-low-bend-is-true
+>low bend
+You already found a low bend!
+
+>bay sale
+by a point
+
+>n
+
+@rej
+#testcase-check-pre-mensch-elf-rule-if-sco-store-mile-is-false
+>mensch elf
+{$REJECT2}
+\\
+#testcase-check-pre-mice-tall-rule-if-sco-store-mile-is-false
+>mice tall
+{$REJECT2}
+
+>store mile
+by a point
+
+@rej
+#testcase-check-pre-store-mile-rule-if-sco-store-mile-is-true
+>store mile
+But you already transformed the storm isle!
+
+@rej+
+#testcase-check-pre-mice-tall-rule-if-sco-gnome-old-is-false
+>mice tall
+Maybe there are mice behind there, but you can't figure a way to locate them. It requires some sort of clever inhuman perception, you'd think.
+THINK
+
+>s
+
+>w
+
+>w
+
+>gnome old
+by a point
+
+@rej
+#testcase-check-pre-gnome-old-rule-if-sco-gnome-old-is-true
+>gnome old
+You already summoned the gnome!
+
+@rej+
+#+testcase-check-pre-wipe-out-rule-if-number-of-still-follow-needed-followers->-0
+>wipe out
+You don't want to wipe out the friendships you made.
+
+>e
+
+>e
+
+>n
+
+>mice tall
+by a point
+
+@rej
+#testcase-check-pre-mice-tall-rule-if-sco-mice-tall-is-true
+>mice tall
+You already found the mice and destroyed the stall!
+
+@rej+
+#testcase-think-table-of-main-oronyms-pre-low-door-rule
+>think
+You may be able to find a LOW DOOR in Wolf Rock now you have a companion or companions small enough to dig a bit better.
+
+>s
+
+>w
+
+>n
+
+>low door
+by a point
+
+@rej
+#testcase-check-pre-low-door-rule-if-sco-low-door-is-true
+>low door
+You already found a low door in this mess!
+
+>in
+
+>well own
+by a point
+
+@rej
+#testcase-check-pre-well-own-rule-if-sco-well-own-is-true
+>well own
+You already exposed the shady side here.
+
+@rej+
+#testcase-check-pre-bile-oh-rule-if-sco-summer-chant-is-false
+>bile oh
+You need to find something positive to say, first. It doesn't have to be particularly rigorous, but it needs to be positive.
+THINK
+\\
+#testcase-think-table-of-main-oronyms-pre-bile-oh-rule
+#+testcase-think-table-of-main-oronyms-pre-my-corps-rule
+>think
+You may be able to expose some merchant's BILE OH once you've found something positive to say to prep yourself.
+You can call your companions MY CORPS once you have enough of them.
+\\
+#testcase-check-pre-whee-lone-rule-if-merchant-is-in-we-loan
+>whee lone
+THINK
+You can't enjoy solitude with that merchant around.
+\\
+#testcase-think-table-of-main-oronyms-pre-whee-lone-rule
+>think
+You may be able to enjoy your solitude with WHEE LONE here once you actually have solitude.
+
+>summer chant
+by a point
+
+@rej
+#testcase-check-pre-summer-chant-rule-if-sco-summer-chant-is-true
+>summer chant
+You already found cheeriness outside of the merchant!
+\\
+#testcase-think-table-of-main-oronyms-pre-bile-oh-rule
+>think
+You may be able to expose some merchant's BILE OH now you've found something positive to say to prep yourself.
+
+>bile oh
+by a point
+
+@rej
+#testcase-think-table-of-main-oronyms-pre-whee-lone-rule
+>think
+You may be able to enjoy your solitude with WHEE LONE here now you actually have solitude.
+
+>whee lone
+by a point
+
+@rej
+>oh flyer
+You try and pull out one quid, but you wind up pulling them all out. The oaf liar's eyes get big. And you instinctively say, no, I'm not getting taken like that.
+"Have it your way. Information's valuable. Don't try to lowball me."
+THINK
+
+>out
+
+>s
+
+>w
+
+@rej
+#+testcase-think-table-of-main-oronyms-pre-see-design-rule
+#+testcase-think-table-of-main-oronyms-pre-rogue-old-rule
+>think
+You may be able to SEE DESIGN here now you have more support and are less scared.
+You may be able to recruit the ROGUE OLD here now you have money.
+
+>rogue old
+by a point
+
+@rej
+#testcase-check-pre-rogue-old-rule-if-sco-rogue-old-is-true
+>rogue old
+But you already got the rogue (old) to join you!
+
+>see design
+by a point
+
+>knife rite
+by a point
+
+@rej
+#testcase-check-pre-see-design-rule-if-sco-see-design-is-true
+>see design
+You already saw the design in the seedy sign. You don't need to redo things.
+
+>e
+
+>n
+
+>in
+
+>oh flier
+by a point
+
+@rej
+#testcase-check-pre-whee-lone-rule-if-sco-whee-lone-is-true
+>whee lone
+You already got this place to yourself!
+\\
+>grow vial
+This isn't the right place to look for an isle. No large body of water nearby.
+THINK
+\\
+>war file
+This isn't the right place to look for an isle. No large body of water nearby.
+THINK
+\\
+>the file
+This isn't the right place to look for an isle. No large body of water nearby.
+THINK
+\\
+>think
+#testcase-think-table-of-main-oronyms-pre-grow-vial-rule
+#testcase-think-table-of-main-oronyms-pre-war-file-rule
+#testcase-think-table-of-main-oronyms-pre-the-file-rule
+You may be able to make sense of THE FILE in Known Ocean once you've gotten enough information from companions.
+You may be able to recover the WAR FILE on the wharf isle in Known Ocean once you have something you can write down its main ideas in.
+You may be able to find a GROW VIAL with the right water transport.
+
+>out
+
+>s
+
+@rej
+##balance undos
+>s
+\\
+#testcase-check-pre-war-file-rule-if-sco-plan-tracker-is-false
+>war file
+A war file might be useful, but you'd have no way to organize the information right now.
+\\
+>undo
+>undo
+
+>w
+
+>plan tracker
+by a point
+
+>e
+
+>d
+
+@rej
+##balance undos
+>t troll
+\\
+>t elf
+\\
+>t rogue
+\\
+>gaunt raider
+Hmm. You
+\\
+>undo
+\\
+>t gnome
+\\
+>gaunt raider
+!Hmm. You
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>gaunt raider
+by a point
+
+>u
+
+>e
+
+>n
+
+>mensch elf
+by a point
+
+>s
+
+>w
+
+@rej
+>d
+\\
+>were meetin
+You sense you don't have the gang together! But you must be very, very close.
+\\
+#testcase-think-table-of-main-oronyms-pre-were-meetin-rule
+>think
+You will be able to say WERE MEETIN once you have a full party available.
+\\
+>u
+
+>s
+
+@rej
+#+testcase-think-table-of-main-oronyms-pre-war-file-rule
+>think
+You may be able to recover the WAR FILE on the wharf isle here now you have something you can write down its main ideas in.
+
+>war file
+by a point
+
+>wan dwarf
+by a point
+
+@rej
+#testcase-check-pre-war-file-rule-if-sco-war-file-is-true
+>war file
+You already got the war file!
+
+@rej+
+##balance undos
+>t dwarf
+\\
+>t elf
+\\
+>t gnome
+\\
+>t rogue
+\\
+>t raider
+\\
+>t mice
+\\
+>t troll
+\\
+>the file
+by a point
+\\
+#testcase-check-pre-the-file-rule-if-sco-the-file-is-true
+>the file
+You already visited thief isle!
+\\
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>grow vial
+by a point
+
+@rej
+#testcase-check-pre-grow-vial-rule-if-sco-grow-vial-is-true
+>grow vial
+You already got a grow vial!
+
+@rej+
+#+testcase-think-table-of-main-oronyms-pre-manna-curb-rule
+>think
+You may be able to find a MANNA CURB beneath the manna curb in Keep (Iller) now you have someone with knowledge of wildlife and wildflowers.
+
+>n
+
+>e
+
+>n
+
+>n
+
+@rej
+#testcase-check-pre-treat-all-rule-if-tree-tall-is-not-in-trees-mall
+>treat all
+{$REJECT2}
+
+>tree small
+by a point
+
+@rej
+#testcase-check-pre-tree-small-rule-if-sco-tree-small-is-true
+>tree small
+You already got a tree (small) to grow!
+
+>s
+
+>s
+
+>w
+
+@rej
+##balance undos
+>s
+\\
+#+testcase-think-table-of-main-oronyms-pre-the-file-rule
+>think
+You may be able to make sense of THE FILE here once you've gotten enough information from companions.
+\\
+>undo
+>undo
+
+>d
+
+>t elf
+
+>t dwarf
+
+>t rogue
+
+>t raider
+
+>t gnome
+
+>t troll
+
+>t mice
+
+>tall cake
+THINK
+
+>u
+
+@rej
+>ao
+\\
+>brew swears
+by a bonus point
+
+@rej+
+#testcase-check-pre-brew-swears-rule-if-sco-brew-swears-is-true
+>brew swears
+But you've already opened the passage through BRUISE WARES!
+
+@rej+
+>in
+\\
+#testcase-check-pre-crew-dork-rule-if-sco-weak-us-is-false
+>crew dork
+The crude orc doesn't believe they're being used by the grinch earls. Why, it's part of the hazing! They have to show they're tough!
+\\
+#testcase-check-pre-bastard-eee-rule-if-bah-sturdy-is-not-in-brew-swears
+>bastardy
+{$REJECT2}
+\\
+#testcase-check-pre-heckle-ass-rule-if-heh-class-is-not-in-brew-swears
+>heckle ass
+{$REJECT2}
+\\
+#testcase-check-pre-huh-shit-rule-if-hush-it-is-not-in-brew-swears
+>huh shit
+{$REJECT2}
+\\
+#testcase-check-pre-lie-fuckers-rule-if-player-is-not-in-brew-swears
+>lie fuckers
+{$REJECT2}
+\\
+#testcase-check-pre-were-dicks-rule-if-player-is-not-in-brew-swears
+>were dicks
+{$REJECT2}
+
+@rej+
+##balance undos
+>gonear doom ending
+>think
+You lost the chance to say CREW DORK to the crude orc a bit more gently, as you didn't figure a way to diminish the grinch earls.
+>undo
+>undo
+
+@rej+
+>weak us
+by a bonus point
+
+@rej+
+##balance undos
+>gonear doom ending
+>think
+You lost the chance to say CREW DORK to the crude orc a bit more gently, even though you weakened the grinch earls.
+>undo
+>undo
+
+@rej+
+>crew dork
+by a bonus point
+
+@rej+
+#testcase-check-pre-crew-dork-rule-if-sco-crew-dork-is-true
+>crew dork
+You already broke the truth to the crude orc as gently as you could!
+
+@rej+
+#testcase-check-pre-weak-us-rule-if-sco-weak-us-is-true
+>weak us
+You already established the grinch earls cursed out of weakness or, at least, not fully from strength!
+
+@rej+
+>bastard eee
+by a bonus point
+\\
+>heckle ass
+by a bonus point
+\\
+>huh shit
+by a bonus point
+\\
+>lie fuckers
+by a bonus point
+
+@rej+
+##balance undos
+>grin churls
+by a bonus point
+\\
+#testcase-check-pre-grin-churls-rule-if-sco-grin-churls-is-true
+>grin churls
+You already cut the grin churls down to size!
+\\
+>were dicks
+The grin churls remark that you seemed so nice, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do.
+by a bonus point
+\\
+>undo
+>undo
+>undo
+
+@rej+
+>were dicks
+by a bonus point
+\\
+>grin churls
+by a bonus point
+The grin churls remark that you seemed so nice, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do.
+
+@rej+
+#+testcase-check-pre-weak-us-rule-if-sco-weak-us-is-true
+>weak us
+You already established the grin churls cursed out of weakness or, at least, not fully from strength!
+
+>out
+
+>w
+
+>manna curb
+by a point
+
+@rej
+#testcase-check-pre-manna-curb-rule-if-sco-manna-curb-is-true
+>manna curb
+You already found enough manna beneath the manic herb!
+
+>e
+
+>e
+
+>n
+
+>n
+
+@rej
+#testcase-check-pre-treat-all-rule-if-player-does-not-have-tall-cake
+>treat all
+You don't have anything to treat your companions with!
+THINK
+\\
+>s
+\\
+#testcase-think-table-of-main-oronyms-pre-treat-all-rule
+>think
+You may be able to TREAT ALL in Trees Mall once you have a tasty treat.
+\\
+>n
+\\
+#+testcase-think-table-of-main-oronyms-pre-the-file-rule
+>think
+You may be able to make sense of THE FILE in Known Ocean now you've gotten enough information from companions.
+
+>tall cake
+by a point
+
+@rej
+#+testcase-think-table-of-main-oronyms-pre-my-corps-rule
+#testcase-think-table-of-main-oronyms-pre-treat-all-rule
+>think
+You may be able to TREAT ALL here now you have a tasty treat.
+You can call your companions MY CORPS once you've shared something together.
+
+>treat all
+by a point
+
+@rej
+#testcase-check-pre-my-corps-rule-if-player-is-not-in-worm-eaten
+>my corps
+This doesn't seem to be the right place to pep up the troops.
+\\
+#testcase-check-pre-treat-all-rule-if-sco-treat-all-is-true
+>treat all
+You already shared treats!
+
+>s
+
+>s
+
+>w
+
+>s
+
+>the file
+by a point
+
+>n
+
+>d
+
+@rej
+#+testcase-think-table-of-main-oronyms-pre-were-meetin-rule
+>think
+You will be able to say WERE MEETIN now you have a full party available.
+
+>were meetin
+by a point
+
+@rej
+#testcase-check-pre-were-meetin-rule-if-sco-were-meetin-is-true
+>were meetin
+You already held a meeting! Too many meetings get in the way of doing.
+\\
+>wipe out
+You haven't identified anyone terribly evil you want to wipe out.
+\\
+#+testcase-think-table-of-main-oronyms-pre-my-corps-rule
+>think
+You can call your companions MY CORPS now you've shared something together.
+
+>my corps
+by a point
+
+@rej
+#testcase-check-pre-my-corps-rule-if-sco-my-corps-is-true
+>my corps
+You already brought your corps a bit closer together!
+\\
+#testcase-check-pre-wipe-out-rule-if-player-is-not-in-doom-ending
+>wipe out
+You haven't identified anyone terribly evil you want to wipe out.
+
+>d
+
+@rej
+##balance undos
+>cease cull
+by a point
+\\
+>wipe out
+by a point
+\\
+#testcase-check-pre-wide-vision-rule-if-pre-acts-<-pre-max
+>wide vision
+You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.
+\\
+#+testcase-check-pre-wide-vision-rule-if-pre-acts-<-pre-max
+>wide vision
+You are unable to express your wide vision. You'll have to settle for just repairing things pretty well.
+\\
+#testcase-think-table-of-main-oronyms-pre-wide-vision-rule
+>think
+Sadly, you didn't quite experience enough to spread your wide vision.
+\\
+>tt
+\\
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
+@rej+
+#testcase-check-pre-do-due-mend-rule-if-sco-wipe-out-is-false
+>do mending
+You'll have to dispose of the sea skull first.
+THINK
+\\
+#testcase-check-pre-wipe-out-rule-if-sco-cease-cull-is-false
+>wipe out
+You try to charge and wipe out the sea skull, but you bounce against an invisible barrier. It's likely protecting itself from sneak attacks. You'll have to get its attention.
+\\
+#testcase-check-pre-wide-vision-rule-if-why-division-is-not-in-doom-ending
+>why division
+{$REJECT2}
+
+@rej+
+#+testcase-think-table-of-main-oronyms-pre-wipe-out-rule
+#testcase-think-table-of-main-oronyms-pre-do-due-mend-rule
+>think
+You can think DO/DUE MEND/MENDING once you've disposed of the sea skull.
+You will want to WIPE OUT the cause of your problems once you have them in your crosshairs.
+!not for a while
+
+>cease cull
+by a point
+
+@rej
+#testcase-check-pre-cease-cull-rule-if-sco-cease-cull-is-true
+>cease cull
+You already played defense. Now's the time to go on offense!
+
+@rej+
+#+testcase-think-table-of-main-oronyms-pre-wipe-out-rule
+>think
+You will want to WIPE OUT the cause of your problems now you have them in your crosshairs.
+!not for a while
+
+>wipe out
+by a point
+
+@rej
+#testcase-check-pre-wipe-out-rule-if-sco-wipe-out-is-true
+>wipe out
+You already wiped out the sea skull! Now is the time for healing.
+
+@rej+
+>wide vision
+Your score just went up by a bonus point!
+\\
+#testcase-check-pre-wide-vision-rule-fallthrough
+#testcase-run-post-wide-vision-rule-default
+Your experiences and failures give you a leadership you don't know you had. You convince your companions to do more than just save their own hides. You lay out a vision so scourges from the likes of the sea skull are less likely to happen again, or it will take longer. And everyone listens! A few even say "Worth inking, we're thinking!"
+They're eager for the final step, to get out there. You look around. It's pretty clear what must occur, or it will be, soon.
+
+@rej+
+#+testcase-think-table-of-main-oronyms-pre-do-due-mend-rule
+>think
+You can think DO/DUE MEND/MENDING now you've disposed of the sea skull.
+
+@rej+
+#testcase-reject-end-table-of-main-oronyms-pre-bastard-eee-rule
+>bastard eee
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-bay-sale-rule
+>bay sail
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-bile-oh-rule
+>bile oh
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-boost-role-rule
+>boost role
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-brew-swears-rule
+>brew swears
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-cease-cull-rule
+>cease cull
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-crew-dork-rule
+>crew dork
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-gaunt-raider-rule
+>gaunt raider
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-gnome-old-rule
+>gnome old
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-grin-churls-rule
+>grin churls
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-grow-star-rule
+>grow star
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-grow-vial-rule
+>grow vial
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-heckle-ass-rule
+>heckle ass
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-hide-out-rule
+>hideout
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-high-plain-rule
+>high plain
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-huh-shit-rule
+>huh shit
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-key-pillar-rule
+>key pillar
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-knife-right-rule
+>knife right
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-known-ocean-rule
+>known ocean
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-lie-fuckers-rule
+>lie fuckers
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-low-bend-rule
+>low bend
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-low-door-rule
+>low door
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-manna-curb-rule
+>manna curb
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-mensch-elf-rule
+>mensch elf
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-mice-tall-rule
+>mice tall
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-nah-phase-rule
+>nah phase
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-oh-flier-rule
+>oh flier
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-plan-tracker-rule
+>plan tracker
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-pole-east-rule
+>pole east
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-pry-stalk-rule
+>pry stalk
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-rogue-old-rule
+>rogue old
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-see-design-rule
+>see design
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-self-owns-rule
+>self owns
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-shore-trail-rule
+>shore trail
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-six-quid-rule
+>six quid
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-store-mile-rule
+>store mile
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-summer-chant-rule
+>summer chant
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-tall-cake-rule
+>tall cake
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-the-file-rule
+>the file
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-treat-all-rule
+>treat all
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-tree-small-rule
+>tree small
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-two-maps-rule
+>two maps
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-wan-dwarf-rule
+>wan dwarf
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-war-file-rule
+>war file
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-weak-us-rule
+>weak us
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-well-own-rule
+>well own
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-were-dicks-rule
+>were dicks
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-were-meetin-rule
+>were meetin
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-whee-lone-rule
+>whee lone
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-wool-frock-rule
+>wool frock
+{$REJECT2}
+
+>do mending
+by a point
+Your score just went up by a point!
+
+@rej
+Beat all! Be tall!
+@!
+Gray day?! Grade A!

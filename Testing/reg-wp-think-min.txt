@@ -1,0 +1,286 @@
+## rbr-wp-think.txt
+** game: /home/andrew/prt/debug-why-pout.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+# I copied the reg-wp-lone-division.txt test file where you get all the rejects in here
+
+* main
+
+>z
+
+>an aim
+by a point
+
+>two maps
+by a point
+
+>self owns
+by a point
+
+>pry stalk
+by a point
+
+>high plain
+by a point
+
+>nah phase
+by a point
+
+>pole east
+by a point
+
+>grow star
+by a point
+
+>key pillar
+by a point
+
+>shore trail
+by a point
+
+>n
+
+>hideout
+by a point
+
+>d
+
+>boost role
+by a point
+
+>u
+
+>s
+
+>w
+
+>e
+
+>n
+
+>wool frock
+by a point
+
+>s
+
+>s
+
+>known ocean
+by a point
+
+>six quid
+by a point
+
+>n
+
+>e
+
+>low bend
+by a point
+
+>bay sale
+by a point
+
+>n
+
+>store mile
+by a point
+
+>s
+
+>w
+
+>w
+
+>gnome old
+by a point
+
+>e
+
+>e
+
+>n
+
+>mice tall
+by a point
+
+>s
+
+>w
+
+>n
+
+>low door
+by a point
+
+>in
+
+>well own
+by a point
+
+>summer chant
+by a point
+
+>bile oh
+by a point
+
+>whee lone
+by a point
+
+>out
+
+>s
+
+>w
+
+>rogue old
+by a point
+
+>see design
+by a point
+
+>knife rite
+by a point
+
+>e
+
+>n
+
+>in
+
+>oh flier
+by a point
+
+>out
+
+>s
+
+>w
+
+>plan tracker
+by a point
+
+>e
+
+>d
+
+>gaunt raider
+by a point
+
+>u
+
+>e
+
+>n
+
+>mensch elf
+by a point
+
+>s
+
+>w
+
+>s
+
+>war file
+by a point
+
+>wan dwarf
+by a point
+
+>grow vial
+by a point
+
+>n
+
+>e
+
+>n
+
+>n
+
+>tree small
+by a point
+
+>s
+
+>s
+
+>w
+
+>d
+
+>t elf
+
+>t dwarf
+
+>t rogue
+
+>t raider
+
+>t gnome
+
+>t troll
+
+>t mice
+
+>tall cake
+THINK
+
+>u
+
+>out
+
+>w
+
+>manna curb
+by a point
+
+>e
+
+>e
+
+>n
+
+>n
+
+>tall cake
+by a point
+
+>treat all
+by a point
+
+>s
+
+>s
+
+>w
+
+>s
+
+>the file
+by a point
+
+>n
+
+>d
+
+>were meetin
+by a point
+
+>my corps
+by a point
+
+>d
+
+>cease cull
+by a point
+
+>wipe out
+by a point
+
+>do mending
+by a point
+Your score just went up by a point!
+
+Gray day?! Grade A!
