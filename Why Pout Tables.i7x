@@ -54,7 +54,7 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "cease"	"cull"	"seize"	hom-cease-cull rule	false	true	true	false	false	Doom Ending	pre-cease-cull rule	post-cease-cull rule	--	--
 "wipe"	"out"	--	--	false	true	true	false	false	Doom Ending	pre-wipe-out rule	post-wipe-out rule	--	"You will want to [b]WIPE OUT[r] the cause of your problems [once-now of sco-cease-cull] you have them in your crosshairs[if the room down from naffhaze is nowhere]. That's probably not for a while, though[end if]."
 "wide"	"vision"	--	--	false	true	false	false	false	Doom Ending	pre-wide-vision rule	post-wide-vision rule	--	"Sadly, you didn't quite experience enough to spread your wide vision."
-"do|due"	"mend|mending"	"dew"	--	false	true	true	false	false	Doom Ending	pre-do-due-mend rule	post-do-due-mend rule	--	"You can think [b]DO/DUE MEND[r] [once-now of sco-wipe-out] you've disposed of the sea skull."
+"do|due"	"mend|mending"	"dew"	--	false	true	true	false	false	Doom Ending	pre-do-due-mend rule	post-do-due-mend rule	--	"You can think [b]DO/DUE MEND/MENDING[r] [once-now of sco-wipe-out] you've disposed of the sea skull."
 "weak"	"us"	--	--	false	true	false	false	false	brew swears	pre-weak-us rule	post-weak-us rule	--	--
 "grin"	"churls"	--	--	false	true	false	false	false	brew swears	pre-grin-churls rule	post-grin-churls rule	--	--
 "crew"	"dork"	--	--	false	true	false	false	false	brew swears	pre-crew-dork rule	post-crew-dork rule	--	"[if doom ending is visited][dork-lockout][else]You can explain [the earls] see the crude orc as a [b]CREW DORK[r] [once-now of sco-weak-us] they seem a bit less strong[end if]."
@@ -120,7 +120,8 @@ this is the post-an-aim rule:
 section NaffHaze scoring
 
 a wordtwisting rule (this is the pre-pole-east rule):
-	if player is not in naffhaze or sco-nah-phase is false, unavailable;
+	if player is not in naffhaze, unavailable;
+	if sco-nah-phase is false, unavailable;
 	if sco-pole-east is true:
 		vcal "You already discovered how you were being policed!";
 		already-done;
@@ -134,7 +135,8 @@ this is the post-pole-east rule:
 	check-worm-eaten;
 
 a wordtwisting rule (this is the pre-shore-trail rule):
-	if short rail is off-stage or player is not in NaffHaze, unavailable;
+	if player is not in NaffHaze, unavailable;
+	if sco-nah-phase is false, unavailable;
 	if sco-shore-trail is true:
 		vcal "But you already replaced the short rail!";
 		already-done;
@@ -149,7 +151,8 @@ this is the post-shore-trail rule:
 	check-worm-eaten;
 
 a wordtwisting rule (this is the pre-grow-star rule):
-	if player is not in NaffHaze or gross tar is not in NaffHaze, unavailable;
+	if player is not in NaffHaze, unavailable;
+	if sco-nah-phase is false, unavailable;
 	ready;
 
 this is the post-grow-star rule:
@@ -300,7 +303,8 @@ this is the post-mice-tall rule:
 	moot my stall;
 
 a wordtwisting rule (this is the pre-mensch-elf rule):
-	if player is not in storm isle or men shelf is not in storm isle, unavailable;
+	if player is not in storm isle, unavailable;
+	if sco-store-mile is false, unavailable;
 	ready;
 
 this is the hom-mencsh-elf rule:
@@ -613,7 +617,7 @@ a wordtwisting rule (this is the pre-bile-oh rule):
 	ready;
 
 this is the hom-bile-owe rule:
-	say "Neither you nor the merchant owe each other anything, for better or for worse. You're close. Perhaps you should just  see things as they are and emote slightly."
+	say "Neither you nor the merchant owe each other anything, for better or for worse. You're close. Perhaps you should just see things as they are and emote slightly."
 
 this is the post-bile-oh rule:
 	now sco-bile-oh is true;
@@ -863,11 +867,11 @@ a wordtwisting rule (this is the pre-wide-vision rule):
 
 to say war-pawn-musings:
 	say "[line break]'I? Low. I'll ... oh ...' you moan, preparing to bare your guilty soul.[line break]";
-	say "'It was BRUISE-WARES, wasn't it?' you ask. 'I shouldn't have [if sco-brew-swears is false]ignored it[else]chickened out once I found a way in[else if brew-swears-score < 9]left things undone[else]enjoyed tearing through it all[end if].[paragraph break]Your companions shake their heads slightly.";
+	say "'It was BRUISE-WARES, wasn't it?' you ask. 'I shouldn't have [if sco-brew-swears is false]ignored it[else]chickened out once I found a way in[else if brew-swears-score < 9]left things undone[else]enjoyed tearing through it all[end if].[paragraph break]Your companions shake their heads slightly.[paragraph break]";
 	if gs-war-pawn-try is true:
-		say "[line break]'Oh! Must be [if war pawn is moot]using[else]trying to use[end if] that war pawn, now. Lesson learnt.'[paragraph break]But your companions change to I-saw-ice-aww expressions. No, it must have been something else.";
+		say "'Oh! Must be [if war pawn is moot]using[else]trying to use[end if] that war pawn, now. Lesson learnt.'[paragraph break]But your companions change to I-saw-ice-aww expressions. No, it must have been something else.";
 	else:
-		say "[line break]"
+		say "You ask for credit because you didn't use the war pawn, but that seems irrelevant. They didn't know you had one!"
 
 to say remove-widevision-bonus:
 	if gs-penalized-why-division is false:
@@ -1039,10 +1043,11 @@ rule for printing a parser error (this is the check forks rule):
 		else:
 			if debug-state is true:
 				choose row partial-row in table of main oronyms;
-				say "([check-rule entry] tripped) ";
+				say "(DEBUG: [check-rule entry] tripped) ";
 			say "Not much happens, but you feel like that might help, at least halfway, some time later. Much later, or just a little, you can't tell.";
 		the rule succeeds;
 	if got-partial-done is true:
+		if debug-state is true, say "[partial-row] row ...";
 		say "Hmm, no, you already did that, or something like that. You'll know if and when you need to flip between things.";
 		the rule succeeds;
 	continue the action;
@@ -1108,8 +1113,8 @@ volume can't go that way
 table of noways
 noway-rm	noway-txt
 Eh Raw Air Aww	"[if sco-an-aim is false][one of]'Grey trek? Great wreck!' [or]'I sit? Ice it!' [stopping]you moon. You can't see anywhere. You know almost nothing. I mean, you don't even have a name. What would you do even if there was a passage?[else]It looks like there are ways out, but you're disoriented enough, directions don't matter. You sure would like a way to see where you're going.[end if]"
-Hype Lane	"[if noun is not up]No sense faffing around horizontally. You're sick of being stuck underground[else if sco-pry-stalk is false]You need to find something that will help you go up[else]You need to figure where to go up[end if]."
-NaffHaze	"[if sco-nah-phase is false]Too tough to stumble around until the haze lifts. How to make that happen?[else if number of viable directions is 0]You feel like eventually you should be able to wander around, but you can't see anywhere to go, yet. There seem to be clues where to go, and how, if you look around.[else if number of viable directions is 4]You can go in the usual directions here.[else]You can't go [noun], but you can go [list of viable directions].[end if]"
+Hype Lane	"[if noun is not up]No sense faffing around horizontally. You're sick of being stuck underground[else if sco-pry-stalk is false]You need to find something that will help you go up[else]You need to name where to go up to[end if]."
+NaffHaze	"[if sco-nah-phase is false]Too tough to stumble around until the haze lifts. How to make that happen?[else if number of viable directions is 0]You feel like eventually you should be able to wander around, but you can't see anywhere to go, yet. There seem to be clues where to go, and how, if you look around.[else if plane-dir-score is 4]You can go down or in the cardinal directions, but not [noun].[else]You can't go [noun], but you can go [list of viable directions].[end if]"
 KeepIller	"Apart from finding a way beyond the seedy sign[if sco-see-design is true], which you don't need to again[end if], the keep doesn't have many twisty passages. Well, any."
 Nigh Fright	"You could leave, but then you'd have to come back. Just figure what to do here."
 Lobe End	"[if sco-low-bend is true]The bend only curves west to north[else]You can only go back west. Well, for now[end if]."
@@ -1117,7 +1122,7 @@ Storm Isle	"You can only go back south to Lobe End[if sco-store-mile is true] or
 Trees Mall	"You can only go back south."
 Wolf Rock	"Wolf Rock blocks every planar passage except back [b]SOUTH[r][if sco-low-door is true]. Well, you can go [b]IN[r] where the lode ore was as well[end if][if sco-hide-out is true]. There's a hideout above as well[end if]."
 We Loan	"You can only go back [b]OUT[r] here."
-Hideout	"You can only go back [b]UP[r]. If it had too many passages, it'd risk being a less effective hideout."
+Hideout	"You can only go back [b]UP[r]. If this hideout had too many passages, it'd risk being less effective."
 NoNotion	"You can only go back [b]NORTH[r][if squid is in NoNotion] or, if you know where you want to go, give the squid instructions where to go[else], or that's your notion, right now[end if]."
 Wand Wharf	"You're not in the mood for exploring the wharf. It seems like a good way to get lost. Maybe there's someone or something nearby you can pick up, then leave."
 Worm Eaten	"No tricky passages here, just [b]UP[r] back to safer ground or [b]DOWN[r] to your fate."
