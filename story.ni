@@ -104,7 +104,7 @@ check thinking:
 		if think-cue entry is true:
 			now got-think is true;
 			if idid entry is true:
-				say "Oops, forgot to reset [w1 entry] [w2 entry]. Trivial bug--but please let me know!";
+				say "Oops, I somehow forgot to reset think-cue entry for [w1 entry] [w2 entry]. This is a trivial bug--but please let me know!";
 			else:
 				if there is a think-advice entry:
 					say "[think-advice entry][line break]";

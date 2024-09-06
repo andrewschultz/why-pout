@@ -23,14 +23,14 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "six"	"quid"	--	--	false	true	true	false	false	NoNotion	pre-six-quid rule	post-six-quid rule	--	--
 "the"	"file"	"thee"	--	false	true	true	false	false	nonotion	pre-the-file rule	post-the-file rule	--	"You may be able to make sense of [b]THE FILE[r] [here-in of nonotion] [once-now of whether or not number of unchatted followers is 0] you've gotten enough information from companions."
 "war"	"file"	--	--	false	true	true	false	false	nonotion	pre-war-file rule	post-war-file rule	--	"You may be able to recover the [b]WAR FILE[r] on the wharf isle [here-in of nonotion] [once-now of sco-plan-tracker] you have something you can write down its main ideas in."
-"grow"	"vial"	"vile"	--	false	true	true	false	false	nonotion	pre-grow-vial rule	post-grow-vial rule	--	"You may be able to find a [b]GROW VIAL[r] once you've found water transport."
+"grow"	"vial"	"vile"	--	false	true	true	false	false	nonotion	pre-grow-vial rule	post-grow-vial rule	--	"You may be able to find a [b]GROW VIAL[r] with the right water transport."
 "wan"	"dwarf"	--	--	false	true	true	false	false	wand wharf	pre-wan-dwarf rule	post-wan-dwarf rule	--	--
 "wool"	"frock"	--	--	false	true	true	false	false	Wolf Rock	pre-wool-frock rule	post-wool-frock rule	--	--
 "hide"	"out"	--	--	false	true	true	false	false	Wolf Rock	pre-hide-out rule	post-hide-out rule	"hide out" or "hideout"	--
-"low"	"door"	--	--	false	true	true	false	false	Wolf Rock	pre-low-door rule	post-low-door rule	--	"You may be able to find a [b]LOW DOOR[r] [here-in of Wolf Rock] [once-now of sco-mice-tall] you have a companion or companions that are small enough to dig a bit better."
+"low"	"door"	--	--	false	true	true	false	false	Wolf Rock	pre-low-door rule	post-low-door rule	--	"You may be able to find a [b]LOW DOOR[r] [here-in of Wolf Rock] [once-now of sco-mice-tall] you have a companion or companions small enough to dig a bit better."
 "well"	"own"	"wheel"	hom-wheel-own rule	false	true	true	false	false	we loan	pre-well-own rule	post-well-own rule	--	--
 "summer"	"chant"	--	--	false	true	true	false	false	we loan	pre-summer-chant rule	post-summer-chant rule	--	--
-"bile"	"oh|o"	"owe"	hom-bile-owe rule	false	true	true	false	false	we loan	pre-bile-oh rule	post-bile-oh rule	--	"You may be able to expose some merchant's [b]BILE OH[r] [once-now of sco-summer-chant] you find something positive to say to prep yourself."
+"bile"	"oh|o"	"owe"	hom-bile-owe rule	false	true	true	false	false	we loan	pre-bile-oh rule	post-bile-oh rule	--	"You may be able to expose some merchant's [b]BILE OH[r] [once-now of sco-summer-chant] you've found something positive to say to prep yourself."
 "whee"	"lone"	"wee|loan"	--	false	true	true	false	false	we loan	pre-whee-lone rule	post-whee-lone rule	--	"You may be able to enjoy your solitude with [b]WHEE LONE[r] [here-in of we loan] [once-now of sco-bile-oh] you actually have solitude."
 "oh"	"flier|flyer"	"owe"	hom-owe-flier rule	false	true	true	false	false	we loan	pre-oh-flier rule	post-oh-flier rule	--	"You may be able to say [b]OH FLIER[r] around the oaf liar [if current-quid is 0]once you've got some money[else if gs-overpay-flier is true][once-now of whether or not current-quid is 1] you have exactly one quid left[else]since you have money[end if]."
 "boost"	"role"	"roll"	--	false	true	true	false	false	hideout	pre-boost-role rule	post-boost-role rule	--	--
@@ -99,7 +99,7 @@ a wordtwisting rule (this is the pre-boost-role rule):
 
 this is the post-boost-role rule:
 	now sco-boost-role is true;
-	say "You talk with the booze troll for a bit. They seem not to know who they are, and that gives you something in common with them. They don't want to be a lousy boozer all their life. They are sick of drinking Base Ale.[paragraph break]You begin chatting with them. You mention you've been having an adventure, and they'd sort of like one, too. They hand you a bottle of Base Ale as thanks. Not that they want you to go down their road. But it might be useful in bartering.";
+	say "You talk with the booze troll for a bit. They seem not to know who they are, and that gives you something in common with them. They don't want to be a lousy boozer all their life. They are sick of drinking Base Ale.[paragraph break]You decide to trust them. They don't seem armed. You mention you've been having an adventure, and they'd sort of like one, too. They hand you a bottle of Base Ale as thanks. Not that they want you to go down their road. But it might be useful in bartering.";
 	befriend new troll;
 	moot booze troll;
 	now player has Base Ale;
@@ -176,7 +176,7 @@ a wordtwisting rule (this is the pre-wipe-out rule):
 		vcp "You haven't identified anyone terribly evil you want to wipe out.";
 		not-yet;
 	if sco-cease-cull is false:
-		vcp "You try to charge and wipe out the sea skull, but you bounce against an invisible barrier.";
+		vcp "You try to charge and wipe out the sea skull, but you bounce against an invisible barrier. It's likely protecting itself from sneak attacks. You'll have to get its attention.";
 		not-yet;
 	ready;
 
@@ -556,13 +556,13 @@ to ride-squid:
 a wordtwisting rule (this is the pre-grow-vial rule):
 	abide by the three-isle rule;
 	if sco-grow-vial is true:
-		vcal "You already got a grow-vial!";
+		vcal "You already got a grow vial!";
 		already-done;
 	ready;
 
 this is the post-grow-vial rule:
 	now sco-grow-vial is true;
-	say "In the grove isle, you find a grow vial, which you take.";
+	say "In the grove isle, you find a grow vial, which you take. It's relaxing, but you can't afford to loiter too long.";
 	now player has grow vial;
 	conditional-flier-mangle;
 
@@ -621,7 +621,7 @@ this is the hom-bile-owe rule:
 
 this is the post-bile-oh rule:
 	now sco-bile-oh is true;
-	say "The mere suggestion that the merchant's aggression may be annoying seems to set them off. No, no, it's people like YOU who are the problem. Without dynamic positivity like theirs, you're totally screwed! You're just jealous you don't have it![paragraph break]You freeze up, confused by all this, and the merchant takes this as a sign of arrogant disrespect. You are not the first person to reject their positivity! They run into clueless crumb-bums all day![paragraph break]They storm off, presumably to find another crumb-bum to abuse for not having their brand of positivity.[paragraph break]Oh, hey, you can maybe enjoy some solitude now!";
+	say "The mere suggestion that the merchant's aggression may be annoying seems to set them off. No, no, it's people like YOU who are the problem. Without dynamic positivity like theirs, you're totally screwed! You're just jealous you don't have it! Just like other lesser people when the merchant walks in to the room! On some level, they KNOW![paragraph break]You freeze up, confused by all this, and the merchant takes this as a sign of arrogant disrespect. You are not the first person to reject their positivity! They run into clueless crumb-bums all day![paragraph break]They storm off, presumably to find another crumb-bum to abuse for not having their brand of positivity.[paragraph break]Oh, hey, you can maybe enjoy some solitude now!";
 	moot merchant;
 
 a wordtwisting rule (this is the pre-whee-lone rule):
@@ -663,7 +663,7 @@ to say opflier:
 this is the post-oh-flier rule:
 	now sco-oh-flier is true;
 	if gs-overpay-flier is true:
-		say "You offer the only quid you have left. The oaf liar, being a liar, suspects you're being a liar, too. They demand you show proof you couldn't possibly have any more money on you.[paragraph break]You feel guilty about this subterfuge, except for how the oaf liar seemed too eager to trade. You stood your ground in negotiations, and that's something. You hope the flier is worth it.";
+		say "You offer the only quid you have left. The oaf liar, being a liar, suspects you're being a liar, too. They demand you show proof you couldn't possibly have any more money on you. After all, you did before![paragraph break]You feel guilty about the subterfuge of spending money elsewhere and coming back, but then again, the oaf liar has their own sales tricks, you're sure. You stood your ground in negotiations, and that's something. You hope the flier is worth it.";
 	else:
 		say "You act distracted just right. The oaf liar tries to get your attention. Just ignoring them wouldn't work, but paying attention to a flier ... well, they take the hint that you aren't a high-rolling customer. They try to wheedle more money out of you, but of course, that's all you have. So you trade your final quid for the flier. The oaf liar thanks you for not totally wasting their time. They seem to snicker as they depart.";
 	moot oaf liar;
@@ -905,13 +905,13 @@ chapter brew swears scoring
 a wordtwisting rule (this is the pre-weak-us rule):
 	if player is not in brew swears, unavailable;
 	if sco-weak-us is true:
-		vcal "You already established the [grinch] cursed out of weakness or, at least, not fully from strength!";
+		vcal "You already established [the grinch] cursed out of weakness or, at least, not fully from strength!";
 		already-done;
 	ready;
 
 this is the post-weak-us rule:
 	now sco-weak-us is true;
-	say "You're surprised how just making a little shift can make the [grinch] seem much weaker. Their strength is the sort of brute force that doesn't lift other people up.[paragraph break]They throw down the gauntlet at this point. Don't you know cussing shows higher intelligence? Some study or other showed that!";
+	say "You're surprised how just making a little shift can make [the grinch] seem much weaker. Their strength is the sort of brute force that doesn't lift other people up.[paragraph break]They throw down the gauntlet at this point. Don't you know cussing shows higher intelligence? Some study or other showed that!";
 	check-orc-friendliness;
 	follow the cycle swears rule;
 
