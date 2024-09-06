@@ -303,6 +303,7 @@ by a point
 You aren't feeling too great, but you don't want or need to wipe yourself out, yet. Perhaps you can find the root of your problems and wipe it out one day, though.
 !THINK
 \\
+#testcase-check-pre-my-corps-rule-abide-by-the-followers-check-rule
 >my corps
 Sadly, you have no friends to bring together yet! Yet.
 \\
@@ -384,6 +385,11 @@ by a point
 
 >nah phase
 by a point
+
+@rej
+#testcase-check-pre-nah-phase-rule-if-sco-nah-phase-is-true
+>nah phase
+You already dispelled the haze!
 
 >pole east
 by a point
@@ -539,14 +545,14 @@ You may be able to recruit the GNOME OLD in Keep (Iller) now you have adventurin
 ##balance undos
 >e
 \\
-#testcase-check-pre-bay-sale-rule-if-sco-six-quid-is-false
+#testcase-check-pre-bay-sale-rule-if-player-is-in-lobe-end-and-sco-low-bend-is-false
 >bay sale
 No water visible here right now. Maybe if the landscape rearranged.
 \\
 >low bend
 by a point
 \\
-#+testcase-check-pre-bay-sale-rule-if-sco-six-quid-is-false
+#testcase-check-pre-bay-sale-rule-if-sco-six-quid-is-false
 >bay sale
 You realize that, in order to participate in a bay sale for a bay sail, you need some form of currency. You don't have that yet.
 \\
@@ -631,6 +637,10 @@ But you already transformed the storm isle!
 >mice tall
 Maybe there are mice behind there, but you can't figure a way to locate them. It requires some sort of clever inhuman perception, you'd think.
 THINK
+\\
+#testcase-think-table-of-main-oronyms-pre-mice-tall-rule
+>think
+You may be able to locate the MICE TALL here once you have a companion with good perception.
 
 >s
 
@@ -642,6 +652,11 @@ THINK
 by a point
 
 @rej
+#testcase-think-table-of-main-oronyms-pre-mice-tall-rule
+>think
+You may be able to locate the MICE TALL in Store Mile now you have a companion with good perception.
+
+@rej+
 #testcase-check-pre-gnome-old-rule-if-sco-gnome-old-is-true
 >gnome old
 You already summoned the gnome!
@@ -664,6 +679,10 @@ by a point
 #testcase-check-pre-mice-tall-rule-if-sco-mice-tall-is-true
 >mice tall
 You already found the mice and destroyed the stall!
+\\
+#testcase-check-pre-my-corps-rule-abide-by-the-followers-check-rule
+>my corps
+You sense you don't have the gang together! You may still be a way away.
 
 @rej+
 #testcase-think-table-of-main-oronyms-pre-low-door-rule
@@ -685,6 +704,16 @@ by a point
 You already found a low door in this mess!
 
 >in
+
+@rej
+#testcase-check-pre-whee-lone-rule-if-sco-well-own-is-false
+>whee lone
+It's nice to be alone here. But you sense there's a challenge here, to earn solitude, first.
+THINK
+\\
+#testcase-check-pre-oh-flier-rule-if-oaf-liar-is-not-in-we-loan
+>oh flyer
+{$REJECT2}
 
 >well own
 by a point
@@ -708,7 +737,6 @@ You can call your companions MY CORPS once you have enough of them.
 \\
 #testcase-check-pre-whee-lone-rule-if-merchant-is-in-we-loan
 >whee lone
-THINK
 You can't enjoy solitude with that merchant around.
 \\
 #testcase-think-table-of-main-oronyms-pre-whee-lone-rule
@@ -739,10 +767,15 @@ You may be able to enjoy your solitude with WHEE LONE here now you actually have
 by a point
 
 @rej
+#testcase-check-pre-oh-flier-rule-if-current-quid->-1
 >oh flyer
 You try and pull out one quid, but you wind up pulling them all out. The oaf liar's eyes get big. And you instinctively say, no, I'm not getting taken like that.
 "Have it your way. Information's valuable. Don't try to lowball me."
 THINK
+\\
+#testcase-think-table-of-main-oronyms-pre-oh-flier-rule
+>think
+You may be able to say OH FLIER around the oaf liar once you have exactly one quid left.
 
 >out
 
@@ -765,27 +798,26 @@ by a point
 >rogue old
 But you already got the rogue (old) to join you!
 
->see design
-by a point
-
->knife rite
-by a point
-
-@rej
-#testcase-check-pre-see-design-rule-if-sco-see-design-is-true
->see design
-You already saw the design in the seedy sign. You don't need to redo things.
-
 >e
 
 >n
 
 >in
 
+@rej
+#+testcase-think-table-of-main-oronyms-pre-oh-flier-rule
+>think
+You may be able to say OH FLIER around the oaf liar now you have exactly one quid left.
+
 >oh flier
 by a point
 
 @rej
+#testcase-run-post-oh-flier-rule-if-gs-overpay-flier-is-true
+You offer the only quid you have left. The oaf liar, being a liar, suspects you're being a liar, too. They demand you show proof you couldn't possibly have any more money on you.
+You feel guilty about the subterfuge of spending money elsewhere and coming back, but then again, the oaf liar has their own sales tricks, you're sure. You stood your ground in negotiations, and that's something. You hope the flier is worth it.
+
+@rej+
 #testcase-check-pre-whee-lone-rule-if-sco-whee-lone-is-true
 >whee lone
 You already got this place to yourself!
@@ -888,9 +920,14 @@ You will be able to say WERE MEETIN once you have a full party available.
 >s
 
 @rej
+#testcase-check-pre-the-file-rule-if-number-of-still-chat-needed-followers->-0
+>the file
+You know there is THE FILE, but which file is THE FILE? The thief isle has probably stolen a lot! You need information from your companions, or maybe just more companions.
+\\
 #+testcase-think-table-of-main-oronyms-pre-war-file-rule
 >think
 You may be able to recover the WAR FILE on the wharf isle here now you have something you can write down its main ideas in.
+You may be able to make sense of THE FILE here once you've gotten enough information from companions.
 
 >war file
 by a point
@@ -902,6 +939,14 @@ by a point
 #testcase-check-pre-war-file-rule-if-sco-war-file-is-true
 >war file
 You already got the war file!
+\\
+#+testcase-check-pre-the-file-rule-if-number-of-still-chat-needed-followers->-0
+>the file
+You know there is THE FILE, but which file is THE FILE? The thief isle has probably stolen a lot! You need information from your companions.
+\\
+#+testcase-think-table-of-main-oronyms-pre-the-file-rule
+>think
+You may be able to make sense of THE FILE here once you've gotten enough information from companions.
 
 @rej+
 ##balance undos
@@ -1003,8 +1048,19 @@ You may be able to make sense of THE FILE here once you've gotten enough informa
 
 >t mice
 
+@rej
+#testcase-check-pre-tall-cake-rule-if-player-does-not-have-manna-and-player-does-not-have-knife
 >tall cake
+You have neither the utensils nor the ingredients to make a cake.
 THINK
+\\
+#testcase-think-table-of-main-oronyms-pre-tall-cake-rule
+>think
+You may be able to create a TALL CAKE once you have ingredients and cooking instruments.
+\\
+#+testcase-think-table-of-main-oronyms-pre-the-file-rule
+>think
+You may be able to make sense of THE FILE in Known Ocean now you've gotten enough information from companions.
 
 >u
 
@@ -1025,6 +1081,11 @@ But you've already opened the passage through BRUISE WARES!
 #testcase-check-pre-crew-dork-rule-if-sco-weak-us-is-false
 >crew dork
 The crude orc doesn't believe they're being used by the grinch earls. Why, it's part of the hazing! They have to show they're tough!
+THINK
+\\
+#testcase-think-table-of-main-oronyms-pre-crew-dork-rule
+>think
+You can explain the grinch earls see the crude orc as a CREW DORK once they seem a bit less strong.
 \\
 #testcase-check-pre-bastard-eee-rule-if-bah-sturdy-is-not-in-brew-swears
 >bastardy
@@ -1057,6 +1118,10 @@ You lost the chance to say CREW DORK to the crude orc a bit more gently, as you 
 @rej+
 >weak us
 by a bonus point
+\\
+#+testcase-think-table-of-main-oronyms-pre-crew-dork-rule
+>think
+You can explain the grinch earls see the crude orc as a CREW DORK now they seem a bit less strong.
 
 @rej+
 ##balance undos
@@ -1127,6 +1192,41 @@ You already established the grin churls cursed out of weakness or, at least, not
 
 >w
 
+@rej
+##balance undos
+>manna curb
+by a point
+\\
+#testcase-check-pre-tall-cake-rule-if-player-has-manna-and-player-does-not-have-knife
+>tall cake
+You need some sort of utensil to process the manna.
+\\
+>think
+You may be able to create a TALL CAKE once you have ingredients and cooking instruments.
+\\
+>undo
+>undo
+>undo
+
+>see design
+by a point
+
+>knife rite
+by a point
+
+@rej
+#testcase-check-pre-tall-cake-rule-if-player-does-not-have-manna-and-player-has-knife
+>tall cake
+You need ingredients to make a cake.
+\\
+>think
+You may be able to create a TALL CAKE once you have ingredients and cooking instruments.
+
+@rej+
+#testcase-check-pre-see-design-rule-if-sco-see-design-is-true
+>see design
+You already saw the design in the seedy sign. You don't need to redo things.
+
 >manna curb
 by a point
 
@@ -1134,6 +1234,10 @@ by a point
 #testcase-check-pre-manna-curb-rule-if-sco-manna-curb-is-true
 >manna curb
 You already found enough manna beneath the manic herb!
+\\
+#+testcase-think-table-of-main-oronyms-pre-tall-cake-rule
+>think
+You may be able to create a TALL CAKE now you have ingredients and cooking instruments.
 
 >e
 
@@ -1171,6 +1275,11 @@ by a point
 You may be able to TREAT ALL here now you have a tasty treat.
 You can call your companions MY CORPS once you've shared something together.
 
+@rej+
+#testcase-check-pre-my-corps-rule-if-sco-treat-all-is-false
+>my corps
+They are your corps, and yet, there's something to share with them. Something to enjoy together, first.
+
 >treat all
 by a point
 
@@ -1202,6 +1311,11 @@ by a point
 #+testcase-think-table-of-main-oronyms-pre-were-meetin-rule
 >think
 You will be able to say WERE MEETIN now you have a full party available.
+
+@rej+
+#testcase-check-pre-my-corps-rule-if-sco-were-meetin-is-false
+>my corps
+You sense you have a full party, and you're in a good place, but the atmosphere is wrong for planning and discussions.
 
 >were meetin
 by a point
@@ -1477,6 +1591,7 @@ You can think DO/DUE MEND/MENDING now you've disposed of the sea skull.
 {$REJECT2}
 \\
 #testcase-reject-end-table-of-main-oronyms-pre-treat-all-rule
+#testcase-check-pre-treat-all-rule-if-player-is-in-doom-ending
 >treat all
 {$REJECT2}
 \\
@@ -1528,3 +1643,9 @@ Your score just went up by a point!
 Beat all! Be tall!
 @!
 Gray day?! Grade A!
+\\
+>tt
+WRONG
+\\
+>pm
+WRONG

@@ -856,6 +856,9 @@ You don't owe the oaf liar anything, and they don't owe you a flier, even if the
 >oh flier
 by a point
 
+@all
+!subterfuge
+
 @all,rej
 {--rej}#testcase-check-pre-oh-flier-rule-fallthrough
 {--all}#testcase-run-post-oh-flier-rule-default

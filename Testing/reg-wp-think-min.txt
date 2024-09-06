@@ -136,12 +136,6 @@ by a point
 >rogue old
 by a point
 
->see design
-by a point
-
->knife rite
-by a point
-
 >e
 
 >n
@@ -224,14 +218,17 @@ by a point
 
 >t mice
 
->tall cake
-THINK
-
 >u
 
 >out
 
 >w
+
+>see design
+by a point
+
+>knife rite
+by a point
 
 >manna curb
 by a point
@@ -284,3 +281,9 @@ by a point
 Your score just went up by a point!
 
 Gray day?! Grade A!
+
+>tt
+WRONG
+
+>pm
+WRONG

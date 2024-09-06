@@ -389,6 +389,8 @@ You enjoy your solitude, but ... wait. You lose track of time, and an oaf liar s
 >oh flier
 by a point
 
+!subterfuge
+
 #testcase-run-post-oh-flier-rule-default
 #testcase-run-post-oh-flier-rule-fallthrough
 You act distracted just right. The oaf liar tries to get your attention. Just ignoring them wouldn't work, but paying attention to a flier ... well, they take the hint that you aren't a high-rolling customer. They try to wheedle more money out of you, but of course, that's all you have. So you trade your final quid for the flier. The oaf liar thanks you for not totally wasting their time. They seem to snicker as they depart.
