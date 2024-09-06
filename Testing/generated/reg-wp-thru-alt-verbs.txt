@@ -113,9 +113,6 @@ by a point
 >rogue old
 by a point
 
->plan tracker
-by a point
-
 >see design
 by a point
 
@@ -129,6 +126,13 @@ by a point
 by a point
 
 >e
+
+>d
+
+>gaunt raider
+by a point
+
+>u
 
 #unscramble the order the swears appear in
 >ao
@@ -159,10 +163,15 @@ by a bonus point
 >grin churls
 by a bonus point
 
+#testcase-check-pre-grin-churls-rule-if-sco-grin-churls-is-true
+>grin churls
+You already cut the grin churls down to size!
+
 >were dicks
 The grin churls remark that you seemed so nice, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up.
 by a bonus point
 
+>undo
 >undo
 >undo
 
@@ -174,13 +183,6 @@ by a bonus point
 The grin churls remark that you seemed so nice, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up.
 
 >out
-
->d
-
->gaunt raider
-by a point
-
->u
 
 >e
 
@@ -251,6 +253,9 @@ by a point
 
 >w
 
+>plan tracker
+by a point
+
 #testcase-alt-words-table-of-main-oronyms-37-manna-curb-kerb
 >manna kerb
 by a point
@@ -261,6 +266,28 @@ by a point
 by a point
 
 >e
+
+# this tests getting the grow vial first then TREE SMALL
+>s
+
+>grow vial
+by a point
+
+>n
+>e
+>n
+>n
+>tree small
+Amidst all the fake trees, an actual organic small tree grows. You're a bit disappointed, but you realize you maybe shouldn't have expected much with so little letter-shuffling. Maybe if you want a bigger tree, you'll need to do something else.
+But wait! You can use the grow vial! It makes the tree (small) into a tree (tall)! Then it dissolves once empty.
+
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
 
 >e
 

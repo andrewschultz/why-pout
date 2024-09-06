@@ -125,9 +125,6 @@ by a point
 >rogue old
 by a point
 
->plan tracker
-by a point
-
 #testcase-goto-table-of-noways-keepiller
 >w
 Apart from finding a way beyond the seedy sign, the keep doesn't have many twisty passages. Well, any.
@@ -147,6 +144,17 @@ by a point
 Apart from finding a way beyond the seedy sign, which you don't need to again, the keep doesn't have many twisty passages. Well, any.
 
 >e
+
+#+testcase-goto-table-of-noways-naffhaze
+>u
+You can go down or in the cardinal directions, but not up.
+
+>d
+
+>gaunt raider
+by a point
+
+>u
 
 #unscramble the order the swears appear in
 >ao
@@ -190,17 +198,6 @@ by a bonus point
 The grin churls remark that you seemed so nice, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up.
 
 >out
-
-#+testcase-goto-table-of-noways-naffhaze
->u
-You can go down or in the cardinal directions, but not up.
-
->d
-
->gaunt raider
-by a point
-
->u
 
 >e
 
@@ -276,6 +273,9 @@ by a point
 >s
 
 >w
+
+>plan tracker
+by a point
 
 >manna curb
 by a point

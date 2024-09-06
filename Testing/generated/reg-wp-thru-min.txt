@@ -75,9 +75,6 @@ by a point
 >rogue old
 by a point
 
->plan tracker
-by a point
-
 >see design
 by a point
 
@@ -143,6 +140,9 @@ by a point
 >s
 
 >w
+
+>plan tracker
+by a point
 
 >manna curb
 by a point

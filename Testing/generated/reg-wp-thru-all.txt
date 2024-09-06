@@ -168,12 +168,6 @@ A rogue, old, arrives. They mention they'd like to help you but, you know, the r
 This transaction reduces your wealth from six quid to three quid.
 Hmm. You have a lot of friends following you around, but you haven't talked to them much. Perhaps you could learn something from them.
 
->plan tracker
-by a point
-
-#testcase-run-post-plan-tracker-rule-default
-Wow! That was ... surprisingly simple. You find a rather new-looking plan tracker behind the plant racker, which crumbles to dust as you push it aside.
-
 >see design
 by a point
 
@@ -195,6 +189,20 @@ With your friends boosting your spirits, you look for a sacred/profane weapon. I
 
 >e
 
+>d
+
+#testcase-room-names-worm-eaten
+`Worm-Eaten
+
+>gaunt raider
+by a point
+
+#testcase-run-post-gaunt-raider-rule-default
+After some discussion, you work out a plan to make the gone trader reframe what they did. Whoever they were, the evil powers, they rejected them instead of doubling down. Perhaps there is a way to get back at them. They know things you never could hope to.
+Hmm. You have a lot of friends following you around, but you haven't talked to them much. Perhaps you could learn something from them.
+
+>u
+
 #unscramble the order the swears appear in
 >ao
 
@@ -213,6 +221,7 @@ Yes. That's what BRUISE WARES is really for. Enter at your own risk. It's ... an
 by a bonus point
 
 #testcase-run-post-weak-us-rule-default
+#testcase-run-post-weak-us-rule-follow-the-cycle-swears-rule
 You're surprised how just making a little shift can make the grinch earls seem much weaker. Their strength is the sort of brute force that doesn't lift other people up.
 They throw down the gauntlet at this point. Don't you know cussing shows higher intelligence? Some study or other showed that!
 The crude orc looks back and forth between you and the grinch earls, glaring at them a bit, but not yet ready to break free. Just a bit more, and you may gain a friend.
@@ -273,20 +282,6 @@ You slip in a few sly digs and say "grin, churls." They shake their heads, annoy
 The grin churls remark that you seemed so nice, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do.
 
 >out
-
->d
-
-#testcase-room-names-worm-eaten
-`Worm-Eaten
-
->gaunt raider
-by a point
-
-#testcase-run-post-gaunt-raider-rule-default
-After some discussion, you work out a plan to make the gone trader reframe what they did. Whoever they were, the evil powers, they rejected them instead of doubling down. Perhaps there is a way to get back at them. They know things you never could hope to.
-Hmm. You have a lot of friends following you around, but you haven't talked to them much. Perhaps you could learn something from them.
-
->u
 
 >e
 
@@ -394,6 +389,7 @@ You enjoy your solitude, but ... wait. You lose track of time, and an oaf liar s
 by a point
 
 #testcase-run-post-oh-flier-rule-default
+#testcase-run-post-oh-flier-rule-fallthrough
 You act distracted just right. The oaf liar tries to get your attention. Just ignoring them wouldn't work, but paying attention to a flier ... well, they take the hint that you aren't a high-rolling customer. They try to wheedle more money out of you, but of course, that's all you have. So you trade your final quid for the flier. The oaf liar thanks you for not totally wasting their time. They seem to snicker as they depart.
 This transaction reduces your wealth from one quid to zero quid.
 Well, easy come, easy go. You're pretty sure you've visited everywhere and found everyone who might need money.
@@ -406,6 +402,12 @@ Well, easy come, easy go. You're pretty sure you've visited everywhere and found
 >s
 
 >w
+
+>plan tracker
+by a point
+
+#testcase-run-post-plan-tracker-rule-default
+Wow! That was ... surprisingly simple. You find a rather new-looking plan tracker behind the plant racker, which crumbles to dust as you push it aside.
 
 >manna curb
 by a point
@@ -428,6 +430,8 @@ You suspect there is manna beneath the manic herb, but you have no clue how to f
 by a point
 
 #testcase-run-post-tree-small-rule-default
+#testcase-run-post-tree-small-rule-if-player-has-grow-vial
+#testcase-run-post-tree-small-rule-fallthrough
 Amidst all the fake trees, an actual organic small tree grows. You're a bit disappointed, but you realize you maybe shouldn't have expected much with so little letter-shuffling. Maybe if you want a bigger tree, you'll need to do something else.
 
 >s
@@ -466,6 +470,10 @@ You look around and uncover a wan dwarf who wasn't good enough to be a full figh
 >n
 
 >n
+
+# this makes sure TREE SMALL then bringing the grow vial back works okay
+A tree (small) grows here, or tries to, at least. It deserves to be bigger.
+But wait! You can use the grow vial! It makes the tree (small) into a tree (tall)! Then it dissolves once empty.
 
 >t dwarf
 
