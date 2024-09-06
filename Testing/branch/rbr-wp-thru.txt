@@ -1022,7 +1022,7 @@ The grin churls remark that you seemed so nice, really, and they're all for a bi
 
 @rej
 #+testcase-check-pre-weak-us-rule-if-sco-weak-us-is-true
->we cuss
+>weak us
 You already established the grin churls cursed out of weakness or, at least, not fully from strength!
 
 @!min
@@ -1051,9 +1051,22 @@ You will be able to say WERE MEETIN once you have a full party available.
 ##balance undos
 >t troll
 \\
+>t elf
+\\
+>t rogue
+\\
+>gaunt raider
+Hmm. You
+\\
+>undo
+\\
+>t gnome
+\\
 >gaunt raider
 !Hmm. You
-\\
+>undo
+>undo
+>undo
 >undo
 >undo
 
@@ -1319,7 +1332,6 @@ This isn't the right place to look for an isle. No large body of water nearby.
 This isn't the right place to look for an isle. No large body of water nearby.
 \\
 >think
-This isn't the right place to look for an isle. No large body of water nearby.
 You may be able to make sense of THE FILE in Known Ocean once you've gotten enough information from companions.
 You may be able to recover the WAR FILE on the wharf isle in Known Ocean now you have something you can write down its main ideas in.
 You may be able to find a GROW VIAL once you've found water transport.
@@ -1858,10 +1870,6 @@ You already wiped out the sea skull! Now is the time for healing.
 \\
 #testcase-reject-end-table-of-main-oronyms-pre-whee-lone-rule
 >whee lone
-{$REJECT2}
-\\
-#testcase-reject-end-table-of-main-oronyms-pre-wide-vision-rule
->wide vision
 {$REJECT2}
 \\
 #testcase-reject-end-table-of-main-oronyms-pre-wool-frock-rule
