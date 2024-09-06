@@ -124,6 +124,8 @@ volume combo numbers
 
 to decide which number is pals-made: decide on number of friendly followers;
 
+to decide which number is pals-needed: decide on number of needed followers;
+
 to decide which number is flier-isle-score:
 	decide on (boolval of sco-grow-vial) + (boolval of sco-the-file) + (boolval of sco-war-file);
 

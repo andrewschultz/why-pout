@@ -50,7 +50,7 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "knife"	"right|rite"	--	--	false	true	true	false	false	nigh fright	pre-knife-right rule	post-knife-right rule	--	--
 "gaunt"	"raider"	--	--	false	true	true	false	false	worm eaten	pre-gaunt-raider rule	post-gaunt-raider rule	--	--
 "were"	"meetin"	"wier|whirr|warm|eden|war"	hom-whirr-meetin rule	false	true	true	false	false	worm eaten	pre-were-meetin rule	post-were-meetin rule	--	"You will be able to say [b]WERE MEETIN[r] [once-now of pre-were-meetin rule] you have a full party available."
-"my"	"corps"	"core"	hom-my-core rule	false	true	true	false	false	worm eaten	pre-my-corps rule	post-my-corps rule	--	"You may be able to call your companions [b]MY CORPS[r] [once-now of sco-treat-all] [if pals-made < 2]you have companions[else]you've shared something together[end if]."
+"my"	"corps"	"core"	hom-my-core rule	false	true	true	false	false	worm eaten	pre-my-corps rule	post-my-corps rule	--	"You can call your companions [b]MY CORPS[r] [if pals-made < 2]once you have companions[else if pals-made < pals-needed]once you have enough of them[else][once-now of sco-treat-all] you've shared something together[end if]."
 "cease"	"cull"	"seize"	hom-cease-cull rule	false	true	true	false	false	Doom Ending	pre-cease-cull rule	post-cease-cull rule	--	--
 "wipe"	"out"	--	--	false	true	true	false	false	Doom Ending	pre-wipe-out rule	post-wipe-out rule	--	"You will want to [b]WIPE OUT[r] the cause of your problems [once-now of sco-cease-cull] you have them in your crosshairs[if the room down from naffhaze is nowhere]. That's probably not for a while, though[end if]."
 "wide"	"vision"	--	--	false	true	false	false	false	Doom Ending	pre-wide-vision rule	post-wide-vision rule	--	"Sadly, you didn't quite experience enough to spread your wide vision."
@@ -810,9 +810,9 @@ section worm eaten scoring
 a wordtwisting rule (this is the pre-my-corps rule):
 	if sco-an-aim is false, unavailable;
 	abide by the followers-check rule;
-	if player is not in worm eaten:
-		vcp "This doesn't seem like the right place.";
-		not-yet;
+	if sco-my-corps is true:
+		vcal "You already brought your corps a bit closer together!";
+		already-done;
 	if sco-were-meetin is false:
 		vcp "You need to bring everyone together fully first.";
 		not-yet;
@@ -822,9 +822,6 @@ a wordtwisting rule (this is the pre-my-corps rule):
 	if sco-treat-all is false:
 		vcp "They are your corps, and yet, there's something to share with them. Something to do together, first.";
 		not-yet;
-	if sco-my-corps is true:
-		vcal "You already brought your corps a bit closer together!";
-		already-done;
 	ready;
 
 this is the hom-my-core rule:
