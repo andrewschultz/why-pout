@@ -169,7 +169,7 @@ carry out tting (this is the show tripthinking rule):
 	let everfails be 0;
 	let possfails be 0;
 	repeat through table of main oronyms:
-		if check-rule entry is pre-wide-vision rule, next;
+		if check-rule entry is vision-missable, next;
 		if everfail entry is true, increment everfails;
 		if there is a think-advice entry, increment possfails;
 		if everfail entry is false and there is a think-advice entry:

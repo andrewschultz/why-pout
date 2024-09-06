@@ -143,9 +143,15 @@ to decide which number is brew-swears-score:
 
 book meta scoring
 
+definition: a rule (called ru) is vision-missable:
+	if ru is pre-wide-vision rule, yes;
+	if ru is pre-crew-dork rule, yes;
+	no;
+	
 to decide which number is pre-acts:
 	let return-value be 0;
 	repeat through table of main oronyms:
+		if check-rule entry is vision-missable, next;
 		if everfail entry is true, increment return-value;
 	decide on return-value;
 
@@ -159,7 +165,9 @@ to decide which number is thinkcue-index:
 when play begins:
 	repeat through table of main oronyms:
 		if there is a think-advice entry:
-			if check-rule entry is not pre-wide-vision rule and check-rule entry is not pre-crew-dork rule, increment pre-max;
+			if check-rule entry is vision-missable, next;
+			increment pre-max;
+			[say "[check-rule entry] [pre-max].";]
 
 volume begin play
 
