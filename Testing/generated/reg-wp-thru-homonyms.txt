@@ -13,9 +13,20 @@
 >an aim
 by a point
 
+#testcase-homonym-reject-table-of-main-oronyms-hom-my-core-rule-core
 #testcase-homonym-detail-hom-my-core-rule-default
 >my core
 You always want to strengthen your own core, but you have a feeling you're looking too inward, here. Though you must be close.
+
+#testcase-homonym-reject-table-of-main-oronyms-hom-too-maps-rule-too
+#testcase-homonym-detail-hom-too-maps-rule-fallthrough
+#testcase-homonym-detail-hom-too-maps-rule-if-the-player's-command-includes-maps
+#testcase-homonym-detail-hom-too-maps-rule-default
+>too maps
+Sounds right, but be more specific how MUCH of the maps you want.
+
+>too maaaps
+Sounds right, but be more specific how MUCH of something else you want.
 
 >two maps
 by a point
@@ -26,15 +37,30 @@ by a point
 >pry stalk
 by a point
 
+#testcase-homonym-reject-table-of-main-oronyms-hi
+>hi plane
+Hmm. That really, really SOUNDED like it should work, but it didn't.
+
 >high plain
 by a point
 
+#testcase-homonym-reject-table-of-main-oronyms-hom-nah-phaze-rule-phaze
 #testcase-homonym-detail-hom-nah-phaze-rule-default
 >nah phaze
 You sense you don't want the naff haze to faze you, but you want a noun, here, to reject.
 
 >nah phase
 by a point
+
+#testcase-homonym-reject-table-of-main-oronyms-poll-paul
+>poll east
+Hmm. That really, really SOUNDED like it should work, but it didn't.
+
+>paul east
+Hmm. That really, really SOUNDED like it should work, but it didn't.
+
+>pall east
+Hmm. That really, really SOUNDED like it should work, but it didn't.
 
 >pole east
 by a point
@@ -68,6 +94,10 @@ by a point
 
 >d
 
+#testcase-homonym-reject-table-of-main-oronyms-roll
+>boost roll
+Hmm. That really, really SOUNDED like it should work, but it didn't.
+
 >boost role
 by a point
 
@@ -80,8 +110,9 @@ by a point
 >gnome old
 by a point
 
+#testcase-homonym-reject-table-of-main-oronyms-hom-rouge-old-rule-rouge
 #testcase-homonym-detail-hom-rouge-old-rule-default
->rogue old
+>rouge old
 Rouge ... no, too foreign, also, too abstract. But you need a person, not a color. That'll get you a point in this game, not just Canadian football.
 
 >rogue old
@@ -90,6 +121,7 @@ by a point
 >plan tracker
 by a point
 
+#testcase-homonym-reject-table-of-main-oronyms-hom-c-sea-design-rule-c-sea
 #testcase-homonym-detail-hom-c-sea-design-rule-default
 >sea design
 Close, but there are other waterways. Action (well, sort of) is needed here.
@@ -164,6 +196,7 @@ by a point
 >munch elf
 No, a sort of person. This one's a bit obscure.
 
+#testcase-homonym-reject-table-of-main-oronyms-hom-mencsh-elf-rule-mensh-mench-munch
 #+testcase-homonym-detail-hom-mencsh-elf-rule-if-the-player's-command-includes-munch
 >mensh elf
 Oh, man. Sorry to be playing spelling police with you here, but you have the pronunciation right.
@@ -185,6 +218,7 @@ by a point
 
 >in
 
+#testcase-homonym-reject-table-of-main-oronyms-hom-wheel-own-rule-wheel
 #testcase-homonym-detail-hom-wheel-own-rule-default
 >wheel own
 This is a seedy financial services provider, not a seedy used car dealer. Still, you must be on the right track.
@@ -195,6 +229,7 @@ by a point
 >summer chant
 by a point
 
+#testcase-homonym-reject-table-of-main-oronyms-hom-bile-owe-rule-owe
 #testcase-homonym-detail-hom-bile-owe-rule-default
 >bile owe
 Neither you nor the merchant owe each other anything, for better or for worse. You're close. Perhaps you should just see things as they are and emote slightly.
@@ -202,9 +237,14 @@ Neither you nor the merchant owe each other anything, for better or for worse. Y
 >bile oh
 by a point
 
+#testcase-homonym-reject-table-of-main-oronyms-wee-loan
+>wee lone
+Hmm. That really, really SOUNDED like it should work, but it didn't.
+
 >whee lone
 by a point
 
+#testcase-homonym-reject-table-of-main-oronyms-hom-owe-flier-rule-owe
 #testcase-homonym-detail-hom-owe-flier-rule-default
 >owe flier
 You don't owe the oaf liar anything, and they don't owe you a flier, even if they might be wasting your time. How to call attention to a flier, though?
@@ -218,8 +258,12 @@ by a point
 
 >w
 
+#testcase-homonym-reject-table-of-main-oronyms-hom-mana-curb-rule-man-a-mana
 #testcase-homonym-detail-hom-mana-curb-rule-default
 >mana curb
+You do not have any magic points, so you don't need them refreshed. But you must be close!
+
+>man a curb
 You do not have any magic points, so you don't need them refreshed. But you must be close!
 
 >manna curb
@@ -243,6 +287,13 @@ by a point
 >w
 
 >s
+
+#testcase-homonym-reject-table-of-main-oronyms-vile
+>grow vile
+Hmm. That really, really SOUNDED like it should work, but it didn't.
+
+>bzzt vile
+Hmm. That kind of partway SOUNDED like it should work, but it didn't.
 
 >grow vial
 by a point
@@ -280,6 +331,10 @@ by a point
 >tall cake
 by a point
 
+#testcase-homonym-reject-table-of-main-oronyms-awl
+>treat awl
+Hmm. That really, really SOUNDED like it should work, but it didn't.
+
 >treat all
 by a point
 
@@ -290,6 +345,10 @@ by a point
 >w
 
 >s
+
+#testcase-homonym-reject-table-of-main-oronyms-thee
+>thee file
+Hmm. That really, really SOUNDED like it should work, but it didn't.
 
 >the file
 by a point
@@ -302,7 +361,8 @@ by a point
 >whirr meetin
 Close, but you don't need a whirr noise.
 
-#testcase-homonym-detail-hom-whirr-meetin-rule-if-the-player's-command-includes-whirr
+#testcase-homonym-reject-table-of-main-oronyms-hom-whirr-meetin-rule-wier-whirr-warm-eden-war
+#+testcase-homonym-detail-hom-whirr-meetin-rule-if-the-player's-command-includes-whirr
 >warm meetin
 You don't need to change this place's complexion here. It's cozy, a place for people to be together. But how?
 
@@ -314,6 +374,7 @@ by a point
 
 >d
 
+#testcase-homonym-reject-table-of-main-oronyms-hom-cease-cull-rule-seize
 #testcase-homonym-detail-hom-cease-cull-rule-default
 >seize cull
 No, seizing is the last thing you want the skull to do. And you aren't foolish enough to want to seize power.
@@ -323,6 +384,10 @@ by a point
 
 >wipe out
 by a point
+
+#testcase-homonym-reject-table-of-main-oronyms-dew
+>dew mending
+Hmm. That really, really SOUNDED like it should work, but it didn't.
 
 >do mending
 by a point

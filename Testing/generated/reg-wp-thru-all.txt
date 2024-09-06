@@ -98,7 +98,7 @@ You've changed the landscape a lot, north, south, east and west. But there's mor
 by a point
 
 #testcase-run-post-known-ocean-rule-default
-WRONG
+Ah, yes. Things clear up a bit now. There we go ... you see where an ocean should be, and ... yes, you dip your toe in some wetness. Things clear up. You even see a sick squid! Maybe you can help it.
 
 #+testcase-room-names-no-notion
 `Known Ocean
@@ -107,7 +107,8 @@ WRONG
 by a point
 
 #testcase-run-post-six-quid-rule-default
-WRONG
+You have an idea what is bothering the squid. Yes, a few coins stuck. Surprisingly, it lets you help out. "Current, sea, currency," you mutter as you poke around. Ah, there you go.
+You offer to give it some of the coins it almost choked on, but it does not need them. It seems to wait around, as if to help you with travel to places you may get to go. It's willing to wait.
 
 >n
 
@@ -120,7 +121,7 @@ WRONG
 by a point
 
 #testcase-run-post-wool-frock-rule-default
-WRONG
+You rummage about and find a wool frock.
 
 >hide out
 by a point
@@ -513,4 +514,8 @@ WRONG
 by a point
 
 #testcase-run-post-do-due-mend-rule-default
-WRONG
+#testcase-run-post-do-due-mend-rule-fallthrough
+#testcase-run-post-do-due-mend-rule-follow-the-score-and-thinking-changes-rule
+#testcase-run-post-do-due-mend-rule-follow-the-shutdown-rules
+Yes. It's time to get healing. Your companions don't have as much time or energy to help as you hoped they would, but they do enough. Everyone feels better for their part in defeating the sea skull. And yet you worry it, or something like it, may be back sooner rather than later, and your companions have gone their separate ways for good. Still, you should be pleased with yourself.
+!not just to make

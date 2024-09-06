@@ -65,7 +65,7 @@ You're stuck with what to do right now. Perhaps you can use your senses for clue
 >grin churls
 You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
 
-#testcase-check-pre-grow-star-rule-if-player-is-not-in-naffhaze-or-gross-tar-is-not-in-naffhaze
+#testcase-check-pre-grow-star-rule-if-player-is-not-in-naffhaze
 #testcase-reject-start-table-of-main-oronyms-pre-grow-star-rule
 >grow star
 You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
@@ -330,6 +330,22 @@ by a point
 #testcase-check-pre-high-plain-rule-fallthrough
 You plant the stalk, which -- well, it's already a bit of a stalk, but it grows quickly and sturdily. It's not hard at all to climb. You are pretty sure you're aboveground, but it's hard to see for sure.
 
+#testcase-check-pre-pole-east-rule-if-sco-nah-phase-is-false
+>pole east
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+
+#testcase-check-pre-grow-star-rule-if-sco-nah-phase-is-false
+>grow star
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+
+#testcase-check-pre-shore-trail-rule-if-sco-nah-phase-is-false
+>short rail
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+
+#testcase-check-pre-key-pillar-rule-if-sco-nah-phase-is-false
+>keep iller
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+
 >nah phase
 by a point
 
@@ -342,6 +358,10 @@ by a point
 #testcase-check-pre-pole-east-rule-fallthrough
 Ah, yes. It makes sense. You find the pole. Strangely, there's just a single switch to flip. And even more strangely, the switch you flip causes the pole to revert into the ground. Yay!
 But there's more! A war pawn, like a chess piece, rolls into view. It looks pretty powerful. Maybe you see how to use it, but maybe you shouldn't use it right away.
+
+#testcase-check-pre-pole-east-rule-if-sco-pole-east-is-true
+>pole east
+You already discovered how you were being policed!
 
 >shore trail
 by a point
@@ -374,12 +394,14 @@ You summon a gnome, old, to compliment them on keeping the keep looking so nice 
 >rogue old
 A rogue, old, appears, but after some conversation, you realize you don't have any money to pay them with. They'd like to help, but they worked for free once and felt ripped off. Maybe later.
 
+#testcase-check-pre-manna-curb-rule-if-sco-mensch-elf-is-false
 >manna curb
 Perhaps there is a lot of good stuff beneath the manic herb, but you don't have the specialized knowledge to figure it out.
 
 >see design
 You sort of want to see the hidden design, but you're sort of scared what will happen once you do. You feel like you need some support before you can give it your all.
 
+#testcase-think-table-of-main-oronyms-pre-see-design-rule
 >think
 You may be able to recruit the GNOME OLD here once you have adventuring gear.
 You may be able to recruit the ROGUE OLD here once you have money.
@@ -394,13 +416,14 @@ You may be able to SEE DESIGN here once you have more support and are less scare
 by a point
 
 #testcase-check-pre-known-ocean-rule-fallthrough
-WRONG
+Ah, yes. Things clear up a bit now. There we go ... you see where an ocean should be, and ... yes, you dip your toe in some wetness. Things clear up. You even see a sick squid! Maybe you can help it.
 
 >six quid
 by a point
 
 #testcase-check-pre-six-quid-rule-fallthrough
-WRONG
+You have an idea what is bothering the squid. Yes, a few coins stuck. Surprisingly, it lets you help out. "Current, sea, currency," you mutter as you poke around. Ah, there you go.
+You offer to give it some of the coins it almost choked on, but it does not need them. It seems to wait around, as if to help you with travel to places you may get to go. It's willing to wait.
 
 >n
 
@@ -410,7 +433,7 @@ WRONG
 by a point
 
 #testcase-check-pre-wool-frock-rule-fallthrough
-WRONG
+You rummage about and find a wool frock.
 
 #testcase-check-pre-wool-frock-rule-if-sco-wool-frock-is-true
 >wool frock
@@ -433,6 +456,11 @@ WRONG
 >u
 
 >s
+
+#+testcase-think-table-of-main-oronyms-pre-see-design-rule
+>think
+You may be able to recruit the ROGUE OLD in Keep (Iller) now you have money.
+You may be able to SEE DESIGN in Keep (Iller) now you have more support and are less scared.
 
 >w
 
@@ -752,6 +780,10 @@ by a point
 #testcase-check-pre-treat-all-rule-fallthrough
 WRONG
 
+#testcase-check-pre-my-corps-rule-if-player-is-not-in-worm-eaten
+>treat all
+This doesn't seem to be the right place to pep up the troops.
+
 >s
 
 >s
@@ -770,7 +802,7 @@ WRONG
 
 >d
 
-#testcase-think-table-of-main-oronyms-pre-were-meetin-rule
+#+testcase-think-table-of-main-oronyms-pre-were-meetin-rule
 >think
 You will be able to say WERE MEETIN now you have a full party available.
 
@@ -780,7 +812,7 @@ by a point
 #testcase-check-pre-were-meetin-rule-fallthrough
 WRONG
 
-#+testcase-check-pre-were-meetin-rule-if-sco-were-meetin-is-true
+#testcase-check-pre-were-meetin-rule-if-sco-were-meetin-is-true
 >were meetin
 You already held a meeting! Too many meetings get in the way of doing.
 
@@ -793,6 +825,7 @@ by a point
 #testcase-check-pre-my-corps-rule-fallthrough
 WRONG
 
+#testcase-check-pre-my-corps-rule-if-sco-my-corps-is-true
 >my corps
 You already brought your corps a bit closer together!
 
@@ -1052,4 +1085,5 @@ That thought/action/observation/request brings up nothing. Why Pout has a limite
 by a point
 
 #testcase-check-pre-do-due-mend-rule-fallthrough
-WRONG
+Yes. It's time to get healing. Your companions don't have as much time or energy to help as you hoped they would, but they do enough. Everyone feels better for their part in defeating the sea skull. And yet you worry it, or something like it, may be back sooner rather than later, and your companions have gone their separate ways for good. Still, you should be pleased with yourself.
+!not just to make

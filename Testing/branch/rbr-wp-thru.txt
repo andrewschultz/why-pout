@@ -19,6 +19,7 @@ file=reg-wp-thru-goto.txt,goto/gt/go,walkthrough testing GOTO
 
 }$REJECT1=You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
 }$REJECT2=That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
+}$REJHOM=Hmm. That really, really SOUNDED like it should work, but it didn't.
 
 }}MAX=55
 }}CURMAX=55
@@ -109,7 +110,7 @@ file=reg-wp-thru-goto.txt,goto/gt/go,walkthrough testing GOTO
 >grin churls
 {$REJECT1}
 \\
-#testcase-check-pre-grow-star-rule-if-player-is-not-in-naffhaze-or-gross-tar-is-not-in-naffhaze
+#testcase-check-pre-grow-star-rule-if-player-is-not-in-naffhaze
 #testcase-reject-start-table-of-main-oronyms-pre-grow-star-rule
 >grow star
 {$REJECT1}
@@ -333,6 +334,7 @@ You look around a bit. You can see more, now. You're in some sort of tomb apse. 
 `Tomb Apse
 
 @hom
+#testcase-homonym-reject-table-of-main-oronyms-hom-my-core-rule-core
 #testcase-homonym-detail-hom-my-core-rule-default
 >my core
 You always want to strengthen your own core, but you have a feeling you're looking too inward, here. Though you must be close.
@@ -352,6 +354,17 @@ You will want to WIPE OUT the cause of your problems once you have them in your 
 #testcase-check-pre-an-aim-rule-if-sco-an-aim-is-true
 >an aim
 You already found a name and an aim!
+
+@hom
+#testcase-homonym-reject-table-of-main-oronyms-hom-too-maps-rule-too
+#testcase-homonym-detail-hom-too-maps-rule-fallthrough
+#testcase-homonym-detail-hom-too-maps-rule-if-the-player's-command-includes-maps
+#testcase-homonym-detail-hom-too-maps-rule-default
+>too maps
+Sounds right, but be more specific how MUCH of the maps you want.
+\\
+>too maaaps
+Sounds right, but be more specific how MUCH of something else you want.
 
 >two maps
 by a point
@@ -412,6 +425,11 @@ by a point
 >u
 You need to name where to go up to.
 
+@hom
+#testcase-homonym-reject-table-of-main-oronyms-hi
+>hi plane
+{$REJHOM}
+
 >high plain
 by a point
 
@@ -423,6 +441,23 @@ You plant the stalk, which -- well, it's already a bit of a stalk, but it grows 
 @all
 #testcase-room-names-naff-haze
 `Naff Haze
+
+@rej
+#testcase-check-pre-pole-east-rule-if-sco-nah-phase-is-false
+>pole east
+{$REJECT1}
+\\
+#testcase-check-pre-grow-star-rule-if-sco-nah-phase-is-false
+>grow star
+{$REJECT1}
+\\
+#testcase-check-pre-shore-trail-rule-if-sco-nah-phase-is-false
+>short rail
+{$REJECT1}
+\\
+#testcase-check-pre-key-pillar-rule-if-sco-nah-phase-is-false
+>keep iller
+{$REJECT1}
 
 @gt
 #testcase-goto-table-of-noways-naffhaze
@@ -453,6 +488,7 @@ by a point
 >undo
 
 @hom
+#testcase-homonym-reject-table-of-main-oronyms-hom-nah-phaze-rule-phaze
 #testcase-homonym-detail-hom-nah-phaze-rule-default
 >nah phaze
 You sense you don't want the naff haze to faze you, but you want a noun, here, to reject.
@@ -482,6 +518,17 @@ by a point
 \\
 >undo
 
+@hom
+#testcase-homonym-reject-table-of-main-oronyms-poll-paul
+>poll east
+{$REJHOM}
+\\
+>paul east
+{$REJHOM}
+\\
+>pall east
+{$REJHOM}
+
 >pole east
 by a point
 
@@ -490,6 +537,11 @@ by a point
 {--all}#testcase-run-post-pole-east-rule-default
 Ah, yes. It makes sense. You find the pole. Strangely, there's just a single switch to flip. And even more strangely, the switch you flip causes the pole to revert into the ground. Yay!
 But there's more! A war pawn, like a chess piece, rolls into view. It looks pretty powerful. Maybe you see how to use it, but maybe you shouldn't use it right away.
+
+@rej
+#testcase-check-pre-pole-east-rule-if-sco-pole-east-is-true
+>pole east
+You already discovered how you were being policed!
 
 @gt
 #+testcase-goto-table-of-noways-naffhaze
@@ -535,12 +587,14 @@ You summon a gnome, old, to compliment them on keeping the keep looking so nice 
 >rogue old
 A rogue, old, appears, but after some conversation, you realize you don't have any money to pay them with. They'd like to help, but they worked for free once and felt ripped off. Maybe later.
 \\
+#testcase-check-pre-manna-curb-rule-if-sco-mensch-elf-is-false
 >manna curb
 Perhaps there is a lot of good stuff beneath the manic herb, but you don't have the specialized knowledge to figure it out.
 \\
 >see design
 You sort of want to see the hidden design, but you're sort of scared what will happen once you do. You feel like you need some support before you can give it your all.
 \\
+#testcase-think-table-of-main-oronyms-pre-see-design-rule
 >think
 You may be able to recruit the GNOME OLD here once you have adventuring gear.
 You may be able to recruit the ROGUE OLD here once you have money.
@@ -566,7 +620,7 @@ by a point
 @all,rej
 {--rej}#testcase-check-pre-known-ocean-rule-fallthrough
 {--all}#testcase-run-post-known-ocean-rule-default
-WRONG
+Ah, yes. Things clear up a bit now. There we go ... you see where an ocean should be, and ... yes, you dip your toe in some wetness. Things clear up. You even see a sick squid! Maybe you can help it.
 
 @all
 #+testcase-room-names-no-notion
@@ -583,7 +637,8 @@ by a point
 @all,rej
 {--rej}#testcase-check-pre-six-quid-rule-fallthrough
 {--all}#testcase-run-post-six-quid-rule-default
-WRONG
+You have an idea what is bothering the squid. Yes, a few coins stuck. Surprisingly, it lets you help out. "Current, sea, currency," you mutter as you poke around. Ah, there you go.
+You offer to give it some of the coins it almost choked on, but it does not need them. It seems to wait around, as if to help you with travel to places you may get to go. It's willing to wait.
 
 >n
 
@@ -606,7 +661,7 @@ by a point
 @all,rej
 {--rej}#testcase-check-pre-wool-frock-rule-fallthrough
 {--all}#testcase-run-post-wool-frock-rule-default
-WRONG
+You rummage about and find a wool frock.
 
 @rej
 #testcase-check-pre-wool-frock-rule-if-sco-wool-frock-is-true
@@ -638,6 +693,11 @@ WRONG
 >w
 You can only go back UP. If this hideout had too many passages, it'd risk being less effective.
 
+@hom
+#testcase-homonym-reject-table-of-main-oronyms-roll
+>boost roll
+{$REJHOM}
+
 >boost role
 by a point
 
@@ -649,6 +709,12 @@ WRONG
 >u
 
 >s
+
+@rej
+#+testcase-think-table-of-main-oronyms-pre-see-design-rule
+>think
+You may be able to recruit the ROGUE OLD in Keep (Iller) now you have money.
+You may be able to SEE DESIGN in Keep (Iller) now you have more support and are less scared.
 
 >w
 
@@ -674,8 +740,9 @@ WRONG
 You don't want to wipe out the friendships you made.
 
 @hom
+#testcase-homonym-reject-table-of-main-oronyms-hom-rouge-old-rule-rouge
 #testcase-homonym-detail-hom-rouge-old-rule-default
->rogue old
+>rouge old
 Rouge ... no, too foreign, also, too abstract. But you need a person, not a color. That'll get you a point in this game, not just Canadian football.
 
 @rej
@@ -705,6 +772,7 @@ WRONG
 Apart from finding a way beyond the seedy sign, the keep doesn't have many twisty passages. Well, any.
 
 @hom
+#testcase-homonym-reject-table-of-main-oronyms-hom-c-sea-design-rule-c-sea
 #testcase-homonym-detail-hom-c-sea-design-rule-default
 >sea design
 Close, but there are other waterways. Action (well, sort of) is needed here.
@@ -990,6 +1058,7 @@ WRONG
 >munch elf
 No, a sort of person. This one's a bit obscure.
 \\
+#testcase-homonym-reject-table-of-main-oronyms-hom-mencsh-elf-rule-mensh-mench-munch
 #+testcase-homonym-detail-hom-mencsh-elf-rule-if-the-player's-command-includes-munch
 >mensh elf
 Oh, man. Sorry to be playing spelling police with you here, but you have the pronunciation right.
@@ -1041,6 +1110,7 @@ Wolf Rock blocks every planar passage except back SOUTH. Well, you can go IN whe
 `We Loan
 
 @hom
+#testcase-homonym-reject-table-of-main-oronyms-hom-wheel-own-rule-wheel
 #testcase-homonym-detail-hom-wheel-own-rule-default
 >wheel own
 This is a seedy financial services provider, not a seedy used car dealer. Still, you must be on the right track.
@@ -1084,6 +1154,7 @@ by a point
 >undo
 
 @hom
+#testcase-homonym-reject-table-of-main-oronyms-hom-bile-owe-rule-owe
 #testcase-homonym-detail-hom-bile-owe-rule-default
 >bile owe
 Neither you nor the merchant owe each other anything, for better or for worse. You're close. Perhaps you should just see things as they are and emote slightly.
@@ -1095,6 +1166,11 @@ by a point
 {--rej}#testcase-check-pre-bile-oh-rule-fallthrough
 {--all}#testcase-run-post-bile-oh-rule-default
 WRONG
+
+@hom
+#testcase-homonym-reject-table-of-main-oronyms-wee-loan
+>wee lone
+{$REJHOM}
 
 >whee lone
 by a point
@@ -1117,6 +1193,7 @@ by a point
 >undo
 
 @hom
+#testcase-homonym-reject-table-of-main-oronyms-hom-owe-flier-rule-owe
 #testcase-homonym-detail-hom-owe-flier-rule-default
 >owe flier
 You don't owe the oaf liar anything, and they don't owe you a flier, even if they might be wasting your time. How to call attention to a flier, though?
@@ -1153,8 +1230,12 @@ by a point
 >undo
 
 @hom
+#testcase-homonym-reject-table-of-main-oronyms-hom-mana-curb-rule-man-a-mana
 #testcase-homonym-detail-hom-mana-curb-rule-default
 >mana curb
+You do not have any magic points, so you don't need them refreshed. But you must be close!
+\\
+>man a curb
 You do not have any magic points, so you don't need them refreshed. But you must be close!
 
 >manna curb
@@ -1202,6 +1283,14 @@ You can only go back south.
 {--rej}#testcase-check-pre-grow-vial-rule-fallthrough
 {--all}#testcase-run-post-grow-vial-rule-default
 WRONG
+
+@hom
+#testcase-homonym-reject-table-of-main-oronyms-vile
+>grow vile
+{$REJHOM}
+\\
+>bzzt vile
+Hmm. That kind of partway SOUNDED like it should work, but it didn't.
 
 >grow vial
 by a point
@@ -1266,6 +1355,11 @@ by a point
 {--all}#testcase-run-post-tall-cake-rule-default
 WRONG
 
+@hom
+#testcase-homonym-reject-table-of-main-oronyms-awl
+>treat awl
+{$REJHOM}
+
 >treat all
 by a point
 
@@ -1274,6 +1368,11 @@ by a point
 {--all}#testcase-run-post-treat-all-rule-default
 WRONG
 
+@rej
+#testcase-check-pre-my-corps-rule-if-player-is-not-in-worm-eaten
+>treat all
+This doesn't seem to be the right place to pep up the troops.
+
 >s
 
 >s
@@ -1281,6 +1380,11 @@ WRONG
 >w
 
 >s
+
+@hom
+#testcase-homonym-reject-table-of-main-oronyms-thee
+>thee file
+{$REJHOM}
 
 >the file
 by a point
@@ -1304,12 +1408,13 @@ No tricky passages here, just UP back to safer ground or DOWN to your fate.
 >whirr meetin
 Close, but you don't need a whirr noise.
 \\
-#testcase-homonym-detail-hom-whirr-meetin-rule-if-the-player's-command-includes-whirr
+#testcase-homonym-reject-table-of-main-oronyms-hom-whirr-meetin-rule-wier-whirr-warm-eden-war
+#+testcase-homonym-detail-hom-whirr-meetin-rule-if-the-player's-command-includes-whirr
 >warm meetin
 You don't need to change this place's complexion here. It's cozy, a place for people to be together. But how?
 
 @rej
-#testcase-think-table-of-main-oronyms-pre-were-meetin-rule
+#+testcase-think-table-of-main-oronyms-pre-were-meetin-rule
 >think
 You will be able to say WERE MEETIN now you have a full party available.
 
@@ -1326,7 +1431,7 @@ WRONG
 `We're Meetin'!
 
 @rej
-#+testcase-check-pre-were-meetin-rule-if-sco-were-meetin-is-true
+#testcase-check-pre-were-meetin-rule-if-sco-were-meetin-is-true
 >were meetin
 You already held a meeting! Too many meetings get in the way of doing.
 \\
@@ -1342,6 +1447,7 @@ by a point
 WRONG
 
 @rej
+#testcase-check-pre-my-corps-rule-if-sco-my-corps-is-true
 >my corps
 You already brought your corps a bit closer together!
 
@@ -1363,6 +1469,7 @@ You will want to WIPE OUT the cause of your problems once you have them in your 
 Unsurprisingly, all the action is here.
 
 @hom
+#testcase-homonym-reject-table-of-main-oronyms-hom-cease-cull-rule-seize
 #testcase-homonym-detail-hom-cease-cull-rule-default
 >seize cull
 No, seizing is the last thing you want the skull to do. And you aren't foolish enough to want to seize power.
@@ -1642,10 +1749,19 @@ You already wiped out the sea skull! Now is the time for healing.
 >e
 You need to prep for making things right in general. Then, once the game's over, you'll leave.
 
+@hom
+#testcase-homonym-reject-table-of-main-oronyms-dew
+>dew mending
+{$REJHOM}
+
 >do mending
 by a point
 
 @all,rej
 {--rej}#testcase-check-pre-do-due-mend-rule-fallthrough
 {--all}#testcase-run-post-do-due-mend-rule-default
-WRONG
+{--all}#testcase-run-post-do-due-mend-rule-fallthrough
+{--all}#testcase-run-post-do-due-mend-rule-follow-the-score-and-thinking-changes-rule
+{--all}#testcase-run-post-do-due-mend-rule-follow-the-shutdown-rules
+Yes. It's time to get healing. Your companions don't have as much time or energy to help as you hoped they would, but they do enough. Everyone feels better for their part in defeating the sea skull. And yet you worry it, or something like it, may be back sooner rather than later, and your companions have gone their separate ways for good. Still, you should be pleased with yourself.
+!not just to make
