@@ -9,7 +9,6 @@ include Revealing Passages by Andrew Schultz.
 volume game specific definitions
 
 definition: a rule (called ru) is thinkblocking:
-	if ru is pre-wide-vision rule, yes;
 	no;
 
 volume new types
@@ -110,7 +109,7 @@ a swearblob has a number called alphorder.
 
 volume stubs
 
-to say here-in of (rm - a room): say "[if rm is location of player]here[else]in [rm][end if]"
+to say here-in of (rm - a room): say "[if rm is location of player]here[else if rm is unvisited]somewhere[else]in [rm][end if]"
 
 to say once-now of (ts - a truth state): say "[if ts is true]now[else]once[end if]"
 

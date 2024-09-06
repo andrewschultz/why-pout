@@ -21,7 +21,7 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "brew"	"swears"	--	--	false	true	false	false	false	NaffHaze	pre-brew-swears rule	post-brew-swears rule	--	--
 "known"	"ocean"	--	--	false	true	true	false	false	NoNotion	pre-known-ocean rule	post-known-ocean rule	--	--
 "six"	"quid"	--	--	false	true	true	false	false	NoNotion	pre-six-quid rule	post-six-quid rule	--	--
-"the"	"file"	"thee"	--	false	true	true	false	false	nonotion	pre-the-file rule	post-the-file rule	--	"You may be able to make sense of [b]THE FILE[r] [here-in of nonotion] [once-now of whether or not number of unchatted followers is 0] you've gotten enough information from companions."
+"the"	"file"	"thee"	--	false	true	true	false	false	nonotion	pre-the-file rule	post-the-file rule	--	"You may be able to make sense of [b]THE FILE[r] [here-in of nonotion] [once-now of whether or not number of still-chat-needed followers is 0] you've gotten enough information from companions."
 "war"	"file"	--	--	false	true	true	false	false	nonotion	pre-war-file rule	post-war-file rule	--	"You may be able to recover the [b]WAR FILE[r] on the wharf isle [here-in of nonotion] [once-now of sco-plan-tracker] you have something you can write down its main ideas in."
 "grow"	"vial"	"vile"	--	false	true	true	false	false	nonotion	pre-grow-vial rule	post-grow-vial rule	--	"You may be able to find a [b]GROW VIAL[r] with the right water transport."
 "wan"	"dwarf"	--	--	false	true	true	false	false	wand wharf	pre-wan-dwarf rule	post-wan-dwarf rule	--	--
@@ -91,7 +91,7 @@ this is the post-two-maps rule:
 section unsorted scoring
 
 a wordtwisting rule (this is the pre-boost-role rule):
-	if new troll is touchable and sco-boost-role is true:
+	if new troll is touchable and sco-boost-role is true and player is not in doom ending:
 		vcal "You already gave the new troll a boost!";
 		already-done;
 	if booze troll is not touchable, unavailable;
@@ -170,7 +170,7 @@ a wordtwisting rule (this is the pre-wipe-out rule):
 		vcp "You aren't feeling too great, but you don't want or need to wipe yourself out, yet. Perhaps you can find the root of your problems and wipe it out one day, though.";
 		not-yet;
 	if number of still-follow-needed followers > 0:
-		vcp "You don't want to wipe out the friendship[if number of friendly followers > 0]s[end if] you made.";
+		vcp "You don't want to wipe out the friendship[if number of friendly followers > 1]s[end if] you made.";
 		not-yet;
 	if player is not in Doom Ending:
 		vcp "You haven't identified anyone terribly evil you want to wipe out.";
@@ -358,14 +358,17 @@ this is the post-tall-cake rule:
 section trees mall scoring
 
 a wordtwisting rule (this is the pre-treat-all rule):
-	if player is not in trees mall, unavailable;
 	if tree tall is not in trees mall, unavailable;
-	if player does not have tall cake:
-		vcp "You don't have something to treat your companions with!";
-		not-yet;
+	if player is in doom ending, unavailable;
 	if sco-treat-all is true:
 		vcal "You already shared treats!";
 		already-done;
+	if player does not have tall cake:
+		vcp "You don't have anything to treat your companions with!";
+		not-yet;
+	if player is not in trees mall:
+		vcp "You have the treat. Why not go back to the tree?";
+		not-yet;
 	ready;
 
 this is the post-treat-all rule:
@@ -576,8 +579,9 @@ this is the post-wan-dwarf rule:
 	now sco-wan-dwarf is true;
 	say "You look around and uncover a wan dwarf who wasn't good enough to be a full fighter but rejected for magic training. You explain your situation. They're all in![paragraph break]There's not much left to do here, so you ride the squid back.";
 	befriend wan dwarf;
-	move player to NoNotion;
 	now block-followers is false;
+	move player to NoNotion;
+	follow-you;
 	conditional-flier-mangle;
 
 chapter we loan scoring
@@ -822,14 +826,14 @@ a wordtwisting rule (this is the pre-my-corps rule):
 	if sco-my-corps is true:
 		vcal "You already brought your corps a bit closer together!";
 		already-done;
-	if sco-were-meetin is false:
-		vcp "You need to bring everyone together fully first.";
+	if sco-treat-all is false:
+		vcp "They are your corps, and yet, there's something to share with them. Something to enjoy together, first.";
 		not-yet;
 	if player is not in worm eaten:
 		vcp "This doesn't seem to be the right place to pep up the troops.";
 		not-yet;
-	if sco-treat-all is false:
-		vcp "They are your corps, and yet, there's something to share with them. Something to do together, first.";
+	if sco-were-meetin is false:
+		vcp "You sense you have a full party, and you're in a good place, but the atmosphere is wrong for planning and discussions.";
 		not-yet;
 	ready;
 
