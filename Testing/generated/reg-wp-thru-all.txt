@@ -27,6 +27,7 @@ You look around a bit. You can see more, now. You're in some sort of tomb apse. 
 by a point
 
 #testcase-run-post-two-maps-rule-default
+You look around for secrets. You find one line that is a hash of horizontal lines and another that is a hash of vertical lines. You put them together ... and you see a maze. You hope you can trace a passage out. And, with some effort, you do! Then you follow it. You hope it's right, and it leads somewhere better, or at least not as awful...
 
 #testcase-room-names-hype-lane
 `Hype Lane

@@ -160,21 +160,6 @@ by a bonus point
 >lie fuckers
 by a bonus point
 
->grin churls
-by a bonus point
-
-#testcase-check-pre-grin-churls-rule-if-sco-grin-churls-is-true
->grin churls
-You already cut the grin churls down to size!
-
->were dicks
-The grin churls remark that you seemed so nice, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up.
-by a bonus point
-
->undo
->undo
->undo
-
 >were dicks
 by a bonus point
 

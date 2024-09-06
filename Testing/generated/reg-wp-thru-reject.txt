@@ -10,271 +10,6 @@
 
 >z
 
-#testcase-check-pre-bastard-eee-rule-if-player-is-not-in-brew-swears
-#testcase-reject-start-table-of-main-oronyms-pre-bastard-eee-rule
->bastard eee
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-bay-sale-rule-if-player-does-not-have-base-ale
-#testcase-reject-start-table-of-main-oronyms-pre-bay-sale-rule
->bay sale
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-bile-oh-rule-if-player-is-not-in-we-loan-or-merchant-is-not-in-we-loan
-#testcase-reject-start-table-of-main-oronyms-pre-bile-oh-rule
->bile oh
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-boost-role-rule-if-booze-troll-is-not-touchable
-#testcase-reject-start-table-of-main-oronyms-pre-boost-role-rule
->boost role
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-brew-swears-rule-if-player-is-not-in-naffhaze
-#testcase-reject-start-table-of-main-oronyms-pre-brew-swears-rule
->brew swears
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-cease-cull-rule-if-player-is-not-in-doom-ending-or-sea-skull-is-not-in-doom-ending
-#testcase-reject-start-table-of-main-oronyms-pre-cease-cull-rule
->cease cull
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-crew-dork-rule-if-player-is-not-in-brew-swears
-#testcase-reject-start-table-of-main-oronyms-pre-crew-dork-rule
->crew dork
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-do-due-mend-rule-if-player-is-not-in-doom-ending
-#testcase-reject-start-table-of-main-oronyms-pre-do-due-mend-rule
->do mending
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-gaunt-raider-rule-if-player-is-not-in-worm-eaten-or-gone-traitor-is-not-in-worm-eaten
-#testcase-reject-start-table-of-main-oronyms-pre-gaunt-raider-rule
->gaunt raider
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-gnome-old-rule-if-player-is-not-in-keepiller
-#testcase-reject-start-table-of-main-oronyms-pre-gnome-old-rule
->gnome old
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-grin-churls-rule-if-player-is-not-in-brew-swears
-#testcase-reject-start-table-of-main-oronyms-pre-grin-churls-rule
->grin churls
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-grow-star-rule-if-player-is-not-in-naffhaze
-#testcase-reject-start-table-of-main-oronyms-pre-grow-star-rule
->grow star
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-grow-vial-rule-abide-by-the-three-isle-rule
-#testcase-reject-start-table-of-main-oronyms-pre-grow-vial-rule
->grow vial
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-heckle-ass-rule-if-player-is-not-in-brew-swears
-#testcase-reject-start-table-of-main-oronyms-pre-heckle-ass-rule
->heckle ass
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-hide-out-rule-if-player-is-not-in-wolf-rock
-#testcase-reject-start-table-of-main-oronyms-pre-hide-out-rule
->hideout
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-high-plain-rule-if-player-is-not-in-hype-lane
-#testcase-reject-start-table-of-main-oronyms-pre-high-plain-rule
->high plain
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-huh-shit-rule-if-player-is-not-in-brew-swears
-#testcase-reject-start-table-of-main-oronyms-pre-huh-shit-rule
->huh shit
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-key-pillar-rule-if-player-is-not-in-naffhaze
-#testcase-reject-start-table-of-main-oronyms-pre-key-pillar-rule
->key pillar
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-knife-right-rule-if-player-is-not-in-nigh-fright
-#testcase-reject-start-table-of-main-oronyms-pre-knife-right-rule
->knife right
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-known-ocean-rule-if-player-is-not-in-nonotion
-#testcase-reject-start-table-of-main-oronyms-pre-known-ocean-rule
->known ocean
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-lie-fuckers-rule-if-life-occurs-is-not-in-brew-swears
-#testcase-reject-start-table-of-main-oronyms-pre-lie-fuckers-rule
->lie fuckers
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-low-bend-rule-if-player-is-not-in-lobe-end
-#testcase-reject-start-table-of-main-oronyms-pre-low-bend-rule
->low bend
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-low-door-rule-if-player-is-not-in-wolf-rock
-#testcase-reject-start-table-of-main-oronyms-pre-low-door-rule
->low door
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-manna-curb-rule-if-player-is-not-in-keepiller
-#testcase-reject-start-table-of-main-oronyms-pre-manna-curb-rule
->manna curb
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-mensch-elf-rule-if-player-is-not-in-storm-isle
-#testcase-reject-start-table-of-main-oronyms-pre-mensch-elf-rule
->mensch elf
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-mice-tall-rule-if-player-is-not-in-storm-isle
-#testcase-reject-start-table-of-main-oronyms-pre-mice-tall-rule
->mice tall
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-my-corps-rule-if-sco-an-aim-is-false
-#testcase-reject-start-table-of-main-oronyms-pre-my-corps-rule
->my corps
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-nah-phase-rule-if-player-is-not-in-naffhaze
-#testcase-reject-start-table-of-main-oronyms-pre-nah-phase-rule
->nah phase
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-oh-flier-rule-if-player-is-not-in-we-loan
-#testcase-reject-start-table-of-main-oronyms-pre-oh-flier-rule
->oh flier
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-plan-tracker-rule-if-player-is-not-in-keepiller-or-plant-racker-is-not-touchable
-#testcase-reject-start-table-of-main-oronyms-pre-plan-tracker-rule
->plan tracker
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-pole-east-rule-if-player-is-not-in-naffhaze
-#testcase-reject-start-table-of-main-oronyms-pre-pole-east-rule
->pole east
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-pry-stalk-rule-if-player-is-not-in-hype-lane
-#testcase-reject-start-table-of-main-oronyms-pre-pry-stalk-rule
->pry stalk
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-rogue-old-rule-if-player-is-not-in-keepiller
-#testcase-reject-start-table-of-main-oronyms-pre-rogue-old-rule
->rogue old
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-see-design-rule-if-player-is-not-in-keepiller
-#testcase-reject-start-table-of-main-oronyms-pre-see-design-rule
->see design
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-self-owns-rule-if-player-is-not-in-hype-lane
-#testcase-reject-start-table-of-main-oronyms-pre-self-owns-rule
->self owns
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-shore-trail-rule-if-player-is-not-in-naffhaze
-#testcase-reject-start-table-of-main-oronyms-pre-shore-trail-rule
->shore trail
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-six-quid-rule-if-player-is-not-in-nonotion
-#testcase-reject-start-table-of-main-oronyms-pre-six-quid-rule
->six quid
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-store-mile-rule-if-player-is-not-in-storm-isle
-#testcase-reject-start-table-of-main-oronyms-pre-store-mile-rule
->store mile
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-summer-chant-rule-if-player-is-not-in-we-loan-or-merchant-is-not-in-we-loan
-#testcase-reject-start-table-of-main-oronyms-pre-summer-chant-rule
->summer chant
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-tall-cake-rule-if-player-does-not-have-talk-ache
-#testcase-reject-start-table-of-main-oronyms-pre-tall-cake-rule
->tall cake
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-the-file-rule-abide-by-the-three-isle-rule
-#testcase-reject-start-table-of-main-oronyms-pre-the-file-rule
->the file
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-treat-all-rule-if-player-is-not-in-trees-mall
-#testcase-reject-start-table-of-main-oronyms-pre-treat-all-rule
->treat all
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-tree-small-rule-if-player-is-not-in-trees-mall
-#testcase-reject-start-table-of-main-oronyms-pre-tree-small-rule
->tree small
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-two-maps-rule-if-player-is-not-in-air-aww-or-sco-an-aim-is-false
-#testcase-reject-start-table-of-main-oronyms-pre-two-maps-rule
->two maps
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-wan-dwarf-rule-if-player-is-not-in-wand-wharf
-#testcase-reject-start-table-of-main-oronyms-pre-wan-dwarf-rule
->wan dwarf
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-war-file-rule-abide-by-the-three-isle-rule
-#testcase-reject-start-table-of-main-oronyms-pre-war-file-rule
->war file
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-weak-us-rule-if-player-is-not-in-brew-swears
-#testcase-reject-start-table-of-main-oronyms-pre-weak-us-rule
->weak us
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-well-own-rule-if-player-is-not-in-we-loan
-#testcase-reject-start-table-of-main-oronyms-pre-well-own-rule
->well own
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-were-dicks-rule-if-weird-icks-is-not-in-brew-swears
-#testcase-reject-start-table-of-main-oronyms-pre-were-dicks-rule
->were dicks
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-were-meetin-rule-if-player-is-not-in-worm-eaten
-#testcase-reject-start-table-of-main-oronyms-pre-were-meetin-rule
->were meetin
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-whee-lone-rule-if-player-is-not-in-we-loan
-#testcase-reject-start-table-of-main-oronyms-pre-whee-lone-rule
->whee lone
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-wide-vision-rule-if-player-is-not-in-doom-ending
-#testcase-reject-start-table-of-main-oronyms-pre-wide-vision-rule
->wide vision
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
-#testcase-check-pre-wool-frock-rule-if-player-is-not-in-wolf-rock
-#testcase-reject-start-table-of-main-oronyms-pre-wool-frock-rule
->wool frock
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
-
 >an aim
 by a point
 
@@ -283,43 +18,11 @@ Yes. Now that you realize you want more than just to know your name, that you ha
 Your name is Mike Orr. You even remember it's -- well, one of these two things: short for Michal, which everyone pronounced Michael until you just gave up, or ... well, Michael.
 You look around a bit. You can see more, now. You're in some sort of tomb apse. You could exit--there are exits each way--but you suspect there's some horrible maze you could easily get lost in.
 
-#testcase-check-pre-wipe-out-rule-if-pals-made-is-0
->wipe out
-You aren't feeling too great, but you don't want or need to wipe yourself out, yet. Perhaps you can find the root of your problems and wipe it out one day, though.
-
->my corps
-Sadly, you have no friends to bring together yet! Yet.
-
-#testcase-think-table-of-main-oronyms-pre-wipe-out-rule
-#testcase-think-table-of-main-oronyms-pre-my-corps-rule
->think
-You will want to WIPE OUT the cause of your problems once you have them in your crosshairs. That's probably not for a while, though.
-You can call your companions MY CORPS once you have companions.
-
-#testcase-check-pre-an-aim-rule-if-sco-an-aim-is-true
->an aim
-You already found a name and an aim!
-
 >two maps
 by a point
 
 #testcase-check-pre-two-maps-rule-fallthrough
-
-#testcase-check-pre-pry-stalk-rule-if-prize-talk-is-not-in-hype-lane
->pry stalk
-Man! The chatter from those phones must be distracting you from what you want and need to do, or maybe see.
-
-#testcase-check-pre-high-plain-rule-if-sco-pry-stalk-is-false
->high plane
-That would be a nicer place! But you have nothing that could help you move up yet. You'll have to observe the general area a bit more.
-
->high plain
-That would be a nicer place! But you have nothing that could help you move up yet. You'll have to observe the general area a bit more.
-Hmph. That still doesn't quite work! You'll figure out the how and when and where, though.
-
-#testcase-think-table-of-main-oronyms-pre-high-plain-rule
->think
-You can find a HIGH PLAIN once you have something that can reach that far up.
+You look around for secrets. You find one line that is a hash of horizontal lines and another that is a hash of vertical lines. You put them together ... and you see a maze. You hope you can trace a passage out. And, with some effort, you do! Then you follow it. You hope it's right, and it leads somewhere better, or at least not as awful...
 
 >self owns
 by a point
@@ -329,49 +32,17 @@ You take a step back from all the confident, constant chatter in the cell phones
 Your confrontation did not go unnoticed by other cell phoners. They take the hint and moderate their voices.
 However, now, a prize talk blasts through hidden loudspeakers. It exhorts you to find your dream, to find something that will help you move above and beyond everyone else. It's probably talking about money or power, but you're looking for something different.
 
-#testcase-check-pre-self-owns-rule-if-cell-phones-are-not-in-hype-lane
->self owns
-The prize talk has you distracted. It's got a point: you need to find something to get where you want. What's the something? You know where you want to get, the high plain/plane.
-
 >pry stalk
 by a point
 
 #testcase-check-pre-pry-stalk-rule-fallthrough
 Among all the chatter, you discover a disused booth. Someone is preaching on about environmental stuff, and it's so much less painful than cell phone chat. You worry they're just going to blab on forever, but they're so grateful you listened as long as you did. They hand you a stalk they think can grow quickly. Their own special formula. It looks weird and glittery, and if anything can reach up out of here, this can. But the question is, where can it grow to?
 
-#testcase-check-pre-pry-stalk-rule-if-sco-pry-stalk-is-true
->pry stalk
-You already pried a stalk!
-
-#+testcase-think-table-of-main-oronyms-pre-high-plain-rule
->think
-You can find a HIGH PLAIN now you have something that can reach that far up.
-
 >high plain
 by a point
 
 #testcase-check-pre-high-plain-rule-fallthrough
 You plant the stalk, which -- well, it's already a bit of a stalk, but it grows quickly and sturdily. It's not hard at all to climb. You are pretty sure you're aboveground, but it's hard to see for sure.
-
-#testcase-check-pre-pole-east-rule-if-sco-nah-phase-is-false
->pole east
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-check-pre-grow-star-rule-if-sco-nah-phase-is-false
->grow star
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-check-pre-shore-trail-rule-if-sco-nah-phase-is-false
->shore trail
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-check-pre-key-pillar-rule-if-sco-nah-phase-is-false
->keep iller
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-check-pre-brew-swears-rule-if-bruise-wares-is-not-in-naffhaze
->brew swears
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
 >nah phase
 by a point
@@ -386,19 +57,11 @@ by a point
 Ah, yes. It makes sense. You find the pole. Strangely, there's just a single switch to flip. And even more strangely, the switch you flip causes the pole to revert into the ground. Yay!
 But there's more! A war pawn, like a chess piece, rolls into view. It looks pretty powerful. Maybe you see how to use it, but maybe you shouldn't use it right away.
 
-#testcase-check-pre-pole-east-rule-if-sco-pole-east-is-true
->pole east
-You already discovered how you were being policed!
-
 >shore trail
 by a point
 
 #testcase-check-pre-shore-trail-rule-fallthrough
 There must be more to the short rail than you see. And you start tracing where it is, where it can be, where it should go. You find something to dig up. It's ... surprisingly malleable. You have nothing else to do, anyway. Soon it feels like pulling cable from a ground. It's tough, since you can't see around, but indeed, the short rail does lead to a shore trail that leads south.
-
-#testcase-check-pre-shore-trail-rule-if-sco-shore-trail-is-true
->shore trail
-But you already replaced the short rail!
 
 >grow star
 by a point
@@ -413,57 +76,7 @@ by a point
 You look around the pillars for a key, since there's no flowerpot to hide it under. You find one, and you open the way west.
 You've changed the landscape a lot, north, south, east and west. But there's more! You hear a rumbling beneath you, opening a passage DOWN!
 
-#testcase-check-pre-key-pillar-rule-if-sco-key-pillar-is-true
->key pillar
-You already opened the keep (iller)!
-
->w
-
-#testcase-check-pre-gnome-old-rule-if-sco-wool-frock-is-false
->gnome old
-You summon a gnome, old, to compliment them on keeping the keep looking so nice all these years. They thank you but mention they're a bit sick of it and they seek adventure. Yet they can't go adventuring in these tatty clothes.
-
-#testcase-check-pre-rogue-old-rule-if-sco-six-quid-is-false
->rogue old
-A rogue, old, appears, but after some conversation, you realize you don't have any money to pay them with. They'd like to help, but they worked for free once and felt ripped off. Maybe later.
-
-#testcase-check-pre-manna-curb-rule-if-sco-mensch-elf-is-false
->manna curb
-Perhaps there is a lot of good stuff beneath the manic herb, but you don't have the specialized knowledge to figure it out.
-
-#testcase-check-pre-see-design-rule-if-pals-made-<-2
->see design
-You sort of want to see the hidden design, but you're sort of scared what will happen once you do. You feel like you need some support before you can give it your all.
-
-#testcase-think-table-of-main-oronyms-pre-see-design-rule
-#testcase-think-table-of-main-oronyms-pre-gnome-old-rule
-#testcase-think-table-of-main-oronyms-pre-manna-curb-rule
->think
-You may be able to recruit the GNOME OLD here once you have adventuring gear.
-You may be able to recruit the ROGUE OLD here once you have money.
-You may be able to find a MANNA CURB beneath the manna curb here once you have someone with knowledge of wildlife and wildflowers.
-You may be able to SEE DESIGN here once you have more support and are less scared.
-
->e
-
->e
-
-#testcase-check-pre-bay-sale-rule-if-sco-six-quid-is-false
->bay sale
-You realize that, in order to participate in a bay sale for a bay sail, you need some form of currency. You don't have that yet.
-
->undo
->undo
-
 >s
-
-#testcase-check-pre-six-quid-rule-if-sco-known-ocean-is-false
->six quid
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-check-pre-bay-sale-rule-if-player-is-in-nonotion
->bay sale
-You can't make out what sort of body of water is here. Well, not yet.
 
 >known ocean
 by a point
@@ -471,24 +84,12 @@ by a point
 #testcase-check-pre-known-ocean-rule-fallthrough
 Ah, yes. Things clear up a bit now. There we go ... you see where an ocean should be, and ... yes, you dip your toe in some wetness. Things clear up. You even see a sick squid! Maybe you can help it.
 
-#testcase-check-pre-known-ocean-rule-if-sco-known-ocean-is-true
->known ocean
-But you already got a notion for the ocean. And you didn't even need a potion!
-
-#+testcase-check-pre-bay-sale-rule-if-player-is-in-nonotion
->bay sale
-There's water here, but it's much more than a bay.
-
 >six quid
 by a point
 
 #testcase-check-pre-six-quid-rule-fallthrough
 You have an idea what is bothering the squid. Yes, a few coins stuck. Surprisingly, it lets you help out. "Current, sea, currency," you mutter as you poke around. Ah, there you go.
 You offer to give it some of the coins it almost choked on, but it does not need them. It seems to wait around, as if to help you with travel to places you may get to go. It's willing to wait.
-
-#testcase-check-pre-six-quid-rule-if-sco-six-quid-is-true
->six quid
-You don't need any more money, and the squid doesn't need any more help.
 
 >n
 
@@ -500,32 +101,12 @@ by a point
 #testcase-check-pre-wool-frock-rule-fallthrough
 You rummage about and find a wool frock.
 
-#testcase-check-pre-wool-frock-rule-if-sco-wool-frock-is-true
->wool frock
-You already found one wool frock. You can't imagine you'd need two.
-
-#+testcase-think-table-of-main-oronyms-pre-gnome-old-rule
->think
-You may be able to recruit the GNOME OLD in Keep (Iller) now you have adventuring gear.
-
-#testcase-check-pre-low-door-rule-if-sco-mice-tall-is-false
->low door
-Maybe there's a low door beneath the lode ore, which definitely has small holes. But not small enough for you to fit through and scrabble and scrape to find one.
-
-#testcase-think-table-of-main-oronyms-pre-low-door-rule
->think
-You may be able to find a LOW DOOR here once you have a companion or companions small enough to dig a bit better.
-
 >hide out
 by a point
 
 #testcase-check-pre-hide-out-rule-fallthrough
 It's easy enough to say you should doubt yourself less. I mean, you'd feel stupid doubting it. But there's always a reason not to. Still, you involuntarily start a mantra: "Fine, doubt? Find out!"
 And what do you know? You find a hideout below!
-
-#testcase-check-pre-hide-out-rule-if-sco-hide-out-is-true
->hideout
-You already dispelled doubt and found the hideout!
 
 >d
 
@@ -537,46 +118,11 @@ You talk with the booze troll for a bit. They seem not to know who they are, and
 You decide to trust them. They don't seem armed. You mention you've been having an adventure, and they'd sort of like one, too. They hand you a bottle of Base Ale as thanks. Not that they want you to go down their road. But it might be useful in bartering.
 It looks like the new troll will be following you around. All that silence might get awkward, so you may wish to T or TALK (TO) them.
 
-#testcase-check-pre-boost-role-rule-if-new-troll-is-touchable-and-sco-boost-role-is-true-and-player-is-not-in-doom-ending
->boost role
-You already gave the new troll a boost!
-
-#testcase-check-pre-bay-sale-rule-if-player-is-not-in-lobe-end
->bay sale
-No water here. Maybe somewhere else.
-
-#testcase-think-table-of-main-oronyms-pre-bay-sale-rule
->think
-You may be able to participate in a BAY SALE if you've found the right location and once you have money.
-
-#testcase-check-pre-wipe-out-rule-if-number-of-still-follow-needed-followers->-0
->wipe out
-You don't want to wipe out the friendship you made.
-
 >u
 
 >s
 
-#+testcase-think-table-of-main-oronyms-pre-see-design-rule
->think
-You may be able to recruit the ROGUE OLD in Keep (Iller) now you have money.
-You may be able to SEE DESIGN in Keep (Iller) once you have more support and are less scared.
-
 >w
-
-#+testcase-check-pre-see-design-rule-if-pals-made-<-2
->see design
-You sort of want to see the hidden design, but you're sort of scared what will happen once you do. The new troll can only help so much. You feel like you need some more support before you can give it your all.
-
-#cheat warping to storm isle
->gonear storm isle
->store mile
-by one point
-#testcase-check-pre-mice-tall-rule-if-sco-gnome-old-is-false
->mice tall
-Maybe there are mice behind there, but you can't figure a way to locate them. It requires some sort of clever inhuman perception, you'd think.
-
->think
 
 >gnome old
 by a point
@@ -586,20 +132,6 @@ A gnome, old, arrives from a room above in the keep. They offer to adventure wit
 "Less gnome attic, more nomadic," they muse.
 Funnily, you stop specifically noticing the lack of mold now your new companion's joined you. But you still appreciate their efforts deep down!
 
-#+testcase-check-pre-wipe-out-rule-if-number-of-still-follow-needed-followers->-0
->wipe out
-You don't want to wipe out the friendships you made.
-
-#testcase-check-pre-gnome-old-rule-if-sco-gnome-old-is-true
->gnome old
-You already summoned the gnome!
-
-#+testcase-think-table-of-main-oronyms-pre-see-design-rule
-#+testcase-think-table-of-main-oronyms-pre-rogue-old-rule
->think
-You may be able to SEE DESIGN here now you have more support and are less scared.
-You may be able to recruit the ROGUE OLD here now you have money.
-
 >rogue old
 by a point
 
@@ -607,10 +139,6 @@ by a point
 A rogue, old, arrives. They mention they'd like to help you but, you know, the row (gold) needs maintenance. You offer to pay them three quid..
 This transaction reduces your wealth from six quid to three quid.
 Hmm. You have a lot of friends following you around, but you haven't talked to them much. Perhaps you could learn something from them.
-
-#testcase-check-pre-rogue-old-rule-if-sco-rogue-old-is-true
->rogue old
-But you already got the rogue (old) to join you!
 
 >see design
 by a point
@@ -626,41 +154,9 @@ by a point
 #testcase-check-pre-knife-right-rule-fallthrough
 With your friends boosting your spirits, you look for a sacred/profane weapon. It turns up. Eerie howling begins. You hightail it out of there.
 
-#testcase-check-pre-see-design-rule-if-sco-see-design-is-true
->see design
-You already saw the design in the seedy sign. You don't need to redo things.
-
 >e
 
 >d
-
->were meetin
-You sense you don't have the gang together! You may still be a way away.
-
-#testcase-think-table-of-main-oronyms-pre-were-meetin-rule
->think
-You will be able to say WERE MEETIN once you have a full party available.
-
->t troll
-
->t elf
-
->t rogue
-
->gaunt raider
-Hmm. You
-
->undo
-
->t gnome
-
->gaunt raider
-!Hmm. You
->undo
->undo
->undo
->undo
->undo
 
 >gaunt raider
 by a point
@@ -680,35 +176,7 @@ by a bonus point
 #testcase-check-pre-brew-swears-rule-fallthrough
 Yes. That's what BRUISE WARES is really for. Enter at your own risk. It's ... an adventure, of its own sort.
 
-#testcase-check-pre-brew-swears-rule-if-sco-brew-swears-is-true
->brew swears
-But you've already opened the passage through BRUISE WARES!
-
 >in
-
-#testcase-check-pre-crew-dork-rule-if-sco-weak-us-is-false
->crew dork
-The crude orc doesn't believe they're being used by the grinch earls. Why, it's part of the hazing! They have to show they're tough!
-
-#testcase-check-pre-bastard-eee-rule-if-bah-sturdy-is-not-in-brew-swears
->bastardy
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-check-pre-heckle-ass-rule-if-heh-class-is-not-in-brew-swears
->heckle ass
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-check-pre-huh-shit-rule-if-hush-it-is-not-in-brew-swears
->huh shit
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-check-pre-lie-fuckers-rule-if-player-is-not-in-brew-swears
->lie fuckers
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-check-pre-were-dicks-rule-if-player-is-not-in-brew-swears
->were dicks
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
 >weak us
 by a bonus point
@@ -728,10 +196,6 @@ You break the truth gently to the crude orc that, well, they're at the bottom of
 The crude orc sees it now. The grinch earls weren't as friendly as they seemed. They wanted to use some trusting kid and corrupt them. The crude orc shakes their head. They ask if they can be seen as an orc and not, well, a dork. You say sure.
 You've gained a friend! You can stick around to torment the grinch earls further, or you can go on your way.
 Hmm. You have a lot of friends following you around, but you haven't talked to them much. Perhaps you could learn something from them.
-
-#testcase-check-pre-crew-dork-rule-if-sco-crew-dork-is-true
->crew dork
-You already broke the truth to the crude orc as gently as you could!
 
 >bastard eee
 by a bonus point
@@ -769,10 +233,6 @@ by a bonus point
 You mock the grinch earls back, giving at least as good as you get, noting there's always a hole in these sorts of attacks.
 The grinch earls, out of insults, give up on you, claiming you got boring. But you know better.
 
-#testcase-check-pre-weak-us-rule-if-sco-weak-us-is-true
->weak us
-You already established the grinch earls cursed out of weakness or, at least, not fully from strength!
-
 >grin churls
 by a bonus point
 The grin churls remark that you seemed so nice, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up.
@@ -780,10 +240,6 @@ The grin churls remark that you seemed so nice, really, and they're all for a bi
 #testcase-check-pre-grin-churls-rule-fallthrough
 You slip in a few sly digs and say "grin, churls." They shake their heads, annoyed.
 The grin churls remark that you seemed so nice, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do.
-
-#+testcase-check-pre-weak-us-rule-if-sco-weak-us-is-true
->weak us
-You already established the grin churls cursed out of weakness or, at least, not fully from strength!
 
 >out
 
@@ -796,10 +252,6 @@ by a point
 You almost despair for a minute that you reached a dead end so soon. You page through all the possible ways out, proving to yourself you're right, hoping against hope you're wrong.
 And looking around, you see you are! There is a bit more to all this. A very thin and reasonably sloped path north leads down to some water. Which you can't cross at the moment, but maybe you'll figure a way.
 
-#testcase-check-pre-low-bend-rule-if-sco-low-bend-is-true
->low bend
-You already found a low bend!
-
 >bay sale
 by a point
 
@@ -810,23 +262,11 @@ This transaction reduces your wealth from three quid to one quid.
 
 >n
 
-#testcase-check-pre-mensch-elf-rule-if-sco-store-mile-is-false
->mensch elf
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-check-pre-mice-tall-rule-if-sco-store-mile-is-false
->mice tall
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
 >store mile
 by a point
 
 #testcase-check-pre-store-mile-rule-fallthrough
 The storms let up. It's not such a big isle after all, but it does turn out to hold a whole lot of stores and vending areas. In particular, a stall labeled MY STALL, and a shelf labeled MEN SHELF.
-
-#testcase-check-pre-store-mile-rule-if-sco-store-mile-is-true
->store mile
-But you already transformed the storm isle!
 
 >mensch elf
 by a point
@@ -835,10 +275,6 @@ by a point
 You knock about the MEN shelf a bit, unable to find anything. It's really a collection of shelves that you disassemble and reassemble. Eventually, you're about to give up, and it all collapses, taking a chunk of wall with it. Our pops a mensch elf, quite grateful you helped them escape.
 Hmm. You have a lot of friends following you around, but you haven't talked to them much. Perhaps you could learn something from them.
 
-#+testcase-think-table-of-main-oronyms-pre-manna-curb-rule
->think
-You may be able to find a MANNA CURB beneath the manna curb in Keep (Iller) now you have someone with knowledge of wildlife and wildflowers.
-
 >mice tall
 by a point
 
@@ -846,14 +282,6 @@ by a point
 You look into the stall and shrug your shoulders. Then the gnome (old) steps in and notes they hear something. Chittering noises! The gnome chitters back.
 It takes a lot of negotiating, but you find where the mice are stuck. You and the gnome thud through and out come some mice, tall. They're tall for mice, though they really only come up above your knee.
 Hmm. You have a lot of friends following you around, but you haven't talked to them much. Perhaps you could learn something from them.
-
-#testcase-check-pre-mice-tall-rule-if-sco-mice-tall-is-true
->mice tall
-You already found the mice and destroyed the stall!
-
-#testcase-think-table-of-main-oronyms-pre-low-door-rule
->think
-You may be able to find a LOW DOOR in Wolf Rock now you have a companion or companions small enough to dig a bit better.
 
 >s
 
@@ -867,10 +295,6 @@ by a point
 #testcase-check-pre-low-door-rule-fallthrough
 The lode and the ore are tough to shift around for someone as big as yourself. But the tall mice manage to get into those small niches you can't. They locate a low door, then, point to where you can remove the ore to create a passage. You'll have to duck a bit to get in, but you can now go INSIDE. Hooray!
 
-#testcase-check-pre-low-door-rule-if-sco-low-door-is-true
->low door
-You already found a low door in this mess!
-
 >in
 
 >well own
@@ -879,41 +303,11 @@ by a point
 #testcase-check-pre-well-own-rule-fallthrough
 Yes. There's a definite shady side. You mumble to yourself, and then your mumbles get louder, and it attracts ... some merchant. They begin babbling about deals they have, fake-friendly, about how you can buy low.
 
-#testcase-check-pre-well-own-rule-if-sco-well-own-is-true
->well own
-You already exposed the shady side here.
-
-#testcase-check-pre-bile-oh-rule-if-sco-summer-chant-is-false
->bile oh
-You need to find something positive to say, first. It doesn't have to be particularly rigorous, but it needs to be positive.
-
-#testcase-think-table-of-main-oronyms-pre-bile-oh-rule
-#+testcase-think-table-of-main-oronyms-pre-my-corps-rule
->think
-You may be able to expose some merchant's BILE OH once you've found something positive to say to prep yourself.
-You can call your companions MY CORPS once you have enough of them.
-
-#testcase-check-pre-whee-lone-rule-if-merchant-is-in-we-loan
->whee lone
-You can't enjoy solitude with that merchant around.
-
-#testcase-think-table-of-main-oronyms-pre-whee-lone-rule
->think
-You may be able to enjoy your solitude with WHEE LONE here once you actually have solitude.
-
 >summer chant
 by a point
 
 #testcase-check-pre-summer-chant-rule-fallthrough
 You think up a summer chant you mumble under your breath. The merchant finds it a bit weird you like THAT as a way to keep positive. It doesn't seem like that sort of thing helps the economy. Their cheeriness slips slightly, with impressively-balanced potshots at people more and less successful than they are.
-
-#testcase-check-pre-summer-chant-rule-if-sco-summer-chant-is-true
->summer chant
-You already found cheeriness outside of the merchant!
-
-#testcase-think-table-of-main-oronyms-pre-bile-oh-rule
->think
-You may be able to expose some merchant's BILE OH now you've found something positive to say to prep yourself.
 
 >bile oh
 by a point
@@ -923,10 +317,6 @@ The mere suggestion that the merchant's aggression may be annoying seems to set 
 You freeze up, confused by all this, and the merchant takes this as a sign of arrogant disrespect. You are not the first person to reject their positivity! They run into clueless crumb-bums all day!
 They storm off, presumably to find another crumb-bum to abuse for not having their brand of positivity.
 Oh, hey, you can maybe enjoy some solitude now!
-
-#testcase-think-table-of-main-oronyms-pre-whee-lone-rule
->think
-You may be able to enjoy your solitude with WHEE LONE here now you actually have solitude.
 
 >whee lone
 by a point
@@ -942,39 +332,9 @@ You act distracted just right. The oaf liar tries to get your attention. Just ig
 This transaction reduces your wealth from one quid to zero quid.
 Well, easy come, easy go. You're pretty sure you've visited everywhere and found everyone who might need money.
 
-#testcase-check-pre-whee-lone-rule-if-sco-whee-lone-is-true
->whee lone
-You already got this place to yourself!
-
->grow vial
-This isn't the right place to look for an isle. No large body of water nearby.
-
->war file
-This isn't the right place to look for an isle. No large body of water nearby.
-
->the file
-This isn't the right place to look for an isle. No large body of water nearby.
-
->think
-#testcase-think-table-of-main-oronyms-pre-grow-vial-rule
-#testcase-think-table-of-main-oronyms-pre-war-file-rule
-#testcase-think-table-of-main-oronyms-pre-the-file-rule
-You may be able to make sense of THE FILE in Known Ocean once you've gotten enough information from companions.
-You may be able to recover the WAR FILE on the wharf isle in Known Ocean once you have something you can write down its main ideas in.
-You may be able to find a GROW VIAL with the right water transport.
-
 >out
 
 >s
-
->s
-
-#testcase-check-pre-war-file-rule-if-sco-plan-tracker-is-false
->war file
-A war file might be useful, but you'd have no way to organize the information right now.
-
->undo
->undo
 
 >w
 
@@ -990,10 +350,6 @@ by a point
 #testcase-check-pre-manna-curb-rule-fallthrough
 You suspect there is manna beneath the manic herb, but you have no clue how to find it. Thankfully, the mensch elf steps up. You wind up with a lot of manna, whatever that is!
 
-#testcase-check-pre-manna-curb-rule-if-sco-manna-curb-is-true
->manna curb
-You already found enough manna beneath the manic herb!
-
 >e
 
 >e
@@ -1001,24 +357,12 @@ You already found enough manna beneath the manic herb!
 >n
 
 >n
-
-#testcase-check-pre-treat-all-rule-if-tree-tall-is-not-in-trees-mall
->treat all
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
 >tree small
 by a point
 
 #testcase-check-pre-tree-small-rule-fallthrough
 Amidst all the fake trees, an actual organic small tree grows. You're a bit disappointed, but you realize you maybe shouldn't have expected much with so little letter-shuffling. Maybe if you want a bigger tree, you'll need to do something else.
-
-#testcase-check-pre-tree-small-rule-if-sco-tree-small-is-true
->tree small
-You already got a tree (small) to grow!
-
-#+testcase-check-pre-treat-all-rule-if-tree-tall-is-not-in-trees-mall
->treat all
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
 >s
 
@@ -1028,23 +372,11 @@ That thought/action/observation/request brings up nothing. Why Pout has a limite
 
 >s
 
-#+testcase-think-table-of-main-oronyms-pre-the-file-rule
->think
-You may be able to make sense of THE FILE here once you've gotten enough information from companions.
-
 >grow vial
 by a point
 
 #testcase-check-pre-grow-vial-rule-fallthrough
 In the grove isle, you find a grow vial, which you take. It's relaxing, but you can't afford to loiter too long.
-
-#testcase-check-pre-grow-vial-rule-if-sco-grow-vial-is-true
->grow vial
-You already got a grow vial!
-
-#+testcase-think-table-of-main-oronyms-pre-war-file-rule
->think
-You may be able to recover the WAR FILE on the wharf isle here now you have something you can write down its main ideas in.
 
 >war file
 by a point
@@ -1057,41 +389,6 @@ by a point
 
 #testcase-check-pre-wan-dwarf-rule-fallthrough
 You look around and uncover a wan dwarf who wasn't good enough to be a full fighter but rejected for magic training. You explain your situation. They're all in!
-
-#testcase-check-pre-war-file-rule-if-sco-war-file-is-true
->war file
-You already got the war file!
-
->t dwarf
-
->t elf
-
->t gnome
-
->t rogue
-
->t raider
-
->t mice
-
->t troll
-
->the file
-by one point
-
-#testcase-check-pre-the-file-rule-if-sco-the-file-is-true
->the file
-You already visited thief isle!
-
->undo
->undo
->undo
->undo
->undo
->undo
->undo
->undo
->undo
 
 >n
 
@@ -1117,22 +414,6 @@ You already visited thief isle!
 
 >t orc
 
-#testcase-check-pre-treat-all-rule-if-player-does-not-have-tall-cake
->treat all
-You don't have anything to treat your companions with!
-
->s
-
-#testcase-think-table-of-main-oronyms-pre-treat-all-rule
->think
-You may be able to TREAT ALL in Trees Mall once you have a tasty treat.
-
->n
-
-#+testcase-think-table-of-main-oronyms-pre-the-file-rule
->think
-You may be able to make sense of THE FILE in Known Ocean now you've gotten enough information from companions.
-
 >tall cake
 by a point
 
@@ -1140,25 +421,11 @@ by a point
 All this preparing food means you don't talk a bit, and as a bonus, your talk-ache is gone.
 But now where to eat the cake?
 
-#+testcase-think-table-of-main-oronyms-pre-my-corps-rule
-#testcase-think-table-of-main-oronyms-pre-treat-all-rule
->think
-You may be able to TREAT ALL here now you have a tasty treat.
-You can call your companions MY CORPS once you've shared something together.
-
 >treat all
 by a point
 
 #testcase-check-pre-treat-all-rule-fallthrough
 Well, that felt good. You trade more ideas while chatting. You think you have about everything figured out, now.
-
-#testcase-check-pre-my-corps-rule-if-player-is-not-in-worm-eaten
->my corps
-This doesn't seem to be the right place to pep up the troops.
-
-#testcase-check-pre-treat-all-rule-if-sco-treat-all-is-true
->treat all
-You already shared treats!
 
 >s
 
@@ -1179,26 +446,11 @@ You've visited all the locations in the flier. You crumple it up as if to throw 
 
 >d
 
-#+testcase-think-table-of-main-oronyms-pre-were-meetin-rule
->think
-You will be able to say WERE MEETIN now you have a full party available.
-
 >were meetin
 by a point
 
 #testcase-check-pre-were-meetin-rule-fallthrough
 You meet with the friends you've made over your adventure. You all have one goal in mind. And yet you don't have a rallying cry. Perhaps it can come from within you.
-
-#testcase-check-pre-were-meetin-rule-if-sco-were-meetin-is-true
->were meetin
-You already held a meeting! Too many meetings get in the way of doing.
-
->wipe out
-You haven't identified anyone terribly evil you want to wipe out.
-
-#+testcase-think-table-of-main-oronyms-pre-my-corps-rule
->think
-You can call your companions MY CORPS now you've shared something together.
 
 >my corps
 by a point
@@ -1206,34 +458,7 @@ by a point
 #testcase-check-pre-my-corps-rule-fallthrough
 Your pep talk brings everyone together. They are ready for ... well, whatever is next. This feels like the right place. You clear out a passage below. You swear a solemn pact that everyone will defend everyone else, regardless of what happens.
 
-#testcase-check-pre-my-corps-rule-if-sco-my-corps-is-true
->my corps
-You already brought your corps a bit closer together!
-
-#testcase-check-pre-wipe-out-rule-if-player-is-not-in-doom-ending
->wipe out
-You haven't identified anyone terribly evil you want to wipe out.
-
 >d
-
-#testcase-check-pre-do-due-mend-rule-if-sco-wipe-out-is-false
-You'll have to dispose of the sea skull first.
->do mending
-
-#testcase-check-pre-wipe-out-rule-if-sco-cease-cull-is-false
->wipe out
-You try to charge and wipe out the sea skull, but you bounce against an invisible barrier. It's likely protecting itself from sneak attacks. You'll have to get its attention.
-
-#testcase-check-pre-wide-vision-rule-if-why-division-is-not-in-doom-ending
->why division
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#+testcase-think-table-of-main-oronyms-pre-wipe-out-rule
-#testcase-think-table-of-main-oronyms-pre-do-due-mend-rule
->think
-You can think DO/DUE MEND/MENDING once you've disposed of the sea skull.
-You will want to WIPE OUT the cause of your problems once you have them in your crosshairs.
-!not for a while
 
 >cease cull
 by a point
@@ -1243,241 +468,12 @@ You'll probably have to alert the sea skull to your presence at some time. You t
 "DONE, OH?!?! DUH, NO!" it roars.
 It begins pouring out rivers of blood at you and your companions. But fortunately, you have so many, that by the time it gets to you, it is not so bad. Yet it's still depressing. You think back to advice you got at the beginning ... how it seemed slightly off. What to do?
 
-#testcase-check-pre-cease-cull-rule-if-sco-cease-cull-is-true
->cease cull
-You already played defense. Now's the time to go on offense!
-
-#+testcase-think-table-of-main-oronyms-pre-wipe-out-rule
->think
-You will want to WIPE OUT the cause of your problems now you have them in your crosshairs.
-!not for a while
-
 >wipe out
 by a point
 
 #testcase-check-pre-wipe-out-rule-fallthrough
 Well that does it! It's a big long fight, but you all prevail!
 Things are a bit of a mess, though. You feel something odd come between you and your companions now you're done. They wonder why they need to do any more. You could call the whole zeitgeist a why-division.
-
-#testcase-check-pre-wide-vision-rule-if-pre-acts-<-pre-max
->wide vision
-You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.
-
-#+testcase-check-pre-wide-vision-rule-if-pre-acts-<-pre-max
->wide vision
-You are unable to express your wide vision. You'll have to settle for just repairing things pretty well.
-
-#testcase-think-table-of-main-oronyms-pre-wide-vision-rule
->think
-Sadly, you didn't quite experience enough to spread your wide vision.
-
-#testcase-check-pre-wipe-out-rule-if-sco-wipe-out-is-true
->wipe out
-You already wiped out the sea skull! Now is the time for healing.
-
-#testcase-reject-end-table-of-main-oronyms-pre-bastard-eee-rule
->bastard eee
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-bay-sale-rule
->bay sail
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-bile-oh-rule
->bile oh
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-boost-role-rule
->boost role
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-brew-swears-rule
->brew swears
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-cease-cull-rule
->cease cull
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-crew-dork-rule
->crew dork
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-gaunt-raider-rule
->gaunt raider
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-gnome-old-rule
->gnome old
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-grin-churls-rule
->grin churls
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-grow-star-rule
->grow star
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-grow-vial-rule
->grow vial
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-heckle-ass-rule
->heckle ass
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-hide-out-rule
->hideout
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-high-plain-rule
->high plain
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-huh-shit-rule
->huh shit
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-key-pillar-rule
->key pillar
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-knife-right-rule
->knife right
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-known-ocean-rule
->known ocean
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-lie-fuckers-rule
->lie fuckers
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-low-bend-rule
->low bend
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-low-door-rule
->low door
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-manna-curb-rule
->manna curb
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-mensch-elf-rule
->mensch elf
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-mice-tall-rule
->mice tall
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-nah-phase-rule
->nah phase
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-oh-flier-rule
->oh flier
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-plan-tracker-rule
->plan tracker
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-pole-east-rule
->pole east
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-pry-stalk-rule
->pry stalk
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-rogue-old-rule
->rogue old
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-see-design-rule
->see design
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-self-owns-rule
->self owns
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-shore-trail-rule
->shore trail
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-six-quid-rule
->six quid
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-store-mile-rule
->store mile
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-summer-chant-rule
->summer chant
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-tall-cake-rule
->tall cake
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-the-file-rule
->the file
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-treat-all-rule
->treat all
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-tree-small-rule
->tree small
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-two-maps-rule
->two maps
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-wan-dwarf-rule
->wan dwarf
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-war-file-rule
->war file
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-weak-us-rule
->weak us
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-well-own-rule
->well own
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-were-dicks-rule
->were dicks
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-were-meetin-rule
->were meetin
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-whee-lone-rule
->whee lone
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#testcase-reject-end-table-of-main-oronyms-pre-wool-frock-rule
->wool frock
-That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-
-#+testcase-think-table-of-main-oronyms-pre-do-due-mend-rule
->think
-You can think DO/DUE MEND/MENDING now you've disposed of the sea skull.
 
 >do mending
 by a point
