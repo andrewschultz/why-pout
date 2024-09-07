@@ -221,6 +221,23 @@ section swearblob sorting alphabetically - not for release
 
 alphorder of bah-sturdy is 1. alphorder of heh-class is 2. alphorder of hush-it is 3. alphorder of life-occurs is 4. alphorder of weird-icks is 5.
 
+chapter taing
+
+taing is an action out of world.
+
+understand the command "ta" as something new.
+
+understand "ta" as taing.
+
+carry out taing:
+	let count be 0;
+	repeat with X running through friendly unchatted followers:
+		increment count;
+		try ting X;
+	if count is 0:
+		say "Nobody to talk to.";
+	the rule succeeds;
+
 chapter woing
 
 [because I got too lazy to type PURLOIN WAR and then WARP ON a lot, even with the up-arrow.]

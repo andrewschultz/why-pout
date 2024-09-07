@@ -1643,9 +1643,3 @@ Your score just went up by a point!
 Beat all! Be tall!
 @!
 Gray day?! Grade A!
-\\
->tt
-WRONG
-\\
->pm
-WRONG

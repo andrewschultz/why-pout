@@ -281,9 +281,3 @@ by a point
 Your score just went up by a point!
 
 Gray day?! Grade A!
-
->tt
-WRONG
-
->pm
-WRONG
