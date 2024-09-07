@@ -21,6 +21,7 @@ gs-search-warn is a truth state that varies.
 gs-swear-bonus-removed is a truth state that varies.
 
 gs-war-pawn-try is a truth state that varies.
+gs-war-pawn-used is a truth state that varies. [ugh ... would like to say "if war pawn is moot" but I de-moot it for testing]
 
 gs-penalized-why-division is a truth state that varies.
 

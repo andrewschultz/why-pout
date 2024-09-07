@@ -870,12 +870,12 @@ a wordtwisting rule (this is the pre-wide-vision rule):
 	ready;
 
 to say war-pawn-musings:
-	say "[line break]'I? Low. I'll ... oh ...' you moan, preparing to bare your guilty soul.[line break]";
-	say "'It was BRUISE-WARES, wasn't it?' you ask. 'I shouldn't have [if sco-brew-swears is false]ignored it[else]chickened out once I found a way in[else if brew-swears-score < 9]left things undone[else]enjoyed tearing through it all[end if].[paragraph break]Your companions shake their heads slightly.[paragraph break]";
+	say "[paragraph break]'I? Low. I'll ... oh ...' you moan, preparing to bare your guilty soul.[paragraph break]";
 	if gs-war-pawn-try is true:
-		say "'Oh! Must be [if war pawn is moot]using[else]trying to use[end if] that war pawn, now. Lesson learnt.'[paragraph break]But your companions change to I-saw-ice-aww expressions. No, it must have been something else.";
+		say "'Oh! Must be that I [if gs-war-pawn-used is true]used[else]tried to use[end if] that war pawn. Lesson learnt.'[paragraph break]But your companions change to I-saw-ice-aww expressions. No, it must have been something else.";
 	else:
-		say "You ask for credit because you didn't use the war pawn, but that seems irrelevant. They didn't know you had one!"
+		say "You ask for credit because you didn't use the war pawn, but that seems irrelevant. They didn't know you had one!";
+	say "[line break]'It was BRUISE-WARES, wasn't it?' you ask. 'I shouldn't have [if sco-brew-swears is false]ignored it[else if brew swears is unvisited]chickened out from going in[else if brew-swears-score is 1]left just as I got there[else if brew-swears-score is 2]left the crude orc[else if brew-swears-score is 3]chickened out right after I rescued the crude orc[else if brew-swears-score < 9]left things undone[else]enjoyed tearing through it all[end if].'[paragraph break]Your companions shake their heads slightly.[paragraph break]";
 
 to say remove-widevision-bonus:
 	if gs-penalized-why-division is false:
