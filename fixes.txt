@@ -1,5 +1,13 @@
 List of in-comp updates
 
+9/7/2024 updates (1.11)
+--zapped THINK text for bonus-point reject at end of game
+--redacted room name you hadn't visited in "to say here-in of (rm - a room)"
+--more granular text branches explaining optional area/cheat item use doesn't affect best ending
+--specific text added for 2nd puzzle close guess
+--tweaked logic and text for rules to determine if certain puzzle solutions can work yet ("pre-" rules)
+--added PNG map
+
 9/4/2024 updates (1.10)
 --optional room puzzles now always disappear when solved
 --clarified in-game that (lack of) progress in optional room doesn't lock out best ending
