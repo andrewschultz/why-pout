@@ -9,7 +9,7 @@ include Revealing Passages by Andrew Schultz.
 volume game specific definitions
 
 definition: a rule (called ru) is thinknoteblocking:
-	if ru is pre-why-division rule, yes;
+	if ru is pre-wide-vision rule, yes;
 	no;
 
 volume new types
