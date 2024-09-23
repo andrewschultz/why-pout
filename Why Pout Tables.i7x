@@ -48,10 +48,10 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "plan"	"tracker"	--	--	false	true	true	false	false	keepiller	pre-plan-tracker rule	post-plan-tracker rule	--	--
 "see"	"design"	"c|sea"	hom-c-sea-design rule	false	true	true	false	false	keep iller	pre-see-design rule	post-see-design rule	--	"You may be able to [b]SEE DESIGN[r] [here-in of keepiller] [once-now of whether or not pals-made >= 2] you have more support and are less scared."
 "knife"	"right|rite"	--	--	false	true	true	false	false	nigh fright	pre-knife-right rule	post-knife-right rule	--	--
-"gaunt"	"raider"	--	--	false	true	true	false	false	worm eaten	pre-gaunt-raider rule	post-gaunt-raider rule	--	--
-"were"	"meetin"	"wier|whirr|warm|eden|war"	hom-whirr-meetin rule	false	true	true	false	false	worm eaten	pre-were-meetin rule	post-were-meetin rule	--	"You will be able to say [b]WERE MEETIN[r] [once-now of pre-were-meetin rule] you have a full party available."
+"gaunt"	"raider"	"rater"	hom-gaunt-rater rule	false	true	true	false	false	worm eaten	pre-gaunt-raider rule	post-gaunt-raider rule	--	--
+"were"	"meetin"	"wier|whirr|warm|eden|war|meeting"	hom-whirr-meetin rule	false	true	true	false	false	worm eaten	pre-were-meetin rule	post-were-meetin rule	--	"You will be able to say [b]WERE MEETIN[r] [once-now of pre-were-meetin rule] you have a full party available."
 "my"	"corps"	"core"	hom-my-core rule	false	true	true	false	false	worm eaten	pre-my-corps rule	post-my-corps rule	--	"You can call your companions [b]MY CORPS[r] [if pals-made < 2]once you have companions[else if pals-made < pals-needed]once you have enough of them[else][once-now of sco-treat-all] you've shared something together[end if]."
-"cease"	"cull"	"seize"	hom-cease-cull rule	false	true	true	false	false	Doom Ending	pre-cease-cull rule	post-cease-cull rule	--	--
+"cease"	"cull"	"seas|sees|seize"	hom-cease-cull rule	false	true	true	false	false	Doom Ending	pre-cease-cull rule	post-cease-cull rule	--	--
 "wipe"	"out"	--	--	false	true	true	false	false	Doom Ending	pre-wipe-out rule	post-wipe-out rule	--	"You will want to [b]WIPE OUT[r] the cause of your problems [once-now of sco-cease-cull] you have them in your crosshairs[if the room down from naffhaze is nowhere]. That's probably not for a while, though[end if]."
 "wide"	"vision"	--	--	false	true	false	false	false	Doom Ending	pre-wide-vision rule	post-wide-vision rule	--	"Sadly, you didn't quite experience enough to spread your wide vision."
 "do|due"	"mend|mending"	"dew"	--	false	true	true	false	false	Doom Ending	pre-do-due-mend rule	post-do-due-mend rule	--	"You can think [b]DO/DUE MEND/MENDING[r] [once-now of sco-wipe-out] you've disposed of the sea skull."
@@ -785,6 +785,9 @@ a wordtwisting rule (this is the pre-gaunt-raider rule):
 	if player is not in worm eaten or gone traitor is not in worm eaten, unavailable;
 	ready;
 
+this is the hom-gaunt-rater rule:
+	say "Hmm. You need someone much more active than that. Someone who can help with rebellion, not just whine about things that are wrong."
+
 this is the post-gaunt-raider rule:
 	now sco-gaunt-raider is true;
 	say "After some discussion, you work out a plan to make the gone trader reframe what they did. Whoever they were, the evil powers, they rejected them instead of doubling down. Perhaps there is a way to get back at them. They know things you never could hope to.";
@@ -808,7 +811,9 @@ a wordtwisting rule (this is the followers-check rule):
 		not-yet;
 
 this is the hom-whirr-meetin rule:
-	if the player's command includes "whirr":
+	if the player's command includes "meeting":
+		say "That sounds a bit too informal and serious. Especially since the room has no ending g.";
+	else if the player's command includes "whirr":
 		say "Close, but you don't need a whirr noise.";
 	else:
 		say "You don't need to change this place's complexion here. It's cozy, a place for people to be together. But how?"
@@ -855,7 +860,10 @@ a wordtwisting rule (this is the pre-cease-cull rule):
 	ready;
 
 this is the hom-cease-cull rule:
-	say "No, seizing is the last thing you want the skull to do. And you aren't foolish enough to want to seize power."
+	if the player's command includes "seize":
+		say "No, seizing is the last thing you want the skull to do. And you aren't foolish enough to want to seize power.";
+	else:
+		say "You don't need to see more seas. In fact, you need things to settle down."
 
 this is the post-cease-cull rule:
 	now sco-cease-cull is true;

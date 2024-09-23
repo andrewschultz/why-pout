@@ -291,7 +291,7 @@ KeepIller is a room in Universal. printed name is "Keep (Iller)". "This keep has
 check going south in KeepIller:
 	if sco-knife-right is true, say "You don't need or want to go back there." instead;
 	if pals-made is 0:
-		say "You try to go west, but with no support, you're just too scared." instead;
+		say "You try to go south, but with no support, you're just too scared." instead;
 	else if pals-made is 1:
 		say "Even with [the random friendly follower]'s support, you are still terrified of what is south. You may need just a bit more." instead;
 	else:
@@ -554,8 +554,11 @@ after printing the locale description of Worm Eaten when sco-were-meetin is true
 	continue the action;
 
 check going down in Worm Eaten:
-	if sco-the-file is false, say "Hmm. You still feel like you're missing some plans, some intelligence, even though you have everything else. The [raider] found it easy to get kicked out, but you need detailed plans how to get back in." instead;
+	if sco-the-file is false, say "Hmm. You still feel like you're missing some plans, some intelligence, even though you have everything else. The [raider-traitor] found it easy to get kicked out, but you need detailed plans how to get back in." instead;
 	remove-swear-bonus;
+
+to say raider-traitor:
+	say "[if gone traitor is moot]gaunt raider[else]gone traitor[end if]";
 
 chapter gone trader
 
