@@ -788,7 +788,7 @@ rule for supplying a missing noun when ting:
 	the rule fails;
 
 check ting:
-	if noun is skull, say "It's the big fight. You need action, not talk." instead;
+	if noun is skull, say "You doubt the skull would have anything to say beyond 'I'm all I MAUL!' or 'Help our hell-power!'" instead;
 	if noun is the player:
 		if sco-an-aim is false:
 			say "You feel too grumpy for positive self-talk. You mumble 'I molder. I'm older.'" instead;
@@ -860,6 +860,7 @@ check taking:
 book waiting
 
 check waiting:
+	if number of friendly followers > 0, say "You wait, aware too much 'we're staying' would prompt 'worst, eh'-ing." instead;
 	say "Ideally I-D-L-E!" instead;
 
 volume cheating
@@ -896,6 +897,7 @@ carry out warponing:
 			now idid entry is true;
 			now think-cue entry is false;
 			process the run-rule entry;
+			now gs-war-pawn-used is true;
 			if debug-state is true:
 				say "[line break]Keeping war pawn.";
 			else:

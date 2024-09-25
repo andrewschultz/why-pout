@@ -129,7 +129,7 @@ a wordtwisting rule (this is the pre-pole-east rule):
 
 this is the post-pole-east rule:
 	now sco-pole-east is true;
-	say "Ah, yes. It makes sense. You find the pole. Strangely, there's just a single switch to flip. And even more strangely, the switch you flip causes the pole to revert into the ground. Yay![paragraph break]But there's more! A war pawn, like a chess piece, rolls into view. It looks pretty powerful. Maybe you see how to use it, but maybe you shouldn't use it right away.";
+	say "Ah, yes. It makes sense. You find the pole. Strangely, there's just a single switch to flip. And even more strangely, the switch you flip causes the pole to revert into the ground. Yay![paragraph break]But there's more! A war pawn, like a chess piece, rolls into view. It looks pretty powerful. As you take it, you reflect that you may wish to save it for down the road when you're really stuck somewhere.";
 	now player has war pawn;
 	reveal Lobe End to east;
 	check-worm-eaten;
@@ -1075,7 +1075,7 @@ rule for printing a parser error when the latest parser error is the not a verb 
 		say "You're stuck with what to do right now. Perhaps you can use your senses for clues, or [b]THINK[r], or look inward[if gs-examined-self is true] again with X ME[end if], to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.";
 		increment first-point-clue-flag;
 		if gs-parser-error-note is false:
-			say "[line break][i][bracket][b]NOTE[r][i]: until the main area, parser verb errors like this will give occasional hints. So don't be afraid to try stuff.[close bracket][r][line break]";
+			say "[line break][i][bracket][b]NOTE[r][i]: until the main area, parser verb errors like this will give occasional general hints. So don't be afraid to try stuff.[close bracket][r][line break]";
 			now gs-parser-error-note is true;
 			the rule succeeds;
 		increment counter-zero-points;
@@ -1107,9 +1107,9 @@ to say random-taunt:
 
 table of zero point taunts
 sortval	taunt-text
--3	"'Way to wait, ooh!'"
--2	"'Nothing you've tried has worked. You'd be better off [b]WAIT[r]ing or typing nothing.'"
--1	"'Find a fine day,' just like your original captors."
+-3	"'Nothing you've tried has worked. You'd be better off [b]WAIT[r]ing or typing nothing.'"
+-2	"'Find a fine day,' just like your original captors."
+-1	"'Oh, fog, oaf! Augh!'"
 0	"'Bro, clues? Broke! Lose!'"
 0	"'Boost-op? Boo! Stop!'"
 0	"'Duh, DO?! Dud, ooh!'"
