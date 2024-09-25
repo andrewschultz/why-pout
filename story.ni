@@ -56,6 +56,10 @@ chapter may be changed
 
 to game-specific-cleanup: do nothing;
 
+section debug version
+
+include Inventory Checking Each Turn by Andrew Schultz.
+
 chapter move to global
 
 when play begins:
@@ -917,6 +921,10 @@ carry out warponing:
 		say "The war pawn stays still and even feels a bit cold. Perhaps there's nothing left that specifically needs doing here.";
 	now verb-dont-print is false;
 	the rule succeeds;
+
+section debug testing
+
+report warponing: follow the check inventory change rule;
 
 volume parser errors
 

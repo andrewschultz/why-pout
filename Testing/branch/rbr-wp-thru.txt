@@ -13,6 +13,7 @@ file=reg-wp-thru-alt-verbs.txt,alt,walkthrough with altverb tests
 file=reg-wp-thru-mistakes.txt,mis,walkthrough testing all mistakes
 file=reg-wp-thru-homonyms.txt,hom,walkthrough testing homonyms
 file=reg-wp-thru-goto.txt,goto/gt/go,walkthrough testing GOTO
+file=reg-wp-thru-lookinv.txt,li/look/inv,walkthrough testing inventory and room description changes
 
 #--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
 #--strict-file: this says that the project requires strict section marking e.g. @all instead of ==t1.
@@ -38,6 +39,9 @@ file=reg-wp-thru-goto.txt,goto/gt/go,walkthrough testing GOTO
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
 
 * main-thru
+
+@li
+>ion
 
 @all
 #testcase-room-names-eh-raw-air-aww
@@ -225,6 +229,10 @@ by a point
 
 >pole east
 by a point
+
+@li
+A war pawn, like a chess piece, rolls into view. It looks pretty powerful. As you take it, you reflect that you may wish to save it for down the road when you're really stuck somewhere.
+  a war pawn
 
 @all,rej
 {--rej}#testcase-check-pre-pole-east-rule-fallthrough
