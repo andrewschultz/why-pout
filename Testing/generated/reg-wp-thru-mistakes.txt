@@ -22,6 +22,10 @@ by a point
 >pry stalk
 by a point
 
+#testcase-mistake-why-pout-ace-talk
+>ace talk
+All ace talk you have made and will make come from within. Besides, you need to use the stalk to find a way out.
+
 >high plain
 by a point
 

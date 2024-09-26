@@ -152,6 +152,11 @@ You need to name where to go up to.
 >hi plane
 {$REJHOM}
 
+@mis
+#testcase-mistake-why-pout-ace-talk
+>ace talk
+All ace talk you have made and will make come from within. Besides, you need to use the stalk to find a way out.
+
 >high plain
 by a point
 

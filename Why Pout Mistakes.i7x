@@ -4,6 +4,10 @@ Version 1/240825 of Why Pout Mistakes by Andrew Schultz begins here.
 
 volume mistakes
 
+chapter hype lane
+
+understand "ace talk" as a mistake ("All ace talk you have made and will make come from within. Besides, you need to use the stalk to find a way out.") when player has stalk.
+
 chapter we loan
 
 understand "babylon" as a mistake ("It's a bit beyond your power to whisk someone who'll babble on back to Babylon, but I must salute your clever try! I missed it, but a tester saw it.") when merchant is touchable.
