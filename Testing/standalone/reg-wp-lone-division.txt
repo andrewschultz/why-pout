@@ -1,0 +1,1768 @@
+## reg-wp-lone-warpon.txt
+** game: /home/andrew/prt/debug-why-pout.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* got20
+
+>{include}_1yes
+>{include}_2yes
+>{include}_3yes
+>{include}_4yes
+>{include}_5yes
+>{include}_6yes
+>{include}_7yes
+>{include}_8yes
+>{include}_9yes
+>{include}_10yes
+>{include}_11yes
+>{include}_12yes
+>{include}_13yes
+>{include}_14yes
+>{include}_15yes
+>{include}_16yes
+>{include}_17yes
+>{include}_18yes
+>{include}_19yes
+>{include}_20yes
+>{include}_endgame
+
+>wide vision
+Your score just went up by a bonus point!
+
+#testcase-check-pre-wide-vision-rule-fallthrough
+#testcase-run-post-wide-vision-rule-default
+Your experiences and failures give you a leadership you don't know you had. You convince your companions to do more than just save their own hides. You lay out a vision so scourges from the likes of the sea skull are less likely to happen again, or it will take longer. And everyone listens! A few even say "Worth inking, we're thinking!"
+They're eager for the final step, to get out there. You look around. It's pretty clear what must occur, or it will be, soon.
+
+>do mending
+by a point
+Your score just went up by a point!
+
+#testcase-run-post-do-due-mend-rule-if-sco-wide-vision-is-false
+Beat all! Be tall!
+
+* got19
+
+>{include}_1yes
+>{include}_2yes
+>{include}_3yes
+>{include}_4yes
+>{include}_5yes
+>{include}_6yes
+>{include}_7yes
+>{include}_8yes
+>{include}_9yes
+>{include}_10yes
+>{include}_11yes
+>{include}_12yes
+>{include}_13yes
+>{include}_14yes
+>{include}_15yes
+>{include}_16yes
+>{include}_17yes
+>{include}_18yes
+>{include}_19yes
+>{include}_20no
+>{include}_endgame
+>wide vision
+!bonus point
+You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.
+You make your sales pitch for more than just saving one's own skin. And it's more than a sales pitch! You try not to worry whether you have a captive audience, and you don't, until -- one small glib slip, where you were pretty sure you had to be right, but you weren't. Ouch. Your companions say there's nobody else they'd rather have lead them. Why, they look up to you almost as much as their parents! It hurts them to move on. And the issue is finely balanced. But they'll need to, with things done here. They'll take this lesson back to their villages, or wherever. Honest they will!
+
+>do mending
+by a point
+Your score just went up by a point!
+Gray day?! Grade A!
+
+* got18
+
+>{include}_1yes
+>{include}_2yes
+>{include}_3yes
+>{include}_4yes
+>{include}_5yes
+>{include}_6yes
+>{include}_7yes
+>{include}_8yes
+>{include}_9yes
+>{include}_10yes
+>{include}_11yes
+>{include}_12yes
+>{include}_13yes
+>{include}_14yes
+>{include}_15yes
+>{include}_16yes
+>{include}_17yes
+>{include}_18yes
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+!bonus point
+You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.
+You discuss your journey and its ups and downs. It seems like you have just about everyone on board. They want to put their doubts aside, but for whatever reason, they just can't quite go along with you.
+
+>do mending
+by a point
+Your score just went up by a point!
+Gray day?! Grade A!
+
+* got17
+
+>{include}_1yes
+>{include}_2yes
+>{include}_3yes
+>{include}_4yes
+>{include}_5yes
+>{include}_6yes
+>{include}_7yes
+>{include}_8yes
+>{include}_9yes
+>{include}_10yes
+>{include}_11yes
+>{include}_12yes
+>{include}_13yes
+>{include}_14yes
+>{include}_15yes
+>{include}_16yes
+>{include}_17yes
+>{include}_18no
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+!bonus point
+You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.
+You discuss your journey and its ups and downs. It seems like you have just about everyone on board. They want to put their doubts aside, but for whatever reason, they just can't quite go along with you.
+
+>do mending
+by a point
+Your score just went up by a point!
+Gray day?! Grade A!
+
+* got16
+
+>{include}_1yes
+>{include}_2yes
+>{include}_3yes
+>{include}_4yes
+>{include}_5yes
+>{include}_6yes
+>{include}_7yes
+>{include}_8yes
+>{include}_9yes
+>{include}_10yes
+>{include}_11yes
+>{include}_12yes
+>{include}_13yes
+>{include}_14yes
+>{include}_15yes
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+!bonus point
+You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.
+You're pretty good with words. (You had to be, to make it this far.) You learned what to say, and then you learned when and how. But you haven't quite learned enough to persuade your companions your leadership should carry over.
+
+>do mending
+by a point
+Your score just went up by a point!
+Gray day?! Grade A!
+
+* got15
+
+>{include}_1yes
+>{include}_2yes
+>{include}_3yes
+>{include}_4yes
+>{include}_5yes
+>{include}_6yes
+>{include}_7yes
+>{include}_8yes
+>{include}_9yes
+>{include}_10yes
+>{include}_11yes
+>{include}_12yes
+>{include}_13yes
+>{include}_14yes
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+!bonus point
+You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.
+You look back on your journey, bringing up many hurdles and barriers, mental and physical. It doesn't totally hit the mark. Your companions assure you you've inspired them to do something someday. But your store hasn't quite captured their imaginations and hearts.
+
+>do mending
+by a point
+Your score just went up by a point!
+Gray day?! Grade A!
+
+* got14
+
+>{include}_1yes
+>{include}_2yes
+>{include}_3yes
+>{include}_4yes
+>{include}_5yes
+>{include}_6yes
+>{include}_7yes
+>{include}_8yes
+>{include}_9yes
+>{include}_10yes
+>{include}_11yes
+>{include}_12yes
+>{include}_13yes
+>{include}_14no
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+!bonus point
+You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.
+You look back on your journey, bringing up many hurdles and barriers, mental and physical. It doesn't totally hit the mark. Your companions assure you you've inspired them to do something someday. But your store hasn't quite captured their imaginations and hearts.
+
+>do mending
+by a point
+Your score just went up by a point!
+Gray day?! Grade A!
+
+* got13
+
+>{include}_1yes
+>{include}_2yes
+>{include}_3yes
+>{include}_4yes
+>{include}_5yes
+>{include}_6yes
+>{include}_7yes
+>{include}_8yes
+>{include}_9yes
+>{include}_10yes
+>{include}_11yes
+>{include}_12yes
+>{include}_13no
+>{include}_14no
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+!bonus point
+You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.
+You've had struggles figuring what to do, sure, but so have they, and the dialogue degenerates into who struggled more. Nothing gets done.
+
+>do mending
+by a point
+Your score just went up by a point!
+Gray day?! Grade A!
+
+* got12
+
+>{include}_1yes
+>{include}_2yes
+>{include}_3yes
+>{include}_4yes
+>{include}_5yes
+>{include}_6yes
+>{include}_7yes
+>{include}_8yes
+>{include}_9yes
+>{include}_10yes
+>{include}_11yes
+>{include}_12no
+>{include}_13no
+>{include}_14no
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+!bonus point
+You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.
+You've had struggles figuring what to do, sure, but so have they, and the dialogue degenerates into who struggled more. Nothing gets done.
+
+>do mending
+by a point
+Your score just went up by a point!
+Gray day?! Grade A!
+
+* got11
+
+>{include}_1yes
+>{include}_2yes
+>{include}_3yes
+>{include}_4yes
+>{include}_5yes
+>{include}_6yes
+>{include}_7yes
+>{include}_8yes
+>{include}_9yes
+>{include}_10yes
+>{include}_11no
+>{include}_12no
+>{include}_13no
+>{include}_14no
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+!bonus point
+You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.
+While you often ran into situations where you felt unprepared, and there was a good deal of temporary failure along the way, you wound up seeing and feeling nothing crushing from all this delay and distraction. So you don't communicate your vision of growth all that well.
+
+>do mending
+by a point
+Your score just went up by a point!
+Gray day?! Grade A!
+
+* got10
+
+>{include}_1yes
+>{include}_2yes
+>{include}_3yes
+>{include}_4yes
+>{include}_5yes
+>{include}_6yes
+>{include}_7yes
+>{include}_8yes
+>{include}_9yes
+>{include}_10no
+>{include}_11no
+>{include}_12no
+>{include}_13no
+>{include}_14no
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+!bonus point
+You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.
+While you often ran into situations where you felt unprepared, and there was a good deal of temporary failure along the way, you wound up seeing and feeling nothing crushing from all this delay and distraction. So you don't communicate your vision of growth all that well.
+
+>do mending
+by a point
+Your score just went up by a point!
+Gray day?! Grade A!
+
+* got9
+
+>{include}_1yes
+>{include}_2yes
+>{include}_3yes
+>{include}_4yes
+>{include}_5yes
+>{include}_6yes
+>{include}_7yes
+>{include}_8yes
+>{include}_9no
+>{include}_10no
+>{include}_11no
+>{include}_12no
+>{include}_13no
+>{include}_14no
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+!bonus point
+You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.
+You relate how some of the time, you had to put off what you really wanted to do for something else, but you have to admit, there weren't all that many roadblocks. There could have been more. Maybe you zoomed past a few.
+
+>do mending
+by a point
+Your score just went up by a point!
+Gray day?! Grade A!
+
+* got8
+
+>{include}_1yes
+>{include}_2yes
+>{include}_3yes
+>{include}_4yes
+>{include}_5yes
+>{include}_6yes
+>{include}_7yes
+>{include}_8no
+>{include}_9no
+>{include}_10no
+>{include}_11no
+>{include}_12no
+>{include}_13no
+>{include}_14no
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+!bonus point
+You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.
+You relate how some of the time, you had to put off what you really wanted to do for something else, but you have to admit, there weren't all that many roadblocks. There could have been more. Maybe you zoomed past a few.
+
+>do mending
+by a point
+Your score just went up by a point!
+Gray day?! Grade A!
+
+* got7
+
+>{include}_1yes
+>{include}_2yes
+>{include}_3yes
+>{include}_4yes
+>{include}_5yes
+>{include}_6yes
+>{include}_7yes
+>{include}_8no
+>{include}_9no
+>{include}_10no
+>{include}_11no
+>{include}_12no
+>{include}_13no
+>{include}_14no
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+!bonus point
+You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.
+You relate how some of the time, you had to put off what you really wanted to do for something else, but you have to admit, there weren't all that many roadblocks. There could have been more. Maybe you zoomed past a few.
+
+>do mending
+by a point
+Gray day?! Grade A!
+
+* got6
+
+>{include}_1yes
+>{include}_2yes
+>{include}_3yes
+>{include}_4yes
+>{include}_5yes
+>{include}_6yes
+>{include}_7no
+>{include}_8no
+>{include}_9no
+>{include}_10no
+>{include}_11no
+>{include}_12no
+>{include}_13no
+>{include}_14no
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+!bonus point
+You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.
+You had some struggles beyond just "what do do now," sure, and said struggles were interesting, but your companions had many, many more. Your words feel inadequate.
+
+>do mending
+by a point
+Gray day?! Grade A!
+
+* got5
+
+>{include}_1yes
+>{include}_2yes
+>{include}_3yes
+>{include}_4yes
+>{include}_5yes
+>{include}_6no
+>{include}_7no
+>{include}_8no
+>{include}_9no
+>{include}_10no
+>{include}_11no
+>{include}_12no
+>{include}_13no
+>{include}_14no
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+!bonus point
+You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.
+You had some struggles beyond just "what do do now," sure, and said struggles were interesting, but your companions had many, many more. Your words feel inadequate.
+
+>do mending
+by a point
+Gray day?! Grade A!
+
+* got4
+
+>{include}_1yes
+>{include}_2yes
+>{include}_3yes
+>{include}_4yes
+>{include}_5no
+>{include}_6no
+>{include}_7no
+>{include}_8no
+>{include}_9no
+>{include}_10no
+>{include}_11no
+>{include}_12no
+>{include}_13no
+>{include}_14no
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+!bonus point
+You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.
+You mention a few detours you had, and the wisdom you allegedly gained from them, but mentioning them does feel sort of like pandering.
+
+>do mending
+by a point
+Gray day?! Grade A!
+
+* got3
+
+>{include}_1yes
+>{include}_2yes
+>{include}_3yes
+>{include}_4no
+>{include}_5no
+>{include}_6no
+>{include}_7no
+>{include}_8no
+>{include}_9no
+>{include}_10no
+>{include}_11no
+>{include}_12no
+>{include}_13no
+>{include}_14no
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+!bonus point
+You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.
+You mention a few detours you had, and the wisdom you allegedly gained from them, but mentioning them does feel sort of like pandering.
+
+>do mending
+by a point
+Gray day?! Grade A!
+
+* got2
+
+>{include}_1yes
+>{include}_2yes
+>{include}_3no
+>{include}_4no
+>{include}_5no
+>{include}_6no
+>{include}_7no
+>{include}_8no
+>{include}_9no
+>{include}_10no
+>{include}_11no
+>{include}_12no
+>{include}_13no
+>{include}_14no
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+!bonus point
+You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.
+You only barely got your feet wet with tough problems. You come off as someone who is way too concerned about getting things right the first time.
+
+>do mending
+by a point
+Gray day?! Grade A!
+
+* got1
+
+>{include}_1yes
+>{include}_2no
+>{include}_3no
+>{include}_4no
+>{include}_5no
+>{include}_6no
+>{include}_7no
+>{include}_8no
+>{include}_9no
+>{include}_10no
+>{include}_11no
+>{include}_12no
+>{include}_13no
+>{include}_14no
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+!bonus point
+You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.
+You only barely got your feet wet with tough problems. You come off as someone who is way too concerned about getting things right the first time.
+
+>do mending
+by a point
+Gray day?! Grade A!
+
+* got0
+
+>{include}_1no
+>{include}_2no
+>{include}_3no
+>{include}_4no
+>{include}_5no
+>{include}_6no
+>{include}_7no
+>{include}_8no
+>{include}_9no
+>{include}_10no
+>{include}_11no
+>{include}_12no
+>{include}_13no
+>{include}_14no
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+!bonus point
+You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.
+You come off as someone who just glided through things, knowing exactly what to do, when and where, encountering little, if any, REAL adversity. Surely, your companions muse, you'll be able to get the whole leadership thing right without them! It stings a bit.
+You ask for credit because you didn't use the war pawn, but that seems irrelevant. They didn't know you had one!
+"It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have ignored it."
+NOTE: there's nothing
+
+>do mending
+by a point
+Gray day?! Grade A!
+
+* 0pawn-b1
+
+>{include}_1no
+>{include}_2no
+>{include}_3no
+>{include}_4no
+>{include}_5no
+>{include}_6no
+>{include}_7no
+>{include}_8no
+>{include}_9no
+>{include}_10no
+>{include}_11no
+>{include}_12no
+>{include}_13no
+>{include}_14no
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_18.5-1
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+You ask for credit because you didn't use the war pawn, but that seems irrelevant. They didn't know you had one!
+"It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have chickened out from going in."
+
+* 0pawn-b1a
+
+>{include}_1no
+>{include}_2no
+>{include}_3no
+>{include}_4no
+>{include}_5no
+>{include}_6no
+>{include}_7no
+>{include}_8no
+>{include}_9no
+>{include}_10no
+>{include}_11no
+>{include}_12no
+>{include}_13no
+>{include}_14no
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_18.5-1a
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+You ask for credit because you didn't use the war pawn, but that seems irrelevant. They didn't know you had one!
+"It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have left just as I got there."
+
+* 0pawn-b2
+
+>{include}_1no
+>{include}_2no
+>{include}_3no
+>{include}_4no
+>{include}_5no
+>{include}_6no
+>{include}_7no
+>{include}_8no
+>{include}_9no
+>{include}_10no
+>{include}_11no
+>{include}_12no
+>{include}_13no
+>{include}_14no
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_18.5-2
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+You ask for credit because you didn't use the war pawn, but that seems irrelevant. They didn't know you had one!
+"It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have left the crude orc."
+
+* 0pawn-b3
+
+>{include}_1no
+>{include}_2no
+>{include}_3no
+>{include}_4no
+>{include}_5no
+>{include}_6no
+>{include}_7no
+>{include}_8no
+>{include}_9no
+>{include}_10no
+>{include}_11no
+>{include}_12no
+>{include}_13no
+>{include}_14no
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_18.5-3
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+You ask for credit because you didn't use the war pawn, but that seems irrelevant. They didn't know you had one!
+"It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have chickened out right after I rescued the crude orc."
+
+* 0pawn-b4
+
+>{include}_1no
+>{include}_2no
+>{include}_3no
+>{include}_4no
+>{include}_5no
+>{include}_6no
+>{include}_7no
+>{include}_8no
+>{include}_9no
+>{include}_10no
+>{include}_11no
+>{include}_12no
+>{include}_13no
+>{include}_14no
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_18.5-4
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+You ask for credit because you didn't use the war pawn, but that seems irrelevant. They didn't know you had one!
+"It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have left things undone."
+
+* 0pawn-b9
+
+>{include}_1no
+>{include}_2no
+>{include}_3no
+>{include}_4no
+>{include}_5no
+>{include}_6no
+>{include}_7no
+>{include}_8no
+>{include}_9no
+>{include}_10no
+>{include}_11no
+>{include}_12no
+>{include}_13no
+>{include}_14no
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_18.5-9
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+You ask for credit because you didn't use the war pawn, but that seems irrelevant. They didn't know you had one!
+"It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have enjoyed tearing through it all."
+
+* 0pawnfail
+
+>{include}_1no
+>{include}_2no
+>{include}_3no
+>{include}_4no
+>{include}_5pawnfail
+>{include}_6no
+>{include}_7no
+>{include}_8no
+>{include}_9no
+>{include}_10no
+>{include}_11no
+>{include}_12no
+>{include}_13no
+>{include}_14no
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+"Oh! Must be that I tried to use that war pawn. Lesson learnt."
+"It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have ignored it."
+
+* 0pawnlater
+
+>{include}_1no
+>{include}_2no
+>{include}_3no
+>{include}_4no
+>{include}_5no
+>{include}_6no
+>{include}_7no
+>{include}_8no
+>{include}_9pawnlater
+>{include}_10no
+>{include}_11no
+>{include}_12no
+>{include}_13no
+>{include}_14no
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+"Oh! Must be that I tried to use that war pawn. Lesson learnt."
+
+* 0pawnsuccess
+
+>{include}_1no
+>{include}_2no
+>{include}_3no
+>{include}_4no
+>{include}_5pawnsuccess
+>{include}_6no
+>{include}_7no
+>{include}_8no
+>{include}_9no
+>{include}_10no
+>{include}_11no
+>{include}_12no
+>{include}_13no
+>{include}_14no
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+>{include}_19no
+>{include}_20no
+>{include}_endgame
+>wide vision
+"Oh! Must be that I used that war pawn. Lesson learnt."
+
+* _1yes
+
+>an aim
+by a point
+
+>wipe out
+THINK
+
+* _1no
+
+>an aim
+by a point
+
+* _2yes
+
+>two maps
+by a point
+
+>my corps
+THINK
+
+* _2no
+
+>two maps
+by a point
+
+* _3yes
+
+>self owns
+by a point
+
+>high plane
+THINK
+
+* _3no
+
+>self owns
+by a point
+
+* _4yes
+
+>pry stalk
+by a point
+
+>high plain
+by a point
+
+>nah phase
+by a point
+
+>pole east
+by a point
+
+>grow star
+by a point
+
+>n
+
+>low door
+THINK
+
+* _4no
+
+>pry stalk
+by a point
+
+>high plain
+by a point
+
+>nah phase
+by a point
+
+>pole east
+by a point
+
+>grow star
+by a point
+
+>n
+
+* _5yes
+
+>hideout
+by a point
+
+>d
+
+>boost role
+by a point
+
+>u
+
+>s
+
+>shore trail
+by a point
+
+>key pillar
+by a point
+
+>w
+
+>gnome old
+THINK
+
+* _5no
+
+>hideout
+by a point
+
+>d
+
+>boost role
+by a point
+
+>u
+
+>s
+
+>shore trail
+by a point
+
+>key pillar
+by a point
+
+>w
+
+* _5pawnfail
+
+>hideout
+by a point
+
+>d
+
+>boost role
+by a point
+
+>u
+
+>s
+
+>shore trail
+by a point
+
+>key pillar
+by a point
+
+>warp on
+!point
+
+>w
+
+* _5pawnsuccess
+
+>hide out
+by a point
+
+>d
+
+>warp on
+by a point
+
+>u
+
+>s
+
+>shore trail
+by a point
+
+>key pillar
+by a point
+
+>w
+
+* _6yes
+
+>rogue old
+THINK
+
+* _6no
+
+* _7yes
+
+>see design
+THINK
+
+* _7no
+
+* _8yes
+
+>manna curb
+THINK
+
+* _8no
+
+* _9yes
+
+>e
+
+>n
+
+>wool frock
+by a point
+
+>s
+
+>s
+
+>bay sale
+THINK
+
+* _9no
+
+>e
+
+>n
+
+>wool frock
+by a point
+
+>s
+
+>s
+
+* _9pawnlater
+
+>e
+
+>n
+
+>wool frock
+by a point
+
+>warp on
+The war pawn rattles briefly in your hand, like it means to do something, but it's not ready. Or maybe you aren't. Yet.
+
+>s
+
+>s
+
+>bay sale
+THINK
+
+*_10yes
+
+>known ocean
+by a point
+
+>six quid
+by a point
+
+>n
+
+>e
+
+>low bend
+by a point
+
+>bay sale
+by a point
+
+>n
+
+>store mile
+by a point
+
+>mice tall
+THINK
+
+*_10no
+
+>known ocean
+by a point
+
+>six quid
+by a point
+
+>n
+
+>e
+
+>low bend
+by a point
+
+>bay sale
+by a point
+
+>n
+
+>store mile
+by a point
+
+*_11yes
+
+>s
+
+>w
+
+>w
+
+>gnome old
+by a point
+
+>e
+
+>e
+
+>n
+
+>mice tall
+by a point
+
+>s
+
+>w
+
+>n
+
+>low door
+by a point
+
+>in
+
+>well own
+by a point
+
+>whee lone
+THINK
+
+*_11no
+
+>s
+
+>w
+
+>w
+
+>gnome old
+by a point
+
+>e
+
+>e
+
+>n
+
+>mice tall
+by a point
+
+>s
+
+>w
+
+>n
+
+>low door
+by a point
+
+>in
+
+>well own
+by a point
+
+*_12yes
+
+>bile oh
+THINK
+
+*_12no
+
+*_13yes
+
+>summer chant
+by a point
+
+>bile oh
+by a point
+
+>whee lone
+by a point
+
+>oh flyer
+THINK
+
+*_13no
+
+>summer chant
+by a point
+
+>bile oh
+by a point
+
+>whee lone
+by a point
+
+*_14yes
+
+>out
+
+>s
+
+>w
+
+>rogue old
+by a point
+
+>see design
+by a point
+
+>knife rite
+by a point
+
+>plan tracker
+by a point
+
+>e
+
+>n
+
+>in
+
+>oh flier
+by a point
+
+>the file
+THINK
+
+*_14no
+
+>out
+
+>s
+
+>w
+
+>rogue old
+by a point
+
+>see design
+by a point
+
+>knife rite
+by a point
+
+>plan tracker
+by a point
+
+>e
+
+>n
+
+>in
+
+>oh flier
+by a point
+
+*_15yes
+
+>grow vial
+THINK
+
+*_15no
+
+*_16yes
+
+>war file
+THINK
+
+*_16no
+
+*_17yes
+
+>out
+
+>s
+
+>s
+
+>war file
+by a point
+
+>wan dwarf
+by a point
+
+>grow vial
+by a point
+
+>n
+
+>e
+
+>n
+
+>mensch elf
+by a point
+
+>n
+
+>tree small
+by a point
+
+>treat all
+THINK
+
+*_17no
+
+>out
+
+>s
+
+>s
+
+>war file
+by a point
+
+>wan dwarf
+by a point
+
+>grow vial
+by a point
+
+>n
+
+>e
+
+>n
+
+>mensch elf
+by a point
+
+>n
+
+>tree small
+by a point
+
+*_18yes
+
+>s
+
+>s
+
+>w
+
+>d
+
+>were meetin
+THINK
+
+*_18no
+
+>s
+
+>s
+
+>w
+
+>d
+
+*_18.5-1
+
+>u
+
+>brew swears
+by a bonus point
+
+>d
+
+*_18.5-1a
+
+>u
+
+>brew swears
+by a bonus point
+
+>in
+
+>out
+
+>d
+
+*_18.5-2
+
+>u
+
+>brew swears
+by a bonus point
+
+>in
+
+>weak us
+by a bonus point
+
+>out
+
+>d
+
+*_18.5-3
+
+>u
+
+>brew swears
+by a bonus point
+
+>in
+
+>weak us
+by a bonus point
+
+>crew dork
+by a bonus point
+
+>out
+
+>d
+
+*_18.5-4
+
+#if this fails, we have a release build.
+>ao
+Un-random-sorting the list.
+
+>u
+
+>brew swears
+by a bonus point
+
+>in
+
+>weak us
+by a bonus point
+
+>crew dork
+by a bonus point
+
+>bastardy
+by a bonus point
+
+>out
+
+>d
+
+*_18.5-9
+
+#if this fails, we have a release build.
+>ao
+Un-random-sorting the list.
+
+>u
+
+>brew swears
+by a bonus point
+
+>in
+
+>weak us
+by a bonus point
+
+>crew dork
+by a bonus point
+
+>bastardy
+by a bonus point
+
+>heckle ass
+by a bonus point
+
+>huh shit
+by a bonus point
+
+>lie fuckers
+by a bonus point
+
+>were dicks
+by a bonus point
+
+>grin churls
+by a bonus point
+
+>out
+
+>d
+
+*_19yes
+
+>gaunt raider
+
+>t elf
+
+>t dwarf
+
+>t rogue
+
+>t raider
+
+>t gnome
+
+>t troll
+
+>t mice
+
+>tall cake
+THINK
+
+*_19no
+
+>gaunt raider
+
+>t elf
+
+>t dwarf
+
+>t rogue
+
+>t raider
+
+>t gnome
+
+>t troll
+
+>t mice
+
+*_20yes
+
+>u
+
+>w
+
+>manna curb
+by a point
+
+>e
+
+>e
+
+>n
+
+>n
+
+>tall cake
+by a point
+
+>treat all
+by a point
+
+>s
+
+>s
+
+>w
+
+>s
+
+>the file
+by a point
+
+>n
+
+>d
+
+>were meetin
+by a point
+
+>my corps
+by a point
+
+>d
+
+>do mending
+THINK
+
+*_20no
+
+>u
+
+>w
+
+>manna curb
+by a point
+
+>e
+
+>e
+
+>n
+
+>n
+
+>tall cake
+by a point
+
+>treat all
+by a point
+
+>s
+
+>s
+
+>w
+
+>s
+
+>the file
+by a point
+
+>n
+
+>d
+
+>were meetin
+by a point
+
+>my corps
+by a point
+
+>d
+
+* _endgame
+
+>cease cull
+by a point
+
+>wipe out
+by a point
