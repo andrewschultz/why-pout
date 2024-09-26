@@ -58,6 +58,17 @@ file=reg-wp-thru-lookinv.txt,li/look/inv,walkthrough testing inventory and room 
 
 >z
 
+@mis
+#testcase-mistake-why-pout-error
+>error
+You sense you're on the right track, but you feel your inner voice is stretching here a bit.
+You need to look inward to find something you lost before dealing with external stuff.
+\\
+#testcase-mistake-why-pout-error-text
+>error error
+You sense you're on the right track, but you feel your inner voice is stretching here a bit.
+You need to look inward to find something you lost before dealing with external stuff.
+
 >an aim
 by a point
 

@@ -4,6 +4,10 @@ Version 1/240825 of Why Pout Mistakes by Andrew Schultz begins here.
 
 volume mistakes
 
+chapter eh raw air aww
+
+understand "error" and "error [text]" as a mistake ("You sense you're on the right track, but you need to look inward to find something you lost before dealing with external stuff.") when player is in air aww and sco-an-aim is false.
+
 chapter hype lane
 
 understand "ace talk" as a mistake ("All ace talk you have made and will make come from within. Besides, you need to use the stalk to find a way out.") when player has stalk.
