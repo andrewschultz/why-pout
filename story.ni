@@ -730,10 +730,20 @@ chapter inventory
 
 check taking inventory:
 	if sco-wipe-out is false, say "There's that occasional voice ringing in your head asking 'Why pout?' But besides that ...";
-	now talk ache is mentioned;
+	now talk ache is not marked for listing;
+
+the get rid of ache standard inventory rule is listed instead of the print standard inventory rule in the carry out taking inventory rulebook.
+
+Carry out taking inventory (this is the get rid of ache standard inventory rule):
+	now all things carried by player are marked for listing;
+	issue library message taking inventory action number 2;
+	if player has talk ache, now talk ache is not marked for listing;
+	say ":[line break]";
+	list the contents of the player, with newlines, indented, including contents, listing marked items only,
+		giving inventory information, with extra indentation.
 
 report taking inventory when sco-six-quid is true and current-quid > 0:
-	say "You [if current-quid < 6]still [end if]have [current-quid in words] quid left from helping the sick squid.";
+	say "You [if current-quid < 6]still [end if]have [current-quid in words] quid [if current-quid < 6]left [end if]from helping the sick squid.";
 	continue the action;
 
 report taking inventory when sco-my-corps is false and sco-an-aim is true:
@@ -741,7 +751,7 @@ report taking inventory when sco-my-corps is false and sco-an-aim is true:
 	continue the action;
 
 report taking inventory when player has talk ache:
-	say "Oh, man. You still have that talk ache, too.";
+	say "Oh, man. You still have that talk-ache, too.";
 	continue the action;
 
 chapter sensing
