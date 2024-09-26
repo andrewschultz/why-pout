@@ -1,5 +1,13 @@
 List of in-comp updates
 
+9/26/2024 updates (1.12)
+--added responses to very-close-to-right guesses
+--bug fix where trying to solve 3 puzzles after solving them gave "can't do this yet"
+--inventory small bug fixes with one item printed twice (the ache) and other trivia
+--game text clarification for locations and can't go that way
+--added response for manipulating stalk (good guess) and first room's name
+--changed duplicate nudge at start
+
 9/7/2024 updates (1.11)
 --zapped THINK text for bonus-point reject at end of game
 --redacted room name you hadn't visited in "to say here-in of (rm - a room)"
