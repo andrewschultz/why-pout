@@ -253,6 +253,10 @@ check going inside in NaffHaze:
 		say "Your companions stay behind. They recognize this is a spiritual fight for you and you alone.";
 		now block-followers is true;
 
+check going north in NaffHaze when sco-grow-star is false and sco-nah-phase is true: say "The gross tar is in the way right now." instead;
+
+check going west in NaffHaze when sco-grow-star is false and sco-nah-phase is true: say "The keep (iller) is locked. You will need to find the key." instead;
+
 chapter war pawn
 
 the war pawn is a thing. description is "It's a grey chess pawn with a frown and mean glare carved in the rounded top. If it had fists, you are pretty sure they'd be doubled up in a fighting posture, but it doesn't even have arms.[paragraph break]Looking at it from many different angles gets you all sorts of weird ideas. Perhaps it could help you when you run out of them on your quest. You may wish to wait until you really need to use it, though of course, you don't want to wait too late.".
