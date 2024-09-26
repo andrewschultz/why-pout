@@ -207,7 +207,19 @@ the stalk is a thing. description is "Apparently, it's magical or something, and
 
 book Naff Haze
 
-NaffHaze is a privately-named room in universal. "[if sco-nah-phase is false]You're surrounded by some really naff haze. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it[else]Things have opened up a bit now, with the naff haze lifted[end if][if sco-pole-east is true]. You feel less policed, too, and you found a path [b]EAST[r][end if][if sco-grow-star is true].[paragraph break]You got rid of the gross tar blocking your way [b]NORTH[r][end if].". printed name is "[if sco-nah-phase is false]Naff Haze[else]High Plain[end if]".
+NaffHaze is a privately-named room in universal. "[if sco-nah-phase is false]You're surrounded by some really naff haze. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it[else]Things have opened up [ways-open] now, with the naff haze lifted[end if][if sco-pole-east is true]. You feel less policed, too, since you found a path [b]EAST[r][end if][if sco-grow-star is true].[paragraph break]You got rid of the gross tar blocking your way [b]NORTH[r][end if].". printed name is "[if sco-nah-phase is false]Naff Haze[else]High Plain[end if]".
+
+to say ways-open:
+	if plane-dir-score is 0:
+		say "to where you see potential paths";
+	else if plane-dir-score is 1:
+		say "a bit";
+	else if plane-dir-score is 2:
+		say "a bit more";
+	else if plane-dir-score is 3:
+		say "almost all the way";
+	else if plane-dir-score is 4:
+		say "in every cardinal direction"
 
 after printing the locale description for NaffHaze when sco-nah-phase is true and sco-pole-east is false:
 	say "You feel policed here. And it's the mean American gung-ho militarized sort of policed, not the (usually) kinder UK brand. Where and what is this policed feeling coming from?";
@@ -331,9 +343,9 @@ the plant racker is a thing in KeepIller. "A plant racker lies here, pretty much
 
 chapter plan tracker
 
-the plan tracker is a thing. description is "[if sco-war-file is true]You have notes for combat written in here[else]The plan tracker is currently blank, but maybe you can find plans for it[end if]."
+the plan tracker is a thing. description is "[if sco-war-file is true]You have notes for combat and leadership written in here[else]The plan tracker is currently blank, but maybe you can find plans for it[end if]."
 
-after printing the name of plan tracker when taking inventory: say " ([if sco-war-file is false]empty[else]full[end if] of ideas)"
+after printing the name of plan tracker when taking inventory: say " ([if sco-war-file is false]with no ideas yet[else]full of ideas[end if])"
 
 chapter seedy sign
 
@@ -414,7 +426,7 @@ report examining the flier:
 
 book Lobe End
 
-Lobe End is a room in universal. "[if sco-low-bend is false]This lobe of land appears to end in all directions except back west. Maybe you could look for something that might be a hill, even a steep one.[else]The low bend (former lobe end) now bends from west to north, where you see water, too much to cross on foot[raft-clue].[end if]". printed name is "[if sco-low-bend is true]Low Bend[else]Lobe End[end if]".
+Lobe End is a room in universal. "[if sco-low-bend is false]This lobe of land appears to fall off steeply in all directions except back west. Maybe you could look for something that might be a hill, even a steep one.[else]The low bend (former lobe end) now bends from west to north, where you see water, too much to cross on foot[raft-clue].[end if]". printed name is "[if sco-low-bend is true]Low Bend[else]Lobe End[end if]".
 
 to say raft-clue:
 	if sco-bay-sale is false, say ". Well, nobody's probably going to give you transport north for free. Maybe you can summon or find someone who will"

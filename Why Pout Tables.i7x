@@ -129,7 +129,7 @@ a wordtwisting rule (this is the pre-pole-east rule):
 
 this is the post-pole-east rule:
 	now sco-pole-east is true;
-	say "Ah, yes. It makes sense. You find the pole. Strangely, there's just a single switch to flip. And even more strangely, the switch you flip causes the pole to revert into the ground. Yay![paragraph break]But there's more! A war pawn, like a chess piece, rolls into view. It looks pretty powerful. As you take it, you reflect that you may wish to save it for down the road when you're really stuck somewhere.";
+	say "Ah, yes. It makes sense. You find the pole. Strangely, there's just a single switch to flip. And even more strangely, the switch you flip causes the pole to revert into the ground. Yay![paragraph break]But there's more! A war pawn, like a chess piece, rolls into view. It looks pretty powerful. As you take it, you reflect that you may wish to save it for down the road when you're really stuck somewhere. You have a good idea HOW to use it, at any rate.";
 	now player has war pawn;
 	reveal Lobe End to east;
 	check-worm-eaten;
@@ -182,7 +182,7 @@ a wordtwisting rule (this is the pre-wipe-out rule):
 
 this is the post-wipe-out rule:
 	now sco-wipe-out is true;
-	say "Well that does it! It's a big long fight, but you all prevail![paragraph break]Things are a bit of a mess, though. You feel something odd come between you and your companions now you're done. They wonder why they need to do any more. You could call the whole zeitgeist a why-division.";
+	say "Easier said than done, but since you all studied the plan tracker so well, it isn't impossible![paragraph break]Your makeshift weapons are just enough to distract the sea skull. It starts to focus on one party member, then the others taunt it, and it turns away. It's exhausting for you but even more exhausting for the skull, which eventually collapses and incinerates.[paragraph break]But after all the fireworks, there's a letdown. You feel something odd come between you and your companions now you're done. They wonder why they need to do any more. You could call the whole zeitgeist a why-division.";
 	move why division to Doom Ending;
 	moot sea skull;
 
@@ -373,8 +373,9 @@ a wordtwisting rule (this is the pre-treat-all rule):
 
 this is the post-treat-all rule:
 	now sco-treat-all is true;
-	say "Well, that felt good. You trade more ideas while chatting. You think you have about everything figured out, now.";
+	say "Wow, man! That was some good cake! Everyone shares more of their background over this meal.[paragraph break]The gaunt raider, in particular, has a lot to say, of past things they did that were horrible, that they think they're sorry for, but maybe not enough. Everyone assures the raider that they're the good guys now.[paragraph break]You offer the gaunt raider the knife (right) as a present. They seem scared to take it, but it doesn't burst into flames when they take it, so ... it must be right for them.";
 	moot tall cake;
+	moot knife right;
 
 section hype lane scoring
 
@@ -446,7 +447,7 @@ a wordtwisting rule (this is the pre-key-pillar rule):
 
 this is the post-key-pillar rule:
 	now sco-key-pillar is true;
-	say "You look around the pillars for a key, since there's no flowerpot to hide it under. You find one, and you open the way west.";
+	say "You look around the pillars for a key, since there's no flowerpot to hide it under. You find one, and once it unlocks the way west, you hide it, again.";
 	reveal KeepIller to west;
 	check-worm-eaten;
 
@@ -1126,7 +1127,7 @@ table of noways
 noway-rm	noway-txt
 Eh Raw Air Aww	"[if sco-an-aim is false][one of]'Grey trek? Great wreck!' [or]'I sit? Ice it!' [stopping]you moon. You can't see anywhere. You know almost nothing. I mean, you don't even have a name. What would you do even if there was a passage?[else]It looks like there are ways out, but you're disoriented enough, directions don't matter. You sure would like a way to see where you're going.[end if]"
 Hype Lane	"[if noun is not up]No sense faffing around horizontally. You're sick of being stuck underground[else if sco-pry-stalk is false]You need to find something that will help you go up[else]You need to name where to go up to[end if]."
-NaffHaze	"[if sco-nah-phase is false]Too tough to stumble around until the haze lifts. How to make that happen?[else if number of viable directions is 0]You feel like eventually you should be able to wander around, but you can't see anywhere to go, yet. There seem to be clues where to go, and how, if you look around.[else if plane-dir-score is 4]You can go down or in the cardinal directions, but not [noun].[else]You can't go [noun], but you can go [list of viable directions].[end if]"
+NaffHaze	"[if sco-nah-phase is false]Too risky to stumble around until the haze lifts. How to make that happen?[else if number of viable directions is 0]You feel like eventually you should be able to wander around, but you can't see anywhere to go, yet. There seem to be clues where to go, and how, if you look around.[else if plane-dir-score is 4]You can go down or in the cardinal directions, but not [noun].[else]You can't go [noun], but you can go [list of viable directions].[end if]"
 KeepIller	"Apart from finding a way beyond the seedy sign[if sco-see-design is true], which you don't need to again[end if], the keep doesn't have many twisty passages. Well, any."
 Nigh Fright	"You could leave, but then you'd have to come back. Just figure what to do here."
 Lobe End	"[if sco-low-bend is true]The bend only curves west to north[else]You can only go back west. Well, for now[end if]."
