@@ -506,22 +506,22 @@ this is the post-six-quid rule:
 		say "[line break]The squid gestures towards the two maps, as if it can take you wherever you need to on the maps. But it does look a little exhausted. So you don't just want to summon it for a joyride.";]
 
 a wordtwisting rule (this is the three-isle rule):
-	if (player is in lobe end or player is in storm isle) and sco-low-bend is true and player has flier:
+	if player does not have flier, unavailable;
+	if (player is in lobe end or player is in storm isle) and sco-low-bend is true:
 		vcp "No, there's water here, but this can't be the right place.";
 		not-yet;
-	if player does not have flier, unavailable;
 	if player is not in nonotion:
 		vcp "This isn't the right place to look for an isle. No large body of water nearby.";
 		not-yet;
 
 a wordtwisting rule (this is the pre-the-file rule):
+	if sco-the-file is true and player has flier:
+		vcp "You already got THE FILE. See where else you can visit.";
+		already-done;
 	abide by the three-isle rule;
 	if number of still-chat-needed followers > 0:
 		vcp "You know there is THE FILE, but which file is THE FILE? The thief isle has probably stolen a lot! You need information from your companions[if number of still-follow-needed followers > 0], or maybe just more companions[end if].";
 		not-yet;
-	if sco-the-file is true:
-		vcal "You already visited thief isle!";
-		already-done;
 	ready;
 
 this is the post-the-file rule:
@@ -535,13 +535,13 @@ to conditional-flier-mangle:
 		moot flier;
 
 a wordtwisting rule (this is the pre-war-file rule):
+	if sco-war-file is true and player has flier:
+		vcp "You already got the war file. See where else you can visit.";
+		already-done;
 	abide by the three-isle rule;
 	if sco-plan-tracker is false:
 		vcp "A war file might be useful, but you'd have no way to organize the information right now.";
 		not-yet;
-	if sco-war-file is true:
-		vcal "You already got the war file!";
-		already-done;
 	ready;
 
 this is the post-war-file rule:
@@ -558,10 +558,10 @@ to ride-squid:
 	follow-you;
 
 a wordtwisting rule (this is the pre-grow-vial rule):
-	abide by the three-isle rule;
-	if sco-grow-vial is true:
-		vcal "You already got a grow vial!";
+	if sco-grow-vial is true and player has flier:
+		vcp "You already got the grow vial. See where else you can visit.";
 		already-done;
+	abide by the three-isle rule;
 	ready;
 
 this is the post-grow-vial rule:

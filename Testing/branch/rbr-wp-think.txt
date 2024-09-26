@@ -938,7 +938,7 @@ by a point
 @rej
 #testcase-check-pre-war-file-rule-if-sco-war-file-is-true
 >war file
-You already got the war file!
+You already got the war file. See where else you can visit.
 \\
 #+testcase-check-pre-the-file-rule-if-number-of-still-chat-needed-followers->-0
 >the file
@@ -969,7 +969,7 @@ by a point
 \\
 #testcase-check-pre-the-file-rule-if-sco-the-file-is-true
 >the file
-You already visited thief isle!
+You already got THE FILE. See where else you can visit.
 \\
 >undo
 >undo
@@ -987,7 +987,7 @@ by a point
 @rej
 #testcase-check-pre-grow-vial-rule-if-sco-grow-vial-is-true
 >grow vial
-You already got a grow vial!
+You already got the grow vial. See where else you can visit.
 
 @rej+
 #+testcase-think-table-of-main-oronyms-pre-manna-curb-rule
