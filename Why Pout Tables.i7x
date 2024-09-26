@@ -1145,8 +1145,6 @@ volume scoring to move [see RoL Defs if I add bonus points]
 
 the score and thinking changes rule is listed instead of the notify score changes rule in the turn sequence rulebook.
 
-to say went-by (nu - a number): say "just went [if nu > 0]up[else]down[end if] by [nu in words] point[unless nu is 1 or nu is -1]s[end if]";
-
 this is the score and thinking changes rule:
 	let sco-delt be current-score - last-current-score;
 	let bonus-delt be cur-bonus - last-cur-bonus;

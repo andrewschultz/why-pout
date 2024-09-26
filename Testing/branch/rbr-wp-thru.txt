@@ -127,6 +127,13 @@ by a point
 {--all}#testcase-run-post-pry-stalk-rule-default
 Among all the chatter, you discover a disused booth. Someone is preaching on about environmental stuff, and it's so much less painful than cell phone chat. You worry they're just going to blab on forever, but they're so grateful you listened as long as you did. They hand you a stalk they think can grow quickly. Their own special formula. It looks weird and glittery, and if anything can reach up out of here, this can. But the question is, where can it grow to?
 
+@li
+INVENTORY CHANGED
+There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+You are carrying:
+  a stalk
+You have a name, too, now, you remember: Mike Orr.
+
 @alt
 ##balance undos
 #testcase-alt-words-table-of-main-oronyms-5-high-plain-plane
@@ -157,10 +164,17 @@ You plant the stalk, which -- well, it's already a bit of a stalk, but it grows 
 #testcase-room-names-naff-haze
 `Naff Haze
 
+@li
+INVENTORY CHANGED
+There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+You are carrying nothing.
+You have a name, too, now, you remember: Mike Orr.
+!/^..a stalk
+
 @gt
 #testcase-goto-table-of-noways-naffhaze
 >n
-Too tough to stumble around until the haze lifts. How to make that happen?
+Too risky to stumble around until the haze lifts. How to make that happen?
 
 @alt
 ##balance undos
@@ -191,6 +205,11 @@ by a point
 >nah phaze
 You sense you don't want the naff haze to faze you, but you want a noun, here, to reject.
 
+@gt
+#+testcase-goto-table-of-noways-naffhaze
+>n
+Too risky to stumble around until the haze lifts. How to make that happen?
+
 >nah phase
 by a point
 
@@ -206,7 +225,7 @@ The haze seemed too thick at first. But you recognize it doesn't have to be ther
 @gt
 #+testcase-goto-table-of-noways-naffhaze
 >n
-You feel like eventually you should be able to wander around, but you can't see anywhere to go, yet. There seem to be clues where to go, and how, if you look around.
+The gross tar is in the way right now.
 
 @alt
 ##balance undos
@@ -232,13 +251,27 @@ by a point
 
 @li
 A war pawn, like a chess piece, rolls into view. It looks pretty powerful. As you take it, you reflect that you may wish to save it for down the road when you're really stuck somewhere.
+There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+You are carrying:
   a war pawn
+You have a name, too, now, you remember: Mike Orr.
+
+@li+
+##balance undos
+>doff
+>warp on
+by a point
+INVENTORY CHANGED
+!/  a war pawn
+\\
+>undo
+>undo
 
 @all,rej
 {--rej}#testcase-check-pre-pole-east-rule-fallthrough
 {--all}#testcase-run-post-pole-east-rule-default
 Ah, yes. It makes sense. You find the pole. Strangely, there's just a single switch to flip. And even more strangely, the switch you flip causes the pole to revert into the ground. Yay!
-But there's more! A war pawn, like a chess piece, rolls into view. It looks pretty powerful. Maybe you see how to use it, but maybe you shouldn't use it right away.
+But there's more! A war pawn, like a chess piece, rolls into view. It looks pretty powerful. As you take it, you reflect that you may wish to save it for down the road when you're really stuck somewhere. You have a good idea HOW to use it, at any rate.
 
 @mis
 #testcase-mistake-why-pout-warp-warp-text
@@ -251,8 +284,11 @@ Yes, the war pawn will help you warp, but permit me some pedantry: which way? Ba
 
 @gt
 #+testcase-goto-table-of-noways-naffhaze
+>s
+You can't go south, but you can go east.
+\\
 >w
-You can't go west, but you can go east.
+The keep (iller) is locked. You will need to find the key.
 
 >shore trail
 by a point
@@ -276,7 +312,7 @@ by a point
 @all,rej
 {--rej}#testcase-check-pre-key-pillar-rule-fallthrough
 {--all}#testcase-run-post-key-pillar-rule-default
-You look around the pillars for a key, since there's no flowerpot to hide it under. You find one, and you open the way west.
+You look around the pillars for a key, since there's no flowerpot to hide it under. You find one, and once it unlocks the way west, you hide it, again.
 You've changed the landscape a lot, north, south, east and west. But there's more! You hear a rumbling beneath you, opening a passage DOWN!
 
 >s
@@ -316,6 +352,10 @@ by a point
 You have an idea what is bothering the squid. Yes, a few coins stuck. Surprisingly, it lets you help out. "Current, sea, currency," you mutter as you poke around. Ah, there you go.
 You offer to give it some of the coins it almost choked on, but it does not need them. It seems to wait around, as if to help you with travel to places you may get to go. It's willing to wait.
 
+@li
+>i
+You have six quid from helping the sick squid.
+
 >n
 
 >n
@@ -333,6 +373,16 @@ Wolf Rock blocks every planar passage except back SOUTH.
 
 >wool frock
 by a point
+
+@li
+You rummage about and find a wool frock.
+INVENTORY CHANGED
+There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+You are carrying:
+  a wool frock
+  a war pawn
+You have six quid from helping the sick squid.
+You have a name, too, now, you remember: Mike Orr.
 
 @all,rej
 {--rej}#testcase-check-pre-wool-frock-rule-fallthrough
@@ -377,6 +427,16 @@ No, the booze troll shouldn't be blown off! They can become a better ... entity.
 
 >boost role
 by a point
+
+@li
+INVENTORY CHANGED
+There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+You are carrying:
+  some Base Ale
+  a wool frock
+  a war pawn
+You have six quid from helping the sick squid.
+You have a name, too, now, you remember: Mike Orr.
 
 @all,rej
 {--rej}#testcase-check-pre-boost-role-rule-fallthrough
@@ -423,6 +483,16 @@ A gnome, old, arrives from a room above in the keep. They offer to adventure wit
 "Less gnome attic, more nomadic," they muse.
 Funnily, you stop specifically noticing the lack of mold now your new companion's joined you. But you still appreciate their efforts deep down!
 
+@li
+INVENTORY CHANGED
+There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+You are carrying:
+  some Base Ale
+  a war pawn
+!a wool frock
+You have six quid from helping the sick squid.
+You have a name, too, now, you remember: Mike Orr.
+
 @hom
 #testcase-homonym-reject-table-of-main-oronyms-hom-rouge-old-rule-rouge
 #testcase-homonym-detail-hom-rouge-old-rule-default
@@ -438,6 +508,10 @@ by a point
 A rogue, old, arrives. They mention they'd like to help you but, you know, the row (gold) needs maintenance. You offer to pay them three quid..
 This transaction reduces your wealth from six quid to three quid.
 Hmm. You have a lot of friends following you around, but you haven't talked to them much. Perhaps you could learn something from them.
+
+@li
+>i
+You still have three quid left from helping the sick squid.
 
 @gt
 #testcase-goto-table-of-noways-keepiller
@@ -490,6 +564,16 @@ With your friends boosting your spirits, you look for a sacred/profane weapon. I
 
 @all
 `Keep (Iller)
+
+@li
+INVENTORY CHANGED
+There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+You are carrying:
+  a knife (right)
+  some Base Ale
+  a war pawn
+You still have three quid left from helping the sick squid.
+You have a name, too, now, you remember: Mike Orr.
 
 @gt
 #+testcase-goto-table-of-noways-keepiller
@@ -687,6 +771,16 @@ You have money, and you are ready for a sale, and you get it. Unfortunately, tho
 You christen it with the base ale, and the bottle fragments shatter and float away in the water.
 This transaction reduces your wealth from three quid to one quid.
 
+@li
+INVENTORY CHANGED
+There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+You are carrying:
+  a knife (right)
+  a war pawn
+!Base Ale
+You still have one quid left from helping the sick squid.
+You have a name, too, now, you remember: Mike Orr.
+
 >n
 
 @all
@@ -879,6 +973,16 @@ Well, easy come, easy go. You're pretty sure you've visited everywhere and found
 #+testcase-room-names-we-loan
 `Whee! 'Lone!
 
+@li
+There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+You are carrying:
+  a flier
+  a knife (right)
+  a war pawn
+!You still have
+!left from helping the sick squid.
+You have a name, too, now, you remember: Mike Orr.
+
 >out
 
 >s
@@ -887,6 +991,14 @@ Well, easy come, easy go. You're pretty sure you've visited everywhere and found
 
 >plan tracker
 by a point
+
+@li
+INVENTORY CHANGED
+There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+You are carrying:
+  a plan tracker (with no ideas yet)
+  a war pawn
+You have a name, too, now, you remember: Mike Orr.
 
 @all,rej
 {--rej}#testcase-check-pre-plan-tracker-rule-fallthrough
@@ -900,6 +1012,14 @@ Wow! That was ... surprisingly simple. You find a rather new-looking plan tracke
 by a point
 \\
 >undo
+
+@li
+INVENTORY CHANGED
+There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+You are carrying:
+  a plan tracker (with no ideas yet)
+  a war pawn
+You have a name, too, now, you remember: Mike Orr.
 
 @hom
 #testcase-homonym-reject-table-of-main-oronyms-hom-mana-curb-rule-man-a-mana
@@ -917,6 +1037,17 @@ by a point
 {--rej}#testcase-check-pre-manna-curb-rule-fallthrough
 {--all}#testcase-run-post-manna-curb-rule-default
 You suspect there is manna beneath the manic herb, but you have no clue how to find it. Thankfully, the mensch elf steps up. You wind up with a lot of manna, whatever that is!
+
+@li
+INVENTORY CHANGED
+There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+You are carrying:
+  some manna
+  a flier
+  a knife (right)
+  a plan tracker (with no ideas yet)
+  a war pawn
+You have a name, too, now, you remember: Mike Orr.
 
 >e
 
@@ -993,6 +1124,18 @@ by a point
 {--all}#testcase-run-post-grow-vial-rule-default
 In the grove isle, you find a grow vial, which you take. It's relaxing, but you can't afford to loiter too long.
 
+@li
+INVENTORY CHANGED
+There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+You are carrying:
+  a grow vial
+  some manna
+  a flier
+  a knife (right)
+  a plan tracker (with no ideas yet)
+  a war pawn
+You have a name, too, now, you remember: Mike Orr.
+
 >war file
 by a point
 
@@ -1009,6 +1152,10 @@ The squid gives you and only you a ride a few miles across the ocean. You realiz
 #testcase-goto-table-of-noways-wand-wharf
 >e
 You're not in the mood for exploring the wharf. It seems like a good way to get lost. Maybe there's someone or something nearby you can pick up, then leave.
+
+@li
+>i
+  a plan tracker (full of ideas)
 
 >wan dwarf
 by a point
@@ -1031,6 +1178,18 @@ You look around and uncover a wan dwarf who wasn't good enough to be a full figh
 A tree (small) grows here, or tries to, at least. It deserves to be bigger.
 But wait! You can use the grow vial! It makes the tree (small) into a tree (tall)! Then it dissolves once empty.
 
+@li
+INVENTORY CHANGED
+There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+You are carrying:
+  some manna
+  a flier
+  a knife (right)
+  a plan tracker (full of ideas)
+  a war pawn
+!/^..a grow vial
+You have a name, too, now, you remember: Mike Orr.
+
 >t dwarf
 
 >t elf
@@ -1043,10 +1202,34 @@ But wait! You can use the grow vial! It makes the tree (small) into a tree (tall
 
 >t mice
 
+@alt
+##balance undos
+>t orc
+!talk-ache
+\\
+>t troll
+talk-ache
+\\
+>undo
+>undo
+
 >t troll
 
 @all
 talk-ache
+
+@li
+INVENTORY CHANGED
+There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+You are carrying:
+!/^..a talk-ache
+  some manna
+  a flier
+  a knife (right)
+  a plan tracker (full of ideas)
+  a war pawn
+You have a name, too, now, you remember: Mike Orr.
+Oh, man. You still have that talk-ache, too.
 
 >t orc
 
@@ -1064,19 +1247,52 @@ But now where to eat the cake?
 >treat awl
 {$REJHOM}
 
+@li
+INVENTORY CHANGED
+There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+You are carrying:
+  a tall cake
+  a flier
+  a knife (right)
+  a plan tracker (full of ideas)
+  a war pawn
+!some manna
+You have a name, too, now, you remember: Mike Orr.
+!Oh, man. You still have that talk-ache, too.
+
 >treat all
 by a point
 
 @all,rej
 {--rej}#testcase-check-pre-treat-all-rule-fallthrough
 {--all}#testcase-run-post-treat-all-rule-default
-Well, that felt good. You trade more ideas while chatting. You think you have about everything figured out, now.
+Wow, man! That was some good cake! Everyone shares more of their background over this meal.
+The gaunt raider, in particular, has a lot to say, of past things they did that were horrible, that they think they're sorry for, but maybe not enough.
+Everyone assures the raider that they're the good guys now.
+You offer the gaunt raider the knife (right) as a present. They seem scared to take it, but it doesn't burst into flames when they take it, so ... it must be right for them.
+
+@li
+INVENTORY CHANGED
+There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+You are carrying:
+!  a tall cake
+  a flier
+!/  a knife /(right/)
+  a plan tracker (full of ideas)
+  a war pawn
+You have a name, too, now, you remember: Mike Orr.
 
 >s
 
 >s
 
 >w
+
+@min
+Odd! BRUISE WARES has vanished. Well, one less dead end to worry about.
+\\
+>brew swears
+!point
 
 >s
 
@@ -1093,6 +1309,15 @@ by a point
 {--all}#testcase-run-post-the-file-rule-default
 You have a clue what isle to look through. The thief isle. You get The File.
 You've visited all the locations in the flier. You crumple it up as if to throw it in a trash bin. The squid makes a gesture as if it wishes to gobble the flier. You're worried it might choke on the flier, as it did for the quid, but then -- well, the water washes the paper brochure down. Odd, but hooray for clearer inventory.
+
+@li
+INVENTORY CHANGED
+There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+You are carrying:
+!  a flier
+  a plan tracker (full of ideas)
+  a war pawn
+You have a name, too, now, you remember: Mike Orr.
 
 >n
 
@@ -1133,6 +1358,11 @@ by a point
 {--all}#testcase-run-post-my-corps-rule-default
 Your pep talk brings everyone together. They are ready for ... well, whatever is next. This feels like the right place. You clear out a passage below. You swear a solemn pact that everyone will defend everyone else, regardless of what happens.
 
+@li
+#now you know your name this doesn't nag you
+>i
+!Mike Orr
+
 >d
 
 @all
@@ -1166,8 +1396,9 @@ by a point
 @all,rej
 {--rej}#testcase-check-pre-wipe-out-rule-fallthrough
 {--all}#testcase-run-post-wipe-out-rule-default
-Well that does it! It's a big long fight, but you all prevail!
-Things are a bit of a mess, though. You feel something odd come between you and your companions now you're done. They wonder why they need to do any more. You could call the whole zeitgeist a why-division.
+Easier said than done, but since you all studied the plan tracker so well, it isn't impossible!
+Your makeshift weapons are just enough to distract the sea skull. It starts to focus on one party member, then the others taunt it, and it turns away. It's exhausting for you but even more exhausting for the skull, which eventually collapses and incinerates.
+But after all the fireworks, there's a letdown. You feel something odd come between you and your companions now you're done. They wonder why they need to do any more. You could call the whole zeitgeist a why-division.
 
 @alt
 ##balance undos
@@ -1194,6 +1425,11 @@ You need to prep for making things right in general. Then, once the game's over,
 #testcase-homonym-reject-table-of-main-oronyms-dew
 >dew mending
 {$REJHOM}
+
+@li
+# and you finally figured when to Wipe Out!
+>i
+!There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
 
 >do mending
 by a point

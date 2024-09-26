@@ -320,6 +320,15 @@ by a point
 
 >t mice
 
+>t orc
+!talk-ache
+
+>t troll
+talk-ache
+
+>undo
+>undo
+
 >t troll
 
 >t orc

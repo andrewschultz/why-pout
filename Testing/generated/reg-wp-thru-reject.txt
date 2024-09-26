@@ -55,7 +55,7 @@ by a point
 
 #testcase-check-pre-pole-east-rule-fallthrough
 Ah, yes. It makes sense. You find the pole. Strangely, there's just a single switch to flip. And even more strangely, the switch you flip causes the pole to revert into the ground. Yay!
-But there's more! A war pawn, like a chess piece, rolls into view. It looks pretty powerful. Maybe you see how to use it, but maybe you shouldn't use it right away.
+But there's more! A war pawn, like a chess piece, rolls into view. It looks pretty powerful. As you take it, you reflect that you may wish to save it for down the road when you're really stuck somewhere. You have a good idea HOW to use it, at any rate.
 
 >shore trail
 by a point
@@ -73,7 +73,7 @@ You look at the gross tar, and you hope for a star in the sky to become brighter
 by a point
 
 #testcase-check-pre-key-pillar-rule-fallthrough
-You look around the pillars for a key, since there's no flowerpot to hide it under. You find one, and you open the way west.
+You look around the pillars for a key, since there's no flowerpot to hide it under. You find one, and once it unlocks the way west, you hide it, again.
 You've changed the landscape a lot, north, south, east and west. But there's more! You hear a rumbling beneath you, opening a passage DOWN!
 
 >s
@@ -425,7 +425,10 @@ But now where to eat the cake?
 by a point
 
 #testcase-check-pre-treat-all-rule-fallthrough
-Well, that felt good. You trade more ideas while chatting. You think you have about everything figured out, now.
+Wow, man! That was some good cake! Everyone shares more of their background over this meal.
+The gaunt raider, in particular, has a lot to say, of past things they did that were horrible, that they think they're sorry for, but maybe not enough.
+Everyone assures the raider that they're the good guys now.
+You offer the gaunt raider the knife (right) as a present. They seem scared to take it, but it doesn't burst into flames when they take it, so ... it must be right for them.
 
 >s
 
@@ -472,8 +475,9 @@ It begins pouring out rivers of blood at you and your companions. But fortunatel
 by a point
 
 #testcase-check-pre-wipe-out-rule-fallthrough
-Well that does it! It's a big long fight, but you all prevail!
-Things are a bit of a mess, though. You feel something odd come between you and your companions now you're done. They wonder why they need to do any more. You could call the whole zeitgeist a why-division.
+Easier said than done, but since you all studied the plan tracker so well, it isn't impossible!
+Your makeshift weapons are just enough to distract the sea skull. It starts to focus on one party member, then the others taunt it, and it turns away. It's exhausting for you but even more exhausting for the skull, which eventually collapses and incinerates.
+But after all the fireworks, there's a letdown. You feel something odd come between you and your companions now you're done. They wonder why they need to do any more. You could call the whole zeitgeist a why-division.
 
 >do mending
 by a point

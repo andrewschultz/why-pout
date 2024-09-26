@@ -47,21 +47,28 @@ by a point
 
 #testcase-goto-table-of-noways-naffhaze
 >n
-Too tough to stumble around until the haze lifts. How to make that happen?
+Too risky to stumble around until the haze lifts. How to make that happen?
+
+#+testcase-goto-table-of-noways-naffhaze
+>n
+Too risky to stumble around until the haze lifts. How to make that happen?
 
 >nah phase
 by a point
 
 #+testcase-goto-table-of-noways-naffhaze
 >n
-You feel like eventually you should be able to wander around, but you can't see anywhere to go, yet. There seem to be clues where to go, and how, if you look around.
+The gross tar is in the way right now.
 
 >pole east
 by a point
 
 #+testcase-goto-table-of-noways-naffhaze
+>s
+You can't go south, but you can go east.
+
 >w
-You can't go west, but you can go east.
+The keep (iller) is locked. You will need to find the key.
 
 >shore trail
 by a point
