@@ -519,6 +519,8 @@ You offer the gaunt raider the knife (right) as a present. They seem scared to t
 
 >s
 
+The gaunt raider raises a hand. They have an idea! The abandoned mall must have all sorts of stuff that can be fashioned into weapons. Not top-of-the-line, but enough to get by. Heartened by your recent meal, your party takes the time to find weapons. You all keep them hidden until needed.
+
 >s
 
 >w

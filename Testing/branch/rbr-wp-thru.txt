@@ -1310,6 +1310,13 @@ You have a name, too, now, you remember: Mike Orr.
 
 >s
 
+@all
+The gaunt raider raises a hand. They have an idea! The abandoned mall must have all sorts of stuff that can be fashioned into weapons. Not top-of-the-line, but enough to get by. Heartened by your recent meal, your party takes the time to find weapons. You all keep them hidden until needed.
+
+@li
+>i
+You and your party are also armed for any conflict that may arise.
+
 >s
 
 >w
@@ -1456,6 +1463,7 @@ You need to prep for making things right in general. Then, once the game's over,
 # and you finally figured when to Wipe Out!
 >i
 !There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+!You and your party are also armed for any conflict that may arise.
 
 >do mending
 by a point

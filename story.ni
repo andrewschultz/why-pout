@@ -469,6 +469,11 @@ section mensch elf
 
 the mensch elf is a follower. description is "Smiling and ready to help.". help-chat is "The mensch elf discusses ways to identify people or situations that just need a bit of help, and how to do so without making them feel hopeless or in need of help, or that they got themselves in this position in the first place."
 
+after printing the locale description for Storm Isle when gs-got-weapons is false and sco-treat-all is true:
+	now gs-got-weapons is true;
+	say "The gaunt raider raises a hand. They have an idea! The abandoned mall must have all sorts of stuff that can be fashioned into weapons. Not top-of-the-line, but enough to get by. Heartened by your recent meal, your party takes the time to find weapons. You all keep them hidden until needed.";
+	continue the action;
+
 book Trees Mall
 
 Trees Mall is a room in universal. "This is a withered, run-down former mall that had the ceiling blow off. It's walled with pictures of large, but fake, trees. You can only go back [b]SOUTH[r]."
@@ -754,6 +759,10 @@ report taking inventory when sco-my-corps is false and sco-an-aim is true:
 
 report taking inventory when player has talk ache:
 	say "Oh, man. You still have that talk-ache, too.";
+	continue the action;
+
+report taking inventory when gs-got-weapons is true and sco-wipe-out is false:
+	say "You and your party are also armed for any conflict that may arise.";
 	continue the action;
 
 chapter sensing

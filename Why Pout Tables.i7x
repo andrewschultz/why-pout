@@ -578,7 +578,7 @@ a wordtwisting rule (this is the pre-wan-dwarf rule):
 
 this is the post-wan-dwarf rule:
 	now sco-wan-dwarf is true;
-	say "You look around and uncover a wan dwarf who wasn't good enough to be a full fighter but rejected for magic training. You show them the plan tracker with the notes you wrote from the war file, with input from your followers.[paragraph break]The wan dwarf thinks for a minute, then starts filling in some blanks in your plan. Not to criticize, just ... you thought of some things they didn't, and they thought of some you didn't.[paragraph break]There's not much left to do here, so you ride the squid back.";
+	say "You look around and uncover a wan dwarf who wasn't good enough to be a full fighter but was rejected for magic training. You show them the plan tracker with the notes you wrote from the war file, with input from your followers.[paragraph break]The wan dwarf thinks for a minute, then starts filling in some blanks in your plan. Not to criticize, just ... you thought of some things they didn't, and they thought of some you didn't.[paragraph break]There's not much left to do here, so you ride the squid back.";
 	befriend wan dwarf;
 	now block-followers is false;
 	move player to NoNotion;
