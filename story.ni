@@ -514,7 +514,7 @@ check entering ocean: try going west instead;
 
 book wand wharf
 
-Wand Wharf is a room in universal. "You rode the squid here, and there are all sorts of magical symbols here. It's a bit intimidating for someone like you who is clueless about magic. Maybe it's intimidating and depressing for someone else."
+Wand Wharf is a room in universal. "You rode the squid here, and there are all sorts of magical symbols here. It's a bit intimidating for someone like you who is clueless about magic. Maybe it's intimidating and depressing for someone else, and maybe you can more than commiserate.[paragraph break]You don't really trust your sense of direction here, but maybe if you knew the sort of companion you were looking for, it would help."
 
 the wan dwarf is a follower. description is "Short and stocky. It wears glasses from what other dwarves would say was reading too much.". help-chat is "The dwarf provides an impressively nuanced view on how to balance magic skill with physical skill and fighting savvy. But the dwarf also notes how to be a good expert in specific areas if need be, as well as how to get experts and generalists to work together. However, the dwarf also expresses worry that this talk is all great in theory but hard in practice."
 

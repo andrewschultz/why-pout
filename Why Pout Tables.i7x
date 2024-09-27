@@ -546,7 +546,7 @@ a wordtwisting rule (this is the pre-war-file rule):
 
 this is the post-war-file rule:
 	now sco-war-file is true;
-	say "The squid gives you[if number of friendly followers > 0] and only you[end if] a ride a few miles across the ocean. You realize you could reach the wharf isle for a war file. When you get there, you're a bit disappointed by what you see. There's a bit too much emphasis on magic and the implements thereof, all of which are at a much too hefty price for you. So equipment is out. Still, there's some ideas worth tracking. Yet you can't be the only person disappointed here...";
+	say "The squid gives you[if number of friendly followers > 0] and only you[end if] a ride a few miles across the ocean. You realize you could reach the wharf isle for a war file. When you get there, you're a bit disappointed by what you see. There's a bit too much emphasis on magic and the implements thereof, all of which are at a much too hefty price for you. So equipment is out.[paragraph break]Still, there are many ideas worth tracking. Your companions help with the process, offering ideas you're pleasantly surprised to hear.[paragraph break]You write the main stuff into your plan tracker, and as you do, you realize part of the plan points to having another party member not in your entourage. Well, yet. Perhaps someone else here has read the war file and maybe found less splashy ways to fight. You stay to look around...";
 	now block-followers is true;
 	move player to Wand Wharf;
 	ride-squid;
@@ -578,7 +578,7 @@ a wordtwisting rule (this is the pre-wan-dwarf rule):
 
 this is the post-wan-dwarf rule:
 	now sco-wan-dwarf is true;
-	say "You look around and uncover a wan dwarf who wasn't good enough to be a full fighter but rejected for magic training. You explain your situation. They're all in![paragraph break]There's not much left to do here, so you ride the squid back.";
+	say "You look around and uncover a wan dwarf who wasn't good enough to be a full fighter but rejected for magic training. You show them the plan tracker with the notes you wrote from the war file, with input from your followers.[paragraph break]The wan dwarf thinks for a minute, then starts filling in some blanks in your plan. Not to criticize, just ... you thought of some things they didn't, and they thought of some you didn't.[paragraph break]There's not much left to do here, so you ride the squid back.";
 	befriend wan dwarf;
 	now block-followers is false;
 	move player to NoNotion;
@@ -1137,7 +1137,7 @@ Wolf Rock	"Wolf Rock blocks every planar passage except back [b]SOUTH[r][if sco-
 We Loan	"You can only go back [b]OUT[r] here."
 Hideout	"You can only go back [b]UP[r]. If this hideout had too many passages, it'd risk being less effective."
 NoNotion	"You can only go back [b]NORTH[r][if squid is in NoNotion] or, if you know where you want to go, give the squid instructions where to go[else], or that's your notion, right now[end if]."
-Wand Wharf	"You're not in the mood for exploring the wharf. It seems like a good way to get lost. Maybe there's someone or something nearby you can pick up, then leave."
+Wand Wharf	"You're not in the mood for exploring the wharf randomly. It seems like a good way to get lost. Perhaps if you focus on a specific sort of companion you need nearby, that would be better. Then you could find them and leave."
 Worm Eaten	"No tricky passages here, just [b]UP[r] back to safer ground or [b]DOWN[r] to your fate."
 Doom Ending	"[if sco-wipe-out is true]You need to prep for making things right in general. Then, once the game's over, you'll leave[else]Unsurprisingly, all the action is here[end if]."
 Brew Swears	"You don't want to get into the guts of this place. [if sco-crew-dork is true]You've gotten the crude orc on your side, and the only way to go is[else]Just get the crude orc, if you'd like, then get[end if] [b]OUT[r]."
