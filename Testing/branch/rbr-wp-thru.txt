@@ -1158,7 +1158,10 @@ by a point
 @all,rej
 {--rej}#testcase-check-pre-war-file-rule-fallthrough
 {--all}#testcase-run-post-war-file-rule-default
-The squid gives you and only you a ride a few miles across the ocean. You realize you could reach the wharf isle for a war file. When you get there, you're a bit disappointed by what you see. There's a bit too much emphasis on magic and the implements thereof, all of which are at a much too hefty price for you. So equipment is out. Still, there's some ideas worth tracking. Yet you can't be the only person disappointed here...
+The squid gives you and your companions a ride a few miles across the ocean. You realize you could reach the wharf isle for a war file.
+When you get there, you're a bit disappointed by what you see. There's a bit too much emphasis on magic and the implements thereof, all of which are at a much too hefty price for you. So buying equipment is out.
+Still, there are many ideas worth tracking. Your companions help with the process, offering ideas you're pleasantly surprised to hear.
+You write the main stuff into your plan tracker, and as you do, you realize part of the plan points to having another party member not in your entourage. Well, yet. Perhaps someone else here has read the war file and maybe found less splashy ways to fight. You stay to look around...
 
 @all
 #testcase-room-names-wand-wharf
@@ -1172,6 +1175,11 @@ You're not in the mood for exploring the wharf. It seems like a good way to get 
 @li
 >i
   a plan tracker (full of ideas)
+\\
+>l
+You rode the squid here, and there are all sorts of magical symbols here. It's a bit intimidating for someone like you who is clueless about magic. Maybe it's intimidating and depressing for someone else, and maybe you can more than commiserate.
+You don't really trust your sense of direction here, but maybe if you knew the sort of companion you were looking for, it would help.
+wait here for what to do or where to go next.
 
 >wan dwarf
 by a point
@@ -1179,7 +1187,9 @@ by a point
 @all,rej
 {--rej}#testcase-check-pre-wan-dwarf-rule-fallthrough
 {--all}#testcase-run-post-wan-dwarf-rule-default
-You look around and uncover a wan dwarf who wasn't good enough to be a full fighter but rejected for magic training. You explain your situation. They're all in!
+You look around and uncover a wan dwarf who wasn't good enough to be a full fighter but was rejected for magic training. You show them the plan tracker with the notes you wrote from the war file, with input from your followers.
+The wan dwarf thinks for a minute, then starts filling in some blanks in your plan. Not to criticize, just ... you thought of some things they didn't, and they thought of some you didn't.
+There's not much left to do here, so you ride the squid back.
 
 >n
 
