@@ -1133,7 +1133,7 @@ Nigh Fright	"You could leave, but then you'd have to come back. Just figure what
 Lobe End	"[if sco-low-bend is true]The bend only curves west to north[else]You can only go back west. Well, for now[end if]."
 Storm Isle	"You can only go back south to Lobe End[if sco-store-mile is true] or north to the rest of the mall[end if]."
 Trees Mall	"You can only go back south."
-Wolf Rock	"Wolf Rock blocks every planar passage except back [b]SOUTH[r][if sco-low-door is true]. Well, you can go [b]IN[r] where the lode ore was as well[end if][if sco-hide-out is true]. There's a hideout above as well[end if]."
+Wolf Rock	"Wolf Rock blocks every planar passage except back [b]SOUTH[r]. [if sco-low-door is true]Well, you can go [b]IN[r] where the lode ore was as well[else]Maybe something's under the lode ore as well--it's dense[end if][if sco-hide-out is true]. You discovered the hideout [b]DOWN[r], too[end if]." [??use is-thought here]
 We Loan	"You can only go back [b]OUT[r] here."
 Hideout	"You can only go back [b]UP[r]. If this hideout had too many passages, it'd risk being less effective."
 NoNotion	"You can only go back [b]NORTH[r][if squid is in NoNotion] or, if you know where you want to go, give the squid instructions where to go[else], or that's your notion, right now[end if]."

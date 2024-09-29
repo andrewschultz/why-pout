@@ -191,7 +191,7 @@ Eh Raw Air Aww is a room in universal. printed name is "[if sco-an-aim is false]
 
 book Hype Lane
 
-Hype Lane is a room in universal. "It's still pretty dark here. You must still be underground.[paragraph break]Around you, [if sco-self-owns is false]cell phones, cell phones everywhere. Such confident chatter. Or it seems confident. It distracts you and your bearings, trying to figure who you really are and get somewhere less dark[else]a prize talk booms from unseen speakers, exhorting you to do, or at least earn, more. The heck with being above ground, with boring old nature that distracts you from being all you can be. Well, for the economy, at least[end if]."
+Hype Lane is a room in universal. "It's still pretty dark here. You must still be underground.[paragraph break]Around you, [if sco-self-owns is false]cell phones, cell phones everywhere. Such confident chatter. Or it seems confident. It distracts you and your bearings, trying to figure who you really are and get somewhere less dark[else if sco-pry-stalk is true]you're able to ignore the prize talk for now, but you realize you can and must move on from it. Get out of this underground area[else]a prize talk booms from unseen speakers, exhorting you to do, or at least earn, more. The heck with being above ground, with boring old nature that distracts you from being all you can be. Well, for the economy, at least[end if]."
 
 chapter cell phones
 
@@ -199,7 +199,7 @@ the cell phones are a plural-named thing in hype lane. understand "phone" and "c
 
 chapter prize talk
 
-prize talk is a thing. "You'd like to DO something about the prize talk. Or seek out something that would give you passage away from it.". description is "The prize talk also discusses things that aren't so worth it, like -- well, plants and stuff. BORING."
+prize talk is a thing. "[if sco-pry-stalk is false]You'd like to DO something about the prize talk. Or seek out something that would give you passage away from it[else]The prize talk is all around, but you're able to ignore it, now you feel you might have a way out[end if].". description is "[if sco-pry-stalk is false]The prize talk also discusses things that aren't so worth it, like -- well, plants and stuff. BORING[else]You can see your way around the prize talk now. You don't want to get sucked back in[end if]."
 
 section stalk
 
@@ -249,6 +249,8 @@ check going inside in NaffHaze:
 	if BRUISE WARES is off-stage:
 		try entering keep iller instead;
 		try going west instead;
+	if sco-brew-swears is false:
+		say "You'll have to figure what else [b]BRUISE WARES[r] is advertising, first." instead;
 	if room gone to is Brew Swears:
 		say "Your companions stay behind. They recognize this is a spiritual fight for you and you alone.";
 		now block-followers is true;
@@ -407,7 +409,7 @@ to say loan-starter:
 
 chapter some merchant
 
-some merchant is a singular-named thing. "Some merchant babbles on, all up in your personal space, suggesting you buy low.". description is "Their smile certainly is fake. They're not going to shut up until you get a resolution here."
+some merchant is a singular-named thing. "Some merchant babbles on, all up in your personal space, suggesting you buy low[if sco-summer-chant is true], but a bit more tolerable now you've got a mantra to zone them out[end if].". description is "Their smile certainly is fake. They're not going to shut up until you get a resolution here."
 
 check going outside in we loan when merchant is in we loan: say "Alas, the merchant's magnetism is too strong." instead;
 
@@ -441,7 +443,7 @@ the water north is scenery. "[if sco-bay-sale is true]Easy to cross with the raf
 
 chapter We Craft Weak Raft
 
-the We Craft Weak Raft is a thing. printed name is "We-Craft Weak Raft". description is "Well, it isn't fancy, but [if storm isle is unvisited]it looks sturdy enough[else]it got you across the water with no problem[end if].". "The We-Craft Weak Raft from the bay sale floats here, ready to take you [if player is in storm isle]south[else]north[end if] across the water and back, as many times as needed."
+the We Craft Weak Raft is a thing. printed name is "We-Craft Weak Raft". description is "Well, it isn't fancy, but [if storm isle is unvisited]it looks sturdy enough[else]it got you across the water with no problem[end if].". "[if player is in lobe end]Fortunately, the[else]The[end if] We-Craft Weak Raft from the bay sale floats here, ready to take you [if player is in storm isle]south[else]north[end if] across the water and back, as many times as needed."
 
 check going:
 	if ((room gone from is lobe end) and (room gone to is storm isle)) or ((room gone to is lobe end) and (room gone from is storm isle)):
@@ -525,7 +527,7 @@ the wan dwarf is a follower. description is "Short and stocky. It wears glasses 
 
 book Brew Swears (optional)
 
-Brew Swears is a room in universal. "If you thought Hype Lane was bad, this [if grinch earls are in brew swears]is[else]was[end if] even worse. You can leave back [b]OUT[r].".
+Brew Swears is a room in universal. "[if grinch earls are in brew swears]If you thought Hype Lane was bad, this is even worse[else]Now that you got rid of the orc's old associates, there's nothing really left to do here[end if]. You can leave back [b]OUT[r].".
 
 check going outside in Brew Swears:
 	now block-followers is false;
@@ -540,7 +542,7 @@ to zap-bruise-wares:
 
 chapter earls
 
-the grinch earls are a plural-named thing in Brew Swears. "Some [earls] parade around here, bragging about how they ruin boring people's fun with their dynamic ways and pointing out that it's easy to be nice if you're boring. They fix you with a 'We parse: weep, arse' gaze[if sco-grin-churls is true], though they're less effective than when they were self-styled earls[end if][if sco-weak-us is true]. You cut their 'we cuss' down to size, so they're now giving examples of how they cuss[else]. They constantly blather 'WE CUSS' and seem quite proud of that[end if].". printed name is "[if sco-grin-churls is true]grin churls[else]grinch earls[end if]". description is "Bleah. They remind you of popular kids (you know, the ones who beat up kids who claimed they weren't popular--it was effective) from back in school, except all grown up."
+the grinch earls are a plural-named thing in Brew Swears. "Some [earls] parade around here, bragging about how they ruin boring people's fun with their dynamic ways and pointing out that it's easy to be nice if you're boring. They fix you with a 'We parse: weep, arse' gaze[if sco-grin-churls is true], though they're less effective than when they were self-styled earls[end if]. [if number of not moot swearblobs is 0]They've run out of swears but not of sneers. Perhaps one more non-profane phrase could dispel them[else if sco-weak-us is true]You cut their 'we cuss' down to size, so they're now giving examples of how they cuss[else]They constantly blather 'WE CUSS' and seem quite proud of that[end if].". printed name is "[if sco-grin-churls is true]grin churls[else]grinch earls[end if]". description is "Bleah. They remind you of popular kids (you know, the ones who beat up kids who claimed they weren't popular--it was effective) from back in school, except all grown up."
 
 understand "grin churls" and "grin/churls" as grinch earls when sco-grin-churls is true.
 
