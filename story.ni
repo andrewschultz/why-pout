@@ -503,7 +503,39 @@ the tree tall is a thing. "A tree (tall) has grown here, thanks to you. It feels
 
 book no notion
 
-NoNotion is a room in universal. "[if sco-known-ocean is false]You simply have no notion what lies beyond here. Surely the shore trail didn't just lead to a dead end! [else]It looks like there is an ocean, or some large body of water, and maybe some islands in the distance. They are too far to swim to. [end if]You can go back north to where you started.". printed name of nonotion is "[if sco-known-ocean is false]No Notion[else]Known Ocean[end if]".
+NoNotion is a room in universal. "[if sco-known-ocean is false]You simply have no notion what lies beyond here. You hope something does. Surely the shore trail didn't just lead to a dead end! [else][ocean-desc]. [island-status]. [end if]You can go back north to the high plain.". printed name of nonotion is "[if sco-known-ocean is false]No Notion[else]Known Ocean[end if]".
+
+to say ocean-desc:
+	if flier-isle-score is 0:
+		say "It looks like there is an ocean, or some large body of water, as you can't see islands in the distance";
+	else:
+		say "The ocean surrounds you on all sides, but it's less intimidating now you rode the squid"
+
+to decide whether remaining-flier-guessed:
+	if pre-war-file rule is guessed-yet, yes;
+	if pre-grow-vial rule is guessed-yet, yes;
+	if pre-the-file rule is guessed-yet, yes;
+	no;
+
+to say island-status:
+	if flier-isle-score is 0:
+		if remaining-flier-guessed:
+			say "You feel confident you will see, based on your previous thoughts, if there are islands far away";
+		else:
+			say "If they're there, they're too far to swim to";
+	else if flier-isle-score is 1:
+		if remaining-flier-guessed:
+			say "You have figured more than one place to go, but you didn't have the capability to visit everywhere, yet";
+		else:
+			say "You figured one island to visit. Maybe there are more";
+	else if flier-isle-score is 2:
+		if remaining-flier-guessed:
+			say "There's only one isle left to visit from your flier. You just need to figure how to get there";
+		else:
+			say "You bet there's one remaining isle from the flier";
+	else:
+		say "You had fun exploring beyond the horizon, but there's nothing left to do, now";
+
 
 chapter sick squid
 
