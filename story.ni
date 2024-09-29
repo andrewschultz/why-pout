@@ -54,6 +54,8 @@ include Why Pout Tests by Andrew Schultz.
 
 chapter may be changed
 
+main-table is table of main oronyms.
+
 to game-specific-cleanup: do nothing;
 
 section debug version
@@ -321,7 +323,7 @@ check going south in KeepIller:
 
 chapter no mold
 
-there is a thing called no mold. It is in KeepIller. "You are really impressed by how no mold grows here. Someone must be keeping it up well. Who?". description is "You can't see the absence of mold, but you appreciate it nonetheless. Someone must be, ahem, keeping the keep up well. Who?".
+there is a thing called no mold. It is in KeepIller. "You are really impressed by how no mold grows here. [if pre-gnome-old rule is guessed-yet]The gnome (old,) who keeps it up, will be an impressive companion once you find them adventuring gear.[else if sco-gnome-old is false]Someone must be keeping it up well. Who?[else]". description is "You can't see the absence of mold, but you appreciate it nonetheless. Someone must be, ahem, keeping the keep up well. Who?".
 
 section gnome old
 
@@ -329,7 +331,7 @@ the gnome old is a follower. printed name is "gnome (old)". help-chat is "The gn
 
 chapter row gold
 
-there is a thing called row gold. It is in KeepIller. printed name is "row (gold)". "A row (gold) shines in this otherwise forbidding keep.". description is "You're surprised someone hasn't taken it yet. Perhaps it has an unseen guardian."
+there is a thing called row gold. It is in KeepIller. printed name is "row (gold)". "A row (gold) shines in this otherwise forbidding keep[if pre-rogue-old rule is guessed-yet]. You've met its proprietor, the rogue (old,) but they require payment[else if sco-rogue-old is true], and you're glad the rogue (old) had enough faith in you to leave it for a while.". description is "You're surprised someone hasn't taken it yet. Perhaps it has an unseen guardian."
 
 section rogue old
 
