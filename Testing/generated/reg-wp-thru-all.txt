@@ -152,6 +152,12 @@ It looks like the new troll will be following you around. All that silence might
 
 #testcase-room-names-keep-iller
 `Keep (Iller)
+This keep has seen better days, but there seems to be a lot in its ruins. You can go back EAST. You also sense something fearsome from a passage south.
+You are really impressed by how no mold grows here. Someone must be keeping it up well. Who?
+A row (gold) shines in this otherwise forbidding keep.
+There's a bunch of manic herb here. You don't know a lot about it, other than that some is really poisonous and some is okay. There's so much, perhaps it's hiding something.
+A plant racker lies here, pretty much useless.
+A seedy sign stands here, advertising somewhere very risky indeed.
 
 >gnome old
 by a point
@@ -276,11 +282,10 @@ The grinch earls, out of insults, give up on you, claiming you got boring. But y
 
 >grin churls
 by a bonus point
-The grin churls remark that you seemed so nice, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up.
 
 #testcase-run-post-grin-churls-rule-default
 You slip in a few sly digs and say "grin, churls." They shake their heads, annoyed.
-The grin churls remark that you seemed so nice, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do.
+The grin churls remark that you seemed so open-minded, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do.
 
 >out
 

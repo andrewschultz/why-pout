@@ -101,8 +101,7 @@ by a point
 
 #testcase-goto-table-of-noways-wolf-rock
 >n
-Wolf Rock blocks every planar passage except back SOUTH.
-!lode ore
+Wolf Rock blocks every planar passage except back SOUTH. Maybe something's under the lode ore as well--it's dense.
 !hideout
 
 >wool frock
@@ -163,6 +162,9 @@ by a point
 
 >u
 
+>in
+You'll have to figure what else BRUISE WARES is advertising, first.
+
 #unscramble the order the swears appear in
 >ao
 
@@ -202,7 +204,6 @@ by a bonus point
 
 >grin churls
 by a bonus point
-The grin churls remark that you seemed so nice, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up.
 
 >out
 
@@ -252,7 +253,7 @@ by a point
 
 #+testcase-goto-table-of-noways-wolf-rock
 >n
-Wolf Rock blocks every planar passage except back SOUTH. Well, you can go IN where the lode ore was as well. There's a hideout above as well.
+Wolf Rock blocks every planar passage except back SOUTH. Well, you can go IN where the lode ore was as well. You discovered the hideout DOWN, too.
 
 >in
 
@@ -318,7 +319,7 @@ by a point
 
 #testcase-goto-table-of-noways-wand-wharf
 >e
-You're not in the mood for exploring the wharf. It seems like a good way to get lost. Maybe there's someone or something nearby you can pick up, then leave.
+You're not in the mood for exploring the wharf randomly. It seems like a good way to get lost. Perhaps if you focus on a specific sort of companion you need nearby, that would be better. Then you could find them and leave.
 
 >wan dwarf
 by a point

@@ -235,11 +235,10 @@ The grinch earls, out of insults, give up on you, claiming you got boring. But y
 
 >grin churls
 by a bonus point
-The grin churls remark that you seemed so nice, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up.
 
 #testcase-check-pre-grin-churls-rule-fallthrough
 You slip in a few sly digs and say "grin, churls." They shake their heads, annoyed.
-The grin churls remark that you seemed so nice, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do.
+The grin churls remark that you seemed so open-minded, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do.
 
 >out
 
