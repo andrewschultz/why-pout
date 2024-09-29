@@ -58,7 +58,7 @@ to decide whether say-plural-moving-followers:
 	no;
 
 to decide whether say-plural-stationary-followers:
-	if number of friendly followers > 1, yes;
+	if number of friendly followers in location of player > 1, yes;
 	let rf be a random friendly follower;
 	if rf is plural-named, yes;
 	no;
