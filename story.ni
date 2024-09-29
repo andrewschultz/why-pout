@@ -395,15 +395,15 @@ the Base Ale is a thing. description is "Uck. It's a nasty color, really. But pe
 
 book We Loan
 
-We Loan is a room in universal. printed name is "[if sco-well-own is false]We Loan[else if sco-whee-lone is false]We'll Own[else if sco-oh-flier is false]Whee, Lone?[else]Whee! [']Lone![end if]". "[loan-starter]You can only go back [b]OUT[r] here[if sco-well-own is false].[paragraph break]You don't really trust the whole 'financial services' vibe here. Maybe there's a double meaning to deduce[end if]."
+We Loan is a room in universal. printed name is "[if sco-well-own is false]We Loan[else if sco-whee-lone is false]We'll Own[else if sco-oh-flier is false]Whee, Lone?[else]Whee! [']Lone![end if]". "[loan-starter][paragraph break]You can only go back [b]OUT[r] here[if sco-well-own is false].[paragraph break]You don't really trust the whole 'financial services' vibe here. Maybe there's a double meaning to deduce[end if]."
 
 to say loan-starter:
 	if sco-bile-oh is false:
-		say "This area feels replete with the sort of double-talk all salesmen use. You can almost hear all the dropped and excess apostrophes. It will be tough to hang with all the way through, but if you do, maybe you'll get something out of it.[line break]";
+		say "This area feels replete with the sort of double-talk all salesmen use. You can almost hear all the dropped and excess apostrophes. It will be tough to hang with all the way through, but if you do, maybe you'll get something out of it.";
 	 else if sco-whee-lone is false:
-		say "It's nice and silent here, and maybe there's a specific way to enjoy that.[line break]";
+		say "It's finally nice and silent here again, and maybe there's a specific way to enjoy that.";
 	else if sco-oh-flier is true:
-		say "You've managed to navigate negotiations and wind up with ... a shiny new flier! What more could you ask for?[line break]"
+		say "You've managed to navigate negotiations and wind up with ... a shiny new flier! What more could you ask for? Here, well, probably nothing."
 
 chapter some merchant
 
@@ -575,7 +575,7 @@ book Worm Eaten
 Worm Eaten is a room in universal. printed name is "[if sco-were-meetin is false]Worm-Eaten[else]We're Meetin[']![end if]". "[if sco-were-meetin is false]This place seems very run-down. But it feels homey and inspires camaraderie in an odd way[else]Having had your meeting here, there's not much else to do[end if]."
 
 after printing the locale description of Worm Eaten when sco-were-meetin is true and sco-my-corps is false:
-	say "You feel like your companions are just about ready to go. But you still need to say something, something that can only come uniquely inside of you, to establish what a great team you are.";
+	say "[line break]You feel like your companions are just about ready to go. But you still need to say something, something that can only come uniquely inside of you, to establish what a great team you are.";
 	continue the action;
 
 check going down in Worm Eaten:

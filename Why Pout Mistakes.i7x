@@ -6,7 +6,7 @@ volume mistakes
 
 chapter eh raw air aww
 
-understand "error" and "error [text]" as a mistake ("You sense you're on the right track, but you need to look inward to find something you lost before dealing with external stuff.") when player is in air aww and sco-an-aim is false.
+understand "error" and "error [text]" as a mistake ("You sense you're on the right track, but you feel your inner voice is stretching here a bit.[paragraph break]You need to look inward to find something you lost before dealing with external stuff.") when player is in air aww and sco-an-aim is false.
 
 chapter hype lane
 

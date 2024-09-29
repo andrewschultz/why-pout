@@ -1038,7 +1038,7 @@ to swearzap (sw - a swearblob):
 
 to grinch-go-check:
 	if sco-grin-churls is true and number of not moot swearblobs is 0:
-		say "[line break]The [grinch] remark that you seemed so nice, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do.";
+		say "[line break]The [grinch] remark that you seemed so open-minded, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do.";
 		moot grinch earls;
 
 volume command parsing
