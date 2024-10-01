@@ -879,6 +879,14 @@ rule for supplying a missing noun when ting:
 		say "That's ambiguous--more than one friend you can chat with.";
 		if number of still-chat-needed followers in location of player > 0:
 			say "[line break]However, you still haven't talked with [the list of still-chat-needed followers in location of player].";
+	if sco-an-aim is false:
+		say "Self-talk is the way, but you need something specific. You don't have a name, but you can find purpose. Or something like it.";
+	else if player is in Eh Raw Air Aww:
+		say "You had enough positive self-talk. Now to find a way out!";
+	else if player is in hype lane:
+		say "You don't have time for small talk. You want to get out of here.";
+	else if player is in naff haze and sco-nah-phase is true and sco-pole-east is false:
+		say "You're too self-conscious for self-talk, being policed and all.";
 	else:
 		say "Nobody here to talk to.";
 	the rule fails;
