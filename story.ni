@@ -789,8 +789,20 @@ report taking inventory when sco-six-quid is true and current-quid > 0:
 	continue the action;
 
 report taking inventory when sco-my-corps is false and sco-an-aim is true:
-	say "You have a name, too, now, you remember: Mike Orr.";
+	say "You have a name, too, now, you remember: Mike Orr. [if pre-my-corps rule is not guessed-yet]Maybe you will find something special about it some day[else]Perhaps you will prove your leadership, [corps-note][end if].";
 	continue the action;
+
+to say corps-note:
+	if number of friendly followers is 0:
+		say "but you have nobody to lead";
+	else if number of friendly followers is 1:
+		say "but leading only one companion isn't a corps per se";
+	else if number of friendly followers is 2:
+		say "and you're starting to get a following";
+	else if number of still-follow-needed followers > 0:
+		say "though you feel you could find a bit more support";
+	else:
+		say "inspiring your followers at the right time"
 
 report taking inventory when player has talk ache:
 	say "Oh, man. You still have that talk-ache, too.";
