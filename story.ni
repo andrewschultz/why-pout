@@ -772,8 +772,16 @@ book regular verbs, modified
 chapter inventory
 
 check taking inventory:
-	if sco-wipe-out is false, say "There's that occasional voice ringing in your head asking 'Why pout?' But besides that ...";
-	now talk ache is not marked for listing;
+	if sco-wipe-out is true, continue the action;
+	say "There's that occasional voice ringing in your head asking 'Why pout?' ";
+	if naff haze is unvisited:
+		say "But besides that ...";
+	else if number of friendly followers is 0:
+		say "Well, you're feeling a bit alone, but there's always the prospect of finding stuff...";
+	else if number of friendly followers is 1:
+		say "It's hard to, because you have a companion now, [the random friendly follower].";
+	else:
+		say "Well, it's very hard, with multiple companions.";
 
 the get rid of ache standard inventory rule is listed instead of the print standard inventory rule in the carry out taking inventory rulebook.
 
