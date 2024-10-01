@@ -1071,7 +1071,7 @@ check thinking when current-score is 0:
 		say "[line break]You've already tried to [b]WIPE OUT[r] in response to taunts of 'why pout,' and you wonder if this all is easier. [if gs-examined-self is false]Perhaps you should [b]X ME[r][else]Maybe your search for a name will turn up something meaningful, regardless of what your name is[end if].";
 	the rule succeeds;
 
-rule for printing a parser error when the latest parser error is the not a verb I recognise error (this is the catch bad verbs rule):
+rule for printing a parser error when the latest parser error is the not a verb I recognise error or the latest parser error is the didn't understand error (this is the catch bad verbs rule):
 	if core-score is 0:
 		say "You're stuck with what to do right now. Perhaps you can use your senses for clues, or [b]THINK[r], or look inward[if gs-examined-self is true] again with X ME[end if], to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.";
 		increment first-point-clue-flag;

@@ -159,7 +159,7 @@ Rule for deciding whether all includes something: it does not.
 
 rule for printing a parser error when the latest parser error is the nothing to do error:
 	if action-to-be is the ting action:
-		say "You can't talk to more than one companion at once. To get an overview of whom you haven't talked to yet, try [b]T[r].";
+		say "You can't talk to more than one companion at once. To get an overview of whom you haven't talked to yet, try [b]I[r] for inventory.";
 	else:
 		say "It looks like you tried to act on multiple things. You don't need to act on more than one thing at a time in [this-game].";
 
@@ -738,6 +738,10 @@ carry out verbsing:
 		say "[line break]Most point-scoring commands will consist of two words.";
 	the rule succeeds;
 
+report verbsing when number of friendly followers > 3:
+	say "[b]UH PARTY[r] or [b]A PARTY[r] will describe your party as one unit (use [b]I[r] to see who is there,) and [b]APART EE[r] (2-4 e's) will show them individually.";
+	continue the action;
+
 chapter versioning
 
 carry out versioning:
@@ -849,6 +853,10 @@ report taking inventory when player has talk ache:
 
 report taking inventory when gs-got-weapons is true and sco-wipe-out is false:
 	say "You and your party are also armed for any conflict that may arise.";
+	continue the action;
+
+report taking inventory when number of friendly followers > 3 and opt-lump-party is true:
+	say "So far, you have gained the support of [the list of friendly followers].";
 	continue the action;
 
 chapter sensing
