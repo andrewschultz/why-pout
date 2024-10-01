@@ -649,6 +649,8 @@ volume unsorted
 
 volume verbs
 
+book exiting
+
 the can't exit when not inside anything rule is not listed in any rulebook.
 the convert exit into go out rule is not listed in any rulebook.
 
@@ -766,6 +768,35 @@ carry out xyzzying:
 	say "You hear a[one of][or]nother[stopping] size-Z 'X! Why's [']e...'";
 	say "[one of][line break]No, I don't know whether size Z is super-big or super-small.[or][stopping]";
 	the rule succeeds;
+
+book options
+
+to lump-party (ts - a truth state):
+	say "Your party is [if ts is opt-lump-party]already[else]now[end if] [if opt-lump-party is true]lumped together[else]listed separately[end if] in room descriptions.";
+	now opt-lump-party is ts;
+
+chapter lumponing
+
+lumponing is an action out of world.
+
+understand the command "uh/a party" as something new.
+
+understand "uh party" and "a party" as lumponing when number of friendly followers >= 3.
+
+carry out lumponing:
+	lump-party true;
+	say "[line break][b]T[r] to talk will list whom to talk to.";
+
+chapter lumpoffing
+
+lumpoffing is an action out of world.
+
+understand the command "apart ee/eee/eeee" as something new.
+
+understand "apart ee" and "apart eee" and "apart eeee" as lumponing when number of friendly followers >= 3.
+
+carry out lumpoffing:
+	lump-party false;
 
 book regular verbs, modified
 
