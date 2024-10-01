@@ -14,6 +14,10 @@ definition: a rule (called ru) is thinknoteblocking:
 
 volume new types
 
+book sentient
+
+a sentient is a kind of thing. [this is for things you can talk to but they take lower priority than followers]
+
 book followers
 
 a follower is a kind of thing.
