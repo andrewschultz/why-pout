@@ -779,9 +779,8 @@ the get rid of ache standard inventory rule is listed instead of the print stand
 
 Carry out taking inventory (this is the get rid of ache standard inventory rule):
 	now all things carried by player are marked for listing;
-	issue library message taking inventory action number 2;
+	say "[if sco-pry-stalk is true]'Good! Some goods, umm...':[else]You are carrying:[end if][line break]";
 	if player has talk ache, now talk ache is not marked for listing;
-	say ":[line break]";
 	list the contents of the player, with newlines, indented, including contents, listing marked items only,
 		giving inventory information, with extra indentation.
 
