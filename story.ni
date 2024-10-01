@@ -417,7 +417,7 @@ check going outside in we loan when merchant is in we loan: say "Alas, the merch
 
 chapter oaf liar
 
-the oaf liar is a singular-named thing. "An oaf liar blathers away here, with stuff that's likely, but not provably false. They seem quite proud of their salesmanship skill, which is more persistence than anything else.". description is "Smarmy and well-dressed.".
+the oaf liar is a sentient. "An oaf liar blathers away here, with stuff that's likely, but not provably false. They seem quite proud of their salesmanship skill, which is more persistence than anything else.". description is "Smarmy and well-dressed.".
 
 section flier
 
@@ -539,7 +539,7 @@ to say island-status:
 
 chapter sick squid
 
-the sick squid is a thing. "A [if sco-six-quid is true]formerly (thanks to you) [end if]sick squid trundles about in the water here.". description is "[if sco-six-quid is false]It seems like it's half choking on something, not enough to strangle it, but enough to make it really uncomfortable[else]It looks back at you. Squids don't smile, but if it could, it would. Perhaps, if you know of an island nearby in the ocean, it will take you there[end if]."
+the sick squid is a sentient. "A [if sco-six-quid is true]formerly (thanks to you) [end if]sick squid trundles about in the water here.". description is "[if sco-six-quid is false]It seems like it's half choking on something, not enough to strangle it, but enough to make it really uncomfortable[else]It looks back at you. Squids don't smile, but if it could, it would. Perhaps, if you know of an island nearby in the ocean, it will take you there[end if]."
 
 check entering squid: say "It might not have the energy for joyriding. You need to show it where to go, maybe with [if player has flier]that flier of yours[else]a map or something[end if]." instead;
 
@@ -576,7 +576,7 @@ to zap-bruise-wares:
 
 chapter earls
 
-the grinch earls are a plural-named thing in Brew Swears. "Some [earls] parade around here, bragging about how they ruin boring people's fun with their dynamic ways and pointing out that it's easy to be nice if you're boring. They fix you with a 'We parse: weep, arse' gaze[if sco-grin-churls is true], though they're less effective than when they were self-styled earls[end if]. [if number of not moot swearblobs is 0]They've run out of swears but not of sneers. Perhaps one more non-profane phrase could dispel them[else if sco-weak-us is true]You cut their 'we cuss' down to size, so they're now giving examples of how they cuss[else]They constantly blather 'WE CUSS' and seem quite proud of that[end if].". printed name is "[if sco-grin-churls is true]grin churls[else]grinch earls[end if]". description is "Bleah. They remind you of popular kids (you know, the ones who beat up kids who claimed they weren't popular--it was effective) from back in school, except all grown up."
+the grinch earls are a plural-named sentient in Brew Swears. "Some [earls] parade around here, bragging about how they ruin boring people's fun with their dynamic ways and pointing out that it's easy to be nice if you're boring. They fix you with a 'We parse: weep, arse' gaze[if sco-grin-churls is true], though they're less effective than when they were self-styled earls[end if]. [if number of not moot swearblobs is 0]They've run out of swears but not of sneers. Perhaps one more non-profane phrase could dispel them[else if sco-weak-us is true]You cut their 'we cuss' down to size, so they're now giving examples of how they cuss[else]They constantly blather 'WE CUSS' and seem quite proud of that[end if].". printed name is "[if sco-grin-churls is true]grin churls[else]grinch earls[end if]". description is "Bleah. They remind you of popular kids (you know, the ones who beat up kids who claimed they weren't popular--it was effective) from back in school, except all grown up."
 
 understand "grin churls" and "grin/churls" as grinch earls when sco-grin-churls is true.
 
@@ -891,8 +891,17 @@ rule for supplying a missing noun when ting:
 		say "Nobody here to talk to.";
 	the rule fails;
 
-check ting:
+check ting a sentient:
 	if noun is skull, say "You doubt the skull would have anything to say beyond 'I'm all I MAUL!' or 'Help our hell-power!'" instead;
+	if noun is oaf liar, say "The oaf liar is talking over you. Perhaps you can shut them up by buying something really cheap." instead;
+	if noun is merchant, say "You want to figure a way to kill conversation, instead." instead;
+	if noun is booze troll, say "The booze troll doesn't seem interested in useful conversation, at least not in their present form." instead;
+	if noun is squid, say "[if sco-six-quid is true]It seems to be choking a bit[else]The squid can't speak, but you get very good vibes from it. It will understand English when it needs to[end if]." instead;
+	if noun is traitor, say "[The traitor] mumbles apologetically for who they were. Perhaps you can show [the traitor] a small shift to change them." instead;
+	if noun is grinch earls, say "You can't imagine any chat with them would be pleasant. Staunch, specific verbal defense is the way to go here." instead;
+	say "Awkward silence, which is my fault. I'd like to change that, so do report a bug on GitHub." instead;
+
+check ting:
 	if noun is the player:
 		if sco-an-aim is false:
 			say "You feel too grumpy for positive self-talk. You mumble 'I molder. I'm older.'" instead;
@@ -901,10 +910,6 @@ check ting:
 		if sco-wide-vision is true, say "You've already shared your vision. Now's the time to put it into action." instead;
 		if sco-wipe-out is true, say "The only thing left to do is dispel the why-division, if you can." instead;
 		say "Now's not the time for chat." instead;
-	if noun is squid, say "[if sco-six-quid is true]It seems to be choking a bit[else]The squid can't speak, but you get very good vibes from it. It will understand English when it needs to[end if]." instead;
-	if noun is oaf liar, say "The oaf liar is talking over you. Perhaps you can shut them up by buying something really cheap." instead;
-	if noun is merchant, say "You want to figure a way to kill conversation, instead." instead;
-	if noun is booze troll, say "The booze troll doesn't seem interested in useful conversation, at least not in their present form." instead;
 	if noun is not a follower, say "You don't get a response." instead;
 	if sco-my-corps is true, say "Motivational talk is through. Time to end this thing." instead;
 	if noun is not friendly:
