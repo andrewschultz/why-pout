@@ -966,7 +966,12 @@ carry out ting:
 	say "[line break][help-chat of noun][line break]";
 	the rule succeeds;
 
-report ting:
+report ting when gs-t-without-note is false:
+	now gs-t-without-note is true;
+	say "[i][bracket]NOTE[r][i]: without an argument for [b]T[r][i], [this-game-noi] will try to guess whom you talk to. It prioritizes friendly NPCs, especially ones you haven't talked to before, but if there is more than one, it will ask you to be more specific.[close bracket]";
+	continue the action;
+
+report ting a follower:
 	if noun is chatted:
 		if talk ache is moot, continue the action;
 		if number of still-chat-needed followers is 0:
