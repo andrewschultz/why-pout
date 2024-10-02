@@ -724,8 +724,12 @@ chapter verbsing
 
 verbsing is an action out of world.
 
+understand the command "v" as something new.
+understand the command "verb" as something new.
 understand the command "verbs" as something new.
 
+understand "v" as verbsing.
+understand "verb" as verbsing.
 understand "verbs" as verbsing.
 
 carry out verbsing:
