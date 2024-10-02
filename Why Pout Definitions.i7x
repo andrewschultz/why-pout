@@ -71,7 +71,7 @@ to decide whether say-plural-stationary-followers:
 
 every turn when block-followers is false (this is the followers follow you rule):
 	if number of leftbehind followers > 0:
-		if number of leftbehind followers > 2:
+		if opt-lump-party is true:
 			say "Your [number of leftbehind followers in words] companions follow you.";
 		else:
 			say "The [list of leftbehind followers] follow[if not say-plural-moving-followers]s[end if] you.";

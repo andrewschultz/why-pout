@@ -738,7 +738,7 @@ carry out verbsing:
 		say "[line break]Most point-scoring commands will consist of two words.";
 	the rule succeeds;
 
-report verbsing when number of friendly followers > 3:
+report verbsing when number of friendly followers >= 3:
 	say "[b]UH PARTY[r] or [b]A PARTY[r] will describe your party as one unit (use [b]I[r] to see who is there,) and [b]APART EE[r] (2-4 e's) will show them individually.";
 	continue the action;
 
@@ -776,7 +776,7 @@ carry out xyzzying:
 book options
 
 to lump-party (ts - a truth state):
-	say "Your party is [if ts is opt-lump-party]already[else]now[end if] [if opt-lump-party is true]lumped together[else]listed separately[end if] in room descriptions.";
+	say "Your party is [if ts is opt-lump-party]already[else]now[end if] [if ts is true]lumped together[else]listed separately[end if] in room descriptions.";
 	now opt-lump-party is ts;
 
 chapter lumponing
@@ -797,7 +797,7 @@ lumpoffing is an action out of world.
 
 understand the command "apart ee/eee/eeee" as something new.
 
-understand "apart ee" and "apart eee" and "apart eeee" as lumponing when number of friendly followers >= 3.
+understand "apart ee" and "apart eee" and "apart eeee" as lumpoffing when number of friendly followers >= 3.
 
 carry out lumpoffing:
 	lump-party false;
@@ -855,8 +855,8 @@ report taking inventory when gs-got-weapons is true and sco-wipe-out is false:
 	say "You and your party are also armed for any conflict that may arise.";
 	continue the action;
 
-report taking inventory when number of friendly followers > 3 and opt-lump-party is true:
-	say "So far, you have gained the support of [the list of friendly followers].";
+report taking inventory when opt-lump-party is true:
+	say "So far, you have gained the support of [number of friendly followers in words] friends, or friend-groups: [the list of friendly followers].";
 	continue the action;
 
 chapter sensing
