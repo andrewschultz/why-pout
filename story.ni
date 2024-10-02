@@ -197,11 +197,11 @@ Hype Lane is a room in universal. "It's still pretty dark here. You must still b
 
 chapter cell phones
 
-the cell phones are a plural-named thing in hype lane. understand "phone" and "cell phone" as cell phones. "You don't remember everything about your former self, but you remember you hated cell phones and how they distracted you. Maybe if the people yacking into them were taken down a peg, you could focus a bit more. Dang cell phones.". description is "Whether or not the cell phones are the latest models, you don't want to pay attention to them too much. Just figure out a way for a harmless calamity that may make their users quiet down a bit."
+the cell phones are a plural-named sentient in hype lane. understand "phone" and "cell phone" as cell phones. "You don't remember everything about your former self, but you remember you hated cell phones and how they distracted you. Maybe if the people yacking into them were taken down a peg, you could focus a bit more. Dang cell phones.". description is "Whether or not the cell phones are the latest models, you don't want to pay attention to them too much. Just figure out a way for a harmless calamity that may make their users quiet down a bit."
 
 chapter prize talk
 
-prize talk is a thing. "[if sco-pry-stalk is false]You'd like to DO something about the prize talk. Or seek out something that would give you passage away from it[else]The prize talk is all around, but you're able to ignore it, now you feel you might have a way out[end if].". description is "[if sco-pry-stalk is false]The prize talk also discusses things that aren't so worth it, like -- well, plants and stuff. BORING[else]You can see your way around the prize talk now. You don't want to get sucked back in[end if]."
+prize talk is a sentient. "[if sco-pry-stalk is false]You'd like to DO something about the prize talk. Or seek out something that would give you passage away from it[else]The prize talk is all around, but you're able to ignore it, now you feel you might have a way out[end if].". description is "[if sco-pry-stalk is false]The prize talk also discusses things that aren't so worth it, like -- well, plants and stuff. BORING[else]You can see your way around the prize talk now. You don't want to get sucked back in[end if]."
 
 section stalk
 
@@ -908,6 +908,9 @@ understand "ask" as ting.
 understand "ask [thing]" as ting.
 
 rule for supplying a missing noun when ting:
+	if talk-default-to-player:
+		now noun is the player;
+		continue the action;
 	if number of followers in location of player is 1:
 		now noun is random follower in location of player;
 		continue the action;
@@ -915,46 +918,55 @@ rule for supplying a missing noun when ting:
 		now noun is random friendly follower in location of player;
 		continue the action;
 	if number of followers in location of player > 1:
+		if number of still-chat-needed followers in location of player is 0 and orc is in location of player and orc is unchatted:
+			say "The orc looks left out a bit...";
+			now noun is the orc;
+			continue the action;
 		say "That's ambiguous--more than one friend you can chat with.";
 		if number of still-chat-needed followers in location of player > 0:
 			say "[line break]However, you still haven't talked with [the list of still-chat-needed followers in location of player].";
-	if sco-an-aim is false:
-		say "Self-talk is the way, but you need something specific. You don't have a name, but you can find purpose. Or something like it.";
-	else if player is in Eh Raw Air Aww:
-		say "You had enough positive self-talk. Now to find a way out!";
-	else if player is in hype lane:
-		say "You don't have time for small talk. You want to get out of here.";
-	else if player is in naff haze and sco-nah-phase is true and sco-pole-east is false:
-		say "You're too self-conscious for self-talk, being policed and all.";
-	else:
-		say "Nobody here to talk to.";
+		the rule fails;
+	if number of sentients in location of player is 1:
+		now noun is random sentient in location of player;
+		continue the action;
+	say "Nobody here to talk to.";
 	the rule fails;
 
-check ting a sentient:
-	if noun is skull, say "You doubt the skull would have anything to say beyond 'I'm all I MAUL!' or 'Help our hell-power!'" instead;
-	if noun is oaf liar, say "The oaf liar is talking over you. Perhaps you can shut them up by buying something really cheap." instead;
-	if noun is merchant, say "You want to figure a way to kill conversation, instead." instead;
-	if noun is booze troll, say "The booze troll doesn't seem interested in useful conversation, at least not in their present form." instead;
-	if noun is squid, say "[if sco-six-quid is true]It seems to be choking a bit[else]The squid can't speak, but you get very good vibes from it. It will understand English when it needs to[end if]." instead;
-	if noun is traitor, say "[The traitor] mumbles apologetically for who they were. Perhaps you can show [the traitor] a small shift to change them." instead;
-	if noun is grinch earls, say "You can't imagine any chat with them would be pleasant. Staunch, specific verbal defense is the way to go here." instead;
-	say "Awkward silence, which is my fault. I'd like to change that, so do report a bug on GitHub." instead;
-
 check ting:
-	if noun is the player:
-		if sco-an-aim is false:
-			say "You feel too grumpy for positive self-talk. You mumble 'I molder. I'm older.'" instead;
-		say "You motivate yourself with 'Goal: earn? Go learn!'" instead;
+	if player has talk ache:
+		if noun is orc and orc is unchatted, continue the action;
+		say "That talk-ache is a bit of a nuisance. You've probably got the information you need from your friends." instead;
 	if player is in doom ending:
 		if sco-wide-vision is true, say "You've already shared your vision. Now's the time to put it into action." instead;
-		if sco-wipe-out is true, say "The only thing left to do is dispel the why-division, if you can." instead;
-		say "Now's not the time for chat." instead;
-	if noun is not a follower, say "You don't get a response." instead;
-	if sco-my-corps is true, say "Motivational talk is through. Time to end this thing." instead;
+		if sco-wipe-out is true, say "[if pre-wide-vision rule is guessed-yet]The why-division is too much to sort things out[else]The only thing left to do is dispel the why-division, if you can[end if]." instead;
+		if noun is a follower, say "Now's not the time for chat." instead;
+
+check ting a follower:
 	if noun is not friendly:
 		if noun is orc, say "You'll have to win the argument with [the grinch] before any meaningful conversations." instead;
 		say "You haven't gained [the noun]'s trust enough yet for a chat." instead;
-	if player has talk ache, say "That talk ache is a bit of a nuisance. You've probably got the information you need from your friends." instead;
+
+carry out ting a sentient:
+	if noun is skull, say "You doubt the skull would have anything to say beyond 'I'm all I MAUL!' or 'Help our hell-power!'" instead;
+	if noun is oaf liar, say "The oaf liar is talking over you. Perhaps you can shut them up by buying something really cheap." instead;
+	if noun is merchant, say "You want to figure a way to kill conversation, [if sco-summer-chant is true]even if your summer chant made it more bearable[else]instead[end if]." instead;
+	if noun is booze troll, say "The booze troll doesn't seem interested in useful conversation, at least not in their present form." instead;
+	if noun is squid, say "[if sco-six-quid is false]It seems to be choking a bit[else]The squid can't speak, but you get very good vibes from it. It will understand English when it needs to[end if]." instead;
+	if noun is traitor, say "[The traitor] mumbles apologetically for who they were. Perhaps you can show [the traitor] a small shift to change them." instead;
+	if noun is grinch earls, say "You can't imagine any chat with them would be pleasant. Staunch, specific verbal defense is the way to go here." instead;
+	if noun is cell phones, say "No, you don't want to get swept up in that." instead;
+	if noun is prize talk, say "You [if sco-pry-stalk is true]got[else]want[end if] something better than good chat." instead;
+	say "Awkward silence, which is my fault. I'd like to change that, so do report a bug on GitHub." instead;
+
+carry out ting (this is the first t rule):
+	if noun is the player:
+		if sco-an-aim is false:
+			say "Self-talk is the way, but you need something positive and specific. All you can muster is 'I molder. I'm older.' You sort of wish for purpose, or something like it." instead;
+		if player is in Eh Raw Air Aww, say "You had enough positive self-talk. Now to find a way out!" instead;
+		if being-policed, say "You're too self-conscious for self-talk, being policed and all." instead;
+		say "You motivate yourself with 'Goal: earn? Go learn!'" instead;
+	if noun is not a follower, say "You don't get a response." instead;
+	if sco-my-corps is true, say "Motivational talk is through. Time to end this thing." instead;
 	if number of still-chat-needed followers is 0:
 		if noun is unchatted:
 			say "Sure, why not chat a bit more?";
