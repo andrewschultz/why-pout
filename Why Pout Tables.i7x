@@ -710,7 +710,7 @@ this is the hom-rouge-old rule:
 
 this is the post-rogue-old rule:
 	now sco-rogue-old is true;
-	say "A rogue, old, arrives. They mention they'd like to help you but, you know, the row (gold) needs maintenance. You offer to pay them three quid..";
+	say "A rogue, old, arrives. They mention they'd like to help you but, you know, the row (gold) needs maintenance. You offer to pay them three quid.";
 	befriend rogue old;
 	quid-reduce 3;
 

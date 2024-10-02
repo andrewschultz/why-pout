@@ -331,7 +331,7 @@ the gnome old is a follower. printed name is "gnome (old)". help-chat is "The gn
 
 chapter row gold
 
-there is a thing called row gold. It is in KeepIller. printed name is "row (gold)". "A row (gold) shines in this otherwise forbidding keep[if pre-rogue-old rule is guessed-yet]. You've met its proprietor, the rogue (old,) but they require payment[else if sco-rogue-old is true], and you're glad the rogue (old) had enough faith in you to leave it for a while.". description is "You're surprised someone hasn't taken it yet. Perhaps it has an unseen guardian."
+there is a thing called row gold. It is in KeepIller. printed name is "row (gold)". "A row (gold) shines in this otherwise forbidding keep[if pre-rogue-old rule is guessed-yet]. You've met its proprietor, the rogue (old,) but they require payment[else if sco-rogue-old is true], and you're glad the rogue (old) had enough faith in you to leave it for a while[end if].". description is "You're surprised someone hasn't taken it yet. Perhaps it has an unseen guardian."
 
 section rogue old
 
@@ -822,7 +822,7 @@ the get rid of ache standard inventory rule is listed instead of the print stand
 
 Carry out taking inventory (this is the get rid of ache standard inventory rule):
 	now all things carried by player are marked for listing;
-	say "[if sco-pry-stalk is true]'Good! Some goods, umm...':[else]You are carrying:[end if][line break]";
+	say "[if sco-high-plain is true]'Good! Some goods, umm...':[else]You are carrying:[end if][line break]";
 	if player has talk ache, now talk ache is not marked for listing;
 	list the contents of the player, with newlines, indented, including contents, listing marked items only,
 		giving inventory information, with extra indentation.
@@ -992,7 +992,7 @@ report ting a follower:
 		say "That was a nice refresher, though ";
 		if number of unchatted followers in location of player > 0:
 			let RF be random unchatted follower in location of player;
-			say "[RF] seem[if rf is not plural-named]s[end if] to want to cut in a bit for their turn some time.";
+			say "[the RF] seem[if rf is not plural-named]s[end if] to want to cut in a bit for their turn some time.";
 		else:
 			say "it didn't reveal anything new.";
 		if gs-t-special-note is false:
@@ -1004,7 +1004,7 @@ report ting a follower:
 		else:
 			say "Well, that's [one of]even [or][stopping]more useful information worth remembering.";
 		now noun is chatted;
-		if number of still-chat-needed followers is 0:
+		if number of still-chat-needed followers is 0 and talk ache is off-stage:
 			say "[line break]That was a lot of talking. After all that time alone, you're not used to it. You develop a talk-ache.";
 			now player has talk ache;
 	continue the action;
@@ -1104,7 +1104,7 @@ volume appearance
 for printing a locale paragraph about a follower (called fo):
 	if fo is not friendly, continue the action;
 	if fo is mentioned, continue the action;
-	say "[The list of friendly followers in location of player] wait[if not say-plural-stationary-followers]s[end if] here for what to do or where to go next.";
+	say "[if opt-lump-party is true]Your [(number of friendly followers in location of player) in words] companions[else][The list of friendly followers in location of player][end if] wait[if not say-plural-stationary-followers]s[end if] here for what to do or where to go next.";
 	now all friendly followers are mentioned;
 
 volume scores
