@@ -81,6 +81,17 @@ to follow-you:
 	repeat with X running through leftbehind followers:
 		move X to location of player;
 
+book statuses
+
+to decide whether talk-default-to-player:
+	if player is in Eh Raw Air Aww, yes;
+	if being-policed, yes;
+	no;
+
+to decide whether being-policed:
+	if player is in NaffHaze and sco-nah-phase is true and sco-pole-east is false, yes;
+	no;
+
 book swearblobs
 
 a swearblob is a kind of thing. a swearblob is usually privately-named. a swearblob is usually scenery. a swearblob has a swearblob called prev-swear. a swearblob has a swearblob called next-swear.
