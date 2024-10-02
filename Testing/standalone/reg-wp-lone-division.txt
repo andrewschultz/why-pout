@@ -34,6 +34,9 @@ Your score just went up by a bonus point!
 Your experiences and failures give you a leadership you don't know you had. You convince your companions to do more than just save their own hides. You lay out a vision so scourges from the likes of the sea skull are less likely to happen again, or it will take longer. And everyone listens! A few even say "Worth inking, we're thinking!"
 They're eager for the final step, to get out there. You look around. It's pretty clear what must occur, or it will be, soon.
 
+>t raider
+You've already shared your vision. Now's the time to put it into action.
+
 >do mending
 by a point
 Your score just went up by a point!

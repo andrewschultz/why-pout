@@ -14,6 +14,7 @@ file=reg-wp-thru-mistakes.txt,mis,walkthrough testing all mistakes
 file=reg-wp-thru-homonyms.txt,hom,walkthrough testing homonyms
 file=reg-wp-thru-goto.txt,goto/gt/go,walkthrough testing GOTO
 file=reg-wp-thru-lookinv.txt,li/look/inv,walkthrough testing inventory and room description changes
+file=reg-wp-thru-verbs.txt,v/verb/verbs,special verb testing inventory and room description changes
 
 #--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
 #--strict-file: this says that the project requires strict section marking e.g. @all instead of ==t1.
@@ -59,6 +60,51 @@ The air chokes you a bit. It's too thick to see far beyond yourself. You barely 
 >e
 "I sit? Ice it!" you moon. You can't see anywhere. You know almost nothing. I mean, you don't even have a name. What would you do even if there was a passage?
 
+@verbs
+>about
+Like most of my games, Why Pout rates merciful on the Zarfian cruelty scale. However, in this case, I want the puzzles to be more merciful in terms of general difficulty on the player's psyche than usual.
+Note that an optional room will appear about midway through the game. It may contain profanity, which I hope is amusing, but I don't blame you if you wish to skip it.
+blurglecruncheon@gmail.com is my email, and http://github.com/andrewschultz/why-pout is the github site, where you can report issues. I'm open to transcripts.
+CREDITS lists people who helped make Why Pout a reality, or a better version than it would've been without them.  EXT shows the extensions listed, and VERSION or VERSIONS shows version info.
+\\
+>credits
+Thanks to everyone past and future involved in the administration of IFComp.
+\\
+>credit
+Thanks to everyone past and future involved in the administration of IFComp.
+\\
+>verbs
+Most point-scoring commands will consist of two words.
+\\
+>verb
+Most point-scoring commands will consist of two words.
+\\
+>v
+Most point-scoring commands will consist of two words.
+\\
+>ext
+One extension has been temporarily removed from the list, as it may cause a spoiler. If you wish to see it, come back after you've scored two points.
+\\
+>version
+Version 1 was released to IFComp on August 28, 2024.
+\\
+>versions
+Version 1 was released to IFComp on August 28, 2024.
+\\
+>xyzzy
+You hear a size-Z "X! Why's 'e..."
+No, I don't know whether size Z is super-big or super-small.
+\\
+>xyzzy
+!size Z
+\\
+>t
+NOTE: without an argument for T, Why Pout will try to guess whom you talk to. It prioritizes friendly NPCs, especially ones you haven't talked to before, but if there is more than one, it will ask you to be more specific.
+Self-talk is the way, but you need something positive and specific. All you can muster is "I molder. I'm older." You sort of wish for purpose, or something like it.
+\\
+>t me
+Self-talk is the way, but you need something positive and specific. All you can muster is "I molder. I'm older." You sort of wish for purpose, or something like it.
+
 >z
 
 @mis
@@ -102,6 +148,10 @@ Sounds right, but be more specific how MUCH of the maps you want.
 >too maaaps
 Sounds right, but be more specific how MUCH of something else you want.
 
+@verbs
+>t
+You had enough positive self-talk. Now to find a way out!
+
 @li
 >l
 It's a bit clearer now. You still seem trapped. But there must be secrets hidden, and maybe one or more can get you out of here.
@@ -134,6 +184,18 @@ No sense faffing around horizontally. You're sick of being stuck underground.
 >u
 You need to find something that will help you go up.
 
+@verbs
+>t cell phones
+No, you don't want to get swept up in that.
+\\
+>t
+No, you don't want to get swept up in that.
+
+@verbs+
+>ext
+Spoonerism and Oronym Core version 1/240717 by Andrew Schultz
+!One extension has
+
 >self owns
 by a point
 
@@ -149,6 +211,17 @@ However, now, a prize talk blasts through hidden loudspeakers. It exhorts you to
 It's still pretty dark here. You must still be underground.
 Around you, a prize talk booms from unseen speakers, exhorting you to do, or at least earn, more. The heck with being above ground, with boring old nature that distracts you from being all you can be. Well, for the economy, at least.
 You'd like to DO something about the prize talk. Or seek out something that would give you passage away from it.
+
+@verbs
+>t prize talk
+You want something better than good chat.
+\\
+>t
+You want something better than good chat.
+
+@verbs+
+>verbs
+!Most point-scoring commands will consist of two words.
 
 >pry stalk
 by a point
@@ -191,6 +264,10 @@ You need to name where to go up to.
 #testcase-mistake-why-pout-ace-talk
 >ace talk
 All ace talk you have made and will make come from within. Besides, you need to use the stalk to find a way out.
+
+@verbs
+>t prize talk
+You got something better than good chat.
 
 >high plain
 by a point
@@ -295,13 +372,17 @@ by a point
 >pall east
 {$REJHOM}
 
+@verbs
+>t
+You're too self-conscious for self-talk, being policed and all.
+
 >pole east
 by a point
 
 @li
 A war pawn, like a chess piece, rolls into view. It looks pretty powerful. As you take it, you reflect that you may wish to save it for down the road when you're really stuck somewhere.
 There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
-You are carrying:
+"Good! Some goods, umm...":
   a war pawn
 You have a name, too, now, you remember: Mike Orr.
 \\
@@ -442,6 +523,13 @@ Ah, yes. Things clear up a bit now. There we go ... you see where an ocean shoul
 >e
 You can only go back NORTH or, if you know where you want to go, give the squid instructions where to go.
 
+@verbs
+>t
+It seems to be choking a bit.
+\\
+>t squid
+It seems to be choking a bit.
+
 >six quid
 by a point
 
@@ -455,6 +543,10 @@ You offer to give it some of the coins it almost choked on, but it does not need
 >i
 You have six quid from helping the sick squid.
 
+@verbs
+>t
+The squid can't speak, but you get very good vibes from it. It will understand English when it needs to.
+
 >n
 
 >n
@@ -462,6 +554,10 @@ You have six quid from helping the sick squid.
 @all
 #testcase-room-names-wolf-rock
 `Wolf Rock
+
+@verbs
+>t me
+You motivate yourself with "Goal: earn? Go learn!"
 
 @gt
 #testcase-goto-table-of-noways-wolf-rock
@@ -480,7 +576,7 @@ by a point
 You rummage about and find a wool frock.
 INVENTORY CHANGED
 There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
-You are carrying:
+"Good! Some goods, umm...":
   a wool frock
   a war pawn
 You have six quid from helping the sick squid.
@@ -538,13 +634,20 @@ Hideout
 You can only go back UP. It wouldn't be a very good hideout if you had too many places to sneak around.
 A booze troll sulks sullenly here.
 
+@verbs
+>t
+The booze troll doesn't seem interested in useful conversation, at least not in their present form.
+\\
+>t troll
+The booze troll doesn't seem interested in useful conversation, at least not in their present form.
+
 >boost role
 by a point
 
 @li
 INVENTORY CHANGED
 There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
-You are carrying:
+"Good! Some goods, umm...":
   some Base Ale
   a wool frock
   a war pawn
@@ -576,6 +679,13 @@ That would change the new troll for the worse!
 >nude role
 That would change the new troll for the worse!
 
+@verbs
+>t
+You chat with the new troll a bit, learning more about the history of the area you're exploring and why you're here. It fills in some blanks in your memory.
+\\
+>t troll
+You chat with the new troll a bit, recapping more about the history of the area you're exploring and why you're here. It fills in some blanks in your memory.
+
 >u
 
 >s
@@ -605,7 +715,7 @@ Funnily, you stop specifically noticing the lack of mold now your new companion'
 @li
 INVENTORY CHANGED
 There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
-You are carrying:
+"Good! Some goods, umm...":
   some Base Ale
   a war pawn
 !a wool frock
@@ -628,9 +738,54 @@ by a point
 @all,rej
 {--rej}#testcase-check-pre-rogue-old-rule-fallthrough
 {--all}#testcase-run-post-rogue-old-rule-default
-A rogue, old, arrives. They mention they'd like to help you but, you know, the row (gold) needs maintenance. You offer to pay them three quid..
+A rogue, old, arrives. They mention they'd like to help you but, you know, the row (gold) needs maintenance. You offer to pay them three quid.
 This transaction reduces your wealth from six quid to three quid.
-Hmm. You have a lot of friends following you around, but you haven't talked to them much. Perhaps you could learn something from them.
+!lot of friends
+
+@all
+NOTE: in order to simplify things now you've grown your party, you can type UH PARTY or A PARTY so everyone is not listed individually. APART EEE will list them individually again. This is all in VERBS.
+
+@verbs
+>verbs
+UH PARTY or A PARTY will describe your party as one unit (use I to see who is there,) and APART EE (2-4 e's) will show them individually.
+\\
+>uh party
+Your party is now lumped together in room descriptions.
+T to talk will list whom to talk to.
+\\
+>a party
+\\
+Your party is already lumped together in room descriptions.
+T to talk will list whom to talk to.
+>l
+Your three companions wait here for what to do or where to go next.
+\\
+>e
+Your three companions follow you.
+\\
+>apart ee
+Your party is now listed separately in room descriptions.
+\\
+>apart eee
+Your party is already listed separately in room descriptions.
+\\
+>apart eeee
+Your party is already listed separately in room descriptions.
+>w
+
+@verbs+
+>t
+That's ambiguous--more than one friend you can chat with.
+However, you still haven't talked with the rogue (old) and the gnome (old).
+\\
+>t rogue old
+You chat with the rogue (old) a bit, learning more about the history of the area you're exploring and why you're here. It fills in some blanks in your memory.
+The rogue (old) discusses ways to sneak around so vastly overpowered opponents can't blow you away, and you also learn not to feel guilty or shifty about being good at sneaking around, around much more unsavory entities than yourself.
+Well, that's even more useful information worth remembering.
+\\
+>t
+That's ambiguous--more than one friend you can chat with.
+However, you still haven't talked with the gnome (old).
 
 @li
 >i
@@ -698,7 +853,7 @@ With your friends boosting your spirits, you look for a sacred/profane weapon. I
 @li
 INVENTORY CHANGED
 There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
-You are carrying:
+"Good! Some goods, umm...":
   a knife (right)
   some Base Ale
   a war pawn
@@ -739,6 +894,10 @@ This place seems very run-down. But it feels homey and inspires camaraderie in a
 !Someone comes out
 The gone traitor continues to mope about here, looking for someone who can help convince them they're not so awful.
 
+@verbs
+>t traitor
+The gone traitor mumbles apologetically for who they were. Perhaps you can show the gone traitor a small shift to change them.
+
 >gaunt raider
 by a point
 
@@ -747,6 +906,15 @@ by a point
 {--all}#testcase-run-post-gaunt-raider-rule-default
 After some discussion, you work out a plan to make the gone trader reframe what they did. Whoever they were, the evil powers, they rejected them instead of doubling down. Perhaps there is a way to get back at them. They know things you never could hope to.
 Hmm. You have a lot of friends following you around, but you haven't talked to them much. Perhaps you could learn something from them.
+
+@verbs
+>t raider
+You chat with the gaunt raider a bit, learning more about the history of the area you're exploring and why you're here. It fills in some blanks in your memory.
+The gaunt raider discusses regret for their past actions, as well as some possibilities for how to use it to boost yourself to do the right thing, or when to just drop it without being drowned by guilt.
+Well, that's more useful information worth remembering.
+\\
+>t raider
+to want to cut in a bit for their turn some time.
 
 >u
 
@@ -808,6 +976,13 @@ Some grin churls parade around here
 >undo
 >undo
 
+@verbs
+>t orc
+You'll have to win the argument with the grinch earls before any meaningful conversations.
+\\
+>t earls
+You can't imagine any chat with them would be pleasant. Staunch, specific verbal defense is the way to go here.
+
 @!min
 >weak us
 by a bonus point
@@ -849,11 +1024,23 @@ The crude orc waits here for what to do or where to go next.
 >undo
 
 @li+
+##balance undos
 >grin churls
 by a bonus point
 \\
 >l
 Some grin churls
+\\
+>undo
+>undo
+
+@verbs
+##balance undos
+>grin churls
+by a bonus point
+\\
+>t churls
+You can't imagine any chat with them would be pleasant. Staunch, specific verbal defense is the way to go here.
 \\
 >undo
 >undo
@@ -995,7 +1182,7 @@ This transaction reduces your wealth from three quid to one quid.
 @li
 INVENTORY CHANGED
 There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
-You are carrying:
+"Good! Some goods, umm...":
   a knife (right)
   a war pawn
 !Base Ale
@@ -1153,6 +1340,10 @@ This area feels replete with the sort of double-talk all salesmen use. You can a
 You can only go back OUT here.
 Some merchant babbles on, all up in your personal space, suggesting you buy low.
 
+@verbs
+>t merchant
+You want to figure a way to kill conversation, instead.
+
 >summer chant
 by a point
 
@@ -1178,6 +1369,10 @@ Neither you nor the merchant owe each other anything, for better or for worse. Y
 @li
 >l
 Some merchant babbles on, all up in your personal space, suggesting you buy low, but a bit more tolerable now you've got a mantra to zone them out.
+
+@verbs
+>t merchant
+You want to figure a way to kill conversation, even if your summer chant made it more bearable.
 
 >bile oh
 by a point
@@ -1231,6 +1426,10 @@ You don't owe the oaf liar anything, and they don't owe you a flier, even if the
 >l
 An oaf liar blathers away here, with stuff that's likely, but not provably false. They seem quite proud of their salesmanship skill, which is more persistence than anything else.
 
+@verbs
+>t liar
+The oaf liar is talking over you. Perhaps you can shut them up by buying something really cheap.
+
 >oh flier
 by a point
 
@@ -1251,7 +1450,7 @@ Well, easy come, easy go. You're pretty sure you've visited everywhere and found
 
 @li
 There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
-You are carrying:
+"Good! Some goods, umm...":
   a flier
   a knife (right)
   a war pawn
@@ -1276,7 +1475,7 @@ by a point
 @li
 INVENTORY CHANGED
 There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
-You are carrying:
+"Good! Some goods, umm...":
   a plan tracker (with no ideas yet)
   a war pawn
 You have a name, too, now, you remember: Mike Orr.
@@ -1297,7 +1496,7 @@ by a point
 @li
 INVENTORY CHANGED
 There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
-You are carrying:
+"Good! Some goods, umm...":
   a plan tracker (with no ideas yet)
   a war pawn
 You have a name, too, now, you remember: Mike Orr.
@@ -1326,7 +1525,7 @@ You suspect there is manna beneath the manic herb, but you have no clue how to f
 @li
 INVENTORY CHANGED
 There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
-You are carrying:
+"Good! Some goods, umm...":
   some manna
   a flier
   a knife (right)
@@ -1436,7 +1635,7 @@ In the grove isle, you find a grow vial, which you take. It's relaxing, but you 
 @li
 INVENTORY CHANGED
 There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
-You are carrying:
+"Good! Some goods, umm...":
   a grow vial
   some manna
   a flier
@@ -1535,7 +1734,7 @@ But wait! You can use the grow vial! It makes the tree (small) into a tree (tall
 @li
 INVENTORY CHANGED
 There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
-You are carrying:
+"Good! Some goods, umm...":
   some manna
   a flier
   a knife (right)
@@ -1572,6 +1771,20 @@ talk-ache
 >undo
 >undo
 
+@verbs
+##balance undos
+>t troll
+That talk-ache is a bit of a nuisance. You've probably got the information you need from your friends.
+\\
+>undo
+\\
+>t
+!That talk ache is a bit of a nuisance.
+!That was a lot of talking.
+!develop a talk-ache
+\\
+>undo
+
 >t troll
 
 @all
@@ -1580,7 +1793,7 @@ talk-ache
 @li
 INVENTORY CHANGED
 There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
-You are carrying:
+"Good! Some goods, umm...":
 !/^..a talk-ache
   some manna
   a flier
@@ -1591,6 +1804,14 @@ You have a name, too, now, you remember: Mike Orr.
 Oh, man. You still have that talk-ache, too.
 
 >t orc
+
+@all
+!That was a lot of talking.
+!develop a talk-ache
+
+@verbs
+>t orc
+That talk-ache is a bit of a nuisance.
 
 >tall cake
 by a point
@@ -1609,7 +1830,7 @@ But now where to eat the cake?
 @li
 INVENTORY CHANGED
 There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
-You are carrying:
+"Good! Some goods, umm...":
   a tall cake
   a flier
   a knife (right)
@@ -1633,7 +1854,7 @@ You offer the gaunt raider the knife (right) as a present. They seem scared to t
 @li
 INVENTORY CHANGED
 There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
-You are carrying:
+"Good! Some goods, umm...":
 !  a tall cake
   a flier
 !/  a knife /(right/)
@@ -1679,7 +1900,7 @@ You've visited all the locations in the flier. You crumple it up as if to throw 
 @li
 INVENTORY CHANGED
 There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
-You are carrying:
+"Good! Some goods, umm...":
 !  a flier
   a plan tracker (full of ideas)
   a war pawn
@@ -1740,6 +1961,10 @@ Your pep talk brings everyone together. They are ready for ... well, whatever is
 >i
 !Mike Orr
 
+@verbs
+>t raider
+Motivational talk is through. Time to end this thing.
+
 >d
 
 @all
@@ -1760,6 +1985,13 @@ Unsurprisingly, all the action is here.
 #testcase-homonym-detail-hom-cease-cull-rule-default
 >seize cull
 No, seizing is the last thing you want the skull to do. And you aren't foolish enough to want to seize power.
+
+@verbs
+>t skull
+You doubt the skull would have anything to say beyond "I'm all I MAUL!" or "Help our hell-power!"
+\\
+>t raider
+Now's not the time for chat.
 
 >cease cull
 by a point
@@ -1817,6 +2049,16 @@ You need to prep for making things right in general. Then, once the game's over,
 >l
 Well, it turns out the doom ending was for the sea skull, not for you. But you're still a bit frustrated. How do you go forward from here?
 Why-division has settled in among your companions. Everyone's done what they can. Why should they do more? They've saved their skin, and a lot of others', too, and they'll be safe for a while!
+
+@verbs
+>t raider
+The only thing left to do is dispel the why-division, if you can.
+\\
+>wide vision
+!gone up by
+\\
+>t raider
+The why-division is too much to sort things out.
 
 >do mending
 by a point

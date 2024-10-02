@@ -136,9 +136,9 @@ Funnily, you stop specifically noticing the lack of mold now your new companion'
 by a point
 
 #testcase-check-pre-rogue-old-rule-fallthrough
-A rogue, old, arrives. They mention they'd like to help you but, you know, the row (gold) needs maintenance. You offer to pay them three quid..
+A rogue, old, arrives. They mention they'd like to help you but, you know, the row (gold) needs maintenance. You offer to pay them three quid.
 This transaction reduces your wealth from six quid to three quid.
-Hmm. You have a lot of friends following you around, but you haven't talked to them much. Perhaps you could learn something from them.
+!lot of friends
 
 >see design
 by a point

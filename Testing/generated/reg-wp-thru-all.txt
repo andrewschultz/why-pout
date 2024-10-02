@@ -171,9 +171,11 @@ Funnily, you stop specifically noticing the lack of mold now your new companion'
 by a point
 
 #testcase-run-post-rogue-old-rule-default
-A rogue, old, arrives. They mention they'd like to help you but, you know, the row (gold) needs maintenance. You offer to pay them three quid..
+A rogue, old, arrives. They mention they'd like to help you but, you know, the row (gold) needs maintenance. You offer to pay them three quid.
 This transaction reduces your wealth from six quid to three quid.
-Hmm. You have a lot of friends following you around, but you haven't talked to them much. Perhaps you could learn something from them.
+!lot of friends
+
+NOTE: in order to simplify things now you've grown your party, you can type UH PARTY or A PARTY so everyone is not listed individually. APART EEE will list them individually again. This is all in VERBS.
 
 >see design
 by a point
@@ -505,6 +507,9 @@ But wait! You can use the grow vial! It makes the tree (small) into a tree (tall
 talk-ache
 
 >t orc
+
+!That was a lot of talking.
+!develop a talk-ache
 
 >tall cake
 by a point
