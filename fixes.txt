@@ -1,5 +1,12 @@
 List of in-comp updates
 
+10/3/2024 updates (1.20)
+--new option to say "your party of 3+" instead of listing them out
+--T/talk to, with object or not, now more accurately guesses whom you'd like to talk to, with text for formerly silent NPCs as well
+--Inventory now has header and footer that change slightly as the game progresses. Also a custom "you are carrying" message.
+--fixed typos and trivial logic errors for when conditional text should appear
+--trivial shortcuts for VERBS command
+
 9/26/2024 updates (1.12)
 --added responses to very-close-to-right guesses
 --bug fix where trying to solve 3 puzzles after solving them gave "can't do this yet"
