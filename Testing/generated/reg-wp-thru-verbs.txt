@@ -1,0 +1,546 @@
+## reg-wp-thru-verbs.txt
+## GENERATOR FILE: rbr-wp-thru.txt
+
+## special verb testing inventory and room description changes
+
+** game: /home/andrew/prt/debug-why-pout.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>about
+Like most of my games, Why Pout rates merciful on the Zarfian cruelty scale. However, in this case, I want the puzzles to be more merciful in terms of general difficulty on the player's psyche than usual.
+Note that an optional room will appear about midway through the game. It may contain profanity, which I hope is amusing, but I don't blame you if you wish to skip it.
+blurglecruncheon@gmail.com is my email, and http://github.com/andrewschultz/why-pout is the github site, where you can report issues. I'm open to transcripts.
+CREDITS lists people who helped make Why Pout a reality, or a better version than it would've been without them.  EXT shows the extensions listed, and VERSION or VERSIONS shows version info.
+
+>credits
+Thanks to everyone past and future involved in the administration of IFComp.
+
+>credit
+Thanks to everyone past and future involved in the administration of IFComp.
+
+>verbs
+Most point-scoring commands will consist of two words.
+
+>verb
+Most point-scoring commands will consist of two words.
+
+>v
+Most point-scoring commands will consist of two words.
+
+>ext
+One extension has been temporarily removed from the list, as it may cause a spoiler. If you wish to see it, come back after you've scored two points.
+
+>version
+Version 1 was released to IFComp on August 28, 2024.
+
+>versions
+Version 1 was released to IFComp on August 28, 2024.
+
+>xyzzy
+You hear a size-Z "X! Why's 'e..."
+No, I don't know whether size Z is super-big or super-small.
+
+>xyzzy
+!size Z
+
+>t
+NOTE: without an argument for T, Why Pout will try to guess whom you talk to. It prioritizes friendly NPCs, especially ones you haven't talked to before, but if there is more than one, it will ask you to be more specific.
+Self-talk is the way, but you need something positive and specific. All you can muster is "I molder. I'm older." You sort of wish for purpose, or something like it.
+
+>t me
+Self-talk is the way, but you need something positive and specific. All you can muster is "I molder. I'm older." You sort of wish for purpose, or something like it.
+
+>z
+
+>an aim
+by a point
+
+>t
+You had enough positive self-talk. Now to find a way out!
+
+>two maps
+by a point
+
+>t cell phones
+No, you don't want to get swept up in that.
+
+>t
+No, you don't want to get swept up in that.
+
+>ext
+Spoonerism and Oronym Core version 1/240717 by Andrew Schultz
+!One extension has
+
+>eat cell
+The talk itself gives you indigestion.
+
+>self owns
+by a point
+
+>t prize talk
+You want something better than good chat.
+
+>t
+You want something better than good chat.
+
+>verbs
+!Most point-scoring commands will consist of two words.
+
+>eat prize talk
+The talk itself gives you indigestion.
+
+>pry stalk
+by a point
+
+>t prize talk
+You got something better than good chat.
+
+>eat stalk
+That stalk is your way out of here.
+
+>high plain
+by a point
+
+>nah phase
+by a point
+
+>t
+You're too self-conscious for self-talk, being policed and all.
+
+>pole east
+by a point
+
+>shore trail
+by a point
+
+>eat tar
+Too much to eat, even if it were edible.
+
+>eat war pawn
+If you need to eat anything, it requires a slightly different approach.
+
+>grow star
+by a point
+
+>key pillar
+by a point
+
+>s
+
+>known ocean
+by a point
+
+>t
+It seems to be choking a bit.
+
+>t squid
+It seems to be choking a bit.
+
+>six quid
+by a point
+
+>t
+The squid can't speak, but you get very good vibes from it. It will understand English when it needs to.
+
+>n
+
+>n
+
+>t me
+You motivate yourself with "Goal: earn? Go learn!"
+
+>wool frock
+by a point
+
+>hide out
+by a point
+
+>d
+
+>t
+The booze troll doesn't seem interested in useful conversation, at least not in their present form.
+
+>t troll
+The booze troll doesn't seem interested in useful conversation, at least not in their present form.
+
+>boost role
+by a point
+
+>t
+You chat with the new troll a bit, learning more about the history of the area you're exploring and why you're here. It fills in some blanks in your memory.
+
+>t troll
+You chat with the new troll a bit, recapping more about the history of the area you're exploring and why you're here. It fills in some blanks in your memory.
+
+>u
+
+>s
+
+>w
+
+>eat mold
+Yes, mold is one of many things you should never eat.
+
+>gnome old
+by a point
+
+>rogue old
+by a point
+
+>verbs
+UH PARTY or A PARTY will describe your party as one unit (use I to see who is there,) and APART EE (2-4 e's) will show them individually.
+
+>uh party
+Your party is now lumped together in room descriptions.
+T to talk will list whom to talk to.
+
+>a party
+
+Your party is already lumped together in room descriptions.
+T to talk will list whom to talk to.
+>l
+Your three companions wait here for what to do or where to go next.
+
+>e
+Your three companions follow you.
+
+>apart ee
+Your party is now listed separately in room descriptions.
+
+>apart eee
+Your party is already listed separately in room descriptions.
+
+>apart eeee
+Your party is already listed separately in room descriptions.
+>w
+
+>t
+That's ambiguous--more than one friend you can chat with.
+However, you still haven't talked with the rogue (old) and the gnome (old).
+
+>t rogue old
+You chat with the rogue (old) a bit, learning more about the history of the area you're exploring and why you're here. It fills in some blanks in your memory.
+The rogue (old) discusses ways to sneak around so vastly overpowered opponents can't blow you away, and you also learn not to feel guilty or shifty about being good at sneaking around, around much more unsavory entities than yourself.
+Well, that's even more useful information worth remembering.
+
+>t
+That's ambiguous--more than one friend you can chat with.
+However, you still haven't talked with the gnome (old).
+
+>eat rogue
+You realize asking if you can nibble would give an answer of no.
+
+>eat sign
+If you need to eat anything, it requires a slightly different approach.
+
+>see design
+by a point
+
+>knife right
+by a point
+
+>e
+
+>d
+
+>t traitor
+The gone traitor mumbles apologetically for who they were. Perhaps you can show the gone traitor a small shift to change them.
+
+>eat gone traitor
+Better ways to assimilate the gone traitor.
+
+>gaunt raider
+by a point
+
+>t raider
+You chat with the gaunt raider a bit, learning more about the history of the area you're exploring and why you're here. It fills in some blanks in your memory.
+The gaunt raider discusses regret for their past actions, as well as some possibilities for how to use it to boost yourself to do the right thing, or when to just drop it without being drowned by guilt.
+Well, that's more useful information worth remembering.
+
+>t raider
+to want to cut in a bit for their turn some time.
+
+>u
+
+#unscramble the order the swears appear in
+>ao
+
+>brew swears
+by a bonus point
+
+>in
+
+>t orc
+You'll have to win the argument with the grinch earls before any meaningful conversations.
+
+>t earls
+You can't imagine any chat with them would be pleasant. Staunch, specific verbal defense is the way to go here.
+
+>eat orc
+Better ways to assimilate the crude orc.
+
+>eat grinch earls
+They'd be, uh, tasteless.
+
+>weak us
+by a bonus point
+
+>crew dork
+by a bonus point
+
+>grin churls
+by a bonus point
+
+>t churls
+You can't imagine any chat with them would be pleasant. Staunch, specific verbal defense is the way to go here.
+
+>undo
+>undo
+
+>bastard eee
+by a bonus point
+
+>heckle ass
+by a bonus point
+
+>huh shit
+by a bonus point
+
+>lie fuckers
+by a bonus point
+
+>were dicks
+by a bonus point
+
+>grin churls
+by a bonus point
+
+>out
+
+>e
+
+>low bend
+by a point
+
+>bay sale
+by a point
+
+>n
+
+>store mile
+by a point
+
+>mensch elf
+by a point
+
+>mice tall
+by a point
+
+>s
+
+>w
+
+>n
+
+>eat ore
+Too much to eat through, even if you could.
+
+>low door
+by a point
+
+>eat ore
+This wouldn't have worked even before the mice found a passage.
+
+>in
+
+>well own
+by a point
+
+>t merchant
+You want to figure a way to kill conversation, instead.
+
+>eat merchant
+No, just prevent the merchant eating you up in conversation.
+
+>summer chant
+by a point
+
+>t merchant
+You want to figure a way to kill conversation, even if your summer chant made it more bearable.
+
+>bile oh
+by a point
+
+>whee lone
+by a point
+
+>t liar
+The oaf liar is talking over you. Perhaps you can shut them up by buying something really cheap.
+
+>eat liar
+No, just prevent the oaf liar eating you up in conversation.
+
+>oh flier
+by a point
+
+>out
+
+>s
+
+>w
+
+>plan tracker
+by a point
+
+>eat manic herb
+Too risky, but perhaps it hides some more pleasant food or ingredients.
+
+>manna curb
+by a point
+
+>eat manna
+The manna is raw material for more standard food.
+
+>e
+
+>e
+
+>n
+
+>n
+
+>tree small
+by a point
+
+>s
+
+>s
+
+>w
+
+>s
+
+>eat squid
+The squid is more likely to eat you, given your relative sizes.
+
+>grow vial
+by a point
+
+>eat squid
+You can't ever eat calamari again, now the squid helped you!
+
+>war file
+by a point
+
+>wan dwarf
+by a point
+
+>n
+
+>e
+
+>n
+
+>n
+
+>t dwarf
+
+>t elf
+
+>t gnome
+
+>t rogue
+
+>t raider
+
+>t mice
+
+>t troll
+That talk-ache is a bit of a nuisance. You've probably got the information you need from your friends.
+
+>undo
+
+>t
+!That talk ache is a bit of a nuisance.
+!That was a lot of talking.
+!develop a talk-ache
+
+>undo
+
+>t troll
+
+>t orc
+
+>t orc
+That talk-ache is a bit of a nuisance.
+
+>tall cake
+by a point
+
+>eat tall cake
+You can't eat the cake by yourself! Make it a communal experience in a special place!
+
+>treat all
+by a point
+
+>eat war pawn
+You already ate the only thing you needed to.
+
+>s
+
+>s
+
+>eat raft
+You already ate the only thing you needed to.
+
+>w
+
+>s
+
+>the file
+by a point
+
+>n
+
+>d
+
+>were meetin
+by a point
+
+>my corps
+by a point
+
+>t raider
+Motivational talk is through. Time to end this thing.
+
+>d
+
+>t skull
+You doubt the skull would have anything to say beyond "I'm all I MAUL!" or "Help our hell-power!"
+
+>t raider
+Now's not the time for chat.
+
+>eat skull
+"Dine? Ow! Die now!" you think.
+
+>cease cull
+by a point
+
+>wipe out
+by a point
+
+>t raider
+The only thing left to do is dispel the why-division, if you can.
+
+>wide vision
+!gone up by
+
+>t raider
+The why-division is too much to sort things out.
+
+>do mending
+by a point
+
