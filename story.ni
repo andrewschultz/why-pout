@@ -389,7 +389,7 @@ Hideout is a room in universal. "You can only go back [b]UP[r]. It wouldn't be a
 
 chapter Booze Troll
 
-the booze troll is a sentient in Hideout. "A booze troll sulks sullenly here.". description is "For all the troll's sulkiness, it doesn't appear evil. Perhaps it's reacted badly to ... well, the same people who stuffed you beneath the tomb apse.".
+the booze troll is a prefollowing sentient in Hideout. "A booze troll sulks sullenly here.". description is "For all the troll's sulkiness, it doesn't appear evil. Perhaps it's reacted badly to ... well, the same people who stuffed you beneath the tomb apse.".
 
 the new troll is a follower. "A new troll looks around with purpose.". help-chat is "The new troll relates ways to shake oneself free from despair (no! Really! It managed to for a while!) before relating more ways to avoid it in the first place, or help others you care about do the same.". description is "Won't win any beauty contests, but the troll seems to look eagerly towards you for what to do next."
 
@@ -623,7 +623,7 @@ to say raider-traitor:
 
 chapter gone trader
 
-The gone traitor is a sentient in Worm Eaten. "[one of]Someone comes out from the depths. They introduce themselves as the gone traitor, someone who cozied up to the bad guys and ditched their friends, then ditched the bad guys. And only recently they ran away, but how can they ask for forgiveness? Surely it just doesn't happen like this? Just one small change and you have a new identity? Rubbish![or]The gone traitor continues to mope about here, looking for someone who can help convince them they're not so awful.[stopping]". description is "[if sco-gaunt-raider is true]Still pretty gaunt, but no longer with a look of despair on their face. They're ready to redeem themselves, you imagine[else]Despairing, shaking their head, barely able to look you in the eye. You dare not ask all they did. But they seem sorry for the big stuff[end if]."
+The gone traitor is a prefollowing sentient in Worm Eaten. "[one of]Someone comes out from the depths. They introduce themselves as the gone traitor, someone who cozied up to the bad guys and ditched their friends, then ditched the bad guys. And only recently they ran away, but how can they ask for forgiveness? Surely it just doesn't happen like this? Just one small change and you have a new identity? Rubbish![or]The gone traitor continues to mope about here, looking for someone who can help convince them they're not so awful.[stopping]". description is "[if sco-gaunt-raider is true]Still pretty gaunt, but no longer with a look of despair on their face. They're ready to redeem themselves, you imagine[else]Despairing, shaking their head, barely able to look you in the eye. You dare not ask all they did. But they seem sorry for the big stuff[end if]."
 
 section gaunt raider
 
