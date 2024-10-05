@@ -130,6 +130,7 @@ a wordtwisting rule (this is the pre-pole-east rule):
 this is the post-pole-east rule:
 	now sco-pole-east is true;
 	say "Ah, yes. It makes sense. You find the pole. Strangely, there's just a single switch to flip. And even more strangely, the switch you flip causes the pole to revert into the ground. Yay![paragraph break]But there's more! A war pawn, like a chess piece, rolls into view. It looks pretty powerful. As you take it, you reflect that you may wish to save it for down the road when you're really stuck somewhere. You have a good idea HOW to use it, at any rate.";
+	say "[line break][i][bracket][b]NOTE[r][i]: the war pawn is a one-use item, with [b]UNDO[r][i] is disabled for it. You can save before using it, and I won't judge. I've done so before, too, but I don't want to make it too powerful.[close bracket][i][line break]";
 	now player has war pawn;
 	reveal Lobe End to east;
 	check-worm-eaten;

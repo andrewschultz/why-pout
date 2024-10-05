@@ -246,4 +246,52 @@ After some thought, the war pawn vibrates and explodes! You suddenly have insigh
 >warp on
 After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: DO MEND...
 
+* undo_test
 
+>z
+
+>an aim
+by a point
+
+>two maps
+by a point
+
+>self owns
+by a point
+
+>pry stalk
+by a point
+
+>high plain
+by a point
+
+>nah phase
+by a point
+
+>pole east
+by a point
+
+>grow star
+by a point
+
+>key pillar
+by a point
+
+>shore trail
+by a point
+
+>warp on
+The war pawn stays still and even feels a bit cold. Perhaps there's nothing left that specifically needs doing here.
+!by a point
+
+>undo
+!Allowing you
+
+>n
+
+>warp on
+way forward
+WOOL FROCK
+
+>undo
+Allowing you to undo using the war pawn is a bit too much of a loophole. There's a walkthrough. Or you can save and restore a lot.

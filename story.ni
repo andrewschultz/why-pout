@@ -16,7 +16,11 @@ the story headline is "My IFComp 2024 entry. Wordplay.".
 
 book includes
 
-section general
+section outside stuff
+
+include Conditional Undo by Jesse McGrew.
+
+section my general stuff
 
 include Trivial Niceties by Andrew Schultz.
 
@@ -1109,6 +1113,7 @@ carry out warponing:
 			else:
 				moot war pawn;
 			follow the score and thinking changes rule;
+			prevent undo;
 			the rule succeeds;
 		else if there is a best-room entry and best-room entry is location of player:
 			if vr is the not-yet outcome:
@@ -1123,6 +1128,9 @@ carry out warponing:
 		say "The war pawn stays still and even feels a bit cold. Perhaps there's nothing left that specifically needs doing here.";
 	now verb-dont-print is false;
 	the rule succeeds;
+
+rule for deciding whether to allow undo:
+	if undo is prevented, say "Allowing you to undo using the war pawn is a bit too much of a loophole. There's a walkthrough. Or you can save and restore a lot before warping."
 
 section debug testing
 
