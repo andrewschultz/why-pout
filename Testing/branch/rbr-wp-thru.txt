@@ -196,6 +196,10 @@ No, you don't want to get swept up in that.
 Spoonerism and Oronym Core version 1/240717 by Andrew Schultz
 !One extension has
 
+@verbs+
+>eat cell
+The talk itself gives you indigestion.
+
 >self owns
 by a point
 
@@ -222,6 +226,10 @@ You want something better than good chat.
 @verbs+
 >verbs
 !Most point-scoring commands will consist of two words.
+
+@verbs+
+>eat prize talk
+The talk itself gives you indigestion.
 
 >pry stalk
 by a point
@@ -268,6 +276,9 @@ All ace talk you have made and will make come from within. Besides, you need to 
 @verbs
 >t prize talk
 You got something better than good chat.
+\\
+>eat stalk
+That stalk is your way out of here.
 
 >high plain
 by a point
@@ -436,6 +447,13 @@ There must be more to the short rail than you see. And you start tracing where i
 >l
 The shore trail you discovered leads SOUTH.
 Things have opened up a bit more now, with the naff haze lifted. You feel less policed, too, since you found a path EAST.
+
+@verbs
+>eat tar
+Too much to eat, even if it were edible.
+\\
+>eat war pawn
+If you need to eat anything, it requires a slightly different approach.
 
 >grow star
 by a point
@@ -702,6 +720,10 @@ There's a bunch of manic herb here. You don't know a lot about it, other than th
 A plant racker lies here, pretty much useless.
 A seedy sign stands here, advertising somewhere very risky indeed.
 
+@verbs
+>eat mold
+Yes, mold is one of many things you should never eat.
+
 >gnome old
 by a point
 
@@ -787,6 +809,10 @@ Well, that's even more useful information worth remembering.
 That's ambiguous--more than one friend you can chat with.
 However, you still haven't talked with the gnome (old).
 
+@verbs+
+>eat rogue
+You realize asking if you can nibble would give an answer of no.
+
 @li
 >i
 You still have three quid left from helping the sick squid.
@@ -807,6 +833,10 @@ Close, but there are other waterways. Action (well, sort of) is needed here.
 \\
 >c design
 Close, but there are other waterways. Action (well, sort of) is needed here.
+
+@verbs
+>eat sign
+If you need to eat anything, it requires a slightly different approach.
 
 >see design
 by a point
@@ -898,6 +928,10 @@ The gone traitor continues to mope about here, looking for someone who can help 
 >t traitor
 The gone traitor mumbles apologetically for who they were. Perhaps you can show the gone traitor a small shift to change them.
 
+@verbs+
+>eat gone traitor
+Better ways to assimilate the gone traitor.
+
 >gaunt raider
 by a point
 
@@ -982,6 +1016,13 @@ You'll have to win the argument with the grinch earls before any meaningful conv
 \\
 >t earls
 You can't imagine any chat with them would be pleasant. Staunch, specific verbal defense is the way to go here.
+
+@verbs+
+>eat orc
+Better ways to assimilate the crude orc.
+\\
+>eat grinch earls
+They'd be, uh, tasteless.
 
 @!min
 >weak us
@@ -1277,6 +1318,10 @@ You can only go back south to Lobe End or north to the rest of the mall.
 
 >n
 
+@verbs
+>eat ore
+Too much to eat through, even if you could.
+
 >low door
 by a point
 
@@ -1293,6 +1338,10 @@ Wolf Rock blocks every planar passage except back SOUTH. Well, you can go IN whe
 @li
 >l
 There's a huge pile of lode ore here, too, and you found a low door in it that leads INSIDE.
+
+@verbs
+>eat ore
+This wouldn't have worked even before the mice found a passage.
 
 >in
 
@@ -1343,6 +1392,10 @@ Some merchant babbles on, all up in your personal space, suggesting you buy low.
 @verbs
 >t merchant
 You want to figure a way to kill conversation, instead.
+
+@verbs+
+>eat merchant
+No, just prevent the merchant eating you up in conversation.
 
 >summer chant
 by a point
@@ -1430,6 +1483,10 @@ An oaf liar blathers away here, with stuff that's likely, but not provably false
 >t liar
 The oaf liar is talking over you. Perhaps you can shut them up by buying something really cheap.
 
+@verbs+
+>eat liar
+No, just prevent the oaf liar eating you up in conversation.
+
 >oh flier
 by a point
 
@@ -1514,6 +1571,10 @@ You do not have any magic points, so you don't need them refreshed. But you must
 >man a curb
 You do not have any magic points, so you don't need them refreshed. But you must be close!
 
+@verbs
+>eat manic herb
+Too risky, but perhaps it hides some more pleasant food or ingredients.
+
 >manna curb
 by a point
 
@@ -1536,6 +1597,10 @@ You have a name, too, now, you remember: Mike Orr.
 @li+
 >l
 There's a bunch of manic herb here the mensch elf sifted through.
+
+@verbs
+>eat manna
+The manna is raw material for more standard food.
 
 >e
 
@@ -1624,6 +1689,10 @@ It looks like there is an ocean, or some large body of water, as you can't see i
 >undo
 >undo
 
+@verbs
+>eat squid
+The squid is more likely to eat you, given your relative sizes.
+
 >grow vial
 by a point
 
@@ -1660,6 +1729,10 @@ The ocean surrounds you on all sides, but it's less intimidating now you rode th
 \\
 >undo
 >undo
+
+@verbs
+>eat squid
+You can't ever eat calamari again, now the squid helped you!
 
 >war file
 by a point
@@ -1840,6 +1913,10 @@ There's that occasional voice ringing in your head asking "Why pout?" But beside
 You have a name, too, now, you remember: Mike Orr.
 !Oh, man. You still have that talk-ache, too.
 
+@verbs
+>eat tall cake
+You can't eat the cake by yourself! Make it a communal experience in a special place!
+
 >treat all
 by a point
 
@@ -1862,6 +1939,10 @@ There's that occasional voice ringing in your head asking "Why pout?" But beside
   a war pawn
 You have a name, too, now, you remember: Mike Orr.
 
+@verbs
+>eat war pawn
+You already ate the only thing you needed to.
+
 >s
 
 @all
@@ -1872,6 +1953,10 @@ The gaunt raider raises a hand. They have an idea! The abandoned mall must have 
 You and your party are also armed for any conflict that may arise.
 
 >s
+
+@verbs
+>eat raft
+You already ate the only thing you needed to.
 
 >w
 
@@ -1992,6 +2077,10 @@ You doubt the skull would have anything to say beyond "I'm all I MAUL!" or "Help
 \\
 >t raider
 Now's not the time for chat.
+
+@verbs+
+>eat skull
+"Dine? Ow! Die now!" you think.
 
 >cease cull
 by a point
