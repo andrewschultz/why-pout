@@ -809,6 +809,42 @@ carry out lumpoffing:
 
 book regular verbs, modified
 
+chapter eating
+
+[redefining Inform's eat, which implicitly takes in 6G. Since we can't actually eat/consume, we can just use a dummy verb.]
+
+understand the command "eat" as something new.
+understand the command "eat [thing]" as something new.
+
+understand "eat [thing]" as noteating.
+
+noteating is an action applying to one thing.
+
+rule for supplying a missing noun when noteating:
+	if player has tall cake:
+		now noun is tall cake;
+		continue the action;
+	say "You need to say what to [b]EAT[r], though [b]EAT[r] is not necessary to win.";
+	the rule fails;
+
+check noteating (this is the modified eating rule):
+	if noun is cell phones or noun is prize talk, say "The talk itself gives you indigestion." instead;
+	if noun is stalk, say "That stalk is your way out of here." instead;
+	if noun is tar, say "Too much to eat, even if it were edible." instead;
+	if noun is mold, say "Yes, mold is one of many things you should never eat." instead;
+	if noun is manic herb, say "Too risky, but perhaps it hides some more pleasant food or ingredients." instead;
+	if noun is tall cake, say "You can't eat the cake by yourself! Make it a communal experience in a special place!" instead;
+	if noun is manna, say "The manna is raw material for more standard food." instead;
+	if noun is squid, say "[if flier-isle-score is 0]The squid is more likely to eat you, given your relative sizes.[else]You can't ever eat calamari again, now the squid helped you![end if]" instead;
+	if noun is merchant or noun is liar, say "No, just prevent [the noun] eating you up in conversation." instead;
+	if noun is a friendly follower, say "You realize asking if you can nibble would give an answer of no." instead;
+	if noun is an unfriendly follower or noun is a prefollowing sentient, say "Better ways to assimilate [the noun]." instead;
+	if noun is grinch earls, say "They'd be, uh, tasteless." instead;
+	if noun is skull, say "'Dine? Ow! Die now!' you think." instead;
+	if noun is lode ore, say "[if sco-low-door is true]This wouldn't have worked even before the mice found a passage[else]Too much to eat through, even if you could[end if]." instead;
+	if noun is a sentient, say "You can't eat your way through dealing with [the noun]." instead;
+	say "[if sco-treat-all is true]You already ate the only thing you needed to[else]If you need to eat anything, it requires a slightly different approach[end if]." instead;
+
 chapter inventory
 
 check taking inventory:
