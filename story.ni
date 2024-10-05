@@ -713,8 +713,9 @@ carry out creditsing:
 	say "Thanks to Michael Baltes, Clem Bing-Storrs, Wade Clarke, Hanon Ondricek, P. B. Parjeter, Fred Snyder, and Daniel Stelzer for testing. They found stuff I just didn't have the time to find, or stuff I convinced myself I'd checked, honest I did, or even broke down cases for stuff where I was muddled and not sure how to test stuff. Oh and they inspired several ideas, too. It's always hard to ask someone for their time and energy, but I appreciate it so much![paragraph break]Michael, Fred and Daniel have IFComp [']24 entries as well, and I always appreciate being able to trade testing with a fellow competitor, so it doesn't feel cutthroat.";
 	say "[line break]B. J. Best and Arthur DiBianca (he is also in IFComp [']24,) who've written a lot of good stuff, both found bugs within two hours of IFComp starting. So thanks to them!";
 	say "[line break]Viv Dunstan, yet another fellow IFComp [']24 author, found some nontrivial bugs I fixed mid-comp.";
-	say "[line break]DemonApologist, who wrote reviews for all IFComp [']24's entries, found a nontrivial bug, too.";
+	say "[line break]DemonApologist, who wrote reviews for all IFComp [']24's entries, and Wolfbiter, who was close as of this writing, found nontrivial bugs, too.";
 	say "[line break]The cover art is my fault, and my fault alone.";
+	say "[line break]Thanks to David Welbourn for writing a walkthrough during IFComp. He has a Patreon account at patreon.com/dswxyz.";
 	say "[paragraph break]GENERAL THANKS:[paragraph break]";
 	say "Thanks to everyone past and future involved in the administration of IFComp.";
 	say "Thanks to the I7 board on Intfiction.org for their help, as well as the people in the general topics as we discussed our plans.";
@@ -860,7 +861,7 @@ report taking inventory when gs-got-weapons is true and sco-wipe-out is false:
 	continue the action;
 
 report taking inventory when opt-lump-party is true:
-	say "So far, you have gained the support of [number of friendly followers in words] friends, or friend-groups: [the list of friendly followers].";
+	say "So far, you have gained the support of [number of friendly followers in words] friends[if mice tall are friendly] (counting the mice as an aggregate)[end if]: [the list of friendly followers].";
 	continue the action;
 
 chapter sensing
