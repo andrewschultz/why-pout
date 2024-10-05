@@ -1,5 +1,9 @@
 List of in-comp updates
 
+10/5/2024 updated (1.21)
+--EAT CAKE no longer gives "inedible." Replaced default Inform EAT behavior.
+--credits and companion reporting tweaked
+
 10/3/2024 updates (1.20)
 --new option to say "your party of 3+" instead of listing them out
 --T/talk to, with object or not, now more accurately guesses whom you'd like to talk to, with text for formerly silent NPCs as well
