@@ -178,27 +178,27 @@ volume rooms
 
 book Eh Raw Air Aww
 
-Eh Raw Air Aww is a room in universal. printed name is "[if sco-an-aim is false]Eh, Raw Air, Aww[else]Tomb Apse[end if]". description is "[if sco-an-aim is false]The air chokes you a bit. It's too thick to see far beyond yourself. You barely know who you are, even. Ugh. You can't see much beyond yourself, really, so that'd be somewhere to start.[else]It's a bit clearer now. You still seem trapped. But there must be secrets hidden, and maybe one or more can get you out of here.[end if]"
+Eh Raw Air Aww is a room in universal. printed name is "[if sco-an-aim is false]Eh, Raw Air, Aww[else]Tomb Apse[end if]". description is "[if sco-an-aim is false]The air chokes you a bit. It's too thick to see far beyond yourself. You barely know who you are, even. Ugh. You can't see much beyond yourself, really, so that'd be somewhere to start.[else]It's a bit clearer now. You still seem trapped. But there must be secrets hidden, and maybe one or more can get you out of here.[end if]". eyes-number of Eh Raw Air Aww is 34. [this is because we can't find the eyes until we get the first point. So we can set it to 44 for Two Maps immediately.]
 
 book Hype Lane
 
-Hype Lane is a room in universal. "It's still pretty dark here. You must still be underground.[paragraph break]Around you, [if sco-self-owns is false]cell phones, cell phones everywhere. Such confident chatter. Or it seems confident. It distracts you and your bearings, trying to figure who you really are and get somewhere less dark[else if sco-pry-stalk is true]you're able to ignore the prize talk for now, but you realize you can and must move on from it. Get out of this underground area[else]a prize talk booms from unseen speakers, exhorting you to do, or at least earn, more. The heck with being above ground, with boring old nature that distracts you from being all you can be. Well, for the economy, at least[end if]."
+Hype Lane is a room in universal. "It's still pretty dark here. You must still be underground.[paragraph break]Around you, [if sco-self-owns is false]cell phones, cell phones everywhere. Such confident chatter. Or it seems confident. It distracts you and your bearings, trying to figure who you really are and get somewhere less dark[else if sco-pry-stalk is true]you're able to ignore the prize talk for now, but you realize you can and must move on from it. Get out of this underground area[else]a prize talk booms from unseen speakers, exhorting you to do, or at least earn, more. The heck with being above ground, with boring old nature that distracts you from being all you can be. Well, for the economy, at least[end if].". eyes-number of Hype Lane is 45.
 
 chapter cell phones
 
-the cell phones are a plural-named sentient in hype lane. understand "phone" and "cell phone" as cell phones. "You don't remember everything about your former self, but you remember you hated cell phones and how they distracted you. Maybe if the people yacking into them were taken down a peg, you could focus a bit more. Dang cell phones.". description is "Whether or not the cell phones are the latest models, you don't want to pay attention to them too much. Just figure out a way for a harmless calamity that may make their users quiet down a bit."
+the cell phones are a plural-named sentient in hype lane. understand "phone" and "cell phone" as cell phones. "You don't remember everything about your former self, but you remember you hated cell phones and how they distracted you. Maybe if the people yacking into them were taken down a peg, you could focus a bit more. Dang cell phones.". description is "Whether or not the cell phones are the latest models, you don't want to pay attention to them too much. Just figure out a way for a harmless calamity that may make their users quiet down a bit.". eyes-number of cell phones is 44.
 
 chapter prize talk
 
-prize talk is a sentient. "[if sco-pry-stalk is false]You'd like to DO something about the prize talk. Or seek out something that would give you passage away from it[else]The prize talk is all around, but you're able to ignore it, now you feel you might have a way out[end if].". description is "[if sco-pry-stalk is false]The prize talk also discusses things that aren't so worth it, like -- well, plants and stuff. BORING[else]You can see your way around the prize talk now. You don't want to get sucked back in[end if]."
+prize talk is a sentient. "[if sco-pry-stalk is false]You'd like to DO something about the prize talk. Or seek out something that would give you passage away from it[else]The prize talk is all around, but you're able to ignore it, now you feel you might have a way out[end if].". description is "[if sco-pry-stalk is false]The prize talk also discusses things that aren't so worth it, like -- well, plants and stuff. BORING[else]You can see your way around the prize talk now. You don't want to get sucked back in[end if].". eyes-number of prize talk is 35.
 
 section stalk
 
-the stalk is a thing. description is "Apparently, it's magical or something, and if you know where you want to go and plant it, it will lead you there.".
+the stalk is a thing. description is "Apparently, it's magical or something, and if you know where you want to go and plant it, it will lead you there.". eyes-number of stalk is -1.
 
 book Naff Haze
 
-NaffHaze is a privately-named room in universal. "[if sco-nah-phase is false]You're surrounded by some really naff haze. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it[else]Things have opened up [ways-open] now, with the naff haze lifted[end if][if sco-pole-east is true]. You feel less policed, too, since you found a path [b]EAST[r][end if][if sco-grow-star is true].[paragraph break]You got rid of the gross tar blocking your way [b]NORTH[r][end if].". printed name is "[if sco-nah-phase is false]Naff Haze[else]High Plain[end if]".
+NaffHaze is a privately-named room in universal. "[if sco-nah-phase is false]You're surrounded by some really naff haze. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it[else]Things have opened up [ways-open] now, with the naff haze lifted[end if][if sco-pole-east is true]. You feel less policed, too, since you found a path [b]EAST[r][end if][if sco-grow-star is true].[paragraph break]You got rid of the gross tar blocking your way [b]NORTH[r][end if].". printed name is "[if sco-nah-phase is false]Naff Haze[else]High Plain[end if]". eyes-number of NaffHaze is 35.
 
 to say ways-open:
 	if plane-dir-score is 0:
@@ -227,7 +227,7 @@ after going to NaffHaze when Bruise Wares is in NaffHaze and sco-treat-all is tr
 	remove-swear-bonus;
 	continue the action;
 
-the naff haze is scenery in NaffHaze. "You can't look very far though it. Just looking at it makes you feel hopeless you'll always be trapped in the fog."
+the naff haze is scenery in NaffHaze. "You can't look very far though it. Just looking at it makes you feel hopeless you'll always be trapped in the fog.". eyes-number of naff haze is 35.
 
 check going a viable direction in NaffHaze when sco-pole-east is false:
 	say "You'd like to go [noun], but you feel, well, policed." instead;
@@ -252,7 +252,7 @@ check going west in NaffHaze when sco-key-pillar is false and sco-nah-phase is t
 
 chapter war pawn
 
-the war pawn is a thing. description is "It's a grey chess pawn with a frown and mean glare carved in the rounded top. If it had fists, you are pretty sure they'd be doubled up in a fighting posture, but it doesn't even have arms.[paragraph break]Looking at it from many different angles gets you all sorts of weird ideas. Perhaps it could help you when you run out of them on your quest. You may wish to wait until you really need to use it, though of course, you don't want to wait too late.".
+the war pawn is a thing. description is "It's a grey chess pawn with a frown and mean glare carved in the rounded top. If it had fists, you are pretty sure they'd be doubled up in a fighting posture, but it doesn't even have arms.[paragraph break]Looking at it from many different angles gets you all sorts of weird ideas. Perhaps it could help you when you run out of them on your quest. You may wish to wait until you really need to use it, though of course, you don't want to wait too late.". eyes-number of war pawn is 1.
 
 after examining war pawn for the first time:
 	say "If you want to resist the temptation of this cheat item, [b]DROP[r] it. There is no penalty for using it.";
@@ -260,19 +260,19 @@ after examining war pawn for the first time:
 
 chapter short rail
 
-the short rail is a thing. "A short rail leads -- well, not very far. You get the sense it should lead somewhere more.". description is "It's just ... not aligned right. Maybe if it were, it could lead somewhere, or make sense of this place, here.".
+the short rail is a thing. "A short rail leads -- well, not very far. You get the sense it should lead somewhere more.". description is "It's just ... not aligned right. Maybe if it were, it could lead somewhere, or make sense of this place, here.". eyes-number of short rail is 55.
 
 section shore trail
 
-the shore trail is a thing. "The shore trail you discovered leads [b]SOUTH[r].". description is "There are no secret passages hidden in it."
+the shore trail is a thing. "The shore trail you discovered leads [b]SOUTH[r].". description is "There are no secret passages hidden in it.". eyes-number of shore trail is -1.
 
 chapter gross tar
 
-the gross tar is a thing. "Gross tar blocks the way [b]NORTH[r] into darkness.". description is "Maybe there's a way through, but it's a bit too dark now. At least it's not foggy any more."
+the gross tar is a thing. "Gross tar blocks the way [b]NORTH[r] into darkness.". description is "Maybe there's a way through, but it's a bit too dark now. At least it's not foggy any more.". eyes-number of gross tar is 44.
 
 chapter keep iller
 
-the keep iller is a thing. "A keep, iller, rises to the [b]WEST[r][if sco-key-pillar is false], but you see no way in[else], and you figured how to enter it[end if].". description is "It [if keepiller is visited]wasn't[else]doesn't look[end if] dangerous, but then, it's not exactly a tourist attraction. Still, [if keep-score < 6]there's plenty to do there[else]it helped you a lot[end if]."
+the keep iller is a thing. "A keep, iller, rises to the [b]WEST[r][if sco-key-pillar is false], but you see no way in[else], and you figured how to enter it[end if].". description is "It [if keepiller is visited]wasn't[else]doesn't look[end if] dangerous, but then, it's not exactly a tourist attraction. Still, [if keep-score < 6]there's plenty to do there[else]it helped you a lot[end if].". eyes-number of keep iller is 36.
 
 check entering keep iller:
 	if sco-key-pillar is false, say "You will enter the keep to the west, once you find a way. But you haven't, yet." instead;
@@ -281,11 +281,11 @@ check entering keep iller:
 
 chapter waydown
 
-the waydown is a privately-named thing. description is "You shouldn't see this description, since waydown is privately-named.". "There's also a way [b]DOWN[r] that opened up once you found passages in all cardinal directions.".
+the waydown is a privately-named thing. description is "You shouldn't see this description, since waydown is privately-named.". "There's also a way [b]DOWN[r] that opened up once you found passages in all cardinal directions.". eyes-number of waydown is 1.
 
 chapter Bruise Wares
 
-Bruise Wares is a thing. "[b]BRUISE WARES[r], some sort of odd disturbing shop, has popped up here. You can probably figure why it's forbidding and such. But perhaps it is only for a certain sort of adventurer.". description is "Looking at [b]BRUISE WARES[r], it sort of overdoes the whole 'you might not be ready for this' schtick. And, you figure, if you know what's really there, it's not something you will put up with unless you have to.[paragraph break]Seriously, dealing with it is up to you."
+Bruise Wares is a thing. "[b]BRUISE WARES[r], some sort of odd disturbing shop, has popped up here. You can probably figure why it's forbidding and such. But perhaps it is only for a certain sort of adventurer.". description is "Looking at [b]BRUISE WARES[r], it sort of overdoes the whole 'you might not be ready for this' schtick. And, you figure, if you know what's really there, it's not something you will put up with unless you have to.[paragraph break]Seriously, dealing with it is up to you.". eyes-number of bruise wares is 46.
 
 rule for choosing notable locale objects (this is the put followers at the bottom rule):
 	repeat with item running through things in location of player:
@@ -299,7 +299,7 @@ check entering Bruise Wares:
 
 book Keep Iller
 
-KeepIller is a room in Universal. printed name is "Keep (Iller)". "This keep has seen better days, but there seems to be a lot in its ruins. You can go back [b]EAST[r]. You also sense something fearsome from a passage south."
+KeepIller is a room in Universal. printed name is "Keep (Iller)". "This keep has seen better days, but there seems to be a lot in its ruins. You can go back [b]EAST[r]. You also sense something fearsome from a passage south.". eyes-number of KeepIller is -1.
 
 check going south in KeepIller:
 	if sco-knife-right is true, say "You don't need or want to go back there." instead;
@@ -312,83 +312,85 @@ check going south in KeepIller:
 
 chapter no mold
 
-there is a thing called no mold. It is in KeepIller. "You are really impressed by how no mold grows here. [if pre-gnome-old rule is guessed-yet]The gnome (old,) who keeps it up, will be an impressive companion once you find them adventuring gear.[else if sco-gnome-old is false]Someone must be keeping it up well. Who?[else]". description is "You can't see the absence of mold, but you appreciate it nonetheless. Someone must be, ahem, keeping the keep up well. Who?".
+there is a thing called no mold. It is in KeepIller. "You are really impressed by how no mold grows here. [if pre-gnome-old rule is guessed-yet]The gnome (old,) who keeps it up, will be an impressive companion once you find them adventuring gear.[else if sco-gnome-old is false]Someone must be keeping it up well. Who?[else]". description is "You can't see the absence of mold, but you appreciate it nonetheless. Someone must be, ahem, keeping the keep up well. Who?". eyes-number of mold is 53.
 
 section gnome old
 
-the gnome old is a follower. printed name is "gnome (old)". help-chat is "The gnome (old) discusses ways of finding hidden psychic weaknesses in a very tough opponent. You also hear how whatever force there is, it only cares about things looking good on the outside. The gnome had so much mold to protect against and continually scrape away, even outside of the keep.". description is "Still full of vigor, like they don't deserve to be schlepped out in a garden--though keeping mold away as they did is certainly good-gardening-adjacent!"
+the gnome old is a follower. printed name is "gnome (old)". help-chat is "The gnome (old) discusses ways of finding hidden psychic weaknesses in a very tough opponent. You also hear how whatever force there is, it only cares about things looking good on the outside. The gnome had so much mold to protect against and continually scrape away, even outside of the keep.". description is "Still full of vigor, like they don't deserve to be schlepped out in a garden--though keeping mold away as they did is certainly good-gardening-adjacent!". eyes-number of gnome is -1.
 
 chapter row gold
 
-there is a thing called row gold. It is in KeepIller. printed name is "row (gold)". "A row (gold) shines in this otherwise forbidding keep[if pre-rogue-old rule is guessed-yet]. You've met its proprietor, the rogue (old,) but they require payment[else if sco-rogue-old is true], and you're glad the rogue (old) had enough faith in you to leave it for a while[end if].". description is "You're surprised someone hasn't taken it yet. Perhaps it has an unseen guardian."
+there is a thing called row gold. It is in KeepIller. printed name is "row (gold)". "A row (gold) shines in this otherwise forbidding keep[if pre-rogue-old rule is guessed-yet]. You've met its proprietor, the rogue (old,) but they require payment[else if sco-rogue-old is true], and you're glad the rogue (old) had enough faith in you to leave it for a while[end if].". description is "You're surprised someone hasn't taken it yet. Perhaps it has an unseen guardian.". eyes-number of row gold is 53.
 
 section rogue old
 
-the rogue old is a follower. printed name is "rogue (old)". help-chat is "The rogue (old) discusses ways to sneak around so vastly overpowered opponents can't blow you away, and you also learn not to feel guilty or shifty about being good at sneaking around, around much more unsavory entities than yourself.". description is "Moves a bit slowly, but also very quietly."
+the rogue old is a follower. printed name is "rogue (old)". help-chat is "The rogue (old) discusses ways to sneak around so vastly overpowered opponents can't blow you away, and you also learn not to feel guilty or shifty about being good at sneaking around, around much more unsavory entities than yourself.". description is "Moves a bit slowly, but also very quietly.". eyes-number of rogue old is -1.
 
 chapter manic herb
 
-the manic herb is a thing in KeepIller. "There's a bunch of manic herb here[if sco-manna-curb is true] the mensch elf sifted through[else]. You don't know a lot about it, other than that some is really poisonous and some is okay. There's so much, perhaps it's hiding something[end if]. ". description is "You're unable to see through it, to determine what's safe[if sco-manna-curb is true], but you don't need to[else], and it'll probably require someone else's knowledge, from times way past, maybe even Biblical, once you know what to look for[end if]."
+some manic herb is a thing in KeepIller. "There's a bunch of manic herb here[if sco-manna-curb is true] the mensch elf sifted through[else]. You don't know a lot about it, other than that some is really poisonous and some is okay. There's so much, perhaps it's hiding something[end if]. ". description is "You're unable to see through it, to determine what's safe[if sco-manna-curb is true], but you don't need to[else], and it'll probably require someone else's knowledge, from times way past, maybe even Biblical, once you know what to look for[end if].". eyes-number of manic herb is 54.
 
 section manna
 
-some manna is a singular-named thing. description is "Apparently, manna is supposed to be tasty. It looks sort of dull. Maybe it can be made into something cool. You don't know what.". indefinite article of manna is "some".
+some manna is a singular-named thing. description is "Apparently, manna is supposed to be tasty. It looks sort of dull. Maybe it can be made into something cool. You don't know what.". indefinite article of manna is "some". eyes-number of manna is -1.
 
 chapter plant racker
 
-the plant racker is a thing in KeepIller. "A plant racker lies here, pretty much useless.". description is "It seems papery, broken beyond repair, at least in its current state.".
+the plant racker is a thing in KeepIller. "A plant racker lies here, pretty much useless.". description is "It seems papery, broken beyond repair, at least in its current state.". eyes-number of plant racker is 47.
 
 chapter plan tracker
 
-the plan tracker is a thing. description is "[if sco-war-file is true]You have notes for combat and leadership written in here[else]The plan tracker is currently blank, but maybe you can find plans for it[end if]."
+the plan tracker is a thing. description is "[if sco-war-file is true]You have notes for combat and leadership written in here[else]The plan tracker is currently blank, but maybe you can find plans for it[end if].". eyes-number of plan tracker is -1.
 
 after printing the name of plan tracker when taking inventory: say " ([if sco-war-file is false]with no ideas yet[else]full of ideas[end if])"
 
 chapter seedy sign
 
-the seedy sign is a thing in KeepIller. "[if sco-see-design is false]A seedy sign stands here, advertising somewhere very risky indeed[else]That seedy sign stands off to the side here. It's no longer scary, but you don't wish to bother with it, any more[end if].". description is "[if sco-see-design is false]There are clues in here to figure what it hides, if you look the right way. You might be scared to[else]The design is clearer now--not that you want to go back[end if]."
+the seedy sign is a thing in KeepIller. "[if sco-see-design is false]A seedy sign stands here, advertising somewhere very risky indeed[else]That seedy sign stands off to the side here. It's no longer scary, but you don't wish to bother with it, any more[end if].". description is "[if sco-see-design is false]There are clues in here to figure what it hides, if you look the right way. You might be scared to[else]The design is clearer now--not that you want to go back[end if].". eyes-number of seedy sign is 36.
 
 book Nigh Fright
 
-Nigh Fright is a room in Universal. "Whatever you need to do or find here, you only want to do it once. You don't want to have to come back. You're glad your friends supported you enough to get here, but you don't want to have to rely on them like that again.[paragraph break]So, what do you need to find, before getting out?"
+Nigh Fright is a room in Universal. "Whatever you need to do or find here, you only want to do it once. You don't want to have to come back. You're glad your friends supported you enough to get here, but you don't want to have to rely on them like that again.[paragraph break]So, what do you need to find, before getting out?". eyes-number of nigh fright is 1045.
 
 chapter knife right
 
-the knife right is a thing. printed name is "knife (right)". description is "Well, it's sharp. And it's probably, like, sacred and stuff, since you got it in a rite."
+the knife right is a thing. printed name is "knife (right)". description is "Well, it's sharp. And it's probably, like, sacred and stuff, since you got it in a rite.". eyes-number of knife right is -1.
 
 book Wolf Rock
 
-Wolf Rock is a room in universal. "A big rock in the shape of a wolf looms impressively, blocking all passages except back [b]SOUTH[r]. [if sco-hide-out is true]You can also go [b]DOWN[r] into the hideout you found[else]You feel high doubt here you can go anywhere else[end if].[paragraph break]There's a huge pile of lode ore here, too, [if sco-low-door is true]and you found a low door in it that leads [b]INSIDE[r][else]and perhaps there's something in it[end if].".
+Wolf Rock is a room in universal. "A big rock in the shape of a wolf looms impressively, blocking all passages except back [b]SOUTH[r]. [if sco-hide-out is true]You can also go [b]DOWN[r] into the hideout you found[else]You feel high doubt here you can go anywhere else[end if].[paragraph break]There's a huge pile of lode ore here, too, [if sco-low-door is true]and you found a low door in it that leads [b]INSIDE[r][else]and perhaps there's something in it[end if].". eyes-number of wolf rock is 45.
 
 chapter wool frock
 
-the wool frock is a thing. description is "It's a bit too small for you."
+the wool frock is a thing. description is "It's a bit too small for you.". eyes-number of wool frock is -1.
 
 chapter lode ore
 
-the pile of lode ore is scenery in Wolf Rock. "[if sco-low-door is true]You doubt there is anything more to find[else]Maybe it is hiding something. If it were a pile of anything else, it might not be so interesting[end if]."
+the pile of lode ore is scenery in Wolf Rock. "[if sco-low-door is true]You doubt there is anything more to find[else]Maybe it is hiding something. If it were a pile of anything else, it might not be so interesting[end if].". eyes-number of lode ore is 34.
 
 section low door
 
-the low door is scenery. "You can just barely fit through it, now the tall mice helped you to find and clear it."
+the low door is scenery. "You can just barely fit through it, now the tall mice helped you to find and clear it.". eyes-number of low door is -1.
+
+check entering low door: try going inside instead.
 
 book Hideout
 
-Hideout is a room in universal. "You can only go back [b]UP[r]. It wouldn't be a very good hideout if you had too many places to sneak around."
+Hideout is a room in universal. "You can only go back [b]UP[r]. It wouldn't be a very good hideout if you had too many places to sneak around.". eyes-number of hideout is -1.
 
 chapter Booze Troll
 
-the booze troll is a prefollowing sentient in Hideout. "A booze troll sulks sullenly here.". description is "For all the troll's sulkiness, it doesn't appear evil. Perhaps it's reacted badly to ... well, the same people who stuffed you beneath the tomb apse.".
+the booze troll is a prefollowing sentient in Hideout. "A booze troll sulks sullenly here.". description is "For all the troll's sulkiness, it doesn't appear evil. Perhaps it's reacted badly to ... well, the same people who stuffed you beneath the tomb apse.". eyes-number of booze troll is 54.
 
-the new troll is a follower. "A new troll looks around with purpose.". help-chat is "The new troll relates ways to shake oneself free from despair (no! Really! It managed to for a while!) before relating more ways to avoid it in the first place, or help others you care about do the same.". description is "Won't win any beauty contests, but the troll seems to look eagerly towards you for what to do next."
+the new troll is a follower. "A new troll looks around with purpose.". help-chat is "The new troll relates ways to shake oneself free from despair (no! Really! It managed to for a while!) before relating more ways to avoid it in the first place, or help others you care about do the same.". description is "Won't win any beauty contests, but the troll seems to look eagerly towards you for what to do next.". eyes-number of new troll is -1.
 
 chapter base ale
 
-the Base Ale is a thing. description is "Uck. It's a nasty color, really. But perhaps it will be useful.".  indefinite article of Base Ale is "some".
+the Base Ale is a thing. description is "Uck. It's a nasty color, really. But perhaps it will be useful.".  indefinite article of Base Ale is "some". eyes-number of base ale is 34.
 
 book We Loan
 
-We Loan is a room in universal. printed name is "[if sco-well-own is false]We Loan[else if sco-whee-lone is false]We'll Own[else if sco-oh-flier is false]Whee, Lone?[else]Whee! [']Lone![end if]". "[loan-starter][paragraph break]You can only go back [b]OUT[r] here[if sco-well-own is false].[paragraph break]You don't really trust the whole 'financial services' vibe here. Maybe there's a double meaning to deduce[end if]."
+We Loan is a room in universal. printed name is "[if sco-well-own is false]We Loan[else if sco-whee-lone is false]We'll Own[else if sco-oh-flier is false]Whee, Lone?[else]Whee! [']Lone![end if]". "[loan-starter][paragraph break]You can only go back [b]OUT[r] here[if sco-well-own is false].[paragraph break]You don't really trust the whole 'financial services' vibe here. Maybe there's a double meaning to deduce[end if].". eyes-number of we loan is 43.
 
 to say loan-starter:
 	if sco-bile-oh is false:
@@ -400,17 +402,21 @@ to say loan-starter:
 
 chapter some merchant
 
-some merchant is a singular-named sentient. "Some merchant babbles on, all up in your personal space, suggesting you buy low[if sco-summer-chant is true], but a bit more tolerable now you've got a mantra to zone them out[end if].". description is "Their smile certainly is fake. They're not going to shut up until you get a resolution here."
+some merchant is a singular-named sentient. "Some merchant babbles on, all up in your personal space, suggesting you buy low[if sco-summer-chant is true], but a bit more tolerable now you've got a mantra to zone them out[end if].". description is "Their smile certainly is fake. They're not going to shut up until you get a resolution here.". eyes-number of merchant is 65. [indefinite article of merchant is "some".]
 
 check going outside in we loan when merchant is in we loan: say "Alas, the merchant's magnetism is too strong." instead;
 
 chapter oaf liar
 
-the oaf liar is a sentient. "An oaf liar blathers away here, with stuff that's likely, but not provably false. They seem quite proud of their salesmanship skill, which is more persistence than anything else.". description is "Smarmy and well-dressed.".
+the oaf liar is a sentient. "An oaf liar blathers away here, with stuff that's likely, but not provably false. They seem quite proud of their salesmanship skill, which is more persistence than anything else.". description is "Smarmy and well-dressed.". eyes-number of oaf liar is 25.
 
 section flier
 
-the flier is a thing. description is "The flier advertises places to go: a wharf isle, a thief isle, and a grove isle, each of which may hold odd treasures. It contains pretty clear directions, too. The only thing it lacks is where the directions start from[if flier-isle-score > 0]. You now know to start [here-in of NoNotion][end if].". understand "flyer" as flier.
+the flier is a thing. description is "The flier advertises places to go: a wharf isle, a thief isle, and a grove isle, each of which may hold odd treasures. It contains pretty clear directions, too. The only thing it lacks is where the directions start from[if flier-isle-score > 0]. You now know to start [here-in of NoNotion][end if].". understand "flyer" as flier. eyes-number of flier is 34. [this is not always right because...]
+
+check eyeing flier when flier-isle-score < 2:
+	if flier-isle-score is 1 and sco-grow-vial is true, continue the action;
+	say "Weird. The flier seems to blink between three and four dots on the left, but it's stable at four dots on the right." instead;
 
 report examining the flier:
 	if flier-isle-score is 0:
@@ -423,18 +429,18 @@ report examining the flier:
 
 book Lobe End
 
-Lobe End is a room in universal. "[if sco-low-bend is false]This lobe of land appears to fall off steeply in all directions except back west. Maybe you could look for something that might be a hill, even a steep one.[else]The low bend (former lobe end) now bends from west to north, where you see water, too much to cross on foot[raft-clue].[end if]". printed name is "[if sco-low-bend is true]Low Bend[else]Lobe End[end if]".
+Lobe End is a room in universal. "[if sco-low-bend is false]This lobe of land appears to fall off steeply in all directions except back west. Maybe you could look for something that might be a hill, even a steep one.[else]The low bend (former lobe end) now bends from west to north, where you see water, too much to cross on foot[raft-clue].[end if]". printed name is "[if sco-low-bend is true]Low Bend[else]Lobe End[end if]". eyes-number of lobe end is 34.
 
 to say raft-clue:
 	if sco-bay-sale is false, say ". Well, nobody's probably going to give you transport north for free. Maybe you can summon or find someone who will"
 
 check going north in lobe end when sco-low-bend is true and sco-bay-sale is false: say "You have no way across the water, yet." instead;
 
-the water north is scenery. "[if sco-bay-sale is true]Easy to cross with the raft[else]You need a vessel to cross the water. The other side is too far away[end if]."
+the water north is scenery. "[if sco-bay-sale is true]Easy to cross with the raft[else]You need a vessel to cross the water. The other side is too far away[end if].". eyes-number of water north is 1.
 
 chapter We Craft Weak Raft
 
-the We Craft Weak Raft is a thing. printed name is "We-Craft Weak Raft". description is "Well, it isn't fancy, but [if storm isle is unvisited]it looks sturdy enough[else]it got you across the water with no problem[end if].". "[if player is in lobe end]Fortunately, the[else]The[end if] We-Craft Weak Raft from the bay sale floats here, ready to take you [if player is in storm isle]south[else]north[end if] across the water and back, as many times as needed."
+the We Craft Weak Raft is a thing. printed name is "We-Craft Weak Raft". description is "Well, it isn't fancy, but [if storm isle is unvisited]it looks sturdy enough[else]it got you across the water with no problem[end if].". "[if player is in lobe end]Fortunately, the[else]The[end if] We-Craft Weak Raft from the bay sale floats here, ready to take you [if player is in storm isle]south[else]north[end if] across the water and back, as many times as needed.". eyes-number of We Craft Weak Raft is 1.
 
 check going:
 	if ((room gone from is lobe end) and (room gone to is storm isle)) or ((room gone to is lobe end) and (room gone from is storm isle)):
@@ -444,23 +450,23 @@ check going:
 
 book Storm Isle
 
-Storm Isle is a room in universal. "[if sco-store-mile is true]Well, you're in a sort of shopping mall now. You can see a passage leading north[else]On this storm isle, it's always rainy. It'd be nice to have some shelter inside[end if].". printed name is "[if sco-store-mile is true]Store Mile[else]Storm Isle[end if]".
+Storm Isle is a room in universal. "[if sco-store-mile is true]Well, you're in a sort of shopping mall now. You can see a passage leading north[else]On this storm isle, it's always rainy. It'd be nice to have some shelter inside[end if].". printed name is "[if sco-store-mile is true]Store Mile[else]Storm Isle[end if]". eyes-number of storm isle is 55.
 
 chapter my stall
 
-My Stall is a thing. "A stall labeled MY STALL sits here, abandoned, against a wall. You think you hear odd noises from behind it.". description is "As you get closer to My Stall, the odd noises grow a bit louder. You see nothing particularly special, though."
+My Stall is a thing. "A stall labeled MY STALL sits here, abandoned, against a wall. You think you hear odd noises from behind it.". description is "As you get closer to My Stall, the odd noises grow a bit louder. You see nothing particularly special, though.". eyes-number of my stall is 44.
 
 section mice tall
 
-the mice tall are a plural-named followers. printed name is "mice (tall)". description is "Well, they're tall for mice. But they make up enough numbers to be pretty effective in a skirmish, if need be.". help-chat is "[one of]You're surprised how easy it is to understand them and how easily they understand you. [or][stopping]They discuss how much bigger opponents can be brought down by, not just arrogance facing many small opponents, but by dexterity and quick maneuvers. Oh, also a lot about the evil in the land killing or corrupting or mutating animals. So presumably finding or destroying it will put a stop to the very worst bits."
+the mice tall are a plural-named followers. printed name is "mice (tall)". description is "Well, they're tall for mice. But they make up enough numbers to be pretty effective in a skirmish, if need be.". help-chat is "[one of]You're surprised how easy it is to understand them and how easily they understand you. [or][stopping]They discuss how much bigger opponents can be brought down by, not just arrogance facing many small opponents, but by dexterity and quick maneuvers. Oh, also a lot about the evil in the land killing or corrupting or mutating animals. So presumably finding or destroying it will put a stop to the very worst bits.". eyes-number of mice tall is -1.
 
 chapter men shelf
 
-the MEN shelf is a thing. "A MEN shelf sits here, barren. Which may be a good thing--there's no appalling stuff to buy. Or a bad thing--everything it displayed was in such high demand.". description is "Empty. Well, it's a system of shelves, really. Perhaps there is something or someone under or behind. Someone too decent to buy anything from such a bold MEN shelf."
+the MEN shelf is a thing. "A MEN shelf sits here, barren. Which may be a good thing--there's no appalling stuff to buy. Or a bad thing--everything it displayed was in such high demand.". description is "Empty. Well, it's a system of shelves, really. Perhaps there is something or someone under or behind. Someone too decent to buy anything from such a bold MEN shelf.". eyes-number of MEN shelf is 63.
 
 section mensch elf
 
-the mensch elf is a follower. description is "Smiling and ready to help.". help-chat is "The mensch elf discusses ways to identify people or situations that just need a bit of help, and how to do so without making them feel hopeless or in need of help, or that they got themselves in this position in the first place."
+the mensch elf is a follower. description is "Smiling and ready to help.". help-chat is "The mensch elf discusses ways to identify people or situations that just need a bit of help, and how to do so without making them feel hopeless or in need of help, or that they got themselves in this position in the first place.". eyes-number of mensch elf is -1.
 
 after printing the locale description for Storm Isle when gs-got-weapons is false and sco-treat-all is true:
 	now gs-got-weapons is true;
@@ -469,7 +475,7 @@ after printing the locale description for Storm Isle when gs-got-weapons is fals
 
 book Trees Mall
 
-Trees Mall is a room in universal. "This is a withered, run-down former mall that had the ceiling blow off. It's walled with pictures of large, but fake, trees. You can only go back [b]SOUTH[r]."
+Trees Mall is a room in universal. "This is a withered, run-down former mall that had the ceiling blow off. It's walled with pictures of large, but fake, trees. You can only go back [b]SOUTH[r].". eyes-number of trees mall is 45.
 
 to grow-the-tree:
 	if player has grow vial and tree small is in Trees Mall:
@@ -484,15 +490,15 @@ after printing the locale description for Trees Mall:
 
 chapter tree small
 
-the tree small is a thing. "A tree (small) grows here, or tries to, at least. It deserves to be bigger.". description is "It's a nice tree, but it's a bit small."
+the tree small is a thing. "A tree (small) grows here, or tries to, at least. It deserves to be bigger.". description is "It's a nice tree, but it's a bit small.". eyes-number of tree small is -1.
 
 chapter tree small
 
-the tree tall is a thing. "A tree (tall) has grown here, thanks to you. It feels very welcoming.". description is "It's a nice tree, but it's a bit small."
+the tree tall is a thing. "A tree (tall) has grown here, thanks to you. It feels very welcoming.". description is "It's a nice tree, but it's a bit small.". eyes-number of tree tall is 53.
 
 book no notion
 
-NoNotion is a room in universal. "[if sco-known-ocean is false]You simply have no notion what lies beyond here. You hope something does. Surely the shore trail didn't just lead to a dead end! [else][ocean-desc]. [island-status]. [end if]You can go back north to the high plain.". printed name of nonotion is "[if sco-known-ocean is false]No Notion[else]Known Ocean[end if]".
+NoNotion is a room in universal. "[if sco-known-ocean is false]You simply have no notion what lies beyond here. You hope something does. Surely the shore trail didn't just lead to a dead end! [else][ocean-desc]. [island-status]. [end if]You can go back north to the high plain.". printed name of nonotion is "[if sco-known-ocean is false]No Notion[else]Known Ocean[end if]". eyes-number of NoNotion is 55.
 
 to say ocean-desc:
 	if flier-isle-score is 0:
@@ -528,29 +534,29 @@ to say island-status:
 
 chapter sick squid
 
-the sick squid is a sentient. "A [if sco-six-quid is true]formerly (thanks to you) [end if]sick squid trundles about in the water here.". description is "[if sco-six-quid is false]It seems like it's half choking on something, not enough to strangle it, but enough to make it really uncomfortable[else]It looks back at you. Squids don't smile, but if it could, it would. Perhaps, if you know of an island nearby in the ocean, it will take you there[end if]."
+the sick squid is a sentient. "A [if sco-six-quid is true]formerly (thanks to you) [end if]sick squid trundles about in the water here.". description is "[if sco-six-quid is false]It seems like it's half choking on something, not enough to strangle it, but enough to make it really uncomfortable[else]It looks back at you. Squids don't smile, but if it could, it would. Perhaps, if you know of an island nearby in the ocean, it will take you there[end if].". eyes-number of sick squid is 34.
 
 check entering squid: say "It might not have the energy for joyriding. You need to show it where to go, maybe with [if player has flier]that flier of yours[else]a map or something[end if]." instead;
 
 chapter grow vial
 
-the grow vial is a thing. description is "It says it will help something grow, but it's potentially toxic to mammals."
+the grow vial is a thing. description is "It says it will help something grow, but it's potentially toxic to mammals.". eyes-number of grow vial is -1.
 
 chapter ocean
 
-the ocean is scenery. "Well, you'll need help to cross it."
+the ocean is scenery. "Well, you'll need help to cross it.". eyes-number of ocean is 1.
 
 check entering ocean: try going west instead;
 
 book wand wharf
 
-Wand Wharf is a room in universal. "You rode the squid here, and there are all sorts of magical symbols here. It's a bit intimidating for someone like you who is clueless about magic. Maybe it's intimidating and depressing for someone else, and maybe you can more than commiserate.[paragraph break]You don't really trust your sense of direction here, but maybe if you knew the sort of companion you were looking for, it would help."
+Wand Wharf is a room in universal. "You rode the squid here, and there are all sorts of magical symbols here. It's a bit intimidating for someone like you who is clueless about magic. Maybe it's intimidating and depressing for someone else, and maybe you can more than commiserate.[paragraph break]You don't really trust your sense of direction here, but maybe if you knew the sort of companion you were looking for, it would help.". eyes-number of wand wharf is 35.
 
-the wan dwarf is a follower. description is "Short and stocky. It wears glasses from what other dwarves would say was reading too much.". help-chat is "The dwarf provides an impressively nuanced view on how to balance magic skill with physical skill and fighting savvy. But the dwarf also notes how to be a good expert in specific areas if need be, as well as how to get experts and generalists to work together. However, the dwarf also expresses worry that this talk is all great in theory but hard in practice."
+the wan dwarf is a follower. description is "Short and stocky. It wears glasses from what other dwarves would say was reading too much.". help-chat is "The dwarf provides an impressively nuanced view on how to balance magic skill with physical skill and fighting savvy. But the dwarf also notes how to be a good expert in specific areas if need be, as well as how to get experts and generalists to work together. However, the dwarf also expresses worry that this talk is all great in theory but hard in practice.". eyes-number of wan dwarf is -1.
 
 book Brew Swears (optional)
 
-Brew Swears is a room in universal. "[if grinch earls are in brew swears]If you thought Hype Lane was bad, this is even worse[else]Now that you got rid of the orc's old associates, there's nothing really left to do here[end if]. You can leave back [b]OUT[r].".
+Brew Swears is a room in universal. "[if grinch earls are in brew swears]If you thought Hype Lane was bad, this is even worse[else]Now that you got rid of the orc's old associates, there's nothing really left to do here[end if]. You can leave back [b]OUT[r].". eyes-number of brew swears is 1.
 
 check going outside in Brew Swears:
 	now block-followers is false;
@@ -565,13 +571,13 @@ to zap-bruise-wares:
 
 chapter earls
 
-the grinch earls are a plural-named sentient in Brew Swears. "Some [earls] parade around here, bragging about how they ruin boring people's fun with their dynamic ways and pointing out that it's easy to be nice if you're boring. They fix you with a 'We parse: weep, arse' gaze[if sco-grin-churls is true], though they're less effective than when they were self-styled earls[end if]. [if number of not moot swearblobs is 0]They've run out of swears but not of sneers. Perhaps one more non-profane phrase could dispel them[else if sco-weak-us is true]You cut their 'we cuss' down to size, so they're now giving examples of how they cuss[else]They constantly blather 'WE CUSS' and seem quite proud of that[end if].". printed name is "[if sco-grin-churls is true]grin churls[else]grinch earls[end if]". description is "Bleah. They remind you of popular kids (you know, the ones who beat up kids who claimed they weren't popular--it was effective) from back in school, except all grown up."
+the grinch earls are a plural-named sentient in Brew Swears. "Some [earls] parade around here, bragging about how they ruin boring people's fun with their dynamic ways and pointing out that it's easy to be nice if you're boring. They fix you with a 'We parse: weep, arse' gaze[if sco-grin-churls is true], though they're less effective than when they were self-styled earls[end if]. [if number of not moot swearblobs is 0]They've run out of swears but not of sneers. Perhaps one more non-profane phrase could dispel them[else if sco-weak-us is true]You cut their 'we cuss' down to size, so they're now giving examples of how they cuss[else]They constantly blather 'WE CUSS' and seem quite proud of that[end if].". printed name is "[if sco-grin-churls is true]grin churls[else]grinch earls[end if]". description is "Bleah. They remind you of popular kids (you know, the ones who beat up kids who claimed they weren't popular--it was effective) from back in school, except all grown up.". eyes-number of grinch earls is -46.
 
 understand "grin churls" and "grin/churls" as grinch earls when sco-grin-churls is true.
 
 chapter crude orc
 
-the crude orc is an unneeded follower in Brew Swears. "A crude orc trundles around here, [orc-desc].". description is "[if sco-weak-us is false]Looking at you like their next target, to show they're tough enough for [the earls][else if sco-crew-dork is false]Unsure of themselves. They might be ready for a hard truth[else if number of swearblobs in Brew Swears > 0]Looking up to you a lot, for setting [the grinch] straight[else]So over this place and ready to go along with you on your adventure[end if].". help-chat of crude orc is "The crude orc doesn't have any strategy, per se. It's still young and naive. But it asks the sort of questions you forgot you had. Perhaps others youths have these questions, too, or they would, with -- well, whatever force that kidnapped you -- not pressing on them so much. And while impressing kids with mean swears isn't overarching evil, it's a gateway to nastier things. Kids like the orc are worth helping."
+the crude orc is an unneeded follower in Brew Swears. "A crude orc trundles around here, [orc-desc].". description is "[if sco-weak-us is false]Looking at you like their next target, to show they're tough enough for [the earls][else if sco-crew-dork is false]Unsure of themselves. They might be ready for a hard truth[else if number of swearblobs in Brew Swears > 0]Looking up to you a lot, for setting [the grinch] straight[else]So over this place and ready to go along with you on your adventure[end if].". help-chat of crude orc is "The crude orc doesn't have any strategy, per se. It's still young and naive. But it asks the sort of questions you forgot you had. Perhaps others youths have these questions, too, or they would, with -- well, whatever force that kidnapped you -- not pressing on them so much. And while impressing kids with mean swears isn't overarching evil, it's a gateway to nastier things. Kids like the orc are worth helping.". eyes-number of crude orc is -44.
 
 to say orc-desc:
 	if orc-score is 0:
@@ -583,21 +589,21 @@ to say orc-desc:
 
 chapter swearblobs
 
-bah-sturdy is a swearblob. "The [grinch] shake their heads at you: 'Bah! Sturdy?!'"
+bah-sturdy is a swearblob. "The [grinch] shake their heads at you: 'Bah! Sturdy?!'". eyes-number of bah-sturdy is -73.
 
-heh-class is a swearblob. "The [grinch] mock you, or maybe boost themselves, with 'Heh, class!'"
+heh-class is a swearblob. "The [grinch] mock you, or maybe boost themselves, with 'Heh, class!'". eyes-number of heh-class is -63.
 
-hush-it is a swearblob. "The [grinch] laugh and say 'Hush it.'".
+hush-it is a swearblob. "The [grinch] laugh and say 'Hush it.'". eyes-number of hush-it is -34.
 
-life-occurs is a swearblob. "The [grinch] take cheap shots and say 'Life occurs.'".
+life-occurs is a swearblob. "The [grinch] take cheap shots and say 'Life occurs.'". eyes-number of life-occurs is -37.
 
-weird-icks is a swearblob. "The [grinch] launch 'Weird! Ick!'[']s at enemies real and imagined."
+weird-icks is a swearblob. "The [grinch] launch 'Weird! Ick!'[']s at enemies real and imagined.". eyes-number of weird-icks is -45.
 
 volume endgame rooms
 
 book Worm Eaten
 
-Worm Eaten is a room in universal. printed name is "[if sco-were-meetin is false]Worm-Eaten[else]We're Meetin[']![end if]". "[if sco-were-meetin is false]This place seems very run-down. But it feels homey and inspires camaraderie in an odd way[else]Having had your meeting here, there's not much else to do[end if]."
+Worm Eaten is a room in universal. printed name is "[if sco-were-meetin is false]Worm-Eaten[else]We're Meetin[']![end if]". "[if sco-were-meetin is false]This place seems very run-down. But it feels homey and inspires camaraderie in an odd way[else]Having had your meeting here, there's not much else to do[end if].". eyes-number of worm eaten is 46.
 
 after printing the locale description of Worm Eaten when sco-were-meetin is true and sco-my-corps is false:
 	say "[line break]You feel like your companions are just about ready to go. But you still need to say something, something that can only come uniquely inside of you, to establish what a great team you are.";
@@ -612,15 +618,15 @@ to say raider-traitor:
 
 chapter gone trader
 
-The gone traitor is a prefollowing sentient in Worm Eaten. "[one of]Someone comes out from the depths. They introduce themselves as the gone traitor, someone who cozied up to the bad guys and ditched their friends, then ditched the bad guys. And only recently they ran away, but how can they ask for forgiveness? Surely it just doesn't happen like this? Just one small change and you have a new identity? Rubbish![or]The gone traitor continues to mope about here, looking for someone who can help convince them they're not so awful.[stopping]". description is "[if sco-gaunt-raider is true]Still pretty gaunt, but no longer with a look of despair on their face. They're ready to redeem themselves, you imagine[else]Despairing, shaking their head, barely able to look you in the eye. You dare not ask all they did. But they seem sorry for the big stuff[end if]."
+The gone traitor is a prefollowing sentient in Worm Eaten. "[one of]Someone comes out from the depths. They introduce themselves as the gone traitor, someone who cozied up to the bad guys and ditched their friends, then ditched the bad guys. And only recently they ran away, but how can they ask for forgiveness? Surely it just doesn't happen like this? Just one small change and you have a new identity? Rubbish![or]The gone traitor continues to mope about here, looking for someone who can help convince them they're not so awful.[stopping]". description is "[if sco-gaunt-raider is true]Still pretty gaunt, but no longer with a look of despair on their face. They're ready to redeem themselves, you imagine[else]Despairing, shaking their head, barely able to look you in the eye. You dare not ask all they did. But they seem sorry for the big stuff[end if].". eyes-number of gone traitor is 56.
 
 section gaunt raider
 
-the gaunt raider is a follower. description is "Tall and imposing. They still look disturbed by who they were.". help-chat is "The gaunt raider discusses regret for their past actions, as well as some possibilities for how to use it to boost yourself to do the right thing, or when to just drop it without being drowned by guilt."
+the gaunt raider is a follower. description is "Tall and imposing. They still look disturbed by who they were.". help-chat is "The gaunt raider discusses regret for their past actions, as well as some possibilities for how to use it to boost yourself to do the right thing, or when to just drop it without being drowned by guilt.". eyes-number of gaunt raider is -1.
 
 book Doom Ending
 
-Doom Ending is a room in universal. "[if sco-wide-vision is true]This place is much less scary now that you shared your wide vision. But now you need to put it into practice![else if sco-wipe-out is true]Well, it turns out the doom ending was for the sea skull, not for you. But you're still a bit frustrated. How do you go forward from here?[else]The gaunt raider wasn't joking around when they said they came from some place awful! You just hope your companions can help you enough here.[end if]"
+Doom Ending is a room in universal. "[if sco-wide-vision is true]This place is much less scary now that you shared your wide vision. But now you need to put it into practice![else if sco-wipe-out is true]Well, it turns out the doom ending was for the sea skull, not for you. But you're still a bit frustrated. How do you go forward from here?[else]The gaunt raider wasn't joking around when they said they came from some place awful! You just hope your companions can help you enough here.[end if]". eyes-number of doom ending is 1037.
 
 after printing the locale description for Doom Ending when Doom Ending is unvisited:
 	say "Everyone whispers some variation of 'We're stuck! Worst, UCK!' to each other. But surely there must be a way through.";
@@ -628,15 +634,15 @@ after printing the locale description for Doom Ending when Doom Ending is unvisi
 
 chapter Sea Skull
 
-The Sea Skull is a sentient in Doom Ending. "A sea skull [if sco-cease-cull is true]spews rivers of blood at you and your companions, but fortunately, with so many companions, the rivers aren't very deep. Still, you should do something about it[else]gloats evilly, with its back turned to you[end if].". description is "[if sco-cease-cull is true]It looks upset you've disturbed its, err, work[else]You can't see its face, which must be evil. You may need to yell something at it to get the, uh, conversation started[end if]."
+The Sea Skull is a sentient in Doom Ending. "A sea skull [if sco-cease-cull is true]spews rivers of blood at you and your companions, but fortunately, with so many companions, the rivers aren't very deep. Still, you should do something about it[else]gloats evilly, with its back turned to you[end if].". description is "[if sco-cease-cull is true]It looks upset you've disturbed its, err, work[else]You can't see its face, which must be evil. You may need to yell something at it to get the, uh, conversation started[end if].". eyes-number of Sea Skull is 54.
 
 chapter why division
 
-the why division is a thing. "Why-division has settled in among your companions. Everyone's done what they can. Why should they do more? They've saved their skin, and a lot of others['], too, and they'll be safe for a while!". description is "It's not something physical. It's more a general mood. You worry you have not experienced enough to dispel it."
+the why division is a thing. "Why-division has settled in among your companions. Everyone's done what they can. Why should they do more? They've saved their skin, and a lot of others['], too, and they'll be safe for a while!". description is "It's not something physical. It's more a general mood. You worry you have not experienced enough to dispel it.". eyes-number of why division is -46
 
 volume you
 
-Mike Orr is a privately-named person in Eh Raw Air Aww. the player is Mike Orr. description is "You are Mike Orr. You know that now. [if sco-my-corps is true]You're glad of your name now, after giving that pep talk[else]Kind of pedestrian, you always thought. But you hoped it might have some greater meaning[end if]."
+Mike Orr is a privately-named person in Eh Raw Air Aww. the player is Mike Orr. description is "You are Mike Orr. You know that now. [if sco-my-corps is true]You're glad of your name now, after giving that pep talk[else]Kind of pedestrian, you always thought. But you hoped it might have some greater meaning[end if].". eyes-number of mike orr is 23.
 
 understand "mike orr" and "mike/orr" as Mike Orr when sco-an-aim is true.
 
@@ -1030,11 +1036,11 @@ report ting a follower:
 
 chapter talk ache
 
-the talk ache is a thing. description is "Not really annoying, but the sort of small nuisance that makes you feel a need to do something.". printed name is "talk-ache".
+the talk ache is a thing. description is "Not really annoying, but the sort of small nuisance that makes you feel a need to do something.". printed name is "talk-ache". eyes-number of talk ache is 44.
 
 section tall cake
 
-the tall cake is a thing. description is "Wonderful. Can probably serve six or so. But you need to find the right place."
+the tall cake is a thing. description is "Wonderful. Can probably serve six or so. But you need to find the right place.". eyes-number of tall cake is -1.
 
 book taking
 

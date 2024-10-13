@@ -10,11 +10,65 @@ definition: a rule (called ru) is thinknoteblocking:
 	if ru is pre-wide-vision rule, yes;
 	no;
 
+volume cheat item stuff
+
+a thing has a number called eyes-number.
+
+a room has a number called eyes-number.
+
+chapter eyeing
+
+the sly size slice eyes are a plural-named thing. eyes-number of sly size slice eyes is 1. printed name is "sly size-slice eyes".
+
+eyering is an action out of world.
+
+understand the command "eye" as something new.
+understand the command "eyes" as something new.
+
+understand "eye" as eyering.
+understand "eyes" as eyering.
+
+eyeing is an action out of world applying to one thing.
+
+understand "eye [thing]" as eyeing.
+understand "eyes [thing]" as eyeing.
+
+to say eye-with: say "[if current action is eyering]here[else]with [the noun]";
+
+eyeguessing a number (called n):
+	if sly size slice eyes are moot, say "But you ditched [the eyes], so you can't [b]EYE[r] any more." instead;
+	if player does not have sly size slice eyes, say "But you don't have what you need to [b]EYE[r] anything." instead;
+	if n is -1:
+		say "The eyes show nothing. You've done everything you need to [eye-with]." instead;
+	else if n is 0 or n is 1:
+		say "The eyes show nothing. Probably don't need to do anything [eye-with]." instead;
+	else if n is 2:
+		say "The eyes almost seem to light up. Perhaps you need to do something later [eye-with]." instead;
+	say "The eyes show [n / 10] dots, then [remainder after dividing n by 10] dots.";
+
+eyeguessing is a number based rulebook.
+
+carry out eyeing:
+	abide by the eyeguessing rulebook for eyes-number of noun;
+	the rule succeeds;
+
+carry out eyering:
+	abide by the eyeguessing rulebook for eyes-number of location of player;
+	the rule succeeds;
+
+to declue-here: now eyes-number of location of player is -1
+
+to declue (th - a thing): now eyes-number of th is -1
+
 volume new types
 
 book sentient
 
 a sentient can be prefollowing. a sentient is usually not prefollowing. [defined in the core: this is for things you can talk to but they take lower priority than followers]
+
+section get eyes - not for release
+
+when play begins: now player has eyes;
 
 book followers
 
