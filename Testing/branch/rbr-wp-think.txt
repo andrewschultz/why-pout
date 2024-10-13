@@ -9,7 +9,7 @@
 file=reg-wp-think-min.txt,min,minimum walkthrough
 file=reg-wp-think-div.txt,div/rej,walkthrough with all relevant THINK
 
-##--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
+#--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
 #--strict-file: this says that the project requires strict section marking e.g. @all instead of ==t1.
 
 }$REJECT2=That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.

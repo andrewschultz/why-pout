@@ -4,8 +4,6 @@ Version 1/240816 of Why Pout Definitions by Andrew Schultz begins here.
 
 volume includes
 
-include Revealing Passages by Andrew Schultz.
-
 volume game specific definitions
 
 definition: a rule (called ru) is thinknoteblocking:
@@ -16,7 +14,7 @@ volume new types
 
 book sentient
 
-a sentient is a kind of thing. a sentient can be prefollowing. a sentient is usually not prefollowing. [this is for things you can talk to but they take lower priority than followers]
+a sentient can be prefollowing. a sentient is usually not prefollowing. [defined in the core: this is for things you can talk to but they take lower priority than followers]
 
 book followers
 
@@ -126,10 +124,6 @@ chapter alphorder - not for release
 a swearblob has a number called alphorder.
 
 volume stubs
-
-to say here-in of (rm - a room): say "[if rm is location of player]here[else if rm is unvisited]somewhere[else]in [rm][end if]"
-
-to say once-now of (ts - a truth state): say "[if ts is true]now[else]once[end if]"
 
 volume definitions
 

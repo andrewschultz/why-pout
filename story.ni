@@ -38,7 +38,7 @@ include Why Pout Beta Testing by Andrew Schultz.
 
 section semi-general
 
-include Spoonerism and Oronym Core by Andrew Schultz.
+include Oronym Core by Andrew Schultz.
 
 section game-specific
 
@@ -78,20 +78,7 @@ after printing the locale description of air aww when air aww is unvisited:
 
 universal is a region.
 
-to decide which region is mrlp: decide on map region of location of player.
-cur-bonus is a number that varies.
-
 a region has a number called curregscore.
-
-volume you
-
-Mike Orr is a privately-named person. the player is Mike Orr. description is "You are Mike Orr. You know that now. [if sco-my-corps is true]You're glad of your name now, after giving that pep talk[else]Kind of pedestrian, you always thought. But you hoped it might have some greater meaning[end if]."
-
-understand "mike orr" and "mike/orr" as Mike Orr when sco-an-aim is true.
-
-check examining Mike Orr when sco-an-aim is false:
-	now gs-examined-self is true;
-	say "You think you have a name. Most people do, if you remember things correctly. For better or worse, you can't be special.[paragraph break]You'd really like to have a purpose, too.[paragraph break]The weird thing is, you feel the two must be inter-related in some simple way. A way that will feel dumb once you figure it out. But you haven't, yet.[paragraph break]Hmm. A name. A name. You're focused on finding [b]A NAME[r], and yet, if you just shook up this focus a bit, you might get something else... something that could kick-start you, no matter what your name is." instead;
 
 section temporary code to test remembering oneself
 
@@ -104,8 +91,6 @@ check searching:
 	try examining noun instead;
 
 understand the command "wipe" as something new.
-
-the block thinking rule is not listed in any rulebook.
 
 check thinking:
 	let got-think be false;
@@ -649,7 +634,15 @@ chapter why division
 
 the why division is a thing. "Why-division has settled in among your companions. Everyone's done what they can. Why should they do more? They've saved their skin, and a lot of others['], too, and they'll be safe for a while!". description is "It's not something physical. It's more a general mood. You worry you have not experienced enough to dispel it."
 
-volume unsorted
+volume you
+
+Mike Orr is a privately-named person in Eh Raw Air Aww. the player is Mike Orr. description is "You are Mike Orr. You know that now. [if sco-my-corps is true]You're glad of your name now, after giving that pep talk[else]Kind of pedestrian, you always thought. But you hoped it might have some greater meaning[end if]."
+
+understand "mike orr" and "mike/orr" as Mike Orr when sco-an-aim is true.
+
+check examining Mike Orr when sco-an-aim is false:
+	now gs-examined-self is true;
+	say "You think you have a name. Most people do, if you remember things correctly. For better or worse, you can't be special.[paragraph break]You'd really like to have a purpose, too.[paragraph break]The weird thing is, you feel the two must be inter-related in some simple way. A way that will feel dumb once you figure it out. But you haven't, yet.[paragraph break]Hmm. A name. A name. You're focused on finding [b]A NAME[r], and yet, if you just shook up this focus a bit, you might get something else... something that could kick-start you, no matter what your name is." instead;
 
 volume verbs
 
@@ -933,25 +926,6 @@ rule for supplying a missing noun when touching: now the noun is the player.
 
 chapter t talking
 
-understand the command "ask" as something new.
-
-ting is an action applying to one thing.
-
-understand the command "t" as something new.
-
-understand "t" as ting.
-understand "t all" as ting.
-understand "t [thing]" as ting.
-
-understand "talk to" as ting.
-understand "talk to [thing]" as ting.
-
-understand "talk" as ting.
-understand "talk [thing]" as ting.
-
-understand "ask" as ting.
-understand "ask [thing]" as ting.
-
 rule for supplying a missing noun when ting:
 	if talk-default-to-player:
 		now noun is the player;
@@ -1144,10 +1118,6 @@ rule for printing a parser error when the latest parser error is the only unders
 rule for printing a parser error when the latest parser error is the I beg your pardon error:
 	say "'Hum, blank,' you muse. No humble ankh pops into your hands, sadly.";
 
-volume meta rooms
-
-Reap Rest is a room. moot-room is Reap Rest. "You should never get here."
-
 volume appearance
 
 for printing a locale paragraph about a follower (called fo):
@@ -1173,16 +1143,3 @@ after reading a command:
 	if player is in brew swears and bah-sturdy is in brew swears:
 		if the player's command matches "bastardy":
 			change the text of the player's command to "bastard eee";
-
-volume score stuff
-
-when play begins (this is the score and status tweak rule):
-	now the right hand status line is "[current-score][if doable-hinted > 0](+[doable-hinted])[end if]/[min-needed][if score is min-needed or max-bonus is 0][else if min-needed is max-available]*[else]-[max-available][end if]";
-	force-status;
-	now the turn count is 1;
-
-to decide which number is doable-hinted:
-	let temp be 0;
-	repeat through table of main oronyms:
-		if think-cue entry is true and idid entry is false and core entry is true, increment temp;
-	decide on temp;
