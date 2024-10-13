@@ -85,7 +85,7 @@ this is the hom-too-maps rule:
 
 this is the post-two-maps rule:
 	now sco-two-maps is true;
-	say "You look around for secrets. You find one line that is a hash of horizontal lines and another that is a hash of vertical lines. You put them together ... and you see a maze. You hope you can trace a passage out. And, with some effort, you do! Then you follow it. You hope it's right, and it leads somewhere better, or at least not as awful...";
+	say "You look around for secrets. First, you find And beneath them, there are weird eyes: sly size-slice eyes! They seem quite observant.[paragraph break]You find one page that is a hash of horizontal lines and another that is a hash of vertical lines. You put them together ... and you see a maze. You hope you can trace a passage out. And, with some effort, you do! Then you follow it. You hope it's right, and it leads somewhere better, or at least not as awful...";
 	declue-here;
 	move player to Hype Lane;
 
@@ -117,6 +117,7 @@ this is the post-an-aim rule:
 	now sco-an-aim is true;
 	say "Yes. Now that you realize you want more than just to know your name, that you have bigger goals, you push a bit harder when you initially forget it. You remember patches of the past. You remember people harshly calling you by your last name, then your first.[paragraph break]Your name is Mike Orr. You even remember it's -- well, one of these two things: short for Michal, which everyone pronounced Michael until you just gave up, or ... well, Michael.[paragraph break]You look around a bit. You can see more, now. You're in some sort of tomb apse. You could exit--there are exits each way--but you suspect there's some horrible maze you could easily get lost in.";
 	now eyes-number of mike orr is 25;
+	now eyes-number of air aww is 34; [technically, we can't see it with the eyes.]
 	print-the-loc;
 
 section NaffHaze scoring

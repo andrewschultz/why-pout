@@ -159,10 +159,13 @@ understand "drop [thing]" as drop2ing.
 understand "drop" as drop2ing.
 
 check drop2ing:
+	if noun is eyes:
+		moot eyes;
+		say "They eyes roll away. 'Ire, ol['] eye roll!', you think to yourself." instead;
 	if noun is war pawn:
 		moot war pawn;
 		say "It blows away violently. It must've been in Zugzwang or something." instead;
-	say "You don't need to [b]DROP[r] anything in [this-game]. Most of what gets in your inventory will disappear when used successfully[if player has war pawn]. However, you may [b]DROP[r] the war pawn to remove the temptation to skip a puzzle[end if]." instead;
+	say "You don't need to [b]DROP[r] anything in [this-game]. Most of what gets in your inventory will disappear when used successfully.[if player has war pawn]. However, you may [b]DROP[r] the war pawn to remove the temptation to skip a puzzle[end if]." instead;
 
 rule for supplying a missing noun when drop2ing:
 	now noun is the player;
@@ -178,7 +181,7 @@ volume rooms
 
 book Eh Raw Air Aww
 
-Eh Raw Air Aww is a room in universal. printed name is "[if sco-an-aim is false]Eh, Raw Air, Aww[else]Tomb Apse[end if]". description is "[if sco-an-aim is false]The air chokes you a bit. It's too thick to see far beyond yourself. You barely know who you are, even. Ugh. You can't see much beyond yourself, really, so that'd be somewhere to start.[else]It's a bit clearer now. You still seem trapped. But there must be secrets hidden, and maybe one or more can get you out of here.[end if]". eyes-number of Eh Raw Air Aww is 34. [this is because we can't find the eyes until we get the first point. So we can set it to 44 for Two Maps immediately.]
+Eh Raw Air Aww is a room in universal. printed name is "[if sco-an-aim is false]Eh, Raw Air, Aww[else]Tomb Apse[end if]". description is "[if sco-an-aim is false]The air chokes you a bit. It's too thick to see far beyond yourself. You barely know who you are, even. Ugh. You can't see much beyond yourself, really, so that'd be somewhere to start.[else]It's a bit clearer now. You still seem trapped. But there must be secrets hidden, and maybe one or more can get you out of here.[end if]". eyes-number of Eh Raw Air Aww is 2. [okay, we don't get the eyes until later.]
 
 book Hype Lane
 

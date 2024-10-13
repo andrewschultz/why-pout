@@ -41,6 +41,10 @@ first-point-clue-flag is a number that varies.
 
 counter-zero-points is a number that varies.
 
+section cheat counters
+
+eyes-number of Reap Rest is 1.
+
 section list but not quite table
 
 wide-vision-rejects is a list of text variable. wide-vision-rejects is {
