@@ -56,6 +56,19 @@ carry out eyering:
 	abide by the eyeguessing rulebook for eyes-number of location of player;
 	the rule succeeds;
 
+report eyeing:
+	note-not-now;
+	continue the action;
+
+report eyering:
+	note-not-now;
+	continue the action;
+
+to note-not-now:
+	if gs-eye-note is false:
+		now gs-eye-note is true;
+		say "[i][bracket][b]NOTE[r][i]: the eyes do not tell you whether or not you can currently perform the action they are hinting at, only that you can at some time.[close bracket]";
+
 to declue-here: now eyes-number of location of player is -1
 
 to declue (th - a thing): now eyes-number of th is -1

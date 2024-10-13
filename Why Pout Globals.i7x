@@ -29,6 +29,8 @@ gs-got-weapons is a truth state that varies.
 
 gs-penalized-why-division is a truth state that varies.
 
+gs-eye-note is a truth state that varies.
+
 section option(s)
 
 opt-lump-party is a truth state that varies.
