@@ -279,7 +279,7 @@ the gross tar is a thing. "Gross tar blocks the way [b]NORTH[r] into darkness.".
 
 chapter keep iller
 
-the keep iller is a thing. "A keep, iller, rises to the [b]WEST[r][if sco-key-pillar is false], but you see no way in[else], and you figured how to enter it[end if].". description is "It [if keepiller is visited]wasn't[else]doesn't look[end if] dangerous, but then, it's not exactly a tourist attraction. Still, [if keep-score < 6]there's plenty to do there[else]it helped you a lot[end if].". eyes-number of keep iller is 36.
+the keep iller is a thing. "A keep, iller, rises to the [b]WEST[r][if sco-key-pillar is false], but you see no way in[else], and you figured how to enter it[end if].". description is "It [if keepiller is visited]wasn't[else]doesn't look[end if] dangerous, but then, it's not exactly a tourist attraction. Still, [if keep-score < 6]there's plenty to do there[else]it helped you a lot[end if].". eyes-number of keep iller is 36. printed name is "keep, iller".
 
 check entering keep iller:
 	if sco-key-pillar is false, say "You will enter the keep to the west, once you find a way. But you haven't, yet." instead;
@@ -357,7 +357,7 @@ the seedy sign is a thing in KeepIller. "[if sco-see-design is false]A seedy sig
 
 book Nigh Fright
 
-Nigh Fright is a room in Universal. "Whatever you need to do or find here, you only want to do it once. You don't want to have to come back. You're glad your friends supported you enough to get here, but you don't want to have to rely on them like that again.[paragraph break]So, what do you need to find, before getting out?". eyes-number of nigh fright is 1045.
+Nigh Fright is a room in Universal. "Whatever you need to do or find here, you only want to do it once. You don't want to have to come back. You're glad your friends supported you enough to get here, but you don't want to have to rely on them like that again.[paragraph break]So, what do you need to find, before getting out?". eyes-number of nigh fright is 45.
 
 chapter knife right
 
@@ -365,7 +365,11 @@ the knife right is a thing. printed name is "knife (right)". description is "Wel
 
 book Wolf Rock
 
-Wolf Rock is a room in universal. "A big rock in the shape of a wolf looms impressively, blocking all passages except back [b]SOUTH[r]. [if sco-hide-out is true]You can also go [b]DOWN[r] into the hideout you found[else]You feel high doubt here you can go anywhere else[end if].[paragraph break]There's a huge pile of lode ore here, too, [if sco-low-door is true]and you found a low door in it that leads [b]INSIDE[r][else]and perhaps there's something in it[end if].". eyes-number of wolf rock is 45.
+Wolf Rock is a room in universal. "A big rock in the shape of a wolf looms impressively, blocking all passages except back [b]SOUTH[r]. [if sco-hide-out is true]You can also go [b]DOWN[r] into the hideout you found[else]Also, the high doubt you can go anywhere else here is thick indeed. Maybe there's a way to dispel it[end if].[paragraph break]There's a huge pile of lode ore here, too, [if sco-low-door is true]and you found a low door in it that leads [b]INSIDE[r][else]and perhaps there's something in it[end if].". eyes-number of wolf rock is 45.
+
+chapter high doubt
+
+the high doubt is scenery in Wolf Rock. "It's incorporeal, and examining it too much would be serious navel-gazing.". eyes-number of high doubt is 43.
 
 chapter wool frock
 
@@ -373,7 +377,7 @@ the wool frock is a thing. description is "It's a bit too small for you.". eyes-
 
 chapter lode ore
 
-the pile of lode ore is scenery in Wolf Rock. "[if sco-low-door is true]You doubt there is anything more to find[else]Maybe it is hiding something. If it were a pile of anything else, it might not be so interesting[end if].". eyes-number of lode ore is 34.
+the pile of lode ore is scenery in Wolf Rock. "[if sco-low-door is true]You can't imagine there is anything more to find[else]Maybe it is hiding something. If it were a pile of anything else, it might not be so interesting[end if].". eyes-number of lode ore is 34.
 
 section low door
 
@@ -497,11 +501,11 @@ after printing the locale description for Trees Mall:
 
 chapter tree small
 
-the tree small is a thing. "A tree (small) grows here, or tries to, at least. It deserves to be bigger.". description is "It's a nice tree, but it's a bit small.". eyes-number of tree small is -1.
+the tree small is a thing. "A tree (small) grows here, or tries to, at least. It deserves to be bigger.". description is "It's a nice tree, but it's a bit small.". eyes-number of tree small is -1. printed name is "tree (small)".
 
 chapter tree small
 
-the tree tall is a thing. "A tree (tall) has grown here, thanks to you. It feels very welcoming.". description is "It's a nice tree, but it's a bit small.". eyes-number of tree tall is 53.
+the tree tall is a thing. "A tree (tall) has grown here, thanks to you. It feels very welcoming.". description is "It's a nice tree, but it's a bit small.". eyes-number of tree tall is 53. printed name is "tree (tall)".
 
 book no notion
 
@@ -563,7 +567,7 @@ the wan dwarf is a follower. description is "Short and stocky. It wears glasses 
 
 book Brew Swears (optional)
 
-Brew Swears is a room in universal. "[if grinch earls are in brew swears]If you thought Hype Lane was bad, this is even worse[else]Now that you got rid of the orc's old associates, there's nothing really left to do here[end if]. You can leave back [b]OUT[r].". eyes-number of brew swears is 1.
+Brew Swears is a room in universal. "[if grinch earls are in brew swears]If you thought Hype Lane was bad, this is even worse[else]Now that you got rid of the orc's old associates, there's nothing really left to do here[end if]. You can leave back [b]OUT[r].". eyes-number of brew swears is -42.
 
 check going outside in Brew Swears:
 	now block-followers is false;
@@ -633,7 +637,7 @@ the gaunt raider is a follower. description is "Tall and imposing. They still lo
 
 book Doom Ending
 
-Doom Ending is a room in universal. "[if sco-wide-vision is true]This place is much less scary now that you shared your wide vision. But now you need to put it into practice![else if sco-wipe-out is true]Well, it turns out the doom ending was for the sea skull, not for you. But you're still a bit frustrated. How do you go forward from here?[else]The gaunt raider wasn't joking around when they said they came from some place awful! You just hope your companions can help you enough here.[end if]". eyes-number of doom ending is 1037.
+Doom Ending is a room in universal. "[if sco-wide-vision is true]This place is much less scary now that you shared your wide vision. But now you need to put it into practice![else if sco-wipe-out is true]Well, it turns out the doom ending was for the sea skull, not for you. But you're still a bit frustrated. How do you go forward from here?[else]The gaunt raider wasn't joking around when they said they came from some place awful! You just hope your companions can help you enough here.[end if]". eyes-number of doom ending is 37.
 
 after printing the locale description for Doom Ending when Doom Ending is unvisited:
 	say "Everyone whispers some variation of 'We're stuck! Worst, UCK!' to each other. But surely there must be a way through.";

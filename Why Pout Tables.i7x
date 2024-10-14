@@ -206,6 +206,7 @@ this is the post-wool-frock rule:
 	now player has wool frock;
 	if sco-hide-out is false:
 		now eyes-number of Wolf Rock is 43;
+		say "[line break]The high doubt still haunts you, though.";
 	else:
 		declue-here;
 
@@ -220,6 +221,7 @@ this is the post-hide-out rule:
 	now sco-hide-out is true;
 	say "It's easy enough to say you should doubt yourself less. I mean, you'd feel stupid doubting it. But there's always a reason not to. Still, you involuntarily start a mantra: 'Fine, doubt? Find out!'[paragraph break]And what do you know? You find a hideout below!";
 	reveal hideout to down;
+	moot high doubt;
 	if sco-wool-frock is true, declue-here
 
 a wordtwisting rule (this is the pre-low-door rule):
@@ -639,6 +641,7 @@ a wordtwisting rule (this is the pre-summer-chant rule):
 this is the post-summer-chant rule:
 	now sco-summer-chant is true;
 	say "You think up a summer chant you mumble under your breath. The merchant finds it a bit weird you like THAT as a way to keep positive. It doesn't seem like that sort of thing helps the economy. Their cheeriness slips slightly, with impressively-balanced potshots at people more and less successful than they are.";
+	declue merchant;
 
 a wordtwisting rule (this is the pre-bile-oh rule):
 	if player is not in we loan or merchant is not in we loan, unavailable;
@@ -902,6 +905,7 @@ this is the hom-cease-cull rule:
 this is the post-cease-cull rule:
 	now sco-cease-cull is true;
 	say "You'll probably have to alert the sea skull to your presence at some time. You try to sound authoritative when you do so. And ... well, you get its attention.[paragraph break]'DONE, OH?!?! DUH, NO!' it roars.[paragraph break]It begins pouring out rivers of blood at you and your companions. But fortunately, you have so many, that by the time it gets to you, it is not so bad. Yet it's still depressing. You think back to advice you got at the beginning ... how it seemed slightly off. What to do?";
+	now eyes-number of skull is 43;
 
 a wordtwisting rule (this is the pre-wide-vision rule):
 	if player is not in doom ending, unavailable;
