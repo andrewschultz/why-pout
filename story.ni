@@ -197,7 +197,7 @@ the cell phones are a plural-named sentient in hype lane. understand "phone" and
 
 chapter prize talk
 
-prize talk is a sentient. "[if sco-pry-stalk is false]You'd like to DO something about the prize talk. Or seek out something that would give you passage away from it[else]The prize talk is all around, but you're able to ignore it, now you feel you might have a way out[end if].". description is "[if sco-pry-stalk is false]The prize talk also discusses things that aren't so worth it, like -- well, plants and stuff. BORING[else]You can see your way around the prize talk now. You don't want to get sucked back in[end if].". eyes-number of prize talk is 35.
+the prize talk is a hostile sentient. "[if sco-pry-stalk is false]You'd like to DO something about the prize talk. Or seek out something that would give you passage away from it[else]The prize talk is all around, but you're able to ignore it, now you feel you might have a way out[end if].". description is "[if sco-pry-stalk is false]The prize talk also discusses things that aren't so worth it, like -- well, plants and stuff. BORING[else]You can see your way around the prize talk now. You don't want to get sucked back in[end if].". eyes-number of prize talk is 35.
 
 section stalk
 
@@ -409,7 +409,7 @@ to say loan-starter:
 
 chapter some merchant
 
-some merchant is a singular-named sentient. "Some merchant babbles on, all up in your personal space, suggesting you buy low[if sco-summer-chant is true], but a bit more tolerable now you've got a mantra to zone them out[end if].". description is "Their smile certainly is fake. They're not going to shut up until you get a resolution here.". eyes-number of merchant is 65. [indefinite article of merchant is "some".]
+some merchant is a singular-named hostile sentient. "Some merchant babbles on, all up in your personal space, suggesting you buy low[if sco-summer-chant is true], but a bit more tolerable now you've got a mantra to zone them out[end if].". description is "Their smile certainly is fake. They're not going to shut up until you get a resolution here.". eyes-number of merchant is 65. [indefinite article of merchant is "some".]
 
 check going outside in we loan when merchant is in we loan: say "Alas, the merchant's magnetism is too strong." instead;
 
@@ -541,7 +541,7 @@ to say island-status:
 
 chapter sick squid
 
-the sick squid is a sentient. "A [if sco-six-quid is true]formerly (thanks to you) [end if]sick squid trundles about in the water here.". description is "[if sco-six-quid is false]It seems like it's half choking on something, not enough to strangle it, but enough to make it really uncomfortable[else]It looks back at you. Squids don't smile, but if it could, it would. Perhaps, if you know of an island nearby in the ocean, it will take you there[end if].". eyes-number of sick squid is 34.
+the sick squid is an agreeable sentient. "A [if sco-six-quid is true]formerly (thanks to you) [end if]sick squid trundles about in the water here.". description is "[if sco-six-quid is false]It seems like it's half choking on something, not enough to strangle it, but enough to make it really uncomfortable[else]It looks back at you. Squids don't smile, but if it could, it would. Perhaps, if you know of an island nearby in the ocean, it will take you there[end if].". eyes-number of sick squid is 34.
 
 check entering squid: say "It might not have the energy for joyriding. You need to show it where to go, maybe with [if player has flier]that flier of yours[else]a map or something[end if]." instead;
 
@@ -578,7 +578,7 @@ to zap-bruise-wares:
 
 chapter earls
 
-the grinch earls are a plural-named sentient in Brew Swears. "Some [earls] parade around here, bragging about how they ruin boring people's fun with their dynamic ways and pointing out that it's easy to be nice if you're boring. They fix you with a 'We parse: weep, arse' gaze[if sco-grin-churls is true], though they're less effective than when they were self-styled earls[end if]. [if number of not moot swearblobs is 0]They've run out of swears but not of sneers. Perhaps one more non-profane phrase could dispel them[else if sco-weak-us is true]You cut their 'we cuss' down to size, so they're now giving examples of how they cuss[else]They constantly blather 'WE CUSS' and seem quite proud of that[end if].". printed name is "[if sco-grin-churls is true]grin churls[else]grinch earls[end if]". description is "Bleah. They remind you of popular kids (you know, the ones who beat up kids who claimed they weren't popular--it was effective) from back in school, except all grown up.". eyes-number of grinch earls is -46.
+the grinch earls are a plural-named hostile sentient in Brew Swears. "Some [earls] parade around here, bragging about how they ruin boring people's fun with their dynamic ways and pointing out that it's easy to be nice if you're boring. They fix you with a 'We parse: weep, arse' gaze[if sco-grin-churls is true], though they're less effective than when they were self-styled earls[end if]. [if number of not moot swearblobs is 0]They've run out of swears but not of sneers. Perhaps one more non-profane phrase could dispel them[else if sco-weak-us is true]You cut their 'we cuss' down to size, so they're now giving examples of how they cuss[else]They constantly blather 'WE CUSS' and seem quite proud of that[end if].". printed name is "[if sco-grin-churls is true]grin churls[else]grinch earls[end if]". description is "Bleah. They remind you of popular kids (you know, the ones who beat up kids who claimed they weren't popular--it was effective) from back in school, except all grown up.". eyes-number of grinch earls is -46.
 
 understand "grin churls" and "grin/churls" as grinch earls when sco-grin-churls is true.
 

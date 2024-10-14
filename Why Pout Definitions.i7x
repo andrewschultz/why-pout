@@ -90,9 +90,7 @@ book sentient
 
 a sentient can be prefollowing. a sentient is usually not prefollowing. [defined in the core: this is for things you can talk to but they take lower priority than followers]
 
-section get eyes - not for release
-
-when play begins: now player has eyes;
+a sentient can be hostile, agreeable or neutral. a sentient is usually neutral.
 
 book followers
 
