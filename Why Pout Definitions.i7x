@@ -63,6 +63,11 @@ carry out eyeing:
 	abide by the eyeguessing rulebook for eyes-number of noun;
 	the rule succeeds;
 
+check eyering:
+	if player is in brew swears and number of swearblobs in brew swears is 1:
+		let RSB be random swearblob in brew swears;
+		try eyeing RSB instead;
+
 carry out eyering:
 	abide by the eyeguessing rulebook for eyes-number of location of player;
 	the rule succeeds;
@@ -83,6 +88,11 @@ to note-not-now:
 to declue-here: now eyes-number of location of player is -1
 
 to declue (th - a thing): now eyes-number of th is -1
+
+chapter room specific rule(s)
+
+check eyering when player is in brew swears and sco-weak-us is false:
+	say "It's not the room so much as the 'we cuss' vibes the eyes seem to be picking up.";
 
 volume new types
 
