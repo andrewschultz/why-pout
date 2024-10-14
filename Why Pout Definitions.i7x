@@ -29,20 +29,20 @@ check drop2ing hintthing:
 		say "Okay, there will be no nag next time you try to drop [the noun].";
 	the rule succeeds;
 
-the sly size slice eyes are a plural-named thing. eyes-number of sly size slice eyes is 1. printed name is "sly size-slice eyes".
+chapter eyeing
 
 eyering is an action out of world.
 
 understand the command "eye" as something new.
 understand the command "eyes" as something new.
 
-understand "eye" as eyering.
-understand "eyes" as eyering.
+understand "eye" as eyering when player has slice eyes.
+understand "eyes" as eyering when player has slice eyes.
 
 eyeing is an action out of world applying to one thing.
 
-understand "eye [thing]" as eyeing.
-understand "eyes [thing]" as eyeing.
+understand "eye [thing]" as eyeing when player has slice eyes.
+understand "eyes [thing]" as eyeing when player has slice eyes.
 
 to say eye-with: say "[if current action is eyering]here[else]with [the noun]";
 
