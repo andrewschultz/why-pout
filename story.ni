@@ -757,6 +757,14 @@ carry out verbsing:
 		say "[line break]Most point-scoring commands will consist of two words.";
 	the rule succeeds;
 
+report verbsing when player has eyes:
+	say "With [the eyes], you can [b]EYE[r] the area to see if it can be changed, or you can [b]EYE[r] any object.";
+	continue the action;
+
+report verbsing when player has war pawn:
+	say "With [the war pawn], [if gs-war-pawn-try is true][b]WARP ON[r][else]there must be a way[end if] to gain insight to pass a tricky puzzle.";
+	continue the action;
+
 report verbsing when number of friendly followers >= 3:
 	say "[b]UH PARTY[r] or [b]A PARTY[r] will describe your party as one unit (use [b]I[r] to see who is there,) and [b]APART EE[r] (2-4 e's) will show them individually.";
 	continue the action;
