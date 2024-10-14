@@ -44,7 +44,15 @@ eyeing is an action out of world applying to one thing.
 understand "eye [thing]" as eyeing when player has slice eyes.
 understand "eyes [thing]" as eyeing when player has slice eyes.
 
-to say eye-with: say "[if current action is eyering]here[else]with [the noun]";
+to say eye-with:
+	if current action is eyering:
+		say "with the general area";
+	else if noun is a follower:
+		say "make friends with [the noun]";
+	else if noun is a sentient:
+		say "[if noun is hostile]neutralize[else if noun is agreeable]aid[else]improve[end if] [the noun]";
+	else:
+		say "with [the noun]";
 
 eyeguessing a number (called n):
 	if sly size slice eyes are moot, say "But you ditched [the eyes], so you can't [b]EYE[r] any more." instead;
@@ -55,7 +63,10 @@ eyeguessing a number (called n):
 		say "The eyes show nothing. Probably don't need to do anything [eye-with]." instead;
 	else if n is 2:
 		say "The eyes almost seem to light up. Perhaps you need to do something later [eye-with]." instead;
-	say "The eyes show [n / 10] dots, then [remainder after dividing n by 10] dots.";
+	let dimly be whether or not n < 0;
+	if n < 0:
+		now n is 0 - n;
+	say "The eyes [if dimly is true]glow dimly and [end if]show [n / 10] dots, then [remainder after dividing n by 10] dots.";
 
 eyeguessing is a number based rulebook.
 
