@@ -1,0 +1,573 @@
+## reg-wp-thru-hints.txt
+## GENERATOR FILE: rbr-wp-thru.txt
+
+## walkthrough testing eye cluing
+
+** game: /home/andrew/prt/debug-why-pout.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>z
+
+#apocryphal test case
+>eye me
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+
+>purloin eyes
+>eye me
+The eyes show 2 dots, then 3 dots.
+
+>eye
+The eyes almost seem to light up. Perhaps you need to do something later with the general area.
+
+>undo
+>undo
+>undo
+>undo
+
+>an aim
+by a point
+
+#apocryphal test case
+>purloin eyes
+>eye me
+The eyes show 2 dots, then 5 dots.
+[NOTE: the eyes do not tell you whether or not you can currently perform the action they are hinting at, only that you can at some time. In future releases, it will be blurry if you can't right now and dim if you don't need to.]
+
+>eye
+The eyes show 3 dots, then 4 dots.
+
+>undo
+>undo
+>undo
+
+>two maps
+by a point
+
+>eye
+The eyes show 4 dots, then 5 dots.
+
+>eye phones
+The eyes show 4 dots, then 4 dots.
+
+>self owns
+by a point
+
+>eye talk
+The eyes show 3 dots, then 5 dots.
+
+>pry stalk
+by a point
+
+>eye talk
+The eyes show nothing. You've done everything you need to neutralize the prize talk.
+
+>high plain
+by a point
+
+>eye haze
+The eyes show 3 dots, then 5 dots.
+
+>eye
+The eyes show 3 dots, then 5 dots.
+
+>nah phase
+by a point
+
+>eye
+The eyes show 4 dots, then 4 dots.
+
+>pole east
+by a point
+
+>eye
+The eyes show nothing. You've done everything you need to with the general area.
+
+>eye short rail
+The eyes show 5 dots, then 5 dots.
+
+>eye keep
+The eyes show 3 dots, then 6 dots.
+
+>eye gross tar
+The eyes show 4 dots, then 4 dots.
+
+>shore trail
+by a point
+
+>eye trail
+The eyes show nothing. You've done everything you need to with the shore trail.
+
+>grow star
+by a point
+
+>key pillar
+by a point
+
+>eye keep
+The eyes show nothing. You've done everything you need to with the keep, iller.
+
+>s
+
+>eye
+The eyes show 5 dots, then 5 dots.
+
+>known ocean
+by a point
+
+>eye
+The eyes show nothing. You've done everything you need to with the general area.
+
+>eye ocean
+The eyes show nothing. Probably don't need to do anything with the ocean.
+
+>eye squid
+The eyes show 3 dots, then 4 dots.
+
+>six quid
+by a point
+
+>eye squid
+The eyes show nothing. You've done everything you need to aid the sick squid.
+
+>n
+
+>n
+
+>eye
+The eyes show 4 dots, then 5 dots.
+
+>eye lode ore
+The eyes show 3 dots, then 4 dots.
+
+>eye high doubt
+The eyes show 4 dots, then 3 dots.
+
+>wool frock
+by a point
+
+>eye
+The eyes show 4 dots, then 3 dots.
+
+>hide out
+by a point
+
+>eye
+The eyes show nothing. You've done everything you need to with the general area.
+
+>d
+
+>eye troll
+The eyes show 5 dots, then 4 dots.
+
+>boost role
+by a point
+
+>eye troll
+The eyes show nothing. You've done everything you need to make friends with the new troll.
+
+>u
+
+>s
+
+>w
+
+>eye
+The eyes show nothing. You've done everything you need to with the general area.
+
+>eye mold
+The eyes show 5 dots, then 3 dots.
+
+>gnome old
+by a point
+
+>eye gnome
+The eyes show nothing. You've done everything you need to make friends with the gnome (old).
+
+>eye mold
+Nothing here like that. Note that room names are not usually worth examining, as you can just L or LOOK.
+
+>eye gold
+The eyes show 5 dots, then 3 dots.
+
+>rogue old
+by a point
+
+>eye rogue
+The eyes show nothing. You've done everything you need to make friends with the rogue (old).
+
+>eye sign
+The eyes show 3 dots, then 6 dots.
+
+>see design
+by a point
+
+>eye
+The eyes show 4 dots, then 5 dots.
+
+>knife right
+by a point
+
+>eye sign
+The eyes show nothing. You've done everything you need to with the seedy sign.
+
+>e
+
+>d
+
+>eye
+The eyes show 4 dots, then 6 dots.
+
+>eye traitor
+The eyes show 5 dots, then 6 dots.
+
+>gaunt raider
+by a point
+
+>eye raider
+The eyes show nothing. You've done everything you need to make friends with the gaunt raider.
+
+>u
+
+>eye bruise wares
+The eyes show 4 dots, then 6 dots.
+
+#unscramble the order the swears appear in
+>ao
+
+>brew swears
+by a bonus point
+
+>in
+
+>eye
+It's not the room so much as the "we cuss" vibes the eyes seem to be picking up.
+The eyes glow dimly and show 4 dots, then 2 dots.
+
+>eye orc
+The eyes glow dimly and show 4 dots, then 4 dots.
+
+>eye earls
+The eyes glow dimly and show 4 dots, then 6 dots.
+
+>weak us
+by a bonus point
+
+>crew dork
+by a bonus point
+
+>eye orc
+The eyes show nothing. You've done everything you need to make friends with the crude orc.
+
+>grin churls
+by a bonus point
+
+>eye churls
+The eyes show nothing. You've done everything you need to neutralize the grin churls.
+
+>undo
+>undo
+
+>eye
+The eyes glow dimly and show 7 dots, then 3 dots.
+
+>bastard eee
+by a bonus point
+
+>eye
+The eyes glow dimly and show 6 dots, then 3 dots.
+
+>heckle ass
+by a bonus point
+
+>eye
+The eyes glow dimly and show 3 dots, then 4 dots.
+
+>huh shit
+by a bonus point
+
+>eye
+The eyes glow dimly and show 3 dots, then 7 dots.
+
+>lie fuckers
+by a bonus point
+
+>eye
+The eyes glow dimly and show 4 dots, then 5 dots.
+
+>were dicks
+by a bonus point
+
+>eye
+The eyes show nothing. You've done everything you need to with the general area.
+
+>grin churls
+by a bonus point
+
+>out
+
+>e
+
+>eye
+The eyes show 3 dots, then 4 dots.
+
+>low bend
+by a point
+
+>eye ale
+The eyes show 3 dots, then 4 dots.
+
+>bay sale
+by a point
+
+>eye raft
+The eyes show nothing. Probably don't need to do anything with the We-Craft Weak Raft.
+
+>n
+
+>eye
+The eyes show 5 dots, then 5 dots.
+
+>store mile
+by a point
+
+>eye
+The eyes show nothing. You've done everything you need to with the general area.
+
+>eye shelf
+The eyes show 6 dots, then 3 dots.
+
+>mensch elf
+by a point
+
+>eye elf
+The eyes show nothing. You've done everything you need to make friends with the mensch elf.
+
+>eye stall
+The eyes show 4 dots, then 4 dots.
+
+>mice tall
+by a point
+
+>eye mice
+The eyes show nothing. You've done everything you need to make friends with the mice (tall).
+
+>s
+
+>w
+
+>n
+
+>low door
+by a point
+
+>eye lode ore
+The eyes show nothing. You've done everything you need to with the pile of lode ore.
+
+>in
+
+>eye
+The eyes show 4 dots, then 3 dots.
+
+>well own
+by a point
+
+>eye merchant
+The eyes show 6 dots, then 5 dots.
+
+>summer chant
+by a point
+
+>eye merchant
+The eyes show nothing. You've done everything you need to neutralize the merchant.
+
+>eye
+The eyes show 4 dots, then 4 dots.
+
+>bile oh
+by a point
+
+>eye
+The eyes show 4 dots, then 4 dots.
+
+>whee lone
+by a point
+
+>eye liar
+The eyes show 2 dots, then 5 dots.
+
+>oh flier
+by a point
+
+>eye
+The eyes show nothing. You've done everything you need to with the general area.
+
+>eye flier
+Weird. The flier seems to blink between three and four dots on the left, but it's stable at four dots on the right.
+
+>out
+
+>s
+
+>w
+
+>eye plant
+The eyes show 4 dots, then 7 dots.
+
+>plan tracker
+by a point
+
+>eye tracker
+The eyes show nothing. You've done everything you need to with the plan tracker.
+
+>eye herb
+The eyes show 5 dots, then 4 dots.
+
+>manna curb
+by a point
+
+>eye herb
+The eyes show nothing. You've done everything you need to with the manic herb.
+
+>eye manna
+The eyes show nothing. You've done everything you need to with the manna.
+
+>e
+
+>e
+
+>n
+
+>n
+
+>eye
+The eyes show 4 dots, then 5 dots.
+
+>tree small
+by a point
+
+>eye
+The eyes show nothing. You've done everything you need to with the general area.
+
+>eye tree
+The eyes show nothing. You've done everything you need to with the tree (small).
+
+>s
+
+>s
+
+>w
+
+>s
+
+>grow vial
+by a point
+
+>war file
+by a point
+
+>eye
+The eyes show 3 dots, then 5 dots.
+
+>eye flier
+The eyes show 3 dots, then 4 dots.
+
+>wan dwarf
+by a point
+
+>n
+
+>e
+
+>n
+
+>n
+
+>t dwarf
+
+>t elf
+
+>t gnome
+
+>t rogue
+
+>t raider
+
+>t mice
+
+>t troll
+
+>eye ache
+The eyes show 4 dots, then 4 dots.
+
+>t orc
+
+>tall cake
+by a point
+
+>eye tree
+The eyes show 5 dots, then 3 dots.
+
+>treat all
+by a point
+
+>eye tree
+The eyes show nothing. You've done everything you need to with the tree (tall).
+
+>s
+
+>s
+
+>w
+
+>s
+
+>eye
+The eyes show nothing. You've done everything you need to with the general area.
+
+>the file
+by a point
+
+>n
+
+>d
+
+>were meetin
+by a point
+
+>eye me
+The eyes show 2 dots, then 5 dots.
+
+>my corps
+by a point
+
+>eye me
+The eyes show nothing. You've done everything you need to with yourself.
+
+>d
+
+>eye skull
+The eyes show 5 dots, then 4 dots.
+
+>eye
+The eyes show 3 dots, then 7 dots.
+
+>cease cull
+by a point
+
+>eye skull
+The eyes show 4 dots, then 3 dots.
+
+>wipe out
+by a point
+
+>eye
+The eyes show 3 dots, then 7 dots.
+
+>eye division
+The eyes glow dimly and show 4 dots, then 6 dots.
+
+>do mending
+by a point
+
