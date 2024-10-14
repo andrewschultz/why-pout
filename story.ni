@@ -183,6 +183,10 @@ book Eh Raw Air Aww
 
 Eh Raw Air Aww is a room in universal. printed name is "[if sco-an-aim is false]Eh, Raw Air, Aww[else]Tomb Apse[end if]". description is "[if sco-an-aim is false]The air chokes you a bit. It's too thick to see far beyond yourself. You barely know who you are, even. Ugh. You can't see much beyond yourself, really, so that'd be somewhere to start.[else]It's a bit clearer now. You still seem trapped. But there must be secrets hidden, and maybe one or more can get you out of here.[end if]". eyes-number of Eh Raw Air Aww is 2. [okay, we don't get the eyes until later.]
 
+chapter sly size slice eyes
+
+the sly size slice eyes are a plural-named hintthing. eyes-number of sly size slice eyes is 1. printed name is "sly size-slice eyes". drop-poke of slice eyes is "Are you sure you wish to drop [the noun]? They give a clue as to the length of any solution.". description is "The eyes shift around a lot, looking for stuff normal human eyes can't see. If you wish them to look at something, [b]EYE[r] it, or just [b]EYE[r] the room."
+
 book Hype Lane
 
 Hype Lane is a room in universal. "It's still pretty dark here. You must still be underground.[paragraph break]Around you, [if sco-self-owns is false]cell phones, cell phones everywhere. Such confident chatter. Or it seems confident. It distracts you and your bearings, trying to figure who you really are and get somewhere less dark[else if sco-pry-stalk is true]you're able to ignore the prize talk for now, but you realize you can and must move on from it. Get out of this underground area[else]a prize talk booms from unseen speakers, exhorting you to do, or at least earn, more. The heck with being above ground, with boring old nature that distracts you from being all you can be. Well, for the economy, at least[end if].". eyes-number of Hype Lane is 45.
@@ -255,7 +259,7 @@ check going west in NaffHaze when sco-key-pillar is false and sco-nah-phase is t
 
 chapter war pawn
 
-the war pawn is a thing. description is "It's a grey chess pawn with a frown and mean glare carved in the rounded top. If it had fists, you are pretty sure they'd be doubled up in a fighting posture, but it doesn't even have arms.[paragraph break]Looking at it from many different angles gets you all sorts of weird ideas. Perhaps it could help you when you run out of them on your quest. You may wish to wait until you really need to use it, though of course, you don't want to wait too late.". eyes-number of war pawn is 1.
+the war pawn is a hintthing. description is "It's a grey chess pawn with a frown and mean glare carved in the rounded top. If it had fists, you are pretty sure they'd be doubled up in a fighting posture, but it doesn't even have arms.[paragraph break]Looking at it from many different angles gets you all sorts of weird ideas. Perhaps it could help you when you run out of them on your quest. You may wish to wait until you really need to use it, though of course, you don't want to wait too late.". eyes-number of war pawn is 1. drop-poke of war pawn is "The war pawn can get you past a tough puzzle. Drop it anyway to resist the temptation to jump ahead?"
 
 after examining war pawn for the first time:
 	say "If you want to resist the temptation of this cheat item, [b]DROP[r] it. There is no penalty for using it.";

@@ -16,7 +16,18 @@ a thing has a number called eyes-number.
 
 a room has a number called eyes-number.
 
-chapter eyeing
+a hintthing is a kind of thing. a hintthing can be dropwarned. a hintthing is usually not dropwarned. a hintthing has text called drop-poke.
+
+check drop2ing hintthing:
+	if noun is dropwarned, continue the action;
+	now noun is dropwarned;
+	say "[drop-poke of noun]";
+	if the player switch-consents:
+		say "Okay.";
+		moot noun;
+	else:
+		say "Okay, there will be no nag next time you try to drop [the noun].";
+	the rule succeeds;
 
 the sly size slice eyes are a plural-named thing. eyes-number of sly size slice eyes is 1. printed name is "sly size-slice eyes".
 
