@@ -127,10 +127,10 @@ You need to look inward to find something you lost before dealing with external 
 \\
 >purloin eyes
 >eye me
-The eyes show 2 dots, then 3 dots.
+The eyes light up green and show two dots, then three dots.
 \\
 >eye
-The eyes almost seem to light up. Perhaps you need to do something later with the general area.
+The eyes almost seem to light up. Perhaps you need to do something later with the general area, when things are noticeably different.
 \\
 >undo
 >undo
@@ -180,11 +180,12 @@ It's a bit clearer now. You still seem trapped. But there must be secrets hidden
 #apocryphal test case
 >purloin eyes
 >eye me
-The eyes show 2 dots, then 5 dots.
-[NOTE: the eyes do not tell you whether or not you can currently perform the action they are hinting at, only that you can at some time. In future releases, it will be blurry if you can't right now and dim if you don't need to.]
+The eyes light up yellow and show two dots, then five dots.
+[NOTE: the eyes have two binary settings: green or yellow, and glowing or dimly glowing. This, along with the hints, may be intuitive, but if it is not, EYE EYES will spell things out.]
 \\
 >eye
-The eyes show 3 dots, then 4 dots.
+The eyes light up green and show three dots, then four dots.
+!NOTE:
 \\
 >undo
 >undo
@@ -203,11 +204,34 @@ You look around for secrets. You find one line that is a hash of horizontal line
 `Hype Lane
 
 @hint
+>eye eye
+The eyes will light up two sets of dots if there is something relevant to clue. (+)
+\\
+>eye eye
+The numbers of dots correspond to the number of letters in each word. (+)
+\\
+>eye eye
+The dots also have two binary settings: green or yellow, and dimly glowing or glowing. (+)
+\\
+>eye eye
+Green dots mean something you can move forward with now. (+)
+\\
+>eye eye
+Yellow dots mean something you can guess, but you don't have the right items or assistance to move forward. (+)
+\\
+>eye eye
+Finally, a dimly glowing reading is something that is optional for completing Why Pout. (End of hints. Next EYE EYES starts the hint cycle again)
+\\
+>eye eye
+The eyes will light up two sets of dots if there is something relevant to clue. (+)
+
+@hint+
 >eye
-The eyes show 4 dots, then 5 dots.
+The eyes light up yellow and show four dots, then five dots.
+!That would be a nicer place!
 \\
 >eye phones
-The eyes show 4 dots, then 4 dots.
+The eyes light up green and show four dots, then four dots.
 
 @li
 >l
@@ -274,7 +298,7 @@ The talk itself gives you indigestion.
 
 @hint
 >eye talk
-The eyes show 3 dots, then 5 dots.
+The eyes light up green and show three dots, then five dots.
 
 >pry stalk
 by a point
@@ -391,10 +415,10 @@ Too risky to stumble around until the haze lifts. How to make that happen?
 
 @hint
 >eye haze
-The eyes show 3 dots, then 5 dots.
+The eyes light up green and show three dots, then five dots.
 \\
 >eye
-The eyes show 3 dots, then 5 dots.
+The eyes light up green and show three dots, then five dots.
 
 >nah phase
 by a point
@@ -445,7 +469,7 @@ You're too self-conscious for self-talk, being policed and all.
 
 @hint
 >eye
-The eyes show 4 dots, then 4 dots.
+The eyes light up green and show four dots, then four dots.
 
 >pole east
 by a point
@@ -500,13 +524,13 @@ The keep (iller) is locked. You will need to find the key.
 The eyes show nothing. You've done everything you need to with the general area.
 \\
 >eye short rail
-The eyes show 5 dots, then 5 dots.
+The eyes light up green and show five dots, then five dots.
 \\
 >eye keep
-The eyes show 3 dots, then 6 dots.
+The eyes light up green and show three dots, then six dots.
 \\
 >eye gross tar
-The eyes show 4 dots, then 4 dots.
+The eyes light up green and show four dots, then four dots.
 
 >shore trail
 by a point
@@ -548,6 +572,24 @@ Things have opened up almost all the way now, with the naff haze lifted. You fee
 
 >key pillar
 by a point
+
+@hints
+##balance undos
+>w
+\\
+>eye gold
+The eyes light up yellow and show five dots, then three dots.
+\\
+>eye mold
+The eyes light up yellow and show five dots, then three dots.
+\\
+>eye sign
+The eyes light up yellow and show three dots, then six dots.
+\\
+>undo
+>undo
+>undo
+>undo
 
 @all,rej
 {--rej}#testcase-check-pre-key-pillar-rule-fallthrough
@@ -602,7 +644,7 @@ You simply have no notion what lies beyond here. You hope something does. Surely
 
 @hint
 >eye
-The eyes show 5 dots, then 5 dots.
+The eyes light up green and show five dots, then five dots.
 
 >known ocean
 by a point
@@ -641,7 +683,7 @@ The eyes show nothing. You've done everything you need to with the general area.
 The eyes show nothing. Probably don't need to do anything with the ocean.
 \\
 >eye squid
-The eyes show 3 dots, then 4 dots.
+The eyes light up green and show three dots, then four dots.
 
 >six quid
 by a point
@@ -688,13 +730,13 @@ There's a huge pile of lode ore here, too, and perhaps there's something in it.
 
 @hint
 >eye
-The eyes show 4 dots, then 5 dots.
+The eyes light up green and show four dots, then five dots.
 \\
 >eye lode ore
-The eyes show 3 dots, then 4 dots.
+The eyes light up yellow and show three dots, then four dots.
 \\
 >eye high doubt
-The eyes show 4 dots, then 3 dots.
+The eyes light up green and show four dots, then three dots.
 
 >wool frock
 by a point
@@ -722,7 +764,7 @@ by a point
 
 @hint
 >eye
-The eyes show 4 dots, then 3 dots.
+The eyes light up green and show four dots, then three dots.
 
 >hide out
 by a point
@@ -778,7 +820,7 @@ The booze troll doesn't seem interested in useful conversation, at least not in 
 
 @hint
 >eye troll
-The eyes show 5 dots, then 4 dots.
+The eyes light up green and show five dots, then four dots.
 
 >boost role
 by a point
@@ -853,8 +895,11 @@ Yes, mold is one of many things you should never eat.
 >eye
 The eyes show nothing. You've done everything you need to with the general area.
 \\
+>eye herb
+The eyes light up yellow and show five dots, then four dots.
+\\
 >eye mold
-The eyes show 5 dots, then 3 dots.
+The eyes light up green and show five dots, then three dots.
 
 >gnome old
 by a point
@@ -895,7 +940,7 @@ Rouge ... no, too foreign, also, too abstract. But you need a person, not a colo
 
 @hint
 >eye gold
-The eyes show 5 dots, then 3 dots.
+The eyes light up green and show five dots, then three dots.
 
 >rogue old
 by a point
@@ -987,7 +1032,7 @@ If you need to eat anything, it requires a slightly different approach.
 
 @hint
 >eye sign
-The eyes show 3 dots, then 6 dots.
+The eyes light up green and show three dots, then six dots.
 
 >see design
 by a point
@@ -1022,7 +1067,7 @@ So, what do you need to find, before getting out?
 
 @hint
 >eye
-The eyes show 4 dots, then 5 dots.
+The eyes light up green and show four dots, then five dots.
 
 >knife right
 by a point
@@ -1074,7 +1119,7 @@ You can go down or in the cardinal directions, but not up.
 
 @hint
 >eye
-The eyes show 4 dots, then 6 dots.
+The eyes light up yellow and show four dots, then six dots.
 
 @li
 Worm-Eaten
@@ -1097,7 +1142,7 @@ Better ways to assimilate the gone traitor.
 
 @hint
 >eye traitor
-The eyes show 5 dots, then 6 dots.
+The eyes light up green and show five dots, then six dots.
 
 >gaunt raider
 by a point
@@ -1135,7 +1180,7 @@ BRUISE WARES, some sort of odd disturbing shop, has popped up here. You can prob
 
 @hint
 >eye bruise wares
-The eyes show 4 dots, then 6 dots.
+The eyes glow dimly and show four dots, then six dots.
 
 @!min
 #unscramble the order the swears appear in
@@ -1202,17 +1247,21 @@ They'd be, uh, tasteless.
 @hint
 >eye
 It's not the room so much as the "we cuss" vibes the eyes seem to be picking up.
-The eyes glow dimly and show 4 dots, then 2 dots.
+The eyes glow dimly and show four dots, then two dots.
 \\
 >eye orc
-The eyes glow dimly and show 4 dots, then 4 dots.
+The eyes light up a dim yellow and show four dots, then four dots.
 \\
 >eye earls
-The eyes glow dimly and show 4 dots, then 6 dots.
+The eyes glow dimly and show four dots, then six dots.
 
 @!min
 >weak us
 by a bonus point
+
+@hint
+>eye orc
+The eyes glow dimly and show four dots, then four dots.
 
 @all,rej
 {--rej}#testcase-check-pre-weak-us-rule-fallthrough
@@ -1294,7 +1343,7 @@ You don't want to get into the guts of this place. You've gotten the crude orc o
 
 @hint
 >eye
-The eyes glow dimly and show 7 dots, then 3 dots.
+The eyes glow dimly and show seven dots, then three dots.
 
 @!min
 >bastard eee
@@ -1308,7 +1357,7 @@ The grinch earls mock you, or maybe boost themselves, with "Heh, class!"
 
 @hint
 >eye
-The eyes glow dimly and show 6 dots, then 3 dots.
+The eyes glow dimly and show six dots, then three dots.
 
 @!min
 >heckle ass
@@ -1322,7 +1371,7 @@ The grinch earls laugh and say "Hush it."
 
 @hint
 >eye
-The eyes glow dimly and show 3 dots, then 4 dots.
+The eyes glow dimly and show three dots, then four dots.
 
 @!min
 >huh shit
@@ -1336,7 +1385,7 @@ The grinch earls take cheap shots and say "Life occurs."
 
 @hint
 >eye
-The eyes glow dimly and show 3 dots, then 7 dots.
+The eyes glow dimly and show three dots, then seven dots.
 
 @!min
 >lie fuckers
@@ -1351,7 +1400,7 @@ s at enemies real and imagined.
 
 @hint
 >eye
-The eyes glow dimly and show 4 dots, then 5 dots.
+The eyes glow dimly and show four dots, then five dots.
 
 @!min
 >were dicks
@@ -1407,7 +1456,10 @@ This lobe of land appears to fall off steeply in all directions except back west
 
 @hint
 >eye
-The eyes show 3 dots, then 4 dots.
+The eyes light up green and show three dots, then four dots.
+\\
+>eye ale
+The eyes light up yellow and show three dots, then four dots.
 
 >low bend
 by a point
@@ -1441,7 +1493,7 @@ The low bend (former lobe end) now bends from west to north, where you see water
 
 @hint
 >eye ale
-The eyes show 3 dots, then 4 dots.
+The eyes light up green and show three dots, then four dots.
 
 >bay sale
 by a point
@@ -1489,7 +1541,7 @@ The We-Craft Weak Raft from the bay sale floats here, ready to take you south ac
 
 @hint
 >eye
-The eyes show 5 dots, then 5 dots.
+The eyes light up green and show five dots, then five dots.
 
 >store mile
 by a point
@@ -1526,7 +1578,7 @@ The We-Craft Weak Raft from the bay sale floats here, ready to take you south ac
 
 @hint
 >eye shelf
-The eyes show 6 dots, then 3 dots.
+The eyes light up green and show six dots, then three dots.
 
 >mensch elf
 by a point
@@ -1548,7 +1600,7 @@ Hmm. You have a lot of friends following you around, but you haven't talked to t
 
 @hint
 >eye stall
-The eyes show 4 dots, then 4 dots.
+The eyes light up green and show four dots, then four dots.
 
 >mice tall
 by a point
@@ -1633,7 +1685,7 @@ You can only go back OUT here.
 
 @hint
 >eye
-The eyes show 4 dots, then 3 dots.
+The eyes light up green and show four dots, then three dots.
 
 >well own
 by a point
@@ -1668,7 +1720,7 @@ No, just prevent the merchant eating you up in conversation.
 
 @hint
 >eye merchant
-The eyes show 6 dots, then 5 dots.
+The eyes light up green and show six dots, then five dots.
 
 >summer chant
 by a point
@@ -1702,10 +1754,10 @@ You want to figure a way to kill conversation, even if your summer chant made it
 
 @hint
 >eye merchant
-The eyes show nothing. You've done everything you need to neutralize the merchant.
+The eyes light up green and show four dots, then two dots.
 \\
 >eye
-The eyes show 4 dots, then 4 dots.
+The eyes light up yellow and show four dots, then four dots.
 
 >bile oh
 by a point
@@ -1731,7 +1783,7 @@ You can only go back OUT here.
 
 @hint
 >eye
-The eyes show 4 dots, then 4 dots.
+The eyes light up green and show four dots, then four dots.
 
 >whee lone
 by a point
@@ -1773,7 +1825,7 @@ No, just prevent the oaf liar eating you up in conversation.
 
 @hint
 >eye liar
-The eyes show 2 dots, then 5 dots.
+The eyes light up green and show two dots, then five dots.
 
 >oh flier
 by a point
@@ -1823,7 +1875,7 @@ You can only go back OUT here.
 
 @hint
 >eye plant
-The eyes show 4 dots, then 7 dots.
+The eyes light up green and show four dots, then seven dots.
 
 >plan tracker
 by a point
@@ -1880,7 +1932,7 @@ Too risky, but perhaps it hides some more pleasant food or ingredients.
 
 @hint
 >eye herb
-The eyes show 5 dots, then 4 dots.
+The eyes light up green and show five dots, then four dots.
 
 >manna curb
 by a point
@@ -1958,7 +2010,7 @@ But wait! You can use the grow vial! It makes the tree (small) into a tree (tall
 
 @hint
 >eye
-The eyes show 4 dots, then 5 dots.
+The eyes light up green and show four dots, then five dots.
 
 >tree small
 by a point
@@ -2081,10 +2133,10 @@ You're not in the mood for exploring the wharf randomly. It seems like a good wa
 
 @hint
 >eye
-The eyes show 3 dots, then 5 dots.
+The eyes light up green and show three dots, then five dots.
 \\
 >eye flier
-The eyes show 3 dots, then 4 dots.
+The eyes light up yellow and show three dots, then four dots.
 
 @li
 >i
@@ -2210,7 +2262,7 @@ Oh, man. You still have that talk-ache, too.
 
 @hint
 >eye ache
-The eyes show 4 dots, then 4 dots.
+The eyes light up green and show four dots, then four dots.
 
 >t orc
 
@@ -2255,7 +2307,7 @@ You can't eat the cake by yourself! Make it a communal experience in a special p
 
 @hint
 >eye tree
-The eyes show 5 dots, then 3 dots.
+The eyes light up green and show five dots, then three dots.
 
 >treat all
 by a point
@@ -2364,6 +2416,10 @@ Close, but you don't need a whirr noise.
 >warm meetin
 You don't need to change this place's complexion here. It's cozy, a place for people to be together. But how?
 
+@hint
+>eye
+The eyes light up green and show four dots, then six dots.
+
 >were meetin
 by a point
 
@@ -2383,7 +2439,7 @@ You feel like your companions are just about ready to go. But you still need to 
 
 @hint
 >eye me
-The eyes show 2 dots, then 5 dots.
+The eyes light up green and show two dots, then five dots.
 
 >my corps
 by a point
@@ -2440,10 +2496,10 @@ Now's not the time for chat.
 
 @hint
 >eye skull
-The eyes show 5 dots, then 4 dots.
+The eyes light up green and show five dots, then four dots.
 \\
 >eye
-The eyes show 3 dots, then 7 dots.
+The eyes light up yellow and show three dots, then seven dots.
 
 >cease cull
 by a point
@@ -2457,7 +2513,8 @@ It begins pouring out rivers of blood at you and your companions. But fortunatel
 
 @hint
 >eye skull
-The eyes show 4 dots, then 3 dots.
+The eyes look around frantically. It feels like quite a moment, where you need a big moment or action. They show four dots, then three dots.
+!and show four dots, then three dots.
 
 >wipe out
 by a point
@@ -2518,10 +2575,10 @@ The why-division is too much to sort things out.
 
 @hint
 >eye
-The eyes show 3 dots, then 7 dots.
+The eyes light up green and show three dots, then seven dots.
 \\
 >eye division
-The eyes glow dimly and show 4 dots, then 6 dots.
+The eyes light up a dim yellow and show four dots, then six dots.
 
 >do mending
 by a point
