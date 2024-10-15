@@ -645,7 +645,7 @@ a wordtwisting rule (this is the pre-summer-chant rule):
 this is the post-summer-chant rule:
 	now sco-summer-chant is true;
 	say "You think up a summer chant you mumble under your breath. The merchant finds it a bit weird you like THAT as a way to keep positive. It doesn't seem like that sort of thing helps the economy. Their cheeriness slips slightly, with impressively-balanced potshots at people more and less successful than they are.";
-	declue merchant;
+	now eyes-number of merchant is 42;
 	now eyes-rule of some merchant is the pre-bile-oh rule;
 
 a wordtwisting rule (this is the pre-bile-oh rule):

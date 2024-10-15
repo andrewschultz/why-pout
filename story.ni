@@ -234,7 +234,7 @@ after going to NaffHaze when Bruise Wares is in NaffHaze and sco-treat-all is tr
 	remove-swear-bonus;
 	continue the action;
 
-the naff haze is scenery in NaffHaze. "You can't look very far though it. Just looking at it makes you feel hopeless you'll always be trapped in the fog.". eyes-number of naff haze is 35.
+the naff haze is scenery in NaffHaze. "You can't look very far though it. Just looking at it makes you feel hopeless you'll always be trapped in the fog.". eyes-number of naff haze is 35. eyes-rule of naff haze is pre-nah-phase rule.
 
 check going a viable direction in NaffHaze when sco-pole-east is false:
 	say "You'd like to go [noun], but you feel, well, policed." instead;
@@ -292,7 +292,7 @@ the waydown is a privately-named thing. description is "You shouldn't see this d
 
 chapter Bruise Wares
 
-Bruise Wares is a thing. "[b]BRUISE WARES[r], some sort of odd disturbing shop, has popped up here. You can probably figure why it's forbidding and such. But perhaps it is only for a certain sort of adventurer.". description is "Looking at [b]BRUISE WARES[r], it sort of overdoes the whole 'you might not be ready for this' schtick. And, you figure, if you know what's really there, it's not something you will put up with unless you have to.[paragraph break]Seriously, dealing with it is up to you.". eyes-number of bruise wares is 46. eyes-rule of bruise wares is the pre-brew-swears rule.
+Bruise Wares is a thing. "[b]BRUISE WARES[r], some sort of odd disturbing shop, has popped up here. You can probably figure why it's forbidding and such. But perhaps it is only for a certain sort of adventurer.". description is "Looking at [b]BRUISE WARES[r], it sort of overdoes the whole 'you might not be ready for this' schtick. And, you figure, if you know what's really there, it's not something you will put up with unless you have to.[paragraph break]Seriously, dealing with it is up to you.". eyes-number of bruise wares is -46. eyes-rule of bruise wares is the pre-brew-swears rule.
 
 rule for choosing notable locale objects (this is the put followers at the bottom rule):
 	repeat with item running through things in location of player:
@@ -343,7 +343,7 @@ some manna is a singular-named thing. description is "Apparently, manna is suppo
 
 chapter plant racker
 
-the plant racker is a thing in KeepIller. "A plant racker lies here, pretty much useless.". description is "It seems papery, broken beyond repair, at least in its current state.". eyes-number of plant racker is 47. eyes-rule of plan tracker is the pre-plan-tracker rule.
+the plant racker is a thing in KeepIller. "A plant racker lies here, pretty much useless.". description is "It seems papery, broken beyond repair, at least in its current state.". eyes-number of plant racker is 47. eyes-rule of plant racker is the pre-plan-tracker rule.
 
 chapter plan tracker
 
@@ -357,11 +357,11 @@ the seedy sign is a thing in KeepIller. "[if sco-see-design is false]A seedy sig
 
 book Nigh Fright
 
-Nigh Fright is a room in Universal. "Whatever you need to do or find here, you only want to do it once. You don't want to have to come back. You're glad your friends supported you enough to get here, but you don't want to have to rely on them like that again.[paragraph break]So, what do you need to find, before getting out?". eyes-number of nigh fright is 45.
+Nigh Fright is a room in Universal. "Whatever you need to do or find here, you only want to do it once. You don't want to have to come back. You're glad your friends supported you enough to get here, but you don't want to have to rely on them like that again.[paragraph break]So, what do you need to find, before getting out?". eyes-number of nigh fright is 45. eyes-rule of nigh fright is the pre-knife-right rule.
 
 chapter knife right
 
-the knife right is a thing. printed name is "knife (right)". description is "Well, it's sharp. And it's probably, like, sacred and stuff, since you got it in a rite.". eyes-number of knife right is -1. eyes-rule of knife right is the pre-knife-right rule.
+the knife right is a thing. printed name is "knife (right)". description is "Well, it's sharp. And it's probably, like, sacred and stuff, since you got it in a rite.". eyes-number of knife right is -1.
 
 book Wolf Rock
 
@@ -423,11 +423,22 @@ the oaf liar is a sentient. "An oaf liar blathers away here, with stuff that's l
 
 section flier
 
-the flier is a thing. description is "The flier advertises places to go: a wharf isle, a thief isle, and a grove isle, each of which may hold odd treasures. It contains pretty clear directions, too. The only thing it lacks is where the directions start from[if flier-isle-score > 0]. You now know to start [here-in of NoNotion][end if].". understand "flyer" as flier. eyes-number of flier is 34. [this is not always right because...]
+the flier is a thing. description is "The flier advertises places to go: a wharf isle, a thief isle, and a grove isle, each of which may hold odd treasures. It contains pretty clear directions, too. The only thing it lacks is where the directions start from[if flier-isle-score > 0]. You now know to start [here-in of NoNotion][end if].". understand "flyer" as flier. eyes-number of flier is 34. [this is not always right because...] eyes-rule of flier is the flier-conglomerated-eyes rule.
+
+a wordtwisting rule (this is the flier-conglomerated-eyes rule):
+	if player is not in NoNotion, not-yet;
+	if sco-grow-vial is false, ready;
+	if sco-war-file is false:
+		if sco-plan-tracker is true, ready;
+	if sco-the-file is false:
+		if number of still-chat-needed followers is 0, ready;
+	not-yet;
 
 check eyeing flier when flier-isle-score < 2:
 	if flier-isle-score is 1 and sco-grow-vial is true, continue the action;
-	say "Weird. The flier seems to blink between three and four dots on the left, but it's stable at four dots on the right." instead;
+	process the flier-conglomerated-eyes rule;
+	let rb-out be the outcome of the rulebook;
+	say "Weird. The flier seems to blink between three and four dots on the left, but it's stable at four dots on the right. The dots [if rb-out is ready outcome]do not [end if]blink." instead;
 
 report examining the flier:
 	if flier-isle-score is 0:
@@ -566,7 +577,7 @@ the wan dwarf is a follower. description is "Short and stocky. It wears glasses 
 
 book Brew Swears (optional)
 
-Brew Swears is a room in universal. "[if grinch earls are in brew swears]If you thought Hype Lane was bad, this is even worse[else]Now that you got rid of the orc's old associates, there's nothing really left to do here[end if]. You can leave back [b]OUT[r].". eyes-number of brew swears is -42.
+Brew Swears is a room in universal. "[if grinch earls are in brew swears]If you thought Hype Lane was bad, this is even worse[else]Now that you got rid of the orc's old associates, there's nothing really left to do here[end if]. You can leave back [b]OUT[r].". eyes-number of brew swears is -42. eyes-rule of Brew Swears is pre-weak-us rule.
 
 check going outside in Brew Swears:
 	now block-followers is false;
@@ -581,13 +592,13 @@ to zap-bruise-wares:
 
 chapter earls
 
-the grinch earls are a plural-named hostile sentient in Brew Swears. "Some [earls] parade around here, bragging about how they ruin boring people's fun with their dynamic ways and pointing out that it's easy to be nice if you're boring. They fix you with a 'We parse: weep, arse' gaze[if sco-grin-churls is true], though they're less effective than when they were self-styled earls[end if]. [if number of not moot swearblobs is 0]They've run out of swears but not of sneers. Perhaps one more non-profane phrase could dispel them[else if sco-weak-us is true]You cut their 'we cuss' down to size, so they're now giving examples of how they cuss[else]They constantly blather 'WE CUSS' and seem quite proud of that[end if].". printed name is "[if sco-grin-churls is true]grin churls[else]grinch earls[end if]". description is "Bleah. They remind you of popular kids (you know, the ones who beat up kids who claimed they weren't popular--it was effective) from back in school, except all grown up.". eyes-number of grinch earls is -46.
+the grinch earls are a plural-named hostile sentient in Brew Swears. "Some [earls] parade around here, bragging about how they ruin boring people's fun with their dynamic ways and pointing out that it's easy to be nice if you're boring. They fix you with a 'We parse: weep, arse' gaze[if sco-grin-churls is true], though they're less effective than when they were self-styled earls[end if]. [if number of not moot swearblobs is 0]They've run out of swears but not of sneers. Perhaps one more non-profane phrase could dispel them[else if sco-weak-us is true]You cut their 'we cuss' down to size, so they're now giving examples of how they cuss[else]They constantly blather 'WE CUSS' and seem quite proud of that[end if].". printed name is "[if sco-grin-churls is true]grin churls[else]grinch earls[end if]". description is "Bleah. They remind you of popular kids (you know, the ones who beat up kids who claimed they weren't popular--it was effective) from back in school, except all grown up.". eyes-number of grinch earls is -46. eyes-rule of grinch earls is pre-grin-churls rule.
 
 understand "grin churls" and "grin/churls" as grinch earls when sco-grin-churls is true.
 
 chapter crude orc
 
-the crude orc is an unneeded follower in Brew Swears. "A crude orc trundles around here, [orc-desc].". description is "[if sco-weak-us is false]Looking at you like their next target, to show they're tough enough for [the earls][else if sco-crew-dork is false]Unsure of themselves. They might be ready for a hard truth[else if number of swearblobs in Brew Swears > 0]Looking up to you a lot, for setting [the grinch] straight[else]So over this place and ready to go along with you on your adventure[end if].". help-chat of crude orc is "The crude orc doesn't have any strategy, per se. It's still young and naive. But it asks the sort of questions you forgot you had. Perhaps others youths have these questions, too, or they would, with -- well, whatever force that kidnapped you -- not pressing on them so much. And while impressing kids with mean swears isn't overarching evil, it's a gateway to nastier things. Kids like the orc are worth helping.". eyes-number of crude orc is -44.
+the crude orc is an unneeded follower in Brew Swears. "A crude orc trundles around here, [orc-desc].". description is "[if sco-weak-us is false]Looking at you like their next target, to show they're tough enough for [the earls][else if sco-crew-dork is false]Unsure of themselves. They might be ready for a hard truth[else if number of swearblobs in Brew Swears > 0]Looking up to you a lot, for setting [the grinch] straight[else]So over this place and ready to go along with you on your adventure[end if].". help-chat of crude orc is "The crude orc doesn't have any strategy, per se. It's still young and naive. But it asks the sort of questions you forgot you had. Perhaps others youths have these questions, too, or they would, with -- well, whatever force that kidnapped you -- not pressing on them so much. And while impressing kids with mean swears isn't overarching evil, it's a gateway to nastier things. Kids like the orc are worth helping.". eyes-number of crude orc is -44. eyes-rule of crude orc is pre-crew-dork rule.
 
 to say orc-desc:
 	if orc-score is 0:
@@ -599,15 +610,15 @@ to say orc-desc:
 
 chapter swearblobs
 
-bah-sturdy is a swearblob. "The [grinch] shake their heads at you: 'Bah! Sturdy?!'". eyes-number of bah-sturdy is -73.
+bah-sturdy is a swearblob. "The [grinch] shake their heads at you: 'Bah! Sturdy?!'". eyes-number of bah-sturdy is -73. eyes-rule of bah-sturdy is pre-bastard-eee rule.
 
-heh-class is a swearblob. "The [grinch] mock you, or maybe boost themselves, with 'Heh, class!'". eyes-number of heh-class is -63.
+heh-class is a swearblob. "The [grinch] mock you, or maybe boost themselves, with 'Heh, class!'". eyes-number of heh-class is -63. eyes-rule of heh-class is pre-heckle-ass rule.
 
-hush-it is a swearblob. "The [grinch] laugh and say 'Hush it.'". eyes-number of hush-it is -34.
+hush-it is a swearblob. "The [grinch] laugh and say 'Hush it.'". eyes-number of hush-it is -34. eyes-rule of hush-it is pre-huh-shit rule.
 
-life-occurs is a swearblob. "The [grinch] take cheap shots and say 'Life occurs.'". eyes-number of life-occurs is -37.
+life-occurs is a swearblob. "The [grinch] take cheap shots and say 'Life occurs.'". eyes-number of life-occurs is -37. eyes-rule of life-occurs is pre-lie-fuckers rule.
 
-weird-icks is a swearblob. "The [grinch] launch 'Weird! Ick!'[']s at enemies real and imagined.". eyes-number of weird-icks is -45.
+weird-icks is a swearblob. "The [grinch] launch 'Weird! Ick!'[']s at enemies real and imagined.". eyes-number of weird-icks is -45. eyes-rule of weird-icks is pre-were-dicks rule.
 
 volume endgame rooms
 
@@ -636,7 +647,7 @@ the gaunt raider is a follower. description is "Tall and imposing. They still lo
 
 book Doom Ending
 
-Doom Ending is a room in universal. "[if sco-wide-vision is true]This place is much less scary now that you shared your wide vision. But now you need to put it into practice![else if sco-wipe-out is true]Well, it turns out the doom ending was for the sea skull, not for you. But you're still a bit frustrated. How do you go forward from here?[else]The gaunt raider wasn't joking around when they said they came from some place awful! You just hope your companions can help you enough here.[end if]". eyes-number of doom ending is 37.
+Doom Ending is a room in universal. "[if sco-wide-vision is true]This place is much less scary now that you shared your wide vision. But now you need to put it into practice![else if sco-wipe-out is true]Well, it turns out the doom ending was for the sea skull, not for you. But you're still a bit frustrated. How do you go forward from here?[else]The gaunt raider wasn't joking around when they said they came from some place awful! You just hope your companions can help you enough here.[end if]". eyes-number of doom ending is 37. eyes-rule of doom ending is pre-do-due-mend rule.
 
 after printing the locale description for Doom Ending when Doom Ending is unvisited:
 	say "Everyone whispers some variation of 'We're stuck! Worst, UCK!' to each other. But surely there must be a way through.";
