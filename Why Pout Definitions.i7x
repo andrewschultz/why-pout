@@ -12,9 +12,11 @@ definition: a rule (called ru) is thinknoteblocking:
 
 volume cheat item stuff
 
-a thing has a number called eyes-number.
+a thing has a number called eyes-number. a thing has a rule called eyes-rule. eyes-rule of a thing is usually autoreject rule.
 
-a room has a number called eyes-number.
+a room has a number called eyes-number. a room has a rule called eyes-rule. eyes-rule of a room is usually autoreject rule.
+
+a wordtwisting rule (this is the autoreject rule): not-yet;
 
 a hintthing is a kind of thing. a hintthing can be dropwarned. a hintthing is usually not dropwarned. a hintthing has text called drop-poke.
 
@@ -44,6 +46,9 @@ eyeing is an action out of world applying to one thing.
 understand "eye [thing]" as eyeing when player has slice eyes.
 understand "eyes [thing]" as eyeing when player has slice eyes.
 
+check eyeing eyes:
+	say "[one of]The eyes will light up two sets of dots if there is something relevant to clue. (+)[or]The numbers of dots correspond to the number of letters in each word. (+)[or]The dots also have three settings: green, yellow and blurry. (+)[or]Green dots mean something you can move forward with now. (+)[or]Yellow dots mean something you can guess, but you don't have the right items or assistance to move forward. (+)[or]Finally, a blurry reading is something that is optional for completing [this-game]. (end of hints. Next [b]EYE EYES[r] starts the hint cycle again)[cycling][line break]" instead;
+
 to say eye-with:
 	if current action is eyering:
 		say "with the general area";
@@ -62,11 +67,16 @@ eyeguessing a number (called n):
 	else if n is 0 or n is 1:
 		say "The eyes show nothing. Probably don't need to do anything [eye-with]." instead;
 	else if n is 2:
-		say "The eyes almost seem to light up. Perhaps you need to do something later [eye-with]." instead;
+		say "The eyes almost seem to light up. Perhaps you need to do something later [eye-with], when things are noticeably different." instead;
 	let dimly be whether or not n < 0;
 	if n < 0:
 		now n is 0 - n;
-	say "The eyes [if dimly is true]glow dimly and [end if]show [n / 10] dots, then [remainder after dividing n by 10] dots.";
+	let this-rule be eyes-rule of location of player;
+	if current action is eyeing:
+		now this-rule is eyes-rule of noun;
+	process this-rule;
+	let rb-out be outcome of the rulebook;
+	say "The eyes [if rb-out is the not-yet outcome]light up, yellow,[else if dimly is true]glow dimly[else]light up green[end if] and show [n / 10] dots, then [remainder after dividing n by 10] dots.";
 
 eyeguessing is a number based rulebook.
 
@@ -94,7 +104,7 @@ report eyering:
 to note-not-now:
 	if gs-eye-note is false:
 		now gs-eye-note is true;
-		say "[i][bracket][b]NOTE[r][i]: the eyes do not tell you whether or not you can currently perform the action they are hinting at, only that you can at some time. In future releases, it will be blurry if you can't right now and dim if you don't need to.[close bracket]";
+		say "[i][bracket][b]NOTE[r][i]: the eyes have three settings, green, yellow and blurry. This, along with the hints, may be intuitive, but if it is not, [b]EYE EYES[r][i] will spell things out.[close bracket]";
 
 to declue-here: now eyes-number of location of player is -1
 
