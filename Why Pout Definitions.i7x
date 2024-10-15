@@ -47,7 +47,7 @@ understand "eye [thing]" as eyeing when player has slice eyes.
 understand "eyes [thing]" as eyeing when player has slice eyes.
 
 check eyeing eyes:
-	say "[one of]The eyes will light up two sets of dots if there is something relevant to clue. (+)[or]The numbers of dots correspond to the number of letters in each word. (+)[or]The dots also have three settings: green, yellow and blurry. (+)[or]Green dots mean something you can move forward with now. (+)[or]Yellow dots mean something you can guess, but you don't have the right items or assistance to move forward. (+)[or]Finally, a blurry reading is something that is optional for completing [this-game]. (end of hints. Next [b]EYE EYES[r] starts the hint cycle again)[cycling][line break]" instead;
+	say "[one of]The eyes will light up two sets of dots if there is something relevant to clue. (+)[or]The numbers of dots correspond to the number of letters in each word. (+)[or]The dots also have two binary settings: green or yellow, and dimly glowing or glowing. (+)[or]Green dots mean something you can move forward with now. (+)[or]Yellow dots mean something you can guess, but you don't have the right items or assistance to move forward. (+)[or]Finally, a dimly glowing reading is something that is optional for completing [this-game]. (End of hints. Next [b]EYE EYES[r] starts the hint cycle again)[cycling][line break]" instead;
 
 to say eye-with:
 	if current action is eyering:
@@ -74,15 +74,24 @@ eyeguessing a number (called n):
 	let this-rule be eyes-rule of location of player;
 	if current action is eyeing:
 		now this-rule is eyes-rule of noun;
+	now verb-dont-print is true;
 	process this-rule;
+	now verb-dont-print is false;
 	let rb-out be outcome of the rulebook;
-	say "The eyes [if rb-out is the not-yet outcome]light up, yellow,[else if dimly is true]glow dimly[else]light up green[end if] and show [n / 10] dots, then [remainder after dividing n by 10] dots.";
+	say "The eyes ";
+	if rb-out is the not-yet outcome:
+		say "light up [if dimly is true]a dim [end if]yellow";
+	else if dimly is true:
+		say "glow dimly";
+	else:
+		say "light up green";
+	say " and show [(n / 10) in words] dots, then [(remainder after dividing n by 10) in words] dots.";
 
 eyeguessing is a number based rulebook.
 
 check eyeing (this is the time to wipe out rule):
 	if player is in doom ending and sco-cease-cull is true and sco-wipe-out is false:
-		say "The eyes dash around frantically. It feels like quite a moment, where you need a big moment or action. They show four dots, then three dots.";
+		say "The eyes look around frantically. It feels like quite a moment, where you need a big moment or action. They show four dots, then three dots." instead;
 
 carry out eyeing:
 	abide by the eyeguessing rulebook for eyes-number of noun;
@@ -109,7 +118,7 @@ report eyering:
 to note-not-now:
 	if gs-eye-note is false:
 		now gs-eye-note is true;
-		say "[i][bracket][b]NOTE[r][i]: the eyes have three settings, green, yellow and blurry. This, along with the hints, may be intuitive, but if it is not, [b]EYE EYES[r][i] will spell things out.[close bracket]";
+		say "[i][bracket][b]NOTE[r][i]: the eyes have two binary settings: green or yellow, and glowing or dimly glowing. This, along with the hints, may be intuitive, but if it is not, [b]EYE EYES[r][i] will spell things out.[close bracket]";
 
 to declue-here: now eyes-number of location of player is -1
 
