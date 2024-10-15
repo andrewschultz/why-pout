@@ -119,6 +119,8 @@ this is the post-an-aim rule:
 	say "Yes. Now that you realize you want more than just to know your name, that you have bigger goals, you push a bit harder when you initially forget it. You remember patches of the past. You remember people harshly calling you by your last name, then your first.[paragraph break]Your name is Mike Orr. You even remember it's -- well, one of these two things: short for Michal, which everyone pronounced Michael until you just gave up, or ... well, Michael.[paragraph break]You look around a bit. You can see more, now. You're in some sort of tomb apse. You could exit--there are exits each way--but you suspect there's some horrible maze you could easily get lost in.";
 	now eyes-number of mike orr is 25;
 	now eyes-number of air aww is 34; [technically, we can't see it with the eyes.]
+	now eyes-rule of mike orr is pre-my-corps rule;
+	now eyes-rule of air aww is pre-two-maps rule;
 	print-the-loc;
 
 section NaffHaze scoring
@@ -458,6 +460,7 @@ this is the post-nah-phase rule:
 	move keep iller to NaffHaze;
 	try looking; [pole east is implicitly moved that way]
 	now eyes-number of NaffHaze is 44; [pole east]
+	now eyes-rule of naffhaze is the pre-pole-east rule;
 
 a wordtwisting rule (this is the pre-key-pillar rule):
 	if player is not in NaffHaze, unavailable;
@@ -630,6 +633,7 @@ this is the post-well-own rule:
 	move some merchant to We Loan;
 	print-the-loc;
 	now eyes-number of We Loan is 44;
+	now eyes-rule of we loan is the pre-whee-lone rule;
 
 a wordtwisting rule (this is the pre-summer-chant rule):
 	if player is not in we loan or merchant is not in we loan, unavailable;
@@ -642,6 +646,7 @@ this is the post-summer-chant rule:
 	now sco-summer-chant is true;
 	say "You think up a summer chant you mumble under your breath. The merchant finds it a bit weird you like THAT as a way to keep positive. It doesn't seem like that sort of thing helps the economy. Their cheeriness slips slightly, with impressively-balanced potshots at people more and less successful than they are.";
 	declue merchant;
+	now eyes-rule of some merchant is the pre-bile-oh rule;
 
 a wordtwisting rule (this is the pre-bile-oh rule):
 	if player is not in we loan or merchant is not in we loan, unavailable;

@@ -80,11 +80,16 @@ eyeguessing a number (called n):
 
 eyeguessing is a number based rulebook.
 
+check eyeing (this is the time to wipe out rule):
+	if player is in doom ending and sco-cease-cull is true and sco-wipe-out is false:
+		say "The eyes dash around frantically. It feels like quite a moment, where you need a big moment or action. They show four dots, then three dots.";
+
 carry out eyeing:
 	abide by the eyeguessing rulebook for eyes-number of noun;
 	the rule succeeds;
 
 check eyering:
+	abide by the time to wipe out rule;
 	if player is in brew swears and number of swearblobs in brew swears is 1:
 		let RSB be random swearblob in brew swears;
 		try eyeing RSB instead;
