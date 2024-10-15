@@ -94,7 +94,7 @@ report eyering:
 to note-not-now:
 	if gs-eye-note is false:
 		now gs-eye-note is true;
-		say "[i][bracket][b]NOTE[r][i]: the eyes do not tell you whether or not you can currently perform the action they are hinting at, only that you can at some time.[close bracket]";
+		say "[i][bracket][b]NOTE[r][i]: the eyes do not tell you whether or not you can currently perform the action they are hinting at, only that you can at some time. In future releases, it will be blurry if you can't right now and dim if you don't need to.[close bracket]";
 
 to declue-here: now eyes-number of location of player is -1
 
