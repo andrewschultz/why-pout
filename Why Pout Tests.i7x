@@ -299,6 +299,34 @@ carry out ediaging:
 	if count is 0, say "All things fixed!";
 	the rule succeeds;
 
+volume undo okaying
+
+chapter undoying
+
+undoying is an action out of world.
+
+understand the command "undoy" as something new.
+
+understand "undoy" as undoying.
+
+carry out undoying:
+	now undo-okayed is true;
+	say "Undo allowed for testing purposes.";
+	the rule succeeds;
+
+chapter undoning
+
+undoning is an action out of world.
+
+understand the command "undon" as something new.
+
+understand "undon" as undoning.
+
+carry out undoning:
+	now undo-okayed is false;
+	say "Undo disallowed for testing purposes.";
+	the rule succeeds;
+
 Why Pout Tests ends here.
 
 ---- DOCUMENTATION ----

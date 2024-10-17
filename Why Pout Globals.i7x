@@ -45,6 +45,10 @@ section cheat counters
 
 eyes-number of Reap Rest is 1.
 
+section only changed in debug but needed in release
+
+undo-okayed is a truth state that varies.
+
 section list but not quite table
 
 wide-vision-rejects is a list of text variable. wide-vision-rejects is {
