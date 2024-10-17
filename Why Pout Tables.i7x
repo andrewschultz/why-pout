@@ -85,7 +85,7 @@ this is the hom-too-maps rule:
 
 this is the post-two-maps rule:
 	now sco-two-maps is true;
-	say "You look around for secrets. First, you find And beneath them, there are weird eyes: sly size-slice eyes! They seem quite observant.[paragraph break]You find one page that is a hash of horizontal lines and another that is a hash of vertical lines. You put them together ... and you see a maze. You hope you can trace a passage out. And, with some effort, you do! Then you follow it. You hope it's right, and it leads somewhere better, or at least not as awful...";
+	say "You look around for secrets. First, you find two pages, one a hash of horizontal lines and another that is a hash of vertical lines. You put them together ... and you see a maze. You hope you can trace a passage out.[paragraph break]You do! But first, you notice, under the pages, a pair of weird mechanical eyes: sly size-slice eyes! They seem quite observant, and best, they don't seem to be surveilling YOU.[paragraph break]You poke around a bit, hoping for even more help. But that is all. So you follow the map, hopefully to somewhere better, or not as forbidding ...";
 	declue-here;
 	now player has eyes;
 	move player to Hype Lane;
@@ -161,6 +161,9 @@ this is the post-shore-trail rule:
 a wordtwisting rule (this is the pre-grow-star rule):
 	if player is not in NaffHaze, unavailable;
 	if sco-nah-phase is false, unavailable;
+	if sco-grow-star is true:
+		vcal "You already got rid of the tar!";
+		already-done;
 	ready;
 
 this is the post-grow-star rule:
