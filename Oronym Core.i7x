@@ -50,6 +50,19 @@ to decide which number is doable-hinted:
 		if think-cue entry is true and idid entry is false and core entry is true, increment temp;
 	decide on temp;
 
+volume meta verbs
+
+book meta stuff
+
+check quitting the game:
+	say "A voice taunts you 'What? Changing your name to Ike Witt?'";
+
+check restarting the game:
+	say "A voice cackles 'Done, ooh? Duh, new!'";
+
+check saving the game:
+	say "A voice taunts 'Save?! I'll say, VILE!'";
+
 volume meta rooms
 
 Reap Rest is a room. moot-room is Reap Rest. "You should never get here."

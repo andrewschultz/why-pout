@@ -690,17 +690,6 @@ check going outside:
 			say "That's vague, as you can go [list of viable directions]." instead;
 [		say "You can't find any viable directions. Perhaps you need to solve a puzzle to get out of here." instead;]
 
-book meta stuff
-
-check quitting the game:
-	say "A voice taunts you 'What? Changing your name to Ike Witt?'";
-
-check restarting the game:
-	say "A voice cackles 'Done, ooh? Duh, new!'";
-
-check saving the game:
-	say "A voice taunts 'Save?! I'll say, VILE!'";
-
 chapter abouting
 
 abouting is an action out of world.
