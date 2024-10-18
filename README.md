@@ -1,10 +1,11 @@
 # Why Pout?
 
-IFComp 2024 candidate
-
-Submitted on 8/28/2024
-
 A wordplay game with a mechanic that has not been tried yet.
+
+Release 1 submitted on 8/28/2024 to IFComp
+(Note: several fixes during IFComp. They are listed in fixes.txt.)
+Release 2 re-submitted to ifarchive and itch.io on 10/18/2024
+Release 3 is possible, with a bonus point and more granular responses to THINK. These may be split up into separate releases, too.
 
 Post-comp release is slated for late October.
 
