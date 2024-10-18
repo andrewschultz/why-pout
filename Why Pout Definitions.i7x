@@ -307,6 +307,42 @@ when play begins:
 	sort table of zero point taunts in random order;
 	sort table of zero point taunts in sortval order;
 
+volume internal map
+
+[not very useful since Inform doesn't connect rooms at the beginning, but I do like to make it tidy when I can]
+
+first-rooms is a region.
+
+last-rooms is a region.
+
+chapter intro
+
+index map with Hype Lane mapped east of Eh Raw Air Aww.
+index map with NaffHaze mapped northeast of Hype Lane.
+
+chapter midgame
+
+index map with NoNotion mapped south of NaffHaze.
+index map with Wand Wharf mapped east of NoNotion.
+
+index map with KeepIller mapped west of NaffHaze.
+index map with Nigh Fright mapped west of KeepIller.
+
+index map with Wolf Rock mapped north of NaffHaze.
+index map with We Loan mapped northwest of Wolf Rock.
+index map with Hideout mapped north of Wolf Rock.
+
+index map with Lobe End mapped east of NaffHaze.
+index map with Storm Isle mapped north of Lobe End.
+index map with Trees Mall mapped north of Storm Isle.
+
+index map with Brew Swears mapped northwest of NaffHaze.
+
+chapter endgame
+
+index map with Worm Eaten mapped north of Nigh Fright.
+index map with Doom Ending mapped north of worm eaten.
+
 Why Pout Definitions ends here.
 
 ---- DOCUMENTATION ----

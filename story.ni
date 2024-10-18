@@ -181,7 +181,7 @@ volume rooms
 
 book Eh Raw Air Aww
 
-Eh Raw Air Aww is a room in universal. printed name is "[if sco-an-aim is false]Eh, Raw Air, Aww[else]Tomb Apse[end if]". description is "[if sco-an-aim is false]The air chokes you a bit. It's too thick to see far beyond yourself. You barely know who you are, even. Ugh. You can't see much beyond yourself, really, so that'd be somewhere to start.[else]It's a bit clearer now. You still seem trapped. But there must be secrets hidden, and maybe one or more can get you out of here.[end if]". eyes-number of Eh Raw Air Aww is 2. eyes-rule of Air Aww is pre-an-aim rule. [okay, we don't get the eyes until later.]
+Eh Raw Air Aww is a room in first-rooms. printed name is "[if sco-an-aim is false]Eh, Raw Air, Aww[else]Tomb Apse[end if]". description is "[if sco-an-aim is false]The air chokes you a bit. It's too thick to see far beyond yourself. You barely know who you are, even. Ugh. You can't see much beyond yourself, really, so that'd be somewhere to start.[else]It's a bit clearer now. You still seem trapped. But there must be secrets hidden, and maybe one or more can get you out of here.[end if]". eyes-number of Eh Raw Air Aww is 2. eyes-rule of Air Aww is pre-an-aim rule. [okay, we don't get the eyes until later.]
 
 chapter sly size slice eyes
 
@@ -189,7 +189,7 @@ the sly size slice eyes are a plural-named hintthing. eyes-number of sly size sl
 
 book Hype Lane
 
-Hype Lane is a room in universal. "It's still pretty dark here. You must still be underground.[paragraph break]Around you, [if sco-self-owns is false]cell phones, cell phones everywhere. Such confident chatter. Or it seems confident. It distracts you and your bearings, trying to figure who you really are and get somewhere less dark[else if sco-pry-stalk is true]you're able to ignore the prize talk for now, but you realize you can and must move on from it. Get out of this underground area[else]a prize talk booms from unseen speakers, exhorting you to do, or at least earn, more. The heck with being above ground, with boring old nature that distracts you from being all you can be. Well, for the economy, at least[end if].". eyes-number of Hype Lane is 45. eyes-rule of hype lane is the pre-high-plain rule.
+Hype Lane is a room in first-rooms. "It's still pretty dark here. You must still be underground.[paragraph break]Around you, [if sco-self-owns is false]cell phones, cell phones everywhere. Such confident chatter. Or it seems confident. It distracts you and your bearings, trying to figure who you really are and get somewhere less dark[else if sco-pry-stalk is true]you're able to ignore the prize talk for now, but you realize you can and must move on from it. Get out of this underground area[else]a prize talk booms from unseen speakers, exhorting you to do, or at least earn, more. The heck with being above ground, with boring old nature that distracts you from being all you can be. Well, for the economy, at least[end if].". eyes-number of Hype Lane is 45. eyes-rule of hype lane is the pre-high-plain rule.
 
 chapter cell phones
 
@@ -620,7 +620,7 @@ life-occurs is a swearblob. "The [grinch] take cheap shots and say 'Life occurs.
 
 weird-icks is a swearblob. "The [grinch] launch 'Weird! Ick!'[']s at enemies real and imagined.". eyes-number of weird-icks is -45. eyes-rule of weird-icks is pre-were-dicks rule.
 
-volume endgame rooms
+volume endgame or endgame-ish rooms
 
 book Worm Eaten
 
@@ -647,7 +647,7 @@ the gaunt raider is a follower. description is "Tall and imposing. They still lo
 
 book Doom Ending
 
-Doom Ending is a room in universal. "[if sco-wide-vision is true]This place is much less scary now that you shared your wide vision. But now you need to put it into practice![else if sco-wipe-out is true]Well, it turns out the doom ending was for the sea skull, not for you. But you're still a bit frustrated. How do you go forward from here?[else]The gaunt raider wasn't joking around when they said they came from some place awful! You just hope your companions can help you enough here.[end if]". eyes-number of doom ending is 37. eyes-rule of doom ending is pre-do-due-mend rule.
+Doom Ending is a room in last-rooms. "[if sco-wide-vision is true]This place is much less scary now that you shared your wide vision. But now you need to put it into practice![else if sco-wipe-out is true]Well, it turns out the doom ending was for the sea skull, not for you. But you're still a bit frustrated. How do you go forward from here?[else]The gaunt raider wasn't joking around when they said they came from some place awful! You just hope your companions can help you enough here.[end if]". eyes-number of doom ending is 37. eyes-rule of doom ending is pre-do-due-mend rule.
 
 after printing the locale description for Doom Ending when Doom Ending is unvisited:
 	say "Everyone whispers some variation of 'We're stuck! Worst, UCK!' to each other. But surely there must be a way through.";
