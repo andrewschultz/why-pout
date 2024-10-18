@@ -565,7 +565,7 @@ the grow vial is a thing. description is "It says it will help something grow, b
 
 chapter ocean
 
-the ocean is scenery. "Well, you'll need help to cross it.". eyes-number of ocean is 1.
+the ocean is scenery. "Well, you'll need help to cross it.". eyes-number of ocean is -1.
 
 check entering ocean: try going west instead;
 
@@ -773,7 +773,8 @@ chapter versioning
 carry out versioning:
 	say "Version 1 was released to IFComp on August 28, 2024.";
 	say "[line break]Version 2 was released on October 18, 2024. It rolls up many fixes made during IFComp but also includes a hint device and UNDO protection for using the pawn to advance through a puzzle. For version 1, I'd had a great idea for a hint device. The only thing not-great was the timing: six hours before the comp deadline!";
-	say "[line break]It's possible there will be a Version 3. It would contain more granular hints about what you got right, e.g. one word, both words, or very close. But I'd need to reorganize the main table for that.";
+	say "[line break]It's likely there will be a Version 3. There may be another bonus point or two, and on the technical side, it would contain more granular hints about what you got right, e.g. one word, both words, or very close. But I'd need to reorganize the main table for that.";
+	say "[line break]For details on fixes, see fixes.txt, which should be packaged with the binary. Or visit the GitHub site https://github.com/andrewschultz/why-pout.";
 	the rule succeeds;
 
 [the text below is added to Versioning and Extensions Tweak]
@@ -1111,7 +1112,7 @@ carry out warponing:
 			else:
 				moot war pawn;
 			follow the score and thinking changes rule;
-			prevent undo;
+			if undo-okayed is false, prevent undo;
 			the rule succeeds;
 		else if there is a best-room entry and best-room entry is location of player:
 			if vr is the not-yet outcome:
