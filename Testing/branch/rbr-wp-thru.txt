@@ -51,6 +51,8 @@ The air chokes you a bit. It's too thick to see far beyond yourself. You barely 
 
 @li+
 >ion
+\\
+>undoy
 
 @goto
 #testcase-goto-table-of-noways-eh-raw-air-aww
@@ -197,7 +199,9 @@ by a point
 @all,rej
 {--rej}#testcase-check-pre-two-maps-rule-fallthrough
 {--all}#testcase-run-post-two-maps-rule-default
-You look around for secrets. You find one line that is a hash of horizontal lines and another that is a hash of vertical lines. You put them together ... and you see a maze. You hope you can trace a passage out. And, with some effort, you do! Then you follow it. You hope it's right, and it leads somewhere better, or at least not as awful...
+You look around for secrets. First, you find two pages, one a hash of horizontal lines and another that is a hash of vertical lines. You put them together ... and you see a maze. You hope you can trace a passage out.
+You do! But first, you notice, under the pages, a pair of weird mechanical eyes: sly size-slice eyes! They seem quite observant, and best, they don't seem to be surveilling YOU.
+You poke around a bit, hoping for even more help. But that is all. So you follow the map, hopefully to somewhere better, or not as forbidding ...
 
 @all
 #testcase-room-names-hype-lane
@@ -368,7 +372,8 @@ You plant the stalk, which -- well, it's already a bit of a stalk, but it grows 
 @li
 INVENTORY CHANGED
 There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
-You are carrying nothing.
+"Good! Some goods, umm...":
+some sly size-slice eyes
 You have a name, too, now, you remember: Mike Orr.
 !/^..a stalk
 \\
@@ -725,7 +730,7 @@ Wolf Rock blocks every planar passage except back SOUTH. Maybe something's under
 !hideout
 
 @li
-A big rock in the shape of a wolf looms impressively, blocking all passages except back SOUTH. You feel high doubt here you can go anywhere else.
+A big rock in the shape of a wolf looms impressively, blocking all passages except back SOUTH. Also, the high doubt you can go anywhere else here is thick indeed. Maybe there's a way to dispel it.
 There's a huge pile of lode ore here, too, and perhaps there's something in it.
 
 @hint

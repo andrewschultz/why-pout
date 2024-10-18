@@ -2,7 +2,7 @@
 
 volume top level stuff
 
-the release number is 1.
+the release number is 2.
 
 release along with a website.
 
@@ -739,7 +739,7 @@ carry out creditsing:
 	say "[line break]Viv Dunstan, yet another fellow IFComp [']24 author, found some nontrivial bugs I fixed mid-comp.";
 	say "[line break]DemonApologist, who wrote reviews for all IFComp [']24's entries, and Wolfbiter, who was close as of this writing, found nontrivial bugs, too.";
 	say "[line break]The cover art is my fault, and my fault alone.";
-	say "[line break]Thanks to David Welbourn for writing a walkthrough during IFComp. He has a Patreon account at patreon.com/dswxyz.";
+	say "[line break]Thanks to David Welbourn for writing a walkthrough during IFComp. He has a Patreon account at patreon.com/dswxyz. Support it if you can!";
 	say "[paragraph break]GENERAL THANKS:[paragraph break]";
 	say "Thanks to everyone past and future involved in the administration of IFComp.";
 	say "Thanks to the I7 board on Intfiction.org for their help, as well as the people in the general topics as we discussed our plans.";
@@ -783,8 +783,8 @@ chapter versioning
 
 carry out versioning:
 	say "Version 1 was released to IFComp on August 28, 2024.";
-	say "[line break]Version 2 is expected to be released shortly post-IFComp. I had a great idea for a hint device. The only thing not-great was the timing: six hours before the comp deadline!";
-	say "[line break]I don't expect much beyond that, since this is a relatively short game.";
+	say "[line break]Version 2 was released on October 18, 2024. It rolls up many fixes made during IFComp but also includes a hint device and UNDO protection for using the pawn to advance through a puzzle. For version 1, I'd had a great idea for a hint device. The only thing not-great was the timing: six hours before the comp deadline!";
+	say "[line break]It's possible there will be a Version 3. It would contain more granular hints about what you got right, e.g. one word, both words, or very close. But I'd need to reorganize the main table for that.";
 	the rule succeeds;
 
 [the text below is added to Versioning and Extensions Tweak]

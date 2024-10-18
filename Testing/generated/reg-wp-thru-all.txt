@@ -27,7 +27,9 @@ You look around a bit. You can see more, now. You're in some sort of tomb apse. 
 by a point
 
 #testcase-run-post-two-maps-rule-default
-You look around for secrets. You find one line that is a hash of horizontal lines and another that is a hash of vertical lines. You put them together ... and you see a maze. You hope you can trace a passage out. And, with some effort, you do! Then you follow it. You hope it's right, and it leads somewhere better, or at least not as awful...
+You look around for secrets. First, you find two pages, one a hash of horizontal lines and another that is a hash of vertical lines. You put them together ... and you see a maze. You hope you can trace a passage out.
+You do! But first, you notice, under the pages, a pair of weird mechanical eyes: sly size-slice eyes! They seem quite observant, and best, they don't seem to be surveilling YOU.
+You poke around a bit, hoping for even more help. But that is all. So you follow the map, hopefully to somewhere better, or not as forbidding ...
 
 #testcase-room-names-hype-lane
 `Hype Lane

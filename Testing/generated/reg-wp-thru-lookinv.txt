@@ -12,6 +12,8 @@ The air chokes you a bit. It's too thick to see far beyond yourself. You barely 
 
 >ion
 
+>undoy
+
 >z
 
 >an aim
@@ -55,7 +57,8 @@ by a point
 
 INVENTORY CHANGED
 There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
-You are carrying nothing.
+"Good! Some goods, umm...":
+some sly size-slice eyes
 You have a name, too, now, you remember: Mike Orr.
 !/^..a stalk
 
@@ -155,7 +158,7 @@ You have six quid from helping the sick squid.
 
 >n
 
-A big rock in the shape of a wolf looms impressively, blocking all passages except back SOUTH. You feel high doubt here you can go anywhere else.
+A big rock in the shape of a wolf looms impressively, blocking all passages except back SOUTH. Also, the high doubt you can go anywhere else here is thick indeed. Maybe there's a way to dispel it.
 There's a huge pile of lode ore here, too, and perhaps there's something in it.
 
 >wool frock

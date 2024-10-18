@@ -294,4 +294,4 @@ way forward
 WOOL FROCK
 
 >undo
-Allowing you to undo using the war pawn is a bit too much of a loophole. There's a walkthrough. Or you can save and restore a lot.
+Allowing you to undo using the war pawn is a bit too much of a loophole. There's a walkthrough. Or you can save and restore a lot before warping.
