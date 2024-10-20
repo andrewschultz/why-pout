@@ -1350,6 +1350,24 @@ You don't want to get into the guts of this place. You've gotten the crude orc o
 >eye
 The eyes glow dimly and show seven dots, then three dots.
 
+@alt
+>ass lo
+by a bonus point
+\\
+>undo
+
+@!min
+>ass low
+by a bonus point
+
+@all,rej
+{--rej}#testcase-check-pre-ass-lo-rule-fallthrough
+{--all}#testcase-run-post-ass-lo-rule-default
+
+@hint
+>eye
+The eyes glow dimly and show seven dots, then three dots.
+
 @!min
 >bastard eee
 by a bonus point

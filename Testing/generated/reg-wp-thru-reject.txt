@@ -199,6 +199,11 @@ The crude orc sees it now. The grinch earls weren't as friendly as they seemed. 
 You've gained a friend! You can stick around to torment the grinch earls further, or you can go on your way.
 Hmm. You have a lot of friends following you around, but you haven't talked to them much. Perhaps you could learn something from them.
 
+>ass low
+by a bonus point
+
+#testcase-check-pre-ass-lo-rule-fallthrough
+
 >bastard eee
 by a bonus point
 
