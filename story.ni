@@ -610,6 +610,8 @@ to say orc-desc:
 
 chapter swearblobs
 
+aah-slow is a swearblob. "The [grinch] snicker 'Aah, slow!' at you. It's a screamy aah, not an a-ha sort of aah.". eyes-number of aah-slow is -34. eyes-rule of aah-slow is pre-ass-low rule.
+
 bah-sturdy is a swearblob. "The [grinch] shake their heads at you: 'Bah! Sturdy?!'". eyes-number of bah-sturdy is -73. eyes-rule of bah-sturdy is pre-bastard-eee rule.
 
 heh-class is a swearblob. "The [grinch] mock you, or maybe boost themselves, with 'Heh, class!'". eyes-number of heh-class is -63. eyes-rule of heh-class is pre-heckle-ass rule.

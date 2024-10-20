@@ -58,6 +58,7 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "weak"	"us"	--	--	false	true	false	false	false	brew swears	pre-weak-us rule	post-weak-us rule	--	--
 "grin"	"churls"	--	--	false	true	false	false	false	brew swears	pre-grin-churls rule	post-grin-churls rule	--	--
 "crew"	"dork"	--	--	false	true	false	false	false	brew swears	pre-crew-dork rule	post-crew-dork rule	--	"[if doom ending is visited][dork-lockout][else]You can explain [the earls] see the crude orc as a [b]CREW DORK[r] [once-now of sco-weak-us] they seem a bit less strong[end if]."
+"ass"	"low|lo"	--	--	false	true	false	false	false	brew swears	pre-ass-low rule	post-ass-low rule	--	--
 "huh"	"shit"	--	--	false	true	false	false	false	brew swears	pre-huh-shit rule	post-huh-shit rule	--	--
 "lie"	"fuckers"	--	--	false	true	false	false	false	brew swears	pre-lie-fuckers rule	post-lie-fuckers rule	--	--
 "heckle"	"ass"	--	--	false	true	false	false	false	brew swears	pre-heckle-ass rule	post-heckle-ass rule	--	--
@@ -1010,6 +1011,18 @@ to check-orc-friendliness:
 		declue crude orc;
 	else if orc-score is 1:
 		say "[line break]The crude orc looks back and forth between you and the [grinch], glaring at them a bit, but not yet ready to break free. Just a bit more, and you may gain a friend.";
+
+section brew swears scoring
+
+a wordtwisting rule (this is the pre-ass-low rule):
+	if player is not in brew swears, unavailable;
+	if aah-slow is not in brew swears, unavailable;
+	ready;
+
+this is the post-ass-low rule:
+	now sco-ass-low is true;
+	say "You aren't sure if you are pointing out how low they are, or how they say 'lo,' but either way ... it has an effect.";
+	swearzap aah-slow;
 
 a wordtwisting rule (this is the pre-huh-shit rule):
 	if player is not in brew swears, unavailable;

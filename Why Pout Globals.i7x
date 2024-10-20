@@ -73,7 +73,7 @@ book integers
 
 core-max is a number that varies. core-max is 45.
 
-max-bonus is a number that varies. max-bonus is 10.
+max-bonus is a number that varies. max-bonus is 11.
 
 core-score is a number that varies.
 
@@ -218,22 +218,25 @@ sco-do-due-mend is a truth state that varies.
 
 sco-brew-swears is a truth state that varies.
 
-chapter optional
+section optional point
+
+sco-wide-vision is a truth state that varies.
+
+chapter optional room
 
 section brew swears
 
 sco-weak-us is a truth state that varies.
 sco-crew-dork is a truth state that varies.
 
-sco-grin-churls is a truth state that varies.
-
+sco-ass-low is a truth state that varies.
+sco-bastard-eee is a truth state that varies.
+sco-heckle-ass is a truth state that varies.
 sco-huh-shit is a truth state that varies.
 sco-lie-fuckers is a truth state that varies.
-sco-heckle-ass is a truth state that varies.
-sco-bastard-eee is a truth state that varies.
 sco-were-dicks is a truth state that varies.
 
-sco-wide-vision is a truth state that varies.
+sco-grin-churls is a truth state that varies.
 
 Why Pout Globals ends here.
 
