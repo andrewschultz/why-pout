@@ -270,8 +270,10 @@ to decide which number is keep-score:
 to decide which number is orc-score:
 	decide on (boolval of sco-weak-us) + (boolval of sco-crew-dork);
 
+[yes, it's possible we could define a function called boolsum of brew-swears but this does the job for now]
+
 to decide which number is brew-swears-score:
-	decide on (boolval of sco-brew-swears) + (boolval of sco-weak-us) + (boolval of sco-grin-churls) + (boolval of sco-crew-dork) + (boolval of sco-huh-shit) + (boolval of sco-lie-fuckers) + (boolval of sco-heckle-ass) + (boolval of sco-were-dicks) + (boolval of sco-bastard-eee) [yes, it's possible we could define a function called boolsum of brew-swears but this does the job for now]
+	decide on (boolval of sco-brew-swears) + (boolval of sco-weak-us) + (boolval of sco-grin-churls) + (boolval of sco-ass-low) + (boolval of sco-crew-dork) + (boolval of sco-huh-shit) + (boolval of sco-lie-fuckers) + (boolval of sco-heckle-ass) + (boolval of sco-were-dicks) + (boolval of sco-bastard-eee) + (boolval of sco-gah-wanker)
 
 book meta scoring
 

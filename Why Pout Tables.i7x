@@ -1096,7 +1096,7 @@ to recalibrate-swears:
 
 to remove-swear-bonus:
 	if gs-swear-bonus-removed is false:
-		decrease cur-max-bonus by (9 - brew-swears-score);
+		decrease cur-max-bonus by (11 - brew-swears-score);
 		now gs-swear-bonus-removed is true;
 
 to swearzap (sw - a swearblob):
