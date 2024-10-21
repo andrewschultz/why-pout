@@ -1,6 +1,11 @@
 List of in-comp updates
 
-10/16/024 new release (2.00)
+10/21/2024 new release (3.00)
+--new taunt from the grinch earls
+--when grinch earls leave, the final boss arrives!
+--trivial fixes
+
+10/16/2024 new release (2.00)
 --hint item now lets you EYE things to see if they are ready and/or necessary to solve.
 --general minor text cleanup
 --UNDO is now blocked after using war pawn, though you can still move and UNDO twice as a workaround
