@@ -159,7 +159,7 @@ by a point
 The eyes show nothing. You've done everything you need to with the general area.
 
 >eye ocean
-The eyes show nothing. Probably don't need to do anything with the ocean.
+The eyes show nothing. You've done everything you need to with the ocean.
 
 >eye squid
 The eyes light up green and show three dots, then four dots.
@@ -315,7 +315,7 @@ The eyes show nothing. You've done everything you need to neutralize the grin ch
 >undo
 
 >eye
-The eyes glow dimly and show seven dots, then three dots.
+The eyes glow dimly and show three dots, then four dots.
 
 >ass low
 by a bonus point
@@ -354,6 +354,9 @@ by a bonus point
 The eyes show nothing. You've done everything you need to with the general area.
 
 >grin churls
+by a bonus point
+
+>gah wanker
 by a bonus point
 
 >out

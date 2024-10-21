@@ -237,7 +237,7 @@ You're surprised how just making a little shift can make the grinch earls seem m
 They throw down the gauntlet at this point. Don't you know cussing shows higher intelligence? Some study or other showed that!
 The crude orc looks back and forth between you and the grinch earls, glaring at them a bit, but not yet ready to break free. Just a bit more, and you may gain a friend.
 Your observation has caused something to "righteously" snap in the grinch earls. And boy, are they going to firehose you with their "best!"
-The grinch earls shake their heads at you: "Bah! Sturdy?!"
+The grinch earls snicker "Aah, slow!" at you. It's a screamy aah, not an a-ha sort of aah.
 
 >crew dork
 by a bonus point
@@ -252,6 +252,7 @@ Hmm. You have a lot of friends following you around, but you haven't talked to t
 by a bonus point
 
 #testcase-run-post-ass-lo-rule-default
+The grinch earls shake their heads at you: "Bah! Sturdy?!"
 
 >bastard eee
 by a bonus point
@@ -287,7 +288,7 @@ by a bonus point
 
 #testcase-run-post-were-dicks-rule-default
 You mock the grinch earls back, giving at least as good as you get, noting there's always a hole in these sorts of attacks.
-The grinch earls, out of insults, give up on you, claiming you got boring. But you know better.
+The grinch earls, out of insults, give up on it all, claiming you just make everything around more boring. But you know better.
 
 >grin churls
 by a bonus point
@@ -295,6 +296,11 @@ by a bonus point
 #testcase-run-post-grin-churls-rule-default
 You slip in a few sly digs and say "grin, churls." They shake their heads, annoyed.
 The grin churls remark that you seemed so open-minded, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do.
+But first they call in someone who they're sure can take care of you: GAWAIN KERR!
+On arriving, Gawain asks you your name. "Pfft! Meeker? Oh. Mike OR. Sure ain't Mike AND, amirite?" You move to protest, but your party didn't follow you in.
+
+>gah wanker
+by a bonus point
 
 >out
 

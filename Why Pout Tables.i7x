@@ -1034,7 +1034,6 @@ this is the post-huh-shit rule:
 	now sco-huh-shit is true;
 	say "You reject [the grinch]['] 'urbane' attempts at shutting you up. They're a bit surprised at you.";
 	swearzap hush-it;
-	recalibrate-swears;
 
 a wordtwisting rule (this is the pre-lie-fuckers rule):
 	if player is not in brew swears, unavailable;
@@ -1045,18 +1044,6 @@ this is the post-lie-fuckers rule:
 	now sco-lie-fuckers is true;
 	say "You cut down [the grinch] for making things more bleak than they are. Sure, life can be cruel, but that's no excuse to make it even more cruel. They give a 'whatever,' but you see the point touched home.";
 	swearzap life-occurs;
-	recalibrate-swears;
-
-a wordtwisting rule (this is the pre-were-dicks rule):
-	if player is not in brew swears, unavailable;
-	if weird-icks is not in brew swears, unavailable;
-	ready;
-
-this is the post-were-dicks rule:
-	now sco-were-dicks is true;
-	say "You mock [the grinch] back, giving at least as good as you get, noting there's always a hole in these sorts of attacks.";
-	swearzap weird-icks;
-	recalibrate-swears;
 
 a wordtwisting rule (this is the pre-bastard-eee rule):
 	if player is not in brew swears, unavailable;
@@ -1067,7 +1054,6 @@ this is the post-bastard-eee rule:
 	now sco-bastard-eee is true;
 	say "You show you're sturdy and then some, with just the right tone of exasperation. They pretend not to be impressed, but they don't have a comeback.";
 	swearzap bah-sturdy;
-	recalibrate-swears;
 
 a wordtwisting rule (this is the pre-heckle-ass rule):
 	if player is not in brew swears, unavailable;
@@ -1078,7 +1064,16 @@ this is the post-heckle-ass rule:
 	now sco-heckle-ass is true;
 	say "You give back at least as good as you got, showing you don't need to use the big cuss words to get a point in as well.";
 	swearzap heh-class;
-	recalibrate-swears;
+
+a wordtwisting rule (this is the pre-were-dicks rule):
+	if player is not in brew swears, unavailable;
+	if weird-icks is not in brew swears, unavailable;
+	ready;
+
+this is the post-were-dicks rule:
+	now sco-were-dicks is true;
+	say "You mock [the grinch] back, giving at least as good as you get, noting there's always a hole in these sorts of attacks.";
+	swearzap weird-icks;
 
 a wordtwisting rule (this is the pre-gah-wanker rule):
 	if player is not in brew swears, unavailable;
@@ -1109,6 +1104,7 @@ to swearzap (sw - a swearblob):
 	if number of not moot swearblobs > 0:
 		now next-swear of (prev-swear of sw) is next-swear of sw;
 		now prev-swear of (next-swear of sw) is prev-swear of sw;
+	recalibrate-swears;
 
 to grinch-go-check:
 	if sco-grin-churls is true and number of not moot swearblobs is 0:

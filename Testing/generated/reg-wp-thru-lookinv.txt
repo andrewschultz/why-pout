@@ -307,10 +307,11 @@ Some grin churls parade around here
 >weak us
 by a bonus point
 
+#note we want the 2nd taunt here, since the 1st comes with WEAK US
 >l
 Some grinch earls parade around here, bragging about how they ruin boring people's fun with their dynamic ways and pointing out that it's easy to be nice if you're boring. They fix you with a "We parse: weep, arse" gaze. You cut their "we cuss" down to size, so they're now giving examples of how they cuss.
 A crude orc trundles around here, looking equally between you and the grinch earls.
-The grinch earls mock you, or maybe boost themselves, with "Heh, class!"
+The grinch earls shake their heads at you: "Bah! Sturdy?!"
 
 >undo
 
@@ -356,9 +357,16 @@ Some grinch earls parade around here, bragging about how they ruin boring people
 by a bonus point
 
 >l
-Now that you got rid of the orc's old associates, there's nothing really left to do here.
+Gawain Kerr stands here, ready to mock and slightly mispronounce your name some more. The horror! Well, what are you going to do about it?
+
+>gah wanker
+by a bonus point
+
+>l
+Now that you got rid of the orc's old associates and their, um, mentor, there's nothing really left to do here. You can leave back OUT.
 !grinch earls
 !grin churls
+!Gawain
 
 >out
 

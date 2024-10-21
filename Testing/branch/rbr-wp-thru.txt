@@ -685,7 +685,7 @@ It seems to be choking a bit.
 The eyes show nothing. You've done everything you need to with the general area.
 \\
 >eye ocean
-The eyes show nothing. Probably don't need to do anything with the ocean.
+The eyes show nothing. You've done everything you need to with the ocean.
 \\
 >eye squid
 The eyes light up green and show three dots, then four dots.
@@ -1276,13 +1276,14 @@ You're surprised how just making a little shift can make the grinch earls seem m
 They throw down the gauntlet at this point. Don't you know cussing shows higher intelligence? Some study or other showed that!
 The crude orc looks back and forth between you and the grinch earls, glaring at them a bit, but not yet ready to break free. Just a bit more, and you may gain a friend.
 Your observation has caused something to "righteously" snap in the grinch earls. And boy, are they going to firehose you with their "best!"
-The grinch earls shake their heads at you: "Bah! Sturdy?!"
+The grinch earls snicker "Aah, slow!" at you. It's a screamy aah, not an a-ha sort of aah.
 
 @li
+#note we want the 2nd taunt here, since the 1st comes with WEAK US
 >l
 Some grinch earls parade around here, bragging about how they ruin boring people's fun with their dynamic ways and pointing out that it's easy to be nice if you're boring. They fix you with a "We parse: weep, arse" gaze. You cut their "we cuss" down to size, so they're now giving examples of how they cuss.
 A crude orc trundles around here, looking equally between you and the grinch earls.
-The grinch earls mock you, or maybe boost themselves, with "Heh, class!"
+The grinch earls shake their heads at you: "Bah! Sturdy?!"
 \\
 >undo
 
@@ -1348,7 +1349,7 @@ You don't want to get into the guts of this place. You've gotten the crude orc o
 
 @hint
 >eye
-The eyes glow dimly and show seven dots, then three dots.
+The eyes glow dimly and show three dots, then four dots.
 
 @alt
 >ass lo
@@ -1363,6 +1364,7 @@ by a bonus point
 @all,rej
 {--rej}#testcase-check-pre-ass-lo-rule-fallthrough
 {--all}#testcase-run-post-ass-lo-rule-default
+The grinch earls shake their heads at you: "Bah! Sturdy?!"
 
 @hint
 >eye
@@ -1433,7 +1435,7 @@ by a bonus point
 {--rej}#testcase-check-pre-were-dicks-rule-fallthrough
 {--all}#testcase-run-post-were-dicks-rule-default
 You mock the grinch earls back, giving at least as good as you get, noting there's always a hole in these sorts of attacks.
-The grinch earls, out of insults, give up on you, claiming you got boring. But you know better.
+The grinch earls, out of insults, give up on it all, claiming you just make everything around more boring. But you know better.
 
 @hint
 >eye
@@ -1452,12 +1454,32 @@ by a bonus point
 {--all}#testcase-run-post-grin-churls-rule-default
 You slip in a few sly digs and say "grin, churls." They shake their heads, annoyed.
 The grin churls remark that you seemed so open-minded, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do.
+But first they call in someone who they're sure can take care of you: GAWAIN KERR!
+On arriving, Gawain asks you your name. "Pfft! Meeker? Oh. Mike OR. Sure ain't Mike AND, amirite?" You move to protest, but your party didn't follow you in.
 
 @li
 >l
-Now that you got rid of the orc's old associates, there's nothing really left to do here.
+Gawain Kerr stands here, ready to mock and slightly mispronounce your name some more. The horror! Well, what are you going to do about it?
+
+@mis
+#testcase-mistake-why-pout-so-fucking
+>so fucking
+Not a complete sentence. So there might be a positive adjective at the end. Focus on Gawain Kerr's name.
+\\
+#testcase-mistake-why-pout-flaw-crap
+>flaw crap
+Ah, this would work around people who feel shame for their flaws, but Gawain Kerr does not. Focus on his name.
+
+@!min
+>gah wanker
+by a bonus point
+
+@li
+>l
+Now that you got rid of the orc's old associates and their, um, mentor, there's nothing really left to do here. You can leave back OUT.
 !grinch earls
 !grin churls
+!Gawain
 
 @!min
 >out
