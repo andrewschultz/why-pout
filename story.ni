@@ -132,7 +132,7 @@ the block swearing mildly rule is not listed in any rulebook.
 check swearing obscenely:
 	if player is in Brew Swears, say "Yes. You're in the right place for that." instead;
 	if Brew Swears is visited, say "You've had enough of that." instead;
-	say "There's an area for that[if bruise wares is moot], but you can't go back to visit it now.[else if bruise wares is off-stage], but it hasn't appeared yet.[else if player is in naff haze]. Why, you can just walk in once you know what to call it![else]. Look around.[end if]" instead;
+	say "'Cur! Say curse, eh?'[paragraph break]There's an area for that[if bruise wares is moot], but you can't go back to visit it now.[else if bruise wares is off-stage], but it hasn't appeared yet.[else if player is in naff haze]. Why, you can just walk in once you know what to call it![else]. Look around.[end if]" instead;
 
 check swearing mildly: try swearing obscenely instead;
 

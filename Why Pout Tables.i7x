@@ -1089,7 +1089,7 @@ section brew swears auxiliary
 
 to recalibrate-swears:
 	if number of not moot swearblobs is 0:
-		say "[line break]The [grinch], out of insults, give up on you, claiming you got boring. But you know better.";
+		say "[line break]The [grinch], out of insults, give up on it all, claiming you just make everything around more boring. But you know better.";
 		grinch-go-check;
 		continue the action;
 	follow the cycle swears rule;
