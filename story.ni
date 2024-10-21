@@ -577,7 +577,7 @@ the wan dwarf is a follower. description is "Short and stocky. It wears glasses 
 
 book Brew Swears (optional)
 
-Brew Swears is a room in universal. "[if grinch earls are in brew swears]If you thought Hype Lane was bad, this is even worse[else]Now that you got rid of the orc's old associates, there's nothing really left to do here[end if]. You can leave back [b]OUT[r].". eyes-number of brew swears is -42. eyes-rule of Brew Swears is pre-weak-us rule.
+Brew Swears is a room in universal. "[if grinch earls are in brew swears]If you thought Hype Lane was bad, this is even worse[else if sco-gah-wanker is false]It's lonelier her without [the earls], but you could still make it lonelier![else]Now that you got rid of the orc's old associates and their, um, mentor, there's nothing really left to do here[end if]. You can leave back [b]OUT[r].". eyes-number of brew swears is -42. eyes-rule of Brew Swears is pre-weak-us rule.
 
 check going outside in Brew Swears:
 	now block-followers is false;
@@ -621,6 +621,10 @@ hush-it is a swearblob. "The [grinch] laugh and say 'Hush it.'". eyes-number of 
 life-occurs is a swearblob. "The [grinch] take cheap shots and say 'Life occurs.'". eyes-number of life-occurs is -37. eyes-rule of life-occurs is pre-lie-fuckers rule.
 
 weird-icks is a swearblob. "The [grinch] launch 'Weird! Ick!'[']s at enemies real and imagined.". eyes-number of weird-icks is -45. eyes-rule of weird-icks is pre-were-dicks rule.
+
+chapter Gawain Kerr
+
+Gawain Kerr is a hostile sentient. "Gawain Kerr stands here, ready to mock and slightly mispronounce your name some more. The horror! Well, what are you going to do about it?". description of Gawain Kerr is "He has the words SOFA KING tattooed on one arm and FLOCK RAP on the other.". eyes-number of Gawain Kerr is -36. eyes-rule of Gawain Kerr is pre-gah-wanker rule.
 
 volume endgame or endgame-ish rooms
 
@@ -996,6 +1000,7 @@ carry out ting a sentient:
 	if noun is skull, say "You doubt the skull would have anything to say beyond 'I'm all I MAUL!' or 'Help our hell-power!'" instead;
 	if noun is oaf liar, say "The oaf liar is talking over you. Perhaps you can shut them up by buying something really cheap." instead;
 	if noun is merchant, say "You want to figure a way to kill conversation, [if sco-summer-chant is true]even if your summer chant made it more bearable[else]instead[end if]." instead;
+	if noun is Gawain Kerr, say "You don't need him to riff on your name. But maybe you can riff on his." instead;
 	if noun is booze troll, say "The booze troll doesn't seem interested in useful conversation, at least not in their present form." instead;
 	if noun is squid, say "[if sco-six-quid is false]It seems to be choking a bit[else]The squid can't speak, but you get very good vibes from it. It will understand English when it needs to[end if]." instead;
 	if noun is traitor, say "[The traitor] mumbles apologetically for who they were. Perhaps you can show [the traitor] a small shift to change them." instead;

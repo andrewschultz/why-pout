@@ -26,6 +26,12 @@ understand "newt roll" and "nude roll" and "newt role" and "nude role" as a mist
 
 understand "warp" and "warp [text]" as a mistake ("Yes, the war pawn will help you warp, but permit me some pedantry: which way? Backwards?") when player has war pawn.
 
+chapter gawain
+
+understand "so fucking" as a mistake ("Not a complete sentence. So there might be a positive adjective at the end. Focus on Gawain Kerr's name.")
+
+understand "flaw crap" as a mistake ("Ah, this would work around people who feel shame for their flaws, but Gawain Kerr does not. Focus on his name.")
+
 Why Pout Mistakes ends here.
 
 ---- DOCUMENTATION ----

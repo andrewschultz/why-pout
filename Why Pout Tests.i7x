@@ -24,7 +24,7 @@ chapter bonus point test(s)
 
 test wb with "brew swears/in/weak us/grin churls/crew dork/out".
 
-test wall with "brew swears/in/weak us/grin churls/crew dork/z/z/z/z/z/z/z/z/ass low/bastardy/lie fuckers/huh shit/heckle ass/were dicks/out".
+test wall with "brew swears/in/weak us/grin churls/crew dork/z/z/z/z/z/z/z/z/ass low/bastardy/lie fuckers/huh shit/heckle ass/were dicks/gah wanker/out".
 
 chapter building blocks
 

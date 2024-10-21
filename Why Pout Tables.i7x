@@ -59,11 +59,12 @@ w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idi
 "grin"	"churls"	--	--	false	true	false	false	false	brew swears	pre-grin-churls rule	post-grin-churls rule	--	--
 "crew"	"dork"	--	--	false	true	false	false	false	brew swears	pre-crew-dork rule	post-crew-dork rule	--	"[if doom ending is visited][dork-lockout][else]You can explain [the earls] see the crude orc as a [b]CREW DORK[r] [once-now of sco-weak-us] they seem a bit less strong[end if]."
 "ass"	"low|lo"	--	--	false	true	false	false	false	brew swears	pre-ass-low rule	post-ass-low rule	--	--
+"bastard"	"e+h*"	--	--	false	true	false	false	false	brew swears	pre-bastard-eee rule	post-bastard-eee rule	--	--
+"heckle"	"ass"	--	--	false	true	false	false	false	brew swears	pre-heckle-ass rule	post-heckle-ass rule	--	--
 "huh"	"shit"	--	--	false	true	false	false	false	brew swears	pre-huh-shit rule	post-huh-shit rule	--	--
 "lie"	"fuckers"	--	--	false	true	false	false	false	brew swears	pre-lie-fuckers rule	post-lie-fuckers rule	--	--
-"heckle"	"ass"	--	--	false	true	false	false	false	brew swears	pre-heckle-ass rule	post-heckle-ass rule	--	--
 "were"	"dicks"	--	--	false	true	false	false	false	brew swears	pre-were-dicks rule	post-were-dicks rule	--	--
-"bastard"	"e+h*"	--	--	false	true	false	false	false	brew swears	pre-bastard-eee rule	post-bastard-eee rule	--	--
+"gah"	"wanker"	--	--	false	true	false	false	false	brew swears	pre-gah-wanker rule	post-gah-wanker rule	--	--
 
 section main table text replacements
 
@@ -1079,6 +1080,18 @@ this is the post-heckle-ass rule:
 	swearzap heh-class;
 	recalibrate-swears;
 
+a wordtwisting rule (this is the pre-gah-wanker rule):
+	if player is not in brew swears, unavailable;
+	if Gawain Kerr is not in brew swears, unavailable;
+	ready;
+
+this is the post-gah-wanker rule:
+	now sco-gah-wanker is true;
+	say "'No, dude. Just, no,' says Gawain Kerr. 'I mean, it's different when I make fun of other people. I mean, if it's more profane, they deserve me to act like they were too clueless to notice it, and if it's less profane, well, it can't hurt.'[paragraph break]Not knowing what to do, you shrug.[paragraph break]'Cold of you. You know, you looked like such a nice person, but after saying that, well, you proved you're a liar. Unlike me. People know I'm risque. Anyway, you don't appreciate me, so there's no use me hanging around you.'[paragraph break]'You'll be sad one day you angered a Sofa King like me!'";
+	moot Gawain Kerr;
+
+section brew swears auxiliary
+
 to recalibrate-swears:
 	if number of not moot swearblobs is 0:
 		say "[line break]The [grinch], out of insults, give up on you, claiming you got boring. But you know better.";
@@ -1099,8 +1112,9 @@ to swearzap (sw - a swearblob):
 
 to grinch-go-check:
 	if sco-grin-churls is true and number of not moot swearblobs is 0:
-		say "[line break]The [grinch] remark that you seemed so open-minded, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do.";
+		say "[line break]The [grinch] remark that you seemed so open-minded, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do.But first they call in someone who they're sure can take care of you: GAWAIN KERR![paragraph break]On arriving, Gawain asks you your name. 'Pfft! Meeker? Oh. Mike OR. Sure ain't Mike AND, amirite?' You move to protest, but your party didn't follow you in.";
 		moot grinch earls;
+		move gawain kerr to Brew Swears;
 
 volume command parsing
 
