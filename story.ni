@@ -1029,9 +1029,11 @@ carry out ting:
 	say "[line break][help-chat of noun][line break]";
 	the rule succeeds;
 
-report ting when gs-t-without-note is false:
+the t-only note rule is listed last in the report ting rulebook.
+
+report ting when gs-t-without-note is false (this is the t-only note rule):
 	now gs-t-without-note is true;
-	say "[i][bracket]NOTE[r][i]: without an argument for [b]T[r][i], [this-game-noi] will try to guess whom you talk to. It prioritizes friendly NPCs, especially ones you haven't talked to before, but if there is more than one, it will ask you to be more specific.[close bracket]";
+	say "[i][bracket]NOTE[r][i]: without an argument for [b]T[r][i], [this-game-noi] will try to guess whom you talk to. It prioritizes friendly NPCs, especially ones you haven't talked to before, but if there is more than one, it will ask you to be more specific.[close bracket][r]";
 	continue the action;
 
 report ting a follower:
