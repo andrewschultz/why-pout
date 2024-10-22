@@ -1192,6 +1192,79 @@ sortval	taunt-text
 rule for printing a parser error when the latest parser error is the can't see any such thing error:
 	say "Nothing here like that[one of]. Note that room names are not usually worth examining, as you can just [b]L[r] or [b]LOOK[r][or][stopping]."
 
+volume NPC chatter
+
+to decide which follower is talker1: decide on entry t1 of followers-as-joined;
+to decide which follower is talker2: decide on entry t2 of followers-as-joined;
+
+table of dialogues [this should have 28 entries. Runoff will have its own randomness.]
+mynum	mytext
+0	"[The talker1] and [the talker2] sing the hit ballad 'Mile of My Love' together."
+0	"[The talker1] and [the talker2] pump each other up with 'Weep? Rep! We prep!'"
+0	"[The talker1] reacts to [the talker2]'s terrible puns with 'Aw, flow off, lo!'"
+0	"[The talker1] and [the talker2] berate science fiction. More specifically, they start ripping star tripping."
+0	"[The talker1] remarks 'Sun god sung? Odd!' to [the talker2]."
+0	"[The talker1] and [the talker2] briefly punk you with 'Weak wit! We quit!'"
+0	"[The talker1] and [the talker2] briefly inspire each other to seem, or see, more."
+0	"[The talker1] and [the talker2] discuss aesthetics: 'White owls? Why, towels?'"
+0	"In a fit of bravado, [the talker1] snarks 'Bah! Scum boss, come!' [The talker2] soberly remarks, 'Uh, prepare up, repair.'"
+0	"[The talker1] and [the talker2] rib each other: 'Sane? Oh, say, NO!'"
+0	"[The talker1] and [the talker2] agree: 'Worse toured? We're stirred!'"
+0	"[The talker1] and [the talker2] butter you up: 'See leadin['] seal Eden!'"
+0	"[The talker1] and [the talker2] nudge you: 'Uh, plots up?' 'Lots,' you reply."
+0	"[The talker1] and [the talker2] play 'Eyes, peek, I speak' to pass the time."
+0	"[The talker1] and [the talker2] discuss the opulence of Go-True-GOAT Rue."
+0	"[The talker1] and [the talker2] discuss vacations at the Nice-Trip-Nigh Strip."
+0	"[The talker1] and [the talker2] discuss a moral dilemma: 'Lie for life, or...?'"
+0	"[The talker1] and [the talker2] bemoan the loss-fear law sphere enveloping a good chunk of the world."
+0	"[The talker1], after jokey banter from [the talker2], says 'A score, ace! Cor[']!'"
+0	"[The talker1] and [the talker2] shudder at the twin villains Scarf Ace and Scar Face."
+0	"[The talker1] defeats [the talker2] in rock-paper-scissors. 'My twin might win,' gripes [the talker2]."
+80	"You hear the orc's voice: 'Grow now? Groan! Ow!' Then laughter from the orc and [the talker2]."
+80	"[The talker2] playfully chides the orc 'Nuke id, new kid.'"
+80	"The orc makes an impressive observation. 'Why so wise, oh?' needles [the talker2]."
+80	"[The talker2] consoles the orc over a recalled 'Nice kid? Nigh, SKID.'"
+80	"'Run time!' yells [the talker2], chasing the orc, who taunts 'Runt? I'm...'"
+80	"Advice from [the talker2] to the orc: 'Wean [']Oh, we KNOW[']!'"
+80	"'Wan adage? Wanna DODGE,' the orc complains to [the talker2]. It's restated better next time."
+
+when play begins:
+	sort table of dialogues in random order;
+	sort table of dialogues in mynum order;
+	let tens be 2;
+	let ones be 1;
+	let numlist be { 1 };
+	repeat through table of dialogues:
+		now mynum entry is (tens * 10);
+		increase mynum entry by (entry ones in numlist);
+		increment ones;
+		if ones is tens:
+			add tens to numlist;
+			increment tens;
+			now ones is 1;
+			sort numlist in random order;
+
+to decide whether can-forward-dialogue:
+	if opt-score-chat is false, no;
+	if dialogue-row >= number of rows in table of dialogues, no;
+	let my-nff be number of friendly followers;
+	if my-nff < 8 and orc is friendly, decrement my-nff;
+	if dialogue-row >= (my-nff * (my-nff - 1)) / 2, no;
+	say "[my-nff], [(my-nff * (my-nff - 1)) / 2].";
+	yes;
+
+every turn when can-forward-dialogue:
+	increment dialogue-row;
+	choose row dialogue-row in table of dialogues;
+	now t1 is mynum entry / 10;
+	now t2 is remainder after dividing mynum entry by 10;
+	if number of friendly followers < 8 and a random chance of 1 in 2 succeeds:
+		let t0 be t1;
+		now t1 is t2;
+		now t2 is t0;
+	if debug-state is true, say "[mynum entry] ... ";
+	say "[mytext entry][line break]";
+
 volume can't go that way
 
 table of noways

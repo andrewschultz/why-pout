@@ -65,6 +65,14 @@ wide-vision-rejects is a list of text variable. wide-vision-rejects is {
   "You make your sales pitch for more than just saving one's own skin. And it's more than a sales pitch! You try not to worry whether you have a captive audience, and you don't, until -- one small glib slip, where you were pretty sure you had to be right, but you weren't. Ouch. Your companions say there's nobody else they'd rather have lead them. Why, they look up to you almost as much as their parents! It hurts them to move on. And the issue is finely balanced. But they'll need to, with things done here. They'll take this lesson back to their villages, or wherever. Honest they will!"
 }
 
+volume follower random dialogue variables
+
+followers-as-joined is a list of followers variable.
+
+t1 is a number that varies. t2 is a number that varies.
+
+dialogue-row is a number that varies.
+
 volume point scoring variables
 
 pre-max is a number that varies. [determined in DEFINITIONS so I don't have to keep processing it, since it remains constant throughout the game]
