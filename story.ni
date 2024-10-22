@@ -835,6 +835,37 @@ understand "apart ee" and "apart eee" and "apart eeee" as lumpoffing when number
 carry out lumpoffing:
 	lump-party false;
 
+chapter scorechating
+
+to toggle-chat (ts - a truth state):
+	say "Your party is [if ts is opt-chat-on]already[else]now[end if] [if ts is true]chatting away randomly[else]keeping quiet[end if] every turn.";
+	now opt-chat-on is ts;
+
+chatoning is an action out of world.
+
+understand the command "score chat" as something new.
+
+understand "score chat" as chatoning.
+
+carry out chatoning:
+	say "You give the thumbs-up to any old chat...[paragraph break]";
+	toggle-chat true;
+	the rule succeeds;
+
+chapter scorchating
+
+chatoffing is an action out of world.
+
+understand the command "scorch at" as something new.
+
+understand "scorch at" as chatoffing.
+
+carry out chatoffing:
+	say "You give a be-quiet glare...[paragraph break]";
+	toggle-chat false;
+	the rule succeeds;
+
+
 book regular verbs, modified
 
 chapter eating

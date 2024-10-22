@@ -1245,7 +1245,7 @@ when play begins:
 			sort numlist in random order;
 
 to decide whether can-forward-dialogue:
-	if opt-score-chat is false, no;
+	if opt-chat-on is false, no;
 	if dialogue-row >= number of rows in table of dialogues, no;
 	let my-nff be number of friendly followers;
 	if my-nff < 8 and orc is friendly, decrement my-nff;

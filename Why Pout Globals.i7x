@@ -35,6 +35,8 @@ section option(s)
 
 opt-lump-party is a truth state that varies.
 
+opt-chat-on is a truth state that varies. opt-chat-on is true.
+
 section first point cue(s)
 
 first-point-clue-flag is a number that varies.
