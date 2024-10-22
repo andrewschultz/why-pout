@@ -2,7 +2,7 @@
 
 volume top level stuff
 
-the release number is 3.
+the release number is 4.
 
 release along with a website.
 
@@ -110,6 +110,8 @@ check thinking:
 
 volume verbs
 
+book I7 low-usage default verbs
+
 the block saying no rule is not listed in any rulebook.
 the block saying yes rule is not listed in any rulebook.
 
@@ -119,9 +121,14 @@ carry out saying no: try saying yes instead;
 
 the block attacking rule is not listed in any rulebook.
 
+check sleeping: say "'Key? Nap! Keen app!' you mutter to yourself, but you remain wide awake." instead;
+
+the block sleeping rule is not listed in any rulebook.
 the block singing rule is not listed in any rulebook.
 
-check singing: say "Funny, you feel a taste of icing." instead;
+check singing:
+	if player is in brew swears, say "You conjure some funk rap, inspired by the specific environs." instead;
+	say "Funny, you feel a taste of icing." instead;
 
 check attacking:
 	say "'Gore? I'd go ride,' you think, randomly. You aren't built for that[if pals-made > 0], but maybe you can lead companions to a big victory[end if]." instead;
@@ -583,6 +590,10 @@ check going outside in Brew Swears:
 	now block-followers is false;
 	if orc is friendly:
 		say "As you lead [the orc] out, BRUISE-WARES crumbles behind you.";
+		if number of friendly needed followers > 0:
+			say "[line break]Shortly, [the random friendly needed follower] greets the orc with 'You the youth, uhh?' After a bit of chat, the orc seems to fit in.";
+[		else:
+			say "[line break]There's nobody to tell the orc 'You the youth, uhh?', but they're still ready for a real adventure.";] [this should never happen, since you need 20 points for Bruise Wares to appear. But I include the code for posterity.]
 		zap-bruise-wares;
 		remove-swear-bonus;
 
