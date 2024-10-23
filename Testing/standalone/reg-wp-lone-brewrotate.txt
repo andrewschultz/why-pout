@@ -1,0 +1,359 @@
+## reg-wp-lone-brewrotate.txt
+** game: /home/andrew/prt/debug-why-pout.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* r1-1
+
+>{include}_visitbrew
+
+>ass lo
+by a bonus point
+>bastardy
+by a bonus point
+>heckle ass
+by a bonus point
+>huh shit
+by a bonus point
+>lie fuckers
+by a bonus point
+>were dicks
+by a bonus point
+>grin churls
+GAWAIN KERR
+
+* r1-2
+
+>{include}_visitbrew
+
+>were dicks
+by a bonus point
+>ass lo
+by a bonus point
+>bastardy
+by a bonus point
+>heckle ass
+by a bonus point
+>huh shit
+by a bonus point
+>lie fuckers
+by a bonus point
+>grin churls
+GAWAIN KERR
+
+* r1-3
+
+>{include}_visitbrew
+
+>lie fuckers
+by a bonus point
+>were dicks
+by a bonus point
+>ass lo
+by a bonus point
+>bastardy
+by a bonus point
+>heckle ass
+by a bonus point
+>huh shit
+by a bonus point
+>grin churls
+GAWAIN KERR
+
+* r1-4
+
+>{include}_visitbrew
+
+>huh shit
+by a bonus point
+>lie fuckers
+by a bonus point
+>were dicks
+by a bonus point
+>ass lo
+by a bonus point
+>bastardy
+by a bonus point
+>heckle ass
+by a bonus point
+>grin churls
+GAWAIN KERR
+
+* r1-5
+
+>{include}_visitbrew
+
+>heckle ass
+by a bonus point
+>huh shit
+by a bonus point
+>lie fuckers
+by a bonus point
+>were dicks
+by a bonus point
+>ass lo
+by a bonus point
+>bastardy
+by a bonus point
+>grin churls
+GAWAIN KERR
+
+* r1-6
+
+>{include}_visitbrew
+
+>bastardy
+by a bonus point
+>heckle ass
+by a bonus point
+>huh shit
+by a bonus point
+>lie fuckers
+by a bonus point
+>were dicks
+by a bonus point
+>ass lo
+by a bonus point
+>grin churls
+GAWAIN KERR
+
+* r2-1
+
+>{include}_visitbrew
+
+>grin churls
+by a bonus point
+>ass lo
+by a bonus point
+>bastardy
+by a bonus point
+>heckle ass
+by a bonus point
+>huh shit
+by a bonus point
+>lie fuckers
+by a bonus point
+>were dicks
+by a bonus point
+GAWAIN KERR
+
+* r2-2
+
+>{include}_visitbrew
+
+>were dicks
+by a bonus point
+>grin churls
+by a bonus point
+>ass lo
+by a bonus point
+>bastardy
+by a bonus point
+>heckle ass
+by a bonus point
+>huh shit
+by a bonus point
+>lie fuckers
+by a bonus point
+GAWAIN KERR
+
+* r2-3
+
+>{include}_visitbrew
+
+>grin churls
+by a bonus point
+>lie fuckers
+by a bonus point
+>were dicks
+by a bonus point
+>ass lo
+by a bonus point
+>bastardy
+by a bonus point
+>heckle ass
+by a bonus point
+>huh shit
+by a bonus point
+GAWAIN KERR
+
+* r2-4
+
+>{include}_visitbrew
+
+>grin churls
+by a bonus point
+>huh shit
+by a bonus point
+>lie fuckers
+by a bonus point
+>were dicks
+by a bonus point
+>ass lo
+by a bonus point
+>bastardy
+by a bonus point
+>heckle ass
+by a bonus point
+GAWAIN KERR
+
+* r2-5
+
+>{include}_visitbrew
+
+>grin churls
+by a bonus point
+!GAWAIN
+>heckle ass
+by a bonus point
+!GAWAIN
+>huh shit
+by a bonus point
+!GAWAIN
+>lie fuckers
+by a bonus point
+!GAWAIN
+>were dicks
+by a bonus point
+!GAWAIN
+>ass lo
+by a bonus point
+!GAWAIN
+>bastardy
+by a bonus point
+GAWAIN KERR
+>gah wanker
+by a bonus point
+
+* r2-6
+
+>{include}_visitbrew
+
+>grin churls
+by a bonus point
+>bastardy
+by a bonus point
+>heckle ass
+by a bonus point
+>huh shit
+by a bonus point
+>lie fuckers
+by a bonus point
+>were dicks
+by a bonus point
+>ass lo
+by a bonus point
+GAWAIN KERR
+
+* _visitbrew
+
+>ao
+
+>an aim
+by a point
+
+>two maps
+by a point
+
+>self owns
+by a point
+
+>pry stalk
+by a point
+
+>high plain
+by a point
+
+>nah phase
+by a point
+
+>pole east
+by a point
+
+>grow star
+by a point
+
+>n
+
+>wool frock
+by a point
+
+>hideout
+by a point
+
+>d
+
+>boost role
+by a point
+
+>u
+
+>s
+
+>shore trail
+by a point
+
+>key pillar
+by a point
+
+>s
+
+>known ocean
+by a point
+
+>six quid
+by a point
+
+>n
+
+>e
+
+>low bend
+by a point
+
+>bay sale
+by a point
+
+>w
+
+>w
+
+>rogue old
+by a point
+
+>gnome old
+by a point
+
+>see design
+by a point
+
+>knife rite
+by a point
+
+>e
+
+>d
+
+>gaunt raider
+by a point
+
+>u
+
+>brew swears
+by a bonus point
+
+>in
+
+>weak us
+by a bonus point
+
+>crew dork
+by a bonus point
+
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+
