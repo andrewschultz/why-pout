@@ -617,7 +617,7 @@ to say orc-desc:
 	else if orc-score is 1:
 		say "looking equally between you and [the earls]";
 	else:
-		say "[if grinch earls are in Brew Swears]looking with distaste at the grinch earls, [end if]ready to leave when you are"
+		say "[if grinch earls are in Brew Swears]looking with distaste at the grinch earls, [else if gawain kerr is in Brew Swears]looking with distaste at Gawain Kerr[else]ready to leave when you are[end if]"
 
 chapter swearblobs
 
@@ -790,7 +790,9 @@ chapter versioning
 carry out versioning:
 	say "Version 1 was released to IFComp on August 28, 2024.";
 	say "[line break]Version 2 was released on October 18, 2024. It rolls up many fixes made during IFComp but also includes a hint device and UNDO protection for using the pawn to advance through a puzzle. For version 1, I'd had a great idea for a hint device. The only thing not-great was the timing: six hours before the comp deadline!";
-	say "[line break]It's likely there will be a Version 3. There may be another bonus point or two, and on the technical side, it would contain more granular hints about what you got right, e.g. one word, both words, or very close. But I'd need to reorganize the main table for that.";
+	say "[line break]Version 3 was released on October 22, 2024. It includes one more point in the optional room, as well as a big boss there, of sorts. There are some trivial fixes, too.";
+	say "[line break]Version 4 is planned for early November as well. It will feature game-mechanic-relevant dialogue between friendly NPCs.";
+	say "[line break]Version 5 is planned before the end of 2025. It will roll up bugs found in transcripts, etc., and it may also contain more granular hints about what you got right, e.g. one word, both words, or very close. But I'd need to reorganize the main table for that.";
 	say "[line break]For details on fixes, see fixes.txt, which should be packaged with the binary. Or visit the GitHub site https://github.com/andrewschultz/why-pout.";
 	the rule succeeds;
 

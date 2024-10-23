@@ -494,13 +494,13 @@ a wordtwisting rule (this is the pre-brew-swears rule):
 	if player is not in NaffHaze, unavailable;
 	if Bruise Wares is not in NaffHaze, unavailable;
 	if sco-brew-swears is true:
-		vcal "But you've already opened the passage through BRUISE WARES!";
+		vcal "But you've already opened the passage through [b]BRUISE WARES[r]!";
 		already-done;
 	ready;
 
 this is the post-brew-swears rule:
 	now sco-brew-swears is true;
-	say "Yes. That's what BRUISE WARES is really for. Enter at your own risk. It's ... an adventure, of its own sort.";
+	say "Yes. That's what [b]BRUISE WARES[r] is really for. Enter at your own risk. It's ... an adventure, of its own sort.";
 	reveal Brew Swears to inside;
 
 section no notion scoring
@@ -1108,7 +1108,7 @@ to swearzap (sw - a swearblob):
 
 to grinch-go-check:
 	if sco-grin-churls is true and number of not moot swearblobs is 0:
-		say "[line break]The [grinch] remark that you seemed so open-minded, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do.But first they call in someone who they're sure can take care of you: GAWAIN KERR![paragraph break]On arriving, Gawain asks you your name. 'Pfft! Meeker? Oh. Mike OR. Sure ain't Mike AND, amirite?' You move to protest, but your party didn't follow you in.";
+		say "[line break]The [grinch] remark that you seemed so open-minded, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do.[paragraph break]But first they call in someone who they're sure can take care of you: GAWAIN KERR![paragraph break]On arriving, Gawain asks you your name. 'Pfft! Meeker? Oh. Mike OR. Sure ain't Mike AND, amirite?' You move to protest, but your party didn't follow you in.";
 		moot grinch earls;
 		move gawain kerr to Brew Swears;
 
