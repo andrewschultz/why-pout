@@ -606,7 +606,7 @@ to say orc-desc:
 	else if orc-score is 1:
 		say "looking equally between you and [the earls]";
 	else:
-		say "[if grinch earls are in Brew Swears]looking with distaste at the grinch earls, [end if]ready to leave when you are"
+		say "[if grinch earls are in Brew Swears]looking with distaste at the grinch earls, [else if gawain kerr is in Brew Swears]looking with distaste at Gawain Kerr[else]ready to leave when you are[end if]"
 
 chapter swearblobs
 
