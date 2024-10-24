@@ -92,7 +92,7 @@ check searching:
 
 understand the command "wipe" as something new.
 
-check thinking:
+check thinking (this is the right phrase wrong time rule):
 	let got-think be false;
 	say "You try and think of stuff you tried, but the time wasn't quite right.[paragraph break]";
 	repeat through table of main oronyms:
@@ -105,6 +105,18 @@ check thinking:
 					say "[think-advice entry][line break]";
 				else:
 					say "[first-of-ors of w1 entry] [first-of-ors of w2 entry] is something you tried before it was perfectly ready. I should write in more details later.";
+	repeat through table of main oronyms:
+		if think-cue entry is true or idid entry is true, next;
+		if first-exact entry is false and first-close entry is false and second-exact entry is false and second-close entry is false, next:
+		let rights be (boolval of first-exact entry + boolval of second-exact entry);
+		let almosts be (boolval of (first-close entry and not first-exact entry) + boolval of (second-close entry and not second-exact entry);
+		if rights is 2:
+			say "You feel you've got the words right on separate occasions for ";
+		else if rights is 1:
+			say "You must have one word right[if almosts is 1] and one word close[end if] for ";
+		else if rights is 0:
+			say "You must be close with [if almosts is 1]one word[else]both words[end if] for ";
+		say "[part-explain entry][line break]";
 	if got-think is false:
 		say "Nothing comes to mind."
 

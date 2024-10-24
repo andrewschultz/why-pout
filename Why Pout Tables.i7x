@@ -7,64 +7,64 @@ volume the main tables
 book very general stuff
 
 table of main oronyms
-w1 (text)	w2 (text)	posthom (text)	hom-txt-rule (rule)	think-cue	okflip	core	idid	everfail	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
-"an"	"aim"	--	--	false	true	true	false	false	eh raw air aww	pre-an-aim rule	post-an-aim rule	--	--
-"two"	"maps"	"too"	hom-too-maps rule	false	true	true	false	false	eh raw air aww	pre-two-maps rule	post-two-maps rule	--	--
-"self"	"owns"	--	--	false	true	true	false	false	hype lane	pre-self-owns rule	post-self-owns rule	--	--
-"pry"	"stalk"	--	--	false	true	true	false	false	hype lane	pre-pry-stalk rule	post-pry-stalk rule	--	--
-"high"	"plain|plane"	"hi"	--	false	true	true	false	false	hype lane	pre-high-plain rule	post-high-plain rule	--	"You can find a [b]HIGH PLAIN[r] [once-now of sco-pry-stalk] you have something that can reach that far up."
-"nah|naah|naw|naa|na"	"phase"	"phaze"	hom-nah-phaze rule	false	true	true	false	false	NaffHaze	pre-nah-phase rule	post-nah-phase rule	--	--
-"pole|pull"	"east"	"poll|paul|pall"	--	false	true	true	false	false	NaffHaze	pre-pole-east rule	post-pole-east rule	--	--
-"grow"	"star"	--	--	false	true	true	false	false	NaffHaze	pre-grow-star rule	post-grow-star rule	--	--
-"shore"	"trail"	--	--	false	true	true	false	false	NaffHaze	pre-shore-trail rule	post-shore-trail rule	--	--
-"key"	"pillar"	--	--	false	true	true	false	false	NaffHaze	pre-key-pillar rule	post-key-pillar rule	--	--
-"brew"	"swears"	--	--	false	true	false	false	false	NaffHaze	pre-brew-swears rule	post-brew-swears rule	--	--
-"known"	"ocean"	--	--	false	true	true	false	false	NoNotion	pre-known-ocean rule	post-known-ocean rule	--	--
-"six"	"quid"	--	--	false	true	true	false	false	NoNotion	pre-six-quid rule	post-six-quid rule	--	--
-"the"	"file"	"thee"	--	false	true	true	false	false	nonotion	pre-the-file rule	post-the-file rule	--	"You may be able to make sense of [b]THE FILE[r] [here-in of nonotion] [once-now of whether or not number of still-chat-needed followers is 0] you've gotten enough information from companions."
-"war"	"file"	--	--	false	true	true	false	false	nonotion	pre-war-file rule	post-war-file rule	--	"You may be able to recover the [b]WAR FILE[r] on the wharf isle [here-in of nonotion] [once-now of sco-plan-tracker] you have something you can write down its main ideas in."
-"grow"	"vial"	"vile"	--	false	true	true	false	false	nonotion	pre-grow-vial rule	post-grow-vial rule	--	"You may be able to find a [b]GROW VIAL[r] with the right water transport."
-"wan"	"dwarf"	--	--	false	true	true	false	false	wand wharf	pre-wan-dwarf rule	post-wan-dwarf rule	--	--
-"wool"	"frock"	--	--	false	true	true	false	false	Wolf Rock	pre-wool-frock rule	post-wool-frock rule	--	--
-"hide"	"out"	--	--	false	true	true	false	false	Wolf Rock	pre-hide-out rule	post-hide-out rule	"hide out" or "hideout"	--
-"low"	"door"	--	--	false	true	true	false	false	Wolf Rock	pre-low-door rule	post-low-door rule	--	"You may be able to find a [b]LOW DOOR[r] [here-in of Wolf Rock] [once-now of sco-mice-tall] you have a companion or companions small enough to dig a bit better."
-"well"	"own"	"wheel"	hom-wheel-own rule	false	true	true	false	false	we loan	pre-well-own rule	post-well-own rule	--	--
-"summer"	"chant"	--	--	false	true	true	false	false	we loan	pre-summer-chant rule	post-summer-chant rule	--	--
-"bile"	"oh|o"	"owe"	hom-bile-owe rule	false	true	true	false	false	we loan	pre-bile-oh rule	post-bile-oh rule	--	"You may be able to expose some merchant's [b]BILE OH[r] [once-now of sco-summer-chant] you've found something positive to say to prep yourself."
-"whee"	"lone"	"wee|loan"	--	false	true	true	false	false	we loan	pre-whee-lone rule	post-whee-lone rule	--	"You may be able to enjoy your solitude with [b]WHEE LONE[r] [here-in of we loan] [once-now of sco-bile-oh] you actually have solitude."
-"oh"	"flier|flyer"	"owe"	hom-owe-flier rule	false	true	true	false	false	we loan	pre-oh-flier rule	post-oh-flier rule	--	"You may be able to say [b]OH FLIER[r] around the oaf liar [if current-quid is 0]once you've got some money[else if gs-overpay-flier is true][once-now of whether or not current-quid is 1] you have exactly one quid left[else]since you have money[end if]."
-"boost"	"role"	"roll"	--	false	true	true	false	false	hideout	pre-boost-role rule	post-boost-role rule	--	--
-"low"	"bend"	--	--	false	true	true	false	false	lobe end	pre-low-bend rule	post-low-bend rule	--	--
-"bay"	"sail|sale"	--	--	false	true	true	false	false	lobe end	pre-bay-sale rule	post-bay-sale rule	--	"You may be able to participate in a [b]BAY SALE[r] if you've found the right location and [once-now of sco-six-quid] you have money." [?? very detailed fix: we need to set a boolean somehow if this was guessed in Lobe End ]
-"store"	"mile"	--	--	false	true	true	false	false	storm isle	pre-store-mile rule	post-store-mile rule	--	--
-"mensch"	"elf"	"mensh|mench|munch"	hom-mencsh-elf rule	false	true	true	false	false	storm isle	pre-mensch-elf rule	post-mensch-elf rule	--	--
-"mice"	"tall"	--	--	false	true	true	false	false	storm isle	pre-mice-tall rule	post-mice-tall rule	--	"You may be able to locate the [b]MICE TALL[r] [here-in of storm isle] [once-now of sco-gnome-old] you have a companion with good perception."
-"tree"	"small"	--	--	false	true	true	false	false	trees mall	pre-tree-small rule	post-tree-small rule	--	--
-"tall"	"cake"	--	--	false	true	true	false	false	trees mall	pre-tall-cake rule	post-tall-cake rule	--	"You may be able to create a [b]TALL CAKE[r] [once-now of pre-tall-cake rule] you have ingredients and cooking instruments."
-"treat"	"all"	"awl"	--	false	true	true	false	false	trees mall	pre-treat-all rule	post-treat-all rule	--	"You may be able to [b]TREAT ALL[r] [here-in of trees mall] [once-now of sco-tall-cake] you have a tasty treat."
-"gnome"	"old"	--	--	false	true	true	false	false	keepiller	pre-gnome-old rule	post-gnome-old rule	--	"You may be able to recruit the [b]GNOME OLD[r] [here-in of keepiller] [once-now of sco-wool-frock] you have adventuring gear."
-"rogue"	"old"	"rouge"	hom-rouge-old rule	false	true	true	false	false	keepiller	pre-rogue-old rule	post-rogue-old rule	--	"You may be able to recruit the [b]ROGUE OLD[r] [here-in of keepiller] [once-now of sco-six-quid] you have money."
-"manna"	"curb|kerb"	"man a|mana"	hom-mana-curb rule	false	true	true	false	false	keepiller	pre-manna-curb rule	post-manna-curb rule	--	"You may be able to find a [b]MANNA CURB[r] beneath the manna curb [here-in of keepiller] [once-now of sco-mensch-elf] you have someone with knowledge of wildlife and wildflowers."
-"plan"	"tracker"	--	--	false	true	true	false	false	keepiller	pre-plan-tracker rule	post-plan-tracker rule	--	--
-"see"	"design"	"c|sea"	hom-c-sea-design rule	false	true	true	false	false	keep iller	pre-see-design rule	post-see-design rule	--	"You may be able to [b]SEE DESIGN[r] [here-in of keepiller] [once-now of whether or not pals-made >= 2] you have more support and are less scared."
-"knife"	"right|rite"	--	--	false	true	true	false	false	nigh fright	pre-knife-right rule	post-knife-right rule	--	--
-"gaunt"	"raider"	"rater"	hom-gaunt-rater rule	false	true	true	false	false	worm eaten	pre-gaunt-raider rule	post-gaunt-raider rule	--	--
-"were"	"meetin"	"wier|whirr|warm|eden|war|meeting"	hom-whirr-meetin rule	false	true	true	false	false	worm eaten	pre-were-meetin rule	post-were-meetin rule	--	"You will be able to say [b]WERE MEETIN[r] [once-now of pre-were-meetin rule] you have a full party available."
-"my"	"corps"	"core"	hom-my-core rule	false	true	true	false	false	worm eaten	pre-my-corps rule	post-my-corps rule	--	"You can call your companions [b]MY CORPS[r] [if pals-made < 2]once you have companions[else if pals-made < pals-needed]once you have enough of them[else][once-now of sco-treat-all] you've shared something together[end if]."
-"cease"	"cull"	"seas|sees|seize"	hom-cease-cull rule	false	true	true	false	false	Doom Ending	pre-cease-cull rule	post-cease-cull rule	--	--
-"wipe"	"out"	--	--	false	true	true	false	false	Doom Ending	pre-wipe-out rule	post-wipe-out rule	--	"You will want to [b]WIPE OUT[r] the cause of your problems [once-now of sco-cease-cull] you have them in your crosshairs[if the room down from naffhaze is nowhere]. That's probably not for a while, though[end if]."
-"wide"	"vision"	--	--	false	true	false	false	false	Doom Ending	pre-wide-vision rule	post-wide-vision rule	--	"Sadly, you didn't quite experience enough to spread your wide vision."
-"do|due"	"mend|mending"	"dew"	--	false	true	true	false	false	Doom Ending	pre-do-due-mend rule	post-do-due-mend rule	--	"You can think [b]DO/DUE MEND/MENDING[r] [once-now of sco-wipe-out] you've disposed of the sea skull."
-"weak"	"us"	--	--	false	true	false	false	false	brew swears	pre-weak-us rule	post-weak-us rule	--	--
-"grin"	"churls"	--	--	false	true	false	false	false	brew swears	pre-grin-churls rule	post-grin-churls rule	--	--
-"crew"	"dork"	--	--	false	true	false	false	false	brew swears	pre-crew-dork rule	post-crew-dork rule	--	"[if doom ending is visited][dork-lockout][else]You can explain [the earls] see the crude orc as a [b]CREW DORK[r] [once-now of sco-weak-us] they seem a bit less strong[end if]."
-"ass"	"low|lo"	--	--	false	true	false	false	false	brew swears	pre-ass-low rule	post-ass-low rule	--	--
-"bastard"	"e+h*"	--	--	false	true	false	false	false	brew swears	pre-bastard-eee rule	post-bastard-eee rule	--	--
-"heckle"	"ass"	--	--	false	true	false	false	false	brew swears	pre-heckle-ass rule	post-heckle-ass rule	--	--
-"huh"	"shit"	--	--	false	true	false	false	false	brew swears	pre-huh-shit rule	post-huh-shit rule	--	--
-"lie"	"fuckers"	--	--	false	true	false	false	false	brew swears	pre-lie-fuckers rule	post-lie-fuckers rule	--	--
-"were"	"dicks"	--	--	false	true	false	false	false	brew swears	pre-were-dicks rule	post-were-dicks rule	--	--
-"gah"	"wanker"	--	--	false	true	false	false	false	brew swears	pre-gah-wanker rule	post-gah-wanker rule	--	--
+w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	first-close	second-exact	second-close	part-explain	think-cue	okflip	core	idid	everfail	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
+"an"	"aim"	--	--	--	false	false	false	false	"any sort of purpose at all"	false	true	true	false	false	eh raw air aww	pre-an-aim rule	post-an-aim rule	--	--
+"two"	"maps"	"too"	--	hom-too-maps rule	false	false	false	false	"anything documenting a way out"	false	true	true	false	false	eh raw air aww	pre-two-maps rule	post-two-maps rule	--	--
+"self"	"owns"	--	--	--	false	false	false	false	"what to do with the cell phones"	false	true	true	false	false	hype lane	pre-self-owns rule	post-self-owns rule	--	--
+"pry"	"stalk"	--	--	--	false	false	false	false	"something physical amidst the prize talk"	false	true	true	false	false	hype lane	pre-pry-stalk rule	post-pry-stalk rule	--	--
+"high"	"plain|plane"	"hi"	"playin"	--	false	false	false	false	"where to go from Hype Lane"	false	true	true	false	false	hype lane	pre-high-plain rule	post-high-plain rule	--	"You can find a [b]HIGH PLAIN[r] [once-now of sco-pry-stalk] you have something that can reach that far up."
+"nah|naah|naw|naa|na"	"phase"	--	"phaze"	hom-nah-phaze rule	false	false	false	false	"how to cut through the naff haze"	false	true	true	false	false	NaffHaze	pre-nah-phase rule	post-nah-phase rule	--	--
+"pole|pull"	"east"	"poll|paul|pall"	--	--	false	false	false	false	"the source of your feeling policed"	false	true	true	false	false	NaffHaze	pre-pole-east rule	post-pole-east rule	--	--
+"grow"	"star"	--	--	--	false	false	false	false	"making it beyond the gross tar"	false	true	true	false	false	NaffHaze	pre-grow-star rule	post-grow-star rule	--	--
+"shore"	"trail"	--	--	--	false	false	false	false	"finding where the short rail could lead"	false	true	true	false	false	NaffHaze	pre-shore-trail rule	post-shore-trail rule	--	--
+"key"	"pillar"	--	--	--	false	false	false	false	"finding a way into the keep"	false	true	true	false	false	NaffHaze	pre-key-pillar rule	post-key-pillar rule	--	--
+"brew"	"swears"	--	--	--	false	false	false	false	"seeing [b]BRUISE WARES[r]'s true nature"	false	true	false	false	false	NaffHaze	pre-brew-swears rule	post-brew-swears rule	--	--
+"known"	"ocean"	--	--	--	false	false	false	false	"finding the surroundings [here-in of NoNotion]"	false	true	true	false	false	NoNotion	pre-known-ocean rule	post-known-ocean rule	--	--
+"six"	"quid"	--	--	--	false	false	false	false	"discovering what ails the sick squid"	false	true	true	false	false	NoNotion	pre-six-quid rule	post-six-quid rule	--	--
+"the"	"file"	"thee"	--	--	false	false	false	false	"what is on Thief Isle"	false	true	true	false	false	nonotion	pre-the-file rule	post-the-file rule	--	"You may be able to make sense of [b]THE FILE[r] [here-in of nonotion] [once-now of whether or not number of still-chat-needed followers is 0] you've gotten enough information from companions."
+"war"	"file"	--	--	--	false	false	false	false	"what is on Wharf Isle"	false	true	true	false	false	nonotion	pre-war-file rule	post-war-file rule	--	"You may be able to recover the [b]WAR FILE[r] on the wharf isle [here-in of nonotion] [once-now of sco-plan-tracker] you have something you can write down its main ideas in."
+"grow"	"vial"	--	"vile"	--	false	false	false	false	"what is on Grove Isle"	false	true	true	false	false	nonotion	pre-grow-vial rule	post-grow-vial rule	--	"You may be able to find a [b]GROW VIAL[r] with the right water transport."
+"wan"	"dwarf"	--	--	--	false	false	false	false	"who is on Wand Wharf"	false	true	true	false	false	wand wharf	pre-wan-dwarf rule	post-wan-dwarf rule	--	--
+"wool"	"frock"	--	--	--	false	false	false	false	"what is hidden in Wolf Rock"	false	true	true	false	false	Wolf Rock	pre-wool-frock rule	post-wool-frock rule	--	--
+"hide"	"out"	--	--	--	false	false	false	false	"how to dispel your high doubt"	false	true	true	false	false	Wolf Rock	pre-hide-out rule	post-hide-out rule	"hide out" or "hideout"	--
+"low"	"door"	--	--	--	false	false	false	false	"what the lode ore is hiding"	false	true	true	false	false	Wolf Rock	pre-low-door rule	post-low-door rule	--	"You may be able to find a [b]LOW DOOR[r] [here-in of Wolf Rock] [once-now of sco-mice-tall] you have a companion or companions small enough to dig a bit better."
+"well"	"own"	"wheel"	--	hom-wheel-own rule	false	false	false	false	"the sinister meaning behind We'll Own"	false	true	true	false	false	we loan	pre-well-own rule	post-well-own rule	--	--
+"summer"	"chant"	--	--	--	false	false	false	false	"a way to zone some merchant out"	false	true	true	false	false	we loan	pre-summer-chant rule	post-summer-chant rule	--	--
+"bile"	"oh|o"	--	"owe"	hom-bile-owe rule	false	false	false	false	"a way to counter the buy-low rhetoric"	false	true	true	false	false	we loan	pre-bile-oh rule	post-bile-oh rule	--	"You may be able to expose some merchant's [b]BILE OH[r] [once-now of sco-summer-chant] you've found something positive to say to prep yourself."
+"whee"	"lone"	"wee|loan"	--	--	false	false	false	false	"a way to enjoy solitude"	false	true	true	false	false	we loan	pre-whee-lone rule	post-whee-lone rule	--	"You may be able to enjoy your solitude with [b]WHEE LONE[r] [here-in of we loan] [once-now of sco-bile-oh] you actually have solitude."
+"oh"	"flier|flyer"	"owe"	--	hom-owe-flier rule	false	false	false	false	"a way to get something from the oaf liar"	false	true	true	false	false	we loan	pre-oh-flier rule	post-oh-flier rule	--	"You may be able to say [b]OH FLIER[r] around the oaf liar [if current-quid is 0]once you've got some money[else if gs-overpay-flier is true][once-now of whether or not current-quid is 1] you have exactly one quid left[else]since you have money[end if]."
+"boost"	"role"	--	"roll"	--	false	false	false	false	"a way to make the booze troll feel less awful"	false	true	true	false	false	hideout	pre-boost-role rule	post-boost-role rule	--	--
+"low"	"bend"	--	--	--	false	false	false	false	"a way to rearrange the landscape [here-in of lobe end]"	false	true	true	false	false	lobe end	pre-low-bend rule	post-low-bend rule	--	--
+"bay"	"sail|sale"	--	--	--	false	false	false	false	"a way to repurpose the base ale"	false	true	true	false	false	lobe end	pre-bay-sale rule	post-bay-sale rule	--	"You may be able to participate in a [b]BAY SALE[r] if you've found the right location and [once-now of sco-six-quid] you have money." [?? very detailed fix: we need to set a boolean somehow if this was guessed in Lobe End ]
+"store"	"mile"	--	--	--	false	false	false	false	"the storm isle's alternate nature"	false	true	true	false	false	storm isle	pre-store-mile rule	post-store-mile rule	--	--
+"mensch"	"elf"	"mensh|mench|munch"	--	hom-mencsh-elf rule	false	false	false	false	"a nicer form of the MEN shelf"	false	true	true	false	false	storm isle	pre-mensch-elf rule	post-mensch-elf rule	--	--
+"mice"	"tall"	--	--	--	false	false	false	false	"what's inside MY STALL"	false	true	true	false	false	storm isle	pre-mice-tall rule	post-mice-tall rule	--	"You may be able to locate the [b]MICE TALL[r] [here-in of storm isle] [once-now of sco-gnome-old] you have a companion with good perception."
+"tree"	"small"	--	--	--	false	false	false	false	"something hidden [here-in of Trees Mall]"	false	true	true	false	false	trees mall	pre-tree-small rule	post-tree-small rule	--	--
+"tall"	"cake"	--	--	--	false	false	false	false	"how to get rid of your talk-ache"	false	true	true	false	false	trees mall	pre-tall-cake rule	post-tall-cake rule	--	"You may be able to create a [b]TALL CAKE[r] [once-now of pre-tall-cake rule] you have ingredients and cooking instruments."
+"treat"	"all"	--	"awl"	--	false	false	false	false	"what to do under the tree, tall"	false	true	true	false	false	trees mall	pre-treat-all rule	post-treat-all rule	--	"You may be able to [b]TREAT ALL[r] [here-in of trees mall] [once-now of sco-tall-cake] you have a tasty treat."
+"gnome"	"old"	--	--	--	false	false	false	false	"who has made sure there's no mold"	false	true	true	false	false	keepiller	pre-gnome-old rule	post-gnome-old rule	--	"You may be able to recruit the [b]GNOME OLD[r] [here-in of keepiller] [once-now of sco-wool-frock] you have adventuring gear."
+"rogue"	"old"	"rouge"	--	hom-rouge-old rule	false	false	false	false	"who is responsible for the row, gold"	false	true	true	false	false	keepiller	pre-rogue-old rule	post-rogue-old rule	--	"You may be able to recruit the [b]ROGUE OLD[r] [here-in of keepiller] [once-now of sco-six-quid] you have money."
+"manna"	"curb|kerb"	"man a|mana"	--	hom-mana-curb rule	false	false	false	false	"what lies under or near the manic herb"	false	true	true	false	false	keepiller	pre-manna-curb rule	post-manna-curb rule	--	"You may be able to find a [b]MANNA CURB[r] beneath the manna curb [here-in of keepiller] [once-now of sco-mensch-elf] you have someone with knowledge of wildlife and wildflowers."
+"plan"	"tracker"	--	--	--	false	false	false	false	"an alternate form of the plant racker"	false	true	true	false	false	keepiller	pre-plan-tracker rule	post-plan-tracker rule	--	--
+"see"	"design"	"c|sea"	--	hom-c-sea-design rule	false	false	false	false	"what the sign hides"	false	true	true	false	false	keep iller	pre-see-design rule	post-see-design rule	--	"You may be able to [b]SEE DESIGN[r] [here-in of keepiller] [once-now of whether or not pals-made >= 2] you have more support and are less scared."
+"knife"	"right|rite"	--	--	--	false	false	false	false	"what to find or do to leave"	false	true	true	false	false	nigh fright	pre-knife-right rule	post-knife-right rule	--	--
+"gaunt"	"raider"	--	"rater"	hom-gaunt-rater rule	false	false	false	false	"who the traitor was or can become"	false	true	true	false	false	worm eaten	pre-gaunt-raider rule	post-gaunt-raider rule	--	--
+"were"	"meetin"	"wier|whirr|warm|eden|war|meeting"	--	hom-whirr-meetin rule	false	false	false	false	"how Worm Eaten could feel more homey"	false	true	true	false	false	worm eaten	pre-were-meetin rule	post-were-meetin rule	--	"You will be able to say [b]WERE MEETIN[r] [once-now of pre-were-meetin rule] you have a full party available."
+"my"	"corps"	--	"core"	hom-my-core rule	false	false	false	false	"why your name is special"	false	true	true	false	false	worm eaten	pre-my-corps rule	post-my-corps rule	--	"You can call your companions [b]MY CORPS[r] [if pals-made < 2]once you have companions[else if pals-made < pals-needed]once you have enough of them[else][once-now of sco-treat-all] you've shared something together[end if]."
+"cease"	"cull"	"seas|sees|seize"	--	hom-cease-cull rule	false	false	false	false	"alerting the sea skull"	false	true	true	false	false	Doom Ending	pre-cease-cull rule	post-cease-cull rule	--	--
+"wipe"	"out"	--	--	--	false	false	false	false	"how to take down the skull"	false	true	true	false	false	Doom Ending	pre-wipe-out rule	post-wipe-out rule	--	"You will want to [b]WIPE OUT[r] the cause of your problems [once-now of sco-cease-cull] you have them in your crosshairs[if the room down from naffhaze is nowhere]. That's probably not for a while, though[end if]."
+"wide"	"vision"	--	--	--	false	false	false	false	"something more positive than the why-division"	false	true	false	false	false	Doom Ending	pre-wide-vision rule	post-wide-vision rule	--	"Sadly, you didn't quite experience enough to spread your wide vision."
+"do|due"	"mend|mending"	--	"dew"	--	false	false	false	false	"a way to steer things from a doom ending"	false	true	true	false	false	Doom Ending	pre-do-due-mend rule	post-do-due-mend rule	--	"You can think [b]DO/DUE MEND/MENDING[r] [once-now of sco-wipe-out] you've disposed of the sea skull."
+"weak"	"us"	--	--	--	false	false	false	false	"how to deflate [the earls]['] bravado"	false	true	false	false	false	brew swears	pre-weak-us rule	post-weak-us rule	--	--
+"grin"	"churls"	--	--	--	false	false	false	false	"a way to reclassify the grinch earls"	false	true	false	false	false	brew swears	pre-grin-churls rule	post-grin-churls rule	--	--
+"crew"	"dork"	--	--	--	false	false	false	false	"a way to explain the crude orc's status"	false	true	false	false	false	brew swears	pre-crew-dork rule	post-crew-dork rule	--	"[if doom ending is visited][dork-lockout][else]You can explain [the earls] see the crude orc as a [b]CREW DORK[r] [once-now of sco-weak-us] they seem a bit less strong[end if]."
+"ass"	"low|lo"	--	--	--	false	false	false	false	"a way to counter the ah-slow taunts"	false	true	false	false	false	brew swears	pre-ass-low rule	post-ass-low rule	--	--
+"bastard"	"e+h*"	--	--	--	false	false	false	false	"a way to counter the bah-sturdy taunts"	false	true	false	false	false	brew swears	pre-bastard-eee rule	post-bastard-eee rule	--	--
+"heckle"	"ass"	--	--	--	false	false	false	false	"a way to counter the heh-class taunts"	false	true	false	false	false	brew swears	pre-heckle-ass rule	post-heckle-ass rule	--	--
+"huh"	"shit"	--	--	--	false	false	false	false	"a way to counter the hush-it taunts"	false	true	false	false	false	brew swears	pre-huh-shit rule	post-huh-shit rule	--	--
+"lie"	"fuckers"	--	--	--	false	false	false	false	"a way to counter the life-occurs taunts"	false	true	false	false	false	brew swears	pre-lie-fuckers rule	post-lie-fuckers rule	--	--
+"were"	"dicks"	--	--	--	false	false	false	false	"a way to counter the taunting weird-icks"	false	true	false	false	false	brew swears	pre-were-dicks rule	post-were-dicks rule	--	--
+"gah"	"wanker"	--	--	--	false	false	false	false	"a way to counter Gawain Kerr's taunts"	false	true	false	false	false	brew swears	pre-gah-wanker rule	post-gah-wanker rule	--	--
 
 section main table text replacements
 
