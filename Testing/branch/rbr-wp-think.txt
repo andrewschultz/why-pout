@@ -393,7 +393,7 @@ You already pried a stalk!
 >think
 You can find a HIGH PLAIN now you have something that can reach that far up.
 
-@rej+
+@part
 #here begins the main testing bit for the 3x3 matrix of unguessed/sounds like/exactly right for each of the two words
 #I used High Plain since it had homonyms for both words
 #
@@ -426,7 +426,7 @@ You must have one word right and one word close for where to go from Hype Lane.
 >undo
 >undo
 
-@rej+
+@part+
 ##balance undo
 >high xx
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
@@ -456,7 +456,7 @@ You feel you've got the words right on separate occasions for where to go from H
 >undo
 >undo
 
-@rej+
+@part+
 ##balance undo
 >xx playin
 Hmm. That kind of partway SOUNDED like it should work, but it didn't.
@@ -477,7 +477,7 @@ You must have one word right for where to go from Hype Lane.
 >undo
 >undo
 
-@rej+
+@part+
 ##balance undo
 >hi xx
 Hmm. That kind of partway SOUNDED like it should work, but it didn't.
@@ -513,7 +513,7 @@ You must have one word right for where to go from Hype Lane.
 >undo
 >undo
 
-@part
+@part+
 #testcase-one-wrong-high-plain
 >xx plain
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
