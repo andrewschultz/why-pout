@@ -1247,6 +1247,7 @@ when play begins:
 to decide whether can-forward-dialogue:
 	if opt-chat-on is false, no;
 	if dialogue-row >= number of rows in table of dialogues, no;
+	if block-followers is true, no;
 	let my-nff be number of friendly followers;
 	if my-nff < 8 and orc is friendly, decrement my-nff;
 	if dialogue-row >= (my-nff * (my-nff - 1)) / 2, no;
