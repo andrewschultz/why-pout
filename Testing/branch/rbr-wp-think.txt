@@ -8,6 +8,7 @@
 
 file=reg-wp-think-min.txt,min,minimum walkthrough
 file=reg-wp-think-div.txt,div/rej,walkthrough with all relevant THINK
+file=reg-wp-think-partright.txt,part,walkthrough with partially right guesses
 
 #--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
 #--strict-file: this says that the project requires strict section marking e.g. @all instead of ==t1.
@@ -294,6 +295,15 @@ THINK
 >wool frock
 {$REJECT1}
 
+@part
+#testcase-one-wrong-an-aim
+>xx aim
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+\\
+>think
+An inner voice says "Fry! Twist!" You feel fright, wist. It's hard not to, since you don't have a name or a purpose. For some reason, you're focused on getting a name, but you've got thins nagging feeling that's not quite it.
+Perhaps if you press a bit more, some thoughts may come out.
+
 >an aim
 by a point
 
@@ -317,6 +327,14 @@ You can call your companions MY CORPS once you have companions.
 >an aim
 You already found a name and an aim!
 
+@part
+#testcase-one-wrong-two-maps
+>xx maps
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+\\
+>think
+You must have one word right for anything documenting a way out.
+
 >two maps
 by a point
 
@@ -338,6 +356,14 @@ Hmph. That still doesn't quite work! You'll figure out the how and when and wher
 >think
 You can find a HIGH PLAIN once you have something that can reach that far up.
 
+@part
+#testcase-one-wrong-self-owns
+>xx owns
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+\\
+>think
+You must have one word right for what to do with the cell phones.
+
 >self owns
 by a point
 
@@ -345,6 +371,14 @@ by a point
 #testcase-check-pre-self-owns-rule-if-cell-phones-are-not-in-hype-lane
 >self owns
 The prize talk has you distracted. It's got a point: you need to find something to get where you want. What's the something? You know where you want to get, the high plain/plane.
+
+@part
+#testcase-one-wrong-pry-stalk
+>xx stalk
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+\\
+>think
+You must have one word right for something physical amidst the prize talk.
 
 >pry stalk
 by a point
@@ -479,6 +513,14 @@ You must have one word right for where to go from Hype Lane.
 >undo
 >undo
 
+@part
+#testcase-one-wrong-high-plain
+>xx plain
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+\\
+>think
+You must have one word right for where to go from Hype Lane.
+
 >high plain
 by a point
 
@@ -503,6 +545,14 @@ by a point
 >brew swears
 {$REJECT2}
 
+@part
+#testcase-one-wrong-nah-phase
+>xx phase
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+\\
+>think
+You must have one word right for how to cut through the naff haze.
+
 >nah phase
 by a point
 
@@ -510,6 +560,14 @@ by a point
 #testcase-check-pre-nah-phase-rule-if-sco-nah-phase-is-true
 >nah phase
 You already dispelled the haze!
+
+@part
+#testcase-one-wrong-pole-east
+>xx east
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+\\
+>think
+You must have one word right for the source of your feeling policed.
 
 >pole east
 by a point
@@ -519,8 +577,24 @@ by a point
 >pole east
 You already discovered how you were being policed!
 
+@part
+#testcase-one-wrong-grow-star
+>xx star
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+\\
+>think
+You must have one word right for making it beyond the gross tar.
+
 >grow star
 by a point
+
+@part
+#testcase-one-wrong-key-pillar
+>xx pillar
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+\\
+>think
+You must have one word right for finding a way into the keep.
 
 >key pillar
 by a point
@@ -568,6 +642,12 @@ THINK
 >think
 You may be able to find a LOW DOOR here once you have a companion or companions small enough to dig a bit better.
 
+@part
+>xx out
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for how to dispel your high doubt.
+
 >hideout
 by a point
 
@@ -577,6 +657,12 @@ by a point
 You already dispelled doubt and found the hideout!
 
 >d
+
+@part
+>xx role
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to make the booze troll feel less awful.
 
 >boost role
 by a point
@@ -647,6 +733,12 @@ You don't want to wipe out the friendship you made.
 
 >n
 
+@part
+>xx frock
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for what is hidden in Wolf Rock.
+
 >wool frock
 by a point
 
@@ -692,6 +784,12 @@ You realize that, in order to participate in a bay sale for a bay sail, you need
 >bay sale
 You can't make out what sort of body of water is here. Well, not yet.
 
+@part
+>xx ocean
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for finding the surroundings here.
+
 >known ocean
 by a point
 
@@ -703,6 +801,12 @@ But you already got a notion for the ocean. And you didn't even need a potion!
 #+testcase-check-pre-bay-sale-rule-if-player-is-in-nonotion
 >bay sale
 There's water here, but it's much more than a bay.
+
+@part
+>xx quid
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for discovering what ails the sick squid.
 
 >six quid
 by a point
@@ -722,6 +826,12 @@ You may be able to SEE DESIGN in Keep (Iller) once you have more support and are
 
 >e
 
+@part
+>xx bend
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to rearrange the landscape here.
+
 >low bend
 by a point
 
@@ -729,6 +839,12 @@ by a point
 #testcase-check-pre-low-bend-rule-if-sco-low-bend-is-true
 >low bend
 You already found a low bend!
+
+@part
+>xx sail
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to repurpose the base ale.
 
 >bay sale
 by a point
@@ -743,6 +859,12 @@ by a point
 #testcase-check-pre-mice-tall-rule-if-sco-store-mile-is-false
 >mice tall
 {$REJECT2}
+
+@part
+>xx mile
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for the storm isle's alternate nature.
 
 >store mile
 by a point
@@ -768,6 +890,12 @@ You may be able to locate the MICE TALL here once you have a companion with good
 
 >w
 
+@part
+>xx old
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for who has made sure there's no mold.
+
 >gnome old
 by a point
 
@@ -792,6 +920,12 @@ You don't want to wipe out the friendships you made.
 
 >n
 
+@part
+>xx tall
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for what's inside MY STALL.
+
 >mice tall
 by a point
 
@@ -815,6 +949,12 @@ You may be able to find a LOW DOOR in Wolf Rock now you have a companion or comp
 
 >n
 
+@part
+>xx door
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for what the lode ore is hiding.
+
 >low door
 by a point
 
@@ -834,6 +974,12 @@ THINK
 #testcase-check-pre-oh-flier-rule-if-oaf-liar-is-not-in-we-loan
 >oh flyer
 {$REJECT2}
+
+@part
+>xx own
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for the sinister meaning behind We'll Own.
 
 >well own
 by a point
@@ -863,6 +1009,12 @@ You can't enjoy solitude with that merchant around.
 >think
 You may be able to enjoy your solitude with WHEE LONE here once you actually have solitude.
 
+@part
+>xx chant
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to zone some merchant out.
+
 >summer chant
 by a point
 
@@ -875,6 +1027,12 @@ You already found cheeriness outside of the merchant!
 >think
 You may be able to expose some merchant's BILE OH now you've found something positive to say to prep yourself.
 
+@part
+>xx oh
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to counter the buy-low rhetoric.
+
 >bile oh
 by a point
 
@@ -882,6 +1040,12 @@ by a point
 #testcase-think-table-of-main-oronyms-pre-whee-lone-rule
 >think
 You may be able to enjoy your solitude with WHEE LONE here now you actually have solitude.
+
+@part
+>xx lone
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to enjoy solitude.
 
 >whee lone
 by a point
@@ -910,6 +1074,12 @@ You may be able to say OH FLIER around the oaf liar once you have exactly one qu
 You may be able to SEE DESIGN here now you have more support and are less scared.
 You may be able to recruit the ROGUE OLD here now you have money.
 
+@part
+>xx old
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for who is responsible for the row, gold.
+
 >rogue old
 by a point
 
@@ -928,6 +1098,12 @@ But you already got the rogue (old) to join you!
 #+testcase-think-table-of-main-oronyms-pre-oh-flier-rule
 >think
 You may be able to say OH FLIER around the oaf liar now you have exactly one quid left.
+
+@part
+>xx flier
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to get something from the oaf liar.
 
 >oh flier
 by a point
@@ -979,6 +1155,12 @@ A war file might be useful, but you'd have no way to organize the information ri
 
 >w
 
+@part
+>xx tracker
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for an alternate form of the plant racker.
+
 >plan tracker
 by a point
 
@@ -1009,6 +1191,12 @@ Hmm. You
 >undo
 >undo
 
+@part
+>xx raider
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for who the traitor was or can become.
+
 >gaunt raider
 by a point
 
@@ -1017,6 +1205,12 @@ by a point
 >e
 
 >n
+
+@part
+>xx elf
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a nicer form of the MEN shelf.
 
 >mensch elf
 by a point
@@ -1049,8 +1243,20 @@ You know there is THE FILE, but which file is THE FILE? The thief isle has proba
 You may be able to recover the WAR FILE on the wharf isle here now you have something you can write down its main ideas in.
 You may be able to make sense of THE FILE here once you've gotten enough information from companions.
 
+@part
+>xx file
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for what is on Wharf Isle.
+
 >war file
 by a point
+
+@part
+>xx dwarf
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for who is on Wand Wharf.
 
 >wan dwarf
 by a point
@@ -1101,6 +1307,12 @@ You already got THE FILE. See where else you can visit.
 >undo
 >undo
 
+@part
+>xx vial
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for what is on Grove Isle.
+
 >grow vial
 by a point
 
@@ -1126,6 +1338,12 @@ You may be able to find a MANNA CURB beneath the manna curb in Keep (Iller) now 
 #testcase-check-pre-treat-all-rule-if-tree-tall-is-not-in-trees-mall
 >treat all
 {$REJECT2}
+
+@part
+>xx small
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for something hidden here.
 
 >tree small
 by a point
@@ -1184,20 +1402,27 @@ You may be able to make sense of THE FILE in Known Ocean now you've gotten enoug
 
 >u
 
-@rej
+@part
+>xx swears
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for seeing BRUISE WARES's true nature.
+
+@!min
 >ao
 \\
 >brew swears
 by a bonus point
 
-@rej+
+@rej
 #testcase-check-pre-brew-swears-rule-if-sco-brew-swears-is-true
 >brew swears
 But you've already opened the passage through BRUISE WARES!
 
-@rej+
+@!min
 >in
-\\
+
+@rej
 #testcase-check-pre-crew-dork-rule-if-sco-weak-us-is-false
 >crew dork
 The crude orc doesn't believe they're being used by the grinch earls. Why, it's part of the hazing! They have to show they're tough!
@@ -1235,10 +1460,17 @@ You lost the chance to say CREW DORK to the crude orc a bit more gently, as you 
 >undo
 >undo
 
-@rej+
+@part
+>xx us
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for how to deflate the grinch earls' bravado.
+
+@!min
 >weak us
 by a bonus point
-\\
+
+@rej
 #+testcase-think-table-of-main-oronyms-pre-crew-dork-rule
 >think
 You can explain the grinch earls see the crude orc as a CREW DORK now they seem a bit less strong.
@@ -1251,11 +1483,17 @@ You lost the chance to say CREW DORK to the crude orc a bit more gently, even th
 >undo
 >undo
 
-@rej+
+@part
+>xx dork
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to explain the crude orc's status.
+
+@!min
 >crew dork
 by a bonus point
 
-@rej+
+@rej
 #testcase-check-pre-crew-dork-rule-if-sco-crew-dork-is-true
 >crew dork
 You already broke the truth to the crude orc as gently as you could!
@@ -1265,20 +1503,57 @@ You already broke the truth to the crude orc as gently as you could!
 >weak us
 You already established the grinch earls cursed out of weakness or, at least, not fully from strength!
 
-@rej+
+@part
+>xx low
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to counter the ah-slow taunts.
+
+@!min
+>ass low
+by a bonus point
+
+@part
+>xx eee
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to counter the bah-sturdy taunts.
+
+@!min
 >bastard eee
 by a bonus point
-\\
+
+@part
+>xx ass
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to counter the heh-class taunts.
+
+@!min
 >heckle ass
 by a bonus point
-\\
+
+@part
+>xx shit
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to counter the hush-it taunts.
+
+@!min
 >huh shit
 by a bonus point
-\\
+
+@part
+>xx fuckers
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to counter the life-occurs taunts.
+
+@!min
 >lie fuckers
 by a bonus point
 
-@rej+
+@rej
 ##balance undos
 >grin churls
 by a bonus point
@@ -1295,18 +1570,41 @@ by a bonus point
 >undo
 >undo
 
-@rej+
+@part
+>xx dicks
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to counter the taunting weird-icks.
+
+@!min
 >were dicks
 by a bonus point
-\\
+
+@part
+>xx churls
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to reclassify the grinch earls.
+
+@!min
 >grin churls
 by a bonus point
 The grin churls remark that you seemed so open-minded, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do.
 
-@rej+
+@rej
 #+testcase-check-pre-weak-us-rule-if-sco-weak-us-is-true
 >weak us
 You already established the grin churls cursed out of weakness or, at least, not fully from strength!
+
+@part
+>xx wanker
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to counter Gawain Kerr's taunts.
+
+@!min
+>gah wanker
+by a bonus point
 
 >out
 
@@ -1328,8 +1626,20 @@ You may be able to create a TALL CAKE once you have ingredients and cooking inst
 >undo
 >undo
 
+@part
+>xx design
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for what the sign hides.
+
 >see design
 by a point
+
+@part
+>xx right
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for what to find or do to leave.
 
 >knife rite
 by a point
@@ -1346,6 +1656,12 @@ You may be able to create a TALL CAKE once you have ingredients and cooking inst
 #testcase-check-pre-see-design-rule-if-sco-see-design-is-true
 >see design
 You already saw the design in the seedy sign. You don't need to redo things.
+
+@part
+>xx curb
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for what lies under or near the manic herb.
 
 >manna curb
 by a point
@@ -1385,6 +1701,12 @@ You may be able to TREAT ALL in Trees Mall once you have a tasty treat.
 >think
 You may be able to make sense of THE FILE in Known Ocean now you've gotten enough information from companions.
 
+@part
+>xx cake
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for how to get rid of your talk-ache.
+
 >tall cake
 by a point
 
@@ -1399,6 +1721,12 @@ You can call your companions MY CORPS once you've shared something together.
 #testcase-check-pre-my-corps-rule-if-sco-treat-all-is-false
 >my corps
 They are your corps, and yet, there's something to share with them. Something to enjoy together, first.
+
+@part
+>xx all
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for what to do under the tree, tall.
 
 >treat all
 by a point
@@ -1420,6 +1748,12 @@ You already shared treats!
 
 >s
 
+@part
+>xx file
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for what is on Thief Isle.
+
 >the file
 by a point
 
@@ -1437,6 +1771,12 @@ You will be able to say WERE MEETIN now you have a full party available.
 >my corps
 You sense you have a full party, and you're in a good place, but the atmosphere is wrong for planning and discussions.
 
+@part
+>xx meetin
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for how Worm Eaten could feel more homey.
+
 >were meetin
 by a point
 
@@ -1451,6 +1791,12 @@ You haven't identified anyone terribly evil you want to wipe out.
 #+testcase-think-table-of-main-oronyms-pre-my-corps-rule
 >think
 You can call your companions MY CORPS now you've shared something together.
+
+@part
+>xx corps
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for why your name is special.
 
 >my corps
 by a point
@@ -1517,6 +1863,12 @@ You can think DO/DUE MEND/MENDING once you've disposed of the sea skull.
 You will want to WIPE OUT the cause of your problems once you have them in your crosshairs.
 !not for a while
 
+@part
+>xx cull
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for alerting the sea skull.
+
 >cease cull
 by a point
 
@@ -1531,6 +1883,12 @@ You already played defense. Now's the time to go on offense!
 You will want to WIPE OUT the cause of your problems now you have them in your crosshairs.
 !not for a while
 
+@part
+>xx out
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for how to take down the skull.
+
 >wipe out
 by a point
 
@@ -1539,7 +1897,13 @@ by a point
 >wipe out
 You already wiped out the sea skull! Now is the time for healing.
 
-@rej+
+@part
+>xx vision
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for something more positive than the why-division.
+
+@rej
 >wide vision
 Your score just went up by a bonus point!
 \\
@@ -1754,6 +2118,12 @@ You can think DO/DUE MEND/MENDING now you've disposed of the sea skull.
 #testcase-reject-end-table-of-main-oronyms-pre-wool-frock-rule
 >wool frock
 {$REJECT2}
+
+@part
+>xx mend
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to steer things from a doom ending.
 
 >do mending
 by a point
