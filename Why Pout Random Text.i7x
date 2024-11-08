@@ -22,6 +22,8 @@ current-random-table is a table name that varies. current-random-table is table 
 
 chapter variables
 
+gs-note-chatopt is a truth state that varies.
+
 final-list-index is a number that varies.
 modular-list-index is a number that varies.
 
@@ -80,7 +82,10 @@ every turn when can-forward-dialogue:
 			now current-random-table is table of further dialogues;
 			now dialogue-row is 0;
 		else:
-			say "[line break][i][bracket][b]NOTE[r][i]: you've made it through all the random dialogues. There are no more. I hope you found them entertaining.[close bracket][r]";
+			say "[line break][i][bracket][b]NOTE[r][i]: you've made it through all the random dialogues. There are no more. I hope you found them entertaining.[close bracket][r][line break]";
+	if gs-note-chatopt is false:
+		now gs-note-chatopt is true;
+		say "[line break][b]NOTE[r][i]: this is random dialogue you can shut off with [b]SCORCH AT[r] or turn back on with [b]SCORE CHAT[r][i].[close bracket][r][line break]";
 
 volume the actual tables
 
