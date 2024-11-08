@@ -16,6 +16,7 @@ file=reg-wp-thru-hints.txt,hin/hint/hints,walkthrough testing eye cluing
 file=reg-wp-thru-goto.txt,goto/gt/go,walkthrough testing GOTO
 file=reg-wp-thru-lookinv.txt,li/look/inv,walkthrough testing inventory and room description changes
 file=reg-wp-thru-verbs.txt,v/verb/verbs,special verb testing inventory and room description changes
+file=reg-wp-thru-npctalk.txt,npc/talk/npctalk,NPC random chatter
 
 #--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
 #--strict-file: this says that the project requires strict section marking e.g. @all instead of ==t1.
@@ -1111,12 +1112,17 @@ That seedy sign stands off to the side here. It's no longer scary, but you don't
 
 >e
 
+@npc
+/^rand-npc 21 \.\.\.
+
 @gt
 #+testcase-goto-table-of-noways-naffhaze
 >u
 You can go down or in the cardinal directions, but not up.
 
 >d
+@npc
+/^rand-npc 3[1-2] \.\.\.
 
 @all
 #testcase-room-names-worm-eaten
@@ -1173,6 +1179,9 @@ to want to cut in a bit for their turn some time.
 
 >u
 
+@npc
+/^rand-npc 3[1-2] \.\.\.
+
 @go
 >in
 You'll have to figure what else BRUISE WARES is advertising, first.
@@ -1206,6 +1215,10 @@ BRUISE WARES, some sort of odd disturbing shop, has popped up here. You can prob
 
 @!min
 >in
+
+@npc
+#once we go inside brew swears, nobody can be chatting
+! ... 
 
 @all
 #testcase-room-names-brew-swears
@@ -1484,7 +1497,13 @@ Now that you got rid of the orc's old associates and their, um, mentor, there's 
 @!min
 >out
 
+@npc
+/^rand-npc 4[1-3] ...
+
 >e
+
+@npc
+/^rand-npc 4[1-3] ...
 
 @all
 #testcase-room-names-lobe-end
@@ -1569,6 +1588,9 @@ You have a name, too, now, you remember: Mike Orr.
 Fortunately, the We-Craft Weak Raft from the bay sale floats here, ready to take you north across the water and back, as many times as needed.
 
 >n
+
+@npc
+/^rand-npc 4[1-3] ...
 
 @all
 #testcase-room-names-store-mile
@@ -1672,9 +1694,18 @@ You can only go back south to Lobe End or north to the rest of the mall.
 
 >s
 
+@npc
+/^rand-npc 5[1-4] ...
+
 >w
 
+@npc
+/^rand-npc 5[1-4] ...
+
 >n
+
+@npc
+/^rand-npc 5[1-4] ...
 
 @verbs
 >eat ore
@@ -1706,6 +1737,9 @@ There's a huge pile of lode ore here, too, and you found a low door in it that l
 This wouldn't have worked even before the mice found a passage.
 
 >in
+
+@npc
+/^rand-npc 5[1-4] ...
 
 @all
 #testcase-room-names-we-loan
@@ -1914,9 +1948,18 @@ You can only go back OUT here.
 
 >out
 
+@npc
+/^rand-npc 6[1-5] ...
+
 >s
 
+@npc
+/^rand-npc 6[1-5] ...
+
 >w
+
+@npc
+/^rand-npc 6[1-5] ...
 
 @hint
 >eye plant
@@ -2015,6 +2058,9 @@ The manna is raw material for more standard food.
 
 >e
 
+@npc
+/^rand-npc 6[1-5] ...
+
 @alt
 ##balance undos
 # this tests getting the grow vial first then TREE SMALL
@@ -2040,6 +2086,9 @@ But wait! You can use the grow vial! It makes the tree (small) into a tree (tall
 >undo
 
 >e
+
+@npc
+/^rand-npc 6[1-5] ...
 
 >n
 
@@ -2222,11 +2271,23 @@ The ocean surrounds you on all sides, but it's less intimidating now you rode th
 
 >n
 
+@npc
+/^rand-npc 7[1-6] ...
+
 >e
 
->n
+@npc
+/^rand-npc 7[1-6] ...
 
 >n
+
+@npc
+/^rand-npc 7[1-6] ...
+
+>n
+
+@npc
+/^rand-npc 7[1-6] ...
 
 @all
 # this makes sure TREE SMALL then bringing the grow vial back works okay
@@ -2386,6 +2447,9 @@ You already ate the only thing you needed to.
 
 >s
 
+@npc
+/^rand-npc 7[1-6] ...
+
 @all
 The gaunt raider raises a hand. They have an idea! The abandoned mall must have all sorts of stuff that can be fashioned into weapons. Not top-of-the-line, but enough to get by. Heartened by your recent meal, your party takes the time to find weapons. You all keep them hidden until needed.
 
@@ -2395,11 +2459,17 @@ You and your party are also armed for any conflict that may arise.
 
 >s
 
+@npc
+/^rand-npc 7[1-6] ...
+
 @verbs
 >eat raft
 You already ate the only thing you needed to.
 
 >w
+
+@npc
+/^rand-npc 8[1-7] ...
 
 @min
 Odd! BRUISE WARES has vanished. Well, one less dead end to worry about.
@@ -2408,6 +2478,9 @@ Odd! BRUISE WARES has vanished. Well, one less dead end to worry about.
 !point
 
 >s
+
+@npc
+/^rand-npc 8[1-7] ...
 
 @hom
 #testcase-homonym-reject-table-of-main-oronyms-thee
@@ -2444,7 +2517,47 @@ The ocean surrounds you on all sides, but it's less intimidating now you rode th
 
 >n
 
+@npc
+/^rand-npc 8[1-7] ...
+
 >d
+
+@npc
+/^rand-npc 8[1-7] ...
+\\
+>z
+/^rand-npc 8[1-7] ...
+\\
+>z
+/^rand-npc 8[1-7] ...
+\\
+>z
+/^rand-npc 8[1-7] ...
+NOTE: you've made it through the initial random dialogues, where the orc's dialogue is last. There are more random ones ahead. If you want to read them all without hitting L a lot, read the tables file.
+\\
+>z
+/^rand-npc [1-8][1-7] \.\.\.
+\\
+>scorch at
+You indicate "we're draining" at chatter ...
+Your party is now keeping quiet every turn.
+\\
+>scorch at
+You indicate "we're draining" at chatter ...
+Your party is already keeping quiet every turn.
+\\
+>z
+!rand-npc
+\\
+>score chat
+You give the thumbs-up to word-raining ...
+Your party is now chatting away randomly every turn.
+\\
+>score chat
+You give the thumbs-up to word-raining ...
+Your party is already chatting away randomly every turn.
+>z
+rand-npc
 
 @gt
 #testcase-goto-table-of-noways-worm-eaten
