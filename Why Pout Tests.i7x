@@ -61,11 +61,13 @@ chapter longer tests
 
 test bo with "test w1/test w2/test w3/test w4/test wb".
 
-test almost with "test w1/test w2/test w3/test w4/test w5/test w6/test w7/test w8/test w9/test w10/test w11/test w12".
+test minalm with "test w1/test w2/test w3/test w4/test w5/test w6/test w7/test w8/test w9/test w10/test w11/test w12".
 
-test a with "test almost/test w13".
+test min with "test almost/test w13".
 
-test as with "test w1/test w2/test w3/test w4/test w5/test w6/test wall/test w7/test w8/test w9/test w10/test w11/test w12/test w13".
+test maxalm with "test w1/test w2/test w3/test w4/test w5/test w6/test wall/test w7/test w8/test w9/test w10/test w11/test w12".
+
+test max with "test maxalm/test w13".
 
 chapter war pawn
 
