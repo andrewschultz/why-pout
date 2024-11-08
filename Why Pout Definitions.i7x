@@ -227,7 +227,7 @@ when play begins:
 	sort swears-order in random order;
 	swear-prev-next-from-order;
 
-to swear-prev-next-from-order: [ make a linked list from the sorted list. This could have been done right away, but the code still would've been tricky. We'd need "a swear-blob can be linked-yet" then "let first-swear be (random swear)" then let next-swear be a random not linked-yet swear" and add prev/next. Then when none are linked, let prev-swear of first be last. That seemed trickier than this. ]
+to swear-prev-next-from-order: [ make a linked list from the sorted list. This could have been done right away, but the code still would've been tricky. We'd need "a swear-blob can be linked-yet" then "let first-swear be (random swear)" then "let next-swear be a random not linked-yet swear" and add prev/next. Then when none are linked, let prev-swear of first be last. That seemed trickier than this. ]
 	now prev-swear of (entry 1 in swears-order) is entry (number of swearblobs) in swears-order;
 	now next-swear of entry (number of swearblobs) in swears-order is (entry 1 in swears-order);
 	repeat with X running from 2 to number of swearblobs:

@@ -244,7 +244,7 @@ a wordtwisting rule (this is the pre-low-door rule):
 
 this is the post-low-door rule:
 	now sco-low-door is true;
-	say "The lode and the ore are tough to shift around for someone as big as yourself. But the tall mice manage to get into those small niches you can't. They locate a low door, then, point to where you can remove the ore to create a passage. You'll have to duck a bit to get in, but you can now go [b]INSIDE[r]. Hooray!";
+	say "The lode and the ore are tough to shift around for someone as big as yourself. But the tall mice manage to get into those small niches you can't. And they work so fast, you daren't even ironically say 'My! Slow mice, lo!'[paragraph break]They locate a low door, then, point to where you can remove the ore to create a passage. You'll have to duck a bit to get in, but you can now go [b]INSIDE[r]. Hooray!";
 	reveal We Loan to inside;
 	declue lode ore;
 
@@ -339,7 +339,7 @@ this is the hom-mencsh-elf rule:
 
 this is the post-mensch-elf rule:
 	now sco-mensch-elf is true;
-	say "You knock about the MEN shelf a bit, unable to find anything. It's really a collection of shelves that you disassemble and reassemble. Eventually, you're about to give up, and it all collapses, taking a chunk of wall with it. Our pops a mensch elf, quite grateful you helped them escape.";
+	say "You knock about the MEN shelf a bit, unable to find anything. It's really a collection of shelves that you disassemble and reassemble. Eventually, you're about to give up, and it all collapses, taking a chunk of wall with it. Our pops a mensch elf, quite grateful you helped them escape.[paragraph break]They mention their nigh self was a nice elf, but they want to be so much more!";
 	moot men shelf;
 	befriend mensch elf;
 
@@ -893,7 +893,8 @@ this is the hom-my-core rule:
 
 this is the post-my-corps rule:
 	now sco-my-corps is true;
-	say "Your pep talk brings everyone together. They are ready for ... well, whatever is next. This feels like the right place. You clear out a passage below. You swear a solemn pact that everyone will defend everyone else, regardless of what happens.";
+	say "Your pep talk brings everyone together. You worry it's too simplistic, especially 'titan's lairs? Titan slayers!'";
+	say "[line break]But everyone seems enthused, ready for what happens next. Gathering information from everyone, you start diggint to find tunnels below. You clear out a passage below. You swear a solemn pact that everyone will defend everyone else, regardless of what happens.";
 	now Doom Ending is mapped below Worm Eaten;
 	declue Mike Orr;
 
@@ -1082,7 +1083,7 @@ a wordtwisting rule (this is the pre-gah-wanker rule):
 
 this is the post-gah-wanker rule:
 	now sco-gah-wanker is true;
-	say "'No, dude. Just, no,' says Gawain Kerr. 'I mean, it's different when I make fun of other people. I mean, if it's more profane, they deserve me to act like they were too clueless to notice it, and if it's less profane, well, it can't hurt.'[paragraph break]Not knowing what to do, you shrug.[paragraph break]'Cold of you. You know, you looked like such a nice person, but after saying that, well, you proved you're a liar. Unlike me. People know I'm risque. Anyway, you don't appreciate me, so there's no use me hanging around you.'[paragraph break]'You'll be sad one day you angered a Sofa King like me!'";
+	say "'No, dude. Just, no,' says Gawain Kerr. 'I mean, it's different when I make fun of other people. I mean, if it's more profane, they deserve me to act like they were too clueless to notice it, and if it's less profane, well, it can't hurt.'[paragraph break]Not knowing what to do, you shrug.[paragraph break]'Cold of you. You know, you looked like such a nice person, but after saying that, well, you proved you're a liar. Unlike me. People know I'm risque. Anyway, you don't appreciate me, so there's no use me hanging around you.'[paragraph break]'You'll be sad one day you angered a Sofa King like me!'[paragraph break]Thankfully, you will have no way of seeing the, uh, new direction he will take.";
 	moot Gawain Kerr;
 
 section brew swears auxiliary
@@ -1108,7 +1109,7 @@ to swearzap (sw - a swearblob):
 
 to grinch-go-check:
 	if sco-grin-churls is true and number of not moot swearblobs is 0:
-		say "[line break]The [grinch] remark that you seemed so open-minded, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do.[paragraph break]But first they call in someone who they're sure can take care of you: GAWAIN KERR![paragraph break]On arriving, Gawain asks you your name. 'Pfft! Meeker? Oh. Mike OR. Sure ain't Mike AND, amirite?' You move to protest, but your party didn't follow you in.";
+		say "[line break]The [grinch] remark that you seemed so open-minded, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do, with a 'Weak wit? We quit!' and, tailing off, 'We're stirred...'[paragraph break]But first they call in someone who they're sure can take care of you: GAWAIN KERR![paragraph break]On arriving, Gawain asks you your name. 'Pfft! Meeker? Oh. Mike OR. Sure ain't Mike AND, amirite?' You move to protest, but your party didn't follow you in.";
 		moot grinch earls;
 		move gawain kerr to Brew Swears;
 
