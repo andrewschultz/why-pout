@@ -50,10 +50,10 @@ to decide whether can-forward-dialogue:
 	if dialogue-row >= number of rows in current-random-table, no;
 	if block-followers is true, no;
 	if current action is ting, no;
+	if player is in doom ending and skull is in doom ending, no;
 	let my-nff be number of friendly followers;
 	if my-nff < 8 and orc is friendly, decrement my-nff;
 	if dialogue-row >= (my-nff * (my-nff - 1)) / 2, no;
-	say "[my-nff], [(my-nff * (my-nff - 1)) / 2].";
 	yes;
 
 to decide which follower is talker1: decide on entry t1 of followers-as-joined;
@@ -72,7 +72,7 @@ every turn when can-forward-dialogue:
 		let t0 be t1;
 		now t1 is t2;
 		now t2 is t0;
-	if debug-state is true, say "[mynum entry] ... ";
+	if debug-state is true, say "rand-npc [mynum entry] ... ";
 	say "[mytext entry][line break]";
 	if dialogue-row is number of rows in current-random-table:
 		if current-random-table is table of initial dialogues:
