@@ -127,7 +127,7 @@ the block sleeping rule is not listed in any rulebook.
 the block singing rule is not listed in any rulebook.
 
 check singing:
-	if player is in brew swears, say "You conjure some funk rap, inspired by the specific environs." instead;
+	if player is in brew swears, say "You conjure some funk rap, inspired by the specific environs. It's not a totally tasteless new ditty." instead;
 	say "Funny, you feel a taste of icing." instead;
 
 check attacking:
@@ -861,7 +861,7 @@ understand the command "score chat" as something new.
 understand "score chat" as chatoning.
 
 carry out chatoning:
-	say "You give the thumbs-up to any old chat...[paragraph break]";
+	say "You give the thumbs-up to word-raining ... [paragraph break]";
 	toggle-chat true;
 	the rule succeeds;
 
@@ -874,7 +874,7 @@ understand the command "scorch at" as something new.
 understand "scorch at" as chatoffing.
 
 carry out chatoffing:
-	say "You give a be-quiet glare...[paragraph break]";
+	say "You indicate 'we're draining' at chatter ...[paragraph break]";
 	toggle-chat false;
 	the rule succeeds;
 
