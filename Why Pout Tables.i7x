@@ -1195,31 +1195,35 @@ rule for printing a parser error when the latest parser error is the can't see a
 
 volume NPC chatter
 
+include Why Pout Random Text by Andrew Schultz.
+
 to decide which follower is talker1: decide on entry t1 of followers-as-joined;
 to decide which follower is talker2: decide on entry t2 of followers-as-joined;
 
-table of dialogues [this should have 28 entries. Runoff will have its own randomness.]
+current-random-table is a table name that varies. current-random-table is table of initial dialogues.
+
+table of initial dialogues [this should have 28 entries. Runoff will have its own randomness.]
 mynum	mytext
-0	"[The talker1] and [the talker2] sing the hit ballad 'Mile of My Love' together."
-0	"[The talker1] and [the talker2] pump each other up with 'Weep? Rep! We prep!'"
+0	"[t1t2] sing the hit ballad 'Mile of My Love' together."
+0	"[t1t2] pump each other up with 'Weep? Rep! We prep!'"
 0	"[The talker1] reacts to [the talker2]'s terrible puns with 'Aw, flow off, lo!'"
-0	"[The talker1] and [the talker2] berate science fiction. More specifically, they start ripping star tripping."
+0	"[t1t2] berate science fiction. More specifically, they start ripping star tripping."
 0	"[The talker1] remarks 'Sun god sung? Odd!' to [the talker2]."
-0	"[The talker1] and [the talker2] briefly punk you with 'Weak wit! We quit!'"
-0	"[The talker1] and [the talker2] briefly inspire each other to seem, or see, more."
-0	"[The talker1] and [the talker2] discuss aesthetics: 'White owls? Why, towels?'"
+0	"[t1t2] briefly inspire each other to seem, or see, more."
+0	"[t1t2] discuss the artsy book [i]Glow, Bland Globe Land[r]."
+0	"[t1t2] discuss aesthetics: 'White owls? Why, towels?'"
 0	"In a fit of bravado, [the talker1] snarks 'Bah! Scum boss, come!' [The talker2] soberly remarks, 'Uh, prepare up, repair.'"
-0	"[The talker1] and [the talker2] rib each other: 'Sane? Oh, say, NO!'"
-0	"[The talker1] and [the talker2] agree: 'Worse toured? We're stirred!'"
-0	"[The talker1] and [the talker2] butter you up: 'See leadin['] seal Eden!'"
-0	"[The talker1] and [the talker2] nudge you: 'Uh, plots up?' 'Lots,' you reply."
-0	"[The talker1] and [the talker2] play 'Eyes, peek, I speak' to pass the time."
-0	"[The talker1] and [the talker2] discuss the opulence of Go-True-GOAT Rue."
-0	"[The talker1] and [the talker2] discuss vacations at the Nice-Trip-Nigh Strip."
-0	"[The talker1] and [the talker2] discuss a moral dilemma: 'Lie for life, or...?'"
-0	"[The talker1] and [the talker2] bemoan the loss-fear law sphere enveloping a good chunk of the world."
+0	"[t1t2] rib each other: 'Sane? Oh, say, NO!'"
+0	"[t1t2] butter you up: 'See leadin['] seal Eden!'"
+0	"[t1t2] nudge you: 'Uh, plots up?' 'Lots,' you reply."
+0	"[t1t2] play 'Eyes, peek, I speak' to pass the time."
+0	"[t1t2] cross-motivate: 'Key? Prepare, keep, repair.'"
+0	"[t1t2] discuss the opulence of Go-True-GOAT Rue."
+0	"[t1t2] discuss vacations at the Nice-Trip-Nigh Strip."
+0	"[t1t2] discuss a moral dilemma: 'Lie for life, or...?'"
+0	"[t1t2] bemoan the loss-fear law sphere enveloping a good chunk of the world."
 0	"[The talker1], after jokey banter from [the talker2], says 'A score, ace! Cor[']!'"
-0	"[The talker1] and [the talker2] shudder at the twin villains Scarf Ace and Scar Face."
+0	"[t1t2] shudder at the twin villains Scarf Ace and Scar Face."
 0	"[The talker1] defeats [the talker2] in rock-paper-scissors. 'My twin might win,' gripes [the talker2]."
 80	"You hear the orc's voice: 'Grow now? Groan! Ow!' Then laughter from the orc and [the talker2]."
 80	"[The talker2] playfully chides the orc 'Nuke id, new kid.'"
@@ -1230,12 +1234,12 @@ mynum	mytext
 80	"'Wan adage? Wanna DODGE,' the orc complains to [the talker2]. It's restated better next time."
 
 when play begins:
-	sort table of dialogues in random order;
-	sort table of dialogues in mynum order;
+	sort table of initial dialogues in random order;
+	sort table of initial dialogues in mynum order;
 	let tens be 2;
 	let ones be 1;
 	let numlist be { 1 };
-	repeat through table of dialogues:
+	repeat through table of initial dialogues:
 		now mynum entry is (tens * 10);
 		increase mynum entry by (entry ones in numlist);
 		increment ones;
@@ -1247,8 +1251,9 @@ when play begins:
 
 to decide whether can-forward-dialogue:
 	if opt-chat-on is false, no;
-	if dialogue-row >= number of rows in table of dialogues, no;
+	if dialogue-row >= number of rows in current-random-table, no;
 	if block-followers is true, no;
+	if current action is ting, no;
 	let my-nff be number of friendly followers;
 	if my-nff < 8 and orc is friendly, decrement my-nff;
 	if dialogue-row >= (my-nff * (my-nff - 1)) / 2, no;
@@ -1257,7 +1262,7 @@ to decide whether can-forward-dialogue:
 
 every turn when can-forward-dialogue:
 	increment dialogue-row;
-	choose row dialogue-row in table of dialogues;
+	choose row dialogue-row in current-random-table;
 	now t1 is mynum entry / 10;
 	now t2 is remainder after dividing mynum entry by 10;
 	if number of friendly followers < 8 and a random chance of 1 in 2 succeeds:
@@ -1266,6 +1271,13 @@ every turn when can-forward-dialogue:
 		now t2 is t0;
 	if debug-state is true, say "[mynum entry] ... ";
 	say "[mytext entry][line break]";
+	if dialogue-row is number of rows in current-random-table:
+		if current-random-table is table of initial dialogues:
+			say "[line break][i][bracket][b]NOTE[r][i]: you've made it through the initial random dialogues, where the orc's dialogue is last. There are more random ones ahead. If you want to read them all without hitting [b]L[r][i] a lot, read the tables file.[close bracket][r]";
+			now current-random-table is table of further dialogues;
+			now dialogue-row is 0;
+		else:
+			say "[line break][i][bracket][b]NOTE[r][i]: you've made it through all the random dialogues. There are no more. I hope you found them entertaining.[close bracket][r]";
 
 volume can't go that way
 
