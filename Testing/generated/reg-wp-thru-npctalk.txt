@@ -84,9 +84,14 @@ by a point
 >e
 
 /^rand-npc 21 \.\.\.
+this is random dialogue
+
+>verbs
+To control random follower chat, you can type SCORE CHAT to turn it on or SCORCH AT to turn it off.
 
 >d
 /^rand-npc 3[1-2] \.\.\.
+!this is random dialogue
 
 >gaunt raider
 by a point
