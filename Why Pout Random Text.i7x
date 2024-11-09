@@ -102,7 +102,7 @@ mynum	mytext
 0	"[The talker1] react[nosplur1] to [the talker2]'s terrible puns with 'Aw, flow off, lo!'"
 0	"[t1t2] berate science fiction. More specifically, they start ripping star tripping."
 0	"[The talker1] remark[nosplur1] 'Sun god sung? Odd!' to [the talker2]."
-0	"[t1t2] briefly inspire each other to seem, or see, more."
+0	"[t1t2] briefly go in for cynicism: 'High pay? Hype, eh?'"
 0	"[t1t2] discuss the artsy book [i]Glow, Bland Globe Land[r]."
 0	"[t1t2] discuss aesthetics: 'White owls? Why, towels?'"
 0	"In a fit of bravado, [the talker1] snark[nosplur1] 'Bah! Scum boss, come!' [The talker2] soberly remark[nosplur2], 'Uh, prepare up, repair.'"

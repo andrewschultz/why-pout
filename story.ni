@@ -779,6 +779,10 @@ report verbsing when player has eyes:
 	say "With [the eyes], you can [b]EYE[r] the area to see if it can be changed, or you can [b]EYE[r] any object.";
 	continue the action;
 
+report verbsing when gs-note-chatopt is true:
+	say "To control random follower chat, you can type [b]SCORE CHAT[r] to turn it on or [b]SCORCH AT[r] to turn it off.";
+	continue the action;
+
 report verbsing when player has war pawn:
 	say "With [the war pawn], [if gs-war-pawn-try is true][b]WARP ON[r][else]there must be a way[end if] to gain insight to pass a tricky puzzle.";
 	continue the action;
@@ -793,7 +797,7 @@ carry out versioning:
 	say "Version 1 was released to IFComp on August 28, 2024.";
 	say "[line break]Version 2 was released on October 18, 2024. It rolls up many fixes made during IFComp but also includes a hint device and UNDO protection for using the pawn to advance through a puzzle. For version 1, I'd had a great idea for a hint device. The only thing not-great was the timing: six hours before the comp deadline!";
 	say "[line break]Version 3 was released on October 22, 2024. It includes one more point in the optional room, as well as a big boss there, of sorts. There are some trivial fixes, too.";
-	say "[line break]Version 4 is planned for early November as well. It will feature game-mechanic-relevant dialogue between friendly NPCs.";
+	say "[line break]Version 4 was released on November 9, 2024. It features game-mechanic-relevant dialogue between friendly NPCs, as well as general text flavor tweaks.";
 	say "[line break]Version 5 is planned before the end of 2025. It will roll up bugs found in transcripts, etc., and it may also contain more granular hints about what you got right, e.g. one word, both words, or very close. But I'd need to reorganize the main table for that.";
 	say "[line break]For details on fixes, see fixes.txt, which should be packaged with the binary. Or visit the GitHub site https://github.com/andrewschultz/why-pout.";
 	the rule succeeds;
@@ -879,7 +883,6 @@ carry out chatoffing:
 	say "You indicate 'we're draining' at chatter ...[paragraph break]";
 	toggle-chat false;
 	the rule succeeds;
-
 
 book regular verbs, modified
 
@@ -1079,7 +1082,7 @@ the t-only note rule is listed last in the report ting rulebook.
 
 report ting when gs-t-without-note is false (this is the t-only note rule):
 	now gs-t-without-note is true;
-	say "[i][bracket]NOTE[r][i]: without an argument for [b]T[r][i], [this-game-noi] will try to guess whom you talk to. It prioritizes friendly NPCs, especially ones you haven't talked to before, but if there is more than one, it will ask you to be more specific.[close bracket][r]";
+	say "[i][bracket]NOTE[r][i]: without an argument for [b]T[r][i], [this-game-noi] will try to guess whom you talk to. It prioritizes friendly NPCs, especially ones you haven't talked to before, but if there is more than one, it will ask you to be more specific.[close bracket][r][line break]";
 	continue the action;
 
 report ting a follower:
