@@ -246,7 +246,7 @@ by a bonus point
 
 #testcase-check-pre-grin-churls-rule-fallthrough
 You slip in a few sly digs and say "grin, churls." They shake their heads, annoyed.
-The grin churls remark that you seemed so open-minded, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do.
+The grin churls remark that you seemed so open-minded, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do, with a "Weak wit? We quit!" and, tailing off, "We're stirred..."
 But first they call in someone who they're sure can take care of you: GAWAIN KERR!
 On arriving, Gawain asks you your name. "Pfft! Meeker? Oh. Mike OR. Sure ain't Mike AND, amirite?" You move to protest, but your party didn't follow you in.
 
@@ -305,7 +305,7 @@ Hmm. You have a lot of friends following you around, but you haven't talked to t
 by a point
 
 #testcase-check-pre-low-door-rule-fallthrough
-The lode and the ore are tough to shift around for someone as big as yourself. But the tall mice manage to get into those small niches you can't. They locate a low door, then, point to where you can remove the ore to create a passage. You'll have to duck a bit to get in, but you can now go INSIDE. Hooray!
+The lode and the ore are tough to shift around for someone as big as yourself. But the tall mice manage to get into those small niches you can't. And they work so fast, you daren't even ironically say "My! Slow mice, lo!"
 
 >in
 
@@ -476,7 +476,8 @@ You meet with the friends you've made over your adventure. You all have one goal
 by a point
 
 #testcase-check-pre-my-corps-rule-fallthrough
-Your pep talk brings everyone together. They are ready for ... well, whatever is next. This feels like the right place. You clear out a passage below. You swear a solemn pact that everyone will defend everyone else, regardless of what happens.
+Your pep talk brings everyone together. You worry it's too simplistic, especially "titan's lairs? Titan slayers!"
+But everyone seems enthused, ready for what happens next. Gathering information from everyone, you start diggint to find tunnels below. You clear out a passage below. You swear a solemn pact that everyone will defend everyone else, regardless of what happens.
 
 >d
 

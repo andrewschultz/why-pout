@@ -1055,6 +1055,9 @@ You already broke the truth to the crude orc as gently as you could!
 >weak us
 You already established the grinch earls cursed out of weakness or, at least, not fully from strength!
 
+>ass lo
+by a bonus point
+
 >bastard eee
 by a bonus point
 
@@ -1075,7 +1078,7 @@ by a bonus point
 You already cut the grin churls down to size!
 
 >were dicks
-The grin churls remark that you seemed so open-minded, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do.
+The grin churls remark that you seemed so open-minded, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do, with a "Weak wit? We quit!" and, tailing off, "We're stirred..."
 by a bonus point
 
 >undo
@@ -1087,7 +1090,7 @@ by a bonus point
 
 >grin churls
 by a bonus point
-The grin churls remark that you seemed so open-minded, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do.
+The grin churls remark that you seemed so open-minded, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do, with a "Weak wit? We quit!" and, tailing off, "We're stirred..."
 
 #+testcase-check-pre-weak-us-rule-if-sco-weak-us-is-true
 >weak us
