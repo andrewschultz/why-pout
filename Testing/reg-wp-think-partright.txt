@@ -1,0 +1,732 @@
+## rbr-wp-think.txt
+** game: /home/andrew/prt/debug-why-pout.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+# I copied the reg-wp-lone-division.txt test file where you get all the rejects in here
+
+* main
+
+>z
+
+#testcase-one-wrong-an-aim
+>xx aim
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+An inner voice says "Fry! Twist!" You feel fright, wist. It's hard not to, since you don't have a name or a purpose. For some reason, you're focused on getting a name, but you've got thins nagging feeling that's not quite it.
+Perhaps if you press a bit more, some thoughts may come out.
+
+>an aim
+by a point
+
+#testcase-one-wrong-two-maps
+>xx maps
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for anything documenting a way out.
+
+>two maps
+by a point
+
+#testcase-one-wrong-self-owns
+>xx owns
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for what to do with the cell phones.
+
+>self owns
+by a point
+
+#testcase-one-wrong-pry-stalk
+>xx stalk
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for something physical amidst the prize talk.
+
+>pry stalk
+by a point
+
+#here begins the main testing bit for the 3x3 matrix of unguessed/sounds like/exactly right for each of the two words
+#I used High Plain since it had homonyms for both words
+#
+>hi xx
+Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+#s-0
+>think
+You must be close with one word for where to go from Hype Lane.
+
+>undo
+
+>xx playin
+Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+#s-s
+>think
+You must be close with both words for where to go from Hype Lane.
+
+>undo
+>undo
+
+>xx plane
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+#s-e
+>think
+You must have one word right and one word close for where to go from Hype Lane.
+
+>undo
+>undo
+>undo
+
+>high xx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+#e-0
+>think
+You must have one word right for where to go from Hype Lane.
+
+>undo
+
+>xx playin
+Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+#e-s
+>think
+You must have one word right and one word close for where to go from Hype Lane.
+
+>undo
+>undo
+
+>xx plane
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+#e-e
+>think
+You feel you've got the words right on separate occasions for where to go from Hype Lane.
+
+>undo
+>undo
+>undo
+
+>xx playin
+Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+#0-s
+>think
+You must be close with one word for where to go from Hype Lane.
+
+>undo
+>undo
+
+>xx plane
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+#0-e
+>think
+You must have one word right for where to go from Hype Lane.
+
+>undo
+>undo
+
+>hi xx
+Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+
+>think
+You must be close with one word for where to go from Hype Lane.
+
+>high xx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for where to go from Hype Lane.
+
+>undo
+>undo
+>undo
+>undo
+
+>xx playin
+Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+
+>think
+You must be close with one word for where to go from Hype Lane.
+
+>xx plane
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for where to go from Hype Lane.
+
+>undo
+>undo
+>undo
+>undo
+
+#testcase-one-wrong-high-plain
+>xx plain
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for where to go from Hype Lane.
+
+>high plain
+by a point
+
+#testcase-one-wrong-nah-phase
+>xx phase
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for how to cut through the naff haze.
+
+>nah phase
+by a point
+
+#testcase-one-wrong-pole-east
+>xx east
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for the source of your feeling policed.
+
+>pole east
+by a point
+
+#testcase-one-wrong-grow-star
+>xx star
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for making it beyond the gross tar.
+
+>grow star
+by a point
+
+#testcase-one-wrong-key-pillar
+>xx pillar
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for finding a way into the keep.
+
+>key pillar
+by a point
+
+>shore trail
+by a point
+
+>n
+
+>xx out
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for how to dispel your high doubt.
+
+>hideout
+by a point
+
+>d
+
+>xx role
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to make the booze troll feel less awful.
+
+>boost role
+by a point
+
+>u
+
+>s
+
+>w
+
+>e
+
+>n
+
+>xx frock
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for what is hidden in Wolf Rock.
+
+>wool frock
+by a point
+
+>s
+
+>s
+
+>xx ocean
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for finding the surroundings here.
+
+>known ocean
+by a point
+
+>xx quid
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for discovering what ails the sick squid.
+
+>six quid
+by a point
+
+>n
+
+>e
+
+>xx bend
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to rearrange the landscape here.
+
+>low bend
+by a point
+
+>xx sail
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to repurpose the base ale.
+
+>bay sale
+by a point
+
+>n
+
+>xx mile
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for the storm isle's alternate nature.
+
+>store mile
+by a point
+
+>s
+
+>w
+
+>w
+
+>xx old
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for who has made sure there's no mold.
+
+>gnome old
+by a point
+
+>e
+
+>e
+
+>n
+
+>xx tall
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for what's inside MY STALL.
+
+>mice tall
+by a point
+
+>s
+
+>w
+
+>n
+
+>xx door
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for what the lode ore is hiding.
+
+>low door
+by a point
+
+>in
+
+>xx own
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for the sinister meaning behind We'll Own.
+
+>well own
+by a point
+
+>xx chant
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to zone some merchant out.
+
+>summer chant
+by a point
+
+>xx oh
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to counter the buy-low rhetoric.
+
+>bile oh
+by a point
+
+>xx lone
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to enjoy solitude.
+
+>whee lone
+by a point
+
+>out
+
+>s
+
+>w
+
+>xx old
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for who is responsible for the row, gold.
+
+>rogue old
+by a point
+
+>e
+
+>n
+
+>in
+
+>xx flier
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to get something from the oaf liar.
+
+>oh flier
+by a point
+
+>out
+
+>s
+
+>w
+
+>xx tracker
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for an alternate form of the plant racker.
+
+>plan tracker
+by a point
+
+>e
+
+>d
+
+>xx raider
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for who the traitor was or can become.
+
+>gaunt raider
+by a point
+
+>u
+
+>e
+
+>n
+
+>xx elf
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a nicer form of the MEN shelf.
+
+>mensch elf
+by a point
+
+>s
+
+>w
+
+>s
+
+>xx file
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for what is on Wharf Isle.
+
+>war file
+by a point
+
+>xx dwarf
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for who is on Wand Wharf.
+
+>wan dwarf
+by a point
+
+>xx vial
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for what is on Grove Isle.
+
+>grow vial
+by a point
+
+>n
+
+>e
+
+>n
+
+>n
+
+>xx small
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for something hidden here.
+
+>tree small
+by a point
+
+>s
+
+>s
+
+>w
+
+>d
+
+>t elf
+
+>t dwarf
+
+>t rogue
+
+>t raider
+
+>t gnome
+
+>t troll
+
+>t mice
+
+>u
+
+>xx swears
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for seeing BRUISE WARES's true nature.
+
+>ao
+
+>brew swears
+by a bonus point
+
+>in
+
+>xx us
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for how to deflate the grinch earls' bravado.
+
+>weak us
+by a bonus point
+
+>xx dork
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to explain the crude orc's status.
+
+>crew dork
+by a bonus point
+
+>xx low
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to counter the ah-slow taunts.
+
+>ass low
+by a bonus point
+
+>xx eee
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to counter the bah-sturdy taunts.
+
+>bastard eee
+by a bonus point
+
+>xx ass
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to counter the heh-class taunts.
+
+>heckle ass
+by a bonus point
+
+>xx shit
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to counter the hush-it taunts.
+
+>huh shit
+by a bonus point
+
+>xx fuckers
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to counter the life-occurs taunts.
+
+>lie fuckers
+by a bonus point
+
+>xx dicks
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to counter the taunting weird-icks.
+
+>were dicks
+by a bonus point
+
+>xx churls
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to reclassify the grinch earls.
+
+>grin churls
+by a bonus point
+The grin churls remark that you seemed so open-minded, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do.
+
+>xx wanker
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to counter Gawain Kerr's taunts.
+
+>gah wanker
+by a bonus point
+
+>out
+
+>w
+
+>xx design
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for what the sign hides.
+
+>see design
+by a point
+
+>xx right
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for what to find or do to leave.
+
+>knife rite
+by a point
+
+>xx curb
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for what lies under or near the manic herb.
+
+>manna curb
+by a point
+
+>e
+
+>e
+
+>n
+
+>n
+
+>xx cake
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for how to get rid of your talk-ache.
+
+>tall cake
+by a point
+
+>xx all
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for what to do under the tree, tall.
+
+>treat all
+by a point
+
+>s
+
+>s
+
+>w
+
+>s
+
+>xx file
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for what is on Thief Isle.
+
+>the file
+by a point
+
+>n
+
+>d
+
+>xx meetin
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for how Worm Eaten could feel more homey.
+
+>were meetin
+by a point
+
+>xx corps
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for why your name is special.
+
+>my corps
+by a point
+
+>d
+
+>xx cull
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for alerting the sea skull.
+
+>cease cull
+by a point
+
+>xx out
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for how to take down the skull.
+
+>wipe out
+by a point
+
+>xx vision
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for something more positive than the why-division.
+
+>xx mend
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for a way to steer things from a doom ending.
+
+>do mending
+by a point
+Your score just went up by a point!
+
+Gray day?! Grade A!
