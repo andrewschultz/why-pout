@@ -63,6 +63,12 @@ to decide which follower is talker2: decide on entry t2 of followers-as-joined;
 
 to say t1t2: say "[The talker1] and [the talker2]"
 
+to say nosplur1: say "[nosplur of talker1]";
+
+to say nosplur2: say "[nosplur of talker2]";
+
+to say nosplur of (th - a thing): unless th is plural-named, say "s";
+
 volume printing stuff out
 
 every turn when can-forward-dialogue:
@@ -93,13 +99,13 @@ table of initial dialogues [this should have 28 entries. Runoff will have its ow
 mynum	mytext
 0	"[t1t2] sing the hit ballad 'Mile of My Love' together."
 0	"[t1t2] pump each other up with 'Weep? Rep! We prep!'"
-0	"[The talker1] reacts to [the talker2]'s terrible puns with 'Aw, flow off, lo!'"
+0	"[The talker1] react[nosplur1] to [the talker2]'s terrible puns with 'Aw, flow off, lo!'"
 0	"[t1t2] berate science fiction. More specifically, they start ripping star tripping."
-0	"[The talker1] remarks 'Sun god sung? Odd!' to [the talker2]."
+0	"[The talker1] remark[nosplur1] 'Sun god sung? Odd!' to [the talker2]."
 0	"[t1t2] briefly inspire each other to seem, or see, more."
 0	"[t1t2] discuss the artsy book [i]Glow, Bland Globe Land[r]."
 0	"[t1t2] discuss aesthetics: 'White owls? Why, towels?'"
-0	"In a fit of bravado, [the talker1] snarks 'Bah! Scum boss, come!' [The talker2] soberly remarks, 'Uh, prepare up, repair.'"
+0	"In a fit of bravado, [the talker1] snark[nosplur1] 'Bah! Scum boss, come!' [The talker2] soberly remark[nosplur2], 'Uh, prepare up, repair.'"
 0	"[t1t2] rib each other: 'Sane? Oh, say, NO!'"
 0	"[t1t2] butter you up: 'See leadin['] seal Eden!'"
 0	"[t1t2] nudge you: 'Uh, plots up?' 'Lots,' you reply."
@@ -109,25 +115,25 @@ mynum	mytext
 0	"[t1t2] discuss vacations at the Nice-Trip-Nigh Strip."
 0	"[t1t2] discuss a moral dilemma: 'Lie for life, or...?'"
 0	"[t1t2] bemoan the loss-fear law sphere enveloping a good chunk of the world."
-0	"[The talker1], after jokey banter from [the talker2], says 'A score, ace! Cor[']!'"
+0	"[The talker1], after jokey banter from [the talker2], say[nosplur of talker1] 'A score, ace! Cor[']!'"
 0	"[t1t2] shudder at the twin villains Scarf Ace and Scar Face."
-0	"[The talker1] defeats [the talker2] in rock-paper-scissors. 'My twin might win,' gripes [the talker2]."
+0	"[The talker1] defeat[nosplur of talker1] [the talker2] in rock-paper-scissors. 'My twin might win,' gripe[nosplur2] [the talker2]."
 80	"You hear the orc's voice: 'Grow now? Groan! Ow!' Then laughter from the orc and [the talker2]."
-80	"[The talker2] playfully chides the orc 'Nuke id, new kid.'"
-80	"The orc makes an impressive observation. 'Why so wise, oh?' needles [the talker2]."
-80	"[The talker2] consoles the orc over a recalled 'Nice kid? Nigh, SKID.'"
-80	"'Run time!' yells [the talker2], chasing the orc, who taunts 'Runt? I'm...'"
+80	"[The talker2] playfully chide[nosplur2] the orc 'Nuke id, new kid.'"
+80	"The orc makes an impressive observation. 'Why so wise, oh?' needle[nosplur2] [the talker2]."
+80	"[The talker2] console[nosplur2] the orc over a recalled 'Nice kid? Nigh, SKID.'"
+80	"'Run time!' yell[nosplur2] [the talker2], chasing the orc, who taunts 'Runt? I'm...'"
 80	"Advice from [the talker2] to the orc: 'Wean [']Oh, we KNOW[']!'"
 80	"'Wan adage? Wanna DODGE,' the orc complains to [the talker2]. It's restated better next time."
 
 table of further dialogues
 mynum	mytext
-0	"[The talker1] informs [the talker2] of the healing powers of the Wall Cough-Walk-Off."
+0	"[The talker1] inform[nosplur1] [the talker2] of the healing powers of the Wall Cough-Walk-Off."
 0	"[t1t2] discuss famous landmarks. 'Soap Lane? So plain!'"
-0	"[The talker1] recounts a harrowing period of life to [the talker2]: 'Hell, dawn, held on!'"
-0	"[The talker1] looks around at the scenery. 'You seek yews? Eek,' says [the talker2]."
+0	"[The talker1] recount[nosplur1] a harrowing period of life to [the talker2]: 'Hell, dawn, held on!'"
+0	"[The talker1] look[nosplur1] around at the scenery. 'You seek yews? Eek,' says [the talker2]."
 0	"[t1t2] hang tough, looking like a spare ace pair."
-0	"[The talker1] rebukes [the talker2]'s pessimism: 'Block a [']blah['], [']K?'"
+0	"[The talker1] rebuke[nosplur1] [the talker2]'s pessimism: 'Block a [']blah['], [']K?'"
 0	"[t1t2] discuss fashion: 'Argyle? Argh, I'll ... our guy'll...'"
 0	"[t1t2] label the Lost Range Law strange."
 0	"[t1t2] discuss conflicting views on the self-help treatise [i]Grope, Ride, Grow Pride[r]."
@@ -140,7 +146,7 @@ mynum	mytext
 0	"[t1t2] discuss important historical events that occurred in 80 A. D."
 0	"[t1t2] disagree over food: 'Tuna fish? Too naff-ish!'"
 0	"[t1t2] remind everyone how guiding love is preferable to an iron guidin['] glove. It feels a bit artificial, but sometimes semantics aren't what's important."
-0	"[The talker1] cuts in on [the talker2]: 'Who's ED, who said...'"
+0	"[The talker1] cut[nosplur1] in on [the talker2]: 'Who's ED, who said...'"
 0	"[t1t2] vow never to whine 'Ow, why now?'"
 0	"[t1t2] discuss separate harrowing trips to Walk Old-Wall-Cold."
 0	"[t1t2], after sharing a clever joke, agree: 'We quit weak wit.'"
