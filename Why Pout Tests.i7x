@@ -301,6 +301,18 @@ carry out ediaging:
 	if count is 0, say "All things fixed!";
 	the rule succeeds;
 
+volume randomizing in debug
+
+shuf2ing is an action out of world.
+
+carry out shuf2ing:
+	sort quasirand-init-list in random order;
+	sort table of further dialogues in random order;
+	now quasirand-final-list is {};
+	repeat with QL running through quasirand-init-list:
+		sort QL in random order;
+		add QL to quasirand-final-list;
+
 volume undo okaying
 
 chapter undoying

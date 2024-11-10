@@ -157,6 +157,7 @@ mynum	mytext
 0	"[t1t2] have a technical discussion: 'Keen apps['] key? Naps!'"
 0	"[t1t2] reject the shallow self-help of [i]I Learn, I'll Earn[r]."
 0	"[t1t2] recall separate visits to the Dumb Pledge-Dump-Ledge."
+0	"[t1t2] give contrasting literary criticisms of [i]A Tower's Eight Hours[r]."
 
 volume testing without random shuffling
 
