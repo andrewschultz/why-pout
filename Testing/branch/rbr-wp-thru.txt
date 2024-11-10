@@ -1113,7 +1113,7 @@ That seedy sign stands off to the side here. It's no longer scary, but you don't
 >e
 
 @npc
-/^first-npc 21 \.\.\.
+/^first-npc \(1\) 21
 this is random dialogue
 \\
 >verbs
@@ -1126,7 +1126,7 @@ You can go down or in the cardinal directions, but not up.
 
 >d
 @npc
-/^first-npc 3[1-2] \.\.\.
+/^first-npc \(2\) 3[1-2]
 !this is random dialogue
 
 @all
@@ -1185,7 +1185,7 @@ to want to cut in a bit for their turn some time.
 >u
 
 @npc
-/^first-npc 3[1-2] \.\.\.
+/^first-npc \(3\) 3[1-2]
 
 @go
 >in
@@ -1503,12 +1503,12 @@ Now that you got rid of the orc's old associates and their, um, mentor, there's 
 >out
 
 @npc
-/^first-npc 4[1-3] ...
+/^first-npc \(4\) 4[1-3]
 
 >e
 
 @npc
-/^first-npc 4[1-3] ...
+/^first-npc \(5\) 4[1-3]
 
 @all
 #testcase-room-names-lobe-end
@@ -1595,7 +1595,7 @@ Fortunately, the We-Craft Weak Raft from the bay sale floats here, ready to take
 >n
 
 @npc
-/^first-npc 4[1-3] ...
+/^first-npc \(6\) 4[1-3]
 
 @all
 #testcase-room-names-store-mile
@@ -1700,17 +1700,17 @@ You can only go back south to Lobe End or north to the rest of the mall.
 >s
 
 @npc
-/^first-npc 5[1-4] ...
+/^first-npc \(7\) 5[1-4]
 
 >w
 
 @npc
-/^first-npc 5[1-4] ...
+/^first-npc \(8\) 5[1-4]
 
 >n
 
 @npc
-/^first-npc 5[1-4] ...
+/^first-npc \(9\) 5[1-4]
 
 @verbs
 >eat ore
@@ -1742,9 +1742,6 @@ There's a huge pile of lode ore here, too, and you found a low door in it that l
 This wouldn't have worked even before the mice found a passage.
 
 >in
-
-@npc
-/^first-npc 5[1-4] ...
 
 @all
 #testcase-room-names-we-loan
@@ -1959,17 +1956,17 @@ You can only go back OUT here.
 >out
 
 @npc
-/^first-npc 6[1-5] ...
+/^first-npc \(10\) 5[1-4]
 
 >s
 
 @npc
-/^first-npc 6[1-5] ...
+/^first-npc \(11\) 6[1-5]
 
 >w
 
 @npc
-/^first-npc 6[1-5] ...
+/^first-npc \(12\) 6[1-5]
 
 @hint
 >eye plant
@@ -2069,7 +2066,7 @@ The manna is raw material for more standard food.
 >e
 
 @npc
-/^first-npc 6[1-5] ...
+/^first-npc \(13\) 6[1-5]
 
 @alt
 ##balance undos
@@ -2098,9 +2095,12 @@ But wait! You can use the grow vial! It makes the tree (small) into a tree (tall
 >e
 
 @npc
-/^first-npc 6[1-5] ...
+/^first-npc \(14\) 6[1-5]
 
 >n
+
+@npc
+/^first-npc \(15\) 6[1-5]
 
 >n
 
@@ -2282,22 +2282,22 @@ The ocean surrounds you on all sides, but it's less intimidating now you rode th
 >n
 
 @npc
-/^first-npc 7[1-6] ...
+/^first-npc \(16\) 7[1-6]
 
 >e
 
 @npc
-/^first-npc 7[1-6] ...
+/^first-npc \(17\) 7[1-6]
 
 >n
 
 @npc
-/^first-npc 7[1-6] ...
+/^first-npc \(18\) 7[1-6]
 
 >n
 
 @npc
-/^first-npc 7[1-6] ...
+/^first-npc \(19\) 7[1-6]
 
 @all
 # this makes sure TREE SMALL then bringing the grow vial back works okay
@@ -2458,7 +2458,7 @@ You already ate the only thing you needed to.
 >s
 
 @npc
-/^first-npc 7[1-6] ...
+/^first-npc \(20\) 7[1-6]
 
 @all
 The gaunt raider raises a hand. They have an idea! The abandoned mall must have all sorts of stuff that can be fashioned into weapons. Not top-of-the-line, but enough to get by. Heartened by your recent meal, your party takes the time to find weapons. You all keep them hidden until needed.
@@ -2470,7 +2470,7 @@ You and your party are also armed for any conflict that may arise.
 >s
 
 @npc
-/^first-npc 7[1-6] ...
+/^first-npc \(21\) 7[1-6]
 
 @verbs
 >eat raft
@@ -2479,7 +2479,7 @@ You already ate the only thing you needed to.
 >w
 
 @npc
-/^first-npc 8[1-7] ...
+/^first-npc \(22\) 8[1-7]
 
 @min
 Odd! BRUISE WARES has vanished. Well, one less dead end to worry about.
@@ -2490,7 +2490,7 @@ Odd! BRUISE WARES has vanished. Well, one less dead end to worry about.
 >s
 
 @npc
-/^first-npc 8[1-7] ...
+/^first-npc \(23\) 8[1-7]
 
 @hom
 #testcase-homonym-reject-table-of-main-oronyms-thee
@@ -2538,25 +2538,35 @@ It's fully calm and peaceful around here. You even made full use of that flier y
 >undo
 
 @npc
-/^first-npc 8[1-7] ...
+/^first-npc \(24\) 8[1-7]
 
 >d
 
 @npc
-/^first-npc 8[1-7] ...
+/^first-npc \(25\) 8[1-7]
 \\
 >z
-/^first-npc 8[1-7] ...
+/^first-npc \(26\) 8[1-7]
 \\
 >z
-/^first-npc 8[1-7] ...
+/^first-npc \(27\) 8[1-7]
 \\
 >z
-/^first-npc 8[1-7] ...
+/^first-npc \(28\) 8[1-7]
 NOTE: you've made it through the initial random dialogues, where the orc's dialogue is last. There are more random ones ahead. If you want to read them all without hitting L a lot, read the tables file.
+!second-npc
 \\
 >z
-/^first-npc [1-8][1-7] \.\.\.
+/^second-npc 81
+\\
+>z
+/^second-npc 72
+\\
+>z
+/^second-npc 63
+\\
+>z
+/^second-npc 54
 \\
 >scorch at
 You indicate "we're draining" at chatter ...
@@ -2567,7 +2577,7 @@ You indicate "we're draining" at chatter ...
 Your party is already keeping quiet every turn.
 \\
 >z
-!first-npc
+!second-npc
 \\
 >score chat
 You give the thumbs-up to word-raining ...
@@ -2577,7 +2587,7 @@ Your party is now chatting away randomly every turn.
 You give the thumbs-up to word-raining ...
 Your party is already chatting away randomly every turn.
 >z
-first-npc
+second-npc
 
 @gt
 #testcase-goto-table-of-noways-worm-eaten
