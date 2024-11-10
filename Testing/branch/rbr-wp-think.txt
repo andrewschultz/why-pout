@@ -301,7 +301,7 @@ THINK
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 \\
 >think
-An inner voice says "Fry! Twist!" You feel fright, wist. It's hard not to, since you don't have a name or a purpose. For some reason, you're focused on getting a name, but you've got thins nagging feeling that's not quite it.
+An inner voice says "Fry! Twist!" You feel fright, wist. It's hard not to, since you don't have a name or a purpose. For some reason, you're focused on getting a name, but you've got this nagging feeling that's not quite it.
 Perhaps if you press a bit more, some thoughts may come out.
 
 >an aim
@@ -328,6 +328,16 @@ You can call your companions MY CORPS once you have companions.
 You already found a name and an aim!
 
 @part
+##balance undos
+>wipe xx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>think
+You must have one word right for how to do something generally awesome down the road.
+\\
+>undo
+>undo
+
+@part+
 #testcase-one-wrong-two-maps
 >xx maps
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
@@ -643,7 +653,7 @@ THINK
 You may be able to find a LOW DOOR here once you have a companion or companions small enough to dig a bit better.
 
 @part
->xx out
+>xx hide
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 >think
 You must have one word right for how to dispel your high doubt.
@@ -1884,7 +1894,7 @@ You will want to WIPE OUT the cause of your problems now you have them in your c
 !not for a while
 
 @part
->xx out
+>wipe xx
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 >think
 You must have one word right for how to take down the skull.
