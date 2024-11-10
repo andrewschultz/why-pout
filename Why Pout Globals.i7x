@@ -31,6 +31,17 @@ gs-penalized-why-division is a truth state that varies.
 
 gs-eye-note is a truth state that varies.
 
+section chat tracking
+
+gs-full-chat-notify is a truth state that varies.
+
+missed-this-cycle is a number that varies.
+
+gs-note-chatopt is a truth state that varies.
+
+final-list-index is a number that varies.
+modular-list-index is a number that varies.
+
 section option(s)
 
 opt-lump-party is a truth state that varies.
@@ -73,7 +84,8 @@ followers-as-joined is a list of followers variable.
 
 t1 is a number that varies. t2 is a number that varies.
 
-dialogue-row is a number that varies.
+init-dialogue-row is a number that varies.
+second-dialogue-row is a number that varies.
 
 volume point scoring variables
 

@@ -18,14 +18,7 @@ quasirand-init-list is a list of lists of numbers variable. quasirand-init-list 
 
 quasirand-final-list is a list of numbers variable. quasirand-final-list is {}.
 
-current-random-table is a table name that varies. current-random-table is table of initial dialogues.
-
 chapter variables
-
-gs-note-chatopt is a truth state that varies.
-
-final-list-index is a number that varies.
-modular-list-index is a number that varies.
 
 chapter start of game prep
 
@@ -47,15 +40,32 @@ when play begins:
 
 chapter shortcuts and definitions
 
-to decide whether can-forward-dialogue:
-	if opt-chat-on is false, no;
-	if dialogue-row >= number of rows in current-random-table, no;
-	if block-followers is true, no;
-	if current action is ting, no;
-	if player is in doom ending and skull is in doom ending, no;
-	let my-nff be number of friendly followers;
-	if my-nff < 8 and orc is friendly, decrement my-nff;
-	if dialogue-row >= (my-nff * (my-nff - 1)) / 2, no;
+to decide whether basic-chat-block:
+	if opt-chat-on is false, yes;
+	if block-followers is true, yes;
+	if current action is ting, yes;
+	if player is in doom ending and skull is in doom ending, yes;
+	no;
+
+to decide whether init-table-done:
+	if init-dialogue-row is number of rows in table of initial dialogues, yes;
+	if init-dialogue-row is 21 and orc is not friendly, yes; [ this is hardcoded but unlikely to change ]
+	no;
+
+to decide which number is first-table-followers:
+	let nu be number of friendly followers;
+	if nu < 8 and orc is friendly, decrement nu;
+	decide on nu;
+
+to decide whether can-init-dialogue:
+	if basic-chat-block, no;
+	if init-table-done, no;
+	if init-dialogue-row >= (first-table-followers) * (first-table-followers - 1) / 2, no;
+	yes;
+
+to decide whether can-second-dialogue:
+	if basic-chat-block, no;
+	unless init-table-done, no;
 	yes;
 
 to decide which follower is talker1: decide on entry t1 of followers-as-joined;
@@ -71,27 +81,51 @@ to say nosplur of (th - a thing): unless th is plural-named, say "s";
 
 volume printing stuff out
 
-every turn when can-forward-dialogue:
-	increment dialogue-row;
-	choose row dialogue-row in current-random-table;
-	now t1 is mynum entry / 10;
-	now t2 is remainder after dividing mynum entry by 10;
+to reassign-t1-t2 (nu - a number):
+	now t1 is nu / 10;
+	now t2 is remainder after dividing nu by 10;
+
+every turn when can-init-dialogue:
+	increment init-dialogue-row;
+	choose row init-dialogue-row in table of initial dialogues;
+	reassign-t1-t2 mynum entry;
 	if number of friendly followers < 8 and a random chance of 1 in 2 succeeds:
 		let t0 be t1;
 		now t1 is t2;
 		now t2 is t0;
-	if debug-state is true, say "rand-npc [mynum entry] ... ";
+	if debug-state is true, say "first-npc [mynum entry] ... ";
 	say "[mytext entry][line break]";
-	if dialogue-row is number of rows in current-random-table:
-		if current-random-table is table of initial dialogues:
-			say "[line break][i][bracket][b]NOTE[r][i]: you've made it through the initial random dialogues, where the orc's dialogue is last. There are more random ones ahead. If you want to read them all without hitting [b]L[r][i] a lot, read the tables file.[close bracket][r]";
-			now current-random-table is table of further dialogues;
-			now dialogue-row is 0;
-		else:
-			say "[line break][i][bracket][b]NOTE[r][i]: you've made it through all the random dialogues. There are no more. I hope you found them entertaining.[close bracket][r][line break]";
+	if init-dialogue-row is number of rows in table of initial dialogues:
+		say "[line break][i][bracket][b]NOTE[r][i]: you've made it through the initial random dialogues, where the orc's dialogue is last. There are more random ones ahead. If you want to read them all without hitting [b]L[r][i] a lot, read the tables file.[close bracket][r]";
+	else if init-dialogue-row is 21 and orc is not friendly:
+		say "[line break][i][bracket][b]NOTE[r][i]: you've made it through all the random dialogues you can with necessary companions. You're missing an optional one, who is not critical to the game. There will be more random ones after this.[close bracket][r][line break]";
 	if gs-note-chatopt is false:
 		now gs-note-chatopt is true;
 		say "[line break][b]NOTE[r][i]: this is random dialogue you can shut off with [b]SCORCH AT[r] or turn back on with [b]SCORE CHAT[r][i].[close bracket][r][line break]";
+
+every turn when can-second-dialogue:
+	increment second-dialogue-row;
+	choose row second-dialogue-row in table of further dialogues;
+	if mynum entry > 80 and orc is not friendly:
+		increment missed-this-cycle;
+		if debug-state is true, say "passed on [mynum entry] ...";
+	else:
+		reassign-t1-t2 mynum entry;
+		if number of friendly followers < 8 and a random chance of 1 in 2 succeeds:
+			let t0 be t1;
+			now t1 is t2;
+			now t2 is t0;
+		if debug-state is true, say "second-npc [mynum entry] ... ";
+		say "[mytext entry][line break]";
+	if second-dialogue-row < number of rows in table of further dialogues, continue the action;
+	now second-dialogue-row is 0;
+	if gs-full-chat-notify is true, continue the action;
+	now gs-full-chat-notify is true;
+	if missed-this-cycle > 0:
+		say "[i][bracket][b]NOTE[r][i]: you [if orc is friendly]missed [missed-this-cycle][else]saw about three-quarters of the[end if] random additional chat[if missed-this-cycle > 1]s[end if], because you didn't [if orc is friendly]have the orc along for it all[else]find an additional optional companion[end if]. If you want to see the rest, it's in the source code on my GitHub site.[close bracket][r][line break]";
+		now missed-this-cycle is 0;
+	else:
+		say "[i][bracket][b]NOTE[r][i]: you've seen all the random dialogues.[close bracket][r][line break]";
 
 volume the actual tables
 
