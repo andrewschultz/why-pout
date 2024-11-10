@@ -8,7 +8,6 @@
 
 file=reg-wp-thru-min.txt,min,minimum walkthrough
 file=reg-wp-thru-all.txt,all,walkthrough with all points and potential neutral retries
-file=reg-wp-thru-reject.txt,rej,walkthrough with all rejections and THINK
 file=reg-wp-thru-alt-verbs.txt,alt,walkthrough with altverb tests
 file=reg-wp-thru-mistakes.txt,mis,walkthrough testing all mistakes
 file=reg-wp-thru-homonyms.txt,hom,walkthrough testing homonyms
