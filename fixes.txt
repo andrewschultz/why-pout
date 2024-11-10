@@ -1,4 +1,8 @@
-List of in-comp updates
+List of in-comp and post-comp updates
+
+11/9/2024 new release (4.00)
+--main new feature is dialogue between friends as they join up
+--flavor text added from my notes
 
 10/21/2024 new release (3.00)
 --new taunt from the grinch earls
@@ -11,7 +15,9 @@ List of in-comp updates
 --UNDO is now blocked after using war pawn, though you can still move and UNDO twice as a workaround
 --trying to remove the gross tar twice no longer gives odd response
 
-10/5/2024 updated (1.21)
+==============================================
+
+10/5/2024 updated (1.21) (final IFComp update)
 --EAT CAKE no longer gives "inedible." Replaced default Inform EAT behavior.
 --credits and companion reporting tweaked
 
