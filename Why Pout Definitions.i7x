@@ -164,7 +164,7 @@ to befriend (f - a follower):
 	move f to location of player;
 	if f is not orc:
 		add f to followers-as-joined;
-	say "[followers-as-joined].";
+	if debug-state is true, say "Followers you can pair: [first-table-followers].";
 	if number of friendly followers is 8, add orc to followers-as-joined;
 	if number of friendly followers is 1:
 		say "[line break]It looks like [the f] will be following you around. All that silence might get awkward, so you may wish to [b]T[r] or [b]TALK[r] ([b]TO[r]) them.";

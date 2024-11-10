@@ -57,10 +57,14 @@ to decide which number is first-table-followers:
 	if nu < 8 and orc is friendly, decrement nu;
 	decide on nu;
 
+to decide which number is max-init-dialogue:
+	let X be (first-table-followers) * (first-table-followers - 1);
+	decide on X / 2;
+
 to decide whether can-init-dialogue:
 	if basic-chat-block, no;
 	if init-table-done, no;
-	if init-dialogue-row >= (first-table-followers) * (first-table-followers - 1) / 2, no;
+	if init-dialogue-row >= max-init-dialogue, no;
 	yes;
 
 to decide whether can-second-dialogue:
@@ -85,7 +89,10 @@ to reassign-t1-t2 (nu - a number):
 	now t1 is nu / 10;
 	now t2 is remainder after dividing nu by 10;
 
-every turn when can-init-dialogue:
+the initial table random dialogue rule is listed last in the every turn rules.
+the further table random dialogue rule is listed before the initial table random dialogue rule in the every turn rules.
+
+every turn when can-init-dialogue (this is the initial table random dialogue rule):
 	increment init-dialogue-row;
 	choose row init-dialogue-row in table of initial dialogues;
 	reassign-t1-t2 mynum entry;
@@ -93,7 +100,7 @@ every turn when can-init-dialogue:
 		let t0 be t1;
 		now t1 is t2;
 		now t2 is t0;
-	if debug-state is true, say "first-npc [mynum entry] ... ";
+	if debug-state is true, say "first-npc ([init-dialogue-row]) [mynum entry] ... ";
 	say "[mytext entry][line break]";
 	if init-dialogue-row is number of rows in table of initial dialogues:
 		say "[line break][i][bracket][b]NOTE[r][i]: you've made it through the initial random dialogues, where the orc's dialogue is last. There are more random ones ahead. If you want to read them all without hitting [b]L[r][i] a lot, read the tables file.[close bracket][r]";
@@ -103,7 +110,7 @@ every turn when can-init-dialogue:
 		now gs-note-chatopt is true;
 		say "[line break][b]NOTE[r][i]: this is random dialogue you can shut off with [b]SCORCH AT[r] or turn back on with [b]SCORE CHAT[r][i].[close bracket][r][line break]";
 
-every turn when can-second-dialogue:
+every turn when can-second-dialogue (this is the further table random dialogue rule):
 	increment second-dialogue-row;
 	choose row second-dialogue-row in table of further dialogues;
 	if mynum entry > 80 and orc is not friendly:
