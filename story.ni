@@ -390,6 +390,10 @@ book Wolf Rock
 
 Wolf Rock is a room in universal. "A big rock in the shape of a wolf looms impressively, blocking all passages except back [b]SOUTH[r]. [if sco-hide-out is true]You can also go [b]DOWN[r] into the hideout you found[else]Also, the high doubt you can go anywhere else here is thick indeed. Maybe there's a way to dispel it[end if].[paragraph break]There's a huge pile of lode ore here, too, [if sco-low-door is true]and you found a low door in it that leads [b]INSIDE[r][else]and perhaps there's something in it[end if].". eyes-number of wolf rock is 45. eyes-rule of wolf rock is the pre-wool-frock rule.
 
+check going inside in Wolf Rock when sco-low-door is true:
+	say "The low door makes it hard for too many people or entities to enter at once. So you go it alone.";
+	now block-followers is true;
+
 chapter high doubt
 
 the high doubt is scenery in Wolf Rock. "It's incorporeal, and examining it too much would be serious navel-gazing.". eyes-number of high doubt is 43. eyes-rule of high doubt is the pre-hide-out rule.
@@ -424,15 +428,23 @@ the Base Ale is a thing. description is "Uck. It's a nasty color, really. But pe
 
 book We Loan
 
-We Loan is a room in universal. printed name is "[if sco-well-own is false]We Loan[else if sco-whee-lone is false]We'll Own[else if sco-oh-flier is false]Whee, Lone?[else]Whee! [']Lone![end if]". "[loan-starter][paragraph break]You can only go back [b]OUT[r] here[if sco-well-own is false].[paragraph break]You don't really trust the whole 'financial services' vibe here. Maybe there's a double meaning to deduce[end if].". eyes-number of we loan is 43. eyes-rule of we loan is the pre-well-own rule.
+We Loan is a room in universal. printed name is "[if sco-well-own is false]We Loan[else if sco-whee-lone is false]We'll Own[else if sco-oh-flier is false]Whee, Lone?[else]Whee! [']Lone![end if]". "[loan-starter][line break]You can only go back [b]OUT[r] here[if sco-well-own is false].[paragraph break]You don't really trust the whole 'financial services' vibe here. Maybe there's a double meaning to deduce[end if].". eyes-number of we loan is 43. eyes-rule of we loan is the pre-well-own rule.
 
 to say loan-starter:
-	if sco-bile-oh is false:
-		say "This area feels replete with the sort of double-talk all salesmen use. You can almost hear all the dropped and excess apostrophes. It will be tough to hang with all the way through, but if you do, maybe you'll get something out of it.";
-	 else if sco-whee-lone is false:
-		say "It's finally nice and silent here again, and maybe there's a specific way to enjoy that.";
-	else if sco-oh-flier is true:
-		say "You've managed to navigate negotiations and wind up with ... a shiny new flier! What more could you ask for? Here, well, probably nothing."
+	if sco-oh-flier is true:
+		say "It's fully calm and peaceful around here. You've managed to navigate negotiations and wind up with ... a shiny new flier! What more could you ask for? Here, well, probably nothing. Time to get back to your companions.";
+	else if sco-whee-lone is true:
+		say "Commerce seems to be happening here, whether you want it or not. Or maybe you have one more thing you can do?";
+	else if sco-bile-oh is true:
+		say "It's nice to have this area to yourself, for now. You'd like to celebrate a bit.";
+	else if sco-well-own is true: [summer chant doesn't change the room description]
+		say "You've seen the seedy side of this place, and you can't unsee it. You'll just have to work through it.";
+	else:
+		say "This area feels replete with the sort of double-talk all salesmen use. You can almost hear all the dropped and excess apostrophes. It will be tough to hang with all the way through, but if you do, maybe you'll get something out of it.[paragraph break]Outwardly, everything seems okay here. And yet ... something about the place, its name, leads you to feel things behind the curtain aren't right, and you need to expose them."
+
+check going outside in We Loan:
+	say "You're glad to get back to your companions...";
+	now block-followers is false;
 
 chapter some merchant
 
