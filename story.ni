@@ -329,7 +329,7 @@ check entering Bruise Wares:
 
 book Keep Iller
 
-KeepIller is a room in Universal. printed name is "Keep (Iller)". "This keep has seen better days, but there seems to be a lot in its ruins. You can go back [b]EAST[r]. You also sense something fearsome from a passage south.". eyes-number of KeepIller is -1.
+KeepIller is a room in Universal. printed name is "Keep (Iller)". "This keep has seen better days, but there seems to be a lot in its ruins. You can go back [b]EAST[r]. [if sco-see-design is true]You explored south already, so no need to go back[else]You also sense something fearsome from a passage south[end if].". eyes-number of KeepIller is -1.
 
 check going south in KeepIller:
 	if sco-knife-right is true, say "You don't need or want to go back there." instead;
@@ -515,7 +515,7 @@ My Stall is a thing. "A stall labeled MY STALL sits here, abandoned, against a w
 
 section mice tall
 
-the mice tall are a plural-named followers. printed name is "mice (tall)". description is "Well, they're tall for mice. But they make up enough numbers to be pretty effective in a skirmish, if need be.". help-chat is "[one of]You're surprised how easy it is to understand them and how easily they understand you. [or][stopping]They discuss how much bigger opponents can be brought down by, not just arrogance facing many small opponents, but by dexterity and quick maneuvers. Oh, also a lot about the evil in the land killing or corrupting or mutating animals. So presumably finding or destroying it will put a stop to the very worst bits.". eyes-number of mice tall is -1.
+the mice tall are a plural-named followers. printed name is "mice (tall)". description is "Well, they're tall for mice. But they make up enough numbers to be extremely effective at whatever you need them to do. They're a cool blend of 'My skill mice kill' and 'My school mice, cool.'". help-chat is "[one of]You're surprised how easy it is to understand them and how easily they understand you. [or][stopping]They discuss how much bigger opponents can be brought down by, not just arrogance facing many small opponents, but by dexterity and quick maneuvers. Oh, also a lot about the evil in the land killing or corrupting or mutating animals. So presumably finding or destroying it will put a stop to the very worst bits.". eyes-number of mice tall is -1.
 
 chapter men shelf
 
@@ -768,13 +768,14 @@ understand "credit" as creditsing.
 understand "credits" as creditsing.
 
 carry out creditsing:
-	say "Thanks to Michael Baltes, Clem Bing-Storrs, Wade Clarke, Hanon Ondricek, P. B. Parjeter, Fred Snyder, and Daniel Stelzer for testing. They found stuff I just didn't have the time to find, or stuff I convinced myself I'd checked, honest I did, or even broke down cases for stuff where I was muddled and not sure how to test stuff. Oh and they inspired several ideas, too. It's always hard to ask someone for their time and energy, but I appreciate it so much![paragraph break]Michael, Fred and Daniel have IFComp [']24 entries as well, and I always appreciate being able to trade testing with a fellow competitor, so it doesn't feel cutthroat.";
+	say "Thanks to Michael Baltes, Clem Bing-Storrs, Wade Clarke, Hanon Ondricek, P. B. Parjeter, Fred Snyder, and Daniel Stelzer for testing. They found stuff I just didn't have the time to find, or stuff I convinced myself I'd checked, honest I did, or even broke down cases for stuff where I was muddled and not sure how to test stuff. Oh and they inspired several ideas, too. It's always hard to ask someone for their time and energy, but I appreciate it so much![paragraph break]Michael, Fred and Daniel had IFComp [']24 entries as well, and I always appreciate being able to trade testing with a fellow competitor, so it doesn't feel cutthroat.";
 	say "[line break]B. J. Best and Arthur DiBianca (he is also in IFComp [']24,) who've written a lot of good stuff, both found bugs within two hours of IFComp starting. So thanks to them!";
 	say "[line break]Viv Dunstan, yet another fellow IFComp [']24 author, found some nontrivial bugs I fixed mid-comp.";
-	say "[line break]DemonApologist, who wrote reviews for all IFComp [']24's entries, and Wolfbiter, who was close as of this writing, found nontrivial bugs, too.";
+	say "[line break]DemonApologist, who wrote reviews for all IFComp [']24[']s entries, and Wolfbiter, who also ran the gauntlet, found nontrivial bugs, too.";
+	say "[line break]Tabitha found several bugs in post-comp versions.";
 	say "[line break]The cover art is my fault, and my fault alone.";
 	say "[line break]Thanks to David Welbourn for writing a walkthrough during IFComp. He has a Patreon account at patreon.com/dswxyz. Support it if you can!";
-	say "[paragraph break]GENERAL THANKS:[paragraph break]";
+	say "[line break][b]GENERAL THANKS[r]:[paragraph break]";
 	say "Thanks to everyone past and future involved in the administration of IFComp.";
 	say "Thanks to the I7 board on Intfiction.org for their help, as well as the people in the general topics as we discussed our plans.";
 	the rule succeeds;
