@@ -179,8 +179,12 @@ definition: a follower (called fo) is leftbehind:
 	if fo is in location of player, no;
 	yes;	
 
+to decide whether can-lump-party:
+	if number of friendly followers >= 3, yes;
+	no;
+
 to decide whether say-plural-moving-followers:
-	if number of leftbehind followers > 1, yes;
+	if number of followers in location of player > 1, yes;
 	let rf be a random leftbehind follower;
 	if rf is plural-named, yes;
 	no;

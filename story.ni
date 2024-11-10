@@ -813,7 +813,7 @@ report verbsing when player has war pawn:
 	say "With [the war pawn], [if gs-war-pawn-try is true][b]WARP ON[r][else]there must be a way[end if] to gain insight to pass a tricky puzzle.";
 	continue the action;
 
-report verbsing when number of friendly followers >= 3:
+report verbsing when can-lump-party:
 	say "[b]UH PARTY[r] or [b]A PARTY[r] will describe your party as one unit (use [b]I[r] to see who is there,) and [b]APART EE[r] (2-4 e's) will show them individually.";
 	continue the action;
 
@@ -863,7 +863,7 @@ lumponing is an action out of world.
 
 understand the command "uh/a party" as something new.
 
-understand "uh party" and "a party" as lumponing when number of friendly followers >= 3.
+understand "uh party" and "a party" as lumponing when can-lump-party.
 
 carry out lumponing:
 	lump-party true;
@@ -875,7 +875,7 @@ lumpoffing is an action out of world.
 
 understand the command "apart ee/eee/eeee" as something new.
 
-understand "apart ee" and "apart eee" and "apart eeee" as lumpoffing when number of friendly followers >= 3.
+understand "apart ee" and "apart eee" and "apart eeee" as lumpoffing when can-lump-party.
 
 carry out lumpoffing:
 	lump-party false;
