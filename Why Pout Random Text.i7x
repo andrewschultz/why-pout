@@ -158,13 +158,16 @@ mynum	mytext
 0	"[t1t2] reject the shallow self-help of [i]I Learn, I'll Earn[r]."
 0	"[t1t2] recall separate visits to the Dumb Pledge-Dump-Ledge."
 
-volume testing without random shuffling - not for release
+volume testing without random shuffling
 
-when play begins:
-	sort quasirand-init-list in random order;
+when play begins (this is the seed random final dialogues rule):
+	if debug-state is false:
+		sort quasirand-init-list in random order;
+		sort table of further dialogues in random order;
 	repeat with QL running through quasirand-init-list:
-		sort QL in random order;
+		if debug-state is false, sort QL in random order;
 		add QL to quasirand-final-list;
+	if debug-state is false, continue the action;
 	say "[quasirand-final-list].";
 	now followers-as-joined is list of followers;
 	repeat through table of further dialogues:

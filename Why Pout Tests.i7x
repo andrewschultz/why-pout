@@ -313,7 +313,7 @@ understand "undoy" as undoying.
 
 carry out undoying:
 	now undo-okayed is true;
-	say "Undo allowed for testing purposes.";
+	say "Undo allowed for testing purposes, mostly to test war pawn.";
 	the rule succeeds;
 
 chapter undoning
@@ -326,7 +326,7 @@ understand "undon" as undoning.
 
 carry out undoning:
 	now undo-okayed is false;
-	say "Undo disallowed for testing purposes.";
+	say "Undo disallowed for testing purposes, mostly to test war pawn.";
 	the rule succeeds;
 
 Why Pout Tests ends here.
