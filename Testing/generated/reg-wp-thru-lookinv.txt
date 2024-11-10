@@ -440,6 +440,7 @@ There's a huge pile of lode ore here, too, and you found a low door in it that l
 
 >l
 This area feels replete with the sort of double-talk all salesmen use. You can almost hear all the dropped and excess apostrophes. It will be tough to hang with all the way through, but if you do, maybe you'll get something out of it.
+So, yeah, outwardly, everything seems okay here. And yet ... something about the place, its name, leads you to feel things behind the curtain aren't right, and you need to expose them.
 You can only go back OUT here.
 You don't really trust the whole "financial services" vibe here. Maybe there's a double meaning to deduce.
 
@@ -447,7 +448,7 @@ You don't really trust the whole "financial services" vibe here. Maybe there's a
 by a point
 
 >l
-This area feels replete with the sort of double-talk all salesmen use. You can almost hear all the dropped and excess apostrophes. It will be tough to hang with all the way through, but if you do, maybe you'll get something out of it.
+You've seen the seedy side of this place, and you can't unsee it. You'll just have to work through it.
 You can only go back OUT here.
 Some merchant babbles on, all up in your personal space, suggesting you buy low.
 
@@ -455,13 +456,15 @@ Some merchant babbles on, all up in your personal space, suggesting you buy low.
 by a point
 
 >l
+You've seen the seedy side of this place, and you can't unsee it. You'll just have to work through it.
+You can only go back OUT here.
 Some merchant babbles on, all up in your personal space, suggesting you buy low, but a bit more tolerable now you've got a mantra to zone them out.
 
 >bile oh
 by a point
 
 >l
-It's finally nice and silent here again, and maybe there's a specific way to enjoy that.
+It's nice to have this area to yourself, for now. You'd like to celebrate a bit. Maybe there's a specific way to do so.
 You can only go back OUT here.
 !merchant
 
@@ -469,6 +472,7 @@ You can only go back OUT here.
 by a point
 
 >l
+Commerce seems to be happening here, whether you want it or not. Or maybe you have one more thing you can do?
 An oaf liar blathers away here, with stuff that's likely, but not provably false. They seem quite proud of their salesmanship skill, which is more persistence than anything else.
 
 >oh flier
@@ -484,6 +488,7 @@ There's that occasional voice ringing in your head asking "Why pout?" But beside
 You have a name, too, now, you remember: Mike Orr.
 
 >l
+It's fully calm and peaceful around here. You've managed to navigate negotiations and wind up with ... a shiny new flier! What more could you ask for? Here, well, probably nothing. Time to get back to your companions.
 You've managed to navigate negotiations and wind up with ... a shiny new flier! What more could you ask for? Here, well, probably nothing.
 You can only go back OUT here.
 
@@ -727,6 +732,14 @@ You have a name, too, now, you remember: Mike Orr.
 The ocean surrounds you on all sides, but it's less intimidating now you rode the squid. You had fun exploring beyond the horizon, but there's nothing left to do, now. You can go back north to the high plain.
 
 >n
+
+>n
+
+>in
+It's fully calm and peaceful around here. You even made full use of that flier you found here! What more could you ask for? Here, well, probably nothing. Time to get back to your companions.
+
+>undo
+>undo
 
 >d
 

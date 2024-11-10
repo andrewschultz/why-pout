@@ -963,7 +963,7 @@ This transaction reduces your wealth from six quid to three quid.
 !lot of friends
 
 @all
-NOTE: in order to simplify things now you've grown your party, you can type UH PARTY or A PARTY so everyone is not listed individually. APART EEE will list them individually again. This is all in VERBS.
+NOTE: in order to simplify things now you've grown your party, you can type UH PARTY or A PARTY so everyone is not listed individually. APART EEE (or EE/EEEE) will list them individually again. This is all in VERBS.
 
 @verbs
 >verbs
@@ -1113,7 +1113,7 @@ That seedy sign stands off to the side here. It's no longer scary, but you don't
 >e
 
 @npc
-/^rand-npc 21 \.\.\.
+/^first-npc 21 \.\.\.
 this is random dialogue
 \\
 >verbs
@@ -1126,7 +1126,7 @@ You can go down or in the cardinal directions, but not up.
 
 >d
 @npc
-/^rand-npc 3[1-2] \.\.\.
+/^first-npc 3[1-2] \.\.\.
 !this is random dialogue
 
 @all
@@ -1185,7 +1185,7 @@ to want to cut in a bit for their turn some time.
 >u
 
 @npc
-/^rand-npc 3[1-2] \.\.\.
+/^first-npc 3[1-2] \.\.\.
 
 @go
 >in
@@ -1503,12 +1503,12 @@ Now that you got rid of the orc's old associates and their, um, mentor, there's 
 >out
 
 @npc
-/^rand-npc 4[1-3] ...
+/^first-npc 4[1-3] ...
 
 >e
 
 @npc
-/^rand-npc 4[1-3] ...
+/^first-npc 4[1-3] ...
 
 @all
 #testcase-room-names-lobe-end
@@ -1595,7 +1595,7 @@ Fortunately, the We-Craft Weak Raft from the bay sale floats here, ready to take
 >n
 
 @npc
-/^rand-npc 4[1-3] ...
+/^first-npc 4[1-3] ...
 
 @all
 #testcase-room-names-store-mile
@@ -1700,17 +1700,17 @@ You can only go back south to Lobe End or north to the rest of the mall.
 >s
 
 @npc
-/^rand-npc 5[1-4] ...
+/^first-npc 5[1-4] ...
 
 >w
 
 @npc
-/^rand-npc 5[1-4] ...
+/^first-npc 5[1-4] ...
 
 >n
 
 @npc
-/^rand-npc 5[1-4] ...
+/^first-npc 5[1-4] ...
 
 @verbs
 >eat ore
@@ -1744,7 +1744,7 @@ This wouldn't have worked even before the mice found a passage.
 >in
 
 @npc
-/^rand-npc 5[1-4] ...
+/^first-npc 5[1-4] ...
 
 @all
 #testcase-room-names-we-loan
@@ -1759,6 +1759,7 @@ This is a seedy financial services provider, not a seedy used car dealer. Still,
 @li
 >l
 This area feels replete with the sort of double-talk all salesmen use. You can almost hear all the dropped and excess apostrophes. It will be tough to hang with all the way through, but if you do, maybe you'll get something out of it.
+So, yeah, outwardly, everything seems okay here. And yet ... something about the place, its name, leads you to feel things behind the curtain aren't right, and you need to expose them.
 You can only go back OUT here.
 You don't really trust the whole "financial services" vibe here. Maybe there's a double meaning to deduce.
 
@@ -1790,7 +1791,7 @@ It's a bit beyond your power to whisk someone who'll babble on back to Babylon, 
 
 @li
 >l
-This area feels replete with the sort of double-talk all salesmen use. You can almost hear all the dropped and excess apostrophes. It will be tough to hang with all the way through, but if you do, maybe you'll get something out of it.
+You've seen the seedy side of this place, and you can't unsee it. You'll just have to work through it.
 You can only go back OUT here.
 Some merchant babbles on, all up in your personal space, suggesting you buy low.
 
@@ -1830,6 +1831,8 @@ Neither you nor the merchant owe each other anything, for better or for worse. Y
 
 @li
 >l
+You've seen the seedy side of this place, and you can't unsee it. You'll just have to work through it.
+You can only go back OUT here.
 Some merchant babbles on, all up in your personal space, suggesting you buy low, but a bit more tolerable now you've got a mantra to zone them out.
 
 @verbs
@@ -1861,7 +1864,7 @@ Oh, hey, you can maybe enjoy some solitude now!
 
 @li
 >l
-It's finally nice and silent here again, and maybe there's a specific way to enjoy that.
+It's nice to have this area to yourself, for now. You'd like to celebrate a bit. Maybe there's a specific way to do so.
 You can only go back OUT here.
 !merchant
 
@@ -1897,6 +1900,7 @@ You don't owe the oaf liar anything, and they don't owe you a flier, even if the
 
 @li
 >l
+Commerce seems to be happening here, whether you want it or not. Or maybe you have one more thing you can do?
 An oaf liar blathers away here, with stuff that's likely, but not provably false. They seem quite proud of their salesmanship skill, which is more persistence than anything else.
 
 @verbs
@@ -1948,23 +1952,24 @@ You have a name, too, now, you remember: Mike Orr.
 
 @li+
 >l
+It's fully calm and peaceful around here. You've managed to navigate negotiations and wind up with ... a shiny new flier! What more could you ask for? Here, well, probably nothing. Time to get back to your companions.
 You've managed to navigate negotiations and wind up with ... a shiny new flier! What more could you ask for? Here, well, probably nothing.
 You can only go back OUT here.
 
 >out
 
 @npc
-/^rand-npc 6[1-5] ...
+/^first-npc 6[1-5] ...
 
 >s
 
 @npc
-/^rand-npc 6[1-5] ...
+/^first-npc 6[1-5] ...
 
 >w
 
 @npc
-/^rand-npc 6[1-5] ...
+/^first-npc 6[1-5] ...
 
 @hint
 >eye plant
@@ -2064,7 +2069,7 @@ The manna is raw material for more standard food.
 >e
 
 @npc
-/^rand-npc 6[1-5] ...
+/^first-npc 6[1-5] ...
 
 @alt
 ##balance undos
@@ -2093,7 +2098,7 @@ But wait! You can use the grow vial! It makes the tree (small) into a tree (tall
 >e
 
 @npc
-/^rand-npc 6[1-5] ...
+/^first-npc 6[1-5] ...
 
 >n
 
@@ -2277,22 +2282,22 @@ The ocean surrounds you on all sides, but it's less intimidating now you rode th
 >n
 
 @npc
-/^rand-npc 7[1-6] ...
+/^first-npc 7[1-6] ...
 
 >e
 
 @npc
-/^rand-npc 7[1-6] ...
+/^first-npc 7[1-6] ...
 
 >n
 
 @npc
-/^rand-npc 7[1-6] ...
+/^first-npc 7[1-6] ...
 
 >n
 
 @npc
-/^rand-npc 7[1-6] ...
+/^first-npc 7[1-6] ...
 
 @all
 # this makes sure TREE SMALL then bringing the grow vial back works okay
@@ -2453,7 +2458,7 @@ You already ate the only thing you needed to.
 >s
 
 @npc
-/^rand-npc 7[1-6] ...
+/^first-npc 7[1-6] ...
 
 @all
 The gaunt raider raises a hand. They have an idea! The abandoned mall must have all sorts of stuff that can be fashioned into weapons. Not top-of-the-line, but enough to get by. Heartened by your recent meal, your party takes the time to find weapons. You all keep them hidden until needed.
@@ -2465,7 +2470,7 @@ You and your party are also armed for any conflict that may arise.
 >s
 
 @npc
-/^rand-npc 7[1-6] ...
+/^first-npc 7[1-6] ...
 
 @verbs
 >eat raft
@@ -2474,7 +2479,7 @@ You already ate the only thing you needed to.
 >w
 
 @npc
-/^rand-npc 8[1-7] ...
+/^first-npc 8[1-7] ...
 
 @min
 Odd! BRUISE WARES has vanished. Well, one less dead end to worry about.
@@ -2485,7 +2490,7 @@ Odd! BRUISE WARES has vanished. Well, one less dead end to worry about.
 >s
 
 @npc
-/^rand-npc 8[1-7] ...
+/^first-npc 8[1-7] ...
 
 @hom
 #testcase-homonym-reject-table-of-main-oronyms-thee
@@ -2522,26 +2527,36 @@ The ocean surrounds you on all sides, but it's less intimidating now you rode th
 
 >n
 
+@li
+##balance undos
+>n
+\\
+>in
+It's fully calm and peaceful around here. You even made full use of that flier you found here! What more could you ask for? Here, well, probably nothing. Time to get back to your companions.
+\\
+>undo
+>undo
+
 @npc
-/^rand-npc 8[1-7] ...
+/^first-npc 8[1-7] ...
 
 >d
 
 @npc
-/^rand-npc 8[1-7] ...
+/^first-npc 8[1-7] ...
 \\
 >z
-/^rand-npc 8[1-7] ...
+/^first-npc 8[1-7] ...
 \\
 >z
-/^rand-npc 8[1-7] ...
+/^first-npc 8[1-7] ...
 \\
 >z
-/^rand-npc 8[1-7] ...
+/^first-npc 8[1-7] ...
 NOTE: you've made it through the initial random dialogues, where the orc's dialogue is last. There are more random ones ahead. If you want to read them all without hitting L a lot, read the tables file.
 \\
 >z
-/^rand-npc [1-8][1-7] \.\.\.
+/^first-npc [1-8][1-7] \.\.\.
 \\
 >scorch at
 You indicate "we're draining" at chatter ...
@@ -2552,7 +2567,7 @@ You indicate "we're draining" at chatter ...
 Your party is already keeping quiet every turn.
 \\
 >z
-!rand-npc
+!first-npc
 \\
 >score chat
 You give the thumbs-up to word-raining ...
@@ -2562,7 +2577,7 @@ Your party is now chatting away randomly every turn.
 You give the thumbs-up to word-raining ...
 Your party is already chatting away randomly every turn.
 >z
-rand-npc
+first-npc
 
 @gt
 #testcase-goto-table-of-noways-worm-eaten

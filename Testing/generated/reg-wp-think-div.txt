@@ -1055,7 +1055,7 @@ You already broke the truth to the crude orc as gently as you could!
 >weak us
 You already established the grinch earls cursed out of weakness or, at least, not fully from strength!
 
->ass lo
+>ass low
 by a bonus point
 
 >bastard eee
@@ -1095,6 +1095,9 @@ The grin churls remark that you seemed so open-minded, really, and they're all f
 #+testcase-check-pre-weak-us-rule-if-sco-weak-us-is-true
 >weak us
 You already established the grin churls cursed out of weakness or, at least, not fully from strength!
+
+>gah wanker
+by a bonus point
 
 >out
 

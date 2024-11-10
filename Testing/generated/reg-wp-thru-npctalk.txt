@@ -83,14 +83,14 @@ by a point
 
 >e
 
-/^rand-npc 21 \.\.\.
+/^first-npc 21 \.\.\.
 this is random dialogue
 
 >verbs
 To control random follower chat, you can type SCORE CHAT to turn it on or SCORCH AT to turn it off.
 
 >d
-/^rand-npc 3[1-2] \.\.\.
+/^first-npc 3[1-2] \.\.\.
 !this is random dialogue
 
 >gaunt raider
@@ -98,7 +98,7 @@ by a point
 
 >u
 
-/^rand-npc 3[1-2] \.\.\.
+/^first-npc 3[1-2] \.\.\.
 
 #unscramble the order the swears appear in
 >ao
@@ -143,11 +143,11 @@ by a bonus point
 
 >out
 
-/^rand-npc 4[1-3] ...
+/^first-npc 4[1-3] ...
 
 >e
 
-/^rand-npc 4[1-3] ...
+/^first-npc 4[1-3] ...
 
 >low bend
 by a point
@@ -157,7 +157,7 @@ by a point
 
 >n
 
-/^rand-npc 4[1-3] ...
+/^first-npc 4[1-3] ...
 
 >store mile
 by a point
@@ -170,22 +170,22 @@ by a point
 
 >s
 
-/^rand-npc 5[1-4] ...
+/^first-npc 5[1-4] ...
 
 >w
 
-/^rand-npc 5[1-4] ...
+/^first-npc 5[1-4] ...
 
 >n
 
-/^rand-npc 5[1-4] ...
+/^first-npc 5[1-4] ...
 
 >low door
 by a point
 
 >in
 
-/^rand-npc 5[1-4] ...
+/^first-npc 5[1-4] ...
 
 >well own
 by a point
@@ -204,15 +204,15 @@ by a point
 
 >out
 
-/^rand-npc 6[1-5] ...
+/^first-npc 6[1-5] ...
 
 >s
 
-/^rand-npc 6[1-5] ...
+/^first-npc 6[1-5] ...
 
 >w
 
-/^rand-npc 6[1-5] ...
+/^first-npc 6[1-5] ...
 
 >plan tracker
 by a point
@@ -222,11 +222,11 @@ by a point
 
 >e
 
-/^rand-npc 6[1-5] ...
+/^first-npc 6[1-5] ...
 
 >e
 
-/^rand-npc 6[1-5] ...
+/^first-npc 6[1-5] ...
 
 >n
 
@@ -254,19 +254,19 @@ by a point
 
 >n
 
-/^rand-npc 7[1-6] ...
+/^first-npc 7[1-6] ...
 
 >e
 
-/^rand-npc 7[1-6] ...
+/^first-npc 7[1-6] ...
 
 >n
 
-/^rand-npc 7[1-6] ...
+/^first-npc 7[1-6] ...
 
 >n
 
-/^rand-npc 7[1-6] ...
+/^first-npc 7[1-6] ...
 
 >t dwarf
 
@@ -292,43 +292,43 @@ by a point
 
 >s
 
-/^rand-npc 7[1-6] ...
+/^first-npc 7[1-6] ...
 
 >s
 
-/^rand-npc 7[1-6] ...
+/^first-npc 7[1-6] ...
 
 >w
 
-/^rand-npc 8[1-7] ...
+/^first-npc 8[1-7] ...
 
 >s
 
-/^rand-npc 8[1-7] ...
+/^first-npc 8[1-7] ...
 
 >the file
 by a point
 
 >n
 
-/^rand-npc 8[1-7] ...
+/^first-npc 8[1-7] ...
 
 >d
 
-/^rand-npc 8[1-7] ...
+/^first-npc 8[1-7] ...
 
 >z
-/^rand-npc 8[1-7] ...
+/^first-npc 8[1-7] ...
 
 >z
-/^rand-npc 8[1-7] ...
+/^first-npc 8[1-7] ...
 
 >z
-/^rand-npc 8[1-7] ...
+/^first-npc 8[1-7] ...
 NOTE: you've made it through the initial random dialogues, where the orc's dialogue is last. There are more random ones ahead. If you want to read them all without hitting L a lot, read the tables file.
 
 >z
-/^rand-npc [1-8][1-7] \.\.\.
+/^first-npc [1-8][1-7] \.\.\.
 
 >scorch at
 You indicate "we're draining" at chatter ...
@@ -339,7 +339,7 @@ You indicate "we're draining" at chatter ...
 Your party is already keeping quiet every turn.
 
 >z
-!rand-npc
+!first-npc
 
 >score chat
 You give the thumbs-up to word-raining ...
@@ -349,7 +349,7 @@ Your party is now chatting away randomly every turn.
 You give the thumbs-up to word-raining ...
 Your party is already chatting away randomly every turn.
 >z
-rand-npc
+first-npc
 
 >were meetin
 by a point

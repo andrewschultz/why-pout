@@ -177,7 +177,7 @@ A rogue, old, arrives. They mention they'd like to help you but, you know, the r
 This transaction reduces your wealth from six quid to three quid.
 !lot of friends
 
-NOTE: in order to simplify things now you've grown your party, you can type UH PARTY or A PARTY so everyone is not listed individually. APART EEE will list them individually again. This is all in VERBS.
+NOTE: in order to simplify things now you've grown your party, you can type UH PARTY or A PARTY so everyone is not listed individually. APART EEE (or EE/EEEE) will list them individually again. This is all in VERBS.
 
 >see design
 by a point

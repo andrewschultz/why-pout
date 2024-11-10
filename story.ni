@@ -432,15 +432,15 @@ We Loan is a room in universal. printed name is "[if sco-well-own is false]We Lo
 
 to say loan-starter:
 	if sco-oh-flier is true:
-		say "It's fully calm and peaceful around here. You've managed to navigate negotiations and wind up with ... a shiny new flier! What more could you ask for? Here, well, probably nothing. Time to get back to your companions.";
+		say "It's fully calm and peaceful around here. [if flier is moot]You even made full use of that flier you found here[else]You've managed to navigate negotiations and wind up with ... a shiny new flier[end if]! What more could you ask for? Here, well, probably nothing. Time to get back to your companions.";
 	else if sco-whee-lone is true:
 		say "Commerce seems to be happening here, whether you want it or not. Or maybe you have one more thing you can do?";
 	else if sco-bile-oh is true:
-		say "It's nice to have this area to yourself, for now. You'd like to celebrate a bit.";
+		say "It's nice to have this area to yourself, for now. You'd like to celebrate a bit. Maybe there's a specific way to do so.";
 	else if sco-well-own is true: [summer chant doesn't change the room description]
 		say "You've seen the seedy side of this place, and you can't unsee it. You'll just have to work through it.";
 	else:
-		say "This area feels replete with the sort of double-talk all salesmen use. You can almost hear all the dropped and excess apostrophes. It will be tough to hang with all the way through, but if you do, maybe you'll get something out of it.[paragraph break]Outwardly, everything seems okay here. And yet ... something about the place, its name, leads you to feel things behind the curtain aren't right, and you need to expose them."
+		say "This area feels replete with the sort of double-talk all salesmen use. You can almost hear all the dropped and excess apostrophes. It will be tough to hang with all the way through, but if you do, maybe you'll get something out of it.[paragraph break]So, yeah, outwardly, everything seems okay here. And yet ... something about the place, its name, leads you to feel things behind the curtain aren't right, and you need to expose them."
 
 check going outside in We Loan:
 	say "You're glad to get back to your companions...";
