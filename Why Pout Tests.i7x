@@ -108,6 +108,19 @@ carry out afing:
 
 volume diagnostics
 
+chapter whotalking
+
+whotalking is an action out of world.
+
+understand the command "whotalk" as something new.
+
+understand "whotalk" as whotalking.
+
+carry out whotalking:
+	repeat with Q running through followers:
+		say "[Q]: [if Q is chatted]chatted[else]unchatted[end if].";
+	the rule succeeds;
+
 chapter pointsmisseding
 
 [well points missed AND thought commands to still get working]
@@ -299,6 +312,21 @@ carry out ediaging:
 			increment count;
 			say "[count] Assign eyes-number to thing [X].";
 	if count is 0, say "All things fixed!";
+	the rule succeeds;
+
+chapter untiling
+
+untiling is an action out of world applying to one number.
+
+understand the command "until" as something new.
+
+understand "until [number]" as untiling.
+
+carry out untiling:
+	if number understood < 1 or number understood > number of rows in table of further dialogues:
+		say "You need a number between 1 and [number of rows in table of further dialogues]. That's how far back from the end of the second group of random dialogues you will be set." instead;
+	now second-dialogue-row is (number of rows in table of further dialogues) - number understood;
+	say "Acting as if I just wrote row [second-dialogue-row] of [number of rows in table of further dialogues].";
 	the rule succeeds;
 
 volume randomizing in debug
