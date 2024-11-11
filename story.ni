@@ -112,15 +112,16 @@ check thinking (this is the right phrase wrong time rule):
 		if first-exact entry is false and first-close entry is false and second-exact entry is false and second-close entry is false, next;
 		let rights be (boolval of first-exact entry + boolval of second-exact entry);
 		let almosts be 0;
-		if first-close entry is true and first-exact entry is true, increment almosts;
-		if second-close entry is true and second-exact entry is true, increment almosts;
+		if first-close entry is true and first-exact entry is false, increment almosts;
+		if second-close entry is true and second-exact entry is false, increment almosts;
 		if rights is 2:
 			say "You feel you've got the words right on separate occasions for ";
 		else if rights is 1:
 			say "You must have one word right[if almosts is 1] and one word close[end if] for ";
 		else if rights is 0:
 			say "You must be close with [if almosts is 1]one word[else]both words[end if] for ";
-		say "[part-explain entry][line break]";
+		say "[part-explain entry].";
+		now got-think is true;
 	if got-think is false:
 		say "Nothing comes to mind."
 
