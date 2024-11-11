@@ -16,6 +16,7 @@
 >an aim
 by a point
 
+#testcase-check-pre-an-aim-rule-fallthrough
 #testcase-run-post-an-aim-rule-default
 Yes. Now that you realize you want more than just to know your name, that you have bigger goals, you push a bit harder when you initially forget it. You remember patches of the past. You remember people harshly calling you by your last name, then your first.
 Your name is Mike Orr. You even remember it's -- well, one of these two things: short for Michal, which everyone pronounced Michael until you just gave up, or ... well, Michael.
@@ -26,6 +27,7 @@ You look around a bit. You can see more, now. You're in some sort of tomb apse. 
 >two maps
 by a point
 
+#testcase-check-pre-two-maps-rule-fallthrough
 #testcase-run-post-two-maps-rule-default
 You look around for secrets. First, you find two pages, one a hash of horizontal lines and another that is a hash of vertical lines. You put them together ... and you see a maze. You hope you can trace a passage out.
 You do! But first, you notice, under the pages, a pair of weird mechanical eyes: sly size-slice eyes! They seem quite observant, and best, they don't seem to be surveilling YOU.
@@ -37,6 +39,7 @@ You poke around a bit, hoping for even more help. But that is all. So you follow
 >self owns
 by a point
 
+#testcase-check-pre-self-owns-rule-fallthrough
 #testcase-run-post-self-owns-rule-default
 You take a step back from all the confident, constant chatter in the cell phones. You hear that, indeed, people are just repeating mantras, and they are not as smart as they think they are. You wonder if you should say something to the most egregious offenders ... and you eventually do! And they appear flustered. They attack you back for being too quiet. You mention that if they annoyed someone as too-quiet as you, they must have gone over the line.
 Your confrontation did not go unnoticed by other cell phoners. They take the hint and moderate their voices.
@@ -45,12 +48,14 @@ However, now, a prize talk blasts through hidden loudspeakers. It exhorts you to
 >pry stalk
 by a point
 
+#testcase-check-pre-pry-stalk-rule-fallthrough
 #testcase-run-post-pry-stalk-rule-default
 Among all the chatter, you discover a disused booth. Someone is preaching on about environmental stuff, and it's so much less painful than cell phone chat. You worry they're just going to blab on forever, but they're so grateful you listened as long as you did. They hand you a stalk they think can grow quickly. Their own special formula. It looks weird and glittery, and if anything can reach up out of here, this can. But the question is, where can it grow to?
 
 >high plain
 by a point
 
+#testcase-check-pre-high-plain-rule-fallthrough
 #testcase-run-post-high-plain-rule-default
 You plant the stalk, which -- well, it's already a bit of a stalk, but it grows quickly and sturdily. It's not hard at all to climb. You are pretty sure you're aboveground, but it's hard to see for sure.
 
@@ -60,6 +65,7 @@ You plant the stalk, which -- well, it's already a bit of a stalk, but it grows 
 >nah phase
 by a point
 
+#testcase-check-pre-nah-phase-rule-fallthrough
 #testcase-run-post-nah-phase-rule-default
 The haze seemed too thick at first. But you recognize it doesn't have to be there. As you sift through it, you notice things that weren't there before. It lifts.
 
@@ -69,6 +75,7 @@ The haze seemed too thick at first. But you recognize it doesn't have to be ther
 >pole east
 by a point
 
+#testcase-check-pre-pole-east-rule-fallthrough
 #testcase-run-post-pole-east-rule-default
 Ah, yes. It makes sense. You find the pole. Strangely, there's just a single switch to flip. And even more strangely, the switch you flip causes the pole to revert into the ground. Yay!
 But there's more! A war pawn, like a chess piece, rolls into view. It looks pretty powerful. As you take it, you reflect that you may wish to save it for down the road when you're really stuck somewhere. You have a good idea HOW to use it, at any rate.
@@ -76,18 +83,21 @@ But there's more! A war pawn, like a chess piece, rolls into view. It looks pret
 >shore trail
 by a point
 
+#testcase-check-pre-shore-trail-rule-fallthrough
 #testcase-run-post-shore-trail-rule-default
 There must be more to the short rail than you see. And you start tracing where it is, where it can be, where it should go. You find something to dig up. It's ... surprisingly malleable. You have nothing else to do, anyway. Soon it feels like pulling cable from a ground. It's tough, since you can't see around, but indeed, the short rail does lead to a shore trail that leads south.
 
 >grow star
 by a point
 
+#testcase-check-pre-grow-star-rule-fallthrough
 #testcase-run-post-grow-star-rule-default
 You look at the gross tar, and you hope for a star in the sky to become brighter. It does, and clearly some of the tar is goopier than some of the other tar. You see a way to the north, and after you do, the tar isn't as relevant any more.
 
 >key pillar
 by a point
 
+#testcase-check-pre-key-pillar-rule-fallthrough
 #testcase-run-post-key-pillar-rule-default
 You look around the pillars for a key, since there's no flowerpot to hide it under. You find one, and once it unlocks the way west, you hide it, again.
 You've changed the landscape a lot, north, south, east and west. But there's more! You hear a rumbling beneath you, opening a passage DOWN!
@@ -100,6 +110,7 @@ You've changed the landscape a lot, north, south, east and west. But there's mor
 >known ocean
 by a point
 
+#testcase-check-pre-known-ocean-rule-fallthrough
 #testcase-run-post-known-ocean-rule-default
 Ah, yes. Things clear up a bit now. There we go ... you see where an ocean should be, and ... yes, you dip your toe in some wetness. Things clear up. You even see a sick squid! Maybe you can help it.
 
@@ -109,6 +120,7 @@ Ah, yes. Things clear up a bit now. There we go ... you see where an ocean shoul
 >six quid
 by a point
 
+#testcase-check-pre-six-quid-rule-fallthrough
 #testcase-run-post-six-quid-rule-default
 You have an idea what is bothering the squid. Yes, a few coins stuck. Surprisingly, it lets you help out. "Current, sea, currency," you mutter as you poke around. Ah, there you go.
 You offer to give it some of the coins it almost choked on, but it does not need them. It seems to wait around, as if to help you with travel to places you may get to go. It's willing to wait.
@@ -123,12 +135,14 @@ You offer to give it some of the coins it almost choked on, but it does not need
 >wool frock
 by a point
 
+#testcase-check-pre-wool-frock-rule-fallthrough
 #testcase-run-post-wool-frock-rule-default
 You rummage about and find a wool frock.
 
 >hide out
 by a point
 
+#testcase-check-pre-hide-out-rule-fallthrough
 #testcase-run-post-hide-out-rule-default
 It's easy enough to say you should doubt yourself less. I mean, you'd feel stupid doubting it. But there's always a reason not to. Still, you involuntarily start a mantra: "Fine, doubt? Find out!"
 And what do you know? You find a hideout below!
@@ -141,6 +155,7 @@ And what do you know? You find a hideout below!
 >boost role
 by a point
 
+#testcase-check-pre-boost-role-rule-fallthrough
 #testcase-run-post-boost-role-rule-default
 You talk with the booze troll for a bit. They seem not to know who they are, and that gives you something in common with them. They don't want to be a lousy boozer all their life. They are sick of drinking Base Ale.
 You decide to trust them. They don't seem armed. You mention you've been having an adventure, and they'd sort of like one, too. They hand you a bottle of Base Ale as thanks. Not that they want you to go down their road. But it might be useful in bartering.
@@ -164,6 +179,7 @@ A seedy sign stands here, advertising somewhere very risky indeed.
 >gnome old
 by a point
 
+#testcase-check-pre-gnome-old-rule-fallthrough
 #testcase-run-post-gnome-old-rule-default
 A gnome, old, arrives from a room above in the keep. They offer to adventure with you, if you have suitable enough adventuring gear. As a matter of fact, you do. The wool frock works well.
 "Less gnome attic, more nomadic," they muse.
@@ -172,6 +188,7 @@ Funnily, you stop specifically noticing the lack of mold now your new companion'
 >rogue old
 by a point
 
+#testcase-check-pre-rogue-old-rule-fallthrough
 #testcase-run-post-rogue-old-rule-default
 A rogue, old, arrives. They mention they'd like to help you but, you know, the row (gold) needs maintenance. You offer to pay them three quid.
 This transaction reduces your wealth from six quid to three quid.
@@ -182,6 +199,7 @@ NOTE: in order to simplify things now you've grown your party, you can type UH P
 >see design
 by a point
 
+#testcase-check-pre-see-design-rule-fallthrough
 #testcase-run-post-see-design-rule-default
 You see the design in the seedy sign. It leads somewhere scary. Somewhere you don't want your friends to visit. Though you appreciate their support. You'll be right back. You think. You hope.
 Whatever you need to do or find here, you only want to do it once. You don't want to have to come back. You're glad your friends supported you enough to get here, but you don't want to have to rely on them like that again.
@@ -193,6 +211,7 @@ So, what do you need to find, before getting out?
 >knife right
 by a point
 
+#testcase-check-pre-knife-right-rule-fallthrough
 #testcase-run-post-knife-right-rule-default
 With your friends boosting your spirits, you look for a sacred/profane weapon. It turns up. Eerie howling begins. You hightail it out of there.
 
@@ -208,6 +227,7 @@ With your friends boosting your spirits, you look for a sacred/profane weapon. I
 >gaunt raider
 by a point
 
+#testcase-check-pre-gaunt-raider-rule-fallthrough
 #testcase-run-post-gaunt-raider-rule-default
 After some discussion, you work out a plan to make the gone trader reframe what they did. Whoever they were, the evil powers, they rejected them instead of doubling down. Perhaps there is a way to get back at them. They know things you never could hope to.
 Hmm. You have a lot of friends following you around, but you haven't talked to them much. Perhaps you could learn something from them.
@@ -220,6 +240,7 @@ Hmm. You have a lot of friends following you around, but you haven't talked to t
 >brew swears
 by a bonus point
 
+#testcase-check-pre-brew-swears-rule-fallthrough
 #testcase-run-post-brew-swears-rule-default
 Yes. That's what BRUISE WARES is really for. Enter at your own risk. It's ... an adventure, of its own sort.
 
@@ -231,6 +252,7 @@ Yes. That's what BRUISE WARES is really for. Enter at your own risk. It's ... an
 >weak us
 by a bonus point
 
+#testcase-check-pre-weak-us-rule-fallthrough
 #testcase-run-post-weak-us-rule-default
 #testcase-run-post-weak-us-rule-follow-the-cycle-swears-rule
 You're surprised how just making a little shift can make the grinch earls seem much weaker. Their strength is the sort of brute force that doesn't lift other people up.
@@ -242,6 +264,7 @@ The grinch earls snicker "Aah, slow!" at you. It's a screamy aah, not an a-ha so
 >crew dork
 by a bonus point
 
+#testcase-check-pre-crew-dork-rule-fallthrough
 #testcase-run-post-crew-dork-rule-default
 You break the truth gently to the crude orc that, well, they're at the bottom of the totem pole for this crew. They'll use the crude orc, maybe even not let them into the clique, and then find the next sucker. The grinch earls surprisingly have little response to this besides, well, profanity.
 The crude orc sees it now. The grinch earls weren't as friendly as they seemed. They wanted to use some trusting kid and corrupt them. The crude orc shakes their head. They ask if they can be seen as an orc and not, well, a dork. You say sure.
@@ -251,12 +274,14 @@ Hmm. You have a lot of friends following you around, but you haven't talked to t
 >ass low
 by a bonus point
 
+#testcase-check-pre-ass-lo-rule-fallthrough
 #testcase-run-post-ass-lo-rule-default
 The grinch earls shake their heads at you: "Bah! Sturdy?!"
 
 >bastard eee
 by a bonus point
 
+#testcase-check-pre-bastard-eee-rule-fallthrough
 #testcase-run-post-bastard-eee-rule-default
 You show you're sturdy and then some, with just the right tone of exasperation. They pretend not to be impressed, but they don't have a comeback.
 The grinch earls mock you, or maybe boost themselves, with "Heh, class!"
@@ -264,6 +289,7 @@ The grinch earls mock you, or maybe boost themselves, with "Heh, class!"
 >heckle ass
 by a bonus point
 
+#testcase-check-pre-heckle-ass-rule-fallthrough
 #testcase-run-post-heckle-ass-rule-default
 You give back at least as good as you got, showing you don't need to use the big cuss words to get a point in as well.
 The grinch earls laugh and say "Hush it."
@@ -271,6 +297,7 @@ The grinch earls laugh and say "Hush it."
 >huh shit
 by a bonus point
 
+#testcase-check-pre-huh-shit-rule-fallthrough
 #testcase-run-post-huh-shit-rule-default
 You reject the grinch earls' "urbane" attempts at shutting you up. They're a bit surprised at you.
 The grinch earls take cheap shots and say "Life occurs."
@@ -278,6 +305,7 @@ The grinch earls take cheap shots and say "Life occurs."
 >lie fuckers
 by a bonus point
 
+#testcase-check-pre-lie-fuckers-rule-fallthrough
 #testcase-run-post-lie-fuckers-rule-default
 You cut down the grinch earls for making things more bleak than they are. Sure, life can be cruel, but that's no excuse to make it even more cruel. They give a "whatever," but you see the point touched home.
 The grinch earls launch "Weird! Ick!"
@@ -286,6 +314,7 @@ s at enemies real and imagined.
 >were dicks
 by a bonus point
 
+#testcase-check-pre-were-dicks-rule-fallthrough
 #testcase-run-post-were-dicks-rule-default
 You mock the grinch earls back, giving at least as good as you get, noting there's always a hole in these sorts of attacks.
 The grinch earls, out of insults, give up on it all, claiming you just make everything around more boring. But you know better.
@@ -293,6 +322,7 @@ The grinch earls, out of insults, give up on it all, claiming you just make ever
 >grin churls
 by a bonus point
 
+#testcase-check-pre-grin-churls-rule-fallthrough
 #testcase-run-post-grin-churls-rule-default
 You slip in a few sly digs and say "grin, churls." They shake their heads, annoyed.
 The grin churls remark that you seemed so open-minded, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do, with a "Weak wit? We quit!" and, tailing off, "We're stirred..."
@@ -312,6 +342,7 @@ by a bonus point
 >low bend
 by a point
 
+#testcase-check-pre-low-bend-rule-fallthrough
 #testcase-run-post-low-bend-rule-default
 You almost despair for a minute that you reached a dead end so soon. You page through all the possible ways out, proving to yourself you're right, hoping against hope you're wrong.
 And looking around, you see you are! There is a bit more to all this. A very thin and reasonably sloped path north leads down to some water. Which you can't cross at the moment, but maybe you'll figure a way.
@@ -322,6 +353,7 @@ And looking around, you see you are! There is a bit more to all this. A very thi
 >bay sale
 by a point
 
+#testcase-check-pre-bay-sale-rule-fallthrough
 #testcase-run-post-bay-sale-rule-default
 You have money, and you are ready for a sale, and you get it. Unfortunately, though you were expecting a nice big ship, you get something a little humbler, namely a We-Craft Weak Raft. It seems sturdy enough, though, and it does have a sail.
 You christen it with the base ale, and the bottle fragments shatter and float away in the water.
@@ -335,6 +367,7 @@ This transaction reduces your wealth from three quid to one quid.
 >store mile
 by a point
 
+#testcase-check-pre-store-mile-rule-fallthrough
 #testcase-run-post-store-mile-rule-default
 The storms let up. It's not such a big isle after all, but it does turn out to hold a whole lot of stores and vending areas. In particular, a stall labeled MY STALL, and a shelf labeled MEN SHELF.
 
@@ -344,6 +377,7 @@ The storms let up. It's not such a big isle after all, but it does turn out to h
 >mensch elf
 by a point
 
+#testcase-check-pre-mensch-elf-rule-fallthrough
 #testcase-run-post-mensch-elf-rule-default
 You knock about the MEN shelf a bit, unable to find anything. It's really a collection of shelves that you disassemble and reassemble. Eventually, you're about to give up, and it all collapses, taking a chunk of wall with it. Our pops a mensch elf, quite grateful you helped them escape.
 Hmm. You have a lot of friends following you around, but you haven't talked to them much. Perhaps you could learn something from them.
@@ -351,6 +385,7 @@ Hmm. You have a lot of friends following you around, but you haven't talked to t
 >mice tall
 by a point
 
+#testcase-check-pre-mice-tall-rule-fallthrough
 #testcase-run-post-mice-tall-rule-default
 You look into the stall and shrug your shoulders. Then the gnome (old) steps in and notes they hear something. Chittering noises! The gnome chitters back.
 It takes a lot of negotiating, but you find where the mice are stuck. You and the gnome thud through and out come some mice, tall. They're tall for mice, though they really only come up above your knee.
@@ -365,6 +400,7 @@ Hmm. You have a lot of friends following you around, but you haven't talked to t
 >low door
 by a point
 
+#testcase-check-pre-low-door-rule-fallthrough
 #testcase-run-post-low-door-rule-default
 The lode and the ore are tough to shift around for someone as big as yourself. But the tall mice manage to get into those small niches you can't. And they work so fast, you daren't even ironically say "My! Slow mice, lo!"
 
@@ -376,6 +412,7 @@ The lode and the ore are tough to shift around for someone as big as yourself. B
 >well own
 by a point
 
+#testcase-check-pre-well-own-rule-fallthrough
 #testcase-run-post-well-own-rule-default
 Yes. There's a definite shady side. You mumble to yourself, and then your mumbles get louder, and it attracts ... some merchant. They begin babbling about deals they have, fake-friendly, about how you can buy low.
 
@@ -385,12 +422,14 @@ Yes. There's a definite shady side. You mumble to yourself, and then your mumble
 >summer chant
 by a point
 
+#testcase-check-pre-summer-chant-rule-fallthrough
 #testcase-run-post-summer-chant-rule-default
 You think up a summer chant you mumble under your breath. The merchant finds it a bit weird you like THAT as a way to keep positive. It doesn't seem like that sort of thing helps the economy. Their cheeriness slips slightly, with impressively-balanced potshots at people more and less successful than they are.
 
 >bile oh
 by a point
 
+#testcase-check-pre-bile-oh-rule-fallthrough
 #testcase-run-post-bile-oh-rule-default
 The mere suggestion that the merchant's aggression may be annoying seems to set them off. No, no, it's people like YOU who are the problem. Without dynamic positivity like theirs, you're totally screwed! You're just jealous you don't have it!
 You freeze up, confused by all this, and the merchant takes this as a sign of arrogant disrespect. You are not the first person to reject their positivity! They run into clueless crumb-bums all day!
@@ -400,6 +439,7 @@ Oh, hey, you can maybe enjoy some solitude now!
 >whee lone
 by a point
 
+#testcase-check-pre-whee-lone-rule-fallthrough
 #testcase-run-post-whee-lone-rule-default
 You enjoy your solitude, but ... wait. You lose track of time, and an oaf liar slips in just to babble at you.
 
@@ -411,6 +451,7 @@ by a point
 
 !subterfuge
 
+#testcase-check-pre-oh-flier-rule-fallthrough
 #testcase-run-post-oh-flier-rule-default
 #testcase-run-post-oh-flier-rule-fallthrough
 You act distracted just right. The oaf liar tries to get your attention. Just ignoring them wouldn't work, but paying attention to a flier ... well, they take the hint that you aren't a high-rolling customer. They try to wheedle more money out of you, but of course, that's all you have. So you trade your final quid for the flier. The oaf liar thanks you for not totally wasting their time. They seem to snicker as they depart.
@@ -429,12 +470,14 @@ Well, easy come, easy go. You're pretty sure you've visited everywhere and found
 >plan tracker
 by a point
 
+#testcase-check-pre-plan-tracker-rule-fallthrough
 #testcase-run-post-plan-tracker-rule-default
 Wow! That was ... surprisingly simple. You find a rather new-looking plan tracker behind the plant racker, which crumbles to dust as you push it aside.
 
 >manna curb
 by a point
 
+#testcase-check-pre-manna-curb-rule-fallthrough
 #testcase-run-post-manna-curb-rule-default
 You suspect there is manna beneath the manic herb, but you have no clue how to find it. Thankfully, the mensch elf steps up. You wind up with a lot of manna, whatever that is!
 
@@ -452,6 +495,7 @@ You suspect there is manna beneath the manic herb, but you have no clue how to f
 >tree small
 by a point
 
+#testcase-check-pre-tree-small-rule-fallthrough
 #testcase-run-post-tree-small-rule-default
 #testcase-run-post-tree-small-rule-if-player-has-grow-vial
 #testcase-run-post-tree-small-rule-fallthrough
@@ -468,12 +512,14 @@ Amidst all the fake trees, an actual organic small tree grows. You're a bit disa
 >grow vial
 by a point
 
+#testcase-check-pre-grow-vial-rule-fallthrough
 #testcase-run-post-grow-vial-rule-default
 In the grove isle, you find a grow vial, which you take. It's relaxing, but you can't afford to loiter too long.
 
 >war file
 by a point
 
+#testcase-check-pre-war-file-rule-fallthrough
 #testcase-run-post-war-file-rule-default
 The squid gives you and your companions a ride a few miles across the ocean. You realize you could reach the wharf isle for a war file.
 When you get there, you're a bit disappointed by what you see. There's a bit too much emphasis on magic and the implements thereof, all of which are at a much too hefty price for you. So buying equipment is out.
@@ -486,6 +532,7 @@ You write the main stuff into your plan tracker, and as you do, you realize part
 >wan dwarf
 by a point
 
+#testcase-check-pre-wan-dwarf-rule-fallthrough
 #testcase-run-post-wan-dwarf-rule-default
 You look around and uncover a wan dwarf who wasn't good enough to be a full fighter but was rejected for magic training. You show them the plan tracker with the notes you wrote from the war file, with input from your followers.
 The wan dwarf thinks for a minute, then starts filling in some blanks in your plan. Not to criticize, just ... you thought of some things they didn't, and they thought of some you didn't.
@@ -527,6 +574,7 @@ talk-ache
 >tall cake
 by a point
 
+#testcase-check-pre-tall-cake-rule-fallthrough
 #testcase-run-post-tall-cake-rule-default
 All this preparing food means you don't talk a bit, and as a bonus, your talk-ache is gone.
 But now where to eat the cake?
@@ -534,6 +582,7 @@ But now where to eat the cake?
 >treat all
 by a point
 
+#testcase-check-pre-treat-all-rule-fallthrough
 #testcase-run-post-treat-all-rule-default
 Wow, man! That was some good cake! Everyone shares more of their background over this meal.
 The gaunt raider, in particular, has a lot to say, of past things they did that were horrible, that they think they're sorry for, but maybe not enough.
@@ -553,6 +602,7 @@ The gaunt raider raises a hand. They have an idea! The abandoned mall must have 
 >the file
 by a point
 
+#testcase-check-pre-the-file-rule-fallthrough
 #testcase-run-post-the-file-rule-default
 You have a clue what isle to look through. The thief isle. You get The File.
 You've visited all the locations in the flier. You crumple it up as if to throw it in a trash bin. The squid makes a gesture as if it wishes to gobble the flier. You're worried it might choke on the flier, as it did for the quid, but then -- well, the water washes the paper brochure down. Odd, but hooray for clearer inventory.
@@ -564,6 +614,7 @@ You've visited all the locations in the flier. You crumple it up as if to throw 
 >were meetin
 by a point
 
+#testcase-check-pre-were-meetin-rule-fallthrough
 #testcase-run-post-were-meetin-rule-default
 You meet with the friends you've made over your adventure. You all have one goal in mind. And yet you don't have a rallying cry. Perhaps it can come from within you.
 
@@ -573,6 +624,7 @@ You meet with the friends you've made over your adventure. You all have one goal
 >my corps
 by a point
 
+#testcase-check-pre-my-corps-rule-fallthrough
 #testcase-run-post-my-corps-rule-default
 Your pep talk brings everyone together. You worry it's too simplistic, especially "titan's lairs? Titan slayers!"
 But everyone seems enthused, ready for what happens next. Gathering information from everyone, you start diggint to find tunnels below. You clear out a passage below. You swear a solemn pact that everyone will defend everyone else, regardless of what happens.
@@ -585,6 +637,7 @@ But everyone seems enthused, ready for what happens next. Gathering information 
 >cease cull
 by a point
 
+#testcase-check-pre-cease-cull-rule-fallthrough
 #testcase-run-post-cease-cull-rule-default
 You'll probably have to alert the sea skull to your presence at some time. You try to sound authoritative when you do so. And ... well, you get its attention.
 "DONE, OH?!?! DUH, NO!" it roars.
@@ -593,6 +646,7 @@ It begins pouring out rivers of blood at you and your companions. But fortunatel
 >wipe out
 by a point
 
+#testcase-check-pre-wipe-out-rule-fallthrough
 #testcase-run-post-wipe-out-rule-default
 Easier said than done, but since you all studied the plan tracker so well, it isn't impossible!
 Your makeshift weapons are just enough to distract the sea skull. It starts to focus on one party member, then the others taunt it, and it turns away. It's exhausting for you but even more exhausting for the skull, which eventually collapses and incinerates.
@@ -601,6 +655,7 @@ But after all the fireworks, there's a letdown. You feel something odd come betw
 >do mending
 by a point
 
+#testcase-check-pre-do-due-mend-rule-fallthrough
 #testcase-run-post-do-due-mend-rule-default
 #testcase-run-post-do-due-mend-rule-fallthrough
 #testcase-run-post-do-due-mend-rule-follow-the-score-and-thinking-changes-rule

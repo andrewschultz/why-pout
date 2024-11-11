@@ -1,6 +1,9 @@
 #-- rbr-wp-think.txt
 #-- longer Why Pout walkthrough, with THINK that make Why Division work
 #
+#-- note there is also rbr-wp-thru.txt
+#-- that is the main one, without the detailed THINK, with a shorter walkthrough. But I like having two paths through.
+#
 #-- TTC.PY generates test cases not found here
 #--
 
