@@ -369,6 +369,12 @@ carry out undoning:
 	say "Undo disallowed for testing purposes, mostly to test war pawn.";
 	the rule succeeds;
 
+volume post parser error stuff
+
+after printing a parser error when found-think-case is true:
+	now found-think-case is false;
+	say "[line break]Add 1.";
+
 Why Pout Tests ends here.
 
 ---- DOCUMENTATION ----
