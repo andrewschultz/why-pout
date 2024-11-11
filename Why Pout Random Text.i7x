@@ -203,6 +203,8 @@ mynum	mytext
 volume testing without random shuffling
 
 when play begins (this is the seed random final dialogues rule):
+	let modular-list-index be 0;
+	let final-list-index be 0;
 	if debug-state is false:
 		sort quasirand-init-list in random order;
 		sort table of further dialogues in random order;

@@ -2,7 +2,11 @@ Version 1/240720 of Why Pout Globals by Andrew Schultz begins here.
 
 "Globals file for Why Pout"
 
-volume game states and specifics
+volume top level definitions, game states and specifics
+
+a follower is a kind of thing.
+
+section game states
 
 current-quid is a number that varies. current-quid is 0.
 
@@ -31,16 +35,14 @@ gs-penalized-why-division is a truth state that varies.
 
 gs-eye-note is a truth state that varies.
 
+gs-mouse-plural-party-note is a truth state that varies.
+
 section chat tracking
 
 gs-full-chat-notify is a truth state that varies.
-
-missed-this-cycle is a number that varies.
-
 gs-note-chatopt is a truth state that varies.
 
-final-list-index is a number that varies.
-modular-list-index is a number that varies.
+missed-this-cycle is a number that varies.
 
 section option(s)
 

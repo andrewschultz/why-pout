@@ -42,11 +42,11 @@ include Oronym Core by Andrew Schultz.
 
 section game-specific
 
+include Why Pout Globals by Andrew Schultz.
+
 include Why Pout Tables by Andrew Schultz.
 
 include Why Pout Definitions by Andrew Schultz.
-
-include Why Pout Globals by Andrew Schultz.
 
 include Why Pout Mistakes by Andrew Schultz.
 
