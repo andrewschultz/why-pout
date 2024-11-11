@@ -266,10 +266,10 @@ by a point
 #testcase-homonym-reject-table-of-main-oronyms-hom-mana-curb-rule-man-a-mana
 #testcase-homonym-detail-hom-mana-curb-rule-default
 >mana curb
-You do not have any magic points, so you don't need them refreshed. But you must be close!
+You do not have any magic points, so you don't need them refreshed. But you must be close! Like, one letter off!
 
 >man a curb
-You do not have any magic points, so you don't need them refreshed. But you must be close!
+You do not have any magic points, so you don't need them refreshed. But you must be close! Like, one letter off!
 
 >manna curb
 by a point
