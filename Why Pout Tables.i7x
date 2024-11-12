@@ -21,8 +21,8 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "brew"	"swears"	--	--	--	false	false	false	false	"seeing [b]BRUISE WARES[r]'s true nature"	false	true	false	false	false	NaffHaze	pre-brew-swears rule	post-brew-swears rule	--	--
 "known"	"ocean"	--	--	--	false	false	false	false	"finding the surroundings [here-in of NoNotion]"	false	true	true	false	false	NoNotion	pre-known-ocean rule	post-known-ocean rule	--	--
 "six"	"quid"	--	--	--	false	false	false	false	"discovering what ails the sick squid"	false	true	true	false	false	NoNotion	pre-six-quid rule	post-six-quid rule	--	--
-"the"	"file"	"thee"	--	--	false	false	false	false	"what is on Thief Isle"	false	true	true	false	false	nonotion	pre-the-file rule	post-the-file rule	--	"You may be able to make sense of [b]THE FILE[r] [here-in of nonotion] [once-now of whether or not number of still-chat-needed followers is 0] you've gotten enough information from companions."
 "war"	"file"	--	--	--	false	false	false	false	"what is on Wharf Isle"	false	true	true	false	false	nonotion	pre-war-file rule	post-war-file rule	--	"You may be able to recover the [b]WAR FILE[r] on the wharf isle [here-in of nonotion] [once-now of sco-plan-tracker] you have something you can write down its main ideas in."
+"the"	"file"	"thee"	--	--	false	false	false	false	"what is on Thief Isle"	false	true	true	false	false	nonotion	pre-the-file rule	post-the-file rule	--	"You may be able to make sense of [b]THE FILE[r] [here-in of nonotion] [once-now of whether or not number of still-chat-needed followers is 0] you've gotten enough information from companions."
 "grow"	"vial"	--	"vile"	--	false	false	false	false	"what is on Grove Isle"	false	true	true	false	false	nonotion	pre-grow-vial rule	post-grow-vial rule	--	"You may be able to find a [b]GROW VIAL[r] with the right water transport."
 "wan"	"dwarf"	--	--	--	false	false	false	false	"who is on Wand Wharf"	false	true	true	false	false	wand wharf	pre-wan-dwarf rule	post-wan-dwarf rule	--	--
 "wool"	"frock"	--	--	--	false	false	false	false	"what is hidden in Wolf Rock"	false	true	true	false	false	Wolf Rock	pre-wool-frock rule	post-wool-frock rule	--	--
@@ -547,21 +547,6 @@ a wordtwisting rule (this is the three-isle rule):
 		vcp "This isn't the right place to look for an isle. No large body of water nearby.";
 		not-yet;
 
-a wordtwisting rule (this is the pre-the-file rule):
-	if sco-the-file is true and player has flier:
-		vcp "You already got THE FILE. See where else you can visit.";
-		already-done;
-	abide by the three-isle rule;
-	if number of still-chat-needed followers > 0:
-		vcp "You know there is THE FILE, but which file is THE FILE? The thief isle has probably stolen a lot! You need information from your companions[if number of still-follow-needed followers > 0], or maybe just more companions[end if].";
-		not-yet;
-	ready;
-
-this is the post-the-file rule:
-	now sco-the-file is true;
-	say "You have a clue what isle to look through. The thief isle. You get The File.";
-	conditional-flier-mangle;
-
 to conditional-flier-mangle:
 	if flier-isle-score is 2:
 		if sco-grow-vial is false:
@@ -587,6 +572,21 @@ this is the post-war-file rule:
 	say "The squid gives you[if number of friendly followers is 1] and [the random friendly follower][else if number of friendly followers > 1] and your companions[end if] a ride a few miles across the ocean. You realize you could reach the wharf isle for a war file.[paragraph break]When you get there, you're a bit disappointed by what you see. There's a bit too much emphasis on magic and the implements thereof, all of which are at a much too hefty price for you. So buying equipment is out.[paragraph break]Still, there are many ideas worth tracking. Your companions help with the process, offering ideas you're pleasantly surprised to hear.[paragraph break]You write the main stuff into your plan tracker, and as you do, you realize part of the plan points to having another party member not in your entourage. Well, yet. Perhaps someone else here has read the war file and maybe found less splashy ways to fight. You stay to look around...";
 	move player to Wand Wharf;
 	ride-squid;
+
+a wordtwisting rule (this is the pre-the-file rule):
+	if sco-the-file is true and player has flier:
+		vcp "You already got THE FILE. See where else you can visit.";
+		already-done;
+	abide by the three-isle rule;
+	if number of still-chat-needed followers > 0:
+		vcp "You know there is THE FILE, but which file is THE FILE? The thief isle has probably stolen a lot! You need information from your companions[if number of still-follow-needed followers > 0], or maybe just more companions[end if].";
+		not-yet;
+	ready;
+
+this is the post-the-file rule:
+	now sco-the-file is true;
+	say "You have a clue what isle to look through. The thief isle. You get The File.";
+	conditional-flier-mangle;
 
 to ride-squid:
 	if player is in Wand Wharf:
