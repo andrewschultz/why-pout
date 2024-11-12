@@ -1,6 +1,7 @@
 ## rbr-wp-think.txt
 ** game: /home/andrew/prt/debug-why-pout.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+** checkclass: /home/andrew/prt/runtime.py
 
 # I copied the reg-wp-lone-division.txt test file where you get all the rejects in here
 

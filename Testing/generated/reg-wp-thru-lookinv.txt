@@ -5,6 +5,7 @@
 
 ** game: /home/andrew/prt/debug-why-pout.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+** checkclass: /home/andrew/prt/runtime.py
 
 * main-thru
 
@@ -56,7 +57,7 @@ The prize talk is all around, but you're able to ignore it, now you feel you mig
 by a point
 
 INVENTORY CHANGED
-There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+There's that occasional voice ringing in your head asking "Why pout?" Well, you're feeling a bit alone, but there's always the prospect of finding stuff...
 "Good! Some goods, umm...":
 some sly size-slice eyes
 You have a name, too, now, you remember: Mike Orr.
@@ -77,7 +78,7 @@ You feel policed here. And it's the mean American gung-ho militarized sort of po
 by a point
 
 A war pawn, like a chess piece, rolls into view. It looks pretty powerful. As you take it, you reflect that you may wish to save it for down the road when you're really stuck somewhere.
-There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+There's that occasional voice ringing in your head asking "Why pout?" Well, you're feeling a bit alone, but there's always the prospect of finding stuff...
 "Good! Some goods, umm...":
   a war pawn
 You have a name, too, now, you remember: Mike Orr.
@@ -166,7 +167,7 @@ by a point
 
 You rummage about and find a wool frock.
 INVENTORY CHANGED
-There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+There's that occasional voice ringing in your head asking "Why pout?" Well, you're feeling a bit alone, but there's always the prospect of finding stuff...
 "Good! Some goods, umm...":
   a wool frock
   a war pawn
@@ -191,7 +192,7 @@ A booze troll sulks sullenly here.
 by a point
 
 INVENTORY CHANGED
-There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+There's that occasional voice ringing in your head asking "Why pout?" It's a bit harder to than before, because you have a companion now, the new troll.
 "Good! Some goods, umm...":
   some Base Ale
   a wool frock
@@ -209,7 +210,7 @@ You have a name, too, now, you remember: Mike Orr.
 by a point
 
 INVENTORY CHANGED
-There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+There's that occasional voice ringing in your head asking "Why pout?" Well, it's gotten very hard to pout, with two companions.
 "Good! Some goods, umm...":
   some Base Ale
   a war pawn
@@ -239,7 +240,7 @@ So, what do you need to find, before getting out?
 by a point
 
 INVENTORY CHANGED
-There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+There's that occasional voice ringing in your head asking "Why pout?" Well, it's gotten very hard to pout, with multiple companions.
 "Good! Some goods, umm...":
   a knife (right)
   some Base Ale
@@ -385,7 +386,7 @@ The low bend (former lobe end) now bends from west to north, where you see water
 by a point
 
 INVENTORY CHANGED
-There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+There's that occasional voice ringing in your head asking "Why pout?" Well, it's gotten very hard to pout, with multiple companions.
 "Good! Some goods, umm...":
   a knife (right)
   a war pawn
@@ -478,7 +479,7 @@ An oaf liar blathers away here, with stuff that's likely, but not provably false
 >oh flier
 by a point
 
-There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+There's that occasional voice ringing in your head asking "Why pout?" Well, it's gotten very hard to pout, with multiple companions.
 "Good! Some goods, umm...":
   a flier
   a knife (right)
@@ -502,14 +503,14 @@ You can only go back OUT here.
 by a point
 
 INVENTORY CHANGED
-There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+There's that occasional voice ringing in your head asking "Why pout?" Well, it's gotten very hard to pout, with multiple companions.
 "Good! Some goods, umm...":
   a plan tracker (with no ideas yet)
   a war pawn
 You have a name, too, now, you remember: Mike Orr.
 
 INVENTORY CHANGED
-There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+There's that occasional voice ringing in your head asking "Why pout?" Well, it's gotten very hard to pout, with multiple companions.
 "Good! Some goods, umm...":
   a plan tracker (with no ideas yet)
   a war pawn
@@ -522,7 +523,7 @@ You have a name, too, now, you remember: Mike Orr.
 by a point
 
 INVENTORY CHANGED
-There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+There's that occasional voice ringing in your head asking "Why pout?" Well, it's gotten very hard to pout, with multiple companions.
 "Good! Some goods, umm...":
   some manna
   a flier
@@ -573,7 +574,7 @@ It looks like there is an ocean, or some large body of water, as you can't see i
 by a point
 
 INVENTORY CHANGED
-There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+There's that occasional voice ringing in your head asking "Why pout?" Well, it's gotten very hard to pout, with multiple companions.
 "Good! Some goods, umm...":
   a grow vial
   some manna
@@ -634,7 +635,7 @@ The ocean surrounds you on all sides, but it's less intimidating now you rode th
 >n
 
 INVENTORY CHANGED
-There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+There's that occasional voice ringing in your head asking "Why pout?" Well, it's gotten very hard to pout, with multiple companions.
 "Good! Some goods, umm...":
   some manna
   a flier
@@ -663,7 +664,7 @@ A tree (tall) has grown here, thanks to you. It feels very welcoming.
 >t troll
 
 INVENTORY CHANGED
-There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+There's that occasional voice ringing in your head asking "Why pout?" Well, it's gotten very hard to pout, with multiple companions.
 "Good! Some goods, umm...":
 !/^..a talk-ache
   some manna
@@ -680,7 +681,7 @@ Oh, man. You still have that talk-ache, too.
 by a point
 
 INVENTORY CHANGED
-There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+There's that occasional voice ringing in your head asking "Why pout?" Well, it's gotten very hard to pout, with multiple companions.
 "Good! Some goods, umm...":
   a tall cake
   a flier
@@ -695,7 +696,7 @@ You have a name, too, now, you remember: Mike Orr.
 by a point
 
 INVENTORY CHANGED
-There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+There's that occasional voice ringing in your head asking "Why pout?" Well, it's gotten very hard to pout, with multiple companions.
 "Good! Some goods, umm...":
 !  a tall cake
   a flier
@@ -719,7 +720,7 @@ You and your party are also armed for any conflict that may arise.
 by a point
 
 INVENTORY CHANGED
-There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+There's that occasional voice ringing in your head asking "Why pout?" Well, it's gotten very hard to pout, with multiple companions.
 "Good! Some goods, umm...":
 !  a flier
   a plan tracker (full of ideas)
@@ -770,7 +771,7 @@ by a point
 
 # and you finally figured when to Wipe Out!
 >i
-!There's that occasional voice ringing in your head asking "Why pout?" But besides that ...
+!There's that occasional voice ringing in your head asking "Why pout?"
 !You and your party are also armed for any conflict that may arise.
 
 >l
