@@ -2,7 +2,7 @@
 
 volume top level stuff
 
-the release number is 4.
+the release number is 5.
 
 release along with a website.
 
@@ -773,9 +773,9 @@ carry out creditsing:
 	say "[line break]B. J. Best and Arthur DiBianca (he is also in IFComp [']24,) who've written a lot of good stuff, both found bugs within two hours of IFComp starting. So thanks to them!";
 	say "[line break]Viv Dunstan, yet another fellow IFComp [']24 author, found some nontrivial bugs I fixed mid-comp.";
 	say "[line break]DemonApologist, who wrote reviews for all IFComp [']24[']s entries, and Wolfbiter, who also ran the gauntlet, found nontrivial bugs, too.";
-	say "[line break]Tabitha found several bugs in post-comp versions.";
+	say "[line break]Tabitha found several bugs in post-comp versions which were a great catalyst for putting releases out quickly.";
 	say "[line break]The cover art is my fault, and my fault alone.";
-	say "[line break]Thanks to David Welbourn for writing a walkthrough during IFComp. He has a Patreon account at patreon.com/dswxyz. Support it if you can!";
+	say "[line break]Thanks also to David Welbourn for writing a walkthrough during IFComp. He has a Patreon account at patreon.com/dswxyz. Support it if you can!";
 	say "[line break][b]GENERAL THANKS[r]:[paragraph break]";
 	say "Thanks to everyone past and future involved in the administration of IFComp.";
 	say "Thanks to the I7 board on Intfiction.org for their help, as well as the people in the general topics as we discussed our plans.";
@@ -822,12 +822,13 @@ report verbsing when can-lump-party:
 chapter versioning
 
 carry out versioning:
-	say "Version 1 was released to IFComp on August 28, 2024.";
-	say "[line break]Version 2 was released on October 18, 2024. It rolls up many fixes made during IFComp but also includes a hint device and UNDO protection for using the pawn to advance through a puzzle. For version 1, I'd had a great idea for a hint device. The only thing not-great was the timing: six hours before the comp deadline!";
+	say "Pretty much every version has trivial flavor tweaks added, so I'm just listing the big things.";
+	say "[line break]Version 1 was released to IFComp on August 28, 2024.";
+	say "[line break]Version 2 was released on October 18, 2024. It rolls up many fixes made during IFComp but also includes a hint device and [b]UNDO[r] protection for using the pawn to advance through a puzzle. For version 1, I'd had a great idea for a hint device. The only thing not-great was the timing: six hours before the comp deadline!";
 	say "[line break]Version 3 was released on October 22, 2024. It includes one more point in the optional room, as well as a big boss there, of sorts. There are some trivial fixes, too.";
 	say "[line break]Version 4 was released on November 9, 2024. It features game-mechanic-relevant dialogue between friendly NPCs, as well as general text flavor tweaks.";
-	say "[line break]Version 5 is planned before the end of 2025. It will roll up bugs found in transcripts, etc., and it may also contain more granular hints about what you got right, e.g. one word, both words, or very close. But I'd need to reorganize the main table for that.";
-	say "[line break]For details on fixes, see fixes.txt, which should be packaged with the binary. Or visit the GitHub site https://github.com/andrewschultz/why-pout.";
+	say "[line break]Version 5 was released on November 12, 2024. It contains more granular hints about what you got right, e.g. one word right, both words right, or either very close.";
+	say "[line break]For details on fixes, see fixes.txt, which should be packaged with the binary. Or visit the GitHub site https://github.com/andrewschultz/why-pout, which may have bugs to be fixed for potential future releases. But as of release 5, I don't want this project to drag on, fun as it's been.";
 	the rule succeeds;
 
 [the text below is added to Versioning and Extensions Tweak]
