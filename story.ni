@@ -247,7 +247,7 @@ check going inside in NaffHaze:
 		say "You'll have to figure what else [b]BRUISE WARES[r] is advertising, first." instead;
 	if room gone to is Brew Swears:
 		say "Your companions stay behind. They recognize this is a spiritual fight for you and you alone.";
-		now block-followers is true;
+		block-follows;
 
 check going north in NaffHaze when sco-grow-star is false and sco-nah-phase is true: say "The gross tar is in the way right now." instead;
 
@@ -365,7 +365,7 @@ Wolf Rock is a room in universal. "A big rock in the shape of a wolf looms impre
 
 check going inside in Wolf Rock when sco-low-door is true:
 	say "The low door makes it hard for too many people or entities to enter at once. So you go it alone.";
-	now block-followers is true;
+	block-follows;
 
 chapter high doubt
 
@@ -417,7 +417,7 @@ to say loan-starter:
 
 check going outside in We Loan:
 	say "You're glad to get back to your companions...";
-	now block-followers is false;
+	allow-follows;
 
 chapter some merchant
 
@@ -476,7 +476,6 @@ check going:
 	if ((room gone from is lobe end) and (room gone to is storm isle)) or ((room gone to is lobe end) and (room gone from is storm isle)):
 		say "You[if pals-made is 1] and [the random friendly follower][else if pals-made > 1] and your [pals-made in words] companions[else][end if] make it across the water without incident.";
 		move raft to room gone to;
-		follow-you;
 
 book Storm Isle
 
@@ -588,7 +587,7 @@ book Brew Swears (optional)
 Brew Swears is a room in universal. "[if grinch earls are in brew swears]If you thought Hype Lane was bad, this is even worse[else if sco-gah-wanker is false]It's lonelier her without [the earls], but you could still make it lonelier![else]Now that you got rid of the orc's old associates and their, um, mentor, there's nothing really left to do here[end if]. You can leave back [b]OUT[r].". eyes-number of brew swears is -42. eyes-rule of Brew Swears is pre-weak-us rule.
 
 check going outside in Brew Swears:
-	now block-followers is false;
+	allow-follows;
 	if orc is friendly:
 		say "As you lead [the orc] out, BRUISE-WARES crumbles behind you.";
 		if number of friendly needed followers > 0:
@@ -832,6 +831,14 @@ to lump-party (ts - a truth state):
 	say "Your party is [if ts is opt-lump-party]already[else]now[end if] [if ts is true]lumped together[else]listed separately[end if] in room descriptions.";
 	now opt-lump-party is ts;
 
+to toggle-chat (ts - a truth state):
+	say "Your party is [if ts is opt-chat-on]already[else]now[end if] [if ts is true]chatting away randomly[else]keeping quiet[end if] every turn.";
+	now opt-chat-on is ts;
+
+the companions are a plural-named sentient. description is "You see [the list of friendly followers].".
+
+understand "companion/comps/comp/com/coms" as companions.
+
 chapter lumponing
 
 lumponing is an action out of world.
@@ -842,7 +849,8 @@ understand "uh party" and "a party" as lumponing when can-lump-party.
 
 carry out lumponing:
 	lump-party true;
-	say "[line break][b]T[r] to talk will list whom to talk to.";
+	say "[line break][b]T[r] to talk will list whom to talk to[one of].[paragraph break]You can also refer to them with [b]COMPANIONS[r] or even [b]COMPS[r] or [b]COMP[r] or [b]COM[r], though you can't do much more than examine them[or][stopping].";
+	now player has companions;
 
 chapter lumpoffing
 
@@ -854,12 +862,9 @@ understand "apart ee" and "apart eee" and "apart eeee" as lumpoffing when can-lu
 
 carry out lumpoffing:
 	lump-party false;
+	if player has companions, moot companions;
 
 chapter scorechating
-
-to toggle-chat (ts - a truth state):
-	say "Your party is [if ts is opt-chat-on]already[else]now[end if] [if ts is true]chatting away randomly[else]keeping quiet[end if] every turn.";
-	now opt-chat-on is ts;
 
 chatoning is an action out of world.
 
@@ -941,8 +946,9 @@ the get rid of ache standard inventory rule is listed instead of the print stand
 
 Carry out taking inventory (this is the get rid of ache standard inventory rule):
 	now all things carried by player are marked for listing;
+	now companions are not marked for listing;
+	now talk ache is not marked for listing;
 	say "[if sco-high-plain is true]'Good! Some goods, umm...':[else]You are carrying:[end if][line break]";
-	if player has talk ache, now talk ache is not marked for listing;
 	list the contents of the player, with newlines, indented, including contents, listing marked items only,
 		giving inventory information, with extra indentation.
 

@@ -805,7 +805,7 @@ a wordtwisting rule (this is the pre-see-design rule):
 
 this is the post-see-design rule:
 	now sco-see-design is true;
-	now block-followers is true;
+	block-follows;
 	say "You see the design in the seedy sign. It leads somewhere scary. Somewhere you don't want your friends to visit. Though you appreciate their support. You'll be right back. You think. You hope.";
 	declue seedy sign;
 	move player to Nigh Fright;
@@ -820,7 +820,7 @@ this is the post-knife-right rule:
 	now sco-knife-right is true;
 	say "With your friends boosting your spirits, you look for a sacred/profane weapon. It turns up. Eerie howling begins. You hightail it out of there.";
 	now player has knife right;
-	now block-followers is false;
+	allow-follows;
 	declue-here;
 	drop-player-at KeepIller;
 

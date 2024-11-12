@@ -205,6 +205,14 @@ to follow-you:
 	repeat with X running through leftbehind followers:
 		move X to location of player;
 
+to allow-follows:
+	now block-followers is false;
+	if companions are not off-stage, now player has companions;
+
+to block-follows:
+	now block-followers is true;
+	if companions are not off-stage, moot companions;
+
 book statuses
 
 to decide whether talk-default-to-player:
