@@ -127,38 +127,10 @@ check thinking (this is the right phrase wrong time rule):
 
 volume verbs
 
-book I7 low-usage default verbs
-
-the block saying no rule is not listed in any rulebook.
-the block saying yes rule is not listed in any rulebook.
-
-carry out saying yes: say "Black? White? Blah! Quite!" instead;
-
-carry out saying no: try saying yes instead;
-
-the block attacking rule is not listed in any rulebook.
-
-check sleeping: say "'Key? Nap! Keen app!' you mutter to yourself, but you remain wide awake." instead;
-
-the block sleeping rule is not listed in any rulebook.
-the block singing rule is not listed in any rulebook.
-
-check singing:
-	if player is in brew swears, say "You conjure some funk rap, inspired by the specific environs. It's not a totally tasteless new ditty." instead;
-	say "Funny, you feel a taste of icing." instead;
-
-check attacking:
-	say "'[one of]Gore? I'd go ride[or]Eh, kill-ache? Ill[in random order],' you think, randomly. You aren't built for that[if pals-made > 0], but maybe you can lead companions to a big victory[end if]." instead;
-
-the block swearing obscenely rule is not listed in any rulebook.
-the block swearing mildly rule is not listed in any rulebook.
-
 check swearing obscenely:
 	if player is in Brew Swears, say "Yes. You're in the right place for that." instead;
 	if Brew Swears is visited, say "You've had enough of that." instead;
 	say "'Cur! Say curse, eh?'[paragraph break]There's an area for that[if bruise wares is moot], but you can't go back to visit it now.[else if bruise wares is off-stage], but it hasn't appeared yet.[else if player is in naff haze]. Why, you can just walk in once you know what to call it![else]. Look around.[end if]" instead;
-
-check swearing mildly: try swearing obscenely instead;
 
 book other regular verbs to zap
 
