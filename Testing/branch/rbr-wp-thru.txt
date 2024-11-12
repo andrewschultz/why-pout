@@ -2406,6 +2406,9 @@ The eyes light up green and show four dots, then four dots.
 @verbs
 >t orc
 That talk-ache is a bit of a nuisance.
+\\
+>t
+You've talked to everyone here, though, so you don't need to talk to them again.
 
 >tall cake
 by a point

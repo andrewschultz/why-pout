@@ -1053,6 +1053,8 @@ rule for supplying a missing noun when ting:
 		say "That's ambiguous--more than one friend you can chat with.";
 		if number of still-chat-needed followers in location of player > 0:
 			say "[line break]However, you still haven't talked with [the list of still-chat-needed followers in location of player].";
+		else:
+			say "[line break]You've talked to everyone here, though, so you don't need to talk to them again.";
 		the rule fails;
 	if number of sentients in location of player is 1:
 		now noun is random sentient in location of player;
