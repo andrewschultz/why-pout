@@ -1680,6 +1680,17 @@ The eyes light up green and show four dots, then four dots.
 >mice tall
 by a point
 
+@li
+>a party
+\\
+>l
+WRONG
+\\
+>l
+WRONG
+\\
+>apart eee
+
 @hint
 >eye mice
 The eyes show nothing. You've done everything you need to make friends with the mice (tall).

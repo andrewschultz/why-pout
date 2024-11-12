@@ -1231,10 +1231,21 @@ rule for printing a parser error when the latest parser error is the I beg your 
 
 volume appearance
 
+to decide whether need-mouse-plural-warn:
+	if opt-lump-party is false, no;
+	if gs-mouse-plural-party-note is true, no;
+	if mice tall are not friendly, no;
+	yes;
+
+to say mouse-check:
+	if need-mouse-plural-warn:
+		say ". Just to check, I'm counting the mice as one unit, here";
+		now gs-mouse-plural-party-note is true;
+
 for printing a locale paragraph about a follower (called fo):
 	if fo is not friendly, continue the action;
 	if fo is mentioned, continue the action;
-	say "[if opt-lump-party is true]Your [(number of friendly followers in location of player) in words] companions[else][The list of friendly followers in location of player][end if] wait[if not say-plural-stationary-followers]s[end if] here for what to do or where to go next.";
+	say "[if opt-lump-party is true]Your [(number of friendly followers in location of player) in words] companions[else][The list of friendly followers in location of player][end if] wait[if not say-plural-stationary-followers]s[end if] here for what to do or where to go next[mouse-check].";
 	now all friendly followers are mentioned;
 
 volume scores

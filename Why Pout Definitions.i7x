@@ -182,7 +182,7 @@ to decide whether can-lump-party:
 	no;
 
 to decide whether say-plural-moving-followers:
-	if number of followers in location of player > 1, yes;
+	if number of leftbehind followers > 1, yes;
 	let rf be a random leftbehind follower;
 	if rf is plural-named, yes;
 	no;
@@ -193,10 +193,10 @@ to decide whether say-plural-stationary-followers:
 	if rf is plural-named, yes;
 	no;
 
-every turn when block-followers is false (this is the followers follow you rule):
+every turn when block-followers is false (this is the followers follow you rule): [practically, some of this code may not be necessary. It's impossible to get the mice first. But we'd like to be accurate with the code, if we can.]
 	if number of leftbehind followers > 0:
 		if opt-lump-party is true:
-			say "Your [number of leftbehind followers in words] companions follow you.";
+			say "Your [number of leftbehind followers in words] companions follow you[mouse-check].";
 		else:
 			say "The [list of leftbehind followers] follow[if not say-plural-moving-followers]s[end if] you.";
 		follow-you;
