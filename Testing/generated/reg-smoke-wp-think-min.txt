@@ -1,12 +1,12 @@
-## reg-smoke-wp-thru-min.txt
-# release version smoke test for the "thru" path, based on reg-wp-thru-min.txt
+## reg-smoke-wp-think-min.txt
+# release version smoke test for the "thru" path, based on reg-wp-think-min.txt
 # remember to rebuild the binary with icl.py wp n
 
 ** game: /home/andrew/prt/nowfak-why-pout.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
 ** checkclass: /home/andrew/prt/runtime.py
 
-* main-thru
+* main
 
 >z
 
@@ -31,31 +31,18 @@ by a point
 >pole east
 by a point
 
->shore trail
-by a point
-
 >grow star
 by a point
 
 >key pillar
 by a point
 
->s
-
->known ocean
-by a point
-
->six quid
+>shore trail
 by a point
 
 >n
 
->n
-
->wool frock
-by a point
-
->hide out
+>hideout
 by a point
 
 >d
@@ -69,26 +56,24 @@ by a point
 
 >w
 
->gnome old
-by a point
-
->rogue old
-by a point
-
->see design
-by a point
-
->knife right
-by a point
-
 >e
 
->d
+>n
 
->gaunt raider
+>wool frock
 by a point
 
->u
+>s
+
+>s
+
+>known ocean
+by a point
+
+>six quid
+by a point
+
+>n
 
 >e
 
@@ -103,8 +88,20 @@ by a point
 >store mile
 by a point
 
->mensch elf
+>s
+
+>w
+
+>w
+
+>gnome old
 by a point
+
+>e
+
+>e
+
+>n
 
 >mice tall
 by a point
@@ -132,6 +129,21 @@ by a point
 >whee lone
 by a point
 
+>out
+
+>s
+
+>w
+
+>rogue old
+by a point
+
+>e
+
+>n
+
+>in
+
 >oh flier
 by a point
 
@@ -144,10 +156,38 @@ by a point
 >plan tracker
 by a point
 
->manna curb
+>e
+
+>d
+
+>gaunt raider
 by a point
 
+>u
+
 >e
+
+>n
+
+>mensch elf
+by a point
+
+>s
+
+>w
+
+>s
+
+>war file
+by a point
+
+>wan dwarf
+by a point
+
+>grow vial
+by a point
+
+>n
 
 >e
 
@@ -164,40 +204,44 @@ by a point
 
 >w
 
->s
+>d
 
->grow vial
+>t elf
+
+>t dwarf
+
+>t rogue
+
+>t raider
+
+>t gnome
+
+>t troll
+
+>t mice
+
+>u
+
+>out
+
+>w
+
+>see design
 by a point
 
->war file
+>knife rite
 by a point
 
->wan dwarf
+>manna curb
 by a point
 
->n
+>e
 
 >e
 
 >n
 
 >n
-
->t dwarf
-
->t elf
-
->t gnome
-
->t rogue
-
->t raider
-
->t mice
-
->t troll
-
->t orc
 
 >tall cake
 by a point
@@ -210,11 +254,6 @@ by a point
 >s
 
 >w
-
-Odd! BRUISE WARES has vanished. Well, one less dead end to worry about.
-
->brew swears
-!point
 
 >s
 
@@ -241,4 +280,6 @@ by a point
 
 >do mending
 by a point
+Your score just went up by a point!
 
+Gray day?! Grade A!
