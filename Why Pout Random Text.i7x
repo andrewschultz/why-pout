@@ -193,12 +193,18 @@ mynum	mytext
 0	"[t1t2], after sharing a clever joke, agree: 'We quit weak wit.'"
 0	"[t1t2] argue over whether 'Beef it up! Be fit, up!' is proper motivation."
 0	"[t1t2] discuss con artists: 'Get sold? Gets old!'"
-0	"[t1t2] beef, ere 'Be fair!' from you. They apologize and makeup. You didn't know you had that leadership within you!"
+0	"[t1t2] beef, ere 'Be fair!' from you. They apologize and make up. You didn't know you had that leadership within you!"
 0	"[t1t2] discuss the touching drama [i]Her, too, Hurt? Ooh[r]."
 0	"[t1t2] have a technical discussion: 'Keen apps['] key? Naps!'"
 0	"[t1t2] reject the shallow self-help of [i]I Learn, I'll Earn[r]."
 0	"[t1t2] recall separate visits to the Dumb Pledge-Dump-Ledge."
 0	"[t1t2] give contrasting literary criticisms of [i]A Tower's Eight Hours[r]."
+0	"[t1t2] start, but quickly curtail, a wheeze too 'We stew.'"
+0	"[t1t2] say the same thing, but mean something different, about a pop singer's talent: 'Indie Niall? In denial!'"
+0	"[t1t2] mutter they're overwhelmed by the size of the Storm-All-Store Mall."
+0	"[The talker1] almost cast[nosplur1] an oath at ... 'Oh, THAT?!' [talker2] cut[nosplur2] in."
+0	"[t1t2] discuss car parts and carp-arts. Nonsequiturs!"
+0	"[t1t2] have different views on the best wake-your-way cure."
 
 volume testing without random shuffling
 
