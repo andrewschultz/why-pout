@@ -956,14 +956,14 @@ chapter inventory
 check taking inventory:
 	if sco-wipe-out is true, continue the action;
 	say "There's that occasional voice ringing in your head asking 'Why pout?' ";
-	if naff haze is unvisited:
+	if NaffHaze is unvisited:
 		say "But besides that ...";
 	else if number of friendly followers is 0:
 		say "Well, you're feeling a bit alone, but there's always the prospect of finding stuff...";
 	else if number of friendly followers is 1:
-		say "It's hard to, because you have a companion now, [the random friendly follower].";
+		say "It's a bit harder to than before, because you have a companion now, [the random friendly follower].";
 	else:
-		say "Well, it's very hard, with multiple companions.";
+		say "Well, it's gotten very hard to pout, with [if number of friendly followers is 2]two[else]multiple[end if] companions.";
 
 the get rid of ache standard inventory rule is listed instead of the print standard inventory rule in the carry out taking inventory rulebook.
 
