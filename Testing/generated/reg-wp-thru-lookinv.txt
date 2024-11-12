@@ -423,14 +423,17 @@ by a point
 by a point
 
 >a party
+Your party is now lumped together in room descriptions.
 
 >l
-WRONG
+Your seven companions wait here for what to do or where to go next. Just to check, I'm counting the mice as one unit, here.
 
 >l
-WRONG
+Your seven companions wait here for what to do or where to go next.
+!Just to check
 
 >apart eee
+Your party is now listed separately in room descriptions.
 
 >l
 !MY STALL
