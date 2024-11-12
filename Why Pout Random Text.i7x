@@ -226,7 +226,7 @@ when play begins (this is the seed random final dialogues rule):
 		now mynum entry is QLE;
 		now t1 is QLE / 10;
 		now t2 is remainder after dividing QLE by 10;
-		say "[mytext entry][line break]";
+		if debug-state is true, say "[mytext entry][line break]";
 	now followers-as-joined is {};
 	if debug-state is false, continue the action;
 	say "Quasirandom / unsorted list: [quasirand-final-list].";
