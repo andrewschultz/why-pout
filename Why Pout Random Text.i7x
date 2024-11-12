@@ -211,22 +211,19 @@ when play begins (this is the seed random final dialogues rule):
 	repeat with QL running through quasirand-init-list:
 		if debug-state is false, sort QL in random order;
 		add QL to quasirand-final-list;
-	if debug-state is false, continue the action;
-	say "[quasirand-final-list].";
 	now followers-as-joined is list of followers;
 	repeat through table of further dialogues:
-		increment final-list-index;
 		increment modular-list-index;
 		if modular-list-index > 28:
 			now modular-list-index is 1;
-		if final-list-index > 28:
-			now final-list-index is 1;
-		now mynum entry is entry modular-list-index in quasirand-final-list;
-		let QLE be entry final-list-index in quasirand-final-list;
+		let QLE be entry modular-list-index in quasirand-final-list;
+		now mynum entry is QLE;
 		now t1 is QLE / 10;
 		now t2 is remainder after dividing QLE by 10;
 		say "[mytext entry][line break]";
 	now followers-as-joined is {};
+	if debug-state is false, continue the action;
+	say "Quasirandom / unsorted list: [quasirand-final-list].";
 
 Why Pout Random Text ends here.
 
