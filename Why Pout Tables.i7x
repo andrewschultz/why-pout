@@ -559,7 +559,7 @@ to conditional-flier-mangle:
 
 a wordtwisting rule (this is the pre-war-file rule):
 	if sco-war-file is true and player has flier:
-		vcp "You already got the war file. See where else you can visit.";
+		vcal "You already got the war file. See where else you can visit.";
 		already-done;
 	abide by the three-isle rule;
 	if sco-plan-tracker is false:
@@ -575,7 +575,7 @@ this is the post-war-file rule:
 
 a wordtwisting rule (this is the pre-the-file rule):
 	if sco-the-file is true and player has flier:
-		vcp "You already got THE FILE. See where else you can visit.";
+		vcal "You already got THE FILE. See where else you can visit.";
 		already-done;
 	abide by the three-isle rule;
 	if number of still-chat-needed followers > 0:
@@ -596,7 +596,7 @@ to ride-squid:
 
 a wordtwisting rule (this is the pre-grow-vial rule):
 	if sco-grow-vial is true and player has flier:
-		vcp "You already got the grow vial. See where else you can visit.";
+		vcal "You already got the grow vial. See where else you can visit.";
 		already-done;
 	abide by the three-isle rule;
 	ready;
