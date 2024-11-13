@@ -33,16 +33,23 @@ the block sleeping rule is not listed in any rulebook.
 the block singing rule is not listed in any rulebook.
 
 check singing:
-	if player is in brew swears, say "You conjure some funk rap, inspired by the specific environs. It's not a totally tasteless new ditty." instead;
 	say "Funny, you feel a taste of icing." instead;
 
-check attacking:
-	say "'[one of]Gore? I'd go ride[or]Eh, kill-ache? Ill[in random order],' you think, randomly. You aren't built for that[if pals-made > 0], but maybe you can lead companions to a big victory[end if]." instead;
+carry out attacking:
+	say "'[one of]Gore? I'd go ride[or]Eh, kill-ache? Ill[in random order],' you think, randomly.";
 
 the block swearing obscenely rule is not listed in any rulebook.
 the block swearing mildly rule is not listed in any rulebook.
 
 check swearing mildly: try swearing obscenely instead;
+
+book honorary default verb
+
+xyzzying is an action out of world.
+
+understand the command "xyzzy" as something new.
+
+understand "xyzzy" as xyzzying.
 
 [swearing is different between WP, which has its own dedicated section, and US.]
 

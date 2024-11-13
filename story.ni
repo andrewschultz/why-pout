@@ -815,12 +815,6 @@ to decide whether can-show-spoilers:
 
 chapter xyzzying
 
-xyzzying is an action out of world.
-
-understand the command "xyzzy" as something new.
-
-understand "xyzzy" as xyzzying.
-
 carry out xyzzying:
 	say "You hear a[one of][or]nother[stopping] size-Z 'X! Why's [']e...'";
 	say "[one of][line break]No, I don't know whether size Z is super-big or super-small.[or][stopping]";
@@ -892,6 +886,12 @@ carry out chatoffing:
 	the rule succeeds;
 
 book regular verbs, modified
+
+chapter attacking extra stuff
+
+[the main rule is in Oronym Core]
+
+report attacking: say "You aren't built for that[if pals-made > 0], but maybe you can lead companions to a big victory[end if]." instead;
 
 chapter eating
 
@@ -984,6 +984,11 @@ report taking inventory when gs-got-weapons is true and sco-wipe-out is false:
 report taking inventory when opt-lump-party is true:
 	say "So far, you have gained the support of [number of friendly followers in words] friends[if mice tall are friendly] (counting the mice as an aggregate)[end if]: [the list of friendly followers].";
 	continue the action;
+
+chapter singing
+
+check singing (this is the WP check singing rule):
+	if player is in brew swears, say "You conjure some funk rap, inspired by the specific environs. It's not a totally tasteless new ditty." instead;
 
 chapter sensing
 
