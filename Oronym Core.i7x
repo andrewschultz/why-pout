@@ -18,6 +18,30 @@ a sentient is a kind of thing.
 
 volume I7 low-usage default verbs
 
+book senses
+
+the block listening rule is not listed in any rulebook.
+
+check listening: say "You listen for splits between words and weird pronunciations but hear nothing that could help you." instead;
+
+the block smelling rule is not listed in any rulebook.
+
+check smelling: say "No funk, or fun. Cor!" instead;
+
+the block tasting rule is not listed in any rulebook.
+
+check tasting: say "A voice: 'No tastings note. Eh?' Stings!" instead;
+
+the report touching yourself rule is not listed in any rulebook.
+
+check touching: say "An internal voice says 'We poke, eh? Weep, okay?'" instead;
+
+understand "touch" as touching.
+
+rule for supplying a missing noun when touching: now the noun is the player.
+
+book misc others
+
 the block saying no rule is not listed in any rulebook.
 the block saying yes rule is not listed in any rulebook.
 

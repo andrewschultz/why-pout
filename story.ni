@@ -990,32 +990,13 @@ chapter singing
 check singing (this is the WP check singing rule):
 	if player is in brew swears, say "You conjure some funk rap, inspired by the specific environs. It's not a totally tasteless new ditty." instead;
 
-chapter sensing
+chapter listening
 
-the block listening rule is not listed in any rulebook.
-
-check listening:
+check listening (this is the WP specific listening rule):
 	if player is in hype lane:
 		if prize talk is in hype lane, try examining prize talk instead;
 		if cell phones are in hype lane, try examining cell phones instead;
 	if player is in air aww, say "Air, or ... a roar?!" instead;
-	say "Nothing that could help you." instead;
-
-the block smelling rule is not listed in any rulebook.
-
-check smelling: say "No funk, or fun. Cor!" instead;
-
-the block tasting rule is not listed in any rulebook.
-
-check tasting: say "A voice: 'No tastings note. Eh?' Stings!" instead;
-
-the report touching yourself rule is not listed in any rulebook.
-
-check touching: say "An internal voice says 'We poke, eh? Weep, okay?'" instead;
-
-understand "touch" as touching.
-
-rule for supplying a missing noun when touching: now the noun is the player.
 
 chapter t talking
 
