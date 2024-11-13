@@ -828,7 +828,7 @@ carry out xyzzying:
 book options
 
 to lump-party (ts - a truth state):
-	say "Your party is [if ts is opt-lump-party]already[else]now[end if] [if ts is true]lumped together[else]listed separately[end if] in room descriptions.";
+	say "Your party is [if ts is opt-lump-party]already[else]now[end if] [if ts is true]lumped together[else]listed separately[end if] in room descriptions[if block-followers is true], or they will be, once you rejoin them[end if].";
 	now opt-lump-party is ts;
 
 to toggle-chat (ts - a truth state):

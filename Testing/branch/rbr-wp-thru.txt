@@ -983,6 +983,24 @@ T to talk will list whom to talk to.
 >l
 Your three companions wait here for what to do or where to go next.
 \\
+>x companions
+You see the rogue (old), the gnome (old) and the new troll.
+\\
+>x companion
+You see the rogue (old), the gnome (old) and the new troll.
+\\
+>x comps
+You see the rogue (old), the gnome (old) and the new troll.
+\\
+>x comp
+You see the rogue (old), the gnome (old) and the new troll.
+\\
+>x coms
+You see the rogue (old), the gnome (old) and the new troll.
+\\
+>x com
+You see the rogue (old), the gnome (old) and the new troll.
+\\
 >e
 Your three companions follow you.
 \\
@@ -994,6 +1012,10 @@ Your party is already listed separately in room descriptions.
 \\
 >apart eeee
 Your party is already listed separately in room descriptions.
+\\
+>x comps
+Nothing here like that. Note that room names are not usually worth examining, as you can just L or LOOK.
+\\
 >w
 
 @verbs+
@@ -1043,6 +1065,32 @@ If you need to eat anything, it requires a slightly different approach.
 >eye sign
 The eyes light up green and show three dots, then six dots.
 
+@verbs
+##balance undos
+>uh party
+\\
+>see design
+by a point
+\\
+>x comps
+Nothing here like that.
+\\
+>uh party
+Your party is already lumped together in room descriptions, or they will be, once you rejoin them.
+\\
+>apart eee
+Your party is now listed separately in room descriptions, or they will be, once you rejoin them.
+\\
+>x comps
+Nothing here like that.
+\\
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
 >see design
 by a point
 
@@ -1077,6 +1125,28 @@ So, what do you need to find, before getting out?
 @hint
 >eye
 The eyes light up green and show four dots, then five dots.
+
+@verbs
+##balance undos
+>uh party
+\\
+>knife rite
+by a point
+\\
+>x comps
+You see the new troll, the rogue (old) and the gnome (old).
+\\
+>apart eee
+Your party is now listed separately in room descriptions.
+\\
+>x comps
+Nothing here like that.
+\\
+>undo
+>undo
+>undo
+>undo
+>undo
 
 >knife right
 by a point
