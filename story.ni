@@ -2,7 +2,7 @@
 
 volume top level stuff
 
-the release number is 5.
+the release number is 6.
 
 release along with a website.
 
@@ -799,7 +799,8 @@ carry out versioning:
 	say "[line break]Version 3 was released on October 22, 2024. It includes one more point in the optional room, as well as a big boss there, of sorts. There are some trivial fixes, too.";
 	say "[line break]Version 4 was released on November 9, 2024. It features game-mechanic-relevant dialogue between friendly NPCs, as well as general text flavor tweaks.";
 	say "[line break]Version 5 was released on November 12, 2024. It contains more granular hints about what you got right, e.g. one word right, both words right, or either very close.";
-	say "[line break]For details on fixes, see fixes.txt, which should be packaged with the binary. Or visit the GitHub site https://github.com/andrewschultz/why-pout, which may have bugs to be fixed for potential future releases. But as of release 5, I don't want this project to drag on, fun as it's been.";
+	say "[line break]Version 6 will be release on November xx, 2024. It adds a point in the optional area, allows for a bypass, and allows COMPANIONS as a noun. It fixes trivial but persistent line break issues too.";
+	say "[line break]For details on fixes, see fixes.txt, which should be packaged with the binary. Or visit the GitHub site https://github.com/andrewschultz/why-pout, which may provide a view of bugs to be fixed for potential future releases. Although as of release 6, I don't want this project to drag on, fun as it's been. There are other games to write!";
 	the rule succeeds;
 
 [the text below is added to Versioning and Extensions Tweak]
