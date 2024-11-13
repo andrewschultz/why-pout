@@ -328,6 +328,12 @@ The eyes glow dimly and show seven dots, then three dots.
 by a bonus point
 
 >eye
+The eyes glow dimly and show four dots, then five dots.
+
+>damn peons
+by a bonus point
+
+>eye
 The eyes glow dimly and show six dots, then three dots.
 
 >heckle ass

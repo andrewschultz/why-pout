@@ -22,7 +22,7 @@ book senses
 
 the block listening rule is not listed in any rulebook.
 
-check listening: say "You listen for splits between words and weird pronunciations but hear nothing that could help you." instead;
+check listening: say "You listen for splits between words and weird pronunciations but hear no clear clues." instead;
 
 the block smelling rule is not listed in any rulebook.
 

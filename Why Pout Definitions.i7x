@@ -286,7 +286,11 @@ to decide which number is orc-score:
 [yes, it's possible we could define a function called boolsum of brew-swears but this does the job for now]
 
 to decide which number is brew-swears-score:
-	decide on (boolval of sco-brew-swears) + (boolval of sco-weak-us) + (boolval of sco-grin-churls) + (boolval of sco-ass-low) + (boolval of sco-crew-dork) + (boolval of sco-huh-shit) + (boolval of sco-lie-fuckers) + (boolval of sco-heckle-ass) + (boolval of sco-were-dicks) + (boolval of sco-bastard-eee) + (boolval of sco-gah-wanker)
+	decide on (boolval of sco-brew-swears) + (boolval of sco-weak-us) + (boolval of sco-crew-dork) + (boolval of sco-grin-churls) + (boolval of sco-ass-low) + (boolval of sco-bastard-eee) + (boolval of sco-damn-peons) + (boolval of sco-heckle-ass) + (boolval of sco-huh-shit) + (boolval of sco-lie-fuckers) + (boolval of sco-were-dicks) + (boolval of sco-gah-wanker)
+
+when play begins (this is the decide-brew-swears-max rule):
+	repeat through table of main oronyms:
+		if there is a best-room entry and best-room entry is brew swears, increment brew-max;
 
 book meta scoring
 

@@ -1062,6 +1062,9 @@ by a bonus point
 >bastard eee
 by a bonus point
 
+>damn peons
+by a bonus point
+
 >heckle ass
 by a bonus point
 
@@ -1095,7 +1098,8 @@ The grin churls remark that you seemed so open-minded, really, and they're all f
 
 #+testcase-check-pre-weak-us-rule-if-sco-weak-us-is-true
 >weak us
-You already established the grin churls cursed out of weakness or, at least, not fully from strength!
+!You already established
+That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
 >gah wanker
 by a bonus point

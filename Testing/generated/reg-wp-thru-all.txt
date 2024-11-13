@@ -285,6 +285,14 @@ by a bonus point
 #testcase-check-pre-bastard-eee-rule-fallthrough
 #testcase-run-post-bastard-eee-rule-default
 You show you're sturdy and then some, with just the right tone of exasperation. They pretend not to be impressed, but they don't have a comeback.
+WRONG
+
+>damn peons
+by a bonus point
+
+#testcase-check-pre-damn-peons-rule-fallthrough
+#testcase-run-post-damn-peons-rule-default
+WRONG
 The grinch earls mock you, or maybe boost themselves, with "Heh, class!"
 
 >heckle ass

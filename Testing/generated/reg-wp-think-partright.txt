@@ -569,8 +569,18 @@ You must have one word right for a way to counter the bah-sturdy taunts.
 >bastard eee
 by a bonus point
 
+>xx peons
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a way to counter the damp-yawns taunts.
+
+>damn peons
+by a bonus point
+
 >xx ass
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for a way to counter the heh-class taunts.
 

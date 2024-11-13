@@ -24,7 +24,7 @@ chapter bonus point test(s)
 
 test wb with "brew swears/in/weak us/grin churls/crew dork/out".
 
-test wall with "brew swears/in/weak us/grin churls/crew dork/z/z/z/z/z/z/z/z/ass low/bastardy/lie fuckers/huh shit/heckle ass/were dicks/gah wanker/out".
+test wall with "brew swears/in/weak us/grin churls/crew dork/z/z/z/z/z/z/z/z/ass low/bastardy/damn peons/lie fuckers/huh shit/heckle ass/were dicks/gah wanker/out".
 
 chapter building blocks
 
@@ -234,7 +234,7 @@ carry out aoing:
 
 section swearblob sorting alphabetically - not for release
 
-alphorder of aah-slow is 1. alphorder of bah-sturdy is 2. alphorder of heh-class is 3. alphorder of hush-it is 4. alphorder of life-occurs is 5. alphorder of weird-icks is 6.
+alphorder of aah-slow is 1. alphorder of bah-sturdy is 2. alphorder of damp-yawns is 3. alphorder of heh-class is 4. alphorder of hush-it is 5. alphorder of life-occurs is 6. alphorder of weird-icks is 7.
 
 chapter taing
 

@@ -60,6 +60,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "crew"	"dork"	--	--	--	false	false	false	false	"a way to explain the crude orc's status"	false	true	false	false	false	brew swears	pre-crew-dork rule	post-crew-dork rule	--	"[if doom ending is visited][dork-lockout][else]You can explain [the earls] see the crude orc as a [b]CREW DORK[r] [once-now of sco-weak-us] they seem a bit less strong[end if]."
 "ass"	"low|lo"	--	--	--	false	false	false	false	"a way to counter the ah-slow taunts"	false	true	false	false	false	brew swears	pre-ass-low rule	post-ass-low rule	--	--
 "bastard"	"e+h*"	--	--	--	false	false	false	false	"a way to counter the bah-sturdy taunts"	false	true	false	false	false	brew swears	pre-bastard-eee rule	post-bastard-eee rule	--	--
+"damn"	"peons"	"dam"	--	--	false	false	false	false	"a way to counter the damp-yawns taunts"	false	true	false	false	false	brew swears	pre-damn-peons rule	post-damn-peons rule	--	--
 "heckle"	"ass"	--	--	--	false	false	false	false	"a way to counter the heh-class taunts"	false	true	false	false	false	brew swears	pre-heckle-ass rule	post-heckle-ass rule	--	--
 "huh"	"shit"	--	--	--	false	false	false	false	"a way to counter the hush-it taunts"	false	true	false	false	false	brew swears	pre-huh-shit rule	post-huh-shit rule	--	--
 "lie"	"fuckers"	--	--	--	false	false	false	false	"a way to counter the life-occurs taunts"	false	true	false	false	false	brew swears	pre-lie-fuckers rule	post-lie-fuckers rule	--	--
@@ -932,7 +933,7 @@ to say war-pawn-musings:
 		say "'Oh! Must be that I [if gs-war-pawn-used is true]used[else]tried to use[end if] that war pawn. Lesson learnt.'[paragraph break]But your companions change to I-saw-ice-aww expressions. No, it must have been something else.";
 	else:
 		say "You ask for credit because you didn't use the war pawn, but that seems irrelevant. They didn't know you had one!";
-	say "[line break]'It was BRUISE-WARES, wasn't it?' you ask. 'I shouldn't have [if sco-brew-swears is false]ignored it[else if brew swears is unvisited]chickened out from going in[else if brew-swears-score is 1]left just as I got there[else if brew-swears-score is 2]left the crude orc[else if brew-swears-score is 3]chickened out right after I rescued the crude orc[else if brew-swears-score < 9]left things undone[else]enjoyed tearing through it all[end if].'[paragraph break]Your companions shake their heads slightly.[paragraph break]";
+	say "[line break]'It was BRUISE-WARES, wasn't it?' you ask. 'I shouldn't have [if sco-brew-swears is false]ignored it[else if brew swears is unvisited]chickened out from going in[else if brew-swears-score is 1]left just as I got there[else if brew-swears-score is 2]left the crude orc[else if brew-swears-score is 3]chickened out right after I rescued the crude orc[else if brew-swears-score < brew-max]left things undone[else]enjoyed tearing through it all[end if].'[paragraph break]Your companions shake their heads slightly.[paragraph break]";
 
 to say remove-widevision-bonus:
 	if gs-penalized-why-division is false:
@@ -1055,6 +1056,16 @@ this is the post-bastard-eee rule:
 	now sco-bastard-eee is true;
 	say "You show you're sturdy and then some, with just the right tone of exasperation. They pretend not to be impressed, but they don't have a comeback.";
 	swearzap bah-sturdy;
+
+a wordtwisting rule (this is the pre-damn-peons rule):
+	if player is not in brew swears, unavailable;
+	if damp-yawns is not in brew swears, unavailable;
+	ready;
+
+this is the post-damn-peons rule:
+	now sco-damn-peons is true;
+	say "You hit [']em where it hurts. Nothing too vicious, just, a reminder they're not that important. It takes a small toll.";
+	swearzap damp-yawns;
 
 a wordtwisting rule (this is the pre-heckle-ass rule):
 	if player is not in brew swears, unavailable;

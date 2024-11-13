@@ -627,6 +627,8 @@ bah-sturdy is a swearblob. "The [grinch] shake their heads at you: 'Bah! Sturdy?
 
 heh-class is a swearblob. "The [grinch] mock you, or maybe boost themselves, with 'Heh, class!'". eyes-number of heh-class is -63. eyes-rule of heh-class is pre-heckle-ass rule.
 
+damp-yawns is a swearblob. "The [grinch] dismiss you: 'Damp! Yawns!'". eyes-number of damp-yawns is -45. eyes-rule of damp-yawns is pre-damn-peons rule.
+
 hush-it is a swearblob. "The [grinch] laugh and say 'Hush it.'". eyes-number of hush-it is -34. eyes-rule of hush-it is pre-huh-shit rule.
 
 life-occurs is a swearblob. "The [grinch] take cheap shots and say 'Life occurs.'". eyes-number of life-occurs is -37. eyes-rule of life-occurs is pre-lie-fuckers rule.

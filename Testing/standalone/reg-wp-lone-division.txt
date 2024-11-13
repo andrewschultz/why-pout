@@ -2,7 +2,7 @@
 ** game: /home/andrew/prt/debug-why-pout.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
 
-* got20
+* _got20
 
 >{include}_1yes
 >{include}_2yes
@@ -44,7 +44,7 @@ Your score just went up by a point!
 #testcase-run-post-do-due-mend-rule-if-sco-wide-vision-is-false
 Beat all! Be tall!
 
-* got19
+* _got19
 
 >{include}_1yes
 >{include}_2yes
@@ -77,7 +77,7 @@ by a point
 Your score just went up by a point!
 Gray day?! Grade A!
 
-* got18
+* _got18
 
 >{include}_1yes
 >{include}_2yes
@@ -110,7 +110,7 @@ by a point
 Your score just went up by a point!
 Gray day?! Grade A!
 
-* got17
+* _got17
 
 >{include}_1yes
 >{include}_2yes
@@ -143,7 +143,7 @@ by a point
 Your score just went up by a point!
 Gray day?! Grade A!
 
-* got16
+* _got16
 
 >{include}_1yes
 >{include}_2yes
@@ -176,7 +176,7 @@ by a point
 Your score just went up by a point!
 Gray day?! Grade A!
 
-* got15
+* _got15
 
 >{include}_1yes
 >{include}_2yes
@@ -209,7 +209,7 @@ by a point
 Your score just went up by a point!
 Gray day?! Grade A!
 
-* got14
+* _got14
 
 >{include}_1yes
 >{include}_2yes
@@ -242,7 +242,7 @@ by a point
 Your score just went up by a point!
 Gray day?! Grade A!
 
-* got13
+* _got13
 
 >{include}_1yes
 >{include}_2yes
@@ -275,7 +275,7 @@ by a point
 Your score just went up by a point!
 Gray day?! Grade A!
 
-* got12
+* _got12
 
 >{include}_1yes
 >{include}_2yes
@@ -308,7 +308,7 @@ by a point
 Your score just went up by a point!
 Gray day?! Grade A!
 
-* got11
+* _got11
 
 >{include}_1yes
 >{include}_2yes
@@ -341,7 +341,7 @@ by a point
 Your score just went up by a point!
 Gray day?! Grade A!
 
-* got10
+* _got10
 
 >{include}_1yes
 >{include}_2yes
@@ -374,7 +374,7 @@ by a point
 Your score just went up by a point!
 Gray day?! Grade A!
 
-* got9
+* _got9
 
 >{include}_1yes
 >{include}_2yes
@@ -407,7 +407,7 @@ by a point
 Your score just went up by a point!
 Gray day?! Grade A!
 
-* got8
+* _got8
 
 >{include}_1yes
 >{include}_2yes
@@ -440,7 +440,7 @@ by a point
 Your score just went up by a point!
 Gray day?! Grade A!
 
-* got7
+* _got7
 
 >{include}_1yes
 >{include}_2yes
@@ -472,7 +472,7 @@ You relate how some of the time, you had to put off what you really wanted to do
 by a point
 Gray day?! Grade A!
 
-* got6
+* _got6
 
 >{include}_1yes
 >{include}_2yes
@@ -504,7 +504,7 @@ You had some struggles beyond just "what do do now," sure, and said struggles we
 by a point
 Gray day?! Grade A!
 
-* got5
+* _got5
 
 >{include}_1yes
 >{include}_2yes
@@ -536,7 +536,7 @@ You had some struggles beyond just "what do do now," sure, and said struggles we
 by a point
 Gray day?! Grade A!
 
-* got4
+* _got4
 
 >{include}_1yes
 >{include}_2yes
@@ -568,7 +568,7 @@ You mention a few detours you had, and the wisdom you allegedly gained from them
 by a point
 Gray day?! Grade A!
 
-* got3
+* _got3
 
 >{include}_1yes
 >{include}_2yes
@@ -600,7 +600,7 @@ You mention a few detours you had, and the wisdom you allegedly gained from them
 by a point
 Gray day?! Grade A!
 
-* got2
+* _got2
 
 >{include}_1yes
 >{include}_2yes
@@ -632,7 +632,7 @@ You only barely got your feet wet with tough problems. You come off as someone w
 by a point
 Gray day?! Grade A!
 
-* got1
+* _got1
 
 >{include}_1yes
 >{include}_2no
@@ -664,7 +664,7 @@ You only barely got your feet wet with tough problems. You come off as someone w
 by a point
 Gray day?! Grade A!
 
-* got0
+* _got0
 
 >{include}_1no
 >{include}_2no
@@ -699,7 +699,261 @@ NOTE: there's nothing
 by a point
 Gray day?! Grade A!
 
-* 0pawn-b1
+* 0pawn-bjump-all-nums
+
+>{include}_1no
+>{include}_2no
+>{include}_3no
+>{include}_4no
+>{include}_5no
+>{include}_6no
+>{include}_7no
+>{include}_8no
+>{include}_9no
+>{include}_10no
+>{include}_11no
+>{include}_12no
+>{include}_13no
+>{include}_14no
+>{include}_15no
+>{include}_16no
+>{include}_17no
+>{include}_18no
+
+>u
+
+>ao
+>undoy
+>pals
+
+#0 bruise points
+>{include}_qwend
+
+>wide vision
+"Oh! Must be that I used that war pawn. Lesson learnt."
+But your companions change to I-saw-ice-aww expressions. No, it must have been something else.
+"It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have ignored it."
+Your companions shake their heads slightly.
+
+>undo
+>undo
+>undo
+>undo
+
+#1 bruise point
+>brew swears
+by a bonus point
+>{include}_qwend
+
+>wide vision
+"Oh! Must be that I used that war pawn. Lesson learnt."
+But your companions change to I-saw-ice-aww expressions. No, it must have been something else.
+"It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have chickened out from going in."
+Your companions shake their heads slightly.
+
+>undo
+>undo
+>undo
+>undo
+
+#1 bruise point + entered
+>in
+>{include}_qwend
+
+>wide vision
+"Oh! Must be that I used that war pawn. Lesson learnt."
+But your companions change to I-saw-ice-aww expressions. No, it must have been something else.
+"It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have left just as I got there."
+Your companions shake their heads slightly.
+
+>undo
+>undo
+>undo
+>undo
+
+#2 bruise points
+>weak us
+by a bonus point
+>{include}_qwend
+
+>wide vision
+"Oh! Must be that I used that war pawn. Lesson learnt."
+But your companions change to I-saw-ice-aww expressions. No, it must have been something else.
+"It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have left the crude orc."
+Your companions shake their heads slightly.
+
+>undo
+>undo
+>undo
+>undo
+
+#3 bruise points
+>crew dork
+by a bonus point
+>{include}_qwend
+
+>wide vision
+"Oh! Must be that I used that war pawn. Lesson learnt."
+But your companions change to I-saw-ice-aww expressions. No, it must have been something else.
+"It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have chickened out right after I rescued the crude orc."
+Your companions shake their heads slightly.
+
+>undo
+>undo
+>undo
+>undo
+
+#4 bruise points
+>ass lo
+by a bonus point
+>{include}_qwend
+
+>wide vision
+"Oh! Must be that I used that war pawn. Lesson learnt."
+But your companions change to I-saw-ice-aww expressions. No, it must have been something else.
+"It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have left things undone."
+Your companions shake their heads slightly.
+
+>undo
+>undo
+>undo
+>undo
+
+#5 bruise points
+>bastard eee
+by a bonus point
+>{include}_qwend
+
+>wide vision
+"Oh! Must be that I used that war pawn. Lesson learnt."
+But your companions change to I-saw-ice-aww expressions. No, it must have been something else.
+"It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have left things undone."
+Your companions shake their heads slightly.
+
+>undo
+>undo
+>undo
+>undo
+
+#6 bruise points
+>damn peons
+by a bonus point
+>{include}_qwend
+
+>wide vision
+"Oh! Must be that I used that war pawn. Lesson learnt."
+But your companions change to I-saw-ice-aww expressions. No, it must have been something else.
+"It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have left things undone."
+Your companions shake their heads slightly.
+
+>undo
+>undo
+>undo
+>undo
+
+#7 bruise points
+>heckle ass
+by a bonus point
+>{include}_qwend
+
+>wide vision
+"Oh! Must be that I used that war pawn. Lesson learnt."
+But your companions change to I-saw-ice-aww expressions. No, it must have been something else.
+"It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have left things undone."
+Your companions shake their heads slightly.
+
+>undo
+>undo
+>undo
+>undo
+
+#8 bruise points
+>huh shit
+by a bonus point
+>{include}_qwend
+
+>wide vision
+"Oh! Must be that I used that war pawn. Lesson learnt."
+But your companions change to I-saw-ice-aww expressions. No, it must have been something else.
+"It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have left things undone."
+Your companions shake their heads slightly.
+
+>undo
+>undo
+>undo
+>undo
+
+#9 bruise points
+>in
+>lie fuckers
+by a bonus point
+>{include}_qwend
+
+>wide vision
+"Oh! Must be that I used that war pawn. Lesson learnt."
+But your companions change to I-saw-ice-aww expressions. No, it must have been something else.
+"It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have left things undone."
+Your companions shake their heads slightly.
+
+>undo
+>undo
+>undo
+>undo
+
+#10 bruise points
+>were dicks
+by a bonus point
+>{include}_qwend
+
+>wide vision
+"Oh! Must be that I used that war pawn. Lesson learnt."
+But your companions change to I-saw-ice-aww expressions. No, it must have been something else.
+"It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have left things undone."
+Your companions shake their heads slightly.
+
+>undo
+>undo
+>undo
+>undo
+
+#11 bruise points
+>grin churls
+by a bonus point
+>{include}_qwend
+
+>wide vision
+"Oh! Must be that I used that war pawn. Lesson learnt."
+But your companions change to I-saw-ice-aww expressions. No, it must have been something else.
+"It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have left things undone."
+Your companions shake their heads slightly.
+
+>undo
+>undo
+>undo
+>undo
+
+#12 bruise points
+>gah wanker
+by a bonus point
+>{include}_qwend
+
+>wide vision
+"Oh! Must be that I used that war pawn. Lesson learnt."
+But your companions change to I-saw-ice-aww expressions. No, it must have been something else.
+"It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have enjoyed tearing through it all."
+Your companions shake their heads slightly.
+
+>undo
+>undo
+>undo
+>undo
+
+* _qwend
+>gonear doom ending
+>wo
+>wo
+
+* _0pawn-b1
 
 >{include}_1no
 >{include}_2no
@@ -727,7 +981,7 @@ Gray day?! Grade A!
 You ask for credit because you didn't use the war pawn, but that seems irrelevant. They didn't know you had one!
 "It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have chickened out from going in."
 
-* 0pawn-b1a
+* _0pawn-b1a
 
 >{include}_1no
 >{include}_2no
@@ -755,7 +1009,7 @@ You ask for credit because you didn't use the war pawn, but that seems irrelevan
 You ask for credit because you didn't use the war pawn, but that seems irrelevant. They didn't know you had one!
 "It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have left just as I got there."
 
-* 0pawn-b2
+* _0pawn-b2
 
 >{include}_1no
 >{include}_2no
@@ -783,7 +1037,7 @@ You ask for credit because you didn't use the war pawn, but that seems irrelevan
 You ask for credit because you didn't use the war pawn, but that seems irrelevant. They didn't know you had one!
 "It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have left the crude orc."
 
-* 0pawn-b3
+* _0pawn-b3
 
 >{include}_1no
 >{include}_2no
@@ -811,7 +1065,7 @@ You ask for credit because you didn't use the war pawn, but that seems irrelevan
 You ask for credit because you didn't use the war pawn, but that seems irrelevant. They didn't know you had one!
 "It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have chickened out right after I rescued the crude orc."
 
-* 0pawn-b4
+* _0pawn-b4
 
 >{include}_1no
 >{include}_2no
@@ -839,7 +1093,7 @@ You ask for credit because you didn't use the war pawn, but that seems irrelevan
 You ask for credit because you didn't use the war pawn, but that seems irrelevant. They didn't know you had one!
 "It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have left things undone."
 
-* 0pawn-b9
+* _0pawn-b9
 
 >{include}_1no
 >{include}_2no
@@ -867,7 +1121,7 @@ You ask for credit because you didn't use the war pawn, but that seems irrelevan
 You ask for credit because you didn't use the war pawn, but that seems irrelevant. They didn't know you had one!
 "It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have enjoyed tearing through it all."
 
-* 0pawnfail
+* _0pawnfail
 
 >{include}_1no
 >{include}_2no
@@ -894,7 +1148,7 @@ You ask for credit because you didn't use the war pawn, but that seems irrelevan
 "Oh! Must be that I tried to use that war pawn. Lesson learnt."
 "It was BRUISE-WARES, wasn't it?" you ask. "I shouldn't have ignored it."
 
-* 0pawnlater
+* _0pawnlater
 
 >{include}_1no
 >{include}_2no
@@ -920,7 +1174,7 @@ You ask for credit because you didn't use the war pawn, but that seems irrelevan
 >wide vision
 "Oh! Must be that I tried to use that war pawn. Lesson learnt."
 
-* 0pawnsuccess
+* _0pawnsuccess
 
 >{include}_1no
 >{include}_2no

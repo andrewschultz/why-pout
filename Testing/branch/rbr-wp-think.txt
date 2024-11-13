@@ -1538,8 +1538,20 @@ You must have one word right for a way to counter the bah-sturdy taunts.
 by a bonus point
 
 @part
+>xx peons
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+\\
+>think
+You must have one word right for a way to counter the damp-yawns taunts.
+
+@!min
+>damn peons
+by a bonus point
+
+@part
 >xx ass
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+\\
 >think
 You must have one word right for a way to counter the heh-class taunts.
 
@@ -1608,7 +1620,8 @@ The grin churls remark that you seemed so open-minded, really, and they're all f
 @rej
 #+testcase-check-pre-weak-us-rule-if-sco-weak-us-is-true
 >weak us
-You already established the grin churls cursed out of weakness or, at least, not fully from strength!
+!You already established
+{$REJECT2}
 
 @part
 >xx wanker
