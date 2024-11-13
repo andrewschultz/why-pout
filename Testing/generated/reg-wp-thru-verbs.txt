@@ -293,12 +293,16 @@ by a point
 >x comps
 You see the new troll, the rogue (old) and the gnome (old).
 
+>t comps
+You can only talk to one companion at a time with T, though you will need to give a big speech with a special command later.
+
 >apart eee
 Your party is now listed separately in room descriptions.
 
 >x comps
 Nothing here like that.
 
+>undo
 >undo
 >undo
 >undo
@@ -587,6 +591,15 @@ by a point
 
 >my corps
 by a point
+
+>uh party
+Your party is now lumped together in room descriptions.
+
+>t comps
+You can only talk to one companion at a time with T, and you've already given your big speech.
+
+>undo
+>undo
 
 >t raider
 Motivational talk is through. Time to end this thing.

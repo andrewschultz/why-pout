@@ -1057,6 +1057,7 @@ check ting a follower:
 carry out ting a sentient:
 	if noun is skull, say "You doubt the skull would have anything to say beyond 'I'm all I MAUL!' or 'Help our hell-power!'" instead;
 	if noun is oaf liar, say "The oaf liar is talking over you. Perhaps you can shut them up by buying something really cheap." instead;
+	if noun is companions, say "You can only talk to one companion at a time with [b]T[r], [if sco-my-corps is false]though you will need to give a big speech with a special command later[else]and you've already given your big speech[end if]." instead;
 	if noun is merchant, say "You want to figure a way to kill conversation, [if sco-summer-chant is true]even if your summer chant made it more bearable[else]instead[end if]." instead;
 	if noun is Gawain Kerr, say "You don't need him to riff on your name. But maybe you can riff on his." instead;
 	if noun is booze troll, say "The booze troll doesn't seem interested in useful conversation, at least not in their present form." instead;
