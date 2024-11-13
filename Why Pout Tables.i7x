@@ -966,6 +966,7 @@ chapter brew swears scoring
 
 a wordtwisting rule (this is the pre-weak-us rule):
 	if player is not in brew swears, unavailable;
+	if grinch earls are not in brew swears, unavailable;
 	if sco-weak-us is true:
 		vcal "You already established [the grinch] cursed out of weakness or, at least, not fully from strength!";
 		already-done;

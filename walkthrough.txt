@@ -2,11 +2,11 @@ Why Pout, by Andrew Schultz
 
 This is a walkthrough for Why Pout, my IFComp 2024 entry. While there is no precise order to do things in, you often need some companions or items to solve other puzzles.
 
-Why Pout was meant to be smaller than my usual IFComp efforts. It has 44 puzzle points and 15 rooms in the main area.
+Why Pout was meant to be smaller than my usual IFComp efforts. It has 45 puzzle points and 15 rooms in the main area.
 
-This walkthrough attempts to be optimal. However, I may have missed ways to save a move here or there.
+This walkthrough attempts to get through in an optimal number of turns. However, I may have missed ways to save a move here or there. If so, it'd be neat but not critical to know.
 
-It also parrots my test commands (w1-w12) in the file Why Pout Tests.i7x.
+It also parrots my test commands (w1-w13) in the file Why Pout Tests.i7x.
 
 You can find the source at https://github.com/andrewschultz/why-pout, and any issues can be reported there.
 

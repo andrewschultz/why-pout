@@ -341,6 +341,18 @@ carry out shuf2ing:
 		sort QL in random order;
 		add QL to quasirand-final-list;
 
+volume get pals
+
+palsing is an action out of world.
+
+understand the command "pals" as something new.
+
+understand "pals" as palsing.
+
+carry out palsing:
+	now all needed followers are friendly;
+	the rule succeeds;
+
 volume undo okaying
 
 chapter undoying
