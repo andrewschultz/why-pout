@@ -19,7 +19,7 @@ carry out toending:
 	now sco-plan-tracker is true;
 	now sco-the-file is true;
 	repeat with F running through followers:
-		if F is crude orc, next;
+		if F is shrewd orc, next;
 		now F is friendly;
 		now F is chatted;
 		move F to Worm Eaten;

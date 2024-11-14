@@ -185,6 +185,10 @@ by a bonus point
 
 >out
 
+#testcase-mistake-why-pout-shrew-dork
+>shrew dork
+No, the shrewd orc doesn't need any names like that. Besides, they'd be, um, shrewd enough to sidestep them anyway.
+
 >e
 
 >low bend

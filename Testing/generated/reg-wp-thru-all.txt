@@ -268,8 +268,9 @@ by a bonus point
 #testcase-check-pre-crew-dork-rule-fallthrough
 #testcase-run-post-crew-dork-rule-default
 You break the truth gently to the crude orc that, well, they're at the bottom of the totem pole for this crew. They'll use the crude orc, maybe even not let them into the clique, and then find the next sucker. The grinch earls surprisingly have little response to this besides, well, profanity.
-The crude orc sees it now. The grinch earls weren't as friendly as they seemed. They wanted to use some trusting kid and corrupt them. The crude orc shakes their head. They ask if they can be seen as an orc and not, well, a dork. You say sure.
-You've gained a friend! You can stick around to torment the grinch earls further, or you can go on your way.
+The crude orc sees it now. The grinch earls weren't as friendly as they seemed. They wanted to use some trusting kid and corrupt them. The crude orc shakes their head. They ask if they can be seen as not just a dirk.
+With a bit of quick thinking (you've got experience with this by now) you say of course they don't need to feel like a dork any more. You can see how they'd be an aid orc, instead!
+And thus you've gained another friend! You can stick around to torment the grinch earls further, or you can go on your way.
 Hmm. You have a lot of friends following you around, but you haven't talked to them much. Perhaps you could learn something from them.
 
 >ass low
@@ -285,14 +286,14 @@ by a bonus point
 #testcase-check-pre-bastard-eee-rule-fallthrough
 #testcase-run-post-bastard-eee-rule-default
 You show you're sturdy and then some, with just the right tone of exasperation. They pretend not to be impressed, but they don't have a comeback.
-WRONG
+The grinch earls dismiss you: "Damp! Yawns!"
 
 >damn peons
 by a bonus point
 
 #testcase-check-pre-damn-peons-rule-fallthrough
 #testcase-run-post-damn-peons-rule-default
-WRONG
+You hit 'em where it hurts. Nothing too vicious, just, a reminder they're not that important. It takes a small toll.
 The grinch earls mock you, or maybe boost themselves, with "Heh, class!"
 
 >heckle ass

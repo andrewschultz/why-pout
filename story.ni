@@ -588,7 +588,7 @@ Brew Swears is a room in universal. "[if grinch earls are in brew swears]If you 
 
 check going outside in Brew Swears:
 	allow-follows;
-	if orc is friendly:
+	if shrewd orc is friendly:
 		say "As you lead [the orc] out, BRUISE-WARES crumbles behind you.";
 		if number of friendly needed followers > 0:
 			say "[line break]Shortly, [the random friendly needed follower] greets the orc with 'You the youth, uhh?' After a bit of chat, the orc seems to fit in.";
@@ -609,7 +609,15 @@ understand "grin churls" and "grin/churls" as grinch earls when sco-grin-churls 
 
 chapter crude orc
 
-the crude orc is an unneeded follower in Brew Swears. "A crude orc trundles around here, [orc-desc].". description is "[if sco-weak-us is false]Looking at you like their next target, to show they're tough enough for [the earls][else if sco-crew-dork is false]Unsure of themselves. They might be ready for a hard truth[else if number of swearblobs in Brew Swears > 0]Looking up to you a lot, for setting [the grinch] straight[else]So over this place and ready to go along with you on your adventure[end if].". help-chat of crude orc is "The crude orc doesn't have any strategy, per se. It's still young and naive. But it asks the sort of questions you forgot you had. Perhaps others youths have these questions, too, or they would, with -- well, whatever force that kidnapped you -- not pressing on them so much. And while impressing kids with mean swears isn't overarching evil, it's a gateway to nastier things. Kids like the orc are worth helping.". eyes-number of crude orc is -44. eyes-rule of crude orc is pre-crew-dork rule.
+the shrewd orc is a privately-named unneeded follower in Brew Swears. "A crude orc trundles around here, [orc-desc].". description is "[if sco-weak-us is false]Looking at you like their next target, to show they're tough enough for [the earls][else if sco-crew-dork is false]Unsure of themselves. They might be ready for a hard truth[else if number of swearblobs in Brew Swears > 0]Looking up to you a lot, for setting [the grinch] straight[else]So over this place and ready to go along with you on your adventure[end if].". help-chat of shrewd orc is "The shrewd orc is wise beyond its years, especially given what you'd heart about orcs. Perhaps it has no grand theories, and it's still young and naive. But it asks the sort of questions you forgot you had. Perhaps others youths have these questions, too, or they would, with -- well, whatever force that kidnapped you -- not pressing on them so much. And while impressing kids with mean swears isn't overarching evil, it's a gateway to nastier things. Kids like the orc are worth helping.". eyes-number of shrewd orc is -44. eyes-rule of shrewd orc is pre-crew-dork rule.
+
+printed name of shrewd orc is "[if player is in Brew Swears]crude[else]shrewd[end if] orc".
+
+understand "orc" as shrewd orc.
+
+understand "crude" and "crude orc" as shrewd orc when player is in Brew Swears.
+
+understand "shrewd" and "shrewd orc" as shrewd orc when player is in Brew Swears.
 
 to say orc-desc:
 	if orc-score is 0:

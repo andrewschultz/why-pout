@@ -10,6 +10,8 @@
 by a bonus point
 >bastardy
 by a bonus point
+>damn peons
+by a bonus point
 >heckle ass
 by a bonus point
 >huh shit
@@ -30,6 +32,8 @@ by a bonus point
 >ass lo
 by a bonus point
 >bastardy
+by a bonus point
+>damn peons
 by a bonus point
 >heckle ass
 by a bonus point
@@ -52,6 +56,8 @@ by a bonus point
 by a bonus point
 >bastardy
 by a bonus point
+>damn peons
+by a bonus point
 >heckle ass
 by a bonus point
 >huh shit
@@ -72,6 +78,8 @@ by a bonus point
 >ass lo
 by a bonus point
 >bastardy
+by a bonus point
+>damn peons
 by a bonus point
 >heckle ass
 by a bonus point
@@ -94,6 +102,8 @@ by a bonus point
 by a bonus point
 >bastardy
 by a bonus point
+>damn peons
+by a bonus point
 >grin churls
 GAWAIN KERR
 
@@ -101,7 +111,30 @@ GAWAIN KERR
 
 >{include}_visitbrew
 
+>damn peons
+by a bonus point
+>heckle ass
+by a bonus point
+>huh shit
+by a bonus point
+>lie fuckers
+by a bonus point
+>were dicks
+by a bonus point
+>ass lo
+by a bonus point
 >bastardy
+by a bonus point
+>grin churls
+GAWAIN KERR
+
+* r1-7
+
+>{include}_visitbrew
+
+>bastardy
+by a bonus point
+>damn peons
 by a bonus point
 >heckle ass
 by a bonus point
@@ -122,16 +155,25 @@ GAWAIN KERR
 
 >grin churls
 by a bonus point
+!GAWAIN
 >ass lo
 by a bonus point
+!GAWAIN
 >bastardy
 by a bonus point
+!GAWAIN
+>damn peons
+by a bonus point
+!GAWAIN
 >heckle ass
 by a bonus point
+!GAWAIN
 >huh shit
 by a bonus point
+!GAWAIN
 >lie fuckers
 by a bonus point
+!GAWAIN
 >were dicks
 by a bonus point
 GAWAIN KERR
@@ -142,16 +184,25 @@ GAWAIN KERR
 
 >were dicks
 by a bonus point
+!GAWAIN
 >grin churls
 by a bonus point
+!GAWAIN
 >ass lo
 by a bonus point
+!GAWAIN
 >bastardy
 by a bonus point
+!GAWAIN
+>damn peons
+by a bonus point
+!GAWAIN
 >heckle ass
 by a bonus point
+!GAWAIN
 >huh shit
 by a bonus point
+!GAWAIN
 >lie fuckers
 by a bonus point
 GAWAIN KERR
@@ -162,16 +213,25 @@ GAWAIN KERR
 
 >grin churls
 by a bonus point
+!GAWAIN
 >lie fuckers
 by a bonus point
+!GAWAIN
 >were dicks
 by a bonus point
+!GAWAIN
 >ass lo
 by a bonus point
+!GAWAIN
 >bastardy
 by a bonus point
+!GAWAIN
+>damn peons
+by a bonus point
+!GAWAIN
 >heckle ass
 by a bonus point
+!GAWAIN
 >huh shit
 by a bonus point
 GAWAIN KERR
@@ -182,16 +242,25 @@ GAWAIN KERR
 
 >grin churls
 by a bonus point
+!GAWAIN
 >huh shit
 by a bonus point
+!GAWAIN
 >lie fuckers
 by a bonus point
+!GAWAIN
 >were dicks
 by a bonus point
+!GAWAIN
 >ass lo
 by a bonus point
+!GAWAIN
 >bastardy
 by a bonus point
+!GAWAIN
+>damn peons
+by a bonus point
+!GAWAIN
 >heckle ass
 by a bonus point
 GAWAIN KERR
@@ -220,6 +289,9 @@ by a bonus point
 !GAWAIN
 >bastardy
 by a bonus point
+!GAWAIN
+>damn peons
+by a bonus point
 GAWAIN KERR
 >gah wanker
 by a bonus point
@@ -228,18 +300,57 @@ by a bonus point
 
 >{include}_visitbrew
 
+>damn peons
+by a bonus point
+!GAWAIN
 >grin churls
 by a bonus point
->bastardy
-by a bonus point
+!GAWAIN
 >heckle ass
 by a bonus point
+!GAWAIN
+>huh shit
+by a bonus point
+!GAWAIN
+>lie fuckers
+by a bonus point
+!GAWAIN
+>were dicks
+by a bonus point
+!GAWAIN
+>ass lo
+by a bonus point
+!GAWAIN
+>bastardy
+by a bonus point
+GAWAIN KERR
+>gah wanker
+by a bonus point
+
+* r2-7
+
+>{include}_visitbrew
+
+>grin churls
+by a bonus point
+!GAWAIN
+>bastardy
+by a bonus point
+!GAWAIN
+>damn peons
+by a bonus point
+!GAWAIN
+>heckle ass
+by a bonus point
+!GAWAIN
 >huh shit
 by a bonus point
 >lie fuckers
 by a bonus point
+!GAWAIN
 >were dicks
 by a bonus point
+!GAWAIN
 >ass lo
 by a bonus point
 GAWAIN KERR

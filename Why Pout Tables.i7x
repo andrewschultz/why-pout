@@ -1009,10 +1009,10 @@ this is the post-crew-dork rule:
 
 to check-orc-friendliness:
 	if orc-score is 2:
-		say "[line break]The crude orc sees it now. [The earls] weren't as friendly as they seemed. They wanted to use some trusting kid and corrupt them. The crude orc shakes their head. They ask if they can be seen as an orc and not, well, a dork. You say sure.";
-		say "[line break]You've gained a friend! [if grinch earls are moot]There's really nothing left to do here[else]You can stick around to torment the grinch earls further, or you can go on your way[end if].";
-		befriend crude orc;
-		declue crude orc;
+		say "[line break]The crude orc sees it now. [The earls] weren't as friendly as they seemed. They wanted to use some trusting kid and corrupt them. The crude orc shakes their head. They ask if they can be seen as not just a dirk.[paragraph break]With a bit of quick thinking (you've got experience with this by now) you say of course they don't need to feel like a dork any more. You can see how they'd be an aid orc, instead!";
+		say "[line break]And thus you've gained another friend! [if grinch earls are moot]There's really nothing left to do here[else]You can stick around to torment the grinch earls further, or you can go on your way[end if].";
+		befriend shrewd orc;
+		declue shrewd orc;
 	else if orc-score is 1:
 		say "[line break]The crude orc looks back and forth between you and the [grinch], glaring at them a bit, but not yet ready to break free. Just a bit more, and you may gain a friend.";
 
