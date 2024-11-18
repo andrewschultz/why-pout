@@ -267,6 +267,8 @@ definition: a direction (called d) is viable:
 
 volume combo numbers
 
+to decide which number is core-pals-made: decide on number of friendly needed followers;
+
 to decide which number is pals-made: decide on number of friendly followers;
 
 to decide which number is pals-needed: decide on number of needed followers;

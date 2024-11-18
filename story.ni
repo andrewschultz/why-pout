@@ -219,7 +219,7 @@ after printing the locale description for NaffHaze when sco-nah-phase is true an
 	say "You feel policed here. And it's the mean American gung-ho militarized sort of policed, not the (usually) kinder UK brand. Where and what is this policed feeling coming from?";
 	continue the action;
 
-after printing the locale description for NaffHaze when Bruise Wares is off-stage and current-score >= 20 (this is the show-bruise-wares rule):
+after printing the locale description for NaffHaze when Bruise Wares is off-stage and current-score >= 20 and core-pals-made >= 2 (this is the show-bruise-wares rule):
 	say "An ominous new construction appears here. It's called [b]BRUISE WARES[r]. Perhaps you should ignore it. Often one doesn't want to engage that sort of thing. But you may feel that much more accomplished tackling whatever is behind there.";
 	move Bruise Wares to NaffHaze;
 	continue the action;
