@@ -589,11 +589,13 @@ Brew Swears is a room in universal. "[if grinch earls are in brew swears]If you 
 check going outside in Brew Swears:
 	allow-follows;
 	if shrewd orc is friendly:
-		say "As you lead [the orc] out, BRUISE-WARES crumbles behind you.";
-		if number of friendly needed followers > 0:
-			say "[line break]Shortly, [the random friendly needed follower] greets the orc with 'You the youth, uhh?' After a bit of chat, the orc seems to fit in.";
-[		else:
-			say "[line break]There's nobody to tell the orc 'You the youth, uhh?', but they're still ready for a real adventure.";] [this should never happen, since you need 20 points for Bruise Wares to appear. But I include the code for posterity.]
+		say "As you lead [the orc] out, BRUISE-WARES crumbles behind you.[paragraph break]But the crude orc pauses. You ask what's the matter. Once they see their companions, they wonder if -- well, they'll fit in. They're too young and orcish. And they have a lot of questions they're sure other people know the answers to.[paragraph break]It's tough -- they had a lot of questions you had when you were younger, and some of their own, too! But they're good questions, ones you'd have enjoyed kicking around. And they show surprising insights for their youth.[paragraph break]You sense 'It's going to be okay' and 'you'll find a place' isn't enough, but you say it anyway and ask for their faith.";
+		wfak;
+		let x be list of friendly needed followers;
+		say "[line break]Shortly, [the entry 1 in x] greet[nosplur of entry 1 in x] the orc with 'You the youth, uhh?'[paragraph break]The orc responds 'I'm an ... I ... man ...' but soon gets their footing.[paragraph break]'You ... swell! Use well.'";
+		say "[line break]Soon, [the entry 2 in x] chime[nosplur of entry 2 in x] in with 'You ... swell use, well!' Of course, this is clarified: the orc isn't just useful, or there to be used. But it breaks the ice completely.";
+		wfak;
+		say "[line break]The orc held their own in conversation. And they didn't swear once. They have a keen moral eye. You ask a bit more about their background. They've earned a new name -- not the crude orc, but the shrewd orc, a hat-tip to how [the grinch] mocked them for being too goody-goody, and how that's largely passed now.";
 		zap-bruise-wares;
 		remove-swear-bonus;
 
@@ -607,7 +609,7 @@ the grinch earls are a plural-named hostile sentient in Brew Swears. "Some [earl
 
 understand "grin churls" and "grin/churls" as grinch earls when sco-grin-churls is true.
 
-chapter crude orc
+chapter shrewd orc
 
 the shrewd orc is a privately-named unneeded follower in Brew Swears. "A crude orc trundles around here, [orc-desc].". description is "[if sco-weak-us is false]Looking at you like their next target, to show they're tough enough for [the earls][else if sco-crew-dork is false]Unsure of themselves. They might be ready for a hard truth[else if number of swearblobs in Brew Swears > 0]Looking up to you a lot, for setting [the grinch] straight[else]So over this place and ready to go along with you on your adventure[end if].". help-chat of shrewd orc is "The shrewd orc is wise beyond its years, especially given what you'd heart about orcs. Perhaps it has no grand theories, and it's still young and naive. But it asks the sort of questions you forgot you had. Perhaps others youths have these questions, too, or they would, with -- well, whatever force that kidnapped you -- not pressing on them so much. And while impressing kids with mean swears isn't overarching evil, it's a gateway to nastier things. Kids like the orc are worth helping.". eyes-number of shrewd orc is -44. eyes-rule of shrewd orc is pre-crew-dork rule.
 
