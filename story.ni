@@ -591,10 +591,10 @@ Brew Swears is a room in universal. "[if grinch earls are in brew swears]If you 
 check going outside in Brew Swears:
 	allow-follows;
 	if shrewd orc is friendly:
-		say "As you lead [the orc] out, BRUISE-WARES crumbles behind you.[paragraph break]But the crude orc pauses. You ask what's the matter. Once they see their companions, they wonder if -- well, they'll fit in. They're too young and orcish. And they have a lot of questions they're sure other people know the answers to.[paragraph break]It's tough -- they had a lot of questions you had when you were younger, and some of their own, too! But they're good questions, ones you'd have enjoyed kicking around. And they show surprising insights for their youth.[paragraph break]You sense 'It's going to be okay' and 'you'll find a place' isn't enough, but you say it anyway and ask for their faith.";
+		say "As you lead [the orc] out, BRUISE-WARES crumbles behind you.[paragraph break]But [the orc] pauses. You ask what's the matter. Once they see their companions, they wonder if -- well, they'll fit in. They're too young and orcish. And they have a lot of questions they're sure other people know the answers to.[paragraph break]It's tough -- they had a lot of questions you had when you were younger, and some of their own, too! But they're good questions, ones you'd have enjoyed kicking around. And they show surprising insights for their youth.[paragraph break]You sense 'It's going to be okay' and 'you'll find a place' isn't enough. What is there to say?[paragraph break]Ah. This should work: 'You're new. Yearn! Ooh!'";
 		wfak;
 		let x be list of friendly needed followers;
-		say "[line break]Shortly, [the entry 1 in x] greet[nosplur of entry 1 in x] the orc with 'You the youth, uhh?'[paragraph break]The orc responds 'I'm an ... I ... man ...' but soon gets their footing.[paragraph break]'You ... swell! Use well.'";
+		say "[line break]Shortly, [the entry 1 in x] greet[nosplur of entry 1 in x] the orc with 'You the youth, uhh?'[paragraph break]The orc responds 'I'm an ... I ... man ...' but soon gets their footing.[paragraph break]";
 		say "[line break]Soon, [the entry 2 in x] chime[nosplur of entry 2 in x] in with 'You ... swell use, well!' Of course, this is clarified: the orc isn't just useful, or there to be used. But it breaks the ice completely.";
 		wfak;
 		say "[line break]The orc held their own in conversation. And they didn't swear once. They have a keen moral eye. You ask a bit more about their background. They've earned a new name -- not the crude orc, but the shrewd orc, a hat-tip to how [the grinch] mocked them for being too goody-goody, and how that's largely passed now.";
@@ -664,6 +664,10 @@ after printing the locale description of Worm Eaten when sco-were-meetin is true
 check going down in Worm Eaten:
 	if sco-the-file is false, say "Hmm. You still feel like you're missing some plans, some intelligence, even though you have everything else. The [raider-traitor] found it easy to get kicked out, but you need detailed plans how to get back in." instead;
 	remove-swear-bonus;
+	say "It's obviously going to take a while to dig or explore down, as [the raider] only remembers so much. Everyone wants to be motivated to push through when it gets tricky, of course. But they just aren't quite [i]there[r], yet. You reach into your mind and look for something apropos to say.";
+	wfak;
+	say "Then it comes. 'Air out a route!' And everyone does.";
+	wfak;
 
 to say raider-traitor:
 	say "[if gone traitor is moot]gaunt raider[else]gone traitor[end if]";
@@ -1169,7 +1173,7 @@ carry out warponing:
 			say "After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: ";
 			say "[b][first-of-ors of w1 entry]";
 			if there is a w2 entry, say " [first-of-ors of w2 entry]";
-			say "[r]...[paragraph break]";
+			say "[r]...";
 			if idid entry is false, up-reg;
 			if run-rule entry is post-do-due-mend rule, decrement cur-max-bonus;
 			now idid entry is true;

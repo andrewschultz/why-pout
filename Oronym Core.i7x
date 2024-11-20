@@ -26,7 +26,7 @@ check listening: say "You listen for splits between words and weird pronunciatio
 
 the block smelling rule is not listed in any rulebook.
 
-check smelling: say "No funk, or fun. Cor!" instead;
+check smelling: say "[one of]Nose takes no stakes! (Smelling isn't necessary. But there's another cutesy response, if you want.)[or]No funk, or fun. Cor![stopping]" instead;
 
 the block tasting rule is not listed in any rulebook.
 

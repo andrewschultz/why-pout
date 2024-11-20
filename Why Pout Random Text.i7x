@@ -205,6 +205,14 @@ mynum	mytext
 0	"[The talker1] almost cast[nosplur1] an oath at ... 'Oh, THAT?!' [talker2] cut[nosplur2] in."
 0	"[t1t2] discuss car parts and carp-arts. Nonsequiturs!"
 0	"[t1t2] have different views on the best wake-your-way cure."
+0	"[t1t2] vow to wean 'Oh, we know' from their talk. And 'Ooh, we knew,' too."
+0	"[t1t2] hope for the clear-headedness of Wayne Eye-Way-Nigh."
+0	"[t1t2] moralize 'Uh, greed? Ugh! Read!' It feels slightly forced, and you have no time to right now, but you appreciate the sentiment."
+0	"[t1t2] discuss whether the fatalism in the number-one song [i]I'm Owned, I Moaned[r] is really realistic."
+0	"[t1t2] recall specific passages from the poignant book [i]You-Threw-Youth Rue[r]."
+0	"[t1t2] are just joking, really, about 'Co-plots? Cope, lots!'"
+0	"[t1t2] joke they'll write an account of this titled 'Us: Log a Slog.'"
+0	"[t1t2] recount that cornerstone of outdoorsmanship, [i]Might, Wine, My Twine[r]."
 
 volume testing without random shuffling
 

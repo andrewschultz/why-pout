@@ -196,7 +196,7 @@ a wordtwisting rule (this is the pre-wipe-out rule):
 
 this is the post-wipe-out rule:
 	now sco-wipe-out is true;
-	say "Easier said than done, but since you all studied the plan tracker so well, it isn't impossible![paragraph break]Your makeshift weapons are just enough to distract the sea skull. It starts to focus on one party member, then the others taunt it, and it turns away. It's exhausting for you but even more exhausting for the skull, which eventually collapses and incinerates, but not before a self-pitying 'Meek old me! Cold!'[paragraph break]But after all the fireworks, there's a letdown. You feel something odd come between you and your companions now you're done. They wonder why they need to do any more. You could call the whole zeitgeist a why-division.";
+	say "Easier said than done, but since you all studied the plan tracker so well, it isn't impossible![paragraph break]Your makeshift weapons are just enough to distract the sea skull. It starts to focus on one party member, then the others taunt it with 'Aid! Eek, a deek!'[paragraph break]. It's exhausting for you but even more exhausting for the skull, which after constant spinning eventually collapses and incinerates, but not before a self-pitying 'Meek old me! Cold!'[paragraph break]But after all the fireworks, there's a letdown. You feel something odd come between you and your companions now you're done. They wonder why they need to do any more. You could call the whole zeitgeist a why-division.";
 	move why division to Doom Ending;
 	moot sea skull;
 
@@ -228,7 +228,7 @@ a wordtwisting rule (this is the pre-hide-out rule):
 
 this is the post-hide-out rule:
 	now sco-hide-out is true;
-	say "It's easy enough to say you should doubt yourself less. I mean, you'd feel stupid doubting it. But there's always a reason not to. Still, you involuntarily start a mantra: 'Fine, doubt? Find out!'[paragraph break]And what do you know? You find a hideout below!";
+	say "It's easy enough to say you should doubt yourself less. I mean, you'd feel stupid doubting it. But there's always a reason not to. Still, you involuntarily start a mantra: 'Fine, doubt? Find out!'[paragraph break]But you need to look harder, so you mumble to yourself 'Weed out wee doubt!'[paragraph break]With this deluge of positive self-talk, there is only one possible conclusion. You find a hideout below!";
 	reveal hideout to down;
 	moot high doubt;
 	if sco-wool-frock is true, declue-here
@@ -445,7 +445,7 @@ this is the post-high-plain rule:
 	declue-here;
 	move player to NaffHaze;
 
-section naff haze testing
+chapter high plain scoring
 
 a wordtwisting rule (this is the pre-nah-phase rule):
 	if player is not in NaffHaze, unavailable;
@@ -489,7 +489,7 @@ to check-worm-eaten:
 		reveal Worm Eaten to down;
 		move waydown to naffhaze;
 
-section naffhaze scoring
+section side event scoring
 
 a wordtwisting rule (this is the pre-brew-swears rule):
 	if player is not in NaffHaze, unavailable;
@@ -923,7 +923,7 @@ a wordtwisting rule (this is the pre-wide-vision rule):
 	if player is not in doom ending, unavailable;
 	if why division is not in doom ending, unavailable;
 	if pre-acts < pre-max:
-		vcp "[remove-widevision-bonus][one of]You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.[paragraph break]But surely you must give it a try![paragraph break][entry thinkcue-index of wide-vision-rejects][war-pawn-musings][or]You are unable to express your wide vision. You'll have to settle for just repairing things pretty well.[line break][stopping]";
+		vcp "[remove-widevision-bonus][one of]You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.[paragraph break]But surely you must give it a try![paragraph break][entry thinkcue-index of wide-vision-rejects][war-pawn-musings][or]You are unable to express your wide vision. You'll have to settle for just repairing things pretty well[stopping].";
 		not-yet;
 	ready;
 
