@@ -288,7 +288,7 @@ the waydown is a privately-named thing. description is "You shouldn't see this d
 
 chapter Bruise Wares
 
-Bruise Wares is a thing. "[wares], some sort of odd disturbing shop, has popped up here. You can probably figure why it's forbidding and such. But perhaps it is only for a certain sort of adventurer.". description is "Looking at [wares], it sort of overdoes the whole 'you might not be ready for this' schtick. And, you figure, if you know what's really there, it's not something you will put up with unless you have to.[paragraph break]Seriously, dealing with it is up to you.". eyes-number of bruise wares is -46. eyes-rule of bruise wares is the pre-brew-swears rule.
+Bruise Wares is a thing. "[wares], some sort of odd disturbing shop, has popped up here. You can probably figure why it's forbidding and such. But perhaps it is only for a certain sort of adventurer[if nah bye is touchable]. You noticed [b]NAH BYE[r] scrawled on it[end if].". description is "Looking at [wares], it sort of overdoes the whole 'you might not be ready for this' schtick. And, you figure, if you know what's really there, it's not something you will put up with unless you have to.[paragraph break]Seriously, dealing with it is up to you.". eyes-number of bruise wares is -46. eyes-rule of bruise wares is the pre-brew-swears rule.
 
 printed name of bruise wares is "[b]BRUISE WARES[r]".
 
@@ -301,6 +301,21 @@ rule for choosing notable locale objects (this is the put followers at the botto
 check entering Bruise Wares:
 	if sco-brew-swears is false, say "You probably shouldn't go in there until you divine its true meaning." instead;
 	try going inside instead;
+
+report examining Bruise Wares when gs-nah-bye-cued is false:
+	say "It's been vandalized a bit, though, and maybe if you [b]X[r] again, you might find a fourth-wall way to warp around and, well, see the bare minimum of extra adventures it holds, without the, well, language.";
+	now gs-nah-bye-cued is true;
+	continue the action;
+
+report examining Bruise Wares when gs-nah-bye-cued is true and nah bye is off-stage:
+	say "Oh, hey! You notice something scrawled on [wares]. It says [b]NAH, BYE[r]. It makes you wonder if you can do the minimum you need to get in and out of [wares].";
+	now gs-nah-bye-cued is true;
+	move nah bye to NaffHaze;
+	continue the action;
+
+section nah bye
+
+the nah bye is scenery. "[b]NAH BYE[r] is scrawled on the [wares] sign.". eyes-number of nah bye is -33.
 
 book Keep Iller
 
@@ -603,6 +618,10 @@ check going outside in Brew Swears:
 
 to zap-bruise-wares:
 	moot BRUISE WARES;
+	if nah bye is in NaffHaze:
+		moot nah bye;
+		choose row with check-rule of pre-nab-aye rule in table of main oronyms;
+		now think-cue entry is false;
 	now nowhere is mapped inside NaffHaze;
 
 chapter earls

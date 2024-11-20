@@ -53,6 +53,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "my"	"corps"	--	"core"	hom-my-core rule	false	false	false	false	"why your name is special"	false	true	true	false	false	worm eaten	pre-my-corps rule	post-my-corps rule	--	"You can call your companions [b]MY CORPS[r] [if pals-made < 2]once you have companions[else if pals-made < pals-needed]once you have enough of them[else][once-now of sco-treat-all] you've shared something together[end if]."
 "cease"	"cull"	"seas|sees|seize"	--	hom-cease-cull rule	false	false	false	false	"alerting the sea skull"	false	true	true	false	false	Doom Ending	pre-cease-cull rule	post-cease-cull rule	--	--
 "wipe"	"out"	--	--	--	false	false	false	false	"how to [if player is in doom ending]take down the skull[else]do something generally awesome down the road[end if]"	false	true	true	false	false	Doom Ending	pre-wipe-out rule	post-wipe-out rule	--	"You will want to [b]WIPE OUT[r] the cause of your problems [once-now of sco-cease-cull] you have them in your crosshairs[if the room down from naffhaze is nowhere]. That's probably not for a while, though[end if]."
+"nab"	"aye"	--	--	--	false	false	false	false	"what to do with [b]NAH BYE[r]"	false	true	false	false	false	naff haze	pre-nab-aye rule	post-nab-aye rule	--	--
 "wide"	"vision"	--	--	--	false	false	false	false	"something more positive than the why-division"	false	true	false	false	false	Doom Ending	pre-wide-vision rule	post-wide-vision rule	--	"Sadly, you didn't quite experience enough to spread your wide vision."
 "do|due"	"mend|mending"	--	"dew"	--	false	false	false	false	"a way to steer things from a doom ending"	false	true	true	false	false	Doom Ending	pre-do-due-mend rule	post-do-due-mend rule	--	"You can think [b]DO/DUE MEND/MENDING[r] [once-now of sco-wipe-out] you've disposed of the sea skull."
 "weak"	"us"	--	--	--	false	false	false	false	"how to deflate [the earls]['] bravado"	false	true	false	false	false	brew swears	pre-weak-us rule	post-weak-us rule	--	--
@@ -502,9 +503,24 @@ a wordtwisting rule (this is the pre-brew-swears rule):
 this is the post-brew-swears rule:
 	now sco-brew-swears is true;
 	say "Yes. That's what [wares] is really for. Enter at your own risk. It's ... an adventure, of its own sort.";
+	if nah bye is in NaffHaze, moot nah bye;
 	reveal Brew Swears to inside;
 
-section no notion scoring
+a wordtwisting rule (this is the pre-nab-aye rule):
+	if player is not in NaffHaze, unavailable;
+	if Nah Bye is not touchable, unavailable;
+	ready;
+
+this is the post-nab-aye rule:
+	now sco-nab-aye is true;
+	say "You walk into the off-color place, pwn some hoodlums with your squeaky-clean yet devastating oratory, and impress a crude orc who had been following them. Perhaps you could've beaten them at their own game, but that isn't your style.[paragraph break]Small talk proves the crude orc to be a shrewd orc. You both like that name better, as do your companions, who accept the orc with a 'You! Thin youth, IN!'[paragraph break]The entrance to [wares] crumbles during this chatter.";
+	increase cur-bonus by 2;
+	now shrewd orc is friendly;
+	now shrewd orc is in location of player;
+	moot Nah Bye;
+	moot bruise wares;
+
+chapter no notion scoring
 
 a wordtwisting rule (this is the pre-known-ocean rule):
 	if player is not in NoNotion, unavailable;

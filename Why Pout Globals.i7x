@@ -37,6 +37,8 @@ gs-eye-note is a truth state that varies.
 
 gs-mouse-plural-party-note is a truth state that varies.
 
+gs-nah-bye-cued is a truth state that varies.
+
 section chat tracking
 
 gs-full-chat-notify is a truth state that varies.
@@ -264,6 +266,8 @@ sco-were-dicks is a truth state that varies.
 sco-grin-churls is a truth state that varies.
 
 sco-gah-wanker is a truth state that varies.
+
+sco-nab-aye is a truth state that varies.
 
 brew-max is a number that varies. brew-max is 1. [note: it starts at 1 because later, we track the score with every point where bestroom is Brew Swears, but we need to include how to get there!]
 
