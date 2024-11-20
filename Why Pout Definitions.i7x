@@ -16,6 +16,8 @@ a thing has a number called eyes-number. a thing has a rule called eyes-rule. ey
 
 a room has a number called eyes-number. a room has a rule called eyes-rule. eyes-rule of a room is usually autoreject rule.
 
+a room can be bonuspointy or needpointy. a room is usually needpointy.
+
 a wordtwisting rule (this is the autoreject rule): not-yet;
 
 a hintthing is a kind of thing. a hintthing can be dropwarned. a hintthing is usually not dropwarned. a hintthing has text called drop-poke.

@@ -586,7 +586,7 @@ the wan dwarf is a follower. description is "Short and stocky. It wears glasses 
 
 book Brew Swears (optional)
 
-Brew Swears is a room in universal. "[if grinch earls are in brew swears]If you thought Hype Lane was bad, this is even worse[else if sco-gah-wanker is false]It's lonelier her without [the earls], but you could still make it lonelier![else]Now that you got rid of the orc's old associates and their, um, mentor, there's nothing really left to do here[end if]. You can leave back [b]OUT[r].". eyes-number of brew swears is -42. eyes-rule of Brew Swears is pre-weak-us rule.
+Brew Swears is a bonuspointy room in universal. "[if grinch earls are in brew swears]If you thought Hype Lane was bad, this is even worse[else if sco-gah-wanker is false]It's lonelier her without [the earls], but you could still make it lonelier![else]Now that you got rid of the orc's old associates and their, um, mentor, there's nothing really left to do here[end if]. You can leave back [b]OUT[r].". eyes-number of brew swears is -42. eyes-rule of Brew Swears is pre-weak-us rule.
 
 check going outside in Brew Swears:
 	allow-follows;
@@ -1197,7 +1197,7 @@ carry out warponing:
 	else if flag-this-room is true:
 		say "The war pawn seems to warm up very briefly. Perhaps there's a bit left to do here, but that may be a way down the road.";
 	else:
-		say "The war pawn stays still and even feels a bit cold. Perhaps there's nothing left that specifically needs doing here.";
+		say "The war pawn stays still and even feels a bit cold. Perhaps there's nothing [unless location of player is bonuspointy]left [end if]that specifically needs doing here.";
 	now verb-dont-print is false;
 	the rule succeeds;
 
