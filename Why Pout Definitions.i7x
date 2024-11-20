@@ -168,7 +168,7 @@ to befriend (f - a follower):
 	else if number of friendly followers is 3:
 		say "[line break][i][bracket][b]NOTE:[r][i] in order to simplify things now you've grown your party, you can type [b]UH PARTY[r][i] or [b]A PARTY[r][i] so everyone is not listed individually. [b]APART EEE[r][i] (or [b]EE[r][i]/[b]EEEE[r][i]) will list them individually again. This is all in [b]VERBS[r][i].[close bracket][r][line break]";
 	else if number of still-follow-needed followers is 0:
-		say "[line break]Wow! You've got quite a group here. You can't imagine needing a bigger one[if number of unfriendly followers > 0], though there's BRUISE-WARES[end if].";
+		say "[line break]Wow! You've got quite a group here. You can't imagine needing a bigger one[if number of unfriendly followers > 0], though there's [wares][end if].";
 	else if (number of friendly followers >= 4) and (pals-made - number of chatted followers > 2):
 		say "[line break]Hmm. You have a lot of friends following you around, but you haven't talked to them much. Perhaps you could learn something from them.";
 

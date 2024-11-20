@@ -127,11 +127,82 @@ After some thought, the war pawn vibrates and explodes! You suddenly have insigh
 
 >s
 
->w
-
 >s
 
 >w
+
+# here we test that NAB AYE doesn't appear
+
+>x bruise
+It's been vandalized a bit, though, and maybe if you X again, you might find a fourth-wall way to warp around and, well, see the bare minimum of extra adventures it holds, without the, well, language.
+!Oh, hey
+>x bruise
+Oh, hey! You notice something scrawled on BRUISE WARES. It says NAH, BYE. It makes you wonder if you can do the minimum you need to get in and out of BRUISE WARES.
+!It's been vandalized
+>warp on
+The war pawn stays still and even feels a bit cold. Perhaps there's nothing left that specifically needs doing here.
+
+#now we go inside to verify nothing is hintable
+>brew swears
+
+>in
+
+>warp on
+The war pawn stays still and even feels a bit cold. Perhaps there's nothing that specifically needs doing here.
+
+>weak us
+by a bonus point
+
+>warp on
+The war pawn stays still and even feels a bit cold. Perhaps there's nothing that specifically needs doing here.
+
+>crew dork
+by a bonus point
+
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+>z
+
+>warp on
+The war pawn stays still and even feels a bit cold. Perhaps there's nothing that specifically needs doing here.
+
+>grin churls
+by a bonus point
+
+>ass lo
+by a bonus point
+
+>bastard eee
+by a bonus point
+
+>damn peons
+by a bonus point
+
+>heckle ass
+by a bonus point
+
+>huh shit
+by a bonus point
+
+>lie fuckers
+by a bonus point
+
+>were dicks
+by a bonus point
+
+>warp on
+The war pawn stays still and even feels a bit cold. Perhaps there's nothing that specifically needs doing here.
+
+>gah wanker
+by a bonus point
+
+>out
 
 >n
 

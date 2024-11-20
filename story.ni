@@ -220,12 +220,12 @@ after printing the locale description for NaffHaze when sco-nah-phase is true an
 	continue the action;
 
 after printing the locale description for NaffHaze when Bruise Wares is off-stage and current-score >= 20 and core-pals-made >= 2 (this is the show-bruise-wares rule):
-	say "An ominous new construction appears here. It's called [b]BRUISE WARES[r]. Perhaps you should ignore it. Often one doesn't want to engage that sort of thing. But you may feel that much more accomplished tackling whatever is behind there.";
+	say "An ominous new construction appears here. It's called [wares]. Perhaps you should ignore it. Often one doesn't want to engage that sort of thing. But you may feel that much more accomplished tackling whatever is behind there.";
 	move Bruise Wares to NaffHaze;
 	continue the action;
 
 after going to NaffHaze when Bruise Wares is in NaffHaze and sco-treat-all is true:
-	say "Odd! [b]BRUISE WARES[r] has vanished. Well, one less dead end to worry about.";
+	say "Odd! [wares] has vanished. Well, one less dead end to worry about.";
 	zap-bruise-wares;
 	remove-swear-bonus;
 	continue the action;
@@ -238,13 +238,13 @@ check going a viable direction in NaffHaze when sco-pole-east is false:
 check going inside in NaffHaze:
 	if sco-nah-phase is false, continue the action;
 	if BRUISE WARES is moot and Brew Swears is visited:
-		say "([b]BRUISE WARES[r] is no longer available, so I assume you mean the keep.)[paragraph break]";
+		say "([wares] is no longer available, so I assume you mean the keep.)[paragraph break]";
 		try going west instead;
 	if BRUISE WARES is off-stage:
 		try entering keep iller instead;
 		try going west instead;
 	if sco-brew-swears is false:
-		say "You'll have to figure what else [b]BRUISE WARES[r] is advertising, first." instead;
+		say "You'll have to figure what else [wares] is advertising, first." instead;
 	if room gone to is Brew Swears:
 		say "Your companions stay behind. They recognize this is a spiritual fight for you and you alone.";
 		block-follows;
@@ -288,7 +288,9 @@ the waydown is a privately-named thing. description is "You shouldn't see this d
 
 chapter Bruise Wares
 
-Bruise Wares is a thing. "[b]BRUISE WARES[r], some sort of odd disturbing shop, has popped up here. You can probably figure why it's forbidding and such. But perhaps it is only for a certain sort of adventurer.". description is "Looking at [b]BRUISE WARES[r], it sort of overdoes the whole 'you might not be ready for this' schtick. And, you figure, if you know what's really there, it's not something you will put up with unless you have to.[paragraph break]Seriously, dealing with it is up to you.". eyes-number of bruise wares is -46. eyes-rule of bruise wares is the pre-brew-swears rule.
+Bruise Wares is a thing. "[wares], some sort of odd disturbing shop, has popped up here. You can probably figure why it's forbidding and such. But perhaps it is only for a certain sort of adventurer.". description is "Looking at [wares], it sort of overdoes the whole 'you might not be ready for this' schtick. And, you figure, if you know what's really there, it's not something you will put up with unless you have to.[paragraph break]Seriously, dealing with it is up to you.". eyes-number of bruise wares is -46. eyes-rule of bruise wares is the pre-brew-swears rule.
+
+printed name of bruise wares is "[b]BRUISE WARES[r]".
 
 rule for choosing notable locale objects (this is the put followers at the bottom rule):
 	repeat with item running through things in location of player:

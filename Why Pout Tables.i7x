@@ -18,7 +18,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "grow"	"star"	--	--	--	false	false	false	false	"making it beyond the gross tar"	false	true	true	false	false	NaffHaze	pre-grow-star rule	post-grow-star rule	--	--
 "shore"	"trail"	--	--	--	false	false	false	false	"finding where the short rail could lead"	false	true	true	false	false	NaffHaze	pre-shore-trail rule	post-shore-trail rule	--	--
 "key"	"pillar"	--	--	--	false	false	false	false	"finding a way into the keep"	false	true	true	false	false	NaffHaze	pre-key-pillar rule	post-key-pillar rule	--	--
-"brew"	"swears"	--	--	--	false	false	false	false	"seeing [b]BRUISE WARES[r]'s true nature"	false	true	false	false	false	NaffHaze	pre-brew-swears rule	post-brew-swears rule	--	--
+"brew"	"swears"	--	--	--	false	false	false	false	"seeing [wares]'s true nature"	false	true	false	false	false	NaffHaze	pre-brew-swears rule	post-brew-swears rule	--	--
 "known"	"ocean"	--	--	--	false	false	false	false	"finding the surroundings [here-in of NoNotion]"	false	true	true	false	false	NoNotion	pre-known-ocean rule	post-known-ocean rule	--	--
 "six"	"quid"	--	--	--	false	false	false	false	"discovering what ails the sick squid"	false	true	true	false	false	NoNotion	pre-six-quid rule	post-six-quid rule	--	--
 "war"	"file"	--	--	--	false	false	false	false	"what is on Wharf Isle"	false	true	true	false	false	nonotion	pre-war-file rule	post-war-file rule	--	"You may be able to recover the [b]WAR FILE[r] on the wharf isle [here-in of nonotion] [once-now of sco-plan-tracker] you have something you can write down its main ideas in."
@@ -495,13 +495,13 @@ a wordtwisting rule (this is the pre-brew-swears rule):
 	if player is not in NaffHaze, unavailable;
 	if Bruise Wares is not in NaffHaze, unavailable;
 	if sco-brew-swears is true:
-		vcal "But you've already opened the passage through [b]BRUISE WARES[r]!";
+		vcal "But you've already opened the passage through [wares]!";
 		already-done;
 	ready;
 
 this is the post-brew-swears rule:
 	now sco-brew-swears is true;
-	say "Yes. That's what [b]BRUISE WARES[r] is really for. Enter at your own risk. It's ... an adventure, of its own sort.";
+	say "Yes. That's what [wares] is really for. Enter at your own risk. It's ... an adventure, of its own sort.";
 	reveal Brew Swears to inside;
 
 section no notion scoring
@@ -933,7 +933,7 @@ to say war-pawn-musings:
 		say "'Oh! Must be that I [if gs-war-pawn-used is true]used[else]tried to use[end if] that war pawn. Lesson learnt.'[paragraph break]But your companions change to I-saw-ice-aww expressions. No, it must have been something else.";
 	else:
 		say "You ask for credit because you didn't use the war pawn, but that seems irrelevant. They didn't know you had one!";
-	say "[line break]'It was BRUISE-WARES, wasn't it?' you ask. 'I shouldn't have [if sco-brew-swears is false]ignored it[else if brew swears is unvisited]chickened out from going in[else if brew-swears-score is 1]left just as I got there[else if brew-swears-score is 2]left the crude orc[else if brew-swears-score is 3]chickened out right after I rescued the crude orc[else if brew-swears-score < brew-max]left things undone[else]enjoyed tearing through it all[end if].'[paragraph break]Your companions shake their heads slightly.[paragraph break]";
+	say "[line break]'It was [wares], wasn't it?' you ask. 'I shouldn't have [if sco-brew-swears is false]ignored it[else if brew swears is unvisited]chickened out from going in[else if brew-swears-score is 1]left just as I got there[else if brew-swears-score is 2]left the crude orc[else if brew-swears-score is 3]chickened out right after I rescued the crude orc[else if brew-swears-score < brew-max]left things undone[else]enjoyed tearing through it all[end if].'[paragraph break]Your companions shake their heads slightly";
 
 to say remove-widevision-bonus:
 	if gs-penalized-why-division is false:
