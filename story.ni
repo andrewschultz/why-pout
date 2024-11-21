@@ -237,13 +237,12 @@ check going a viable direction in NaffHaze when sco-pole-east is false:
 
 check going inside in NaffHaze:
 	if sco-nah-phase is false, continue the action;
-	if BRUISE WARES is moot and Brew Swears is visited:
-		say "([wares] is no longer available, so I assume you mean the keep.)[paragraph break]";
+	if BRUISE WARES is moot:
+		if Brew Swears is visited or sco-nab-aye is true, say "([wares] is no longer available, so I assume you mean the keep.)[paragraph break]";
 		try going west instead;
 	if BRUISE WARES is off-stage:
-		try entering keep iller instead;
 		try going west instead;
-	if sco-brew-swears is false:
+	if BRUISE WARES is in NaffHaze and sco-brew-swears is false:
 		say "You'll have to figure what else [wares] is advertising, first." instead;
 	if room gone to is Brew Swears:
 		say "Your companions stay behind. They recognize this is a spiritual fight for you and you alone.";

@@ -1,4 +1,4 @@
-## reg-wp-lone-warpon.txt
+## reg-wp-lone-npcdialogue.txt
 ##
 ## no RBR generator file, though I did write a script to generate all 24 possibilities.
 

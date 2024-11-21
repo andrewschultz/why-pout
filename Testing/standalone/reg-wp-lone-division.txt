@@ -1,4 +1,4 @@
-## reg-wp-lone-warpon.txt
+## reg-wp-lone-division.txt
 ** game: /home/andrew/prt/debug-why-pout.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
 

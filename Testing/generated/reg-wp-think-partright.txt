@@ -1,4 +1,8 @@
-## rbr-wp-think.txt
+## reg-wp-think-partright.txt
+## GENERATOR FILE: rbr-wp-think.txt
+
+## walkthrough with partially right guesses
+
 ** game: /home/andrew/prt/debug-why-pout.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
 ** checkclass: /home/andrew/prt/runtime.py

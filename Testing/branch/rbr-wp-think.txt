@@ -18,7 +18,11 @@ file=reg-wp-think-partright.txt,part,walkthrough with partially right guesses
 
 }$REJECT2=That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
-## rbr-wp-think.txt
+## *FILE
+## *FORK
+
+## *DESCRIPTION
+
 ** game: /home/andrew/prt/debug-why-pout.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
 ** checkclass: /home/andrew/prt/runtime.py
