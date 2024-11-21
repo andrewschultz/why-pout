@@ -271,10 +271,10 @@ by a point
 
 >u
 
-An ominous new construction appears here. It's called BRUISE WARES. Perhaps you should ignore it. Often one doesn't want to engage that sort of thing. But you may feel that much more accomplished tackling whatever is behind there.
+An ominous new construction appears here. It's called BRUISE-WARES. Perhaps you should ignore it. Often one doesn't want to engage that sort of thing. But you may feel that much more accomplished tackling whatever is behind there.
 
 >l
-BRUISE WARES, some sort of odd disturbing shop, has popped up here. You can probably figure why it's forbidding and such. But perhaps it is only for a certain sort of adventurer.
+BRUISE-WARES, some sort of odd disturbing shop, has popped up here. You can probably figure why it's forbidding and such. But perhaps it is only for a certain sort of adventurer.
 
 #unscramble the order the swears appear in
 >ao
@@ -284,7 +284,7 @@ by a bonus point
 
 >l
 !An ominous
-BRUISE WARES, some sort of odd disturbing shop, has popped up here. You can probably figure why it's forbidding and such. But perhaps it is only for a certain sort of adventurer.
+BRUISE-WARES, some sort of odd disturbing shop, has popped up here. You can probably figure why it's forbidding and such. But perhaps it is only for a certain sort of adventurer.
 
 >in
 

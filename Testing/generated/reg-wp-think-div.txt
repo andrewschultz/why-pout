@@ -997,7 +997,7 @@ by a bonus point
 
 #testcase-check-pre-brew-swears-rule-if-sco-brew-swears-is-true
 >brew swears
-But you've already opened the passage through BRUISE WARES!
+But you've already opened the passage through BRUISE-WARES!
 
 >in
 

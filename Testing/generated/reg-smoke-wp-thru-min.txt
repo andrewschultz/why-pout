@@ -211,7 +211,7 @@ by a point
 
 >w
 
-Odd! BRUISE WARES has vanished. Well, one less dead end to worry about.
+Odd! BRUISE-WARES has vanished. Well, one less dead end to worry about.
 
 >brew swears
 !point

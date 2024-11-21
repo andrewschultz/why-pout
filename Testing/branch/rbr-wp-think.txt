@@ -1424,7 +1424,7 @@ You may be able to make sense of THE FILE in Known Ocean now you've gotten enoug
 >xx swears
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 >think
-You must have one word right for seeing BRUISE WARES's true nature.
+You must have one word right for seeing BRUISE-WARES's true nature.
 
 @!min
 >ao
@@ -1435,7 +1435,7 @@ by a bonus point
 @rej
 #testcase-check-pre-brew-swears-rule-if-sco-brew-swears-is-true
 >brew swears
-But you've already opened the passage through BRUISE WARES!
+But you've already opened the passage through BRUISE-WARES!
 
 @!min
 >in

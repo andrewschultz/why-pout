@@ -1266,13 +1266,13 @@ to want to cut in a bit for their turn some time.
 
 @go
 >in
-You'll have to figure what else BRUISE WARES is advertising, first.
+You'll have to figure what else BRUISE-WARES is advertising, first.
 
 @li
-An ominous new construction appears here. It's called BRUISE WARES. Perhaps you should ignore it. Often one doesn't want to engage that sort of thing. But you may feel that much more accomplished tackling whatever is behind there.
+An ominous new construction appears here. It's called BRUISE-WARES. Perhaps you should ignore it. Often one doesn't want to engage that sort of thing. But you may feel that much more accomplished tackling whatever is behind there.
 \\
 >l
-BRUISE WARES, some sort of odd disturbing shop, has popped up here. You can probably figure why it's forbidding and such. But perhaps it is only for a certain sort of adventurer.
+BRUISE-WARES, some sort of odd disturbing shop, has popped up here. You can probably figure why it's forbidding and such. But perhaps it is only for a certain sort of adventurer.
 
 @hint
 >eye bruise wares
@@ -1288,12 +1288,12 @@ by a bonus point
 @all
 #testcase-check-pre-brew-swears-rule-fallthrough
 #testcase-run-post-brew-swears-rule-default
-Yes. That's what BRUISE WARES is really for. Enter at your own risk. It's ... an adventure, of its own sort.
+Yes. That's what BRUISE-WARES is really for. Enter at your own risk. It's ... an adventure, of its own sort.
 
 @li
 >l
 !An ominous
-BRUISE WARES, some sort of odd disturbing shop, has popped up here. You can probably figure why it's forbidding and such. But perhaps it is only for a certain sort of adventurer.
+BRUISE-WARES, some sort of odd disturbing shop, has popped up here. You can probably figure why it's forbidding and such. But perhaps it is only for a certain sort of adventurer.
 
 @!min
 >in
@@ -2596,7 +2596,7 @@ You already ate the only thing you needed to.
 /^first-npc \(22\) 8[1-7]
 
 @min
-Odd! BRUISE WARES has vanished. Well, one less dead end to worry about.
+Odd! BRUISE-WARES has vanished. Well, one less dead end to worry about.
 \\
 >brew swears
 !point

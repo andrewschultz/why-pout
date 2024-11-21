@@ -137,7 +137,7 @@ After some thought, the war pawn vibrates and explodes! You suddenly have insigh
 It's been vandalized a bit, though, and maybe if you X again, you might find a fourth-wall way to warp around and, well, see the bare minimum of extra adventures it holds, without the, well, language.
 !Oh, hey
 >x bruise
-Oh, hey! You notice something scrawled on BRUISE WARES. It says NAH, BYE. It makes you wonder if you can do the minimum you need to get in and out of BRUISE WARES.
+Oh, hey! You notice something scrawled on BRUISE-WARES. It says NAH, BYE. It seems negative on the surface but makes you believe if you can do the minimum you need to get in and out of that place and bypass the spicier stuff.
 !It's been vandalized
 >warp on
 The war pawn stays still and even feels a bit cold. Perhaps there's nothing left that specifically needs doing here.

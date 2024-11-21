@@ -289,7 +289,7 @@ chapter Bruise Wares
 
 Bruise Wares is a thing. "[wares], some sort of odd disturbing shop, has popped up here. You can probably figure why it's forbidding and such. But perhaps it is only for a certain sort of adventurer[if nah bye is touchable]. You noticed [b]NAH BYE[r] scrawled on it[end if].". description is "Looking at [wares], it sort of overdoes the whole 'you might not be ready for this' schtick. And, you figure, if you know what's really there, it's not something you will put up with unless you have to.[paragraph break]Seriously, dealing with it is up to you.". eyes-number of bruise wares is -46. eyes-rule of bruise wares is the pre-brew-swears rule.
 
-printed name of bruise wares is "[b]BRUISE WARES[r]".
+printed name of bruise wares is "[b]BRUISE-WARES[r]".
 
 rule for choosing notable locale objects (this is the put followers at the bottom rule):
 	repeat with item running through things in location of player:
@@ -307,7 +307,7 @@ report examining Bruise Wares when gs-nah-bye-cued is false:
 	continue the action;
 
 report examining Bruise Wares when gs-nah-bye-cued is true and nah bye is off-stage:
-	say "Oh, hey! You notice something scrawled on [wares]. It says [b]NAH, BYE[r]. It makes you wonder if you can do the minimum you need to get in and out of [wares].";
+	say "Oh, hey! You notice something scrawled on [wares]. It says [b]NAH, BYE[r]. It seems negative on the surface but makes you believe if you can do the minimum you need to get in and out of that place and bypass the spicier stuff.";
 	now gs-nah-bye-cued is true;
 	move nah bye to NaffHaze;
 	continue the action;

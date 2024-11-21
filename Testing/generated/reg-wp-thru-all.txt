@@ -243,7 +243,7 @@ by a bonus point
 
 #testcase-check-pre-brew-swears-rule-fallthrough
 #testcase-run-post-brew-swears-rule-default
-Yes. That's what BRUISE WARES is really for. Enter at your own risk. It's ... an adventure, of its own sort.
+Yes. That's what BRUISE-WARES is really for. Enter at your own risk. It's ... an adventure, of its own sort.
 
 >in
 
