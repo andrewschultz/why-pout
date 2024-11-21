@@ -51,12 +51,12 @@ carry out saying no: try saying yes instead;
 
 the block attacking rule is not listed in any rulebook.
 
-check sleeping: say "'Key? Nap! Keen app!' you mutter to yourself, but you remain wide awake." instead;
+carry out sleeping: say "'Key? Nap! Keen app!' you mutter to yourself, but you remain wide awake." instead;
 
 the block sleeping rule is not listed in any rulebook.
 the block singing rule is not listed in any rulebook.
 
-check singing:
+carry out singing:
 	say "Funny, you feel a taste of icing." instead;
 
 carry out attacking:

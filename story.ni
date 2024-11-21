@@ -927,6 +927,15 @@ chapter attacking extra stuff
 
 [the main rule is in Oronym Core]
 
+check attacking a follower:
+	if noun is not friendly, say "But you want [the noun] on your side eventually, so, no." instead;
+	if player is in doom ending, say "A heel turn now? Why, you should be exiled to the grim thug rim." instead;
+	if noun is mice, say "Even if they weren't friendly, you'd think 'My! Stuff mice? Tough...'" instead;
+	say "You lack the resolve, thankfully, for me-now-mean-OW nonsense." instead;
+
+check  attacking:
+	if noun is skull, say "Conventional attacks aren't the way to go. You need a rallying cry[if sco-cease-cull is false] or two[end if]." instead;
+
 report attacking: say "You aren't built for that[if pals-made > 0], but maybe you can lead companions to a big victory[end if]." instead;
 
 chapter eating
