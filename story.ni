@@ -12,7 +12,7 @@ release along with the "Parchment" interpreter.
 
 the story description is "Ow! Trot out rot?!".
 
-the story headline is "My IFComp 2024 entry. Wordplay.".
+the story headline is "A farce-too-far stew".
 
 book includes
 

@@ -213,6 +213,12 @@ mynum	mytext
 0	"[t1t2] are just joking, really, about 'Co-plots? Cope, lots!'"
 0	"[t1t2] joke they'll write an account of this titled 'Us: Log a Slog.'"
 0	"[t1t2] recount that cornerstone of outdoorsmanship, [i]Might, Wine, My Twine[r]."
+0	"This one takes a while to suss out. [t1t2] might be talking of a meet-rec-me-trek or a meet-wreck-me-trek."
+0	"[t1t2] commiserate. 'A plod! Up, lawd!'"
+0	"[t1t2] poke everyone else: 'Group? Ours grew powers!'"
+0	"[t1t2] look forward to earning, once their work is done here, the relaxation of a long-aim lawn game."
+0	"[t1t2] discuss might-rust-my-trust actions that, well, [i]did[r], in the past."
+0	"[t1t2] jest together: 'Me? Cause meek aws?'"
 
 volume testing without random shuffling
 
