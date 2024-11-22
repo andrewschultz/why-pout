@@ -67,6 +67,9 @@ the block swearing mildly rule is not listed in any rulebook.
 
 check swearing mildly: try swearing obscenely instead;
 
+carry out swearing obscenely:
+	say "'Cur! Say curse, eh?'";
+
 book honorary default verb
 
 xyzzying is an action out of world.

@@ -127,10 +127,25 @@ check thinking (this is the right phrase wrong time rule):
 
 volume verbs
 
-check swearing obscenely:
-	if player is in Brew Swears, say "Yes. You're in the right place for that." instead;
-	if Brew Swears is visited, say "You've had enough of that." instead;
-	say "'Cur! Say curse, eh?'[paragraph break]There's an area for that[if bruise wares is moot], but you can't go back to visit it now.[else if bruise wares is off-stage], but it hasn't appeared yet.[else if player is in naff haze]. Why, you can just walk in once you know what to call it![else]. Look around.[end if]" instead;
+report swearing obscenely in brew swears:
+	say "But, well, yes. You're in the right place for that.";
+	continue the action;
+
+report swearing obscenely when brew swears is visited and player is not in brew swears:
+	say "Haven't you had enough of that in Brew Swears?";
+	continue the action;
+
+report swearing obscenely when bruise wares is touchable:
+	say "[wares] seems to call you a bit extra after that outburst.";
+	continue the action;
+
+report swearing obscenely when bruise wares is not moot and sco-brew-swears is false:
+	say "[one of]There's actually an area for that[or]You still haven't found the area for that[stopping].";
+	continue the action;
+
+report swearing obscenely when bruise wares is moot and sco-brew-swears is false:
+	say "Alas, you missed your chance to gain points saying that sort of thing.";
+	continue the action;
 
 book other regular verbs to zap
 
