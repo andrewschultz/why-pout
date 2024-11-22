@@ -120,6 +120,9 @@ There's actually an area for that.
 >shit
 "Cur! Say curse, eh?"
 You still haven't found the area for that.
+\\
+>listen
+Air, or ... a roar?!
 
 >z
 
@@ -185,6 +188,9 @@ Sounds right, but be more specific how MUCH of something else you want.
 @verbs
 >t
 You had enough positive self-talk. Now to find a way out!
+\\
+>listen
+Air, or ... a roar?!
 
 @li
 >l
@@ -219,6 +225,12 @@ You poke around a bit, hoping for even more help. But that is all. So you follow
 @all+
 #testcase-room-names-hype-lane
 `Hype Lane
+
+@verbs
+>listen
+You hear no thud in the din.
+Hard not to hear the cell phones, though.
+Whether or not the cell phones are the latest models, you don't want to pay attention to them too much. Just figure out a way for a harmless calamity that may make their users quiet down a bit.
 
 @hint
 >eye eye
@@ -304,6 +316,11 @@ You want something better than good chat.
 \\
 >t
 You want something better than good chat.
+\\
+>listen
+You hear no thud in the din.
+Hard not to hear the prize talk, though.
+The prize talk also discusses things that aren't so worth it, like -- well, plants and stuff. BORING.
 
 @verbs+
 >verbs
@@ -358,6 +375,12 @@ You need to name where to go up to.
 >hi plane
 {$REJHOM}
 
+@verbs
+>listen
+You hear no thud in the din.
+Hard not to hear the prize talk, though.
+You can see your way around the prize talk now. You don't want to get sucked back in.
+
 @mis
 #testcase-mistake-why-pout-ace-talk
 >ace talk
@@ -391,6 +414,15 @@ You have a name, too, now, you remember: Mike Orr.
 !/^..a stalk
 \\
 You're surrounded by some really naff haze. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it.
+
+@verbs
+>listen
+You hear only a taunting "Eh? CLUES?! Ache! Lose!"
+You've figured enough out by now. You can laugh back at this laughing-villain act.
+\\
+>listen
+You hear only a taunting "Eh? CLUES?! Ache! Lose!"
+!laugh back
 
 @gt
 #testcase-goto-table-of-noways-naffhaze
@@ -2810,7 +2842,11 @@ The eyes show nothing. You've done everything you need to with yourself.
 #testcase-check-pre-my-corps-rule-fallthrough
 #testcase-run-post-my-corps-rule-default
 Your pep talk brings everyone together. You worry it's too simplistic, especially "titan's lairs? Titan slayers!"
-But everyone seems enthused, ready for what happens next. Gathering information from everyone, you start diggint to find tunnels below. You clear out a passage below. You swear a solemn pact that everyone will defend everyone else, regardless of what happens.
+But everyone seems enthused, ready for what happens next. Gathering information from everyone, you start digging to find tunnels below. You clear out a passage below. You swear a solemn pact that everyone will defend everyone else, regardless of what happens.
+(By the way, your speech was so stirring, it even changed the room name. Okay, I just thought the phrase was too cute to go to waste. But don't let that stop you from feeling inspirational!)
+
+@all+
+`A Play-'Er-Up Lair
 
 @li
 #now you know your name this doesn't nag you

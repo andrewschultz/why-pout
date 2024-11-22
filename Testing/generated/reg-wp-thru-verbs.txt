@@ -61,6 +61,9 @@ There's actually an area for that.
 "Cur! Say curse, eh?"
 You still haven't found the area for that.
 
+>listen
+Air, or ... a roar?!
+
 >z
 
 >an aim
@@ -69,8 +72,16 @@ by a point
 >t
 You had enough positive self-talk. Now to find a way out!
 
+>listen
+Air, or ... a roar?!
+
 >two maps
 by a point
+
+>listen
+You hear no thud in the din.
+Hard not to hear the cell phones, though.
+Whether or not the cell phones are the latest models, you don't want to pay attention to them too much. Just figure out a way for a harmless calamity that may make their users quiet down a bit.
 
 >t cell phones
 No, you don't want to get swept up in that.
@@ -94,6 +105,11 @@ You want something better than good chat.
 >t
 You want something better than good chat.
 
+>listen
+You hear no thud in the din.
+Hard not to hear the prize talk, though.
+The prize talk also discusses things that aren't so worth it, like -- well, plants and stuff. BORING.
+
 >verbs
 !Most point-scoring commands will consist of two words.
 
@@ -103,6 +119,11 @@ The talk itself gives you indigestion.
 >pry stalk
 by a point
 
+>listen
+You hear no thud in the din.
+Hard not to hear the prize talk, though.
+You can see your way around the prize talk now. You don't want to get sucked back in.
+
 >t prize talk
 You got something better than good chat.
 
@@ -111,6 +132,14 @@ That stalk is your way out of here.
 
 >high plain
 by a point
+
+>listen
+You hear only a taunting "Eh? CLUES?! Ache! Lose!"
+You've figured enough out by now. You can laugh back at this laughing-villain act.
+
+>listen
+You hear only a taunting "Eh? CLUES?! Ache! Lose!"
+!laugh back
 
 >nah phase
 by a point

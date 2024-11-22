@@ -638,7 +638,10 @@ by a point
 #testcase-check-pre-my-corps-rule-fallthrough
 #testcase-run-post-my-corps-rule-default
 Your pep talk brings everyone together. You worry it's too simplistic, especially "titan's lairs? Titan slayers!"
-But everyone seems enthused, ready for what happens next. Gathering information from everyone, you start diggint to find tunnels below. You clear out a passage below. You swear a solemn pact that everyone will defend everyone else, regardless of what happens.
+But everyone seems enthused, ready for what happens next. Gathering information from everyone, you start digging to find tunnels below. You clear out a passage below. You swear a solemn pact that everyone will defend everyone else, regardless of what happens.
+(By the way, your speech was so stirring, it even changed the room name. Okay, I just thought the phrase was too cute to go to waste. But don't let that stop you from feeling inspirational!)
+
+`A Play-'Er-Up Lair
 
 >d
 
