@@ -42,25 +42,35 @@ rule for supplying a missing noun when touching: now the noun is the player.
 
 book misc others
 
+chapter attacking
+
+the block attacking rule is not listed in any rulebook.
+
+carry out attacking:
+	say "'[one of]Gore? I'd go ride[or]Eh, kill-ache? Ill[in random order],' you think, randomly.";
+
+chapter no / yes
+
 the block saying no rule is not listed in any rulebook.
 the block saying yes rule is not listed in any rulebook.
 
 carry out saying yes: say "Black? White? Blah! Quite!" instead;
-
 carry out saying no: try saying yes instead;
 
-the block attacking rule is not listed in any rulebook.
+chapter singing
 
-carry out sleeping: say "'Key? Nap! Keen app!' you mutter to yourself, but you remain wide awake." instead;
-
-the block sleeping rule is not listed in any rulebook.
 the block singing rule is not listed in any rulebook.
 
 carry out singing:
 	say "Funny, you feel a taste of icing." instead;
 
-carry out attacking:
-	say "'[one of]Gore? I'd go ride[or]Eh, kill-ache? Ill[in random order],' you think, randomly.";
+chapter sleeping
+
+the block sleeping rule is not listed in any rulebook.
+
+carry out sleeping: say "'Key? Nap! Keen app!' you mutter to yourself, but you remain wide awake." instead;
+
+chapter swearing
 
 the block swearing obscenely rule is not listed in any rulebook.
 the block swearing mildly rule is not listed in any rulebook.
