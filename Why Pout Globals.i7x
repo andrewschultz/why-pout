@@ -39,6 +39,8 @@ gs-mouse-plural-party-note is a truth state that varies.
 
 gs-nah-bye-cued is a truth state that varies.
 
+gs-default-listen-yet is a truth state that varies.
+
 section chat tracking
 
 gs-full-chat-notify is a truth state that varies.

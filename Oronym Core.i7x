@@ -22,19 +22,19 @@ book senses
 
 the block listening rule is not listed in any rulebook.
 
-check listening: say "You listen for splits between words and weird pronunciations but hear no clear clues." instead;
+carry out listening: say "You hear only a taunting 'Eh? CLUES?! Ache! Lose!'";
 
 the block smelling rule is not listed in any rulebook.
 
-check smelling: say "[one of]Nose takes no stakes! (Smelling isn't necessary. But there's another cutesy response, if you want.)[or]No funk, or fun. Cor![stopping]" instead;
+carry out smelling: say "[one of]Nose takes no stakes! (Smelling isn't necessary. But there's another cutesy response, if you want.)[or]No funk, or fun. Cor![stopping]"
 
 the block tasting rule is not listed in any rulebook.
 
-check tasting: say "A voice: 'No tastings note. Eh?' Stings!" instead;
+carry out tasting: say "A voice: 'No tastings note. Eh?' Stings!";
 
 the report touching yourself rule is not listed in any rulebook.
 
-check touching: say "An internal voice says 'We poke, eh? Weep, okay?'" instead;
+carry out touching: say "An internal voice says 'We poke, eh? Weep, okay?'";
 
 understand "touch" as touching.
 

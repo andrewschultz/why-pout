@@ -125,27 +125,7 @@ check thinking (this is the right phrase wrong time rule):
 	if got-think is false:
 		say "Nothing comes to mind."
 
-volume verbs
-
-report swearing obscenely in brew swears:
-	say "But, well, yes. You're in the right place for that.";
-	continue the action;
-
-report swearing obscenely when brew swears is visited and player is not in brew swears:
-	say "Haven't you had enough of that in Brew Swears?";
-	continue the action;
-
-report swearing obscenely when bruise wares is touchable:
-	say "[wares] seems to call you a bit extra after that outburst.";
-	continue the action;
-
-report swearing obscenely when bruise wares is not moot and sco-brew-swears is false:
-	say "[one of]There's actually an area for that[or]You still haven't found the area for that[stopping].";
-	continue the action;
-
-report swearing obscenely when bruise wares is moot and sco-brew-swears is false:
-	say "Alas, you missed your chance to gain points saying that sort of thing.";
-	continue the action;
+volume more meaningful standard verbs
 
 book other regular verbs to zap
 
@@ -1053,10 +1033,45 @@ check singing (this is the WP check singing rule):
 chapter listening
 
 check listening (this is the WP specific listening rule):
-	if player is in hype lane:
-		if prize talk is in hype lane, try examining prize talk instead;
-		if cell phones are in hype lane, try examining cell phones instead;
 	if player is in air aww, say "Air, or ... a roar?!" instead;
+	if player is in hype lane:
+		say "You hear no thud in the din.[paragraph break]";
+		if prize talk is in hype lane:
+			say "Hard not to hear the prize talk, though.";
+			try examining prize talk;
+		else if cell phones are in hype lane:
+			say "Hard not to hear the cell phones, though.";
+			try examining cell phones;
+		else:
+			say "Probably just time to get out.";
+		the rule fails;
+
+report listening when gs-default-listen-yet is false:
+	say "You've figured enough out by now. You can laugh back at this laughing-villain act.";
+	now gs-default-listen-yet is true;
+	continue the action;
+
+chapter swearing reports
+
+report swearing obscenely in brew swears:
+	say "But, well, yes. You're in the right place for that.";
+	continue the action;
+
+report swearing obscenely when brew swears is visited and player is not in brew swears:
+	say "Haven't you had enough of that in Brew Swears?";
+	continue the action;
+
+report swearing obscenely when bruise wares is touchable:
+	say "[wares] seems to call you a bit extra after that outburst.";
+	continue the action;
+
+report swearing obscenely when bruise wares is not moot and sco-brew-swears is false:
+	say "[one of]There's actually an area for that[or]You still haven't found the area for that[stopping].";
+	continue the action;
+
+report swearing obscenely when bruise wares is moot and sco-brew-swears is false:
+	say "Alas, you missed your chance to gain points saying that sort of thing.";
+	continue the action;
 
 chapter t talking
 
