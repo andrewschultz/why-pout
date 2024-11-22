@@ -69,6 +69,8 @@ test maxalm with "test w1/test w2/test w3/test w4/test w5/test w6/test wall/test
 
 test max with "test maxalm/test w13".
 
+test tobs with "test w1/test w2/test w3/test w4/test w5/test w6".
+
 chapter war pawn
 
 test c1 with "purloin war pawn/warp on/warp on/warp on/warp on/warp on/warp on/warp on/warp on/warp on/warp on".

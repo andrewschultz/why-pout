@@ -112,6 +112,15 @@ Self-talk is the way, but you need something positive and specific. All you can 
 >t me
 Self-talk is the way, but you need something positive and specific. All you can muster is "I molder. I'm older." You sort of wish for purpose, or something like it.
 
+@verbs+
+>shit
+"Cur! Say curse, eh?"
+There's actually an area for that.
+\\
+>shit
+"Cur! Say curse, eh?"
+You still haven't found the area for that.
+
 >z
 
 @mis
@@ -1279,6 +1288,31 @@ BRUISE-WARES, some sort of odd disturbing shop, has popped up here. You can prob
 >eye bruise wares
 The eyes glow dimly and show four dots, then six dots.
 
+@verbs
+##balance undos
+>x wares
+It's been vandalized a bit, though, and maybe if you X again, you might find a fourth-wall way to warp around and, well, see the bare minimum of extra adventures it holds, without the, well, language.
+\\
+>x wares
+Oh, hey! You notice something scrawled on BRUISE-WARES. It says NAH, BYE. It seems negative on the surface but makes you believe if you can do the minimum you need to get in and out of that place and bypass the spicier stuff.
+\\
+>nab aye
+by three bonus points
+\\
+>shit
+"Cur! Say curse, eh?"
+Alas, you missed your chance to gain points saying that sort of thing.
+\\
+>undo
+>undo
+>undo
+>undo
+
+@verbs+
+>shit
+"Cur! Say curse, eh?"
+BRUISE-WARES seems to call you a bit extra after that outburst.
+
 @!min
 #unscramble the order the swears appear in
 >ao
@@ -1298,6 +1332,11 @@ BRUISE-WARES, some sort of odd disturbing shop, has popped up here. You can prob
 
 @!min
 >in
+
+@verbs
+>shit
+"Cur! Say curse, eh?"
+But, well, yes. You're in the right place for that.
 
 @npc
 #once we go inside brew swears, nobody can be chatting
@@ -1594,6 +1633,11 @@ Now that you got rid of the orc's old associates and their, um, mentor, there's 
 
 @!min
 >out
+
+@verbs
+>shit
+"Cur! Say curse, eh?"
+Haven't you had enough of that in Brew Swears?
 
 @npc
 /^first-npc \(4\) 4[1-3]
