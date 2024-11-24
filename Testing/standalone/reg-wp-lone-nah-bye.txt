@@ -141,18 +141,29 @@ by a point
 
 >s
 
->nab aye
-That thought/action/observation/request brings up nothing.
 >x bruise
 It's been vandalized a bit, though, and maybe if you X again, you might find a fourth-wall way to warp around and, well, see the bare minimum of extra adventures it holds, without the, well, language.
->nab aye
-That thought/action/observation/request brings up nothing.
+
 >x bruise
 Oh, hey! You notice something scrawled on BRUISE-WARES. It says NAH, BYE. It seems negative on the surface but makes you believe if you can do the minimum you need to get in and out of that place and bypass the spicier stuff.
+
+>eye nah
+
+#testcase-check-pre-nab-aye-rule-fallthrough
+#testcase-run-post-nab-aye-rule-default
 >nab aye
+You walk into the off-color place, pwn some hoodlums with your squeaky-clean yet devastating oratory, and impress a crude orc who had been following them. Perhaps you could've beaten them at their own game, but that isn't your style.
+Small talk proves the crude orc to be a shrewd orc. You both like that name better, as do your companions, who accept the orc with a 'You! Thin youth, IN!'
+The entrance to BRUISE-WARES crumbles during this chatter.
 by three bonus points
+
+#testcase-run-post-brew-swears-rule-if-nah-bye-is-in-naffhaze
+>x nah
+WRONG
+
 >brew swears
 That thought/action/observation/request brings up nothing.
+
 >in
 (BRUISE-WARES is no longer available, so I assume you mean the keep.)
 Keep (Iller)

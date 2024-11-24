@@ -38,10 +38,6 @@ by a point
 >pry stalk
 by a point
 
-#testcase-homonym-reject-table-of-main-oronyms-hi
->hi plane
-Hmm. That really, really SOUNDED like it should work, but it didn't.
-
 #testcase-homonym-reject-table-of-main-oronyms-hi-playin
 >hi xxx
 WRONG
@@ -134,20 +130,13 @@ Rouge ... no, too foreign, also, too abstract. But you need a person, not a colo
 >rogue old
 by a point
 
-#testcase-homonym-reject-table-of-main-oronyms-hom-c-sea-design-rule-c-sea
 #testcase-homonym-detail-hom-c-sea-design-rule-default
->sea design
-Close, but there are other waterways. Action (well, sort of) is needed here.
-
->c design
-Close, but there are other waterways. Action (well, sort of) is needed here.
-
 #testcase-homonym-reject-table-of-main-oronyms-c-sea-hom-c-sea-design-rule
->c design
-WRONG
-
 >sea design
-WRONG
+Close, but there are other waterways. Action (well, sort of) is needed here.
+
+>c design
+Close, but there are other waterways. Action (well, sort of) is needed here.
 
 >see design
 by a point
@@ -159,6 +148,7 @@ by a point
 
 >d
 
+#testcase-homonym-detail-hom-gaunt-rater-rule-default
 #testcase-homonym-reject-table-of-main-oronyms-rater-hom-gaunt-rater-rule
 >xxx rater
 WRONG
@@ -265,7 +255,7 @@ by a point
 >summer chant
 by a point
 
-#testcase-homonym-reject-table-of-main-oronyms-hom-bile-owe-rule-owe
+#testcase-homonym-reject-table-of-main-oronyms-owe-hom-bile-owe-rule
 #testcase-homonym-detail-hom-bile-owe-rule-default
 >bile owe
 Neither you nor the merchant owe each other anything, for better or for worse. You're close. Perhaps you should just see things as they are and emote slightly.
@@ -280,7 +270,7 @@ Hmm. That really, really SOUNDED like it should work, but it didn't.
 >whee lone
 by a point
 
-#testcase-homonym-reject-table-of-main-oronyms-hom-owe-flier-rule-owe
+#testcase-homonym-reject-table-of-main-oronyms-owe-hom-owe-flier-rule
 #testcase-homonym-detail-hom-owe-flier-rule-default
 >owe flier
 You don't owe the oaf liar anything, and they don't owe you a flier, even if they might be wasting your time. How to call attention to a flier, though?
@@ -396,14 +386,18 @@ by a point
 
 >d
 
-#testcase-homonym-detail-hom-s-meetin-rule-if-the-player's-command-includes-whirr
+#testcase-homonym-detail-hom-whirr-meetin-rule-else-if-the-player's-command-includes-whirr
 >whirr meetin
 Close, but you don't need a whirr noise.
 
 #testcase-homonym-reject-table-of-main-oronyms-wier-whirr-warm-eden-war-meeting-hom-whirr-meetin-rule
-#+testcase-homonym-detail-hom-whirr-meetin-rule-if-the-player's-command-includes-whirr
+#+testcase-homonym-detail-hom-whirr-meetin-rule-else-if-the-player's-command-includes-whirr
 >warm meetin
 You don't need to change this place's complexion here. It's cozy, a place for people to be together. But how?
+
+#testcase-homonym-detail-hom-whirr-meetin-rule-if-the-player's-command-includes-meeting
+>were meeting
+That sounds a bit too informal and serious. Especially since the room has no ending g.
 
 >were meetin
 by a point
@@ -414,13 +408,12 @@ by a point
 >d
 
 #testcase-homonym-reject-table-of-main-oronyms-seas-sees-seize-hom-cease-cull-rule
+>seas cull
+You don't need to see more seas. In fact, you need things to settle down.
+
 #testcase-homonym-detail-hom-cease-cull-rule-if-the-player's-command-includes-seize
 >seize cull
 No, seizing is the last thing you want the skull to do. And you aren't foolish enough to want to seize power.
-
-#testcase-homonym-detail-hom-cease-cull-rule-default
->seas cull
-You don't need to see more seas. In fact, you need things to settle down.
 
 >cease cull
 by a point

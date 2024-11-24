@@ -626,6 +626,11 @@ You must have one word right for making it beyond the gross tar.
 >grow star
 by a point
 
+@rej
+#testcase-check-pre-grow-star-rule-if-sco-grow-star-is-true
+>grow star
+You already got rid of the tar!
+
 @part
 #testcase-one-wrong-key-pillar
 >xx pillar
@@ -758,6 +763,7 @@ You sort of want to see the hidden design, but you're sort of scared what will h
 #testcase-think-table-of-main-oronyms-pre-see-design-rule
 #testcase-think-table-of-main-oronyms-pre-gnome-old-rule
 #testcase-think-table-of-main-oronyms-pre-manna-curb-rule
+#testcase-think-table-of-main-oronyms-pre-rogue-old-rule
 >think
 You may be able to recruit the GNOME OLD here once you have adventuring gear.
 You may be able to recruit the ROGUE OLD here once you have money.
@@ -940,7 +946,7 @@ You must have one word right for who has made sure there's no mold.
 by a point
 
 @rej
-#testcase-think-table-of-main-oronyms-pre-mice-tall-rule
+#+testcase-think-table-of-main-oronyms-pre-mice-tall-rule
 >think
 You may be able to locate the MICE TALL in Store Mile now you have a companion with good perception.
 
@@ -974,12 +980,12 @@ by a point
 >mice tall
 You already found the mice and destroyed the stall!
 \\
-#testcase-check-pre-my-corps-rule-abide-by-the-followers-check-rule
+#+testcase-check-pre-my-corps-rule-abide-by-the-followers-check-rule
 >my corps
 You sense you don't have the full gang together! You must be getting close, though.
 
 @rej+
-#testcase-think-table-of-main-oronyms-pre-low-door-rule
+#+testcase-think-table-of-main-oronyms-pre-low-door-rule
 >think
 You may be able to find a LOW DOOR in Wolf Rock now you have a companion or companions small enough to dig a bit better.
 
@@ -1064,7 +1070,7 @@ by a point
 >summer chant
 You already found cheeriness outside of the merchant!
 \\
-#testcase-think-table-of-main-oronyms-pre-bile-oh-rule
+#+testcase-think-table-of-main-oronyms-pre-bile-oh-rule
 >think
 You may be able to expose some merchant's BILE OH now you've found something positive to say to prep yourself.
 
@@ -1078,7 +1084,7 @@ You must have one word right for a way to counter the buy-low rhetoric.
 by a point
 
 @rej
-#testcase-think-table-of-main-oronyms-pre-whee-lone-rule
+#+testcase-think-table-of-main-oronyms-pre-whee-lone-rule
 >think
 You may be able to enjoy your solitude with WHEE LONE here now you actually have solitude.
 
@@ -1242,7 +1248,7 @@ You must have one word right for who the traitor was or can become.
 by a point
 
 @rej
-#testcase-check-pre-were-meetin-rule-abide-by-the-followers-check-rule
+#+testcase-check-pre-were-meetin-rule-abide-by-the-followers-check-rule
 >were meetin
 You sense you don't have the full gang together! You must be getting close, though.
 
@@ -1339,7 +1345,7 @@ You may be able to make sense of THE FILE here once you've gotten enough informa
 >the file
 by a point
 \\
-#testcase-check-pre-the-file-rule-if-sco-the-file-is-true
+#testcase-check-pre-the-file-rule-if-sco-the-file-is-true-and-player-has-flier
 >the file
 You already got THE FILE. See where else you can visit.
 \\
@@ -1454,6 +1460,21 @@ A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING 
 >think
 You must have one word right for seeing BRUISE-WARES's true nature.
 
+@rej
+>x bruise
+WRONG
+\\
+#testcase-check-pre-nab-aye-rule-if-nah-bye-is-not-touchable
+>nab aye
+That thought/action/observation/request brings up nothing.
+\\
+>x bruise
+WRONG
+\\
+#+testcase-check-pre-nab-aye-rule-if-nah-bye-is-not-touchable
+>nab aye
+That thought/action/observation/request brings up nothing.
+
 @!min
 >ao
 \\
@@ -1540,6 +1561,11 @@ You can explain the grinch earls see the crude orc as a CREW DORK now they seem 
 You lost the chance to say CREW DORK to the crude orc a bit more gently, even though you weakened the grinch earls.
 >undo
 >undo
+
+@rej+
+#testcase-check-pre-weak-us-rule-if-grinch-earls-are-not-in-brew-swears
+>grin churls
+{$REJECT2}
 
 @part
 >xx dork
@@ -1783,7 +1809,7 @@ by a point
 
 @rej
 #+testcase-think-table-of-main-oronyms-pre-my-corps-rule
-#testcase-think-table-of-main-oronyms-pre-treat-all-rule
+#+testcase-think-table-of-main-oronyms-pre-treat-all-rule
 >think
 You may be able to TREAT ALL here now you have a tasty treat.
 You can call your companions MY CORPS once you've shared something together.

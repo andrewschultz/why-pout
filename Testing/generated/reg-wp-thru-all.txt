@@ -133,12 +133,33 @@ You offer to give it some of the coins it almost choked on, but it does not need
 #testcase-room-names-wolf-rock
 `Wolf Rock
 
+#testcase-run-post-wool-frock-rule-if-sco-hide-out-is-false
+>hide out
+by a point
+
+>wool frock
+!The high doubt
+
+>eyes
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+
+>undo
+>undo
+>undo
+
 >wool frock
 by a point
 
 #testcase-check-pre-wool-frock-rule-fallthrough
 #testcase-run-post-wool-frock-rule-default
+#+testcase-run-post-wool-frock-rule-if-sco-hide-out-is-false
+The high doubt still haunts you, though.
 You rummage about and find a wool frock.
+
+#testcase-run-post-hide-out-rule-if-sco-wool-frock-is-true
+
+>eye
+The eyes light up green and show four dots, then three dots.
 
 >hide out
 by a point
@@ -255,6 +276,7 @@ Yes. That's what BRUISE-WARES is really for. Enter at your own risk. It's ... an
 >weak us
 by a bonus point
 
+#testcase-run-post-weak-us-rule-fallthrough
 #testcase-check-pre-weak-us-rule-fallthrough
 #testcase-run-post-weak-us-rule-default
 #testcase-run-post-weak-us-rule-follow-the-cycle-swears-rule
@@ -422,7 +444,9 @@ by a point
 
 #testcase-check-pre-low-door-rule-fallthrough
 #testcase-run-post-low-door-rule-default
+#testcase-run-post-low-door-rule-if-gnome-is-friendly
 The lode and the ore are tough to shift around for someone as big as yourself. But the tall mice manage to get into those small niches you can't. And they work so fast, you daren't even ironically say "My! Slow mice, lo!"
+The gnome also rifles through, quickly, saying "no more gnome ore."
 
 >in
 
