@@ -90,6 +90,25 @@ understand "xyzzy" as xyzzying.
 
 [swearing is different between WP, which has its own dedicated section, and US.]
 
+volume i7 common (but not core) meta verbs defined
+
+chapter hinthelping
+
+book hinting
+
+hinting is an action out of world.
+
+understand the command "hint" as something new.
+understand the command "hints" as something new.
+understand the command "help" as something new.
+
+understand "hint" as hinting.
+understand "hints" as hinting.
+understand "help" as hinting.
+
+carry out hinting:
+	say "[this-game] has no direct in-game hints. However, a walkthrough should be provided on itch.io or in the archive.org zip file bundle.";
+
 volume talking
 
 understand the command "ask" as something new.

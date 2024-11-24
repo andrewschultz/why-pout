@@ -783,6 +783,12 @@ carry out creditsing:
 	say "Thanks to the I7 board on Intfiction.org for their help, as well as the people in the general topics as we discussed our plans.";
 	the rule succeeds;
 
+chapter hinting
+
+report hinting:
+	say "[if slice eyes are off-stage]After two puzzles in this first room, there will be a hint item that gives clues what to do or think next[else if player has slice eyes]You can [b]EYE[r] things with [the slice eyes], or just [b]EYE[r] the whole room[else]You dropped [the eyes], which were the main hint item. You'll have to restart to bring them back again[end if].";
+	continue the action;
+
 chapter verbsing
 
 verbsing is an action out of world.
