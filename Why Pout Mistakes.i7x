@@ -18,6 +18,10 @@ understand "po leased" and "poe leased" and "poor leased" as a mistake ("Real es
 
 understand "po least" and "poe least" and "poor least" as a mistake ("It's not feelings of inadequacy you need to resolve. You need to find something.") when player is in NaffHaze.
 
+chapter keep iller
+
+understand "summon [text]" as a mistake ("No need to stretch with pronunciations. The manna is what it needs to be, a food ingredient.") when player has manna.
+
 chapter we loan
 
 understand "babylon" as a mistake ("It's a bit beyond your power to whisk someone who'll babble on back to Babylon, but I must salute your clever try! I missed it, but a tester saw it.") when merchant is touchable.

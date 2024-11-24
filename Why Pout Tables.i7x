@@ -16,8 +16,8 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "nah|naah|naw|naa|na"	"phase"	--	"phaze"	hom-nah-phaze rule	false	false	false	false	"how to cut through the naff haze"	false	true	true	false	false	NaffHaze	pre-nah-phase rule	post-nah-phase rule	--	--
 "pole|pull"	"east"	"poll|paul|pall"	--	--	false	false	false	false	"the source of your feeling policed"	false	true	true	false	false	NaffHaze	pre-pole-east rule	post-pole-east rule	--	--
 "grow"	"star"	--	--	--	false	false	false	false	"making it beyond the gross tar"	false	true	true	false	false	NaffHaze	pre-grow-star rule	post-grow-star rule	--	--
-"shore"	"trail"	--	--	--	false	false	false	false	"finding where the short rail could lead"	false	true	true	false	false	NaffHaze	pre-shore-trail rule	post-shore-trail rule	--	--
-"key"	"pillar"	--	--	--	false	false	false	false	"finding a way into the keep"	false	true	true	false	false	NaffHaze	pre-key-pillar rule	post-key-pillar rule	--	--
+"shore"	"trail"	"sure"	--	--	false	false	false	false	"finding where the short rail could lead"	false	true	true	false	false	NaffHaze	pre-shore-trail rule	post-shore-trail rule	--	--
+"key"	"pillar"	--	"piller"	--	false	false	false	false	"finding a way into the keep"	false	true	true	false	false	NaffHaze	pre-key-pillar rule	post-key-pillar rule	--	--
 "brew"	"swears"	--	--	--	false	false	false	false	"seeing [wares]'s true nature"	false	true	false	false	false	NaffHaze	pre-brew-swears rule	post-brew-swears rule	--	--
 "known"	"ocean"	--	--	--	false	false	false	false	"finding the surroundings [here-in of NoNotion]"	false	true	true	false	false	NoNotion	pre-known-ocean rule	post-known-ocean rule	--	--
 "six"	"quid"	--	--	--	false	false	false	false	"discovering what ails the sick squid"	false	true	true	false	false	NoNotion	pre-six-quid rule	post-six-quid rule	--	--
