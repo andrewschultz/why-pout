@@ -47,7 +47,7 @@ chapter attacking
 the block attacking rule is not listed in any rulebook.
 
 carry out attacking:
-	say "'[one of]War may warm, eh[or]Gore? I'd go ride[or]Eh, kill-ache? Ill[in random order],' you think, randomly.";
+	say "'[one of]No smack-nose, Mac[or]Punch-out?! Pun-shout[r]Hey, to hate, ooh[or]War may warm, eh[or]Gore? I'd go ride[or]Eh, kill-ache? Ill[in random order],' you think, randomly.";
 
 chapter no / yes
 
