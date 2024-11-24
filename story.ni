@@ -542,15 +542,22 @@ to grow-the-tree:
 
 after printing the locale description for Trees Mall:
 	grow-the-tree;
+	wfak;
 	continue the action;
 
 chapter tree small
 
-the tree small is a thing. "A tree (small) grows here, or tries to, at least. It deserves to be bigger.". description is "It's a nice tree, but it's a bit small.". eyes-number of tree small is -1. printed name is "tree (small)".
+the tree small is a thing. "The tree (small) that you summoned/discovered grows here, or tries to, at least. What could you use on it to help it really bloom?". description is "It's a nice tree, but it's a bit small.". eyes-number of tree small is -1. printed name is "tree (small)".
 
-chapter tree small
+chapter tree tall
 
-the tree tall is a thing. "A tree (tall) has grown here, thanks to you. It feels very welcoming.". description is "It's a nice tree, but it's a bit small.". eyes-number of tree tall is 53. printed name is "tree (tall)". eyes-rule of tree tall is the pre-treat-all rule.
+the tree tall is a thing. "A tree (tall) has grown here, thanks to you and the grow vial you found. It's quite welcoming. A whole crowd could sit under it!". description is "It was a nice tree before, but it's much more impressive now.". eyes-number of tree tall is 53. printed name is "tree (tall)". eyes-rule of tree tall is the pre-treat-all rule.
+
+chapter long old lawn gold
+
+the long old lawn gold is scenery. printed name is "long old lawn, gold". "The lawn looks tacky and useless. You can't make it better, but [if tree tall is in mall]you grew that tree (tall,) which is pretty good[else if sco-tree-small is true]that three (small) you summoned is pretty nice[else]maybe you can improve the area in general[end if].". eyes-number of lawn gold is 1.
+
+understand "walls" as lawn gold when player is in Trees Mall.
 
 book no notion
 
