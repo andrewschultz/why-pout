@@ -14,12 +14,12 @@
 >an aim
 by a point
 
-#testcase-homonym-reject-table-of-main-oronyms-hom-my-core-rule-core
+#testcase-homonym-reject-table-of-main-oronyms-core-hom-my-core-rule
 #testcase-homonym-detail-hom-my-core-rule-default
 >my core
 You always want to strengthen your own core, but you have a feeling you're looking too inward, here. Though you must be close.
 
-#testcase-homonym-reject-table-of-main-oronyms-hom-too-maps-rule-too
+#testcase-homonym-reject-table-of-main-oronyms-too-hom-too-maps-rule
 #testcase-homonym-detail-hom-too-maps-rule-fallthrough
 #testcase-homonym-detail-hom-too-maps-rule-if-the-player's-command-includes-maps
 #testcase-homonym-detail-hom-too-maps-rule-default
@@ -42,10 +42,17 @@ by a point
 >hi plane
 Hmm. That really, really SOUNDED like it should work, but it didn't.
 
+#testcase-homonym-reject-table-of-main-oronyms-hi-playin
+>hi xxx
+WRONG
+
+>xxx playin
+WRONG
+
 >high plain
 by a point
 
-#testcase-homonym-reject-table-of-main-oronyms-hom-nah-phaze-rule-phaze
+#testcase-homonym-reject-table-of-main-oronyms-phaze-hom-nah-phaze-rule
 #testcase-homonym-detail-hom-nah-phaze-rule-default
 >nah phaze
 You sense you don't want the naff haze to faze you, but you want a noun, here, to reject.
@@ -66,11 +73,19 @@ Hmm. That really, really SOUNDED like it should work, but it didn't.
 >pole east
 by a point
 
+#testcase-homonym-reject-table-of-main-oronyms-sure
+>sure
+WRONG
+
 >shore trail
 by a point
 
 >grow star
 by a point
+
+#testcase-homonym-reject-table-of-main-oronyms-piller
+>xxx piller
+WRONG
 
 >key pillar
 by a point
@@ -111,7 +126,7 @@ by a point
 >gnome old
 by a point
 
-#testcase-homonym-reject-table-of-main-oronyms-hom-rouge-old-rule-rouge
+#testcase-homonym-reject-table-of-main-oronyms-rouge-hom-rouge-old-rule
 #testcase-homonym-detail-hom-rouge-old-rule-default
 >rouge old
 Rouge ... no, too foreign, also, too abstract. But you need a person, not a color. That'll get you a point in this game, not just Canadian football.
@@ -127,6 +142,13 @@ Close, but there are other waterways. Action (well, sort of) is needed here.
 >c design
 Close, but there are other waterways. Action (well, sort of) is needed here.
 
+#testcase-homonym-reject-table-of-main-oronyms-c-sea-hom-c-sea-design-rule
+>c design
+WRONG
+
+>sea design
+WRONG
+
 >see design
 by a point
 
@@ -136,6 +158,10 @@ by a point
 >e
 
 >d
+
+#testcase-homonym-reject-table-of-main-oronyms-rater-hom-gaunt-rater-rule
+>xxx rater
+WRONG
 
 >gaunt raider
 by a point
@@ -161,6 +187,10 @@ by a bonus point
 
 >bastard eee
 by a bonus point
+
+#testcase-homonym-reject-table-of-main-oronyms-dam
+>dam xxx
+WRONG
 
 >damn peons
 by a bonus point
@@ -198,12 +228,12 @@ by a point
 >store mile
 by a point
 
-#testcase-homonym-detail-hom-mencsh-elf-rule-if-the-player's-command-includes-munch
+#testcase-homonym-detail-hom-mensch-elf-rule-if-the-player's-command-includes-munch
 >munch elf
 No, a sort of person. This one's a bit obscure.
 
-#testcase-homonym-reject-table-of-main-oronyms-hom-mencsh-elf-rule-mensh-mench-munch
-#+testcase-homonym-detail-hom-mencsh-elf-rule-if-the-player's-command-includes-munch
+#testcase-homonym-reject-table-of-main-oronyms-mensh-mench-munch-hom-mensch-elf-rule
+#+testcase-homonym-detail-hom-mensch-elf-rule-if-the-player's-command-includes-munch
 >mensh elf
 Oh, man. Sorry to be playing spelling police with you here, but you have the pronunciation right.
 
@@ -224,7 +254,7 @@ by a point
 
 >in
 
-#testcase-homonym-reject-table-of-main-oronyms-hom-wheel-own-rule-wheel
+#testcase-homonym-reject-table-of-main-oronyms-wheel-hom-wheel-own-rule
 #testcase-homonym-detail-hom-wheel-own-rule-default
 >wheel own
 This is a seedy financial services provider, not a seedy used car dealer. Still, you must be on the right track.
@@ -267,7 +297,7 @@ by a point
 >plan tracker
 by a point
 
-#testcase-homonym-reject-table-of-main-oronyms-hom-mana-curb-rule-man-a-mana
+#testcase-homonym-reject-table-of-main-oronyms-man-a-mana-hom-mana-curb-rule
 #testcase-homonym-detail-hom-mana-curb-rule-default
 >mana curb
 You do not have any magic points, so you don't need them refreshed. But you must be close! Like, just one letter off!
@@ -366,11 +396,11 @@ by a point
 
 >d
 
-#testcase-homonym-detail-hom-whirr-meetin-rule-if-the-player's-command-includes-whirr
+#testcase-homonym-detail-hom-s-meetin-rule-if-the-player's-command-includes-whirr
 >whirr meetin
 Close, but you don't need a whirr noise.
 
-#testcase-homonym-reject-table-of-main-oronyms-hom-whirr-meetin-rule-wier-whirr-warm-eden-war
+#testcase-homonym-reject-table-of-main-oronyms-wier-whirr-warm-eden-war-meeting-hom-whirr-meetin-rule
 #+testcase-homonym-detail-hom-whirr-meetin-rule-if-the-player's-command-includes-whirr
 >warm meetin
 You don't need to change this place's complexion here. It's cozy, a place for people to be together. But how?
@@ -383,10 +413,14 @@ by a point
 
 >d
 
-#testcase-homonym-reject-table-of-main-oronyms-hom-cease-cull-rule-seize
-#testcase-homonym-detail-hom-cease-cull-rule-default
+#testcase-homonym-reject-table-of-main-oronyms-seas-sees-seize-hom-cease-cull-rule
+#testcase-homonym-detail-hom-cease-cull-rule-if-the-player's-command-includes-seize
 >seize cull
 No, seizing is the last thing you want the skull to do. And you aren't foolish enough to want to seize power.
+
+#testcase-homonym-detail-hom-cease-cull-rule-default
+>seas cull
+You don't need to see more seas. In fact, you need things to settle down.
 
 >cease cull
 by a point

@@ -145,8 +145,8 @@ You simply have no notion what lies beyond here. You hope something does. Surely
 >known ocean
 by a point
 
->l
 #testcase-isledescription-0-without-guess
+>l
 It looks like there is an ocean, or some large body of water, as you can't see islands in the distance. If they're there, they're too far to swim to.
 
 >six quid
@@ -383,7 +383,7 @@ This lobe of land appears to fall off steeply in all directions except back west
 by a point
 
 >l
-The low bend (former lobe end) now bends from west to north, where you see water, too much to cross on foot. Well, nobody's probably going to give you transport north for free. Maybe you can summon or find someone who will.
+The low bend (former lobe end) now bends from west to north, where there's too much water to pass on foot. So maybe you could get across, with transport. Maybe you can summon or find someone who can offer it, as well a way to pay.
 
 >bay sale
 by a point
@@ -573,7 +573,7 @@ There's a bunch of manic herb here the mensch elf sifted through.
 by a point
 
 >l
-A tree (small) grows here, or tries to, at least. It deserves to be bigger.
+The tree (small) that you summoned/discovered grows here, or tries to, at least. What could you use on it to help it really bloom?
 
 >s
 
@@ -670,8 +670,8 @@ There's that occasional voice ringing in your head asking "Why pout?" Well, it's
 Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will find something special about it some day.
 
 >l
-This is a withered, run-down former mall that had the ceiling blow off. It's walled with pictures of large, but fake, trees. You can only go back SOUTH.
-A tree (tall) has grown here, thanks to you. It feels very welcoming.
+This is a withered, run-down former mall that had the ceiling blow off. A long old lawn, gold, is depicted here on crumbling walls and fails to give a semblance of nature. You can only go back SOUTH.
+A tree (tall) has grown here, thanks to you and the grow vial you found. It's quite welcoming. A whole crowd could sit under it!
 
 >t dwarf
 

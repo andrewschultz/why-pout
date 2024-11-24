@@ -20,7 +20,7 @@ You're stuck with what to do right now. Perhaps you can use your senses for clue
 The eyes light up green and show two dots, then three dots.
 
 >eye
-The eyes almost seem to light up. Perhaps you need to do something later with the general area, when things are noticeably different.
+The eyes almost seem to light up. Perhaps you need to do something later with the general area, though specific things may provide a clue, when things are noticeably different.
 
 >undo
 >undo
@@ -106,7 +106,7 @@ The eyes light up green and show four dots, then four dots.
 by a point
 
 >eye
-The eyes show nothing. You've done everything you need to with the general area.
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 
 >eye short rail
 The eyes light up green and show five dots, then five dots.
@@ -157,7 +157,7 @@ The eyes light up green and show five dots, then five dots.
 by a point
 
 >eye
-The eyes show nothing. You've done everything you need to with the general area.
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 
 >eye ocean
 The eyes show nothing. You've done everything you need to with the ocean.
@@ -194,7 +194,7 @@ The eyes light up green and show four dots, then three dots.
 by a point
 
 >eye
-The eyes show nothing. You've done everything you need to with the general area.
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 
 >d
 
@@ -214,7 +214,7 @@ The eyes show nothing. You've done everything you need to make friends with the 
 >w
 
 >eye
-The eyes show nothing. You've done everything you need to with the general area.
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 
 >eye herb
 The eyes light up yellow and show five dots, then four dots.
@@ -358,7 +358,7 @@ The eyes glow dimly and show four dots, then five dots.
 by a bonus point
 
 >eye
-The eyes show nothing. You've done everything you need to with the general area.
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 
 >grin churls
 by a bonus point
@@ -397,7 +397,7 @@ The eyes light up green and show five dots, then five dots.
 by a point
 
 >eye
-The eyes show nothing. You've done everything you need to with the general area.
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 
 >eye shelf
 The eyes light up green and show six dots, then three dots.
@@ -465,7 +465,7 @@ The eyes light up green and show two dots, then five dots.
 by a point
 
 >eye
-The eyes show nothing. You've done everything you need to with the general area.
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 
 >eye flier
 Weird. The flier seems to blink between three and four dots on the left, but it's stable at four dots on the right.
@@ -512,7 +512,7 @@ The eyes light up green and show four dots, then five dots.
 by a point
 
 >eye
-The eyes show nothing. You've done everything you need to with the general area.
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 
 >eye tree
 The eyes show nothing. You've done everything you need to with the tree (small).
@@ -588,7 +588,7 @@ The eyes show nothing. You've done everything you need to with the tree (tall).
 >s
 
 >eye
-The eyes show nothing. You've done everything you need to with the general area.
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 
 >the file
 by a point

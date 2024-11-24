@@ -68,7 +68,7 @@ by a point
 
 #testcase-check-pre-nah-phase-rule-fallthrough
 #testcase-run-post-nah-phase-rule-default
-The haze seemed too thick at first. But you recognize it doesn't have to be there. As you sift through it, you notice things that weren't there before. It lifts.
+The haze seemed too thick at first. But you recognize it doesn't have to be there. As you sift through it, you notice things that weren't there before. It lifts. And some of your worry lifts, too. You're not worried you might forget your name again. But perhaps you will find its significance. Not right away, but when you need to.
 
 #+testcase-room-names-naff-haze
 `High Plain
@@ -248,6 +248,7 @@ Yes. That's what BRUISE-WARES is really for. Enter at your own risk. It's ... an
 
 >in
 
+#testcase-run-post-brew-swears-rule-fallthrough
 #testcase-room-names-brew-swears
 `Brew Swears
 
@@ -277,8 +278,8 @@ Hmm. You have a lot of friends following you around, but you haven't talked to t
 >ass low
 by a bonus point
 
-#testcase-check-pre-ass-lo-rule-fallthrough
-#testcase-run-post-ass-lo-rule-default
+#testcase-check-pre-ass-low-rule-fallthrough
+#testcase-run-post-ass-low-rule-default
 The grinch earls shake their heads at you: "Bah! Sturdy?!"
 
 >bastard eee
@@ -343,6 +344,14 @@ On arriving, Gawain asks you your name. "Pfft! Meeker? Oh. Mike OR. Sure ain't M
 >gah wanker
 by a bonus point
 
+#testcase-check-pre-gah-wanker-rule-fallthrough
+#testcase-run-post-gah-wanker-rule-default
+"No, dude. Just, no," says Gawain Kerr. "I mean, it's different when I make fun of other people. I mean, if it's more profane, they deserve me to act like they were too clueless to notice it, and if it's less profane, well, it can't hurt."
+Not knowing what to do, you shrug.
+"Cold of you. You know, you looked like such a nice person, but after saying that, well, you proved you're a liar. Unlike me. People know I'm risque. Anyway, you don't appreciate me, so there's no use me hanging around you."
+"You'll be sad one day you angered a Sofa King like me!"
+Thankfully, you will have no way of seeing the, uh, new direction he will take.
+
 >out
 
 >e
@@ -366,7 +375,7 @@ by a point
 
 #testcase-check-pre-bay-sale-rule-fallthrough
 #testcase-run-post-bay-sale-rule-default
-You have money, and you are ready for a sale, and you get it. Unfortunately, though you were expecting a nice big ship, you get something a little humbler, namely a We-Craft Weak Raft. It seems sturdy enough, though, and it does have a sail.
+You have money, and you are ready for a sale, and you get it. Unfortunately, though you were expecting a nice big ship, you get something a little humbler, namely a We-Craft Weak Raft. It seems sturdy and large enough, though, and it is probably easier to operate than a Might-Anchor (My!) Tanker.
 You christen it with the base ale, and the bottle fragments shatter and float away in the water.
 This transaction reduces your wealth from three quid to one quid.
 
@@ -417,6 +426,7 @@ The lode and the ore are tough to shift around for someone as big as yourself. B
 
 >in
 
+#testcase-run-post-low-door-rule-fallthrough
 #testcase-room-names-we-loan
 `We Loan
 
@@ -558,7 +568,7 @@ There's not much left to do here, so you ride the squid back.
 >n
 
 # this makes sure TREE SMALL then bringing the grow vial back works okay
-A tree (small) grows here, or tries to, at least. It deserves to be bigger.
+The tree (small) that you summoned/discovered grows here, or tries to, at least. What could you use on it to help it really bloom?
 But wait! You can use the grow vial! It makes the tree (small) into a tree (tall)! Then it dissolves once empty.
 
 >t dwarf

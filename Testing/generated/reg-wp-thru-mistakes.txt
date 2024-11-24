@@ -11,12 +11,12 @@
 
 >z
 
-#testcase-mistake-why-pout-error
+#testcase-mistake-why-pout-error-error-text
 >error
 You sense you're on the right track, but you feel your inner voice is stretching here a bit.
 You need to look inward to find something you lost before dealing with external stuff.
 
-#testcase-mistake-why-pout-error-text
+#+testcase-mistake-why-pout-error-error-text
 >error error
 You sense you're on the right track, but you feel your inner voice is stretching here a bit.
 You need to look inward to find something you lost before dealing with external stuff.
@@ -42,6 +42,30 @@ by a point
 
 >nah phase
 by a point
+
+#testcase-mistake-why-pout-po-leased-poe-leased-poor-leased
+>po leased
+Real estate is not involved here.
+
+#+testcase-mistake-why-pout-po-leased-poe-leased-poor-leased
+>poe leased
+Real estate is not involved here.
+
+#+testcase-mistake-why-pout-po-leased-poe-leased-poor-leased
+>poor leased
+Real estate is not involved here.
+
+#testcase-mistake-why-pout-po-least-poe-least-poor-least
+>po least
+It's not feelings of inadequacy you need to resolve. You need to find something.
+
+#+testcase-mistake-why-pout-po-least-poe-least-poor-least
+>poe least
+It's not feelings of inadequacy you need to resolve. You need to find something.
+
+#+testcase-mistake-why-pout-po-least-poe-least-poor-least
+>poor least
+It's not feelings of inadequacy you need to resolve. You need to find something.
 
 >pole east
 by a point
@@ -249,6 +273,10 @@ by a point
 
 >manna curb
 by a point
+
+#testcase-mistake-why-pout-summon-text
+>summon xxx
+No need to stretch with pronunciations. The manna is what it needs to be, a food ingredient.
 
 >e
 

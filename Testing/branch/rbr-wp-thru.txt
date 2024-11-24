@@ -80,6 +80,10 @@ Thanks to everyone past and future involved in the administration of IFComp.
 >credit
 Thanks to everyone past and future involved in the administration of IFComp.
 \\
+>hint
+Why Pout has no direct in-game hints. However, a walkthrough should be provided on itch.io or in the archive.org zip file bundle.
+After two puzzles in this first room, there will be a hint item that gives clues what to do or think next.
+\\
 >verbs
 Most point-scoring commands will consist of two words.
 \\
@@ -127,12 +131,12 @@ Air, or ... a roar?!
 >z
 
 @mis
-#testcase-mistake-why-pout-error
+#testcase-mistake-why-pout-error-error-text
 >error
 You sense you're on the right track, but you feel your inner voice is stretching here a bit.
 You need to look inward to find something you lost before dealing with external stuff.
 \\
-#testcase-mistake-why-pout-error-text
+#+testcase-mistake-why-pout-error-error-text
 >error error
 You sense you're on the right track, but you feel your inner voice is stretching here a bit.
 You need to look inward to find something you lost before dealing with external stuff.
@@ -148,7 +152,7 @@ You need to look inward to find something you lost before dealing with external 
 The eyes light up green and show two dots, then three dots.
 \\
 >eye
-The eyes almost seem to light up. Perhaps you need to do something later with the general area, when things are noticeably different.
+The eyes almost seem to light up. Perhaps you need to do something later with the general area, though specific things may provide a clue, when things are noticeably different.
 \\
 >undo
 >undo
@@ -169,13 +173,13 @@ You look around a bit. You can see more, now. You're in some sort of tomb apse. 
 `Tomb Apse
 
 @hom
-#testcase-homonym-reject-table-of-main-oronyms-hom-my-core-rule-core
+#testcase-homonym-reject-table-of-main-oronyms-core-hom-my-core-rule
 #testcase-homonym-detail-hom-my-core-rule-default
 >my core
 You always want to strengthen your own core, but you have a feeling you're looking too inward, here. Though you must be close.
 
 @hom+
-#testcase-homonym-reject-table-of-main-oronyms-hom-too-maps-rule-too
+#testcase-homonym-reject-table-of-main-oronyms-too-hom-too-maps-rule
 #testcase-homonym-detail-hom-too-maps-rule-fallthrough
 #testcase-homonym-detail-hom-too-maps-rule-if-the-player's-command-includes-maps
 #testcase-homonym-detail-hom-too-maps-rule-default
@@ -231,6 +235,20 @@ You poke around a bit, hoping for even more help. But that is all. So you follow
 You hear no thud in the din.
 Hard not to hear the cell phones, though.
 Whether or not the cell phones are the latest models, you don't want to pay attention to them too much. Just figure out a way for a harmless calamity that may make their users quiet down a bit.
+\\
+>hint
+Why Pout has no direct in-game hints. However, a walkthrough should be provided on itch.io or in the archive.org zip file bundle.
+You can EYE things with the sly size-slice eyes, or just EYE the whole room.
+
+@verbs+
+##balance udnos
+>au 2
+>drop eyes
+Are you sure
+\\
+>hint
+Why Pout has no direct in-game hints. However, a walkthrough should be provided on itch.io or in the archive.org zip file bundle.
+You dropped the sly size-slice eyes, which were the main hint item. You'll have to restart to bring them back again.
 
 @hint
 >eye eye
@@ -402,6 +420,14 @@ You got something better than good chat.
 >eat stalk
 That stalk is your way out of here.
 
+@hom
+#testcase-homonym-reject-table-of-main-oronyms-hi-playin
+>hi xxx
+WRONG
+\\
+>xxx playin
+WRONG
+
 >high plain
 by a point
 
@@ -462,7 +488,7 @@ by a point
 >undo
 
 @hom
-#testcase-homonym-reject-table-of-main-oronyms-hom-nah-phaze-rule-phaze
+#testcase-homonym-reject-table-of-main-oronyms-phaze-hom-nah-phaze-rule
 #testcase-homonym-detail-hom-nah-phaze-rule-default
 >nah phaze
 You sense you don't want the naff haze to faze you, but you want a noun, here, to reject.
@@ -485,7 +511,7 @@ by a point
 @all
 #testcase-check-pre-nah-phase-rule-fallthrough
 #testcase-run-post-nah-phase-rule-default
-The haze seemed too thick at first. But you recognize it doesn't have to be there. As you sift through it, you notice things that weren't there before. It lifts.
+The haze seemed too thick at first. But you recognize it doesn't have to be there. As you sift through it, you notice things that weren't there before. It lifts. And some of your worry lifts, too. You're not worried you might forget your name again. But perhaps you will find its significance. Not right away, but when you need to.
 
 @all+
 #+testcase-room-names-naff-haze
@@ -539,6 +565,31 @@ It's more the being policed to focus on. You have lots of feelings that come and
 It just feels like you could escape it, if you found something somewhere, or some direction.
 !It's more
 
+@mis
+#testcase-mistake-why-pout-po-leased-poe-leased-poor-leased
+>po leased
+Real estate is not involved here.
+\\
+#+testcase-mistake-why-pout-po-leased-poe-leased-poor-leased
+>poe leased
+Real estate is not involved here.
+\\
+#+testcase-mistake-why-pout-po-leased-poe-leased-poor-leased
+>poor leased
+Real estate is not involved here.
+\\
+#testcase-mistake-why-pout-po-least-poe-least-poor-least
+>po least
+It's not feelings of inadequacy you need to resolve. You need to find something.
+\\
+#+testcase-mistake-why-pout-po-least-poe-least-poor-least
+>poe least
+It's not feelings of inadequacy you need to resolve. You need to find something.
+\\
+#+testcase-mistake-why-pout-po-least-poe-least-poor-least
+>poor least
+It's not feelings of inadequacy you need to resolve. You need to find something.
+
 >pole east
 by a point
 
@@ -589,7 +640,7 @@ The keep (iller) is locked. You will need to find the key.
 
 @hint
 >eye
-The eyes show nothing. You've done everything you need to with the general area.
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 \\
 >eye short rail
 The eyes light up green and show five dots, then five dots.
@@ -599,6 +650,11 @@ The eyes light up green and show three dots, then six dots.
 \\
 >eye gross tar
 The eyes light up green and show four dots, then four dots.
+
+@hom
+#testcase-homonym-reject-table-of-main-oronyms-sure
+>sure
+WRONG
 
 >shore trail
 by a point
@@ -637,6 +693,11 @@ You look at the gross tar, and you hope for a star in the sky to become brighter
 You got rid of the gross tar blocking your way NORTH.
 !way DOWN
 Things have opened up almost all the way now, with the naff haze lifted. You feel less policed, too, since you found a path EAST.
+
+@hom
+#testcase-homonym-reject-table-of-main-oronyms-piller
+>xxx piller
+WRONG
 
 >key pillar
 by a point
@@ -718,8 +779,8 @@ The eyes light up green and show five dots, then five dots.
 by a point
 
 @li
->l
 #testcase-isledescription-0-without-guess
+>l
 It looks like there is an ocean, or some large body of water, as you can't see islands in the distance. If they're there, they're too far to swim to.
 
 @all
@@ -745,7 +806,7 @@ It seems to be choking a bit.
 
 @hint
 >eye
-The eyes show nothing. You've done everything you need to with the general area.
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 \\
 >eye ocean
 The eyes show nothing. You've done everything you need to with the ocean.
@@ -839,7 +900,7 @@ by a point
 
 @hint
 >eye
-The eyes show nothing. You've done everything you need to with the general area.
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 
 @all
 #testcase-check-pre-hide-out-rule-fallthrough
@@ -962,7 +1023,7 @@ Yes, mold is one of many things you should never eat.
 
 @hint
 >eye
-The eyes show nothing. You've done everything you need to with the general area.
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 \\
 >eye herb
 The eyes light up yellow and show five dots, then four dots.
@@ -1002,7 +1063,7 @@ Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will
 !no mold
 
 @hom
-#testcase-homonym-reject-table-of-main-oronyms-hom-rouge-old-rule-rouge
+#testcase-homonym-reject-table-of-main-oronyms-rouge-hom-rouge-old-rule
 #testcase-homonym-detail-hom-rouge-old-rule-default
 >rouge old
 Rouge ... no, too foreign, also, too abstract. But you need a person, not a color. That'll get you a point in this game, not just Canadian football.
@@ -1155,6 +1216,14 @@ Nothing here like that.
 >undo
 >undo
 
+@hom
+#testcase-homonym-reject-table-of-main-oronyms-c-sea-hom-c-sea-design-rule
+>c design
+WRONG
+\\
+>sea design
+WRONG
+
 >see design
 by a point
 
@@ -1301,6 +1370,11 @@ Better ways to assimilate the gone traitor.
 >eye traitor
 The eyes light up green and show five dots, then six dots.
 
+@hom
+#testcase-homonym-reject-table-of-main-oronyms-rater-hom-gaunt-rater-rule
+>xxx rater
+WRONG
+
 >gaunt raider
 by a point
 
@@ -1402,6 +1476,7 @@ But, well, yes. You're in the right place for that.
 ! ... 
 
 @all
+#testcase-run-post-brew-swears-rule-fallthrough
 #testcase-room-names-brew-swears
 `Brew Swears
 
@@ -1549,6 +1624,7 @@ You don't want to get into the guts of this place. You've gotten the crude orc o
 The eyes glow dimly and show three dots, then four dots.
 
 @alt
+#testcase-alt-words-table-of-main-oronyms-52-ass-low-lo
 >ass lo
 by a bonus point
 \\
@@ -1559,8 +1635,8 @@ by a bonus point
 by a bonus point
 
 @all
-#testcase-check-pre-ass-lo-rule-fallthrough
-#testcase-run-post-ass-lo-rule-default
+#testcase-check-pre-ass-low-rule-fallthrough
+#testcase-run-post-ass-low-rule-default
 The grinch earls shake their heads at you: "Bah! Sturdy?!"
 
 @hint
@@ -1580,6 +1656,11 @@ The grinch earls dismiss you: "Damp! Yawns!"
 @hint
 >eye
 The eyes glow dimly and show four dots, then five dots.
+
+@hom
+#testcase-homonym-reject-table-of-main-oronyms-dam
+>dam xxx
+WRONG
 
 @!min
 >damn peons
@@ -1650,7 +1731,7 @@ The grinch earls, out of insults, give up on it all, claiming you just make ever
 
 @hint
 >eye
-The eyes show nothing. You've done everything you need to with the general area.
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 
 @li
 >l
@@ -1684,6 +1765,15 @@ Ah, this would work around people who feel shame for their flaws, but Gawain Ker
 @!min
 >gah wanker
 by a bonus point
+
+@all
+#testcase-check-pre-gah-wanker-rule-fallthrough
+#testcase-run-post-gah-wanker-rule-default
+"No, dude. Just, no," says Gawain Kerr. "I mean, it's different when I make fun of other people. I mean, if it's more profane, they deserve me to act like they were too clueless to notice it, and if it's less profane, well, it can't hurt."
+Not knowing what to do, you shrug.
+"Cold of you. You know, you looked like such a nice person, but after saying that, well, you proved you're a liar. Unlike me. People know I'm risque. Anyway, you don't appreciate me, so there's no use me hanging around you."
+"You'll be sad one day you angered a Sofa King like me!"
+Thankfully, you will have no way of seeing the, uh, new direction he will take.
 
 @li
 >l
@@ -1761,7 +1851,7 @@ The bend only curves west to north.
 
 @li
 >l
-The low bend (former lobe end) now bends from west to north, where you see water, too much to cross on foot. Well, nobody's probably going to give you transport north for free. Maybe you can summon or find someone who will.
+The low bend (former lobe end) now bends from west to north, where there's too much water to pass on foot. So maybe you could get across, with transport. Maybe you can summon or find someone who can offer it, as well a way to pay.
 
 @hint
 >eye ale
@@ -1777,7 +1867,7 @@ The eyes show nothing. Probably don't need to do anything with the We-Craft Weak
 @all
 #testcase-check-pre-bay-sale-rule-fallthrough
 #testcase-run-post-bay-sale-rule-default
-You have money, and you are ready for a sale, and you get it. Unfortunately, though you were expecting a nice big ship, you get something a little humbler, namely a We-Craft Weak Raft. It seems sturdy enough, though, and it does have a sail.
+You have money, and you are ready for a sale, and you get it. Unfortunately, though you were expecting a nice big ship, you get something a little humbler, namely a We-Craft Weak Raft. It seems sturdy and large enough, though, and it is probably easier to operate than a Might-Anchor (My!) Tanker.
 You christen it with the base ale, and the bottle fragments shatter and float away in the water.
 This transaction reduces your wealth from three quid to one quid.
 
@@ -1823,7 +1913,7 @@ by a point
 
 @hint
 >eye
-The eyes show nothing. You've done everything you need to with the general area.
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 
 @all
 #testcase-check-pre-store-mile-rule-fallthrough
@@ -1835,12 +1925,12 @@ The storms let up. It's not such a big isle after all, but it does turn out to h
 `Store Mile
 
 @hom
-#testcase-homonym-detail-hom-mencsh-elf-rule-if-the-player's-command-includes-munch
+#testcase-homonym-detail-hom-mensch-elf-rule-if-the-player's-command-includes-munch
 >munch elf
 No, a sort of person. This one's a bit obscure.
 \\
-#testcase-homonym-reject-table-of-main-oronyms-hom-mencsh-elf-rule-mensh-mench-munch
-#+testcase-homonym-detail-hom-mencsh-elf-rule-if-the-player's-command-includes-munch
+#testcase-homonym-reject-table-of-main-oronyms-mensh-mench-munch-hom-mensch-elf-rule
+#+testcase-homonym-detail-hom-mensch-elf-rule-if-the-player's-command-includes-munch
 >mensh elf
 Oh, man. Sorry to be playing spelling police with you here, but you have the pronunciation right.
 
@@ -1961,11 +2051,12 @@ This wouldn't have worked even before the mice found a passage.
 >in
 
 @all
+#testcase-run-post-low-door-rule-fallthrough
 #testcase-room-names-we-loan
 `We Loan
 
 @hom
-#testcase-homonym-reject-table-of-main-oronyms-hom-wheel-own-rule-wheel
+#testcase-homonym-reject-table-of-main-oronyms-wheel-hom-wheel-own-rule
 #testcase-homonym-detail-hom-wheel-own-rule-default
 >wheel own
 This is a seedy financial services provider, not a seedy used car dealer. Still, you must be on the right track.
@@ -2134,7 +2225,7 @@ by a point
 
 @hint
 >eye
-The eyes show nothing. You've done everything you need to with the general area.
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 \\
 >eye flier
 Weird. The flier seems to blink between three and four dots on the left, but it's stable at four dots on the right.
@@ -2238,7 +2329,7 @@ Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will
 !plant racker
 
 @hom
-#testcase-homonym-reject-table-of-main-oronyms-hom-mana-curb-rule-man-a-mana
+#testcase-homonym-reject-table-of-main-oronyms-man-a-mana-hom-mana-curb-rule
 #testcase-homonym-detail-hom-mana-curb-rule-default
 >mana curb
 You do not have any magic points, so you don't need them refreshed. But you must be close! Like, just one letter off!
@@ -2280,7 +2371,12 @@ There's that occasional voice ringing in your head asking "Why pout?" Well, it's
   a war pawn
 Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will find something special about it some day.
 
-@li+
+@mis
+#testcase-mistake-why-pout-summon-text
+>summon xxx
+No need to stretch with pronunciations. The manna is what it needs to be, a food ingredient.
+
+@li
 >l
 There's a bunch of manic herb here the mensch elf sifted through.
 
@@ -2346,7 +2442,7 @@ by a point
 
 @hint
 >eye
-The eyes show nothing. You've done everything you need to with the general area.
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 \\
 >eye tree
 The eyes show nothing. You've done everything you need to with the tree (small).
@@ -2365,7 +2461,7 @@ You can only go back south.
 
 @li
 >l
-A tree (small) grows here, or tries to, at least. It deserves to be bigger.
+The tree (small) that you summoned/discovered grows here, or tries to, at least. What could you use on it to help it really bloom?
 
 >s
 
@@ -2527,7 +2623,7 @@ The ocean surrounds you on all sides, but it's less intimidating now you rode th
 
 @all
 # this makes sure TREE SMALL then bringing the grow vial back works okay
-A tree (small) grows here, or tries to, at least. It deserves to be bigger.
+The tree (small) that you summoned/discovered grows here, or tries to, at least. What could you use on it to help it really bloom?
 But wait! You can use the grow vial! It makes the tree (small) into a tree (tall)! Then it dissolves once empty.
 
 @li
@@ -2544,8 +2640,8 @@ Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will
 
 @li+
 >l
-This is a withered, run-down former mall that had the ceiling blow off. It's walled with pictures of large, but fake, trees. You can only go back SOUTH.
-A tree (tall) has grown here, thanks to you. It feels very welcoming.
+This is a withered, run-down former mall that had the ceiling blow off. A long old lawn, gold, is depicted here on crumbling walls and fails to give a semblance of nature. You can only go back SOUTH.
+A tree (tall) has grown here, thanks to you and the grow vial you found. It's quite welcoming. A whole crowd could sit under it!
 
 >t dwarf
 
@@ -2728,7 +2824,7 @@ Odd! BRUISE-WARES has vanished. Well, one less dead end to worry about.
 
 @hint
 >eye
-The eyes show nothing. You've done everything you need to with the general area.
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 
 >the file
 by a point
@@ -2824,11 +2920,11 @@ second-npc
 No tricky passages here, just UP back to safer ground or DOWN to your fate.
 
 @hom
-#testcase-homonym-detail-hom-whirr-meetin-rule-if-the-player's-command-includes-whirr
+#testcase-homonym-detail-hom-s-meetin-rule-if-the-player's-command-includes-whirr
 >whirr meetin
 Close, but you don't need a whirr noise.
 \\
-#testcase-homonym-reject-table-of-main-oronyms-hom-whirr-meetin-rule-wier-whirr-warm-eden-war
+#testcase-homonym-reject-table-of-main-oronyms-wier-whirr-warm-eden-war-meeting-hom-whirr-meetin-rule
 #+testcase-homonym-detail-hom-whirr-meetin-rule-if-the-player's-command-includes-whirr
 >warm meetin
 You don't need to change this place's complexion here. It's cozy, a place for people to be together. But how?
@@ -2914,10 +3010,14 @@ A sea skull gloats evilly, with its back turned to you.
 Unsurprisingly, all the action is here.
 
 @hom
-#testcase-homonym-reject-table-of-main-oronyms-hom-cease-cull-rule-seize
-#testcase-homonym-detail-hom-cease-cull-rule-default
+#testcase-homonym-reject-table-of-main-oronyms-seas-sees-seize-hom-cease-cull-rule
+#testcase-homonym-detail-hom-cease-cull-rule-if-the-player's-command-includes-seize
 >seize cull
 No, seizing is the last thing you want the skull to do. And you aren't foolish enough to want to seize power.
+\\
+#testcase-homonym-detail-hom-cease-cull-rule-default
+>seas cull
+You don't need to see more seas. In fact, you need things to settle down.
 
 @verbs
 >t skull
@@ -2965,7 +3065,7 @@ But after all the fireworks, there's a letdown. You feel something odd come betw
 
 @alt
 ##balance undos
-#testcase-alt-words-table-of-main-oronyms-47-do-due-mend-mending
+#testcase-alt-words-table-of-main-oronyms-48-do-due-mend-mending
 >due mending
 by a point
 \\

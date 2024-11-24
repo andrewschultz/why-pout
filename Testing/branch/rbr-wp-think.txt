@@ -38,6 +38,11 @@ file=reg-wp-think-partright.txt,part,walkthrough with partially right guesses
 THINK
 
 @rej+
+#testcase-check-pre-ass-low-rule-if-player-is-not-in-brew-swears
+#testcase-reject-start-table-of-main-oronyms-pre-ass-low-rule
+>ass low
+{$REJECT1}
+\\
 #testcase-check-pre-bastard-eee-rule-if-player-is-not-in-brew-swears
 #testcase-reject-start-table-of-main-oronyms-pre-bastard-eee-rule
 >bastard eee
@@ -73,9 +78,19 @@ THINK
 >crew dork
 {$REJECT1}
 \\
+#testcase-check-pre-damn-peons-rule-if-player-is-not-in-brew-swears
+#testcase-reject-start-table-of-main-oronyms-pre-damn-peons-rule
+>damn peons
+{$REJECT1}
+\\
 #testcase-check-pre-do-due-mend-rule-if-player-is-not-in-doom-ending
 #testcase-reject-start-table-of-main-oronyms-pre-do-due-mend-rule
 >do mending
+{$REJECT1}
+\\
+#testcase-check-pre-gah-wanker-rule-if-player-is-not-in-brew-swears
+#testcase-reject-start-table-of-main-oronyms-pre-gah-wanker-rule
+>gah wanker
 {$REJECT1}
 \\
 #testcase-check-pre-gaunt-raider-rule-if-player-is-not-in-worm-eaten-or-gone-traitor-is-not-in-worm-eaten
@@ -171,6 +186,11 @@ THINK
 #testcase-check-pre-my-corps-rule-if-sco-an-aim-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-my-corps-rule
 >my corps
+{$REJECT1}
+\\
+#testcase-check-pre-nab-aye-rule-if-player-is-not-in-naffhaze
+#testcase-reject-start-table-of-main-oronyms-pre-nab-aye-rule
+>nab aye
 {$REJECT1}
 \\
 #testcase-check-pre-nah-phase-rule-if-player-is-not-in-naffhaze
@@ -624,7 +644,7 @@ You already opened the keep (iller)!
 \\
 >w
 \\
-#+testcase-check-pre-see-design-rule-if-pals-made-<-2
+#testcase-check-pre-see-design-rule-if-pals-made-<-2
 >see design
 You sort of want to see the hidden design, but you're sort of scared what will happen once you do. You feel like you need some support before you can give it your all.
 THINK
@@ -641,6 +661,7 @@ But you already replaced the short rail!
 
 @rej+
 >d
+\\
 #testcase-check-pre-were-meetin-rule-abide-by-the-followers-check-rule
 >were meetin
 THINK
@@ -706,9 +727,10 @@ You may be able to participate in a BAY SALE if you've found the right location 
 @rej
 >d
 \\
-#testcase-check-pre-were-meetin-rule-abide-by-the-followers-check-rule
+#+testcase-check-pre-were-meetin-rule-abide-by-the-followers-check-rule
 >were meetin
-You sense you don't have the full gang together! You may still be a way away.
+You sense you don't have the full gang together! You've made a start, and you like who you have, but you feel there's not enough variety yet.
+\\
 >u
 
 >w
@@ -729,7 +751,7 @@ THINK
 Perhaps there is a lot of good stuff beneath the manic herb, but you don't have the specialized knowledge to figure it out.
 THINK
 \\
-#testcase-check-pre-see-design-rule-if-pals-made-<-2
+#+testcase-check-pre-see-design-rule-if-pals-made-<-2
 >see design
 You sort of want to see the hidden design, but you're sort of scared what will happen once you do. The new troll can only help so much. You feel like you need some more support before you can give it your all.
 \\
@@ -954,7 +976,7 @@ You already found the mice and destroyed the stall!
 \\
 #testcase-check-pre-my-corps-rule-abide-by-the-followers-check-rule
 >my corps
-You sense you don't have the gang together! You may still be a way away.
+You sense you don't have the full gang together! You must be getting close, though.
 
 @rej+
 #testcase-think-table-of-main-oronyms-pre-low-door-rule
@@ -1010,7 +1032,8 @@ You already exposed the shady side here.
 @rej+
 #testcase-check-pre-bile-oh-rule-if-sco-summer-chant-is-false
 >bile oh
-You need to find something positive to say, first. It doesn't have to be particularly rigorous, but it needs to be positive.
+That should work, but you're a bit intimidated right now. You need a way to show your assailant "Ah, you're just some merchant" and not "Wow! You're SOME merchant!"
+It doesn't have to be particularly rigorous or sensible, but it has to deflect from their aggression.
 THINK
 \\
 #testcase-think-table-of-main-oronyms-pre-bile-oh-rule
@@ -1148,10 +1171,10 @@ THINK
 This isn't the right place to look for an isle. No large body of water nearby.
 THINK
 \\
->think
 #testcase-think-table-of-main-oronyms-pre-grow-vial-rule
 #testcase-think-table-of-main-oronyms-pre-war-file-rule
 #testcase-think-table-of-main-oronyms-pre-the-file-rule
+>think
 You may be able to make sense of THE FILE in Known Ocean once you've gotten enough information from companions.
 You may be able to recover the WAR FILE on the wharf isle in Known Ocean once you have something you can write down its main ideas in.
 You may be able to find a GROW VIAL with the right water transport.
@@ -1218,6 +1241,11 @@ You must have one word right for who the traitor was or can become.
 >gaunt raider
 by a point
 
+@rej
+#testcase-check-pre-were-meetin-rule-abide-by-the-followers-check-rule
+>were meetin
+You sense you don't have the full gang together! You must be getting close, though.
+
 >u
 
 >e
@@ -1241,7 +1269,7 @@ by a point
 >d
 \\
 >were meetin
-You sense you don't have the gang together! But you must be very, very close.
+You sense you don't have the full gang together! But you must be very, very close.
 \\
 #testcase-think-table-of-main-oronyms-pre-were-meetin-rule
 >think
@@ -1254,7 +1282,7 @@ You will be able to say WERE MEETIN once you have a full party available.
 @rej
 #testcase-check-pre-the-file-rule-if-number-of-still-chat-needed-followers->-0
 >the file
-You know there is THE FILE, but which file is THE FILE? The thief isle has probably stolen a lot! You need information from your companions, or maybe just more companions.
+You know there is THE FILE, but which file is THE FILE? The thief isle has probably stolen a lot, and it wouldn't do to hang around there guessing where to look! You need information from your companions, or maybe just more companions.
 \\
 #+testcase-think-table-of-main-oronyms-pre-war-file-rule
 >think
@@ -1280,13 +1308,13 @@ You must have one word right for who is on Wand Wharf.
 by a point
 
 @rej
-#testcase-check-pre-war-file-rule-if-sco-war-file-is-true
+#testcase-check-pre-war-file-rule-if-sco-war-file-is-true-and-player-has-flier
 >war file
 You already got the war file. See where else you can visit.
 \\
 #+testcase-check-pre-the-file-rule-if-number-of-still-chat-needed-followers->-0
 >the file
-You know there is THE FILE, but which file is THE FILE? The thief isle has probably stolen a lot! You need information from your companions.
+You know there is THE FILE, but which file is THE FILE? The thief isle has probably stolen a lot, and it wouldn't do to hang around there guessing where to look! You need information from your companions.
 \\
 #+testcase-think-table-of-main-oronyms-pre-the-file-rule
 >think
@@ -1335,7 +1363,7 @@ You must have one word right for what is on Grove Isle.
 by a point
 
 @rej
-#testcase-check-pre-grow-vial-rule-if-sco-grow-vial-is-true
+#testcase-check-pre-grow-vial-rule-if-sco-grow-vial-is-true-and-player-has-flier
 >grow vial
 You already got the grow vial. See where else you can visit.
 
@@ -1450,8 +1478,20 @@ THINK
 >think
 You can explain the grinch earls see the crude orc as a CREW DORK once they seem a bit less strong.
 \\
+#testcase-check-pre-ass-low-rule-if-aah-slow-is-not-in-brew-swears
+>ass low
+{$REJECT2}
+\\
 #testcase-check-pre-bastard-eee-rule-if-bah-sturdy-is-not-in-brew-swears
 >bastardy
+{$REJECT2}
+\\
+#testcase-check-pre-damn-peons-rule-if-damp-yawns-is-not-in-brew-swears
+>damn peons
+{$REJECT2}
+\\
+#testcase-check-pre-gah-wanker-rule-if-gawain-kerr-is-not-in-brew-swears
+>gah wanker
 {$REJECT2}
 \\
 #testcase-check-pre-heckle-ass-rule-if-heh-class-is-not-in-brew-swears
@@ -1949,6 +1989,10 @@ They're eager for the final step, to get out there. You look around. It's pretty
 You can think DO/DUE MEND/MENDING now you've disposed of the sea skull.
 
 @rej+
+#testcase-reject-end-table-of-main-oronyms-pre-ass-low-rule
+>ass low
+{$REJECT2}
+\\
 #testcase-reject-end-table-of-main-oronyms-pre-bastard-eee-rule
 >bastard eee
 {$REJECT2}
@@ -1975,6 +2019,14 @@ You can think DO/DUE MEND/MENDING now you've disposed of the sea skull.
 \\
 #testcase-reject-end-table-of-main-oronyms-pre-crew-dork-rule
 >crew dork
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-damn-peons-rule
+>damn peons
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-gah-wanker-rule
+>gah wanker
 {$REJECT2}
 \\
 #testcase-reject-end-table-of-main-oronyms-pre-gaunt-raider-rule
@@ -2047,6 +2099,10 @@ You can think DO/DUE MEND/MENDING now you've disposed of the sea skull.
 \\
 #testcase-reject-end-table-of-main-oronyms-pre-mice-tall-rule
 >mice tall
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-main-oronyms-pre-nab-aye-rule
+>nab aye
 {$REJECT2}
 \\
 #testcase-reject-end-table-of-main-oronyms-pre-nah-phase-rule

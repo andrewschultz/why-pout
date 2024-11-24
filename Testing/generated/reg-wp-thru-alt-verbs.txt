@@ -165,6 +165,7 @@ by a bonus point
 >crew dork
 by a bonus point
 
+#testcase-alt-words-table-of-main-oronyms-52-ass-low-lo
 >ass lo
 by a bonus point
 
@@ -398,7 +399,7 @@ by a point
 >wipe out
 by a point
 
-#testcase-alt-words-table-of-main-oronyms-47-do-due-mend-mending
+#testcase-alt-words-table-of-main-oronyms-48-do-due-mend-mending
 >due mending
 by a point
 

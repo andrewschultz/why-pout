@@ -21,6 +21,10 @@ Thanks to everyone past and future involved in the administration of IFComp.
 >credit
 Thanks to everyone past and future involved in the administration of IFComp.
 
+>hint
+Why Pout has no direct in-game hints. However, a walkthrough should be provided on itch.io or in the archive.org zip file bundle.
+After two puzzles in this first room, there will be a hint item that gives clues what to do or think next.
+
 >verbs
 Most point-scoring commands will consist of two words.
 
@@ -82,6 +86,19 @@ by a point
 You hear no thud in the din.
 Hard not to hear the cell phones, though.
 Whether or not the cell phones are the latest models, you don't want to pay attention to them too much. Just figure out a way for a harmless calamity that may make their users quiet down a bit.
+
+>hint
+Why Pout has no direct in-game hints. However, a walkthrough should be provided on itch.io or in the archive.org zip file bundle.
+You can EYE things with the sly size-slice eyes, or just EYE the whole room.
+
+##balance udnos
+>au 2
+>drop eyes
+Are you sure
+
+>hint
+Why Pout has no direct in-game hints. However, a walkthrough should be provided on itch.io or in the archive.org zip file bundle.
+You dropped the sly size-slice eyes, which were the main hint item. You'll have to restart to bring them back again.
 
 >t cell phones
 No, you don't want to get swept up in that.
