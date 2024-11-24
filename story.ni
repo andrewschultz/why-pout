@@ -177,7 +177,7 @@ Eh Raw Air Aww is a room in first-rooms. printed name is "[if sco-an-aim is fals
 
 chapter sly size slice eyes
 
-the sly size slice eyes are a plural-named hintthing. eyes-number of sly size slice eyes is 1. printed name is "sly size-slice eyes". drop-poke of slice eyes is "Are you sure you wish to drop [the noun]? They give a clue as to the length of any solution.". description is "The eyes shift around a lot, looking for stuff normal human eyes can't see. If you wish them to look at something, [b]EYE[r] it, or just [b]EYE[r] the room.". understand "eye" as eyes.
+the sly size slice eyes are a plural-named hintthing. eyes-number of sly size slice eyes is 1. printed name is "sly size-slice eyes". drop-poke of slice eyes is "Are you sure you wish to drop [the noun]? They give a clue as to the length of any solution.". description is "The eyes shift around a lot, looking for stuff normal human eyes can't see. If you wish them to look at something, [b]EYE[r] it, or just [b]EYE[r] the room. You can even [b]EYE[r] the eyes themselves to spell out precisely how they work.". understand "eye" as eyes.
 
 book Hype Lane
 
@@ -284,7 +284,7 @@ the gross tar is a thing. "Gross tar blocks the way [b]NORTH[r] into darkness.".
 
 chapter keep iller
 
-the keep iller is a thing. "A keep, iller, rises to the [b]WEST[r][if sco-key-pillar is false], but you see no way in[else], and you figured how to enter it[end if].". description is "It [if keepiller is visited]wasn't[else]doesn't look[end if] dangerous, but then, it's not exactly a tourist attraction. Still, [if keep-score < 6]there's plenty to do there[else]it helped you a lot[end if].". eyes-number of keep iller is 36. printed name is "keep, iller". eyes-rule of keep iller is the pre-key-pillar rule.
+the keep iller is a thing. "A keep, iller, rises to the [b]WEST[r][if sco-key-pillar is false], but you see no way in[else], and you figured how to enter it[end if].". description is "It [if keepiller is visited]wasn't[else]doesn't look[end if] dangerous, but then, it's not exactly a tourist attraction. Still, [if keepiller is unvisited]there's probably a lot to do there, since it takes up a lot of space to the west[else if keep-score < 6]you've seen there's plenty to do there[else]it helped you a lot[end if].". eyes-number of keep iller is 36. printed name is "keep, iller". eyes-rule of keep iller is the pre-key-pillar rule.
 
 check entering keep iller:
 	if sco-key-pillar is false, say "You will enter the keep to the west, once you find a way. But you haven't, yet." instead;
@@ -447,9 +447,13 @@ check going outside in We Loan:
 
 chapter some merchant
 
-some merchant is a singular-named hostile sentient. "Some merchant babbles on, all up in your personal space, suggesting you buy low[if sco-summer-chant is true], but a bit more tolerable now you've got a mantra to zone them out[end if].". description is "Their smile certainly is fake. They're not going to shut up until you get a resolution here.". eyes-number of merchant is 65. [indefinite article of merchant is "some".] eyes-rule of some merchant is the pre-summer-chant rule.
+some merchant is a singular-named hostile sentient. "Some merchant babbles on, all up in your personal space, suggesting you buy low[if sco-summer-chant is true], but a bit more tolerable now you've got a mantra to zone them out.[else]. You find yourself thinking 'Man, SOME merchant,' yet looking for a way to think, 'pfft, some merchant.'[end if]". description is "Their smile certainly is fake. They're not going to shut up until you get a resolution here.". eyes-number of merchant is 65. [indefinite article of merchant is "some".] eyes-rule of some merchant is the pre-summer-chant rule.
 
-check going outside in we loan when merchant is in we loan: say "Alas, the merchant's magnetism is too strong." instead;
+report examining merchant when sco-summer-chant is false:
+	say "It strikes you you don't see them as [i]a[r] merchant, or [i]the[r] merchant, but [i]some[r] merchant.";
+	continue the action;
+
+check going outside in we loan when merchant is in we loan: say "Alas, that merchant is some merchant, able to capture your attention as you want to pull away.[paragraph break]You'll have to deal with the merchant, uhh, some merchant, sometime, anyway." instead;
 
 chapter oaf liar
 
@@ -486,10 +490,11 @@ report examining the flier:
 
 book Lobe End
 
-Lobe End is a room in universal. "[if sco-low-bend is false]This lobe of land appears to fall off steeply in all directions except back west. Maybe you could look for something that might be a hill, even a steep one.[else]The low bend (former lobe end) now bends from west to north, where you see water, too much to cross on foot[raft-clue].[end if]". printed name is "[if sco-low-bend is true]Low Bend[else]Lobe End[end if]". eyes-number of lobe end is 34. eyes-rule of lobe end is the pre-low-bend rule.
+Lobe End is a room in universal. "[if sco-low-bend is false]This lobe of land appears to fall off steeply in all directions except back west. Maybe you could look for something that might be a hill, even a steep one.[else]The low bend (former lobe end) now bends from west to north, where there's too much water to pass on foot[raft-clue].[end if]". printed name is "[if sco-low-bend is true]Low Bend[else]Lobe End[end if]". eyes-number of lobe end is 34. eyes-rule of lobe end is the pre-low-bend rule.
 
 to say raft-clue:
-	if sco-bay-sale is false, say ". Well, nobody's probably going to give you transport north for free. Maybe you can summon or find someone who will"
+	if sco-bay-sale is false:
+		say ". So maybe you could get across, with transport. Maybe you can summon or find someone who can offer it, as well a way to pay"
 
 check going north in lobe end when sco-low-bend is true and sco-bay-sale is false: say "You have no way across the water, yet." instead;
 
@@ -501,7 +506,10 @@ the We Craft Weak Raft is a thing. printed name is "We-Craft Weak Raft". descrip
 
 check going:
 	if ((room gone from is lobe end) and (room gone to is storm isle)) or ((room gone to is lobe end) and (room gone from is storm isle)):
-		say "You[if pals-made is 1] and [the random friendly follower][else if pals-made > 1] and your [pals-made in words] companions[else][end if] make it across the water without incident.";
+		if storm isle is unvisited:
+			say "You poke at [the raft] one last time before braving the water, which isn't too deep or too active, but then, you aren't an expert at this.[paragraph break]It's all so smooth. It's not until you cross you realize you won't need to seek a new sea-canoe.";
+		else:
+			say "You[if pals-made is 1] and [the random friendly follower][else if pals-made > 1] and your [pals-made in words] companions[else][end if] again make it across the water without incident on your raft.";
 		move raft to room gone to;
 
 book Storm Isle
