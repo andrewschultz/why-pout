@@ -2164,6 +2164,14 @@ There's that occasional voice ringing in your head asking "Why pout?" Well, it's
 !You still have
 !left from helping the sick squid.
 You have a name, too, now, you remember: Mike Orr.
+!wharf isle
+
+@li+
+>x flier
+You haven't found a way to get to any of the islands yet.
+\\
+>i
+  a flier (grove isle / thief isle / wharf isle still to visit)
 
 @li+
 >l
@@ -2406,7 +2414,7 @@ There's that occasional voice ringing in your head asking "Why pout?" Well, it's
 "Good! Some goods, umm...":
   a grow vial
   some manna
-  a flier
+  a flier (thief isle / wharf isle still to visit)
   a knife (right)
   a plan tracker (with no ideas yet)
   a war pawn
@@ -2463,6 +2471,7 @@ The eyes light up yellow and show three dots, then four dots.
 @li
 >i
   a plan tracker (full of ideas)
+  a flier (thief isle still to visit)
 
 @li+
 >l

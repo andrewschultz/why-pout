@@ -503,6 +503,13 @@ There's that occasional voice ringing in your head asking "Why pout?" Well, it's
 !You still have
 !left from helping the sick squid.
 You have a name, too, now, you remember: Mike Orr.
+!wharf isle
+
+>x flier
+You haven't found a way to get to any of the islands yet.
+
+>i
+  a flier (grove isle / thief isle / wharf isle still to visit)
 
 >l
 It's fully calm and peaceful around here. You've managed to navigate negotiations and wind up with ... a shiny new flier! What more could you ask for? Here, well, probably nothing. Time to get back to your companions.
@@ -594,7 +601,7 @@ There's that occasional voice ringing in your head asking "Why pout?" Well, it's
 "Good! Some goods, umm...":
   a grow vial
   some manna
-  a flier
+  a flier (thief isle / wharf isle still to visit)
   a knife (right)
   a plan tracker (with no ideas yet)
   a war pawn
@@ -619,6 +626,7 @@ by a point
 
 >i
   a plan tracker (full of ideas)
+  a flier (thief isle still to visit)
 
 >l
 You rode the squid here, and there are all sorts of magical symbols here. It's a bit intimidating for someone like you who is clueless about magic. Maybe it's intimidating and depressing for someone else, and maybe you can more than commiserate.

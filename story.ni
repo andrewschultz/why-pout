@@ -475,6 +475,7 @@ check eyeing flier when flier-isle-score < 2:
 	say "Weird. The flier seems to blink between three and four dots on the left, but it's stable at four dots on the right. The dots [if rb-out is ready outcome]do not [end if]blink." instead;
 
 report examining the flier:
+	now gs-examined-flier is true;
 	if flier-isle-score is 0:
 		say "You haven't found a way to get to any of the islands yet.";
 	else if flier-isle-score is 1:
@@ -991,6 +992,22 @@ check noteating (this is the modified eating rule):
 	say "[if sco-treat-all is true]You already ate the only thing you needed to[else]If you need to eat anything, it requires a slightly different approach[end if]." instead;
 
 chapter inventory
+
+after printing the name of flier when taking inventory:
+	if gs-examined-flier is false, continue the action;
+	say " (";
+	let slash be false;
+	if sco-grow-vial is false:
+		say "grove isle";
+		now slash is true;
+	if sco-the-file is false:
+		say "[if slash is true] / [end if]thief isle";
+		now slash is true;
+	if sco-war-file is false:
+		say "[if slash is true] / [end if]wharf isle";
+		now slash is true;
+	say " still to visit)";
+	continue the action;
 
 check taking inventory:
 	if sco-wipe-out is true, continue the action;
