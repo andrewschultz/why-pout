@@ -294,6 +294,15 @@ Spoonerism and Oronym Core version 1/240717 by Andrew Schultz
 >eat cell
 The talk itself gives you indigestion.
 
+@alt
+>x phones
+Whether or not the cell phones are the latest models, you don't want to pay attention to them too much. Just figure out a way for a harmless calamity that may make their users quiet down a bit.
+!It's more
+\\
+>x chatter
+Whether or not the cell phones are the latest models, you don't want to pay attention to them too much. Just figure out a way for a harmless calamity that may make their users quiet down a bit.
+It's more the cell phones you need to focus on. They're what's making the chatter extra distracting.
+
 >self owns
 by a point
 
@@ -520,6 +529,15 @@ You're too self-conscious for self-talk, being policed and all.
 @hint
 >eye
 The eyes light up green and show four dots, then four dots.
+
+@alt
+>x feeling
+It just feels like you could escape it, if you found something somewhere, or some direction.
+It's more the being policed to focus on. You have lots of feelings that come and go.
+\\
+>x policed
+It just feels like you could escape it, if you found something somewhere, or some direction.
+!It's more
 
 >pole east
 by a point

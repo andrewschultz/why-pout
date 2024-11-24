@@ -142,6 +142,7 @@ this is the post-pole-east rule:
 	say "Ah, yes. It makes sense. You find the pole. Strangely, there's just a single switch to flip. And even more strangely, the switch you flip causes the pole to revert into the ground. Yay![paragraph break]But there's more! A war pawn, like a chess piece, rolls into view. It looks pretty powerful. As you take it, you reflect that you may wish to save it for down the road when you're really stuck somewhere. You have a good idea HOW to use it, at any rate.";
 	say "[line break][i][bracket][b]NOTE[r][i]: the war pawn is a one-use item, with [b]UNDO[r][i] is disabled for it. You can save before using it, and I won't judge. I've done so before, too, but I don't want to make it too powerful.[close bracket][r][line break]";
 	now player has war pawn;
+	moot policed feeling;
 	reveal Lobe End to east;
 	declue-here;
 	check-worm-eaten;
@@ -468,6 +469,7 @@ this is the post-nah-phase rule:
 	try looking; [pole east is implicitly moved that way]
 	now eyes-number of NaffHaze is 44; [pole east]
 	now eyes-rule of naffhaze is the pre-pole-east rule;
+	move policed feeling to NaffHaze;
 
 a wordtwisting rule (this is the pre-key-pillar rule):
 	if player is not in NaffHaze, unavailable;

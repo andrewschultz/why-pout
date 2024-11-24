@@ -12,6 +12,12 @@ chapter hype lane
 
 understand "ace talk" as a mistake ("All ace talk you have made and will make come from within. Besides, you need to use the stalk to find a way out.") when player has stalk.
 
+chapter naff haze
+
+understand "po leased" and "poe leased" and "poor leased" as a mistake ("Real estate is not involved here.") when player is in NaffHaze.
+
+understand "po least" and "poe least" and "poor least" as a mistake ("It's not feelings of inadequacy you need to resolve. You need to find something.") when player is in NaffHaze.
+
 chapter we loan
 
 understand "babylon" as a mistake ("It's a bit beyond your power to whisk someone who'll babble on back to Babylon, but I must salute your clever try! I missed it, but a tester saw it.") when merchant is touchable.

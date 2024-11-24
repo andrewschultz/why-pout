@@ -186,6 +186,11 @@ chapter cell phones
 
 the cell phones are a plural-named sentient in hype lane. understand "phone" and "cell phone" as cell phones. "You don't remember everything about your former self, but you remember you hated cell phones and how they distracted you. Maybe if the people yacking into them were taken down a peg, you could focus a bit more. Dang cell phones.". description is "Whether or not the cell phones are the latest models, you don't want to pay attention to them too much. Just figure out a way for a harmless calamity that may make their users quiet down a bit.". eyes-number of cell phones is 44. eyes-rule of cell phones is the pre-self-owns rule.
 
+understand "chatter" as cell phones.
+
+every turn when noun is cell phones:
+	if the player's command includes "chatter", say "It's more the cell phones you need to focus on. They're what's making the chatter extra distracting.";
+
 chapter prize talk
 
 the prize talk is a hostile sentient. "[if sco-pry-stalk is false]You'd like to DO something about the prize talk. Or seek out something that would give you passage away from it[else]The prize talk is all around, but you're able to ignore it, now you feel you might have a way out[end if].". description is "[if sco-pry-stalk is false]The prize talk also discusses things that aren't so worth it, like -- well, plants and stuff. BORING[else]You can see your way around the prize talk now. You don't want to get sucked back in[end if].". eyes-number of prize talk is 35. eyes-rule of prize talk is the pre-pry-stalk rule.
@@ -246,6 +251,15 @@ check going inside in NaffHaze:
 check going north in NaffHaze when sco-grow-star is false and sco-nah-phase is true: say "The gross tar is in the way right now." instead;
 
 check going west in NaffHaze when sco-key-pillar is false and sco-nah-phase is true: say "The keep (iller) is locked. You will need to find the key." instead;
+
+chapter policed feeling
+
+the policed feeling is scenery. "It just feels like you could escape it, if you found something somewhere, or some direction.". eyes-number of policed feeling is 44. eyes-rule of policed feeling is pre-pole-east rule.
+
+check eyeing the policed feeling: say "Strangely, though it's incorporeal, you get readings...";
+
+every turn when noun is policed feeling:
+	if the player's command includes "feeling", say "It's more the being policed to focus on. You have lots of feelings that come and go."
 
 chapter war pawn
 
