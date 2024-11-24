@@ -1214,6 +1214,8 @@ the tall cake is a thing. description is "Wonderful. Can probably serve six or s
 book taking
 
 check taking:
+	if noun is row gold, say "That's greedy." instead;
+	if noun is tree small or noun is tree tall, say "Don't undo your beautifying!" instead;
 	if player does not have noun, say "Everything you need will be implicitly taken in [this-game]." instead;
 
 book waiting
@@ -1221,6 +1223,14 @@ book waiting
 check waiting:
 	if number of friendly followers > 0, say "You wait, aware too much 'we're staying' would prompt 'worst, eh'-ing." instead;
 	say "Ideally I-D-L-E!" instead;
+
+book wearing
+
+the can't wear what's not clothing rule is not listed in any rulebook.
+
+check wearing:
+	if noun is frock, say "Too small for you." instead;
+	say "Anything you come across that you need to wear will be worn automatically." instead;
 
 volume cheating
 
