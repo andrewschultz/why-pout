@@ -96,7 +96,7 @@ understand the command "wipe" as something new.
 
 check thinking (this is the right phrase wrong time rule):
 	let got-think be false;
-	say "You try and think of stuff you tried, but the time wasn't quite right.[paragraph break]";
+	say "You try and think of stuff you tried, but the time wasn't quite right, or maybe you only figured it half-way.[paragraph break]";
 	repeat through table of main oronyms:
 		if think-cue entry is true:
 			now got-think is true;
@@ -539,7 +539,7 @@ after printing the locale description for Storm Isle when gs-got-weapons is fals
 
 book Trees Mall
 
-Trees Mall is a room in universal. "This is a withered, run-down former mall that had the ceiling blow off. It's walled with pictures of large, but fake, trees. You can only go back [b]SOUTH[r].". eyes-number of trees mall is 45. eyes-rule of trees mall is the pre-tree-small rule.
+Trees Mall is a room in universal. "This is a withered, run-down former mall that had the ceiling blow off. A long old lawn, gold, is depicted here on crumbling walls and fails to give a semblance of nature. You can only go back [b]SOUTH[r].". eyes-number of trees mall is 45. eyes-rule of trees mall is the pre-tree-small rule.
 
 to grow-the-tree:
 	if player has grow vial and tree small is in Trees Mall:
@@ -699,7 +699,7 @@ volume endgame or endgame-ish rooms
 
 book Worm Eaten
 
-Worm Eaten is a room in universal. printed name is "[if sco-were-meetin is false]Worm-Eaten[else]We're Meetin[']![end if]". "[if sco-were-meetin is false]This place seems very run-down. But it feels homey and inspires camaraderie in an odd way[else]Having had your meeting here, there's not much else to do[end if].". eyes-number of worm eaten is 46. eyes-rule of worm eaten is the pre-were-meetin rule.
+Worm Eaten is a room in universal. printed name is "[if sco-my-corps is true]A Play-[']Er-Up Lair[else if sco-were-meetin is false]Worm-Eaten[else]We're Meetin[']![end if]". "[if sco-were-meetin is false]This place seems very run-down. But it feels homey and inspires camaraderie in an odd way[else]Having had your meeting here, there's not much else to do[end if].". eyes-number of worm eaten is 46. eyes-rule of worm eaten is the pre-were-meetin rule.
 
 after printing the locale description of Worm Eaten when sco-were-meetin is true and sco-my-corps is false:
 	say "[line break]You feel like your companions are just about ready to go. But you still need to say something, something that can only come uniquely inside of you, to establish what a great team you are.";
@@ -802,9 +802,9 @@ understand "credit" as creditsing.
 understand "credits" as creditsing.
 
 carry out creditsing:
-	say "Thanks to Michael Baltes, Clem Bing-Storrs, Wade Clarke, Hanon Ondricek, P. B. Parjeter, Fred Snyder, and Daniel Stelzer for testing. They found stuff I just didn't have the time to find, or stuff I convinced myself I'd checked, honest I did, or even broke down cases for stuff where I was muddled and not sure how to test stuff. Oh and they inspired several ideas, too. It's always hard to ask someone for their time and energy, but I appreciate it so much![paragraph break]Michael, Fred and Daniel had IFComp [']24 entries as well, and I always appreciate being able to trade testing with a fellow competitor, so it doesn't feel cutthroat.";
+	say "Thanks to Michael Baltes, Clem Bing-Storrs, Wade Clarke (who also tested post-release,) Hanon Ondricek, P. B. Parjeter, Fred Snyder, and Daniel Stelzer for testing. They found stuff I just didn't have the time to find, or stuff I convinced myself I'd checked, honest I did, or even broke down cases for stuff where I was muddled and not sure how to test stuff. Oh and they inspired several ideas, too. It's always hard to ask someone for their time and energy, but I appreciate it so much![paragraph break]Michael, Fred and Daniel had IFComp [']24 entries as well, and I always appreciate being able to trade testing with a fellow competitor, so it doesn't feel cutthroat.";
 	say "[line break]B. J. Best and Arthur DiBianca (he is also in IFComp [']24,) who've written a lot of good stuff, both found bugs within two hours of IFComp starting. So thanks to them!";
-	say "[line break]Viv Dunstan, yet another fellow IFComp [']24 author, found some nontrivial bugs I fixed mid-comp.";
+	say "[line break]Viv Dunstan, yet another fellow IFComp [']24 author, found some nontrivial bugs I fixed mid-comp and suggested a more granular approach to [b]THINK[r], implemented post-comp.";
 	say "[line break]DemonApologist, who wrote reviews for all IFComp [']24[']s entries, and Wolfbiter, who also ran the gauntlet, found nontrivial bugs, too.";
 	say "[line break]Tabitha found several bugs in post-comp versions which were a great catalyst for putting releases out quickly.";
 	say "[line break]The cover art is my fault, and my fault alone.";
@@ -961,7 +961,7 @@ chapter attacking extra stuff
 
 check attacking a follower:
 	if noun is not friendly, say "But you want [the noun] on your side eventually, so, no." instead;
-	if player is in doom ending, say "A heel turn now? Why, you should be exiled to the grim thug rim." instead;
+	if player is in doom ending, say "A soul dark-sold arc now? Why, you should be exiled to the grim thug rim." instead;
 	if noun is mice, say "Even if they weren't friendly, you'd think 'My! Stuff mice? Tough...'" instead;
 	say "You lack the resolve, thankfully, for me-now-mean-OW nonsense." instead;
 
