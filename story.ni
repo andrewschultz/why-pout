@@ -1043,7 +1043,7 @@ report taking inventory when sco-six-quid is true and current-quid > 0:
 	continue the action;
 
 report taking inventory when sco-my-corps is false and sco-an-aim is true:
-	say "You have a name, too, now, you remember: Mike Orr. [if pre-my-corps rule is not guessed-yet]Maybe you will find something special about it some day[else]Perhaps you will prove your leadership, [corps-note][end if].";
+	say "[if sco-nah-phase is true]Also, you almost forgot you forgot your name, Mike Orr, at first[else]You have a name, too, now, you remember: Mike Orr[end if]. [if pre-my-corps rule is not guessed-yet]Maybe you will find something special about it some day[else]Perhaps you will prove your leadership, [corps-note][end if].";
 	continue the action;
 
 to say corps-note:

@@ -81,7 +81,7 @@ A war pawn, like a chess piece, rolls into view. It looks pretty powerful. As yo
 There's that occasional voice ringing in your head asking "Why pout?" Well, you're feeling a bit alone, but there's always the prospect of finding stuff...
 "Good! Some goods, umm...":
   a war pawn
-You have a name, too, now, you remember: Mike Orr.
+Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will find something special about it some day.
 
 >l
 !You feel policed here.
@@ -172,7 +172,7 @@ There's that occasional voice ringing in your head asking "Why pout?" Well, you'
   a wool frock
   a war pawn
 You have six quid from helping the sick squid.
-You have a name, too, now, you remember: Mike Orr.
+Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will find something special about it some day.
 
 >hide out
 by a point
@@ -198,7 +198,7 @@ There's that occasional voice ringing in your head asking "Why pout?" It's a bit
   a wool frock
   a war pawn
 You have six quid from helping the sick squid.
-You have a name, too, now, you remember: Mike Orr.
+Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will find something special about it some day.
 
 >u
 
@@ -216,7 +216,7 @@ There's that occasional voice ringing in your head asking "Why pout?" Well, it's
   a war pawn
 !a wool frock
 You have six quid from helping the sick squid.
-You have a name, too, now, you remember: Mike Orr.
+Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will find something special about it some day.
 
 >l
 !no mold
@@ -246,7 +246,7 @@ There's that occasional voice ringing in your head asking "Why pout?" Well, it's
   some Base Ale
   a war pawn
 You still have three quid left from helping the sick squid.
-You have a name, too, now, you remember: Mike Orr.
+Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will find something special about it some day.
 
 >l
 That seedy sign stands off to the side here. It's no longer scary, but you don't wish to bother with it, any more.
@@ -395,7 +395,7 @@ There's that occasional voice ringing in your head asking "Why pout?" Well, it's
   a war pawn
 !Base Ale
 You still have one quid left from helping the sick squid.
-You have a name, too, now, you remember: Mike Orr.
+Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will find something special about it some day.
 
 >l
 Fortunately, the We-Craft Weak Raft from the bay sale floats here, ready to take you north across the water and back, as many times as needed.
@@ -502,7 +502,7 @@ There's that occasional voice ringing in your head asking "Why pout?" Well, it's
   a war pawn
 !You still have
 !left from helping the sick squid.
-You have a name, too, now, you remember: Mike Orr.
+Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will find something special about it some day.
 !wharf isle
 
 >x flier
@@ -530,14 +530,14 @@ There's that occasional voice ringing in your head asking "Why pout?" Well, it's
 "Good! Some goods, umm...":
   a plan tracker (with no ideas yet)
   a war pawn
-You have a name, too, now, you remember: Mike Orr.
+Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will find something special about it some day.
 
 INVENTORY CHANGED
 There's that occasional voice ringing in your head asking "Why pout?" Well, it's gotten very hard to pout, with multiple companions.
 "Good! Some goods, umm...":
   a plan tracker (with no ideas yet)
   a war pawn
-You have a name, too, now, you remember: Mike Orr.
+Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will find something special about it some day.
 
 >l
 !plant racker
@@ -553,7 +553,7 @@ There's that occasional voice ringing in your head asking "Why pout?" Well, it's
   a knife (right)
   a plan tracker (with no ideas yet)
   a war pawn
-You have a name, too, now, you remember: Mike Orr.
+Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will find something special about it some day.
 
 >l
 There's a bunch of manic herb here the mensch elf sifted through.
@@ -605,7 +605,7 @@ There's that occasional voice ringing in your head asking "Why pout?" Well, it's
   a knife (right)
   a plan tracker (with no ideas yet)
   a war pawn
-You have a name, too, now, you remember: Mike Orr.
+Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will find something special about it some day.
 
 #testcase-isledescription-1-without-guess
 >l
@@ -667,7 +667,7 @@ There's that occasional voice ringing in your head asking "Why pout?" Well, it's
   a plan tracker (full of ideas)
   a war pawn
 !/^..a grow vial
-You have a name, too, now, you remember: Mike Orr.
+Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will find something special about it some day.
 
 >l
 This is a withered, run-down former mall that had the ceiling blow off. It's walled with pictures of large, but fake, trees. You can only go back SOUTH.
@@ -696,7 +696,7 @@ There's that occasional voice ringing in your head asking "Why pout?" Well, it's
   a knife (right)
   a plan tracker (full of ideas)
   a war pawn
-You have a name, too, now, you remember: Mike Orr.
+Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will find something special about it some day.
 Oh, man. You still have that talk-ache, too.
 
 >t orc
@@ -713,7 +713,7 @@ There's that occasional voice ringing in your head asking "Why pout?" Well, it's
   a plan tracker (full of ideas)
   a war pawn
 !some manna
-You have a name, too, now, you remember: Mike Orr.
+Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will find something special about it some day.
 !Oh, man. You still have that talk-ache, too.
 
 >treat all
@@ -727,7 +727,7 @@ There's that occasional voice ringing in your head asking "Why pout?" Well, it's
 !/  a knife /(right/)
   a plan tracker (full of ideas)
   a war pawn
-You have a name, too, now, you remember: Mike Orr.
+Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will find something special about it some day.
 
 >s
 
@@ -749,7 +749,7 @@ There's that occasional voice ringing in your head asking "Why pout?" Well, it's
 !  a flier
   a plan tracker (full of ideas)
   a war pawn
-You have a name, too, now, you remember: Mike Orr.
+Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will find something special about it some day.
 
 #testcase-isledescription-3-without-guess
 #testcase-isledescription-3-with-guess
@@ -777,6 +777,8 @@ You feel like your companions are just about ready to go. But you still need to 
 
 >my corps
 by a point
+
+!Mike Orr
 
 #now you know your name this doesn't nag you
 >i

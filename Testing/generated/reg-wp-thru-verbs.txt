@@ -1,7 +1,7 @@
 ## reg-wp-thru-verbs.txt
 ## GENERATOR FILE: rbr-wp-thru.txt
 
-## special verb testing inventory and room description changes
+## special verb testing
 
 ** game: /home/andrew/prt/debug-why-pout.z8
 ** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
