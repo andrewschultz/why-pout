@@ -16,6 +16,8 @@ file=reg-wp-think-partright.txt,part,walkthrough with partially right guesses
 #--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
 #--strict-file: this says that the project requires strict section marking e.g. @all instead of ==t1.
 
+}$MUSTONE=You must have one word right for blah blah blah.
+}$ONEWORD=A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 }$REJECT2=That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
 ## *FILE
@@ -324,9 +326,17 @@ THINK
 {$REJECT1}
 
 @part
-#testcase-one-wrong-an-aim
->xx aim
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+#testcase-one-wrong-table-of-main-oronyms-1-aim
+>xxx aim
+{$ONEWORD}
+\\
+>think
+An inner voice says "Fry! Twist!" You feel fright, wist. It's hard not to, since you don't have a name or a purpose. For some reason, you're focused on getting a name, but you've got this nagging feeling that's not quite it.
+Perhaps if you press a bit more, some thoughts may come out.
+\\
+#testcase-one-wrong-table-of-main-oronyms-1-an
+>xxx an
+{$ONEWORD}
 \\
 >think
 An inner voice says "Fry! Twist!" You feel fright, wist. It's hard not to, since you don't have a name or a purpose. For some reason, you're focused on getting a name, but you've got this nagging feeling that's not quite it.
@@ -357,8 +367,8 @@ You already found a name and an aim!
 
 @part
 ##balance undos
->wipe xx
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>wipe xxx
+{$ONEWORD}
 >think
 You must have one word right for how to do something generally awesome down the road.
 \\
@@ -366,9 +376,19 @@ You must have one word right for how to do something generally awesome down the 
 >undo
 
 @part+
-#testcase-one-wrong-two-maps
->xx maps
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+#testcase-one-wrong-table-of-main-oronyms-2-maps
+>xxx maps
+{$ONEWORD}
+\\
+>think
+You must have one word right for anything documenting a way out.
+\\
+>undo
+>undo
+\\
+#testcase-one-wrong-table-of-main-oronyms-2-two
+>two xxx
+{$ONEWORD}
 \\
 >think
 You must have one word right for anything documenting a way out.
@@ -395,9 +415,19 @@ Hmph. That still doesn't quite work! You'll figure out the how and when and wher
 You can find a HIGH PLAIN once you have something that can reach that far up.
 
 @part
-#testcase-one-wrong-self-owns
->xx owns
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+#testcase-one-wrong-table-of-main-oronyms-3-owns
+>xxx owns
+{$ONEWORD}
+\\
+>think
+You must have one word right for what to do with the cell phones.
+\\
+>undo
+>undo
+\\
+#testcase-one-wrong-table-of-main-oronyms-3-self
+>self xxx
+{$ONEWORD}
 \\
 >think
 You must have one word right for what to do with the cell phones.
@@ -411,9 +441,19 @@ by a point
 The prize talk has you distracted. It's got a point: you need to find something to get where you want. What's the something? You know where you want to get, the high plain/plane.
 
 @part
-#testcase-one-wrong-pry-stalk
->xx stalk
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+#testcase-one-wrong-table-of-main-oronyms-4-pry
+>pry xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for something physical amidst the prize talk.
+\\
+>undo
+>undo
+\\
+#testcase-one-wrong-table-of-main-oronyms-4-stalk
+>xxx stalk
+{$ONEWORD}
 \\
 >think
 You must have one word right for something physical amidst the prize talk.
@@ -436,7 +476,7 @@ You can find a HIGH PLAIN now you have something that can reach that far up.
 #I used High Plain since it had homonyms for both words
 #
 ##balance undo
->hi xx
+>hi xxx
 Hmm. That kind of partway SOUNDED like it should work, but it didn't.
 #s-0
 >think
@@ -444,7 +484,7 @@ You must be close with one word for where to go from Hype Lane.
 \\
 >undo
 \\
->xx playin
+>xxx playin
 Hmm. That kind of partway SOUNDED like it should work, but it didn't.
 #s-s
 >think
@@ -453,8 +493,8 @@ You must be close with both words for where to go from Hype Lane.
 >undo
 >undo
 \\
->xx plane
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx plane
+{$ONEWORD}
 \\
 #s-e
 >think
@@ -466,15 +506,15 @@ You must have one word right and one word close for where to go from Hype Lane.
 
 @part+
 ##balance undo
->high xx
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>high xxx
+{$ONEWORD}
 #e-0
 >think
 You must have one word right for where to go from Hype Lane.
 \\
 >undo
 \\
->xx playin
+>xxx playin
 Hmm. That kind of partway SOUNDED like it should work, but it didn't.
 #e-s
 >think
@@ -483,8 +523,8 @@ You must have one word right and one word close for where to go from Hype Lane.
 >undo
 >undo
 \\
->xx plane
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx plane
+{$ONEWORD}
 \\
 #e-e
 >think
@@ -496,7 +536,7 @@ You feel you've got the words right on separate occasions for where to go from H
 
 @part+
 ##balance undo
->xx playin
+>xxx playin
 Hmm. That kind of partway SOUNDED like it should work, but it didn't.
 #0-s
 >think
@@ -505,8 +545,8 @@ You must be close with one word for where to go from Hype Lane.
 >undo
 >undo
 \\
->xx plane
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx plane
+{$ONEWORD}
 \\
 #0-e
 >think
@@ -517,14 +557,14 @@ You must have one word right for where to go from Hype Lane.
 
 @part+
 ##balance undo
->hi xx
+>hi xxx
 Hmm. That kind of partway SOUNDED like it should work, but it didn't.
 \\
 >think
 You must be close with one word for where to go from Hype Lane.
 \\
->high xx
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>high xxx
+{$ONEWORD}
 \\
 >think
 You must have one word right for where to go from Hype Lane.
@@ -534,14 +574,14 @@ You must have one word right for where to go from Hype Lane.
 >undo
 >undo
 \\
->xx playin
+>xxx playin
 Hmm. That kind of partway SOUNDED like it should work, but it didn't.
 \\
 >think
 You must be close with one word for where to go from Hype Lane.
 \\
->xx plane
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx plane
+{$ONEWORD}
 \\
 >think
 You must have one word right for where to go from Hype Lane.
@@ -552,9 +592,22 @@ You must have one word right for where to go from Hype Lane.
 >undo
 
 @part+
-#testcase-one-wrong-high-plain
->xx plain
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+#testcase-one-wrong-table-of-main-oronyms-5-high
+>high xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for where to go from Hype Lane.
+\\
+>undo
+>undo
+\\
+#testcase-one-wrong-table-of-main-oronyms-5-plain-plane
+>xxx plane
+{$ONEWORD}
+\\
+>xxx plain
+{$ONEWORD}
 \\
 >think
 You must have one word right for where to go from Hype Lane.
@@ -584,12 +637,35 @@ by a point
 {$REJECT2}
 
 @part
-#testcase-one-wrong-nah-phase
->xx phase
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+#testcase-one-wrong-table-of-main-oronyms-6-nah-naah-naw-naa-na
+>nah xxx
+{$ONEWORD}
 \\
 >think
 You must have one word right for how to cut through the naff haze.
+\\
+>undo
+>undo
+\\
+#testcase-one-wrong-table-of-main-oronyms-6-phase
+>xxx phase
+{$ONEWORD}
+\\
+>think
+You must have one word right for how to cut through the naff haze.
+\\
+#+testcase-one-wrong-table-of-main-oronyms-6-nah-naah-naw-naa-na
+>naah xxx
+{$ONEWORD}
+\\
+>naw xxx
+{$ONEWORD}
+\\
+>naa xxx
+{$ONEWORD}
+\\
+>na xxx
+{$ONEWORD}
 
 >nah phase
 by a point
@@ -600,9 +676,22 @@ by a point
 You already dispelled the haze!
 
 @part
-#testcase-one-wrong-pole-east
->xx east
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+#testcase-one-wrong-table-of-main-oronyms-7-east
+>xxx east
+{$ONEWORD}
+\\
+>think
+You must have one word right for the source of your feeling policed.
+\\
+>undo
+>undo
+\\
+#testcase-one-wrong-table-of-main-oronyms-7-pole-pull
+>pole xxx
+{$ONEWORD}
+\\
+>pull xxx
+{$ONEWORD}
 \\
 >think
 You must have one word right for the source of your feeling policed.
@@ -616,12 +705,22 @@ by a point
 You already discovered how you were being policed!
 
 @part
-#testcase-one-wrong-grow-star
->xx star
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+#testcase-one-wrong-table-of-main-oronyms-8-grow
+>grow xxx
+{$ONEWORD}
 \\
 >think
-You must have one word right for making it beyond the gross tar.
+You must have one word right for this.
+\\
+>undo
+>undo
+\\
+#testcase-one-wrong-table-of-main-oronyms-8-star
+>xxx star
+{$ONEWORD}
+\\
+>think
+You must have one word right for this.
 
 >grow star
 by a point
@@ -632,12 +731,22 @@ by a point
 You already got rid of the tar!
 
 @part
-#testcase-one-wrong-key-pillar
->xx pillar
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+#testcase-one-wrong-table-of-main-oronyms-10-key
+>key xxx
+{$ONEWORD}
 \\
 >think
 You must have one word right for finding a way into the keep.
+\\
+>undo
+>undo
+\\
+#testcase-one-wrong-table-of-main-oronyms-10-pillar
+>xxx pillar
+{$ONEWORD}
+\\
+>think
+WRONG
 
 >key pillar
 by a point
@@ -655,6 +764,24 @@ You sort of want to see the hidden design, but you're sort of scared what will h
 THINK
 \\
 >e
+
+@part
+#testcase-one-wrong-table-of-main-oronyms-9-shore
+>shore xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for this.
+\\
+>undo
+>undo
+\\
+#testcase-one-wrong-table-of-main-oronyms-9-trail
+>xxx trail
+{$ONEWORD}
+\\
+>think
+You must have one word right for this.
 
 >shore trail
 by a point
@@ -687,8 +814,8 @@ THINK
 You may be able to find a LOW DOOR here once you have a companion or companions small enough to dig a bit better.
 
 @part
->xx hide
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx hide
+{$ONEWORD}
 >think
 You must have one word right for how to dispel your high doubt.
 
@@ -703,8 +830,8 @@ You already dispelled doubt and found the hideout!
 >d
 
 @part
->xx role
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx role
+{$ONEWORD}
 >think
 You must have one word right for a way to make the booze troll feel less awful.
 
@@ -780,8 +907,8 @@ You don't want to wipe out the friendship you made.
 >n
 
 @part
->xx frock
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx frock
+{$ONEWORD}
 >think
 You must have one word right for what is hidden in Wolf Rock.
 
@@ -831,10 +958,22 @@ You realize that, in order to participate in a bay sale for a bay sail, you need
 You can't make out what sort of body of water is here. Well, not yet.
 
 @part
->xx ocean
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+#testcase-one-wrong-table-of-main-oronyms-12-known
+>known xxx
+{$ONEWORD}
+\\
 >think
-You must have one word right for finding the surroundings here.
+{$MUSTONE}
+\\
+>undo
+>undo
+\\
+#testcase-one-wrong-table-of-main-oronyms-12-ocean
+>xxx ocean
+{$ONEWORD}
+\\
+>think
+{$MUSTONE}
 
 >known ocean
 by a point
@@ -849,10 +988,22 @@ But you already got a notion for the ocean. And you didn't even need a potion!
 There's water here, but it's much more than a bay.
 
 @part
->xx quid
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+#testcase-one-wrong-table-of-main-oronyms-13-quid
+>xxx quid
+{$ONEWORD}
+\\
 >think
-You must have one word right for discovering what ails the sick squid.
+You must have one word right for this.
+\\
+>undo
+>undo
+\\
+#testcase-one-wrong-table-of-main-oronyms-13-six
+>six xxx
+{$ONEWORD}
+\\
+>think
+You must have one word right for this.
 
 >six quid
 by a point
@@ -873,8 +1024,8 @@ You may be able to SEE DESIGN in Keep (Iller) once you have more support and are
 >e
 
 @part
->xx bend
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx bend
+{$ONEWORD}
 >think
 You must have one word right for a way to rearrange the landscape here.
 
@@ -887,8 +1038,8 @@ by a point
 You already found a low bend!
 
 @part
->xx sail
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx sail
+{$ONEWORD}
 >think
 You must have one word right for a way to repurpose the base ale.
 
@@ -907,8 +1058,8 @@ by a point
 {$REJECT2}
 
 @part
->xx mile
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx mile
+{$ONEWORD}
 >think
 You must have one word right for the storm isle's alternate nature.
 
@@ -937,8 +1088,8 @@ You may be able to locate the MICE TALL here once you have a companion with good
 >w
 
 @part
->xx old
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx old
+{$ONEWORD}
 >think
 You must have one word right for who has made sure there's no mold.
 
@@ -967,8 +1118,8 @@ You don't want to wipe out the friendships you made.
 >n
 
 @part
->xx tall
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx tall
+{$ONEWORD}
 >think
 You must have one word right for what's inside MY STALL.
 
@@ -996,8 +1147,8 @@ You may be able to find a LOW DOOR in Wolf Rock now you have a companion or comp
 >n
 
 @part
->xx door
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx door
+{$ONEWORD}
 >think
 You must have one word right for what the lode ore is hiding.
 
@@ -1022,8 +1173,8 @@ THINK
 {$REJECT2}
 
 @part
->xx own
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx own
+{$ONEWORD}
 >think
 You must have one word right for the sinister meaning behind We'll Own.
 
@@ -1057,8 +1208,8 @@ You can't enjoy solitude with that merchant around.
 You may be able to enjoy your solitude with WHEE LONE here once you actually have solitude.
 
 @part
->xx chant
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx chant
+{$ONEWORD}
 >think
 You must have one word right for a way to zone some merchant out.
 
@@ -1075,8 +1226,8 @@ You already found cheeriness outside of the merchant!
 You may be able to expose some merchant's BILE OH now you've found something positive to say to prep yourself.
 
 @part
->xx oh
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx oh
+{$ONEWORD}
 >think
 You must have one word right for a way to counter the buy-low rhetoric.
 
@@ -1089,8 +1240,8 @@ by a point
 You may be able to enjoy your solitude with WHEE LONE here now you actually have solitude.
 
 @part
->xx lone
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx lone
+{$ONEWORD}
 >think
 You must have one word right for a way to enjoy solitude.
 
@@ -1122,8 +1273,8 @@ You may be able to SEE DESIGN here now you have more support and are less scared
 You may be able to recruit the ROGUE OLD here now you have money.
 
 @part
->xx old
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx old
+{$ONEWORD}
 >think
 You must have one word right for who is responsible for the row, gold.
 
@@ -1147,8 +1298,8 @@ But you already got the rogue (old) to join you!
 You may be able to say OH FLIER around the oaf liar now you have exactly one quid left.
 
 @part
->xx flier
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx flier
+{$ONEWORD}
 >think
 You must have one word right for a way to get something from the oaf liar.
 
@@ -1203,8 +1354,8 @@ A war file might be useful, but you'd have no way to organize the information ri
 >w
 
 @part
->xx tracker
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx tracker
+{$ONEWORD}
 >think
 You must have one word right for an alternate form of the plant racker.
 
@@ -1239,8 +1390,8 @@ Hmm. You
 >undo
 
 @part
->xx raider
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx raider
+{$ONEWORD}
 >think
 You must have one word right for who the traitor was or can become.
 
@@ -1259,8 +1410,8 @@ You sense you don't have the full gang together! You must be getting close, thou
 >n
 
 @part
->xx elf
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx elf
+{$ONEWORD}
 >think
 You must have one word right for a nicer form of the MEN shelf.
 
@@ -1296,8 +1447,8 @@ You may be able to recover the WAR FILE on the wharf isle here now you have some
 You may be able to make sense of THE FILE here once you've gotten enough information from companions.
 
 @part
->xx file
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx file
+{$ONEWORD}
 >think
 You must have one word right for what is on Wharf Isle.
 
@@ -1305,8 +1456,8 @@ You must have one word right for what is on Wharf Isle.
 by a point
 
 @part
->xx dwarf
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx dwarf
+{$ONEWORD}
 >think
 You must have one word right for who is on Wand Wharf.
 
@@ -1360,8 +1511,8 @@ You already got THE FILE. See where else you can visit.
 >undo
 
 @part
->xx vial
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx vial
+{$ONEWORD}
 >think
 You must have one word right for what is on Grove Isle.
 
@@ -1392,8 +1543,8 @@ You may be able to find a MANNA CURB beneath the manna curb in Keep (Iller) now 
 {$REJECT2}
 
 @part
->xx small
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx small
+{$ONEWORD}
 >think
 You must have one word right for something hidden here.
 
@@ -1455,8 +1606,8 @@ You may be able to make sense of THE FILE in Known Ocean now you've gotten enoug
 >u
 
 @part
->xx swears
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx swears
+{$ONEWORD}
 >think
 You must have one word right for seeing BRUISE-WARES's true nature.
 
@@ -1474,6 +1625,24 @@ WRONG
 #+testcase-check-pre-nab-aye-rule-if-nah-bye-is-not-touchable
 >nab aye
 That thought/action/observation/request brings up nothing.
+
+@part
+#testcase-one-wrong-table-of-main-oronyms-11-brew
+>brew xxx
+{$ONEWORD}
+\\
+>think
+WRONG
+\\
+>undo
+>undo
+\\
+#testcase-one-wrong-table-of-main-oronyms-11-swears
+>xxx swears
+{$ONEWORD}
+\\
+>think
+WRONG
 
 @!min
 >ao
@@ -1540,8 +1709,8 @@ You lost the chance to say CREW DORK to the crude orc a bit more gently, as you 
 >undo
 
 @part
->xx us
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx us
+{$ONEWORD}
 >think
 You must have one word right for how to deflate the grinch earls' bravado.
 
@@ -1568,8 +1737,8 @@ You lost the chance to say CREW DORK to the crude orc a bit more gently, even th
 {$REJECT2}
 
 @part
->xx dork
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx dork
+{$ONEWORD}
 >think
 You must have one word right for a way to explain the crude orc's status.
 
@@ -1588,8 +1757,8 @@ You already broke the truth to the crude orc as gently as you could!
 You already established the grinch earls cursed out of weakness or, at least, not fully from strength!
 
 @part
->xx low
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx low
+{$ONEWORD}
 >think
 You must have one word right for a way to counter the ah-slow taunts.
 
@@ -1598,8 +1767,8 @@ You must have one word right for a way to counter the ah-slow taunts.
 by a bonus point
 
 @part
->xx eee
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx eee
+{$ONEWORD}
 >think
 You must have one word right for a way to counter the bah-sturdy taunts.
 
@@ -1608,8 +1777,8 @@ You must have one word right for a way to counter the bah-sturdy taunts.
 by a bonus point
 
 @part
->xx peons
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx peons
+{$ONEWORD}
 \\
 >think
 You must have one word right for a way to counter the damp-yawns taunts.
@@ -1619,8 +1788,8 @@ You must have one word right for a way to counter the damp-yawns taunts.
 by a bonus point
 
 @part
->xx ass
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx ass
+{$ONEWORD}
 \\
 >think
 You must have one word right for a way to counter the heh-class taunts.
@@ -1630,8 +1799,8 @@ You must have one word right for a way to counter the heh-class taunts.
 by a bonus point
 
 @part
->xx shit
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx shit
+{$ONEWORD}
 >think
 You must have one word right for a way to counter the hush-it taunts.
 
@@ -1640,8 +1809,8 @@ You must have one word right for a way to counter the hush-it taunts.
 by a bonus point
 
 @part
->xx fuckers
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx fuckers
+{$ONEWORD}
 >think
 You must have one word right for a way to counter the life-occurs taunts.
 
@@ -1667,8 +1836,8 @@ by a bonus point
 >undo
 
 @part
->xx dicks
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx dicks
+{$ONEWORD}
 >think
 You must have one word right for a way to counter the taunting weird-icks.
 
@@ -1677,8 +1846,8 @@ You must have one word right for a way to counter the taunting weird-icks.
 by a bonus point
 
 @part
->xx churls
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx churls
+{$ONEWORD}
 >think
 You must have one word right for a way to reclassify the grinch earls.
 
@@ -1694,8 +1863,8 @@ The grin churls remark that you seemed so open-minded, really, and they're all f
 {$REJECT2}
 
 @part
->xx wanker
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx wanker
+{$ONEWORD}
 >think
 You must have one word right for a way to counter Gawain Kerr's taunts.
 
@@ -1724,8 +1893,8 @@ You may be able to create a TALL CAKE once you have ingredients and cooking inst
 >undo
 
 @part
->xx design
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx design
+{$ONEWORD}
 >think
 You must have one word right for what the sign hides.
 
@@ -1733,8 +1902,8 @@ You must have one word right for what the sign hides.
 by a point
 
 @part
->xx right
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx right
+{$ONEWORD}
 >think
 You must have one word right for what to find or do to leave.
 
@@ -1755,8 +1924,8 @@ You may be able to create a TALL CAKE once you have ingredients and cooking inst
 You already saw the design in the seedy sign. You don't need to redo things.
 
 @part
->xx curb
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx curb
+{$ONEWORD}
 >think
 You must have one word right for what lies under or near the manic herb.
 
@@ -1799,8 +1968,8 @@ You may be able to TREAT ALL in Trees Mall once you have a tasty treat.
 You may be able to make sense of THE FILE in Known Ocean now you've gotten enough information from companions.
 
 @part
->xx cake
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx cake
+{$ONEWORD}
 >think
 You must have one word right for how to get rid of your talk-ache.
 
@@ -1820,8 +1989,8 @@ You can call your companions MY CORPS once you've shared something together.
 They are your corps, and yet, there's something to share with them. Something to enjoy together, first.
 
 @part
->xx all
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx all
+{$ONEWORD}
 >think
 You must have one word right for what to do under the tree, tall.
 
@@ -1846,8 +2015,8 @@ You already shared treats!
 >s
 
 @part
->xx file
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx file
+{$ONEWORD}
 >think
 You must have one word right for what is on Thief Isle.
 
@@ -1869,8 +2038,8 @@ You will be able to say WERE MEETIN now you have a full party available.
 You sense you have a full party, and you're in a good place, but the atmosphere is wrong for planning and discussions.
 
 @part
->xx meetin
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx meetin
+{$ONEWORD}
 >think
 You must have one word right for how Worm Eaten could feel more homey.
 
@@ -1890,8 +2059,8 @@ You haven't identified anyone terribly evil you want to wipe out.
 You can call your companions MY CORPS now you've shared something together.
 
 @part
->xx corps
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx corps
+{$ONEWORD}
 >think
 You must have one word right for why your name is special.
 
@@ -1961,8 +2130,8 @@ You will want to WIPE OUT the cause of your problems once you have them in your 
 !not for a while
 
 @part
->xx cull
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx cull
+{$ONEWORD}
 >think
 You must have one word right for alerting the sea skull.
 
@@ -1981,8 +2150,8 @@ You will want to WIPE OUT the cause of your problems now you have them in your c
 !not for a while
 
 @part
->wipe xx
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>wipe xxx
+{$ONEWORD}
 >think
 You must have one word right for how to take down the skull.
 
@@ -1995,8 +2164,8 @@ by a point
 You already wiped out the sea skull! Now is the time for healing.
 
 @part
->xx vision
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx vision
+{$ONEWORD}
 >think
 You must have one word right for something more positive than the why-division.
 
@@ -2233,8 +2402,8 @@ You can think DO/DUE MEND/MENDING now you've disposed of the sea skull.
 {$REJECT2}
 
 @part
->xx mend
-A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+>xxx mend
+{$ONEWORD}
 >think
 You must have one word right for a way to steer things from a doom ending.
 
