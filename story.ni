@@ -132,6 +132,7 @@ book other regular verbs to zap
 understand the command "pull" as something new.
 understand the command "push" as something new.
 understand the command "show" as something new.
+understand the command "say" as something new.
 
 book taking and dropping
 
@@ -1110,6 +1111,11 @@ rule for supplying a missing noun when ting:
 			say "The orc looks left out a bit...";
 			now noun is the orc;
 			continue the action;
+		if number of still-chat-needed followers in location of player is 1:
+			let X be random still-chat-needed follower in location of player;
+			say "You realize you've talked with everyone but [the x], who may feel a bit left out. So...";
+			now noun is X;
+			continue the action;
 		say "That's ambiguous--more than one friend you can chat with.";
 		if number of still-chat-needed followers in location of player > 0:
 			say "[line break]However, you still haven't talked with [the list of still-chat-needed followers in location of player].";
@@ -1143,9 +1149,9 @@ carry out ting a sentient:
 	if noun is merchant, say "You want to figure a way to kill conversation, [if sco-summer-chant is true]even if your summer chant made it more bearable[else]instead[end if]." instead;
 	if noun is Gawain Kerr, say "You don't need him to riff on your name. But maybe you can riff on his." instead;
 	if noun is booze troll, say "The booze troll doesn't seem interested in useful conversation, at least not in their present form." instead;
-	if noun is squid, say "[if sco-six-quid is false]It seems to be choking a bit[else]The squid can't speak, but you get very good vibes from it. It will understand English when it needs to[end if]." instead;
+	if noun is squid, say "[if sco-six-quid is false]It seems to be choking a bit[else]The squid can't speak, but you get very good vibes from it. It will understand where to go when you have a way to show it where to go[end if]." instead;
 	if noun is traitor, say "[The traitor] mumbles apologetically for who they were. Perhaps you can show [the traitor] a small shift to change them." instead;
-	if noun is grinch earls, say "You can't imagine any chat with them would be pleasant. Staunch, specific verbal defense is the way to go here." instead;
+	if noun is grinch earls, say "[if sco-grin-churls is true][The earls] feel beaten down by your renaming. Okay, maybe you'd get schadenfreude from a whiny 'Mean? Oh, me? No!'[else]You can't imagine any chat with them would be pleasant. 'Help our hell-power?!'[end if][paragraph break]Staunch, specific verbal defense is the way to get rid of them, here." instead;
 	if noun is cell phones, say "No, you don't want to get swept up in that." instead;
 	if noun is prize talk, say "You [if sco-pry-stalk is true]got[else]want[end if] something better than good chat." instead;
 	say "Awkward silence, which is my fault. I'd like to change that, so do report a bug on GitHub." instead;

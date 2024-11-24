@@ -772,7 +772,7 @@ You have six quid from helping the sick squid.
 
 @verbs
 >t
-The squid can't speak, but you get very good vibes from it. It will understand English when it needs to.
+The squid can't speak, but you get very good vibes from it. It will understand where to go when you have a way to show it where to go.
 
 >n
 
@@ -1089,8 +1089,12 @@ The rogue (old) discusses ways to sneak around so vastly overpowered opponents c
 Well, that's even more useful information worth remembering.
 \\
 >t
-That's ambiguous--more than one friend you can chat with.
-However, you still haven't talked with the gnome (old).
+You realize you've talked with everyone but the gnome (old), who may feel a bit left out. So...
+You chat with the gnome (old) a bit, learning more about the history of the area you're exploring and why you're here. It fills in some blanks in your memory.
+The gnome (old) discusses ways of finding hidden psychic weaknesses in a very tough opponent. You also hear how whatever force there is, it only cares about things looking good on the outside. The gnome had so much mold to protect against and continually scrape away, even outside of the keep.
+Well, that's more useful information worth remembering.
+\\
+>undo
 
 @verbs+
 >eat rogue
@@ -1300,6 +1304,11 @@ The eyes light up green and show five dots, then six dots.
 >gaunt raider
 by a point
 
+@verbs
+>t
+That's ambiguous--more than one friend you can chat with.
+However, you still haven't talked with the gaunt raider and the gnome (old).
+
 @hint
 >eye raider
 The eyes show nothing. You've done everything you need to make friends with the gaunt raider.
@@ -1425,7 +1434,8 @@ Some grin churls parade around here
 You'll have to win the argument with the grinch earls before any meaningful conversations.
 \\
 >t earls
-You can't imagine any chat with them would be pleasant. Staunch, specific verbal defense is the way to go here.
+You can't imagine any chat with them would be pleasant. "Help our hell-power?!"
+Staunch, specific verbal defense is the way to get rid of them, here.
 
 @verbs+
 >eat orc
@@ -1523,7 +1533,9 @@ The eyes show nothing. You've done everything you need to neutralize the grin ch
 by a bonus point
 \\
 >t churls
-You can't imagine any chat with them would be pleasant. Staunch, specific verbal defense is the way to go here.
+The grin churls feel beaten down by your renaming. Okay, maybe you'd get schadenfreude from a whiny "Mean? Oh, me? No!"
+Staunch, specific verbal defense is the way to get rid of them, here.
+
 \\
 >undo
 >undo

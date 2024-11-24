@@ -180,7 +180,7 @@ It seems to be choking a bit.
 by a point
 
 >t
-The squid can't speak, but you get very good vibes from it. It will understand English when it needs to.
+The squid can't speak, but you get very good vibes from it. It will understand where to go when you have a way to show it where to go.
 
 >n
 
@@ -286,8 +286,12 @@ The rogue (old) discusses ways to sneak around so vastly overpowered opponents c
 Well, that's even more useful information worth remembering.
 
 >t
-That's ambiguous--more than one friend you can chat with.
-However, you still haven't talked with the gnome (old).
+You realize you've talked with everyone but the gnome (old), who may feel a bit left out. So...
+You chat with the gnome (old) a bit, learning more about the history of the area you're exploring and why you're here. It fills in some blanks in your memory.
+The gnome (old) discusses ways of finding hidden psychic weaknesses in a very tough opponent. You also hear how whatever force there is, it only cares about things looking good on the outside. The gnome had so much mold to protect against and continually scrape away, even outside of the keep.
+Well, that's more useful information worth remembering.
+
+>undo
 
 >eat rogue
 You realize asking if you can nibble would give an answer of no.
@@ -362,6 +366,10 @@ Better ways to assimilate the gone traitor.
 >gaunt raider
 by a point
 
+>t
+That's ambiguous--more than one friend you can chat with.
+However, you still haven't talked with the gaunt raider and the gnome (old).
+
 >t raider
 You chat with the gaunt raider a bit, learning more about the history of the area you're exploring and why you're here. It fills in some blanks in your memory.
 The gaunt raider discusses regret for their past actions, as well as some possibilities for how to use it to boost yourself to do the right thing, or when to just drop it without being drowned by guilt.
@@ -410,7 +418,7 @@ But, well, yes. You're in the right place for that.
 You'll have to win the argument with the grinch earls before any meaningful conversations.
 
 >t earls
-You can't imagine any chat with them would be pleasant. Staunch, specific verbal defense is the way to go here.
+You can't imagine any chat with them would be pleasant. "Help our hell-power?!" Staunch, specific verbal defense is the way to go here.
 
 >eat orc
 Better ways to assimilate the crude orc.
@@ -428,7 +436,7 @@ by a bonus point
 by a bonus point
 
 >t churls
-You can't imagine any chat with them would be pleasant. Staunch, specific verbal defense is the way to go here.
+You can't imagine any chat with them would be pleasant. "Help our hell-power?!" Staunch, specific verbal defense is the way to go here.
 
 >undo
 >undo
