@@ -121,13 +121,13 @@ There's also a way DOWN that opened up once you found passages in all cardinal d
 
 >w
 >rogue old
-!by one point
+!by a point
 
 >l
 A row (gold) shines in this otherwise forbidding keep. You've met its proprietor, the rogue (old,) but they require payment
 
 >gnome old
-!by one point
+!by a point
 
 >l
 You are really impressed by how no mold grows here. The gnome (old,) who keeps it up, will be an impressive companion once you find them adventuring gear.

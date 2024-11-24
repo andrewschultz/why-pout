@@ -53,7 +53,7 @@ check eyeing eyes:
 
 to say eye-with:
 	if current action is eyering:
-		say "with the general area";
+		say "with the general area, though specific things may provide a clue";
 	else if noun is a follower:
 		say "make friends with [the noun]";
 	else if noun is a sentient:
@@ -120,7 +120,7 @@ report eyering:
 to note-not-now:
 	if gs-eye-note is false:
 		now gs-eye-note is true;
-		say "[i][bracket][b]NOTE[r][i]: the eyes have two binary settings: green or yellow, and glowing or dimly glowing. This, along with the hints, may be intuitive, but if it is not, [b]EYE EYES[r][i] will spell things out.[close bracket]";
+		say "[i][bracket][b]NOTE[r][i]: the eyes have two binary settings: green or yellow, and glowing or dimly glowing. This, along with the hints, may be intuitive, but if it is not, [b]EYE EYES[r][i] will spell things out.[close bracket][line break]";
 
 to declue-here: now eyes-number of location of player is -1
 

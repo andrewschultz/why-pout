@@ -456,7 +456,7 @@ You may be able to participate in a BAY SALE if you've found the right location 
 
 #testcase-check-pre-were-meetin-rule-abide-by-the-followers-check-rule
 >were meetin
-You sense you don't have the gang together! You may still be a way away.
+You sense you don't have the full gang together! You may still be a way away.
 >u
 
 >w

@@ -219,6 +219,12 @@ mynum	mytext
 0	"[t1t2] look forward to earning, once their work is done here, the relaxation of a long-aim lawn game."
 0	"[t1t2] discuss might-rust-my-trust actions that, well, [i]did[r], in the past."
 0	"[t1t2] jest together: 'Me? Cause meek aws?'"
+0	"[t1t2] differ on the Sway-Thus Way, that latest dance craze."
+0	"[t1t2] get serious a bit. They need to focus. 'Aim! Use a muse!'"
+0	"[t1t2] bemoan having no Rake-It Ray Kit to take out bad guys."
+0	"[t1t2] assure each other neither belongs on Porch At-Poor-Chat."
+0	"[t1t2] discuss the civil rights implications of the Save Isle-Say-Vile movement."
+0	"[t1t2] look briefly downcast before singing [i]Hold On, Whole Dawn[r]."
 
 volume testing without random shuffling
 

@@ -16,7 +16,7 @@ volume things
 
 a sentient is a kind of thing.
 
-volume I7 low-usage default verbs
+volume I7 standard low-usage default verbs
 
 book senses
 
@@ -47,7 +47,7 @@ chapter attacking
 the block attacking rule is not listed in any rulebook.
 
 carry out attacking:
-	say "'[one of]Gore? I'd go ride[or]Eh, kill-ache? Ill[in random order],' you think, randomly.";
+	say "'[one of]War may warm, eh[or]Gore? I'd go ride[or]Eh, kill-ache? Ill[in random order],' you think, randomly.";
 
 chapter no / yes
 

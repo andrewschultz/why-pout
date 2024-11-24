@@ -198,7 +198,7 @@ a wordtwisting rule (this is the pre-wipe-out rule):
 
 this is the post-wipe-out rule:
 	now sco-wipe-out is true;
-	say "Easier said than done, but since you all studied the plan tracker so well, it isn't impossible![paragraph break]Your makeshift weapons are just enough to distract the sea skull. It starts to focus on one party member, then the others taunt it with 'Aid! Eek, a deek!'[paragraph break]It's exhausting for you but even more exhausting for the skull, which after constant spinning eventually collapses and incinerates, but not before a self-pitying 'Meek old me! Cold!'[paragraph break]But after all the fireworks, there's a letdown. You feel something odd come between you and your companions now you're done. They wonder why they need to do any more. You could call the whole zeitgeist a why-division.";
+	say "Easier said than done, but since you all studied the plan tracker so well, it isn't impossible![paragraph break]Your makeshift weapons are just enough to distract the sea skull. It starts to focus on one party member, then the others taunt it with 'Aid! Eek, a deek!'[paragraph break]It's exhausting for you but even more exhausting for the skull, which after constant spinning eventually collapses and incinerates, but not before a self-pitying 'Meek old me! Cold!'[paragraph break]'On ice! Aw, nice!' you proclaim, expecting big cheers.[paragraph break]But after all the fireworks, there's a letdown. You feel something odd come between you and your companions now you're done. They wonder why they need to do any more. You could call the whole zeitgeist a why-division.";
 	move why division to Doom Ending;
 	moot sea skull;
 
@@ -248,6 +248,8 @@ a wordtwisting rule (this is the pre-low-door rule):
 this is the post-low-door rule:
 	now sco-low-door is true;
 	say "The lode and the ore are tough to shift around for someone as big as yourself. But the tall mice manage to get into those small niches you can't. And they work so fast, you daren't even ironically say 'My! Slow mice, lo!'[paragraph break]They locate a low door, then, point to where you can remove the ore to create a passage. You'll have to duck a bit to get in, but you can now go [b]INSIDE[r]. Hooray!";
+	if gnome is friendly:
+		say "[line break]The gnome also rifles through, quickly, saying 'no more gnome ore.'";
 	reveal We Loan to inside;
 	declue lode ore;
 
@@ -286,7 +288,7 @@ a wordtwisting rule (this is the pre-bay-sale rule):
 
 this is the post-bay-sale rule:
 	now sco-bay-sale is true;
-	say "You have money, and you are ready for a sale, and you get it. Unfortunately, though you were expecting a nice big ship, you get something a little humbler, namely a We-Craft Weak Raft. It seems sturdy enough, though, and it does have a sail.[paragraph break]You christen it with the base ale, and the bottle fragments shatter and float away in the water.";
+	say "You have money, and you are ready for a sale, and you get it. Unfortunately, though you were expecting a nice big ship, you get something a little humbler, namely a We-Craft Weak Raft. It seems sturdy and large enough, though, and it is probably easier to operate than a Might-Anchor (My!) Tanker.[paragraph break]You christen it with the base ale, and the bottle fragments shatter and float away in the water.";
 	quid-reduce 2;
 	moot base ale;
 	move We Craft Weak Raft to lobe end;
@@ -560,7 +562,7 @@ this is the post-six-quid rule:
 a wordtwisting rule (this is the three-isle rule):
 	if player does not have flier, unavailable;
 	if (player is in lobe end or player is in storm isle) and sco-low-bend is true:
-		vcp "No, there's water here, but this can't be the right place.";
+		vcp "No, there's water here, but it's more a river. There seems to be much more than an isle across from it.";
 		not-yet;
 	if player is not in nonotion:
 		vcp "This isn't the right place to look for an isle. No large body of water nearby.";
@@ -598,7 +600,7 @@ a wordtwisting rule (this is the pre-the-file rule):
 		already-done;
 	abide by the three-isle rule;
 	if number of still-chat-needed followers > 0:
-		vcp "You know there is THE FILE, but which file is THE FILE? The thief isle has probably stolen a lot! You need information from your companions[if number of still-follow-needed followers > 0], or maybe just more companions[end if].";
+		vcp "You know there is THE FILE, but which file is THE FILE? The thief isle has probably stolen a lot, and it wouldn't do to hang around there guessing where to look! You need information from your companions[if number of still-follow-needed followers > 0], or maybe just more companions[end if].";
 		not-yet;
 	ready;
 
@@ -675,7 +677,7 @@ this is the post-summer-chant rule:
 a wordtwisting rule (this is the pre-bile-oh rule):
 	if player is not in we loan or merchant is not in we loan, unavailable;
 	if sco-summer-chant is false:
-		vcp "You need to find something positive to say, first. It doesn't have to be particularly rigorous, but it needs to be positive.";
+		vcp "That should work, but you're a bit intimidated right now. You need a way to show your assailant 'Ah, you're just some merchant' and not 'Wow! You're SOME merchant!'[paragraph break]It doesn't have to be particularly rigorous or sensible, but it has to deflect from their aggression.";
 		not-yet;
 	ready;
 
@@ -871,7 +873,7 @@ a wordtwisting rule (this is the followers-check rule):
 		vcp "Sadly, you have no friends to bring together yet! Yet.";
 		not-yet;
 	if number of still-follow-needed followers > 0:
-		vcp "You sense you don't have the gang together! [if number of still-follow-needed followers is 1]But you must be very, very close[else]You may still be a way away[end if].";
+		vcp "You sense you don't have the full gang together! [if number of still-follow-needed followers is 1]But you must be very, very close[else if number of still-follow-needed followers <= 4]You must be getting close[else]You've made a start, and you like who you have, but you feel there's not enough variety yet[end if].";
 		not-yet;
 
 this is the hom-whirr-meetin rule:
@@ -912,8 +914,9 @@ this is the hom-my-core rule:
 
 this is the post-my-corps rule:
 	now sco-my-corps is true;
-	say "Your pep talk brings everyone together. You worry it's too simplistic, especially 'titan's lairs? Titan slayers!'";
-	say "[line break]But everyone seems enthused, ready for what happens next. Gathering information from everyone, you start diggint to find tunnels below. You clear out a passage below. You swear a solemn pact that everyone will defend everyone else, regardless of what happens.";
+	say "Your pep talk brings everyone together. You worry it's too simplistic, especially 'titan's lairs? Titan slayers!' You also worrry you sound too Mike-All-My-Call.";
+	say "[line break]But everyone seems enthused, ready for what happens next. Gathering information from everyone, you start digging to find tunnels below. You clear out a passage below. You swear a solemn pact that everyone will defend everyone else, regardless of what happens.[paragraph break](By the way, your speech was so stirring, it even changed the room name. Okay, I just thought the phrase was too cute to go to waste. But don't let that stop you from feeling inspirational!)";
+	print-the-loc;
 	now Doom Ending is mapped below Worm Eaten;
 	declue Mike Orr;
 
