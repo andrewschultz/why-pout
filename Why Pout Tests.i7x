@@ -253,6 +253,7 @@ carry out taing:
 		try ting X;
 	if count is 0:
 		say "Nobody to talk to.";
+	say "Test command talked up [count] follower[if count > 1]s[end if].";
 	the rule succeeds;
 
 chapter woing

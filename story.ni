@@ -494,7 +494,7 @@ Lobe End is a room in universal. "[if sco-low-bend is false]This lobe of land ap
 
 to say raft-clue:
 	if sco-bay-sale is false:
-		say ". So maybe you could get across, with transport. Maybe you can summon or find someone who can offer it, as well a way to pay"
+		say ". So maybe you could get across, with transport. Maybe you can summon or find someone who can offer it, as well a way to pay[if squid is not off-stage]. Unfortunately, the squid can't help you back here. The water's deep and wide, but not enough[end if]"
 
 check going north in lobe end when sco-low-bend is true and sco-bay-sale is false: say "You have no way across the water, yet." instead;
 
@@ -1201,7 +1201,7 @@ carry out ting (this is the first t rule):
 		if noun is unchatted:
 			say "Sure, why not chat a bit more?";
 		else:
-			say "You've talked to everyone you needed to, but why not chat again?";
+			say "You've talked to everyone you needed to, but why not reach at re-chat?";
 
 carry out ting:
 	say "You chat with [the noun] a bit, [if noun is chatted]recapping[else]learning[end if] more about the history of the area you're exploring and why you're here. It fills in some blanks in your memory.";

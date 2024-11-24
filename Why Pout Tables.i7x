@@ -37,7 +37,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "low"	"bend"	--	--	--	false	false	false	false	"a way to rearrange the landscape [here-in of lobe end]"	false	true	true	false	false	lobe end	pre-low-bend rule	post-low-bend rule	--	--
 "bay"	"sail|sale"	--	--	--	false	false	false	false	"a way to repurpose the base ale"	false	true	true	false	false	lobe end	pre-bay-sale rule	post-bay-sale rule	--	"You may be able to participate in a [b]BAY SALE[r] if you've found the right location and [once-now of sco-six-quid] you have money." [?? very detailed fix: we need to set a boolean somehow if this was guessed in Lobe End ]
 "store"	"mile"	--	--	--	false	false	false	false	"the storm isle's alternate nature"	false	true	true	false	false	storm isle	pre-store-mile rule	post-store-mile rule	--	--
-"mensch"	"elf"	"mensh|mench|munch"	--	hom-mencsh-elf rule	false	false	false	false	"a nicer form of the MEN shelf"	false	true	true	false	false	storm isle	pre-mensch-elf rule	post-mensch-elf rule	--	--
+"mensch"	"elf"	"mensh|mench|munch"	--	hom-mensch-elf rule	false	false	false	false	"a nicer form of the MEN shelf"	false	true	true	false	false	storm isle	pre-mensch-elf rule	post-mensch-elf rule	--	--
 "mice"	"tall"	--	--	--	false	false	false	false	"what's inside MY STALL"	false	true	true	false	false	storm isle	pre-mice-tall rule	post-mice-tall rule	--	"You may be able to locate the [b]MICE TALL[r] [here-in of storm isle] [once-now of sco-gnome-old] you have a companion with good perception."
 "tree"	"small"	--	--	--	false	false	false	false	"something hidden [here-in of Trees Mall]"	false	true	true	false	false	trees mall	pre-tree-small rule	post-tree-small rule	--	--
 "tall"	"cake"	--	--	--	false	false	false	false	"how to get rid of your talk-ache"	false	true	true	false	false	trees mall	pre-tall-cake rule	post-tall-cake rule	--	"You may be able to create a [b]TALL CAKE[r] [once-now of pre-tall-cake rule] you have ingredients and cooking instruments."
@@ -336,7 +336,7 @@ a wordtwisting rule (this is the pre-mensch-elf rule):
 	if sco-store-mile is false, unavailable;
 	ready;
 
-this is the hom-mencsh-elf rule:
+this is the hom-mensch-elf rule:
 	if the player's command includes "munch":
 		say "No, a sort of person. This one's a bit obscure.";
 	else:
@@ -464,7 +464,7 @@ this is the hom-nah-phaze rule:
 this is the post-nah-phase rule:
 	now sco-nah-phase is true;
 	moot naff haze;
-	say "The haze seemed too thick at first. But you recognize it doesn't have to be there. As you sift through it, you notice things that weren't there before. It lifts.";
+	say "The haze seemed too thick at first. But you recognize it doesn't have to be there. As you sift through it, you notice things that weren't there before. It lifts. And some of your worry lifts, too. You're not worried you might forget your name again. But perhaps you will find its significance. Not right away, but when you need to.";
 	move short rail to NaffHaze;
 	move gross tar to NaffHaze;
 	move keep iller to NaffHaze;
@@ -640,6 +640,7 @@ this is the post-wan-dwarf rule:
 	befriend wan dwarf;
 	declue-here;
 	move player to NoNotion;
+	follow-you;
 
 chapter we loan scoring
 
@@ -873,7 +874,7 @@ a wordtwisting rule (this is the followers-check rule):
 		vcp "Sadly, you have no friends to bring together yet! Yet.";
 		not-yet;
 	if number of still-follow-needed followers > 0:
-		vcp "You sense you don't have the full gang together! [if number of still-follow-needed followers is 1]But you must be very, very close[else if number of still-follow-needed followers <= 4]You must be getting close[else]You've made a start, and you like who you have, but you feel there's not enough variety yet[end if].";
+		vcp "You sense you don't have the full gang together! [if number of still-follow-needed followers is 1]But you must be very, very close[else if number of still-follow-needed followers <= 4]You must be getting close, though[else]You've made a start, and you like who you have, but you feel there's not enough variety yet[end if].";
 		not-yet;
 
 this is the hom-whirr-meetin rule:
