@@ -43,7 +43,7 @@ chapter shortcuts and definitions
 to decide whether basic-chat-block:
 	if opt-chat-on is false, yes;
 	if block-followers is true, yes;
-	if current action is ting, yes;
+	if current action is ting or current action is thinking, yes;
 	if player is in doom ending and skull is in doom ending, yes;
 	no;
 

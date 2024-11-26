@@ -28,7 +28,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "wool"	"frock"	--	--	--	false	false	false	false	"what is hidden in Wolf Rock"	false	true	true	false	false	Wolf Rock	pre-wool-frock rule	post-wool-frock rule	--	--
 "hide"	"out"	--	--	--	false	false	false	false	"how to dispel your high doubt"	false	true	true	false	false	Wolf Rock	pre-hide-out rule	post-hide-out rule	"hide out" or "hideout"	--
 "low"	"door"	--	--	--	false	false	false	false	"what the lode ore is hiding"	false	true	true	false	false	Wolf Rock	pre-low-door rule	post-low-door rule	--	"You may be able to find a [b]LOW DOOR[r] [here-in of Wolf Rock] [once-now of sco-mice-tall] you have a companion or companions small enough to dig a bit better."
-"well"	"own"	"wheel"	--	hom-wheel-own rule	false	false	false	false	"the sinister meaning behind We'll Own"	false	true	true	false	false	we loan	pre-well-own rule	post-well-own rule	--	--
+"well"	"own"	"wheel"	--	hom-wheel-own rule	false	false	false	false	"the sinister meaning behind We Loan"	false	true	true	false	false	we loan	pre-well-own rule	post-well-own rule	--	--
 "summer"	"chant"	--	--	--	false	false	false	false	"a way to zone some merchant out"	false	true	true	false	false	we loan	pre-summer-chant rule	post-summer-chant rule	--	--
 "bile"	"oh|o"	--	"owe"	hom-bile-owe rule	false	false	false	false	"a way to counter the buy-low rhetoric"	false	true	true	false	false	we loan	pre-bile-oh rule	post-bile-oh rule	--	"You may be able to expose some merchant's [b]BILE OH[r] [once-now of sco-summer-chant] you've found something positive to say to prep yourself."
 "whee"	"lone"	"wee|loan"	--	--	false	false	false	false	"a way to enjoy solitude"	false	true	true	false	false	we loan	pre-whee-lone rule	post-whee-lone rule	--	"You may be able to enjoy your solitude with [b]WHEE LONE[r] [here-in of we loan] [once-now of sco-bile-oh] you actually have solitude."
@@ -760,19 +760,22 @@ this is the post-gnome-old rule:
 a wordtwisting rule (this is the pre-rogue-old rule):
 	if player is not in keepiller, unavailable;
 	if sco-six-quid is false:
-		vcp "A rogue, old, appears, but after some conversation, you realize you don't have any money to pay them with. They'd like to help, but they worked for free once and felt ripped off. Maybe later.";
+		vcp "[rogue-hi], but after some conversation, you realize you don't have any money to pay them with. They'd like to help, but they worked for free once and felt ripped off. Maybe later.";
 		not-yet;
 	if sco-rogue-old is true:
 		vcal "But you already got the rogue (old) to join you!";
 		already-done;
 	ready;
 
+to say rogue-hi:
+	say "[one of]A rogue, old, appears[or]That rogue, old, reappears[stopping]"
+
 this is the hom-rouge-old rule:
 	say "Rouge ... no, too foreign, also, too abstract. But you need a person, not a color. That'll get you a point in this game, not just Canadian football."
 
 this is the post-rogue-old rule:
 	now sco-rogue-old is true;
-	say "A rogue, old, arrives. They mention they'd like to help you but, you know, the row (gold) needs maintenance. You offer to pay them three quid.";
+	say "[rogue-hi]. They mention they'd like to help you but, you know, the row (gold) needs maintenance. You offer to pay them three quid.";
 	befriend rogue old;
 	declue row gold;
 	quid-reduce 3;
@@ -1164,6 +1167,8 @@ rule for printing a parser error (this is the check forks rule):
 				choose row partial-row in table of main oronyms;
 				say "(DEBUG: [check-rule entry] tripped) ";
 			say "Not much happens, but you feel like that might help, at least halfway, some time later. Much later, or just a little, you can't tell.";
+		if partial-but-got-before is true:
+			say "[line break][i][bracket][b]NOTE[r][i]: you've actually already figured both words before. [b]THINK[r][i] may refresh your memory.[close bracket][i][line break]";
 		the rule succeeds;
 	if got-partial-done is true:
 		if debug-state is true, say "[partial-row] row ...";
@@ -1172,7 +1177,7 @@ rule for printing a parser error (this is the check forks rule):
 	continue the action;
 
 check thinking when current-score is 0:
-	say "An inner voice says 'Fry! Twist!' You feel fright, wist. It's hard not to, since you don't have a name or a purpose. For some reason, you're focused on getting a name, but you've got this nagging feeling that's not quite it.[paragraph break][one of]Perhaps if you press a bit more, some thoughts may come out[or]Well, not quite a purpose, but ... what's the word? [one of]'Aww, flake! Awful ache!'[or]'Dumb pit. Dump it!'[in random order] you think to yourself. Which sounds slightly off, but it's all you have to go on[stopping].";
+	say "An inner voice says 'Fry! Twist!' You feel fright, wist. It's hard not to, since you don't have a name or a purpose. For some reason, you're focused on getting a name, but you've got this nagging feeling that's not quite it.[paragraph break][one of]Perhaps if you press a bit more, some thoughts may come out[or]Well, not quite a purpose, but ... what's the word? [one of]'Aww, flake! Awful ache[or]'Dumb pit. Dump it[in random order]!' you think to yourself. Which sounds slightly off, but it's all you have to go on[stopping].";
 	if pre-acts > 0:
 		say "[line break]You've already tried to [b]WIPE OUT[r] in response to taunts of 'why pout,' and you wonder if this all is easier. [if gs-examined-self is false]Perhaps you should [b]X ME[r][else]Maybe your search for a name will turn up something meaningful, regardless of what your name is[end if].";
 	the rule succeeds;
