@@ -27,11 +27,13 @@ A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING 
 
 >think
 An inner voice says "Fry! Twist!" You feel fright, wist. It's hard not to, since you don't have a name or a purpose. For some reason, you're focused on getting a name, but you've got this nagging feeling that's not quite it.
-Perhaps if you press a bit more, some thoughts may come out.
+Well, not quite a purpose, but ... what's the word?
+" you think to yourself. Which sounds slightly off, but it's all you have to go on.
 
 >an aim
 by a point
 
+#testcase-one-wrong-table-of-main-oronyms-45-out
 >wipe xxx
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 >think
@@ -296,7 +298,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for this.
+You must have one word right for making it beyond the gross tar.
 
 >undo
 >undo
@@ -306,7 +308,7 @@ You must have one word right for this.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for this.
+You must have one word right for making it beyond the gross tar.
 
 >grow star
 by a point
@@ -326,7 +328,7 @@ You must have one word right for finding a way into the keep.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-WRONG
+You must have one word right for finding a way into the keep.
 
 >key pillar
 by a point
@@ -336,7 +338,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for this.
+You must have one word right for finding where the short rail could lead.
 
 >undo
 >undo
@@ -346,15 +348,27 @@ You must have one word right for this.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for this.
+You must have one word right for finding where the short rail could lead.
 
 >shore trail
 by a point
 
 >n
 
->xxx hide
+#testcase-one-wrong-table-of-main-oronyms-19-hide
+>hide xxx
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for how to dispel your high doubt.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-19-out
+>xxx out
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for how to dispel your high doubt.
 
@@ -363,8 +377,20 @@ by a point
 
 >d
 
+#testcase-one-wrong-table-of-main-oronyms-26-boost
+>boost xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a way to make the booze troll feel less awful.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-26-role
 >xxx role
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for a way to make the booze troll feel less awful.
 
@@ -381,8 +407,20 @@ by a point
 
 >n
 
+#testcase-one-wrong-table-of-main-oronyms-18-frock
 >xxx frock
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for what is hidden in Wolf Rock.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-18-wool
+>wool xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for what is hidden in Wolf Rock.
 
@@ -398,7 +436,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for blah blah blah.
+You must have one word right for finding the surroundings here.
 
 >undo
 >undo
@@ -408,7 +446,7 @@ You must have one word right for blah blah blah.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for blah blah blah.
+You must have one word right for finding the surroundings here.
 
 >known ocean
 by a point
@@ -418,7 +456,7 @@ by a point
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for this.
+You must have one word right for discovering what ails the sick squid.
 
 >undo
 >undo
@@ -428,7 +466,7 @@ You must have one word right for this.
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-You must have one word right for this.
+You must have one word right for discovering what ails the sick squid.
 
 >six quid
 by a point
@@ -437,26 +475,69 @@ by a point
 
 >e
 
+#testcase-one-wrong-table-of-main-oronyms-27-bend
 >xxx bend
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a way to rearrange the landscape here.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-27-low
+>low xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for a way to rearrange the landscape here.
 
 >low bend
 by a point
 
->xxx sail
+#testcase-one-wrong-table-of-main-oronyms-28-bay
+>bay xxx
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for a way to repurpose the base ale.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-28-sail-sale
+>xxx sail
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a way to repurpose the base ale.
+
+>undo
+>undo
+
+#+testcase-one-wrong-table-of-main-oronyms-28-sail-sale
+>xxx sail
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >bay sale
 by a point
 
 >n
 
+#testcase-one-wrong-table-of-main-oronyms-29-mile
 >xxx mile
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for the storm isle's alternate nature.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-29-store
+>store xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for the storm isle's alternate nature.
 
@@ -469,8 +550,20 @@ by a point
 
 >w
 
+#testcase-one-wrong-table-of-main-oronyms-35-gnome
+>gnome xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for who has made sure there's no mold.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-35-old
 >xxx old
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for who has made sure there's no mold.
 
@@ -483,8 +576,20 @@ by a point
 
 >n
 
+#testcase-one-wrong-table-of-main-oronyms-31-mice
+>mice xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for what's inside MY STALL.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-31-tall
 >xxx tall
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for what's inside MY STALL.
 
@@ -497,8 +602,20 @@ by a point
 
 >n
 
+#testcase-one-wrong-table-of-main-oronyms-20-door
 >xxx door
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for what the lode ore is hiding.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-20-low
+>low xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for what the lode ore is hiding.
 
@@ -507,32 +624,84 @@ by a point
 
 >in
 
+#testcase-one-wrong-table-of-main-oronyms-21-own
 >xxx own
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
-You must have one word right for the sinister meaning behind We'll Own.
+You must have one word right for the sinister meaning behind We Loan.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-21-well
+>well xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for the sinister meaning behind We Loan.
 
 >well own
 by a point
 
+#testcase-one-wrong-table-of-main-oronyms-22-chant
 >xxx chant
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a way to zone some merchant out.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-22-summer
+>summer xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for a way to zone some merchant out.
 
 >summer chant
 by a point
 
+#testcase-one-wrong-table-of-main-oronyms-23-bile
+>bile xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a way to counter the buy-low rhetoric.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-23-oh-o
 >xxx oh
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+#testcase-one-wrong-table-of-main-oronyms-23-oh-o
+>xxx o
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for a way to counter the buy-low rhetoric.
 
 >bile oh
 by a point
 
+#testcase-one-wrong-table-of-main-oronyms-24-lone
 >xxx lone
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a way to enjoy solitude.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-24-whee
+>whee xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for a way to enjoy solitude.
 
@@ -545,8 +714,20 @@ by a point
 
 >w
 
+#testcase-one-wrong-table-of-main-oronyms-36-old
 >xxx old
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for who is responsible for the row, gold.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-36-rogue
+>rogue xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for who is responsible for the row, gold.
 
@@ -559,8 +740,42 @@ by a point
 
 >in
 
+>think
+!oaf
+
+#testcase-one-wrong-table-of-main-oronyms-25-flier-flyer
+>oh xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a way to get something from the oaf liar.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-25-flier-flyer
 >xxx flier
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a way to get something from the oaf liar.
+
+>undo
+>undo
+
+>xxx flyer
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a way to get something from the oaf liar.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-25-oh
+>oh xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for a way to get something from the oaf liar.
 
@@ -573,8 +788,20 @@ by a point
 
 >w
 
+#testcase-one-wrong-table-of-main-oronyms-38-plan
+>plan xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for an alternate form of the plant racker.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-38-tracker
 >xxx tracker
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for an alternate form of the plant racker.
 
@@ -585,8 +812,20 @@ by a point
 
 >d
 
+#testcase-one-wrong-table-of-main-oronyms-41-gaunt
+>gaunt xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for who the traitor was or can become.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-41-raider
 >xxx raider
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for who the traitor was or can become.
 
@@ -599,8 +838,20 @@ by a point
 
 >n
 
+#testcase-one-wrong-table-of-main-oronyms-30-elf
 >xxx elf
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a nicer form of the MEN shelf.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-30-mensch
+>mensch xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for a nicer form of the MEN shelf.
 
@@ -613,24 +864,60 @@ by a point
 
 >s
 
+#testcase-one-wrong-table-of-main-oronyms-14-file
 >xxx file
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for what is on Wharf Isle.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-14-war
+>war xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for what is on Wharf Isle.
 
 >war file
 by a point
 
+#testcase-one-wrong-table-of-main-oronyms-17-dwarf
 >xxx dwarf
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for who is on Wand Wharf.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-17-wan
+>wan xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for who is on Wand Wharf.
 
 >wan dwarf
 by a point
 
+#testcase-one-wrong-table-of-main-oronyms-16-grow
+>grow xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for what is on Grove Isle.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-16-vial
 >xxx vial
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for what is on Grove Isle.
 
@@ -645,8 +932,20 @@ by a point
 
 >n
 
+#testcase-one-wrong-table-of-main-oronyms-32-small
 >xxx small
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for something hidden here.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-32-tree
+>tree xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for something hidden here.
 
@@ -677,17 +976,40 @@ by a point
 
 >u
 
->xxx swears
+>x bruise
+It's been vandalized a bit, though, and maybe if you X again, you might find a fourth-wall way to warp around and, well, see the bare minimum of extra adventures it holds, without the, well, language.
+
+>x bruise
+Oh, hey! You notice something scrawled on BRUISE-WARES. It says NAH, BYE. It seems negative on the surface but makes you believe if you can do the minimum you need to get in and out of that place and bypass the spicier stuff.
+
+#testcase-one-wrong-table-of-main-oronyms-46-aye
+>xxx aye
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
-You must have one word right for seeing BRUISE-WARES's true nature.
+You must have one word right for what to do with NAH BYE.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-46-nab
+>nab xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for what to do with NAH BYE.
+
+>undo
+>undo
+>undo
+>undo
 
 #testcase-one-wrong-table-of-main-oronyms-11-brew
 >brew xxx
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-WRONG
+You must have one word right for seeing BRUISE-WARES's true nature.
 
 >undo
 >undo
@@ -697,7 +1019,7 @@ WRONG
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
-WRONG
+You must have one word right for seeing BRUISE-WARES's true nature.
 
 >ao
 
@@ -706,38 +1028,103 @@ by a bonus point
 
 >in
 
+#testcase-one-wrong-table-of-main-oronyms-49-us
 >xxx us
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for how to deflate the grinch earls' bravado.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-49-weak
+>weak xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for how to deflate the grinch earls' bravado.
 
 >weak us
 by a bonus point
 
+#testcase-one-wrong-table-of-main-oronyms-51-crew
+>crew xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a way to explain the crude orc's status.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-51-dork
 >xxx dork
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for a way to explain the crude orc's status.
 
 >crew dork
 by a bonus point
 
+#testcase-one-wrong-table-of-main-oronyms-52-ass
+>ass xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a way to counter the ah-slow taunts.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-52-low-lo
 >xxx low
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a way to counter the ah-slow taunts.
+
+>xxx lo
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for a way to counter the ah-slow taunts.
 
 >ass low
 by a bonus point
 
+#testcase-one-wrong-table-of-main-oronyms-53-bastard
+>bastard xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a way to counter the bah-sturdy taunts.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-53-e+h*
 >xxx eee
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for a way to counter the bah-sturdy taunts.
 
 >bastard eee
 by a bonus point
 
+#testcase-one-wrong-table-of-main-oronyms-54-damn
+>damn xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a way to counter the damp-yawns taunts.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-54-peons
 >xxx peons
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
@@ -747,7 +1134,18 @@ You must have one word right for a way to counter the damp-yawns taunts.
 >damn peons
 by a bonus point
 
+#testcase-one-wrong-table-of-main-oronyms-55-ass
 >xxx ass
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a way to counter the heh-class taunts.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-55-heckle
+>heckle xxx
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
@@ -756,32 +1154,80 @@ You must have one word right for a way to counter the heh-class taunts.
 >heckle ass
 by a bonus point
 
+#testcase-one-wrong-table-of-main-oronyms-56-huh
+>huh xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a way to counter the hush-it taunts.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-56-shit
 >xxx shit
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for a way to counter the hush-it taunts.
 
 >huh shit
 by a bonus point
 
+#testcase-one-wrong-table-of-main-oronyms-57-fuckers
 >xxx fuckers
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a way to counter the life-occurs taunts.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-57-lie
+>lie xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for a way to counter the life-occurs taunts.
 
 >lie fuckers
 by a bonus point
 
+#testcase-one-wrong-table-of-main-oronyms-58-dicks
 >xxx dicks
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a way to counter the taunting weird-icks.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-58-were
+>were xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for a way to counter the taunting weird-icks.
 
 >were dicks
 by a bonus point
 
+#testcase-one-wrong-table-of-main-oronyms-50-churls
 >xxx churls
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a way to reclassify the grinch earls.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-50-grin
+>grin xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for a way to reclassify the grinch earls.
 
@@ -789,8 +1235,20 @@ You must have one word right for a way to reclassify the grinch earls.
 by a bonus point
 The grin churls remark that you seemed so open-minded, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do, with a "Weak wit? We quit!" and, tailing off, "We're stirred..."
 
+#testcase-one-wrong-table-of-main-oronyms-59-gah
+>gah xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a way to counter Gawain Kerr's taunts.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-59-wanker
 >xxx wanker
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for a way to counter Gawain Kerr's taunts.
 
@@ -801,24 +1259,77 @@ by a bonus point
 
 >w
 
+#testcase-one-wrong-table-of-main-oronyms-39-design
 >xxx design
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for what the sign hides.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-39-see
+>see xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for what the sign hides.
 
 >see design
 by a point
 
+#testcase-one-wrong-table-of-main-oronyms-40-knife
+>knife xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for what to find or do to leave.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-40-right-rite
 >xxx right
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for what to find or do to leave.
+
+#testcase-one-wrong-table-of-main-oronyms-40-right-rite
+>xxx rite
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for what to find or do to leave.
 
 >knife rite
 by a point
 
+#testcase-one-wrong-table-of-main-oronyms-37-curb-kerb
+>xxx kerb
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for what lies under or near the manic herb.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-37-curb-kerb
 >xxx curb
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for what lies under or near the manic herb.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-37-manna
+>manna xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for what lies under or near the manic herb.
 
@@ -833,18 +1344,48 @@ by a point
 
 >n
 
+#testcase-one-wrong-table-of-main-oronyms-33-cake
 >xxx cake
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for how to get rid of your talk-ache.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-33-tall
+>tall xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for how to get rid of your talk-ache.
+
+>undo
+>undo
 
 >tall cake
 by a point
 
+#testcase-one-wrong-table-of-main-oronyms-34-all
 >xxx all
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for what to do under the tree, tall.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-34-treat
+>treat xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for what to do under the tree, tall.
+
+>undo
+>undo
 
 >treat all
 by a point
@@ -857,8 +1398,20 @@ by a point
 
 >s
 
+#testcase-one-wrong-table-of-main-oronyms-15-file
 >xxx file
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for what is on Thief Isle.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-15-the
+>the xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for what is on Thief Isle.
 
@@ -869,16 +1422,40 @@ by a point
 
 >d
 
+#testcase-one-wrong-table-of-main-oronyms-42-meetin
 >xxx meetin
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for how Worm Eaten could feel more homey.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-42-were
+>were xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for how Worm Eaten could feel more homey.
 
 >were meetin
 by a point
 
+#testcase-one-wrong-table-of-main-oronyms-43-corps
 >xxx corps
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for why your name is special.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-43-my
+>my xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for why your name is special.
 
@@ -887,29 +1464,97 @@ by a point
 
 >d
 
+#testcase-one-wrong-table-of-main-oronyms-44-cease
+>cease xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for alerting the sea skull.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-44-cull
 >xxx cull
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for alerting the sea skull.
 
 >cease cull
 by a point
 
+#+testcase-one-wrong-table-of-main-oronyms-45-out
+>xxx out
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for how to take down the skull.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-45-wipe
 >wipe xxx
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for how to take down the skull.
 
 >wipe out
 by a point
 
+#testcase-one-wrong-table-of-main-oronyms-47-vision
 >xxx vision
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for something more positive than the why-division.
 
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-47-wide
+>wide xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for something more positive than the why-division.
+
+#testcase-one-wrong-table-of-main-oronyms-48-do-due
+>due xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a way to steer things from a doom ending.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-48-do-due
+>do xxx
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a way to steer things from a doom ending.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-48-mend-mending
 >xxx mend
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a way to steer things from a doom ending.
+
+>undo
+>undo
+
+#testcase-one-wrong-table-of-main-oronyms-48-mend-mending
+>xxx mending
+A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
 >think
 You must have one word right for a way to steer things from a doom ending.
 
