@@ -453,6 +453,7 @@ chapter high plain scoring
 
 a wordtwisting rule (this is the pre-nah-phase rule):
 	if player is not in NaffHaze, unavailable;
+	if bruise wares is not off-stage, unavailable;
 	if sco-nah-phase is true:
 		vcal "You already dispelled the haze!";
 		already-done;
@@ -519,10 +520,10 @@ this is the post-nab-aye rule:
 	now sco-nab-aye is true;
 	say "You walk into the off-color place, pwn some hoodlums with your squeaky-clean yet devastating oratory, and impress a crude orc who had been following them. Perhaps you could've beaten them at their own game, but that isn't your style.[paragraph break]Small talk proves the crude orc to be a shrewd orc. You both like that name better, as do your companions, who accept the orc with a 'You! Thin youth, IN!'[paragraph break]The entrance to [wares] crumbles during this chatter.";
 	increase cur-bonus by 2;
-	now shrewd orc is friendly;
 	now shrewd orc is in location of player;
 	moot Nah Bye;
 	moot bruise wares;
+	orc-top-eight;
 
 chapter no notion scoring
 
@@ -879,11 +880,13 @@ a wordtwisting rule (this is the followers-check rule):
 	if pals-still-needed > 0:
 		vcp "You sense you don't have the full gang together! [if number of still-follow-needed followers is 1]But you must be very, very close[else if pals-still-needed <= 4]You must be getting close, though[else]You've made a start, and you like who you have, but you feel there's not enough variety yet[end if].";
 		if gs-top-eight-op-known is false:
-			vcp "You realize you're not even sure how many companions you need. On reflection, you realize a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight.";
+			vcp "[line break]So how many companions do you need? On reflection, a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight[if orc is friendly], but with the orc along, it seems like a courtesy to count them instead of yourself[else]. For now, you assume you are[end if].[paragraph break][pals-short].";
 		else:
-			vcp "[if orc is friendly]Hmm. You want a top-eight op, but [the orc], willing as they are, doesn't seem to mind being an associate member due to youth. You need one more companion with heft[else]You're still [pals-still-needed in words] follower[splur of pals-still-needed] short.";
-		now gs-top-eight-op-known is true;
+			vcp "[line break][if orc is friendly]Hmm. You want a top-eight op, and it seems only polite to replace yourself with [the orc] in that count. [end if][pals-short].";
+		if verb-dont-print is false, now gs-top-eight-op-known is true;
 		not-yet;
+
+to say pals-short: say "You're still [pals-still-needed in words] follower[splur of pals-still-needed] short"
 
 this is the hom-whirr-meetin rule:
 	if the player's command includes "meeting":
@@ -1011,6 +1014,7 @@ this is the post-weak-us rule:
 
 a wordtwisting rule (this is the pre-grin-churls rule):
 	if player is not in brew swears, unavailable;
+	if grinch earls are not in brew swears, unavailable;
 	if sco-grin-churls is true:
 		vcal "You already cut [the grinch] down to size!";
 		already-done;
@@ -1041,10 +1045,15 @@ to check-orc-friendliness:
 	if orc-score is 2:
 		say "[line break]The crude orc sees it now. [The earls] weren't as friendly as they seemed. They wanted to use some trusting kid and corrupt them. The crude orc shakes their head. They ask if they can be seen as not just a dirk.[paragraph break]With a bit of quick thinking (you've got experience with this by now) you say of course they don't need to feel like a dork any more. You can see how they'd be an aid orc, instead!";
 		say "[line break]And thus you've gained another friend! [if grinch earls are moot]There's really nothing left to do here[else]You can stick around to torment the grinch earls further, or you can go on your way[end if].";
-		befriend shrewd orc;
-		declue shrewd orc;
+		orc-top-eight;
 	else if orc-score is 1:
 		say "[line break]The crude orc looks back and forth between you and the [grinch], glaring at them a bit, but not yet ready to break free. Just a bit more, and you may gain a friend.";
+
+to orc-top-eight:
+	if gs-top-eight-op-known is true:
+		say "[line break]You take some time to consider how [the orc] fits into a top-eight op. It only seems polite to count them as one of the top eight. You wouldn't want them feeling left out.";
+	befriend shrewd orc;
+	declue shrewd orc;
 
 section brew swears scoring
 
