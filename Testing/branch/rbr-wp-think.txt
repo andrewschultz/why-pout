@@ -81,7 +81,7 @@ THINK
 \\
 #testcase-check-pre-damn-peons-rule-if-player-is-not-in-brew-swears
 #testcase-reject-start-table-of-main-oronyms-pre-damn-peons-rule
->damn peons
+>peons damn
 {$REJECT1}
 \\
 #testcase-check-pre-do-due-mend-rule-if-player-is-not-in-doom-ending
@@ -803,7 +803,8 @@ But you already replaced the short rail!
 THINK
 Sadly, you have no friends to bring together yet! Yet.
 \\
->u
+>undo
+>undo
 
 >n
 
@@ -890,8 +891,11 @@ You may be able to participate in a BAY SALE if you've found the right location 
 #+testcase-check-pre-were-meetin-rule-abide-by-the-followers-check-rule
 >were meetin
 You sense you don't have the full gang together! You've made a start, and you like who you have, but you feel there's not enough variety yet.
+So how many companions do you need? On reflection, a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight. For now, you assume you are.
+You're still six followers short.
 \\
->u
+>undo
+>undo
 
 >w
 
@@ -1233,22 +1237,85 @@ You must have one word right for what's inside MY STALL.
 by a point
 
 @rej
-#testcase-check-pre-mice-tall-rule-if-sco-mice-tall-is-true
->mice tall
-You already found the mice and destroyed the stall!
-\\
-#+testcase-check-pre-my-corps-rule-abide-by-the-followers-check-rule
->my corps
-You sense you don't have the full gang together! You must be getting close, though.
-
-@rej+
 #+testcase-think-table-of-main-oronyms-pre-low-door-rule
 >think
 You may be able to find a LOW DOOR in Wolf Rock now you have a companion or companions small enough to dig a bit better.
+\\
+#testcase-check-pre-mice-tall-rule-if-sco-mice-tall-is-true
+>mice tall
+You already found the mice and destroyed the stall!
+
+@rej+
+#+testcase-check-pre-my-corps-rule-abide-by-the-followers-check-rule
+>my corps
+You sense you don't have the full gang together! You must be getting close, though.
+So how many companions do you need? On reflection, a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight. For now, you assume you are.
+You're still four followers short.
+\\
+>undo
 
 >s
 
 >w
+
+@rej
+>x bruise
+It's been vandalized a bit, though, and maybe if you X again, you might find a fourth-wall way to warp around and, well, see the bare minimum of extra adventures it holds, without the, well, language.
+\\
+#testcase-check-pre-nab-aye-rule-if-nah-bye-is-not-touchable
+>nab aye
+That thought/action/observation/request brings up nothing.
+\\
+>x bruise
+Oh, hey! You notice something scrawled on BRUISE-WARES. It says NAH, BYE. It seems negative on the surface but makes you believe if you can do the minimum you need to get in and out of that place and bypass the spicier stuff.
+
+@rej+
+# this is to test getting the orc with top-eight known
+>brew swears
+by a bonus point
+\\
+>in
+\\
+>weak us
+by a bonus point
+\\
+>my corps
+So how many companions do you need? On reflection, a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight. For now, you assume you are.
+\\
+>crew dork
+by a bonus point
+You take some time to consider how the crude orc fits into a top-eight op. It only seems polite to count them as one of the top eight. You wouldn't want them feeling left out.
+\\
+>undo
+>undo
+>undo
+>undo
+>undo
+
+@rej+
+# this is to test nab aye/top-eight op text conflicts
+##balance undos
+#+testcase-check-pre-nab-aye-rule-if-nah-bye-is-not-touchable
+>nab aye
+by three bonus points
+!top-eight op
+\\
+>my corps
+So how many companions do you need? On reflection, a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight, but with the orc along, it seems like a courtesy to count them instead of yourself.
+You're still four followers short.
+\\
+>undo
+>undo
+\\
+>my corps
+So how many companions do you need? On reflection, a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight. For now, you assume you are.
+You're still four followers short.
+\\
+>nab aye
+You take some time to consider how the shrewd orc fits into a top-eight op. It only seems polite to count them as one of the top eight. You wouldn't want them feeling left out.
+\\
+>undo
+>undo
 
 >n
 
@@ -1633,9 +1700,14 @@ You must have one word right for who the traitor was or can become.
 by a point
 
 @rej
+##balance undo
 #+testcase-check-pre-were-meetin-rule-abide-by-the-followers-check-rule
 >were meetin
 You sense you don't have the full gang together! You must be getting close, though.
+So how many companions do you need? On reflection, a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight. For now, you assume you are.
+You're still two followers short.
+\\
+>undo
 
 >u
 
@@ -1669,10 +1741,43 @@ by a point
 >w
 
 @rej
+##balance undos
+>s
+>war file
+by a point
+>my corps
+So how many companions do you need? On reflection, a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight. For now, you assume you are.
+You're still one follower short.
+>wan dwarf
+by a point
+>n
+>brew swears
+by a bonus point
+>in
+>weak us
+by a bonus point
+>crew dork
+by a bonus point
+You take some time to consider how the crude orc fits into a top-eight op. It only seems polite to count them as one of the top eight. You wouldn't want them feeling left out.
+You thought you didn't need anyone else, and maybe you don't, but you're glad to have the orc along, all the same.
+\\
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
+@rej+
 >d
 \\
 >were meetin
 You sense you don't have the full gang together! But you must be very, very close.
+So how many companions do you need? On reflection, a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight. For now, you assume you are.
+You're still one follower short.
 \\
 #testcase-think-table-of-main-oronyms-pre-were-meetin-rule
 >think
@@ -1929,22 +2034,7 @@ You must have one word right for what to do with NAH BYE.
 >undo
 >undo
 
-@rej
->x bruise
-WRONG
-\\
-#testcase-check-pre-nab-aye-rule-if-nah-bye-is-not-touchable
->nab aye
-That thought/action/observation/request brings up nothing.
-\\
->x bruise
-WRONG
-\\
-#+testcase-check-pre-nab-aye-rule-if-nah-bye-is-not-touchable
->nab aye
-That thought/action/observation/request brings up nothing.
-
-@part
+@part+
 #testcase-one-right-table-of-main-oronyms-brew-swears-1-brew
 >brew xxx
 {$ONEWORD}
@@ -1995,7 +2085,7 @@ You can explain the grinch earls see the crude orc as a CREW DORK once they seem
 {$REJECT2}
 \\
 #testcase-check-pre-damn-peons-rule-if-damp-yawns-is-not-in-brew-swears
->damn peons
+>peons damn
 {$REJECT2}
 \\
 #testcase-check-pre-gah-wanker-rule-if-gawain-kerr-is-not-in-brew-swears
@@ -2061,11 +2151,6 @@ You lost the chance to say CREW DORK to the crude orc a bit more gently, even th
 >undo
 >undo
 
-@rej+
-#testcase-check-pre-weak-us-rule-if-grinch-earls-are-not-in-brew-swears
->grin churls
-{$REJECT2}
-
 @part
 #testcase-one-right-table-of-main-oronyms-crew-dork-1-crew
 >crew xxx
@@ -2089,11 +2174,13 @@ You must have one word right for a way to explain the crude orc's status.
 by a bonus point
 
 @rej
+You thought you didn't need anyone else, and maybe you don't, but you're glad to have the orc along, all the same.
+
+@rej+
 #testcase-check-pre-crew-dork-rule-if-sco-crew-dork-is-true
 >crew dork
 You already broke the truth to the crude orc as gently as you could!
-
-@rej+
+\\
 #testcase-check-pre-weak-us-rule-if-sco-weak-us-is-true
 >weak us
 You already established the grinch earls cursed out of weakness or, at least, not fully from strength!
@@ -2249,6 +2336,11 @@ You already cut the grin churls down to size!
 The grin churls remark that you seemed so open-minded, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do, with a "Weak wit? We quit!" and, tailing off, "We're stirred..."
 by a bonus point
 \\
+#testcase-check-pre-weak-us-rule-if-grinch-earls-are-not-in-brew-swears
+>grin churls
+{$REJECT2}
+\\
+>undo
 >undo
 >undo
 >undo
@@ -2826,7 +2918,7 @@ You can think DO/DUE MEND/MENDING now you've disposed of the sea skull.
 {$REJECT2}
 \\
 #testcase-reject-end-table-of-main-oronyms-pre-damn-peons-rule
->damn peons
+>peons damn
 {$REJECT2}
 \\
 #testcase-reject-end-table-of-main-oronyms-pre-gah-wanker-rule
