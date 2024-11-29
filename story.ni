@@ -32,6 +32,8 @@ include Old School Verb Total Carnage by Andrew Schultz.
 
 include Versioning and Extensions Tweak by Andrew Schultz.
 
+include Standard Helping Metaverbs by Andrew Schultz.
+
 section beta testing - not for release
 
 include Why Pout Beta Testing by Andrew Schultz.
@@ -771,12 +773,6 @@ check going outside:
 
 chapter abouting
 
-abouting is an action out of world.
-
-understand the command "about" as something new.
-
-understand "about" as abouting.
-
 carry out abouting:
 	say "[this-game] was written for IFComp 2024. It's something I originally thought about writing for EctoComp, but I never managed to mash enough ideas together.";
 	say "[line break]It reuses a lot of code from [i]Roads of Liches[r] and my [i]Prime Pro Rhyme Row[r] games, which have different mechanics but a similar conceit: guess the right two-word phrase. However, it's narrower in scope, and I didn't want to rely on too well-known examples of possible phrases for point scoring.";
@@ -792,14 +788,6 @@ report abouting:
 	continue the action;
 
 chapter creditsing
-
-creditsing is an action out of world.
-
-understand the command "credit" as something new.
-understand the command "credits" as something new.
-
-understand "credit" as creditsing.
-understand "credits" as creditsing.
 
 carry out creditsing:
 	say "Thanks to Michael Baltes, Clem Bing-Storrs, Wade Clarke (who also tested post-release,) Hanon Ondricek, P. B. Parjeter, Fred Snyder, and Daniel Stelzer for testing. They found stuff I just didn't have the time to find, or stuff I convinced myself I'd checked, honest I did, or even broke down cases for stuff where I was muddled and not sure how to test stuff. Oh and they inspired several ideas, too. It's always hard to ask someone for their time and energy, but I appreciate it so much![paragraph break]Michael, Fred and Daniel had IFComp [']24 entries as well, and I always appreciate being able to trade testing with a fellow competitor, so it doesn't feel cutthroat.";
@@ -821,16 +809,6 @@ report hinting:
 	continue the action;
 
 chapter verbsing
-
-verbsing is an action out of world.
-
-understand the command "v" as something new.
-understand the command "verb" as something new.
-understand the command "verbs" as something new.
-
-understand "v" as verbsing.
-understand "verb" as verbsing.
-understand "verbs" as verbsing.
 
 carry out verbsing:
 	say "[this-game] bypasses many of the standard Inform parser verbs, since it is word-puzzle based. Things are taken implicitly, and you don't need to drop anything.";
