@@ -325,7 +325,7 @@ THINK
 {$REJECT1}
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-1-aim
+#testcase-one-right-table-of-main-oronyms-an-aim-2-aim
 >xxx aim
 {$ONEWORD}
 \\
@@ -333,8 +333,7 @@ THINK
 An inner voice says "Fry! Twist!" You feel fright, wist. It's hard not to, since you don't have a name or a purpose. For some reason, you're focused on getting a name, but you've got this nagging feeling that's not quite it.
 Perhaps if you press a bit more, some thoughts may come out.
 \\
-#testcase-one-wrong-table-of-main-oronyms-1-an
->xxx an
+#testcase-one-right-table-of-main-oronyms-an-aim-1-an
 {$ONEWORD}
 \\
 >think
@@ -367,7 +366,7 @@ You already found a name and an aim!
 
 @part
 ##balance undos
-#testcase-one-wrong-table-of-main-oronyms-45-out
+#testcase-one-right-table-of-main-oronyms-wipe-out-2-out
 >wipe xxx
 {$ONEWORD}
 >think
@@ -377,7 +376,7 @@ You must have one word right for how to do something generally awesome down the 
 >undo
 
 @part+
-#testcase-one-wrong-table-of-main-oronyms-2-maps
+#testcase-one-right-table-of-main-oronyms-two-maps-2-maps
 >xxx maps
 {$ONEWORD}
 \\
@@ -387,7 +386,7 @@ You must have one word right for anything documenting a way out.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-2-two
+#testcase-one-right-table-of-main-oronyms-two-maps-1-two
 >two xxx
 {$ONEWORD}
 \\
@@ -416,7 +415,7 @@ Hmph. That still doesn't quite work! You'll figure out the how and when and wher
 You can find a HIGH PLAIN once you have something that can reach that far up.
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-3-owns
+#testcase-one-right-table-of-main-oronyms-self-owns-1-self
 >xxx owns
 {$ONEWORD}
 \\
@@ -426,7 +425,7 @@ You must have one word right for what to do with the cell phones.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-3-self
+#testcase-one-right-table-of-main-oronyms-self-owns-2-owns
 >self xxx
 {$ONEWORD}
 \\
@@ -442,7 +441,7 @@ by a point
 The prize talk has you distracted. It's got a point: you need to find something to get where you want. What's the something? You know where you want to get, the high plain/plane.
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-4-pry
+#testcase-one-right-table-of-main-oronyms-pry-stalk-1-pry
 >pry xxx
 {$ONEWORD}
 \\
@@ -452,7 +451,7 @@ You must have one word right for something physical amidst the prize talk.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-4-stalk
+#testcase-one-right-table-of-main-oronyms-pry-stalk-2-stalk
 >xxx stalk
 {$ONEWORD}
 \\
@@ -593,7 +592,7 @@ You must have one word right for where to go from Hype Lane.
 >undo
 
 @part+
-#testcase-one-wrong-table-of-main-oronyms-5-high
+#testcase-one-right-table-of-main-oronyms-high-plain-plane-1-high
 >high xxx
 {$ONEWORD}
 \\
@@ -603,10 +602,11 @@ You must have one word right for where to go from Hype Lane.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-5-plain-plane
+#testcase-one-right-table-of-main-oronyms-high-plain-plane-2-plain-plane
 >xxx plane
 {$ONEWORD}
 \\
+#+testcase-one-right-table-of-main-oronyms-high-plain-plane-2-plain-plane
 >xxx plain
 {$ONEWORD}
 \\
@@ -638,7 +638,7 @@ by a point
 {$REJECT2}
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-6-nah-naah-naw-naa-na
+#testcase-one-right-table-of-main-oronyms-nah-naah-naw-naa-na-phase-1-nah-naah-naw-naa-na
 >nah xxx
 {$ONEWORD}
 \\
@@ -648,23 +648,26 @@ You must have one word right for how to cut through the naff haze.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-6-phase
+#testcase-one-right-table-of-main-oronyms-nah-naah-naw-naa-na-phase-2-phase
 >xxx phase
 {$ONEWORD}
 \\
 >think
 You must have one word right for how to cut through the naff haze.
 \\
-#+testcase-one-wrong-table-of-main-oronyms-6-nah-naah-naw-naa-na
+#+testcase-one-right-table-of-main-oronyms-nah-naah-naw-naa-na-phase-1-nah-naah-naw-naa-na
 >naah xxx
 {$ONEWORD}
 \\
+#+testcase-one-right-table-of-main-oronyms-nah-naah-naw-naa-na-phase-1-nah-naah-naw-naa-na
 >naw xxx
 {$ONEWORD}
 \\
+#+testcase-one-right-table-of-main-oronyms-nah-naah-naw-naa-na-phase-1-nah-naah-naw-naa-na
 >naa xxx
 {$ONEWORD}
 \\
+#+testcase-one-right-table-of-main-oronyms-nah-naah-naw-naa-na-phase-1-nah-naah-naw-naa-na
 >na xxx
 {$ONEWORD}
 
@@ -677,7 +680,7 @@ by a point
 You already dispelled the haze!
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-7-east
+#testcase-one-right-table-of-main-oronyms-pole-pull-east-2-east
 >xxx east
 {$ONEWORD}
 \\
@@ -687,7 +690,7 @@ You must have one word right for the source of your feeling policed.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-7-pole-pull
+#testcase-one-right-table-of-main-oronyms-pole-pull-east-1-pole-pull
 >pole xxx
 {$ONEWORD}
 \\
@@ -706,7 +709,7 @@ by a point
 You already discovered how you were being policed!
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-8-grow
+#testcase-one-right-table-of-main-oronyms-grow-star-1-grow
 >grow xxx
 {$ONEWORD}
 \\
@@ -716,7 +719,7 @@ You must have one word right for making it beyond the gross tar.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-8-star
+#testcase-one-right-table-of-main-oronyms-grow-star-2-star
 >xxx star
 {$ONEWORD}
 \\
@@ -732,7 +735,7 @@ by a point
 You already got rid of the tar!
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-10-key
+#testcase-one-right-table-of-main-oronyms-key-pillar-1-key
 >key xxx
 {$ONEWORD}
 \\
@@ -742,7 +745,7 @@ You must have one word right for finding a way into the keep.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-10-pillar
+#testcase-one-right-table-of-main-oronyms-key-pillar-2-pillar
 >xxx pillar
 {$ONEWORD}
 \\
@@ -767,7 +770,7 @@ THINK
 >e
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-9-shore
+#testcase-one-right-table-of-main-oronyms-shore-trail-1-shore
 >shore xxx
 {$ONEWORD}
 \\
@@ -777,7 +780,7 @@ You must have one word right for finding where the short rail could lead.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-9-trail
+#testcase-one-right-table-of-main-oronyms-shore-trail-2-trail
 >xxx trail
 {$ONEWORD}
 \\
@@ -815,7 +818,7 @@ THINK
 You may be able to find a LOW DOOR here once you have a companion or companions small enough to dig a bit better.
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-19-hide
+#testcase-one-right-table-of-main-oronyms-hide-out-1-hide
 >hide xxx
 {$ONEWORD}
 \\
@@ -825,7 +828,7 @@ You must have one word right for how to dispel your high doubt.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-19-out
+#testcase-one-right-table-of-main-oronyms-hide-out-2-out
 >xxx out
 {$ONEWORD}
 \\
@@ -843,7 +846,7 @@ You already dispelled doubt and found the hideout!
 >d
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-26-boost
+#testcase-one-right-table-of-main-oronyms-boost-role-1-boost
 >boost xxx
 {$ONEWORD}
 \\
@@ -853,7 +856,7 @@ You must have one word right for a way to make the booze troll feel less awful.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-26-role
+#testcase-one-right-table-of-main-oronyms-boost-role-2-role
 >xxx role
 {$ONEWORD}
 \\
@@ -932,7 +935,7 @@ You don't want to wipe out the friendship you made.
 >n
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-18-frock
+#testcase-one-right-table-of-main-oronyms-wool-frock-2-frock
 >xxx frock
 {$ONEWORD}
 \\
@@ -942,7 +945,7 @@ You must have one word right for what is hidden in Wolf Rock.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-18-wool
+#testcase-one-right-table-of-main-oronyms-wool-frock-1-wool
 >wool xxx
 {$ONEWORD}
 \\
@@ -995,7 +998,7 @@ You realize that, in order to participate in a bay sale for a bay sail, you need
 You can't make out what sort of body of water is here. Well, not yet.
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-12-known
+#testcase-one-right-table-of-main-oronyms-known-ocean-1-known
 >known xxx
 {$ONEWORD}
 \\
@@ -1005,7 +1008,7 @@ You must have one word right for finding the surroundings here.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-12-ocean
+#testcase-one-right-table-of-main-oronyms-known-ocean-2-ocean
 >xxx ocean
 {$ONEWORD}
 \\
@@ -1025,7 +1028,7 @@ But you already got a notion for the ocean. And you didn't even need a potion!
 There's water here, but it's much more than a bay.
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-13-quid
+#testcase-one-right-table-of-main-oronyms-six-quid-2-quid
 >xxx quid
 {$ONEWORD}
 \\
@@ -1035,7 +1038,7 @@ You must have one word right for discovering what ails the sick squid.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-13-six
+#testcase-one-right-table-of-main-oronyms-six-quid-1-six
 >six xxx
 {$ONEWORD}
 \\
@@ -1061,7 +1064,7 @@ You may be able to SEE DESIGN in Keep (Iller) once you have more support and are
 >e
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-27-bend
+#testcase-one-right-table-of-main-oronyms-low-bend-2-bend
 >xxx bend
 {$ONEWORD}
 \\
@@ -1071,7 +1074,7 @@ You must have one word right for a way to rearrange the landscape here.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-27-low
+#testcase-one-right-table-of-main-oronyms-low-bend-1-low
 >low xxx
 {$ONEWORD}
 \\
@@ -1087,7 +1090,7 @@ by a point
 You already found a low bend!
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-28-bay
+#testcase-one-right-table-of-main-oronyms-bay-sail-sale-1-bay
 >bay xxx
 {$ONEWORD}
 \\
@@ -1097,8 +1100,7 @@ You must have one word right for a way to repurpose the base ale.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-28-sail-sale
->xxx sail
+#testcase-one-right-table-of-main-oronyms-bay-sail-sale-2-sail-sale
 {$ONEWORD}
 \\
 >think
@@ -1107,7 +1109,7 @@ You must have one word right for a way to repurpose the base ale.
 >undo
 >undo
 \\
-#+testcase-one-wrong-table-of-main-oronyms-28-sail-sale
+#+testcase-one-right-table-of-main-oronyms-bay-sail-sale-2-sail-sale
 >xxx sail
 {$ONEWORD}
 
@@ -1126,7 +1128,7 @@ by a point
 {$REJECT2}
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-29-mile
+#testcase-one-right-table-of-main-oronyms-store-mile-2-mile
 >xxx mile
 {$ONEWORD}
 \\
@@ -1136,7 +1138,7 @@ You must have one word right for the storm isle's alternate nature.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-29-store
+#testcase-one-right-table-of-main-oronyms-store-mile-1-store
 >store xxx
 {$ONEWORD}
 \\
@@ -1168,7 +1170,7 @@ You may be able to locate the MICE TALL here once you have a companion with good
 >w
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-35-gnome
+#testcase-one-right-table-of-main-oronyms-gnome-old-1-gnome
 >gnome xxx
 {$ONEWORD}
 \\
@@ -1178,7 +1180,7 @@ You must have one word right for who has made sure there's no mold.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-35-old
+#testcase-one-right-table-of-main-oronyms-gnome-old-2-old
 >xxx old
 {$ONEWORD}
 \\
@@ -1210,7 +1212,7 @@ You don't want to wipe out the friendships you made.
 >n
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-31-mice
+#testcase-one-right-table-of-main-oronyms-mice-tall-1-mice
 >mice xxx
 {$ONEWORD}
 \\
@@ -1220,7 +1222,7 @@ You must have one word right for what's inside MY STALL.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-31-tall
+#testcase-one-right-table-of-main-oronyms-mice-tall-2-tall
 >xxx tall
 {$ONEWORD}
 \\
@@ -1251,7 +1253,7 @@ You may be able to find a LOW DOOR in Wolf Rock now you have a companion or comp
 >n
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-20-door
+#testcase-one-right-table-of-main-oronyms-low-door-2-door
 >xxx door
 {$ONEWORD}
 \\
@@ -1261,7 +1263,7 @@ You must have one word right for what the lode ore is hiding.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-20-low
+#testcase-one-right-table-of-main-oronyms-low-door-1-low
 >low xxx
 {$ONEWORD}
 \\
@@ -1289,7 +1291,7 @@ THINK
 {$REJECT2}
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-21-own
+#testcase-one-right-table-of-main-oronyms-well-own-2-own
 >xxx own
 {$ONEWORD}
 \\
@@ -1299,7 +1301,7 @@ You must have one word right for the sinister meaning behind We Loan.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-21-well
+#testcase-one-right-table-of-main-oronyms-well-own-1-well
 >well xxx
 {$ONEWORD}
 \\
@@ -1336,7 +1338,7 @@ You can't enjoy solitude with that merchant around.
 You may be able to enjoy your solitude with WHEE LONE here once you actually have solitude.
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-22-chant
+#testcase-one-right-table-of-main-oronyms-summer-chant-2-chant
 >xxx chant
 {$ONEWORD}
 \\
@@ -1346,7 +1348,7 @@ You must have one word right for a way to zone some merchant out.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-22-summer
+#testcase-one-right-table-of-main-oronyms-summer-chant-1-summer
 >summer xxx
 {$ONEWORD}
 \\
@@ -1366,7 +1368,7 @@ You already found cheeriness outside of the merchant!
 You may be able to expose some merchant's BILE OH now you've found something positive to say to prep yourself.
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-23-bile
+#testcase-one-right-table-of-main-oronyms-bile-oh-o-1-bile
 >bile xxx
 {$ONEWORD}
 \\
@@ -1376,11 +1378,11 @@ You must have one word right for a way to counter the buy-low rhetoric.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-23-oh-o
+#testcase-one-right-table-of-main-oronyms-bile-oh-o-2-oh-o
 >xxx oh
 {$ONEWORD}
 \\
-#testcase-one-wrong-table-of-main-oronyms-23-oh-o
+#+testcase-one-right-table-of-main-oronyms-bile-oh-o-2-oh-o
 >xxx o
 {$ONEWORD}
 \\
@@ -1396,7 +1398,7 @@ by a point
 You may be able to enjoy your solitude with WHEE LONE here now you actually have solitude.
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-24-lone
+#testcase-one-right-table-of-main-oronyms-whee-lone-2-lone
 >xxx lone
 {$ONEWORD}
 \\
@@ -1406,7 +1408,7 @@ You must have one word right for a way to enjoy solitude.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-24-whee
+#testcase-one-right-table-of-main-oronyms-whee-lone-1-whee
 >whee xxx
 {$ONEWORD}
 \\
@@ -1441,7 +1443,7 @@ You may be able to SEE DESIGN here now you have more support and are less scared
 You may be able to recruit the ROGUE OLD here now you have money.
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-36-old
+#testcase-one-right-table-of-main-oronyms-rogue-old-2-old
 >xxx old
 {$ONEWORD}
 \\
@@ -1451,7 +1453,7 @@ You must have one word right for who is responsible for the row, gold.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-36-rogue
+#testcase-one-right-table-of-main-oronyms-rogue-old-1-rogue
 >rogue xxx
 {$ONEWORD}
 \\
@@ -1481,7 +1483,7 @@ You may be able to say OH FLIER around the oaf liar now you have exactly one qui
 >think
 !oaf
 \\
-#testcase-one-wrong-table-of-main-oronyms-25-flier-flyer
+#testcase-one-right-table-of-main-oronyms-oh-flier-flyer-1-oh
 >oh xxx
 {$ONEWORD}
 \\
@@ -1491,7 +1493,7 @@ You must have one word right for a way to get something from the oaf liar.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-25-flier-flyer
+#testcase-one-right-table-of-main-oronyms-oh-flier-flyer-2-flier-flyer
 >xxx flier
 {$ONEWORD}
 \\
@@ -1501,6 +1503,7 @@ You must have one word right for a way to get something from the oaf liar.
 >undo
 >undo
 \\
+#+testcase-one-right-table-of-main-oronyms-oh-flier-flyer-2-flier-flyer
 >xxx flyer
 {$ONEWORD}
 \\
@@ -1509,13 +1512,6 @@ You must have one word right for a way to get something from the oaf liar.
 \\
 >undo
 >undo
-\\
-#testcase-one-wrong-table-of-main-oronyms-25-oh
->oh xxx
-{$ONEWORD}
-\\
->think
-You must have one word right for a way to get something from the oaf liar.
 
 >oh flier
 by a point
@@ -1568,7 +1564,7 @@ A war file might be useful, but you'd have no way to organize the information ri
 >w
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-38-plan
+#testcase-one-right-table-of-main-oronyms-plan-tracker-1-plan
 >plan xxx
 {$ONEWORD}
 \\
@@ -1578,7 +1574,7 @@ You must have one word right for an alternate form of the plant racker.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-38-tracker
+#testcase-one-right-table-of-main-oronyms-plan-tracker-2-tracker
 >xxx tracker
 {$ONEWORD}
 \\
@@ -1616,7 +1612,7 @@ Hmm. You
 >undo
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-41-gaunt
+#testcase-one-right-table-of-main-oronyms-gaunt-raider-1-gaunt
 >gaunt xxx
 {$ONEWORD}
 \\
@@ -1626,7 +1622,7 @@ You must have one word right for who the traitor was or can become.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-41-raider
+#testcase-one-right-table-of-main-oronyms-gaunt-raider-2-raider
 >xxx raider
 {$ONEWORD}
 \\
@@ -1648,7 +1644,7 @@ You sense you don't have the full gang together! You must be getting close, thou
 >n
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-30-elf
+#testcase-one-right-table-of-main-oronyms-mensch-elf-2-elf
 >xxx elf
 {$ONEWORD}
 \\
@@ -1658,7 +1654,7 @@ You must have one word right for a nicer form of the MEN shelf.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-30-mensch
+#testcase-one-right-table-of-main-oronyms-mensch-elf-1-mensch
 >mensch xxx
 {$ONEWORD}
 \\
@@ -1697,7 +1693,7 @@ You may be able to recover the WAR FILE on the wharf isle here now you have some
 You may be able to make sense of THE FILE here once you've gotten enough information from companions.
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-14-file
+#testcase-one-right-table-of-main-oronyms-war-file-2-file
 >xxx file
 {$ONEWORD}
 \\
@@ -1707,7 +1703,7 @@ You must have one word right for what is on Wharf Isle.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-14-war
+#testcase-one-right-table-of-main-oronyms-war-file-1-war
 >war xxx
 {$ONEWORD}
 \\
@@ -1718,7 +1714,7 @@ You must have one word right for what is on Wharf Isle.
 by a point
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-17-dwarf
+#testcase-one-right-table-of-main-oronyms-wan-dwarf-2-dwarf
 >xxx dwarf
 {$ONEWORD}
 \\
@@ -1728,7 +1724,7 @@ You must have one word right for who is on Wand Wharf.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-17-wan
+#testcase-one-right-table-of-main-oronyms-wan-dwarf-1-wan
 >wan xxx
 {$ONEWORD}
 \\
@@ -1785,7 +1781,7 @@ You already got THE FILE. See where else you can visit.
 >undo
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-16-grow
+#testcase-one-right-table-of-main-oronyms-grow-vial-1-grow
 >grow xxx
 {$ONEWORD}
 \\
@@ -1795,7 +1791,7 @@ You must have one word right for what is on Grove Isle.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-16-vial
+#testcase-one-right-table-of-main-oronyms-grow-vial-2-vial
 >xxx vial
 {$ONEWORD}
 \\
@@ -1829,7 +1825,7 @@ You may be able to find a MANNA CURB beneath the manna curb in Keep (Iller) now 
 {$REJECT2}
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-32-small
+#testcase-one-right-table-of-main-oronyms-tree-small-2-small
 >xxx small
 {$ONEWORD}
 \\
@@ -1839,7 +1835,7 @@ You must have one word right for something hidden here.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-32-tree
+#testcase-one-right-table-of-main-oronyms-tree-small-1-tree
 >tree xxx
 {$ONEWORD}
 \\
@@ -1911,7 +1907,7 @@ It's been vandalized a bit, though, and maybe if you X again, you might find a f
 >x bruise
 Oh, hey! You notice something scrawled on BRUISE-WARES. It says NAH, BYE. It seems negative on the surface but makes you believe if you can do the minimum you need to get in and out of that place and bypass the spicier stuff.
 \\
-#testcase-one-wrong-table-of-main-oronyms-46-aye
+#testcase-one-right-table-of-main-oronyms-nab-aye-2-aye
 >xxx aye
 {$ONEWORD}
 \\
@@ -1921,7 +1917,7 @@ You must have one word right for what to do with NAH BYE.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-46-nab
+#testcase-one-right-table-of-main-oronyms-nab-aye-1-nab
 >nab xxx
 {$ONEWORD}
 \\
@@ -1949,7 +1945,7 @@ WRONG
 That thought/action/observation/request brings up nothing.
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-11-brew
+#testcase-one-right-table-of-main-oronyms-brew-swears-1-brew
 >brew xxx
 {$ONEWORD}
 \\
@@ -1959,7 +1955,7 @@ You must have one word right for seeing BRUISE-WARES's true nature.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-11-swears
+#testcase-one-right-table-of-main-oronyms-brew-swears-2-swears
 >xxx swears
 {$ONEWORD}
 \\
@@ -2031,7 +2027,7 @@ You lost the chance to say CREW DORK to the crude orc a bit more gently, as you 
 >undo
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-49-us
+#testcase-one-right-table-of-main-oronyms-weak-us-2-us
 >xxx us
 {$ONEWORD}
 \\
@@ -2041,7 +2037,7 @@ You must have one word right for how to deflate the grinch earls' bravado.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-49-weak
+#testcase-one-right-table-of-main-oronyms-weak-us-1-weak
 >weak xxx
 {$ONEWORD}
 \\
@@ -2071,7 +2067,7 @@ You lost the chance to say CREW DORK to the crude orc a bit more gently, even th
 {$REJECT2}
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-51-crew
+#testcase-one-right-table-of-main-oronyms-crew-dork-1-crew
 >crew xxx
 {$ONEWORD}
 \\
@@ -2081,7 +2077,7 @@ You must have one word right for a way to explain the crude orc's status.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-51-dork
+#testcase-one-right-table-of-main-oronyms-crew-dork-2-dork
 >xxx dork
 {$ONEWORD}
 \\
@@ -2103,7 +2099,7 @@ You already broke the truth to the crude orc as gently as you could!
 You already established the grinch earls cursed out of weakness or, at least, not fully from strength!
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-52-ass
+#testcase-one-right-table-of-main-oronyms-ass-low-lo-1-ass
 >ass xxx
 {$ONEWORD}
 \\
@@ -2113,7 +2109,7 @@ You must have one word right for a way to counter the ah-slow taunts.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-52-low-lo
+#testcase-one-right-table-of-main-oronyms-ass-low-lo-2-low-lo
 >xxx low
 {$ONEWORD}
 \\
@@ -2131,7 +2127,7 @@ You must have one word right for a way to counter the ah-slow taunts.
 by a bonus point
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-53-bastard
+#testcase-one-right-table-of-main-oronyms-bastard-e+h*-1-bastard
 >bastard xxx
 {$ONEWORD}
 \\
@@ -2141,7 +2137,7 @@ You must have one word right for a way to counter the bah-sturdy taunts.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-53-e+h*
+#testcase-one-right-table-of-main-oronyms-bastard-e+h*-2-e+h*
 >xxx eee
 {$ONEWORD}
 \\
@@ -2153,7 +2149,7 @@ You must have one word right for a way to counter the bah-sturdy taunts.
 by a bonus point
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-54-damn
+#testcase-one-right-table-of-main-oronyms-damn-peons-1-damn
 >damn xxx
 {$ONEWORD}
 \\
@@ -2163,7 +2159,7 @@ You must have one word right for a way to counter the damp-yawns taunts.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-54-peons
+#testcase-one-right-table-of-main-oronyms-damn-peons-2-peons
 >xxx peons
 {$ONEWORD}
 \\
@@ -2175,7 +2171,7 @@ You must have one word right for a way to counter the damp-yawns taunts.
 by a bonus point
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-55-ass
+#testcase-one-right-table-of-main-oronyms-heckle-ass-2-ass
 >xxx ass
 {$ONEWORD}
 \\
@@ -2185,7 +2181,7 @@ You must have one word right for a way to counter the heh-class taunts.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-55-heckle
+#testcase-one-right-table-of-main-oronyms-heckle-ass-1-heckle
 >heckle xxx
 {$ONEWORD}
 \\
@@ -2197,7 +2193,7 @@ You must have one word right for a way to counter the heh-class taunts.
 by a bonus point
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-56-huh
+#testcase-one-right-table-of-main-oronyms-huh-shit-1-huh
 >huh xxx
 {$ONEWORD}
 \\
@@ -2207,7 +2203,7 @@ You must have one word right for a way to counter the hush-it taunts.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-56-shit
+#testcase-one-right-table-of-main-oronyms-huh-shit-2-shit
 >xxx shit
 {$ONEWORD}
 \\
@@ -2219,7 +2215,7 @@ You must have one word right for a way to counter the hush-it taunts.
 by a bonus point
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-57-fuckers
+#testcase-one-right-table-of-main-oronyms-lie-fuckers-2-fuckers
 >xxx fuckers
 {$ONEWORD}
 \\
@@ -2229,7 +2225,7 @@ You must have one word right for a way to counter the life-occurs taunts.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-57-lie
+#testcase-one-right-table-of-main-oronyms-lie-fuckers-1-lie
 >lie xxx
 {$ONEWORD}
 \\
@@ -2258,7 +2254,7 @@ by a bonus point
 >undo
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-58-dicks
+#testcase-one-right-table-of-main-oronyms-were-dicks-2-dicks
 >xxx dicks
 {$ONEWORD}
 \\
@@ -2268,7 +2264,7 @@ You must have one word right for a way to counter the taunting weird-icks.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-58-were
+#testcase-one-right-table-of-main-oronyms-were-dicks-1-were
 >were xxx
 {$ONEWORD}
 \\
@@ -2280,7 +2276,7 @@ You must have one word right for a way to counter the taunting weird-icks.
 by a bonus point
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-50-churls
+#testcase-one-right-table-of-main-oronyms-grin-churls-2-churls
 >xxx churls
 {$ONEWORD}
 \\
@@ -2290,7 +2286,7 @@ You must have one word right for a way to reclassify the grinch earls.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-50-grin
+#testcase-one-right-table-of-main-oronyms-grin-churls-1-grin
 >grin xxx
 {$ONEWORD}
 \\
@@ -2309,7 +2305,7 @@ The grin churls remark that you seemed so open-minded, really, and they're all f
 {$REJECT2}
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-59-gah
+#testcase-one-right-table-of-main-oronyms-gah-wanker-1-gah
 >gah xxx
 {$ONEWORD}
 \\
@@ -2319,7 +2315,7 @@ You must have one word right for a way to counter Gawain Kerr's taunts.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-59-wanker
+#testcase-one-right-table-of-main-oronyms-gah-wanker-2-wanker
 >xxx wanker
 {$ONEWORD}
 \\
@@ -2351,7 +2347,7 @@ You may be able to create a TALL CAKE once you have ingredients and cooking inst
 >undo
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-39-design
+#testcase-one-right-table-of-main-oronyms-see-design-2-design
 >xxx design
 {$ONEWORD}
 \\
@@ -2361,7 +2357,7 @@ You must have one word right for what the sign hides.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-39-see
+#testcase-one-right-table-of-main-oronyms-see-design-1-see
 >see xxx
 {$ONEWORD}
 \\
@@ -2372,7 +2368,7 @@ You must have one word right for what the sign hides.
 by a point
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-40-knife
+#testcase-one-right-table-of-main-oronyms-knife-right-rite-1-knife
 >knife xxx
 {$ONEWORD}
 \\
@@ -2382,14 +2378,14 @@ You must have one word right for what to find or do to leave.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-40-right-rite
+#testcase-one-right-table-of-main-oronyms-knife-right-rite-2-right-rite
 >xxx right
 {$ONEWORD}
 \\
 >think
 You must have one word right for what to find or do to leave.
 \\
-#testcase-one-wrong-table-of-main-oronyms-40-right-rite
+#+testcase-one-right-table-of-main-oronyms-knife-right-rite-2-right-rite
 >xxx rite
 {$ONEWORD}
 \\
@@ -2413,7 +2409,7 @@ You may be able to create a TALL CAKE once you have ingredients and cooking inst
 You already saw the design in the seedy sign. You don't need to redo things.
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-37-curb-kerb
+#testcase-one-right-table-of-main-oronyms-manna-curb-kerb-2-curb-kerb
 >xxx kerb
 {$ONEWORD}
 \\
@@ -2423,7 +2419,7 @@ You must have one word right for what lies under or near the manic herb.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-37-curb-kerb
+#+testcase-one-right-table-of-main-oronyms-manna-curb-kerb-2-curb-kerb
 >xxx curb
 {$ONEWORD}
 \\
@@ -2433,7 +2429,7 @@ You must have one word right for what lies under or near the manic herb.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-37-manna
+#testcase-one-right-table-of-main-oronyms-manna-curb-kerb-1-manna
 >manna xxx
 {$ONEWORD}
 \\
@@ -2479,7 +2475,7 @@ You may be able to TREAT ALL in Trees Mall once you have a tasty treat.
 You may be able to make sense of THE FILE in Known Ocean now you've gotten enough information from companions.
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-33-cake
+#testcase-one-right-table-of-main-oronyms-tall-cake-2-cake
 >xxx cake
 {$ONEWORD}
 \\
@@ -2489,7 +2485,7 @@ You must have one word right for how to get rid of your talk-ache.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-33-tall
+#testcase-one-right-table-of-main-oronyms-tall-cake-1-tall
 >tall xxx
 {$ONEWORD}
 \\
@@ -2515,7 +2511,7 @@ You can call your companions MY CORPS once you've shared something together.
 They are your corps, and yet, there's something to share with them. Something to enjoy together, first.
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-34-all
+#testcase-one-right-table-of-main-oronyms-treat-all-2-all
 >xxx all
 {$ONEWORD}
 \\
@@ -2525,7 +2521,7 @@ You must have one word right for what to do under the tree, tall.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-34-treat
+#testcase-one-right-table-of-main-oronyms-treat-all-1-treat
 >treat xxx
 {$ONEWORD}
 \\
@@ -2556,7 +2552,7 @@ You already shared treats!
 >s
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-15-file
+#testcase-one-right-table-of-main-oronyms-the-file-2-file
 >xxx file
 {$ONEWORD}
 \\
@@ -2566,7 +2562,7 @@ You must have one word right for what is on Thief Isle.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-15-the
+#testcase-one-right-table-of-main-oronyms-the-file-1-the
 >the xxx
 {$ONEWORD}
 \\
@@ -2591,7 +2587,7 @@ You will be able to say WERE MEETIN now you have a full party available.
 You sense you have a full party, and you're in a good place, but the atmosphere is wrong for planning and discussions.
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-42-meetin
+#testcase-one-right-table-of-main-oronyms-were-meetin-2-meetin
 >xxx meetin
 {$ONEWORD}
 \\
@@ -2601,7 +2597,7 @@ You must have one word right for how Worm Eaten could feel more homey.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-42-were
+#testcase-one-right-table-of-main-oronyms-were-meetin-1-were
 >were xxx
 {$ONEWORD}
 \\
@@ -2624,7 +2620,7 @@ You haven't identified anyone terribly evil you want to wipe out.
 You can call your companions MY CORPS now you've shared something together.
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-43-corps
+#testcase-one-right-table-of-main-oronyms-my-corps-2-corps
 >xxx corps
 {$ONEWORD}
 \\
@@ -2634,7 +2630,7 @@ You must have one word right for why your name is special.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-43-my
+#testcase-one-right-table-of-main-oronyms-my-corps-1-my
 >my xxx
 {$ONEWORD}
 \\
@@ -2707,7 +2703,7 @@ You will want to WIPE OUT the cause of your problems once you have them in your 
 !not for a while
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-44-cease
+#testcase-one-right-table-of-main-oronyms-cease-cull-1-cease
 >cease xxx
 {$ONEWORD}
 \\
@@ -2717,7 +2713,7 @@ You must have one word right for alerting the sea skull.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-44-cull
+#testcase-one-right-table-of-main-oronyms-cease-cull-2-cull
 >xxx cull
 {$ONEWORD}
 \\
@@ -2739,7 +2735,7 @@ You will want to WIPE OUT the cause of your problems now you have them in your c
 !not for a while
 
 @part
-#+testcase-one-wrong-table-of-main-oronyms-45-out
+#+testcase-one-right-table-of-main-oronyms-wipe-out-2-out
 >xxx out
 {$ONEWORD}
 \\
@@ -2749,7 +2745,7 @@ You must have one word right for how to take down the skull.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-45-wipe
+#testcase-one-right-table-of-main-oronyms-wipe-out-1-wipe
 >wipe xxx
 {$ONEWORD}
 \\
@@ -2765,7 +2761,7 @@ by a point
 You already wiped out the sea skull! Now is the time for healing.
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-47-vision
+#testcase-one-right-table-of-main-oronyms-wide-vision-2-vision
 >xxx vision
 {$ONEWORD}
 \\
@@ -2775,7 +2771,7 @@ You must have one word right for something more positive than the why-division.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-47-wide
+#testcase-one-right-table-of-main-oronyms-wide-vision-1-wide
 >wide xxx
 {$ONEWORD}
 \\
@@ -3015,7 +3011,7 @@ You can think DO/DUE MEND/MENDING now you've disposed of the sea skull.
 {$REJECT2}
 
 @part
-#testcase-one-wrong-table-of-main-oronyms-48-do-due
+#testcase-one-right-table-of-main-oronyms-do-due-mend-mending-1-do-due
 >due xxx
 {$ONEWORD}
 \\
@@ -3025,7 +3021,7 @@ You must have one word right for a way to steer things from a doom ending.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-48-do-due
+#+testcase-one-right-table-of-main-oronyms-do-due-mend-mending-1-do-due
 >do xxx
 {$ONEWORD}
 \\
@@ -3035,7 +3031,7 @@ You must have one word right for a way to steer things from a doom ending.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-48-mend-mending
+#testcase-one-right-table-of-main-oronyms-do-due-mend-mending-2-mend-mending
 >xxx mend
 {$ONEWORD}
 \\
@@ -3045,7 +3041,7 @@ You must have one word right for a way to steer things from a doom ending.
 >undo
 >undo
 \\
-#testcase-one-wrong-table-of-main-oronyms-48-mend-mending
+#+testcase-one-right-table-of-main-oronyms-do-due-mend-mending-2-mend-mending
 >xxx mending
 {$ONEWORD}
 \\
