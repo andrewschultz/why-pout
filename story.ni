@@ -518,7 +518,7 @@ Storm Isle is a room in universal. "[if sco-store-mile is true]Well, you're in a
 
 chapter my stall
 
-My Stall is a thing. "A stall labeled MY STALL sits here, abandoned, against a wall. You think you hear odd noises from behind it.". description is "As you get closer to My Stall, the odd noises grow a bit louder. You see nothing particularly special, though.". eyes-number of my stall is 44. eyes-rule of my stall is the pre-mice-tall rule.
+My Stall is a thing. "A stall labeled [b]MY STALL[r] sits here, abandoned, against a wall. You think you hear odd noises from behind it.". description is "As you get closer to [b]MY STALL[r], the odd noises grow a bit louder. You see nothing particularly special, though.". eyes-number of my stall is 44. eyes-rule of my stall is the pre-mice-tall rule.
 
 section mice tall
 

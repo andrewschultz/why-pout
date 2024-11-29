@@ -261,6 +261,10 @@ a swearblob has a number called alphorder.
 
 volume stubs
 
+to say nosplur of (th - a thing): unless th is plural-named, say "s";
+
+to say splur of (nu - a number): if nu > 1, say "s";
+
 volume definitions
 
 definition: a direction (called d) is viable:
@@ -273,7 +277,9 @@ to decide which number is core-pals-made: decide on number of friendly needed fo
 
 to decide which number is pals-made: decide on number of friendly followers;
 
-to decide which number is pals-needed: decide on number of needed followers;
+to decide which number is pals-overall-needed: decide on number of needed followers;
+
+to decide which number is pals-still-needed: decide on number of needed not friendly followers;
 
 to decide which number is flier-isle-score:
 	decide on (boolval of sco-grow-vial) + (boolval of sco-the-file) + (boolval of sco-war-file);

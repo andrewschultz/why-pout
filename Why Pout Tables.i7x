@@ -50,7 +50,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "knife"	"right|rite"	--	--	--	false	false	false	false	"what to find or do to leave"	false	true	true	false	false	nigh fright	pre-knife-right rule	post-knife-right rule	--	--
 "gaunt"	"raider"	--	"rater"	hom-gaunt-rater rule	false	false	false	false	"who the traitor was or can become"	false	true	true	false	false	worm eaten	pre-gaunt-raider rule	post-gaunt-raider rule	--	--
 "were"	"meetin"	"wier|whirr|warm|eden|war|meeting"	--	hom-whirr-meetin rule	false	false	false	false	"how Worm Eaten could feel more homey"	false	true	true	false	false	worm eaten	pre-were-meetin rule	post-were-meetin rule	--	"You will be able to say [b]WERE MEETIN[r] [once-now of pre-were-meetin rule] you have a full party available."
-"my"	"corps"	--	"core"	hom-my-core rule	false	false	false	false	"why your name is special"	false	true	true	false	false	worm eaten	pre-my-corps rule	post-my-corps rule	--	"You can call your companions [b]MY CORPS[r] [if pals-made < 2]once you have companions[else if pals-made < pals-needed]once you have enough of them[else][once-now of sco-treat-all] you've shared something together[end if]."
+"my"	"corps"	--	"core"	hom-my-core rule	false	false	false	false	"why your name is special"	false	true	true	false	false	worm eaten	pre-my-corps rule	post-my-corps rule	--	"You can call your companions [b]MY CORPS[r] [if pals-made < 2]once you have companions[else if pals-still-needed > 0]once you have enough of them[else][once-now of sco-treat-all] you've shared something together[end if]."
 "cease"	"cull"	"seas|sees|seize"	--	hom-cease-cull rule	false	false	false	false	"alerting the sea skull"	false	true	true	false	false	Doom Ending	pre-cease-cull rule	post-cease-cull rule	--	--
 "wipe"	"out"	--	--	--	false	false	false	false	"how to [if player is in doom ending]take down the skull[else]do something generally awesome down the road[end if]"	false	true	true	false	false	Doom Ending	pre-wipe-out rule	post-wipe-out rule	--	"You will want to [b]WIPE OUT[r] the cause of your problems [once-now of sco-cease-cull] you have them in your crosshairs[if the room down from naffhaze is nowhere]. That's probably not for a while, though[end if]."
 "nab"	"aye"	--	--	--	false	false	false	false	"what to do with [b]NAH BYE[r]"	false	true	false	false	false	naff haze	pre-nab-aye rule	post-nab-aye rule	--	--
@@ -876,8 +876,13 @@ a wordtwisting rule (this is the followers-check rule):
 	if pals-made is 0:
 		vcp "Sadly, you have no friends to bring together yet! Yet.";
 		not-yet;
-	if number of still-follow-needed followers > 0:
-		vcp "You sense you don't have the full gang together! [if number of still-follow-needed followers is 1]But you must be very, very close[else if number of still-follow-needed followers <= 4]You must be getting close, though[else]You've made a start, and you like who you have, but you feel there's not enough variety yet[end if].";
+	if pals-still-needed > 0:
+		vcp "You sense you don't have the full gang together! [if number of still-follow-needed followers is 1]But you must be very, very close[else if pals-still-needed <= 4]You must be getting close, though[else]You've made a start, and you like who you have, but you feel there's not enough variety yet[end if].";
+		if gs-top-eight-op-known is false:
+			vcp "You realize you're not even sure how many companions you need. On reflection, you realize a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight.";
+		else:
+			vcp "[if orc is friendly]Hmm. You want a top-eight op, but [the orc], willing as they are, doesn't seem to mind being an associate member due to youth. You need one more companion with heft[else]You're still [pals-still-needed in words] follower[splur of pals-still-needed] short.";
+		now gs-top-eight-op-known is true;
 		not-yet;
 
 this is the hom-whirr-meetin rule:

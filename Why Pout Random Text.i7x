@@ -81,8 +81,6 @@ to say nosplur1: say "[nosplur of talker1]";
 
 to say nosplur2: say "[nosplur of talker2]";
 
-to say nosplur of (th - a thing): unless th is plural-named, say "s";
-
 volume printing stuff out
 
 to reassign-t1-t2 (nu - a number):
