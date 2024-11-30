@@ -45,8 +45,6 @@ book sentient
 
 a sentient can be prefollowing. a sentient is usually not prefollowing. [defined in the core: this is for things you can talk to but they take lower priority than followers]
 
-a sentient can be hostile, agreeable or neutral. a sentient is usually neutral.
-
 book followers (defined in global file)
 
 a follower can be unfriendly, friendly or donewith. a follower is usually unfriendly.

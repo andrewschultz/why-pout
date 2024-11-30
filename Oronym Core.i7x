@@ -16,6 +16,14 @@ volume things
 
 a sentient is a kind of thing.
 
+a sentient can be hostile, agreeable or neutral. a sentient is usually neutral.
+
+volume globals
+
+gs-war-pawn-try is a truth state that varies.
+
+gs-eye-note is a truth state that varies.
+
 volume I7 standard low-usage default verbs
 
 book senses
