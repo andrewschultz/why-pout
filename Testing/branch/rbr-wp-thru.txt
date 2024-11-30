@@ -1776,6 +1776,11 @@ The grinch earls mock you, or maybe boost themselves, with "Heh, class!"
 >eye
 The eyes glow dimly and show six dots, then three dots.
 
+@mis
+#testcase-mistake-why-pout-heck-alas
+>heck alas
+Too tame!
+
 @!min
 >heckle ass
 by a bonus point

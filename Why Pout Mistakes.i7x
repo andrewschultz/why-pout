@@ -38,6 +38,8 @@ understand "warp" and "warp [text]" as a mistake ("Yes, the war pawn will help y
 
 chapter brew swears and its residents
 
+understand "heck alas" as a mistake ("Too tame!") when player is in brew swears and heh-class is in brew swears.
+
 understand "so fucking" as a mistake ("Not a complete sentence. So there might be a positive adjective at the end. Focus on Gawain Kerr's name.")
 
 understand "flaw crap" as a mistake ("Ah, this would work around people who feel shame for their flaws, but Gawain Kerr does not. Focus on his name.")
