@@ -12,44 +12,7 @@ definition: a rule (called ru) is thinknoteblocking:
 
 volume cheat item stuff
 
-a thing has a number called eyes-number. a thing has a rule called eyes-rule. eyes-rule of a thing is usually autoreject rule.
-
-a room has a number called eyes-number. a room has a rule called eyes-rule. eyes-rule of a room is usually autoreject rule.
-
 a room can be bonuspointy or needpointy. a room is usually needpointy.
-
-a wordtwisting rule (this is the autoreject rule): not-yet;
-
-a hintthing is a kind of thing. a hintthing can be dropwarned. a hintthing is usually not dropwarned. a hintthing has text called drop-poke.
-
-check drop2ing hintthing:
-	if noun is dropwarned, continue the action;
-	now noun is dropwarned;
-	say "[drop-poke of noun]";
-	if the player switch-consents:
-		say "Okay.";
-		moot noun;
-	else:
-		say "Okay, there will be no nag next time you try to drop [the noun].";
-	the rule succeeds;
-
-chapter eyeing
-
-eyering is an action out of world.
-
-understand the command "eye" as something new.
-understand the command "eyes" as something new.
-
-understand "eye" as eyering when player has slice eyes.
-understand "eyes" as eyering when player has slice eyes.
-
-eyeing is an action out of world applying to one thing.
-
-understand "eye [thing]" as eyeing when player has slice eyes.
-understand "eyes [thing]" as eyeing when player has slice eyes.
-
-check eyeing eyes:
-	say "[one of]The eyes will light up two sets of dots if there is something relevant to clue. (+)[or]The numbers of dots correspond to the number of letters in each word. (+)[or]The dots also have two binary settings: green or yellow, and dimly glowing or glowing. (+)[or]Green dots mean something you can move forward with now. (+)[or]Yellow dots mean something you can guess, but you don't have the right items or assistance to move forward. (+)[or]Finally, a dimly glowing reading is something that is optional for completing [this-game]. (End of hints. Next [b]EYE EYES[r] starts the hint cycle again)[cycling][line break]" instead;
 
 to say eye-with:
 	if current action is eyering:
@@ -61,75 +24,20 @@ to say eye-with:
 	else:
 		say "with [the noun]";
 
-eyeguessing a number (called n):
-	if sly size slice eyes are moot, say "But you ditched [the eyes], so you can't [b]EYE[r] any more." instead;
-	if player does not have sly size slice eyes, say "But you don't have what you need to [b]EYE[r] anything." instead;
-	if n is -1:
-		say "The eyes show nothing. You've done everything you need to [eye-with]." instead;
-	else if n is 0 or n is 1:
-		say "The eyes show nothing. Probably don't need to do anything [eye-with]." instead;
-	else if n is 2:
-		say "The eyes almost seem to light up. Perhaps you need to do something later [eye-with], when things are noticeably different." instead;
-	let dimly be whether or not n < 0;
-	if n < 0:
-		now n is 0 - n;
-	let this-rule be eyes-rule of location of player;
-	if current action is eyeing:
-		now this-rule is eyes-rule of noun;
-	now verb-dont-print is true;
-	process this-rule;
-	now verb-dont-print is false;
-	let rb-out be outcome of the rulebook;
-	say "The eyes ";
-	if rb-out is the not-yet outcome:
-		say "light up [if dimly is true]a dim [end if]yellow";
-	else if dimly is true:
-		say "glow dimly";
-	else:
-		say "light up green";
-	say " and show [(n / 10) in words] dots, then [(remainder after dividing n by 10) in words] dots.";
-
-eyeguessing is a number based rulebook.
+chapter room specific rule(s)
 
 check eyeing (this is the time to wipe out rule):
 	if player is in doom ending and sco-cease-cull is true and sco-wipe-out is false:
 		say "The eyes look around frantically. It feels like quite a moment, where you need a big moment or action. They show four dots, then three dots." instead;
 
-carry out eyeing:
-	abide by the eyeguessing rulebook for eyes-number of noun;
-	the rule succeeds;
+check eyering when player is in brew swears and sco-weak-us is false:
+	say "It's not the room so much as the 'we cuss' vibes the eyes seem to be picking up.";
 
 check eyering:
 	abide by the time to wipe out rule;
 	if player is in brew swears and number of swearblobs in brew swears is 1:
 		let RSB be random swearblob in brew swears;
 		try eyeing RSB instead;
-
-carry out eyering:
-	abide by the eyeguessing rulebook for eyes-number of location of player;
-	the rule succeeds;
-
-report eyeing:
-	note-not-now;
-	continue the action;
-
-report eyering:
-	note-not-now;
-	continue the action;
-
-to note-not-now:
-	if gs-eye-note is false:
-		now gs-eye-note is true;
-		say "[i][bracket][b]NOTE[r][i]: the eyes have two binary settings: green or yellow, and glowing or dimly glowing. This, along with the hints, may be intuitive, but if it is not, [b]EYE EYES[r][i] will spell things out.[close bracket][line break]";
-
-to declue-here: now eyes-number of location of player is -1
-
-to declue (th - a thing): now eyes-number of th is -1
-
-chapter room specific rule(s)
-
-check eyering when player is in brew swears and sco-weak-us is false:
-	say "It's not the room so much as the 'we cuss' vibes the eyes seem to be picking up.";
 
 volume new types
 

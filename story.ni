@@ -146,24 +146,6 @@ rule for printing a parser error when the latest parser error is the nothing to 
 	else:
 		say "It looks like you tried to act on multiple things. You don't need to act on more than one thing at a time in [this-game].";
 
-drop2ing is an action applying to one thing.
-
-understand the command "drop" as something new.
-understand "drop [thing]" as drop2ing.
-understand "drop" as drop2ing.
-
-check drop2ing:
-	if noun is eyes:
-		moot eyes;
-		say "They eyes roll away. 'Ire, ol['] eye roll!', you think to yourself." instead;
-	if noun is war pawn:
-		moot war pawn;
-		say "It blows away violently. It must've been in Zugzwang or something." instead;
-	say "You don't need to [b]DROP[r] anything in [this-game]. Most of what gets in your inventory will disappear when used successfully.[if player has war pawn]. However, you may [b]DROP[r] the war pawn to remove the temptation to skip a puzzle[end if]." instead;
-
-rule for supplying a missing noun when drop2ing:
-	now noun is the player;
-
 rule for supplying a missing noun when taking:
 	now noun is the player;
 
@@ -176,10 +158,6 @@ volume rooms
 book Eh Raw Air Aww
 
 Eh Raw Air Aww is a room in first-rooms. printed name is "[if sco-an-aim is false]Eh, Raw Air, Aww[else]Tomb Apse[end if]". description is "[if sco-an-aim is false]The air chokes you a bit. It's too thick to see far beyond yourself. You barely know who you are, even. Ugh. You can't see much beyond yourself, really, so that'd be somewhere to start.[else]It's a bit clearer now. You still seem trapped. But there must be secrets hidden, and maybe one or more can get you out of here.[end if]". eyes-number of Eh Raw Air Aww is 2. eyes-rule of Air Aww is pre-an-aim rule. [okay, we don't get the eyes until later.]
-
-chapter sly size slice eyes
-
-the sly size slice eyes are a plural-named hintthing. eyes-number of sly size slice eyes is 1. printed name is "sly size-slice eyes". drop-poke of slice eyes is "Are you sure you wish to drop [the noun]? They give a clue as to the length of any solution.". description is "The eyes shift around a lot, looking for stuff normal human eyes can't see. If you wish them to look at something, [b]EYE[r] it, or just [b]EYE[r] the room. You can even [b]EYE[r] the eyes themselves to spell out precisely how they work.". understand "eye" as eyes.
 
 book Hype Lane
 
@@ -263,16 +241,6 @@ check eyeing the policed feeling: say "Strangely, though it's incorporeal, you g
 
 every turn when noun is policed feeling:
 	if the player's command includes "feeling", say "It's more the being policed to focus on. You have lots of feelings that come and go."
-
-chapter war pawn
-
-the war pawn is a hintthing. description is "It's a grey chess pawn with a frown and mean glare carved in the rounded top. If it had fists, you are pretty sure they'd be doubled up in a fighting posture, but it doesn't even have arms.[paragraph break]Looking at it from many different angles gets you all sorts of weird ideas. Perhaps it could help you when you run out of them on your quest. You may wish to wait until you really need to use it, though of course, you don't want to wait too late.". eyes-number of war pawn is -42. drop-poke of war pawn is "The war pawn can get you past a tough puzzle. Drop it anyway to resist the temptation to jump ahead?". eyes-rule of war pawn is trivially true rule.
-
-after examining war pawn for the first time:
-	say "If you want to resist the temptation of this cheat item, [b]DROP[r] it. There is no penalty for using it.";
-	continue the action;
-
-check eyeing war pawn: say "You reflect on the irony of using a hint item on a hint item, but then, you see a result!";
 
 chapter short rail
 
@@ -829,16 +797,8 @@ carry out verbsing:
 		say "[line break]Most point-scoring commands will consist of two words.";
 	the rule succeeds;
 
-report verbsing when player has eyes:
-	say "With [the eyes], you can [b]EYE[r] the area to see if it can be changed, or you can [b]EYE[r] any object.";
-	continue the action;
-
 report verbsing when gs-note-chatopt is true:
 	say "To control random follower chat, you can type [b]SCORE CHAT[r] to turn it on or [b]SCORCH AT[r] to turn it off.";
-	continue the action;
-
-report verbsing when player has war pawn:
-	say "With [the war pawn], [if gs-war-pawn-try is true][b]WARP ON[r][else]there must be a way[end if] to gain insight to pass a tricky puzzle.";
 	continue the action;
 
 report verbsing when can-lump-party:
