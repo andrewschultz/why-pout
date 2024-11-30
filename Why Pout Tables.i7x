@@ -251,6 +251,7 @@ this is the post-low-door rule:
 	if gnome is friendly:
 		say "[line break]The gnome also rifles through, quickly, saying 'no more gnome ore.'";
 	reveal We Loan to inside;
+	move low door to Wolf Rock;
 	declue lode ore;
 
 section lobe end scoring

@@ -251,7 +251,10 @@ Why Pout has no direct in-game hints. However, a walkthrough should be provided 
 You dropped the sly size-slice eyes, which were the main hint item. You'll have to restart to bring them back again.
 
 @hint
+# note there is a "check" here
+#testcase-values-eyes-number-of-sly-size-slice-eyes-is-1
 >eye eye
+!The eyes light
 The eyes will light up two sets of dots if there is something relevant to clue. (+)
 \\
 >eye eye
@@ -273,11 +276,13 @@ Finally, a dimly glowing reading is something that is optional for completing Wh
 The eyes will light up two sets of dots if there is something relevant to clue. (+)
 
 @hint+
+#testcase-values-eyes-number-of-hype-lane-is-45
 >eye
 The eyes light up yellow and show four dots, then five dots.
 !That would be a nicer place!
 \\
->eye phones
+#testcase-values-eyes-number-of-cell-phones-is-44
+>eye cell phones
 The eyes light up green and show four dots, then four dots.
 
 @li
@@ -358,6 +363,7 @@ The prize talk also discusses things that aren't so worth it, like -- well, plan
 The talk itself gives you indigestion.
 
 @hint
+#testcase-values-eyes-number-of-prize-talk-is-35
 >eye talk
 The eyes light up green and show three dots, then five dots.
 
@@ -365,8 +371,13 @@ The eyes light up green and show three dots, then five dots.
 by a point
 
 @hint
+#+testcase-values-eyes-number-of-prize-talk-is-35
 >eye talk
 The eyes show nothing. You've done everything you need to neutralize the prize talk.
+\\
+#testcase-values-eyes-number-of-stalk-is--1
+>eye stalk
+The eyes show nothing. You've done everything you need to with the stalk.
 
 @all
 #testcase-check-pre-pry-stalk-rule-fallthrough
@@ -494,9 +505,11 @@ You sense you don't want the naff haze to faze you, but you want a noun, here, t
 Too risky to stumble around until the haze lifts. How to make that happen?
 
 @hint
+#testcase-values-eyes-number-of-naff-haze-is-35
 >eye haze
 The eyes light up green and show three dots, then five dots.
 \\
+#testcase-values-eyes-number-of-naffhaze-is-35
 >eye
 The eyes light up green and show three dots, then five dots.
 
@@ -548,6 +561,7 @@ by a point
 You're too self-conscious for self-talk, being policed and all.
 
 @hint
+#+testcase-values-eyes-number-of-naffhaze-is-35
 >eye
 The eyes light up green and show four dots, then four dots.
 
@@ -584,6 +598,11 @@ It's not feelings of inadequacy you need to resolve. You need to find something.
 #+testcase-mistake-why-pout-po-least-poe-least-poor-least
 >poor least
 It's not feelings of inadequacy you need to resolve. You need to find something.
+
+@hint
+#testcase-values-eyes-number-of-policed-feeling-is-44
+>eye feeling
+The eyes light up green and show four dots, then four dots.
 
 >pole east
 by a point
@@ -637,14 +656,22 @@ The keep (iller) is locked. You will need to find the key.
 >eye
 The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 \\
+#testcase-values-eyes-number-of-short-rail-is-55
 >eye short rail
 The eyes light up green and show five dots, then five dots.
 \\
+#testcase-values-eyes-number-of-keep-iller-is-36
 >eye keep
 The eyes light up green and show three dots, then six dots.
 \\
+#testcase-values-eyes-number-of-gross-tar-is-44
 >eye gross tar
 The eyes light up green and show four dots, then four dots.
+\\
+#testcase-values-eyes-number-of-war-pawn-is--42
+>eye war pawn
+You reflect on the irony of using a hint item on a hint item, but then, you see a result!
+The eyes glow dimly and show four dots, then two dots.
 
 @hom
 #testcase-homonym-reject-table-of-main-oronyms-sure
@@ -672,6 +699,7 @@ Too much to eat, even if it were edible.
 If you need to eat anything, it requires a slightly different approach.
 
 @hint
+#testcase-values-eyes-number-of-shore-trail-is--1
 >eye trail
 The eyes show nothing. You've done everything you need to with the shore trail.
 
@@ -701,9 +729,11 @@ by a point
 ##balance undos
 >w
 \\
+#testcase-values-eyes-number-of-row-gold-is-53
 >eye gold
 The eyes light up yellow and show five dots, then three dots.
 \\
+#testcase-values-eyes-number-of-mold-is-53
 >eye mold
 The eyes light up yellow and show five dots, then three dots.
 \\
@@ -767,6 +797,7 @@ You can only go back NORTH, or that's your notion, right now.
 You simply have no notion what lies beyond here. You hope something does. Surely the shore trail didn't just lead to a dead end! You can go back north to the high plain.
 
 @hint
+#testcase-values-eyes-number-of-nonotion-is-55
 >eye
 The eyes light up green and show five dots, then five dots.
 
@@ -800,12 +831,15 @@ It seems to be choking a bit.
 It seems to be choking a bit.
 
 @hint
+#+testcase-values-eyes-number-of-nonotion-is-55
 >eye
 The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 \\
+#testcase-values-eyes-number-of-ocean-is--1
 >eye ocean
 The eyes show nothing. You've done everything you need to with the ocean.
 \\
+#testcase-values-eyes-number-of-sick-squid-is-34
 >eye squid
 The eyes light up green and show three dots, then four dots.
 
@@ -819,6 +853,7 @@ You have an idea what is bothering the squid. Yes, a few coins stuck. Surprising
 You offer to give it some of the coins it almost choked on, but it does not need them. It seems to wait around, as if to help you with travel to places you may get to go. It's willing to wait.
 
 @hint
+#+testcase-values-eyes-number-of-sick-squid-is-34
 >eye squid
 The eyes show nothing. You've done everything you need to aid the sick squid.
 
@@ -853,12 +888,15 @@ A big rock in the shape of a wolf looms impressively, blocking all passages exce
 There's a huge pile of lode ore here, too, and perhaps there's something in it.
 
 @hint
+#testcase-values-eyes-number-of-wolf-rock-is-45
 >eye
 The eyes light up green and show four dots, then five dots.
 \\
+#testcase-values-eyes-number-of-lode-ore-is-34
 >eye lode ore
 The eyes light up yellow and show three dots, then four dots.
 \\
+#testcase-values-eyes-number-of-high-doubt-is-43
 >eye high doubt
 The eyes light up green and show four dots, then three dots.
 
@@ -907,14 +945,23 @@ by a point
 @all
 #testcase-run-post-hide-out-rule-if-sco-wool-frock-is-true
 
+@hint
+#+testcase-values-eyes-number-of-wolf-rock-is-45
+
 @hint,all
 >eye
 The eyes light up green and show four dots, then three dots.
+
+@hint
+#testcase-values-eyes-number-of-wool-frock-is--1
+>eye wool frock
+The eyes show nothing. You've done everything you need to with the wool frock.
 
 >hide out
 by a point
 
 @hint
+#+testcase-values-eyes-number-of-wolf-rock-is-45
 >eye
 The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 
@@ -941,6 +988,11 @@ There's a huge pile of lode ore here, too, and perhaps there's something in it.
 >w
 You can only go back UP. If this hideout had too many passages, it'd risk being less effective.
 
+@hint
+#testcase-values-eyes-number-of-hideout-is--1
+>eye
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+
 @hom
 #testcase-homonym-reject-table-of-main-oronyms-roll
 >boost roll
@@ -965,6 +1017,7 @@ The booze troll doesn't seem interested in useful conversation, at least not in 
 The booze troll doesn't seem interested in useful conversation, at least not in their present form.
 
 @hint
+#testcase-values-eyes-number-of-booze-troll-is-54
 >eye troll
 The eyes light up green and show five dots, then four dots.
 
@@ -972,6 +1025,7 @@ The eyes light up green and show five dots, then four dots.
 by a point
 
 @hint
+#testcase-values-eyes-number-of-new-troll-is--1
 >eye troll
 The eyes show nothing. You've done everything you need to make friends with the new troll.
 
@@ -1038,12 +1092,15 @@ A seedy sign stands here, advertising somewhere very risky indeed.
 Yes, mold is one of many things you should never eat.
 
 @hint
+#testcase-values-eyes-number-of-keepiller-is--1
 >eye
 The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 \\
+#testcase-values-eyes-number-of-manic-herb-is-54
 >eye herb
 The eyes light up yellow and show five dots, then four dots.
 \\
+#+testcase-values-eyes-number-of-mold-is-53
 >eye mold
 The eyes light up green and show five dots, then three dots.
 
@@ -1051,6 +1108,7 @@ The eyes light up green and show five dots, then three dots.
 by a point
 
 @hint
+#testcase-values-eyes-number-of-gnome-is--1
 >eye gnome
 The eyes show nothing. You've done everything you need to make friends with the gnome (old).
 \\
@@ -1085,6 +1143,7 @@ Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will
 Rouge ... no, too foreign, also, too abstract. But you need a person, not a color. That'll get you a point in this game, not just Canadian football.
 
 @hint
+#+testcase-values-eyes-number-of-row-gold-is-53
 >eye gold
 The eyes light up green and show five dots, then three dots.
 
@@ -1092,6 +1151,7 @@ The eyes light up green and show five dots, then three dots.
 by a point
 
 @hint
+#testcase-values-eyes-number-of-rogue-old-is--1
 >eye rogue
 The eyes show nothing. You've done everything you need to make friends with the rogue (old).
 
@@ -1203,6 +1263,7 @@ Close, but there are other waterways. Action (well, sort of) is needed here.
 If you need to eat anything, it requires a slightly different approach.
 
 @hint
+#testcase-values-eyes-number-of-seedy-sign-is-36
 >eye sign
 The eyes light up green and show three dots, then six dots.
 
@@ -1264,6 +1325,7 @@ Whatever you need to do or find here, you only want to do it once. You don't wan
 So, what do you need to find, before getting out?
 
 @hint
+#testcase-values-eyes-number-of-nigh-fright-is-45
 >eye
 The eyes light up green and show four dots, then five dots.
 
@@ -1305,8 +1367,13 @@ With your friends boosting your spirits, you look for a sacred/profane weapon. I
 `Keep (Iller)
 
 @hint
+#+testcase-values-eyes-number-of-seedy-sign-is-36
 >eye sign
 The eyes show nothing. You've done everything you need to with the seedy sign.
+\\
+#testcase-values-eyes-number-of-knife-right-is--1
+>eye knife
+The eyes show nothing. You've done everything you need to with the knife (right).
 
 @li
 INVENTORY CHANGED
@@ -1352,6 +1419,7 @@ You can go down or in the cardinal directions, but not up.
 `Worm-Eaten
 
 @hint
+#testcase-values-eyes-number-of-worm-eaten-is-46
 >eye
 The eyes light up yellow and show four dots, then six dots.
 
@@ -1375,6 +1443,7 @@ The gone traitor mumbles apologetically for who they were. Perhaps you can show 
 Better ways to assimilate the gone traitor.
 
 @hint
+#testcase-values-eyes-number-of-gone-traitor-is-56
 >eye traitor
 The eyes light up green and show five dots, then six dots.
 
@@ -1393,6 +1462,7 @@ That's ambiguous--more than one friend you can chat with.
 However, you still haven't talked with the gaunt raider and the gnome (old).
 
 @hint
+#testcase-values-eyes-number-of-gaunt-raider-is--1
 >eye raider
 The eyes show nothing. You've done everything you need to make friends with the gaunt raider.
 
@@ -1427,8 +1497,19 @@ An ominous new construction appears here. It's called BRUISE-WARES. Perhaps you 
 BRUISE-WARES, some sort of odd disturbing shop, has popped up here. You can probably figure why it's forbidding and such. But perhaps it is only for a certain sort of adventurer.
 
 @hint
+#testcase-values-eyes-number-of-bruise-wares-is--46
 >eye bruise wares
 The eyes glow dimly and show four dots, then six dots.
+
+@hint+
+>x wares
+It's been
+>x wares
+Oh, hey!
+\\
+#testcase-values-eyes-number-of-nah-bye-is--33
+>eye bye
+The eyes glow dimly and show three dots, then three dots.
 
 @verbs
 ##balance undos
@@ -1529,13 +1610,16 @@ Better ways to assimilate the crude orc.
 They'd be, uh, tasteless.
 
 @hint
+#testcase-values-eyes-number-of-brew-swears-is--42
 >eye
 It's not the room so much as the "we cuss" vibes the eyes seem to be picking up.
 The eyes glow dimly and show four dots, then two dots.
 \\
+#testcase-values-eyes-number-of-shrewd-orc-is--44
 >eye orc
 The eyes light up a dim yellow and show four dots, then four dots.
 \\
+#testcase-values-eyes-number-of-grinch-earls-is--46
 >eye earls
 The eyes glow dimly and show four dots, then six dots.
 
@@ -1544,6 +1628,7 @@ The eyes glow dimly and show four dots, then six dots.
 by a bonus point
 
 @hint
+#+testcase-values-eyes-number-of-shrewd-orc-is--44
 >eye orc
 The eyes glow dimly and show four dots, then four dots.
 
@@ -1572,6 +1657,7 @@ The grinch earls shake their heads at you: "Bah! Sturdy?!"
 by a bonus point
 
 @hint
+#+testcase-values-eyes-number-of-shrewd-orc-is--44
 >eye orc
 The eyes show nothing. You've done everything you need to make friends with the crude orc.
 
@@ -1630,6 +1716,7 @@ Staunch, specific verbal defense is the way to get rid of them, here.
 You don't want to get into the guts of this place. You've gotten the crude orc on your side, and the only way to go is OUT.
 
 @hint
+#testcase-values-eyes-number-of-aah-slow-is--34
 >eye
 The eyes glow dimly and show three dots, then four dots.
 
@@ -1650,6 +1737,7 @@ by a bonus point
 The grinch earls shake their heads at you: "Bah! Sturdy?!"
 
 @hint
+#testcase-values-eyes-number-of-bah-sturdy-is--73
 >eye
 The eyes glow dimly and show seven dots, then three dots.
 
@@ -1664,6 +1752,7 @@ You show you're sturdy and then some, with just the right tone of exasperation. 
 The grinch earls dismiss you: "Damp! Yawns!"
 
 @hint
+#testcase-values-eyes-number-of-damp-yawns-is--45
 >eye
 The eyes glow dimly and show four dots, then five dots.
 
@@ -1683,6 +1772,7 @@ You hit 'em where it hurts. Nothing too vicious, just, a reminder they're not th
 The grinch earls mock you, or maybe boost themselves, with "Heh, class!"
 
 @hint
+#testcase-values-eyes-number-of-heh-class-is--63
 >eye
 The eyes glow dimly and show six dots, then three dots.
 
@@ -1697,6 +1787,7 @@ You give back at least as good as you got, showing you don't need to use the big
 The grinch earls laugh and say "Hush it."
 
 @hint
+#testcase-values-eyes-number-of-hush-it-is--34
 >eye
 The eyes glow dimly and show three dots, then four dots.
 
@@ -1711,6 +1802,7 @@ You reject the grinch earls' "urbane" attempts at shutting you up. They're a bit
 The grinch earls take cheap shots and say "Life occurs."
 
 @hint
+#testcase-values-eyes-number-of-life-occurs-is--37
 >eye
 The eyes glow dimly and show three dots, then seven dots.
 
@@ -1726,6 +1818,7 @@ The grinch earls launch "Weird! Ick!"
 s at enemies real and imagined.
 
 @hint
+#testcase-values-eyes-number-of-weird-icks-is--45
 >eye
 The eyes glow dimly and show four dots, then five dots.
 
@@ -1771,6 +1864,11 @@ Not a complete sentence. So there might be a positive adjective at the end. Focu
 #testcase-mistake-why-pout-flaw-crap
 >flaw crap
 Ah, this would work around people who feel shame for their flaws, but Gawain Kerr does not. Focus on his name.
+
+@hint
+#testcase-values-eyes-number-of-gawain-kerr-is--36
+>eye gawain kerr
+The eyes glow dimly and show three dots, then six dots.
 
 @!min
 >gah wanker
@@ -1827,9 +1925,11 @@ Lobe End
 This lobe of land appears to fall off steeply in all directions except back west. Maybe you could look for something that might be a hill, even a steep one.
 
 @hint
+#testcase-values-eyes-number-of-lobe-end-is-34
 >eye
 The eyes light up green and show three dots, then four dots.
 \\
+#testcase-values-eyes-number-of-base-ale-is-34
 >eye ale
 The eyes light up yellow and show three dots, then four dots.
 
@@ -1864,6 +1964,7 @@ The bend only curves west to north.
 The low bend (former lobe end) now bends from west to north, where there's too much water to pass on foot. So maybe you could get across, with transport. Maybe you can summon or find someone who can offer it, as well a way to pay.
 
 @hint
+#+testcase-values-eyes-number-of-base-ale-is-34
 >eye ale
 The eyes light up green and show three dots, then four dots.
 
@@ -1871,8 +1972,13 @@ The eyes light up green and show three dots, then four dots.
 by a point
 
 @hint
+#testcase-values-eyes-number-of-we-craft-weak-raft-is-1
 >eye raft
 The eyes show nothing. Probably don't need to do anything with the We-Craft Weak Raft.
+\\
+#testcase-values-eyes-number-of-water-to-the-north-is-1
+>eye water north
+The eyes show nothing. Probably don't need to do anything with the water to the north.
 
 @all
 #testcase-check-pre-bay-sale-rule-fallthrough
@@ -1915,6 +2021,7 @@ On this storm isle, it's always rainy. It'd be nice to have some shelter inside.
 The We-Craft Weak Raft from the bay sale floats here, ready to take you south across the water and back, as many times as needed.
 
 @hint
+#testcase-values-eyes-number-of-storm-isle-is-55
 >eye
 The eyes light up green and show five dots, then five dots.
 
@@ -1922,6 +2029,7 @@ The eyes light up green and show five dots, then five dots.
 by a point
 
 @hint
+#+testcase-values-eyes-number-of-storm-isle-is-55
 >eye
 The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 
@@ -1952,6 +2060,7 @@ A stall labeled MY STALL sits here, abandoned, against a wall. You think you hea
 The We-Craft Weak Raft from the bay sale floats here, ready to take you south across the water and back, as many times as needed.
 
 @hint
+#testcase-values-eyes-number-of-men-shelf-is-63
 >eye shelf
 The eyes light up green and show six dots, then three dots.
 
@@ -1959,6 +2068,7 @@ The eyes light up green and show six dots, then three dots.
 by a point
 
 @hint
+#testcase-values-eyes-number-of-mensch-elf-is--1
 >eye elf
 The eyes show nothing. You've done everything you need to make friends with the mensch elf.
 
@@ -1974,6 +2084,7 @@ Hmm. You have a lot of friends following you around, but you haven't talked to t
 !MEN SHELF
 
 @hint
+#testcase-values-eyes-number-of-my-stall-is-44
 >eye stall
 The eyes light up green and show four dots, then four dots.
 
@@ -1995,6 +2106,7 @@ Your seven companions wait here for what to do or where to go next.
 Your party is now listed separately in room descriptions.
 
 @hint
+#testcase-values-eyes-number-of-mice-tall-is--1
 >eye mice
 The eyes show nothing. You've done everything you need to make friends with the mice (tall).
 
@@ -2033,12 +2145,22 @@ You can only go back south to Lobe End or north to the rest of the mall.
 >eat ore
 Too much to eat through, even if you could.
 
+@hint
+#+testcase-values-eyes-number-of-lode-ore-is-34
+>eye lode ore
+The eyes light up green and show three dots, then four dots.
+
 >low door
 by a point
 
 @hint
+#+testcase-values-eyes-number-of-lode-ore-is-34
 >eye lode ore
 The eyes show nothing. You've done everything you need to with the pile of lode ore.
+\\
+#testcase-values-eyes-number-of-low-door-is--1
+>eye low door
+The eyes show nothing. You've done everything you need to with the low door.
 
 @all
 #testcase-check-pre-low-door-rule-fallthrough
@@ -2086,6 +2208,7 @@ You don't really trust the whole "financial services" vibe here. Maybe there's a
 You can only go back OUT here.
 
 @hint
+#testcase-values-eyes-number-of-we-loan-is-43
 >eye
 The eyes light up green and show four dots, then three dots.
 
@@ -2121,6 +2244,7 @@ You want to figure a way to kill conversation, instead.
 No, just prevent the merchant eating you up in conversation.
 
 @hint
+#testcase-values-eyes-number-of-merchant-is-65
 >eye merchant
 The eyes light up green and show six dots, then five dots.
 
@@ -2158,8 +2282,10 @@ You want to figure a way to kill conversation, even if your summer chant made it
 
 @hint
 >eye merchant
+It's more their "buy low" rhetoric, now you managed to get that chant started. You focus on that.
 The eyes light up green and show four dots, then two dots.
 \\
+#+testcase-values-eyes-number-of-we-loan-is-43
 >eye
 The eyes light up yellow and show four dots, then four dots.
 
@@ -2186,6 +2312,7 @@ You can only go back OUT here.
 !merchant
 
 @hint
+#+testcase-values-eyes-number-of-we-loan-is-43
 >eye
 The eyes light up green and show four dots, then four dots.
 
@@ -2209,6 +2336,11 @@ by a point
 \\
 >undo
 
+@hint
+#+testcase-values-eyes-number-of-we-loan-is-43
+>eye
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+
 @hom
 #testcase-homonym-reject-table-of-main-oronyms-owe-hom-owe-flier-rule
 #testcase-homonym-detail-hom-owe-flier-rule-default
@@ -2229,6 +2361,7 @@ The oaf liar is talking over you. Perhaps you can shut them up by buying somethi
 No, just prevent the oaf liar eating you up in conversation.
 
 @hint
+#testcase-values-eyes-number-of-oaf-liar-is-25
 >eye liar
 The eyes light up green and show two dots, then five dots.
 
@@ -2239,6 +2372,7 @@ by a point
 >eye
 The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 \\
+#testcase-values-eyes-number-of-flier-is-34
 >eye flier
 Weird. The flier seems to blink between three and four dots on the left, but it's stable at four dots on the right.
 
@@ -2297,6 +2431,7 @@ You can only go back OUT here.
 /^first-npc \(12\) 6[1-5]
 
 @hint
+#testcase-values-eyes-number-of-plant-racker-is-47
 >eye plant
 The eyes light up green and show four dots, then seven dots.
 
@@ -2304,6 +2439,7 @@ The eyes light up green and show four dots, then seven dots.
 by a point
 
 @hint
+#testcase-values-eyes-number-of-plan-tracker-is--1
 >eye tracker
 The eyes show nothing. You've done everything you need to with the plan tracker.
 
@@ -2354,6 +2490,7 @@ You do not have any magic points, so you don't need them refreshed. But you must
 Too risky, but perhaps it hides some more pleasant food or ingredients.
 
 @hint
+#+testcase-values-eyes-number-of-manic-herb-is-54
 >eye herb
 The eyes light up green and show five dots, then four dots.
 
@@ -2361,9 +2498,11 @@ The eyes light up green and show five dots, then four dots.
 by a point
 
 @hint
+#+testcase-values-eyes-number-of-manic-herb-is-54
 >eye herb
 The eyes show nothing. You've done everything you need to with the manic herb.
 \\
+#testcase-values-eyes-number-of-manna-is--1
 >eye manna
 The eyes show nothing. You've done everything you need to with the manna.
 
@@ -2446,6 +2585,7 @@ But wait! You can use the grow vial! It makes the tree (small) into a tree (tall
 !A tree
 
 @hint
+#testcase-values-eyes-number-of-trees-mall-is-45
 >eye
 The eyes light up green and show four dots, then five dots.
 
@@ -2456,8 +2596,9 @@ by a point
 >eye
 The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
 \\
->eye tree
-The eyes show nothing. You've done everything you need to with the tree (small).
+#testcase-values-eyes-number-of-tree-small-is--1
+>eye tree small
+The eyes show nothing. But the tree should be bigger! Perhaps there is a more organic method to achieve this.
 
 @all
 #testcase-check-pre-tree-small-rule-fallthrough
@@ -2548,6 +2689,11 @@ The ocean surrounds you on all sides, but it's less intimidating now you rode th
 >eat squid
 You can't ever eat calamari again, now the squid helped you!
 
+@hint
+#testcase-values-eyes-number-of-grow-vial-is--1
+>eye grow vial
+The eyes show nothing. You've done everything you need to with the grow vial.
+
 >war file
 by a point
 
@@ -2569,9 +2715,11 @@ You write the main stuff into your plan tracker, and as you do, you realize part
 You're not in the mood for exploring the wharf randomly. It seems like a good way to get lost. Perhaps if you focus on a specific sort of companion you need nearby, that would be better. Then you could find them and leave.
 
 @hint
+#testcase-values-eyes-number-of-wand-wharf-is-35
 >eye
 The eyes light up green and show three dots, then five dots.
 \\
+#+testcase-values-eyes-number-of-flier-is-34
 >eye flier
 The eyes light up yellow and show three dots, then four dots.
 
@@ -2612,6 +2760,11 @@ The ocean surrounds you on all sides, but it's less intimidating now you rode th
 \\
 >undo
 >undo
+
+@hint
+#testcase-values-eyes-number-of-wan-dwarf-is--1
+>eye wan dwarf
+The eyes show nothing. You've done everything you need to make friends with the wan dwarf.
 
 >n
 
@@ -2654,6 +2807,15 @@ Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will
 >l
 This is a withered, run-down former mall that had the ceiling blow off. A long old lawn, gold, is depicted here on crumbling walls and fails to give a semblance of nature. You can only go back SOUTH.
 A tree (tall) has grown here, thanks to you and the grow vial you found. It's quite welcoming. A whole crowd could sit under it!
+
+@hint
+#testcase-values-eyes-number-of-lawn-gold-is-1
+>eye lawn gold
+The eyes show nothing. Probably don't need to do anything with the long old lawn, gold.
+\\
+#testcase-values-eyes-number-of-tree-tall-is-53
+>eye tree tall
+The eyes light up yellow and show five dots, then three dots.
 
 >t dwarf
 
@@ -2711,6 +2873,7 @@ Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will
 Oh, man. You still have that talk-ache, too.
 
 @hint
+#testcase-values-eyes-number-of-talk-ache-is-44
 >eye ache
 The eyes light up green and show four dots, then four dots.
 
@@ -2759,6 +2922,11 @@ Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will
 You can't eat the cake by yourself! Make it a communal experience in a special place!
 
 @hint
+#testcase-values-eyes-number-of-tall-cake-is--1
+>eye cake
+The eyes show nothing. You've done everything you need to with the tall cake.
+\\
+#+testcase-values-eyes-number-of-tree-tall-is-53
 >eye tree
 The eyes light up green and show five dots, then three dots.
 
@@ -2967,7 +3135,18 @@ Having had your meeting here, there's not much else to do.
 You feel like your companions are just about ready to go. But you still need to say something, something that can only come uniquely inside of you, to establish what a great team you are.
 
 @hint
+#+testcase-values-eyes-number-of-worm-eaten-is-46
+>eye
+The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+\\
+#testcase-values-eyes-number-of-mike-orr-is-23
 >eye me
+The eyes light up green and show two dots, then five dots.
+\\
+>eye mike
+The eyes light up green and show two dots, then five dots.
+\\
+>eye orr
 The eyes light up green and show two dots, then five dots.
 
 >my corps
@@ -2988,6 +3167,7 @@ You can only talk to one companion at a time with T, and you've already given yo
 >undo
 
 @hint
+#+testcase-values-eyes-number-of-mike-orr-is-23
 >eye me
 The eyes show nothing. You've done everything you need to with yourself.
 
@@ -3046,9 +3226,11 @@ Now's not the time for chat.
 "Dine? Ow! Die now!" you think.
 
 @hint
+#testcase-values-eyes-number-of-sea-skull-is-54
 >eye skull
 The eyes light up green and show five dots, then four dots.
 \\
+#testcase-values-eyes-number-of-doom-ending-is-37
 >eye
 The eyes light up yellow and show three dots, then seven dots.
 
@@ -3063,6 +3245,7 @@ You'll probably have to alert the sea skull to your presence at some time. You t
 It begins pouring out rivers of blood at you and your companions. But fortunately, you have so many, that by the time it gets to you, it is not so bad. Yet it's still depressing. You think back to advice you got at the beginning ... how it seemed slightly off. What to do?
 
 @hint
+#+testcase-values-eyes-number-of-sea-skull-is-54
 >eye skull
 The eyes look around frantically. It feels like quite a moment, where you need a big moment or action. They show four dots, then three dots.
 !and show four dots, then three dots.
@@ -3126,9 +3309,11 @@ The only thing left to do is dispel the why-division, if you can.
 The why-division is too much to sort things out.
 
 @hint
+#+testcase-values-eyes-number-of-doom-ending-is-37
 >eye
 The eyes light up green and show three dots, then seven dots.
 \\
+#testcase-values-eyes-number-of-why-division-is--46
 >eye division
 The eyes light up a dim yellow and show four dots, then six dots.
 

@@ -266,11 +266,13 @@ every turn when noun is policed feeling:
 
 chapter war pawn
 
-the war pawn is a hintthing. description is "It's a grey chess pawn with a frown and mean glare carved in the rounded top. If it had fists, you are pretty sure they'd be doubled up in a fighting posture, but it doesn't even have arms.[paragraph break]Looking at it from many different angles gets you all sorts of weird ideas. Perhaps it could help you when you run out of them on your quest. You may wish to wait until you really need to use it, though of course, you don't want to wait too late.". eyes-number of war pawn is 1. drop-poke of war pawn is "The war pawn can get you past a tough puzzle. Drop it anyway to resist the temptation to jump ahead?"
+the war pawn is a hintthing. description is "It's a grey chess pawn with a frown and mean glare carved in the rounded top. If it had fists, you are pretty sure they'd be doubled up in a fighting posture, but it doesn't even have arms.[paragraph break]Looking at it from many different angles gets you all sorts of weird ideas. Perhaps it could help you when you run out of them on your quest. You may wish to wait until you really need to use it, though of course, you don't want to wait too late.". eyes-number of war pawn is -42. drop-poke of war pawn is "The war pawn can get you past a tough puzzle. Drop it anyway to resist the temptation to jump ahead?". eyes-rule of war pawn is trivially true rule.
 
 after examining war pawn for the first time:
 	say "If you want to resist the temptation of this cheat item, [b]DROP[r] it. There is no penalty for using it.";
 	continue the action;
+
+check eyeing war pawn: say "You reflect on the irony of using a hint item on a hint item, but then, you see a result!";
 
 chapter short rail
 
@@ -326,7 +328,7 @@ report examining Bruise Wares when gs-nah-bye-cued is true and nah bye is off-st
 
 section nah bye
 
-the nah bye is scenery. "[b]NAH BYE[r] is scrawled on the [wares] sign.". eyes-number of nah bye is -33.
+the nah bye is scenery. "[b]NAH BYE[r] is scrawled on the [wares] sign.". eyes-number of nah bye is -33. eyes-rule of nah bye is pre-nab-aye rule.
 
 book Keep Iller
 
@@ -391,9 +393,11 @@ book Wolf Rock
 
 Wolf Rock is a room in universal. "A big rock in the shape of a wolf looms impressively, blocking all passages except back [b]SOUTH[r]. [if sco-hide-out is true]You can also go [b]DOWN[r] into the hideout you found[else]Also, the high doubt you can go anywhere else here is thick indeed. Maybe there's a way to dispel it[end if].[paragraph break]There's a huge pile of lode ore here, too, [if sco-low-door is true]and you found a low door in it that leads [b]INSIDE[r][else]and perhaps there's something in it[end if].". eyes-number of wolf rock is 45. eyes-rule of wolf rock is the pre-wool-frock rule.
 
-check going inside in Wolf Rock when sco-low-door is true:
-	say "The low door makes it hard for too many people or entities to enter at once. So you go it alone.";
-	block-follows;
+check going inside in Wolf Rock:
+	if sco-oh-flier is true, say "You don't see any need to go back." instead;
+	if sco-low-door is true:
+		say "The low door makes it hard for too many people or entities to enter at once. So you go it alone.";
+		block-follows;
 
 chapter high doubt
 
@@ -451,6 +455,9 @@ chapter some merchant
 
 some merchant is a singular-named hostile sentient. "Some merchant babbles on, all up in your personal space, suggesting you buy low[if sco-summer-chant is true], but a bit more tolerable now you've got a mantra to zone them out.[else]. You find yourself thinking 'Man, SOME merchant,' yet looking for a way to think, 'pfft, some merchant.'[end if]". description is "Their smile certainly is fake. They're not going to shut up until you get a resolution here.". eyes-number of merchant is 65. [indefinite article of merchant is "some".] eyes-rule of some merchant is the pre-summer-chant rule.
 
+check eyeing merchant when sco-summer-chant is true:
+	say "It's more their 'buy low' rhetoric, now you managed to get that chant started. You focus on that.";
+
 report examining merchant when sco-summer-chant is false:
 	say "It strikes you you don't see them as [i]a[r] merchant, or [i]the[r] merchant, but [i]some[r] merchant.";
 	continue the action;
@@ -500,7 +507,7 @@ to say raft-clue:
 
 check going north in lobe end when sco-low-bend is true and sco-bay-sale is false: say "You have no way across the water, yet." instead;
 
-the water north is scenery. "[if sco-bay-sale is true]Easy to cross with the raft[else]You need a vessel to cross the water. The other side is too far away[end if].". eyes-number of water north is 1.
+there is a thing called the water to the north. it is scenery. "[if sco-bay-sale is true]Easy to cross with the raft[else]You need a vessel to cross the water. The other side is too far away[end if].". eyes-number of water to the north is 1.
 
 chapter We Craft Weak Raft
 
@@ -559,13 +566,15 @@ chapter tree small
 
 the tree small is a thing. "The tree (small) that you summoned/discovered grows here, or tries to, at least. What could you use on it to help it really bloom?". description is "It's a nice tree, but it's a bit small.". eyes-number of tree small is -1. printed name is "tree (small)".
 
+check eyeing tree small: say "The eyes show nothing. But the tree should be bigger! Perhaps there is a more organic method to achieve this." instead;
+
 chapter tree tall
 
 the tree tall is a thing. "A tree (tall) has grown here, thanks to you and the grow vial you found. It's quite welcoming. A whole crowd could sit under it!". description is "It was a nice tree before, but it's much more impressive now.". eyes-number of tree tall is 53. printed name is "tree (tall)". eyes-rule of tree tall is the pre-treat-all rule.
 
 chapter long old lawn gold
 
-the long old lawn gold is scenery. printed name is "long old lawn, gold". "The lawn looks tacky and useless. You can't make it better, but [if tree tall is in mall]you grew that tree (tall,) which is pretty good[else if sco-tree-small is true]that three (small) you summoned is pretty nice[else]maybe you can improve the area in general[end if].". eyes-number of lawn gold is 1.
+the long old lawn gold is scenery in Trees Mall. printed name is "long old lawn, gold". "The lawn looks tacky and useless. You can't make it better, but [if tree tall is in mall]you grew that tree (tall,) which is pretty good[else if sco-tree-small is true]that three (small) you summoned is pretty nice[else]maybe you can improve the area in general[end if].". eyes-number of lawn gold is 1.
 
 understand "walls" as lawn gold when player is in Trees Mall.
 
