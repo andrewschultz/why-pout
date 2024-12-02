@@ -761,7 +761,7 @@ The ocean surrounds you on all sides, but it's less intimidating now you rode th
 >n
 
 >in
-It's fully calm and peaceful around here. You even made full use of that flier you found here! What more could you ask for? Here, well, probably nothing. Time to get back to your companions.
+Since you got the flier, you have no need or desire to return.
 
 >undo
 >undo

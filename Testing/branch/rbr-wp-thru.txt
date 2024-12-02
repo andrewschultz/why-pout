@@ -82,7 +82,11 @@ Thanks to everyone past and future involved in the administration of IFComp.
 \\
 >hint
 Why Pout has no direct in-game hints. However, a walkthrough should be provided on itch.io or in the archive.org zip file bundle.
-After two puzzles in this first room, there will be a hint item that gives clues what to do or think next.
+After two puzzles in this first room, there will be a hint item that gives clues what to do or think next. You will get a clue if you HINT again.
+\\
+>hint
+Why Pout has no direct in-game hints. However, a walkthrough should be provided on itch.io or in the archive.org zip file bundle.
+After two puzzles in this first room, there will be a hint item that gives clues what to do or think next. Try using your senses for a clue.
 \\
 >verbs
 Most point-scoring commands will consist of two words.
@@ -252,7 +256,7 @@ You dropped the sly size-slice eyes, which were the main hint item. You'll have 
 
 @hint
 # note there is a "check" here
-#testcase-values-eyes-number-of-sly-size-slice-eyes-is-1
+#testcase-values-eyes-number-of-sly-size-slice-eyes-is-1@
 >eye eye
 !The eyes light
 The eyes will light up two sets of dots if there is something relevant to clue. (+)
@@ -427,12 +431,14 @@ You got something better than good chat.
 That stalk is your way out of here.
 
 @hom
-#testcase-homonym-reject-table-of-main-oronyms-hi-playin
+#testcase-homonym-detail-hom-hi-playin-rule-if-the-player's-command-includes-hi
+#testcase-homonym-reject-table-of-main-oronyms-hi-playin-hom-hi-playin-rule
 >hi xxx
-WRONG
+You need to do more than greet the desired location. Describe it.
 \\
+#+testcase-homonym-detail-hom-hi-playin-rule-if-the-player's-command-includes-hi
 >xxx playin
-WRONG
+No playin'. What is this location, specifically?
 
 >high plain
 by a point
@@ -674,9 +680,10 @@ You reflect on the irony of using a hint item on a hint item, but then, you see 
 The eyes glow dimly and show four dots, then two dots.
 
 @hom
-#testcase-homonym-reject-table-of-main-oronyms-sure
->sure
-WRONG
+#testcase-homonym-detail-hom-sure-trail-rule-default
+#testcase-homonym-reject-table-of-main-oronyms-sure-hom-sure-trail-rule
+>sure xxx
+You need to be sure the trail leads somewhere that sounds like "sure."
 
 >shore trail
 by a point
@@ -720,7 +727,7 @@ Things have opened up almost all the way now, with the naff haze lifted. You fee
 @hom
 #testcase-homonym-reject-table-of-main-oronyms-piller
 >xxx piller
-WRONG
+Hmm. That kind of partway SOUNDED like it should work, but it didn't.
 
 >key pillar
 by a point
@@ -1158,7 +1165,7 @@ The eyes show nothing. You've done everything you need to make friends with the 
 @all
 #testcase-check-pre-rogue-old-rule-fallthrough
 #testcase-run-post-rogue-old-rule-default
-A rogue, old, arrives. They mention they'd like to help you but, you know, the row (gold) needs maintenance. You offer to pay them three quid.
+A rogue, old, appears. They mention they'd like to help you but, you know, the row (gold) needs maintenance. You offer to pay them three quid.
 This transaction reduces your wealth from six quid to three quid.
 !lot of friends
 
@@ -1410,6 +1417,7 @@ To control random follower chat, you can type SCORE CHAT to turn it on or SCORCH
 You can go down or in the cardinal directions, but not up.
 
 >d
+
 @npc
 /^first-npc \(2\) 3[1-2]
 !this is random dialogue
@@ -1451,7 +1459,7 @@ The eyes light up green and show five dots, then six dots.
 #testcase-homonym-detail-hom-gaunt-rater-rule-default
 #testcase-homonym-reject-table-of-main-oronyms-rater-hom-gaunt-rater-rule
 >xxx rater
-WRONG
+Hmm. You need someone much more active than that. Someone who can help with rebellion, not just whine about things that are wrong.
 
 >gaunt raider
 by a point
@@ -1759,7 +1767,7 @@ The eyes glow dimly and show four dots, then five dots.
 @hom
 #testcase-homonym-reject-table-of-main-oronyms-dam
 >dam xxx
-WRONG
+Hmm. That kind of partway SOUNDED like it should work, but it didn't.
 
 @!min
 >damn peons
@@ -1777,8 +1785,12 @@ The grinch earls mock you, or maybe boost themselves, with "Heh, class!"
 The eyes glow dimly and show six dots, then three dots.
 
 @mis
-#testcase-mistake-why-pout-heck-alas
+#testcase-mistake-why-pout-heck-alas-heck-lass
 >heck alas
+Too tame!
+\\
+#+testcase-mistake-why-pout-heck-alas-heck-lass
+>heck lass
 Too tame!
 
 @!min
@@ -3042,7 +3054,7 @@ The ocean surrounds you on all sides, but it's less intimidating now you rode th
 >n
 \\
 >in
-It's fully calm and peaceful around here. You even made full use of that flier you found here! What more could you ask for? Here, well, probably nothing. Time to get back to your companions.
+Since you got the flier, you have no need or desire to return.
 \\
 >undo
 >undo

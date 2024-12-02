@@ -48,7 +48,7 @@ The eyes light up green and show three dots, then four dots.
 by a point
 
 # note there is a "check" here
-#testcase-values-eyes-number-of-sly-size-slice-eyes-is-1
+#testcase-values-eyes-number-of-sly-size-slice-eyes-is-1@
 >eye eye
 !The eyes light
 The eyes will light up two sets of dots if there is something relevant to clue. (+)

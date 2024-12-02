@@ -153,13 +153,13 @@ Oh, hey! You notice something scrawled on BRUISE-WARES. It says NAH, BYE. It see
 #testcase-run-post-nab-aye-rule-default
 >nab aye
 You walk into the off-color place, pwn some hoodlums with your squeaky-clean yet devastating oratory, and impress a crude orc who had been following them. Perhaps you could've beaten them at their own game, but that isn't your style.
-Small talk proves the crude orc to be a shrewd orc. You both like that name better, as do your companions, who accept the orc with a 'You! Thin youth, IN!'
+Small talk proves the crude orc to be a shrewd orc. You both like that name better, as do your companions, who accept the orc with a "You! Thin youth, IN!"
 The entrance to BRUISE-WARES crumbles during this chatter.
 by three bonus points
 
 #testcase-run-post-brew-swears-rule-if-nah-bye-is-in-naffhaze
 >x nah
-WRONG
+Nothing here like that. Note that room names are not usually worth examining, as you can just L or LOOK.
 
 >brew swears
 That thought/action/observation/request brings up nothing.

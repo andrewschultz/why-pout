@@ -2004,6 +2004,11 @@ You may be able to make sense of THE FILE in Known Ocean now you've gotten enoug
 
 >u
 
+@rej
+#testcase-check-pre-nah-phase-rule-if-bruise-wares-is-not-off-stage
+>nah phase
+{$REJECT2}
+
 @part
 ##balance undos
 >x bruise
@@ -2336,6 +2341,7 @@ You already cut the grin churls down to size!
 The grin churls remark that you seemed so open-minded, really, and they're all for a bit of banter, but they know when to fully move on from people like you who just don't shut up. So they do, with a "Weak wit? We quit!" and, tailing off, "We're stirred..."
 by a bonus point
 \\
+#testcase-check-pre-grin-churls-rule-if-grinch-earls-are-not-in-brew-swears
 #testcase-check-pre-weak-us-rule-if-grinch-earls-are-not-in-brew-swears
 >grin churls
 {$REJECT2}

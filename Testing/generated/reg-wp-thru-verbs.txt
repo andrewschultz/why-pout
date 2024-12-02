@@ -23,7 +23,11 @@ Thanks to everyone past and future involved in the administration of IFComp.
 
 >hint
 Why Pout has no direct in-game hints. However, a walkthrough should be provided on itch.io or in the archive.org zip file bundle.
-After two puzzles in this first room, there will be a hint item that gives clues what to do or think next.
+After two puzzles in this first room, there will be a hint item that gives clues what to do or think next. You will get a clue if you HINT again.
+
+>hint
+Why Pout has no direct in-game hints. However, a walkthrough should be provided on itch.io or in the archive.org zip file bundle.
+After two puzzles in this first room, there will be a hint item that gives clues what to do or think next. Try using your senses for a clue.
 
 >verbs
 Most point-scoring commands will consist of two words.

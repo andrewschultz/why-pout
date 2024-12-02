@@ -38,12 +38,14 @@ by a point
 >pry stalk
 by a point
 
-#testcase-homonym-reject-table-of-main-oronyms-hi-playin
+#testcase-homonym-detail-hom-hi-playin-rule-if-the-player's-command-includes-hi
+#testcase-homonym-reject-table-of-main-oronyms-hi-playin-hom-hi-playin-rule
 >hi xxx
-WRONG
+You need to do more than greet the desired location. Describe it.
 
+#+testcase-homonym-detail-hom-hi-playin-rule-if-the-player's-command-includes-hi
 >xxx playin
-WRONG
+No playin'. What is this location, specifically?
 
 >high plain
 by a point
@@ -69,9 +71,10 @@ Hmm. That really, really SOUNDED like it should work, but it didn't.
 >pole east
 by a point
 
-#testcase-homonym-reject-table-of-main-oronyms-sure
->sure
-WRONG
+#testcase-homonym-detail-hom-sure-trail-rule-default
+#testcase-homonym-reject-table-of-main-oronyms-sure-hom-sure-trail-rule
+>sure xxx
+You need to be sure the trail leads somewhere that sounds like "sure."
 
 >shore trail
 by a point
@@ -81,7 +84,7 @@ by a point
 
 #testcase-homonym-reject-table-of-main-oronyms-piller
 >xxx piller
-WRONG
+Hmm. That kind of partway SOUNDED like it should work, but it didn't.
 
 >key pillar
 by a point
@@ -151,7 +154,7 @@ by a point
 #testcase-homonym-detail-hom-gaunt-rater-rule-default
 #testcase-homonym-reject-table-of-main-oronyms-rater-hom-gaunt-rater-rule
 >xxx rater
-WRONG
+Hmm. You need someone much more active than that. Someone who can help with rebellion, not just whine about things that are wrong.
 
 >gaunt raider
 by a point
@@ -180,7 +183,7 @@ by a bonus point
 
 #testcase-homonym-reject-table-of-main-oronyms-dam
 >dam xxx
-WRONG
+Hmm. That kind of partway SOUNDED like it should work, but it didn't.
 
 >damn peons
 by a bonus point

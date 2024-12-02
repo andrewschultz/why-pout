@@ -12,11 +12,11 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "two"	"maps"	"too"	--	hom-too-maps rule	false	false	false	false	"anything documenting a way out"	false	true	true	false	false	eh raw air aww	pre-two-maps rule	post-two-maps rule	--	--
 "self"	"owns"	--	--	--	false	false	false	false	"what to do with the cell phones"	false	true	true	false	false	hype lane	pre-self-owns rule	post-self-owns rule	--	--
 "pry"	"stalk"	--	--	--	false	false	false	false	"something physical amidst the prize talk"	false	true	true	false	false	hype lane	pre-pry-stalk rule	post-pry-stalk rule	--	--
-"high"	"plain|plane"	"hi"	"playin"	--	false	false	false	false	"where to go from Hype Lane"	false	true	true	false	false	hype lane	pre-high-plain rule	post-high-plain rule	--	"You can find a [b]HIGH PLAIN[r] [once-now of sco-pry-stalk] you have something that can reach that far up."
+"high"	"plain|plane"	"hi"	"playin"	hom-hi-playin rule	false	false	false	false	"where to go from Hype Lane"	false	true	true	false	false	hype lane	pre-high-plain rule	post-high-plain rule	--	"You can find a [b]HIGH PLAIN[r] [once-now of sco-pry-stalk] you have something that can reach that far up."
 "nah|naah|naw|naa|na"	"phase"	--	"phaze"	hom-nah-phaze rule	false	false	false	false	"how to cut through the naff haze"	false	true	true	false	false	NaffHaze	pre-nah-phase rule	post-nah-phase rule	--	--
 "pole|pull"	"east"	"poll|paul|pall"	--	--	false	false	false	false	"the source of your feeling policed"	false	true	true	false	false	NaffHaze	pre-pole-east rule	post-pole-east rule	--	--
 "grow"	"star"	--	--	--	false	false	false	false	"making it beyond the gross tar"	false	true	true	false	false	NaffHaze	pre-grow-star rule	post-grow-star rule	--	--
-"shore"	"trail"	"sure"	--	--	false	false	false	false	"finding where the short rail could lead"	false	true	true	false	false	NaffHaze	pre-shore-trail rule	post-shore-trail rule	--	--
+"shore"	"trail"	"sure"	--	hom-sure-trail rule	false	false	false	false	"finding where the short rail could lead"	false	true	true	false	false	NaffHaze	pre-shore-trail rule	post-shore-trail rule	--	--
 "key"	"pillar"	--	"piller"	--	false	false	false	false	"finding a way into the keep"	false	true	true	false	false	NaffHaze	pre-key-pillar rule	post-key-pillar rule	--	--
 "brew"	"swears"	--	--	--	false	false	false	false	"seeing [wares]'s true nature"	false	true	false	false	false	NaffHaze	pre-brew-swears rule	post-brew-swears rule	--	--
 "known"	"ocean"	--	--	--	false	false	false	false	"finding the surroundings [here-in of NoNotion]"	false	true	true	false	false	NoNotion	pre-known-ocean rule	post-known-ocean rule	--	--
@@ -154,6 +154,9 @@ a wordtwisting rule (this is the pre-shore-trail rule):
 		vcal "But you already replaced the short rail!";
 		already-done;
 	ready;
+
+this is the hom-sure-trail rule:
+	say "You need to be sure the trail leads somewhere that sounds like 'sure.'"
 
 this is the post-shore-trail rule:
 	now sco-shore-trail is true;
@@ -442,6 +445,12 @@ a wordtwisting rule (this is the pre-high-plain rule):
 		vcp "That would be a nicer place! But you have nothing that could help you move up yet. You'll have to observe the general area a bit more.";
 		not-yet;
 	ready;
+
+this is the hom-hi-playin rule:
+	if the player's command includes "hi":
+		say "You need to do more than greet the desired location. Desccribe it.";
+	else:
+		say "No playin[']. What is this location, specifically?"
 
 this is the post-high-plain rule:
 	now sco-high-plain is true;
@@ -1230,7 +1239,7 @@ to say where-get-hype:
 
 to say random-taunt:
 	choose row counter-zero-points in table of zero point taunts;
-	say "[taunt-text entry][if counter-zero-points is number of rows in table of zero point taunts] (that's the last of the specific hints.)";
+	say "[taunt-text entry][if counter-zero-points is number of rows in table of zero point taunts] (that's the last of the specific hints.)[end if][line break]";
 
 table of zero point taunts
 sortval	taunt-text
@@ -1241,7 +1250,6 @@ sortval	taunt-text
 0	"'Boost-op? Boo! Stop!'"
 0	"'Duh, DO?! Dud, ooh!'"
 0	"'Play some place, umm...'"
-0	"'Be strong? Beast, WRONG!'"
 1	"'Take a look where you are.'"
 
 rule for printing a parser error when the latest parser error is the can't see any such thing error:

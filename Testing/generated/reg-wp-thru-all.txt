@@ -213,7 +213,7 @@ by a point
 
 #testcase-check-pre-rogue-old-rule-fallthrough
 #testcase-run-post-rogue-old-rule-default
-A rogue, old, arrives. They mention they'd like to help you but, you know, the row (gold) needs maintenance. You offer to pay them three quid.
+A rogue, old, appears. They mention they'd like to help you but, you know, the row (gold) needs maintenance. You offer to pay them three quid.
 This transaction reduces your wealth from six quid to three quid.
 !lot of friends
 

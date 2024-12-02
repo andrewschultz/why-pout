@@ -181,8 +181,12 @@ by a bonus point
 >damn peons
 by a bonus point
 
-#testcase-mistake-why-pout-heck-alas
+#testcase-mistake-why-pout-heck-alas-heck-lass
 >heck alas
+Too tame!
+
+#+testcase-mistake-why-pout-heck-alas-heck-lass
+>heck lass
 Too tame!
 
 >heckle ass
