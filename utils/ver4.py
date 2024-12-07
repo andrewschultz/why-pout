@@ -54,7 +54,7 @@ def disqualified(my_string):
             return True
     return False
 
-def process_size_stuff(my_quote, line_sig):
+def process_size_stuff(my_quote, file_name, line_count):
     s = my_quote.split(' ')
     retval = 0
     for x in range(0, len(s) - 3):
@@ -68,7 +68,7 @@ def process_size_stuff(my_quote, line_sig):
         if y in so_far:
             #print("Duplicate", y, "line", line_sig, "duplicates", so_far[y])
             retval += 1
-        so_far[y].append(line_sig)
+        so_far[y].append((my_quote, file_name, line_count))
     return retval
 
 def section_disqualified(xxx):
@@ -119,7 +119,7 @@ for this_file in my_files:
                 #print(line_count, q)
                 detail = this_rule if this_rule else (this_table if this_table else 'undefined')
                 line_sig = "{}-{:05d}-{}".format(bnx, line_count, detail)
-                totals += process_size_stuff(q, line_sig)
+                totals += process_size_stuff(q, this_file, line_count)
 
 notes_only = notes_tracker(summary='only in notes files', color = mt.PASS)
 notes_and_source = notes_tracker(summary='some notes files, some source files', color = mt.WARN)
@@ -140,14 +140,15 @@ for s in so_far:
             print(s, 'line', so_far[s])
     if len(so_far[s]) == 1:
         continue
-    a = [ re.sub("-.*", "", y) for y in so_far[s] ]
-    a0 = [ x for x in a if 'notes.txt' in a ]
+    a = [ '{} L{}'.format(i7.inform_short_name(y[1]), y[2]) for y in so_far[s] ]
+    b = sum('notes' in x[1] for x in so_far[s])
+    c = sum('notes' not in x[1] for x in so_far[s])
     print_string = "*{}* found in {} files: {}".format(s, len(a), ', '.join(a))#len(so_far[s]), '/'.split(a))
-    if len(a0) == len(a):
-        notes_only.my_array.append(print_string)
-    elif len(a0):
+    if b and c:
         notes_and_source.my_array.append(print_string)
-    else:
+    elif b:
+        notes_only.my_array.append(print_string)
+    elif c:
         no_notes.my_array.append(print_string)
 
 notes_only.print_stuff()
