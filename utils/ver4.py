@@ -3,7 +3,8 @@
 #
 # a utility to determine which 4-word potential oronym blocks are duplicated in the source and notes files of Why Pout and Us Too
 #
-#todo: alphabetize, send errors to clipboard
+#todo: alphabetize cfgs, send errors to clipboard
+#      add full context, allow option to open file(s) after
 
 import sys
 import os
@@ -22,7 +23,20 @@ totals = 0
 
 so_far = defaultdict(list)
 
-my_files = [ i7.main_src('wp'), i7.hdr('wp', 'ta'), i7.hdr('wp', 'ra'), i7.hdr('wp', 'de'), i7.notes_file('wp'), i7.notes_file('us') ]
+# there is some logic behind the file ordering here.
+# we want to open up the first wrong one we find.
+# so 1) it's more likely Us Too copied Why Pout
+#    2) the notes are the most likely file to allow dupes
+#    3) the random file for WP (there is none for US, not yet) is most likely to duplicate some game-critical text somewhere, or if vice versa, the random text can be replaced
+#    4) the table files and story.ni probably have equal priority, but story.ni is less likely to have dialogue. Description takes priority over dialogue.
+#    5) Oronym Core is the most set in stone, and this it is added by default with core_files_too and put at the end.
+
+my_files = [ i7.notes_file('us'), i7.notes_file('wp'),
+  i7.hdr('wp', 'ra'),
+  i7.hdr('us', 'ta'), i7.hdr('us', 'de'),
+  i7.hdr('wp', 'ta'), i7.hdr('wp', 'de'),
+  i7.main_src('wp'), i7.main_src('us')
+] # core_files boolean adds non-game-specific headers
 
 dq = []
 
