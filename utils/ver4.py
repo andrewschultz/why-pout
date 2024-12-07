@@ -3,6 +3,7 @@
 #
 # a utility to determine which 4-word potential oronym blocks are duplicated in the source and notes files of Why Pout and Us Too
 #
+#todo: alphabetize, send errors to clipboard
 
 import sys
 import os
@@ -23,12 +24,19 @@ so_far = defaultdict(list)
 
 my_files = [ i7.main_src('wp'), i7.hdr('wp', 'ta'), i7.hdr('wp', 'ra'), i7.hdr('wp', 'de'), i7.notes_file('wp'), i7.notes_file('us') ]
 
+dq = []
+
+ver_cfg = "c:\\Users\\Andrew\\Documents\\github\\why-pout\\utils\\ver4.txt"
+#utils_dir, utils_file?
+
+with open(ver_cfg) as file:
+    for (line_count, line) in enumerate (file, 1):
+        dq.extend([x.strip() for x in line.lower().strip().split(',')])
+
 # my_files.extend(glob.glob(extdir + "/*oronym*.i7x"))
 if core_files_too:
     my_files.extend(["c:/Program Files (x86)/Inform 7/Inform7/Extensions/Andrew Schultz/Oronym Core.i7x",
     "c:/Program Files (x86)/Inform 7/Inform7/Extensions/Andrew Schultz/Spoonerism and Oronym Core.i7x"])
-
-dq = [ '[b]note', 'can only go', 'went up', 'you cant', 'you dont', 'you already', 'you can ', 'you want', 'you know' ]
 
 class notes_tracker():
     def __init__(self, summary, color = ''):
