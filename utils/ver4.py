@@ -35,8 +35,11 @@ class notes_tracker():
         self.my_array = []
         self.summary = summary
         self.color = color
+        self.display = True
 
     def print_stuff(self):
+        if not self.display:
+            return
         if len(self.my_array):
             print(self.color + self.summary + mt.RESET)
             print("{} has {} instance{} flagged:".format(self.summary, len(self.my_array), mt.plur(len(self.my_array))))
@@ -121,6 +124,15 @@ for this_file in my_files:
 notes_only = notes_tracker(summary='only in notes files', color = mt.PASS)
 notes_and_source = notes_tracker(summary='some notes files, some source files', color = mt.WARN)
 no_notes = notes_tracker(summary='source files only', color = mt.FAIL)
+
+try:
+    arg = sys.argv[1].lower()
+    if re.search('[nsb]', arg):
+        notes_and_source.display = 'b' in arg
+        notes_only.display = 'n' in arg
+        no_notes.display = 's' in arg
+except:
+    print("NSB in argument shows only notes/source/both.")
 
 for s in so_far:
     if track_bad:
