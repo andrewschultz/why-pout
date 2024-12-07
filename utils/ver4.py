@@ -7,6 +7,7 @@
 import sys
 import os
 import re
+import mytools as mt
 
 from collections import defaultdict
 
@@ -28,6 +29,21 @@ if core_files_too:
     "c:/Program Files (x86)/Inform 7/Inform7/Extensions/Andrew Schultz/Spoonerism and Oronym Core.i7x"])
 
 dq = [ '[b]note', 'can only go', 'went up', 'you cant', 'you dont', 'you already', 'you can ', 'you want', 'you know' ]
+
+class notes_tracker():
+    def __init__(self, summary, color = ''):
+        self.my_array = []
+        self.summary = summary
+        self.color = color
+
+    def print_stuff(self):
+        if len(self.my_array):
+            print(self.color + self.summary + mt.RESET)
+            print("{} has {} instance{} flagged:".format(self.summary, len(self.my_array), mt.plur(len(self.my_array))))
+            for s in self.my_array:
+                print("      - " + s)
+        else:
+            print(self.color + "NOTHING FOR {}".format(self.summary) + mt.RESET)
 
 def disqualified(my_string):
     for x in dq:
@@ -102,10 +118,26 @@ for this_file in my_files:
                 line_sig = "{}-{:05d}-{}".format(bnx, line_count, detail)
                 totals += process_size_stuff(q, line_sig)
 
+notes_only = notes_tracker(summary='only in notes files', color = mt.PASS)
+notes_and_source = notes_tracker(summary='some notes files, some source files', color = mt.WARN)
+no_notes = notes_tracker(summary='source files only', color = mt.FAIL)
+
 for s in so_far:
     if track_bad:
         if re.search('[^a-z ]', s):
             print(s, 'line', so_far[s])
     if len(so_far[s]) == 1:
         continue
-    print(s, so_far[s], len(so_far[s]))
+    a = [ re.sub("-.*", "", y) for y in so_far[s] ]
+    a0 = [ x for x in a if 'notes.txt' in a ]
+    print_string = "*{}* found in {} files: {}".format(s, len(a), ', '.join(a))#len(so_far[s]), '/'.split(a))
+    if len(a0) == len(a):
+        notes_only.my_array.append(print_string)
+    elif len(a0):
+        notes_and_source.my_array.append(print_string)
+    else:
+        no_notes.my_array.append(print_string)
+
+notes_only.print_stuff()
+notes_and_source.print_stuff()
+no_notes.print_stuff()
