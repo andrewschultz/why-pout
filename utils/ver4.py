@@ -18,6 +18,7 @@ import i7
 smart_size_detect = True
 track_bad = False
 core_files_too = True
+open_after = True
 
 totals = 0
 
@@ -169,6 +170,8 @@ for s in so_far:
     b = sum('notes' in x[1] for x in so_far[s])
     c = sum('notes' not in x[1] for x in so_far[s])
     print_string = "*{}* found in {} files: {}".format(s, len(a), ', '.join(a))#len(so_far[s]), '/'.split(a))
+    if open_after:
+        mt.add_post(so_far[s][0][1], so_far[s][0][2])
     if b and c:
         notes_and_source.my_array.append(print_string)
     elif b:
@@ -179,3 +182,6 @@ for s in so_far:
 notes_only.print_stuff()
 notes_and_source.print_stuff()
 no_notes.print_stuff()
+
+if open_after:
+    mt.open_post()
