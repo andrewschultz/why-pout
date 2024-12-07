@@ -1,3 +1,9 @@
+#
+# ver4.py
+#
+# a utility to determine which 4-word potential oronym blocks are duplicated in the source and notes files of Why Pout and Us Too
+#
+
 import sys
 import os
 import re
@@ -32,7 +38,7 @@ def disqualified(my_string):
 def process_size_stuff(my_quote, line_sig):
     s = my_quote.split(' ')
     retval = 0
-    for x in range(0, len(s) - 4):
+    for x in range(0, len(s) - 3):
         four_array = s[x:x+4]
         y = ' '.join(four_array)
         #print(y)
