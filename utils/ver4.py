@@ -45,7 +45,10 @@ ver_cfg = "c:\\Users\\Andrew\\Documents\\github\\why-pout\\utils\\ver4.txt"
 
 with open(ver_cfg) as file:
     for (line_count, line) in enumerate (file, 1):
-        dq.extend([x.strip() for x in line.lower().strip().split(',')])
+        if not line.startswith('#'):
+            dq.extend([x.strip() for x in line.lower().strip().split(',')])
+        if line.startswith(';'):
+            break
 
 # my_files.extend(glob.glob(extdir + "/*oronym*.i7x"))
 if core_files_too:
