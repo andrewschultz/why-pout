@@ -15,7 +15,7 @@ from collections import defaultdict
 
 import i7
 
-smart_size_detect = True
+smart_size_detect = 5
 track_bad = False
 core_files_too = True
 open_after = True
@@ -86,7 +86,6 @@ def process_size_stuff(my_quote, file_name, line_count):
     for x in range(0, len(s) - 3):
         four_array = s[x:x+4]
         y = ' '.join(four_array)
-        #print(y)
         if smart_size_detect:
             delta = len(four_array[2]) + len(four_array[3]) - len(four_array[1]) - len(four_array[0])
             if abs(delta) > smart_size_detect:
@@ -169,7 +168,7 @@ for s in so_far:
     a = [ '{} L{}'.format(i7.inform_short_name(y[1]), y[2]) for y in so_far[s] ]
     b = sum('notes' in x[1] for x in so_far[s])
     c = sum('notes' not in x[1] for x in so_far[s])
-    print_string = "*{}* found in {} files: {}".format(s, len(a), ', '.join(a))#len(so_far[s]), '/'.split(a))
+    print_string = "*{}* found in {} instances: {}".format(s, len(a), ', '.join(a))#len(so_far[s]), '/'.split(a))
     if open_after:
         mt.add_post(so_far[s][0][1], so_far[s][0][2])
     if b and c:
