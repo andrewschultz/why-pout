@@ -92,7 +92,6 @@ def process_size_stuff(my_quote, file_name, line_count):
             if abs(delta) > smart_size_detect:
                 continue
         if y in so_far:
-            #print("Duplicate", y, "line", line_sig, "duplicates", so_far[y])
             retval += 1
         so_far[y].append((my_quote, file_name, line_count))
     return retval
@@ -120,6 +119,8 @@ for this_file in my_files:
                 this_rule = ''
                 this_table = ''
                 continue
+            if line.startswith('#'):
+                continue
             if line.startswith('table of'):
                 this_table = line.lower()
                 this_table = re.sub(" *\[.*", "", this_table).strip()
@@ -144,7 +145,6 @@ for this_file in my_files:
                     continue
                 #print(line_count, q)
                 detail = this_rule if this_rule else (this_table if this_table else 'undefined')
-                line_sig = "{}-{:05d}-{}".format(bnx, line_count, detail)
                 totals += process_size_stuff(q, this_file, line_count)
 
 notes_only = notes_tracker(summary='only in notes files', color = mt.PASS)
