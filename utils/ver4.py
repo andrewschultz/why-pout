@@ -56,6 +56,11 @@ if core_files_too:
     my_files.extend(["c:/Program Files (x86)/Inform 7/Inform7/Extensions/Andrew Schultz/Oronym Core.i7x",
     "c:/Program Files (x86)/Inform 7/Inform7/Extensions/Andrew Schultz/Spoonerism and Oronym Core.i7x"])
 
+def usage():
+    print("Only combos of nsb for now.")
+    print("Also s# = smart size detect.")
+    sys.exit()
+
 class notes_tracker():
     def __init__(self, summary, color = ''):
         self.my_array = []
@@ -150,14 +155,19 @@ notes_only = notes_tracker(summary='only in notes files', color = mt.PASS)
 notes_and_source = notes_tracker(summary='some notes files, some source files', color = mt.WARN)
 no_notes = notes_tracker(summary='source files only', color = mt.FAIL)
 
-try:
-    arg = sys.argv[1].lower()
+cmd_count = 0
+
+while cmd_count < len(sys.argv):
+    arg = sys.argv[cmd_count].lower()
     if re.search('[nsb]', arg):
         notes_and_source.display = 'b' in arg
         notes_only.display = 'n' in arg
         no_notes.display = 's' in arg
-except:
-    print("NSB in argument shows only notes/source/both.")
+    elif arg[0] == 's' and arg[1:].isdigit():
+        smart_size_detect = int(arg[1:])
+    else:
+        usage()
+    cmd_count += 1
 
 for s in so_far:
     if track_bad:
@@ -181,6 +191,8 @@ for s in so_far:
 notes_only.print_stuff()
 notes_and_source.print_stuff()
 no_notes.print_stuff()
+
+sys.exit()
 
 if open_after:
     mt.open_post()
