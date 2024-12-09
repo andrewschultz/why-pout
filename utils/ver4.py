@@ -165,6 +165,10 @@ while cmd_count < len(sys.argv):
         no_notes.display = 's' in arg
     elif arg[0] == 's' and arg[1:].isdigit():
         smart_size_detect = int(arg[1:])
+    elif arg == 'e':
+        print("Opening file of exceptions", ver_cfg)
+        os.system(ver_cfg)
+        sys.exit()
     else:
         usage()
     cmd_count += 1
