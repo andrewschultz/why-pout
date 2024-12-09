@@ -25,18 +25,19 @@ totals = 0
 so_far = defaultdict(list)
 
 # there is some logic behind the file ordering here.
-# we want to open up the first wrong one we find.
-# so 1) it's more likely Us Too copied Why Pout
-#    2) the notes are the most likely file to allow dupes
-#    3) the random file for WP (there is none for US, not yet) is most likely to duplicate some game-critical text somewhere, or if vice versa, the random text can be replaced
-#    4) the table files and story.ni probably have equal priority, but story.ni is less likely to have dialogue. Description takes priority over dialogue.
-#    5) Oronym Core is the most set in stone, and this it is added by default with core_files_too and put at the end.
+# we want to open up the most likely duplicate. It will be the last one we find as we go through the files.
+# Rules 1) it's more likely Us Too copied Why Pout
+#       2) the notes are the most likely file to allow dupes
+#       3) the random file for WP (there is none for US, not yet) is most likely to duplicate some game-critical text somewhere, or if vice versa, the random text can be replaced
+#       4) the table files and story.ni probably have equal priority, but story.ni is less likely to have dialogue. Description takes priority over dialogue.
+#       5) Oronym Core is the most set in stone, and this it is added by default with core_files_too and put at the end.
 
-my_files = [ i7.notes_file('us'), i7.notes_file('wp'),
-  i7.hdr('wp', 'ra'),
+my_files = [
+  i7.main_src('us'), i7.main_src('wp'),
   i7.hdr('us', 'ta'), i7.hdr('us', 'de'),
   i7.hdr('wp', 'ta'), i7.hdr('wp', 'de'),
-  i7.main_src('wp'), i7.main_src('us')
+  i7.hdr('wp', 'ra'),
+  i7.notes_file('us'), i7.notes_file('wp')
 ] # core_files boolean adds non-game-specific headers
 
 dq = []
@@ -53,12 +54,13 @@ with open(ver_cfg) as file:
 
 # my_files.extend(glob.glob(extdir + "/*oronym*.i7x"))
 if core_files_too:
-    my_files.extend(["c:/Program Files (x86)/Inform 7/Inform7/Extensions/Andrew Schultz/Oronym Core.i7x",
-    "c:/Program Files (x86)/Inform 7/Inform7/Extensions/Andrew Schultz/Spoonerism and Oronym Core.i7x"])
+    my_files = ["c:/Program Files (x86)/Inform 7/Inform7/Extensions/Andrew Schultz/Oronym Core.i7x",
+    "c:/Program Files (x86)/Inform 7/Inform7/Extensions/Andrew Schultz/Spoonerism and Oronym Core.i7x"] + my_files
 
 def usage():
-    print("Only combos of nsb for now.")
-    print("Also s# = smart size detect.")
+    print("Combos of NSB only show certain duplication. N=notes only, S=source only, B=found in both. Default is NSB, all on.")
+    print("Also s# = smart size detect. Default is", smart_size_detect) # yeah not quite true if you set it on the command line
+    print("E = edit the file of ignores/exceptions," ver_cfg)
     sys.exit()
 
 class notes_tracker():
@@ -184,7 +186,7 @@ for s in so_far:
     c = sum('notes' not in x[1] for x in so_far[s])
     print_string = "*{}* found in {} instances: {}".format(s, len(a), ', '.join(a))#len(so_far[s]), '/'.split(a))
     if open_after:
-        mt.add_post(so_far[s][0][1], so_far[s][0][2])
+        mt.add_post(so_far[s][-1][1], so_far[s][-1][2])
     if b and c:
         notes_and_source.my_array.append(print_string)
     elif b:
