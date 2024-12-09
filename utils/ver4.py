@@ -60,7 +60,7 @@ if core_files_too:
 def usage():
     print("Combos of NSB only show certain duplication. N=notes only, S=source only, B=found in both. Default is NSB, all on.")
     print("Also s# = smart size detect. Default is", smart_size_detect) # yeah not quite true if you set it on the command line
-    print("E = edit the file of ignores/exceptions," ver_cfg)
+    print("E = edit the file of ignores/exceptions", ver_cfg)
     sys.exit()
 
 class notes_tracker():
@@ -112,6 +112,28 @@ def needs_table(my_file):
         return True
     return False
 
+notes_only = notes_tracker(summary='only in notes files', color = mt.PASS)
+notes_and_source = notes_tracker(summary='some notes files, some source files', color = mt.WARN)
+no_notes = notes_tracker(summary='source files only', color = mt.FAIL)
+
+cmd_count = 0
+
+while cmd_count < len(sys.argv):
+    arg = sys.argv[cmd_count].lower()
+    if re.search('[nsb]', arg):
+        notes_and_source.display = 'b' in arg
+        notes_only.display = 'n' in arg
+        no_notes.display = 's' in arg
+    elif arg[0] == 's' and arg[1:].isdigit():
+        smart_size_detect = int(arg[1:])
+    elif arg == 'e':
+        print("Opening file of exceptions", ver_cfg)
+        os.system(ver_cfg)
+        sys.exit()
+    else:
+        usage()
+    cmd_count += 1
+
 for this_file in my_files:
     this_rule = ''
     this_table = ''
@@ -152,28 +174,6 @@ for this_file in my_files:
                 #print(line_count, q)
                 detail = this_rule if this_rule else (this_table if this_table else 'undefined')
                 totals += process_size_stuff(q, this_file, line_count)
-
-notes_only = notes_tracker(summary='only in notes files', color = mt.PASS)
-notes_and_source = notes_tracker(summary='some notes files, some source files', color = mt.WARN)
-no_notes = notes_tracker(summary='source files only', color = mt.FAIL)
-
-cmd_count = 0
-
-while cmd_count < len(sys.argv):
-    arg = sys.argv[cmd_count].lower()
-    if re.search('[nsb]', arg):
-        notes_and_source.display = 'b' in arg
-        notes_only.display = 'n' in arg
-        no_notes.display = 's' in arg
-    elif arg[0] == 's' and arg[1:].isdigit():
-        smart_size_detect = int(arg[1:])
-    elif arg == 'e':
-        print("Opening file of exceptions", ver_cfg)
-        os.system(ver_cfg)
-        sys.exit()
-    else:
-        usage()
-    cmd_count += 1
 
 incidents = 0
 
