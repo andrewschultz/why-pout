@@ -19,8 +19,10 @@ smart_size_detect = 5
 track_bad = False
 core_files_too = True
 open_after = True
+note_reverse = False
 
 totals = 0
+reverses = 0
 
 so_far = defaultdict(list)
 
@@ -61,6 +63,7 @@ def usage():
     print("Combos of NSB only show certain duplication. N=notes only, S=source only, B=found in both. Default is NSB, all on.")
     print("Also s# = smart size detect. Default is", smart_size_detect) # yeah not quite true if you set it on the command line
     print("E = edit the file of ignores/exceptions", ver_cfg)
+    print("RV = note reverse e.g. 3 4 1 2 matches 1 2 3 4.")
     sys.exit()
 
 class notes_tracker():
@@ -99,6 +102,19 @@ def process_size_stuff(my_quote, file_name, line_count):
                 continue
         if y in so_far:
             retval += 1
+        elif note_reverse:
+            f0 = four_array[2:] + four_array[:2]
+            y0 = ' '.join(f0)
+            if y0 in so_far:
+                if (file_name, line_count) == (so_far[y0][-1][1], so_far[y0][-1][2]):
+                    pass
+                else:
+                    mt.okay("{} cycles previous element {}.".format(y0, y))
+                    mt.warn("    that:", so_far[y0][-1])
+                    mt.warn("    this:", (my_quote, file_name, line_count))
+                    global reverses
+                    reverses += 1
+                    mt.add_post(file_name, line_count)
         so_far[y].append((my_quote, file_name, line_count))
     return retval
 
@@ -126,6 +142,8 @@ while cmd_count < len(sys.argv):
         no_notes.display = 's' in arg
     elif arg[0] == 's' and arg[1:].isdigit():
         smart_size_detect = int(arg[1:])
+    elif arg == 'rv':
+        note_reverse = True
     elif arg == 'e':
         print("Opening file of exceptions", ver_cfg)
         os.system(ver_cfg)
@@ -201,10 +219,15 @@ notes_only.print_stuff()
 notes_and_source.print_stuff()
 no_notes.print_stuff()
 
+if not incidents:
+    mt.okay("No duplicates were detected!")
+
+if reverses:
+    mt.warn("{} reverse{}".format(reverses, mt.plur(reverses)))
+elif note_reverse:
+    mt.okay("No reverses to weed out!")
+
 if open_after:
     mt.open_post()
 elif incidents:
     print("Run with -oa to open after. Or use the default.")
-
-if not incidents:
-    mt.okay("No duplicates were detected!")
