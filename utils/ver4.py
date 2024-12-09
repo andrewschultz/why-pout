@@ -145,7 +145,7 @@ for this_file in my_files:
             for quote in quote_ary:
                 q = re.sub("[\.\?!]", "", quote)
                 q = re.sub("\[.*?\]", "", q).strip()
-                q = re.sub("[',.:;]", "", q).replace('-', ' ').replace('(', '').replace(')', '').replace('/', ' ')
+                q = re.sub("[',.:;]", "", q).replace('-', ' ').replace('(', '').replace(')', '').replace('/', ' ').replace('~', ' ')
                 q = re.sub(' +', ' ', q)
                 if disqualified(q):
                     continue
@@ -175,6 +175,8 @@ while cmd_count < len(sys.argv):
         usage()
     cmd_count += 1
 
+incidents = 0
+
 for s in so_far:
     if track_bad:
         if re.search('[^a-z ]', s):
@@ -185,6 +187,7 @@ for s in so_far:
     b = sum('notes' in x[1] for x in so_far[s])
     c = sum('notes' not in x[1] for x in so_far[s])
     print_string = "*{}* found in {} instances: {}".format(s, len(a), ', '.join(a))#len(so_far[s]), '/'.split(a))
+    incidents += 1
     if open_after:
         mt.add_post(so_far[s][-1][1], so_far[s][-1][2])
     if b and c:
@@ -198,7 +201,10 @@ notes_only.print_stuff()
 notes_and_source.print_stuff()
 no_notes.print_stuff()
 
-sys.exit()
-
 if open_after:
     mt.open_post()
+elif incidents:
+    print("Run with -oa to open after. Or use the default.")
+
+if not incidents:
+    mt.okay("No duplicates were detected!")
