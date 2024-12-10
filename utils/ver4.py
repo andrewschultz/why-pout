@@ -24,6 +24,7 @@ note_reverse = False
 totals = 0
 reverses = 0
 
+reverse_flips = []
 so_far = defaultdict(list)
 
 # there is some logic behind the file ordering here.
@@ -92,6 +93,7 @@ def disqualified(my_string):
 
 def process_size_stuff(my_quote, file_name, line_count):
     s = my_quote.split(' ')
+    global reverse_flips
     retval = 0
     for x in range(0, len(s) - 3):
         four_array = s[x:x+4]
@@ -108,7 +110,8 @@ def process_size_stuff(my_quote, file_name, line_count):
             if y0 in so_far:
                 if (file_name, line_count) == (so_far[y0][-1][1], so_far[y0][-1][2]):
                     pass
-                else:
+                elif y0 not in reverse_flips:
+                    reverse_flips.append(y0)
                     mt.okay("{} cycles previous element {}.".format(y0, y))
                     mt.warn("    that:", so_far[y0][-1])
                     mt.warn("    this:", (my_quote, file_name, line_count))
