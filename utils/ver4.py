@@ -20,11 +20,13 @@ track_bad = False
 core_files_too = True
 open_after = True
 note_reverse = False
+full_context = False
 
 totals = 0
 reverses = 0
 
 reverse_flips = []
+line_dict = defaultdict(list)
 so_far = defaultdict(list)
 
 # there is some logic behind the file ordering here.
@@ -147,6 +149,8 @@ while cmd_count < len(sys.argv):
         smart_size_detect = int(arg[1:])
     elif arg == 'rv':
         note_reverse = True
+    elif arg in ( 'fc', 'c', 'f' ):
+        full_context = True
     elif arg == 'e':
         print("Opening file of exceptions", ver_cfg)
         os.system(ver_cfg)
@@ -164,6 +168,7 @@ for this_file in my_files:
     quote_idx = 2 if this_needs_quotes else 1
     with open(this_file) as file:
         for (line_count, line) in enumerate (file, 1):
+            line_dict[this_file].append(line)
             if not line.strip():
                 this_rule = ''
                 this_table = ''
@@ -194,7 +199,8 @@ for this_file in my_files:
                     continue
                 #print(line_count, q)
                 detail = this_rule if this_rule else (this_table if this_table else 'undefined')
-                totals += process_size_stuff(q, this_file, line_count)
+                temp = process_size_stuff(q, this_file, line_count)
+                totals += temp
 
 incidents = 0
 
@@ -208,6 +214,10 @@ for s in so_far:
     b = sum('notes' in x[1] for x in so_far[s])
     c = sum('notes' not in x[1] for x in so_far[s])
     print_string = "*{}* found in {} instances: {}".format(s, len(a), ', '.join(a))#len(so_far[s]), '/'.split(a))
+    if full_context:
+        for q in so_far[s]:
+            print(q)
+            print_string += '\n          {} / {} / {}'.format(q[0], q[1], q[2])
     incidents += 1
     if open_after:
         mt.add_post(so_far[s][-1][1], so_far[s][-1][2])
