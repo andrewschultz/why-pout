@@ -22,6 +22,7 @@ An inner voice says "Fry! Twist!" You feel fright, wist. It's hard not to, since
 Perhaps if you press a bit more, some thoughts may come out.
 
 #testcase-one-right-table-of-main-oronyms-an-aim-1-an
+>an xxx
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
@@ -105,7 +106,7 @@ by a point
 #I used High Plain since it had homonyms for both words
 #
 >hi xxx
-Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+You need to do more than greet the desired location. Describe it.
 #s-0
 >think
 You must be close with one word for where to go from Hype Lane.
@@ -113,7 +114,7 @@ You must be close with one word for where to go from Hype Lane.
 >undo
 
 >xxx playin
-Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+No playin'. What is this location, specifically?
 #s-s
 >think
 You must be close with both words for where to go from Hype Lane.
@@ -141,7 +142,7 @@ You must have one word right for where to go from Hype Lane.
 >undo
 
 >xxx playin
-Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+No playin'. What is this location, specifically?
 #e-s
 >think
 You must have one word right and one word close for where to go from Hype Lane.
@@ -161,7 +162,7 @@ You feel you've got the words right on separate occasions for where to go from H
 >undo
 
 >xxx playin
-Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+No playin'. What is this location, specifically?
 #0-s
 >think
 You must be close with one word for where to go from Hype Lane.
@@ -180,7 +181,7 @@ You must have one word right for where to go from Hype Lane.
 >undo
 
 >hi xxx
-Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+You need to do more than greet the desired location. Describe it.
 
 >think
 You must be close with one word for where to go from Hype Lane.
@@ -197,7 +198,7 @@ You must have one word right for where to go from Hype Lane.
 >undo
 
 >xxx playin
-Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+No playin'. What is this location, specifically?
 
 >think
 You must be close with one word for where to go from Hype Lane.
@@ -509,6 +510,7 @@ You must have one word right for a way to repurpose the base ale.
 >undo
 
 #testcase-one-right-table-of-main-oronyms-bay-sail-sale-2-sail-sale
+>xxx sale
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 
 >think
@@ -520,6 +522,12 @@ You must have one word right for a way to repurpose the base ale.
 #+testcase-one-right-table-of-main-oronyms-bay-sail-sale-2-sail-sale
 >xxx sail
 A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+
+>think
+You must have one word right for a way to repurpose the base ale.
+
+>undo
+>undo
 
 >bay sale
 by a point

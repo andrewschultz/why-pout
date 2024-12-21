@@ -9,19 +9,16 @@
 
 #NOTE: PRC.PY has a bug where it double-prints the text at the end if the final command fails
 
-file=reg-wp-thru-min.txt,min,minimum walkthrough
-file=reg-wp-thru-all.txt,all,walkthrough with all points and potential neutral retries
-file=reg-wp-thru-alt-verbs.txt,alt,walkthrough with altverb tests
-file=reg-wp-thru-mistakes.txt,mis,walkthrough testing all mistakes
-file=reg-wp-thru-homonyms.txt,hom,walkthrough testing homonyms
-file=reg-wp-thru-hints.txt,hin/hint/hints,walkthrough testing eye cluing
-file=reg-wp-thru-goto.txt,goto/gt/go,walkthrough testing GOTO
-file=reg-wp-thru-lookinv.txt,li/look/inv,walkthrough testing inventory and room description changes
-file=reg-wp-thru-verbs.txt,v/verb/verbs,special verb testing
-file=reg-wp-thru-npctalk.txt,npc/talk/npctalk,NPC random chatter
-
-#--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
-#--strict-file: this says that the project requires strict section marking e.g. @all instead of ==t1.
+file=reg-wp-thru-min.txt,abbr=min,desc=minimum walkthrough,flags=stable
+file=reg-wp-thru-all.txt,abbr=all,desc=walkthrough with all points and potential neutral retries
+file=reg-wp-thru-alt-verbs.txt,abbr=alt,desc=walkthrough with altverb tests
+file=reg-wp-thru-mistakes.txt,abbr=mis,desc=walkthrough testing all mistakes
+file=reg-wp-thru-homonyms.txt,abbr=hom,desc=walkthrough testing homonyms
+file=reg-wp-thru-hints.txt,abbr=hin/hint/hints,desc=walkthrough testing eye cluing
+file=reg-wp-thru-goto.txt,abbr=goto/gt/go,desc=walkthrough testing GOTO
+file=reg-wp-thru-lookinv.txt,abbr=li/look/inv,desc=walkthrough testing inventory and room description changes
+file=reg-wp-thru-verbs.txt,abbr=v/verb/verbs,desc=special verb testing
+file=reg-wp-thru-npctalk.txt,abbr=npc/talk/npctalk,desc=NPC random chatter
 
 }$REJECT1=You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
 }$REJECT2=That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
@@ -401,7 +398,7 @@ The prize talk is all around, but you're able to ignore it, now you feel you mig
 
 @alt
 ##balance undos
-#testcase-alt-words-table-of-main-oronyms-5-high-plain-plane
+#testcase-alt-words-table-of-main-oronyms-high-plain-plane
 >high plane
 by a point
 \\
@@ -478,7 +475,7 @@ Too risky to stumble around until the haze lifts. How to make that happen?
 
 @alt
 ##balance undos
-#testcase-alt-words-table-of-main-oronyms-6-nah-naah-naw-naa-na-phase
+#testcase-alt-words-table-of-main-oronyms-nah-naah-naw-naa-na-phase
 >naah phase
 by a point
 \\
@@ -545,7 +542,7 @@ The gross tar is in the way right now.
 
 @alt
 ##balance undos
-#testcase-alt-words-table-of-main-oronyms-7-pole-pull-east
+#testcase-alt-words-table-of-main-oronyms-pole-pull-east
 >pull east
 by a point
 \\
@@ -1321,7 +1318,7 @@ You could leave, but then you'd have to come back. Just figure what to do here.
 
 @alt
 ##balance undos
-#testcase-alt-words-table-of-main-oronyms-40-knife-right-rite
+#testcase-alt-words-table-of-main-oronyms-knife-right-rite
 >knife rite
 by a point
 \\
@@ -1729,7 +1726,7 @@ You don't want to get into the guts of this place. You've gotten the crude orc o
 The eyes glow dimly and show three dots, then four dots.
 
 @alt
-#testcase-alt-words-table-of-main-oronyms-52-ass-low-lo
+#testcase-alt-words-table-of-main-oronyms-ass-low-lo
 >ass lo
 by a bonus point
 \\
@@ -1965,7 +1962,7 @@ And looking around, you see you are! There is a bit more to all this. A very thi
 
 @alt
 ##balance undos
-#testcase-alt-words-table-of-main-oronyms-28-bay-sail-sale
+#testcase-alt-words-table-of-main-oronyms-bay-sail-sale
 >bay sail
 by a point
 \\
@@ -2275,7 +2272,7 @@ You think up a summer chant you mumble under your breath. The merchant finds it 
 
 @alt
 ##balance undos
-#testcase-alt-words-table-of-main-oronyms-23-bile-oh-o
+#testcase-alt-words-table-of-main-oronyms-bile-oh-o
 >bile o
 by a point
 \\
@@ -2347,7 +2344,7 @@ You enjoy your solitude, but ... wait. You lose track of time, and an oaf liar s
 
 @alt
 ##balance undos
-#testcase-alt-words-table-of-main-oronyms-25-oh-flier-flyer
+#testcase-alt-words-table-of-main-oronyms-oh-flier-flyer
 >oh flyer
 by a point
 \\
@@ -2475,7 +2472,7 @@ Wow! That was ... surprisingly simple. You find a rather new-looking plan tracke
 
 @alt
 ##balance undos
-#testcase-alt-words-table-of-main-oronyms-37-manna-curb-kerb
+#testcase-alt-words-table-of-main-oronyms-manna-curb-kerb
 >manna kerb
 by a point
 \\
@@ -3280,7 +3277,7 @@ But after all the fireworks, there's a letdown. You feel something odd come betw
 
 @alt
 ##balance undos
-#testcase-alt-words-table-of-main-oronyms-48-do-due-mend-mending
+#testcase-alt-words-table-of-main-oronyms-do-due-mend-mending
 >due mending
 by a point
 \\

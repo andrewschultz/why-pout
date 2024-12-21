@@ -9,12 +9,9 @@
 
 #NOTE: PRC.PY has a bug where it double-prints the text at the end if the final command fails
 
-file=reg-wp-think-min.txt,min,minimum walkthrough
-file=reg-wp-think-div.txt,div/rej,walkthrough with all relevant THINK
-file=reg-wp-think-partright.txt,part,walkthrough with partially right guesses
-
-#--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
-#--strict-file: this says that the project requires strict section marking e.g. @all instead of ==t1.
+file=reg-wp-think-min.txt,abbr=min,desc=minimum walkthrough,flags=stable
+file=reg-wp-think-div.txt,abbr=div/rej,desc=walkthrough with all relevant THINK
+file=reg-wp-think-partright.txt,abbr=part,desc=walkthrough with partially right guesses
 
 }$ONEWORD=A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
 }$REJECT2=That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
@@ -334,6 +331,7 @@ An inner voice says "Fry! Twist!" You feel fright, wist. It's hard not to, since
 Perhaps if you press a bit more, some thoughts may come out.
 \\
 #testcase-one-right-table-of-main-oronyms-an-aim-1-an
+>an xxx
 {$ONEWORD}
 \\
 >think
@@ -477,7 +475,7 @@ You can find a HIGH PLAIN now you have something that can reach that far up.
 #
 ##balance undo
 >hi xxx
-Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+You need to do more than greet the desired location. Describe it.
 #s-0
 >think
 You must be close with one word for where to go from Hype Lane.
@@ -485,7 +483,7 @@ You must be close with one word for where to go from Hype Lane.
 >undo
 \\
 >xxx playin
-Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+No playin'. What is this location, specifically?
 #s-s
 >think
 You must be close with both words for where to go from Hype Lane.
@@ -515,7 +513,7 @@ You must have one word right for where to go from Hype Lane.
 >undo
 \\
 >xxx playin
-Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+No playin'. What is this location, specifically?
 #e-s
 >think
 You must have one word right and one word close for where to go from Hype Lane.
@@ -537,7 +535,7 @@ You feel you've got the words right on separate occasions for where to go from H
 @part+
 ##balance undo
 >xxx playin
-Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+No playin'. What is this location, specifically?
 #0-s
 >think
 You must be close with one word for where to go from Hype Lane.
@@ -558,7 +556,7 @@ You must have one word right for where to go from Hype Lane.
 @part+
 ##balance undo
 >hi xxx
-Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+You need to do more than greet the desired location. Describe it.
 \\
 >think
 You must be close with one word for where to go from Hype Lane.
@@ -575,7 +573,7 @@ You must have one word right for where to go from Hype Lane.
 >undo
 \\
 >xxx playin
-Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+No playin'. What is this location, specifically?
 \\
 >think
 You must be close with one word for where to go from Hype Lane.
@@ -1094,6 +1092,7 @@ by a point
 You already found a low bend!
 
 @part
+##balance undos
 #testcase-one-right-table-of-main-oronyms-bay-sail-sale-1-bay
 >bay xxx
 {$ONEWORD}
@@ -1105,6 +1104,7 @@ You must have one word right for a way to repurpose the base ale.
 >undo
 \\
 #testcase-one-right-table-of-main-oronyms-bay-sail-sale-2-sail-sale
+>xxx sale
 {$ONEWORD}
 \\
 >think
@@ -1116,6 +1116,12 @@ You must have one word right for a way to repurpose the base ale.
 #+testcase-one-right-table-of-main-oronyms-bay-sail-sale-2-sail-sale
 >xxx sail
 {$ONEWORD}
+\\
+>think
+You must have one word right for a way to repurpose the base ale.
+\\
+>undo
+>undo
 
 >bay sale
 by a point
