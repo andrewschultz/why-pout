@@ -14,9 +14,6 @@ block-followers is a truth state that varies.
 
 gs-parser-error-note is a truth state that varies.
 
-gs-examined-self is a truth state that varies.
-gs-examined-flier is a truth state that varies.
-
 gs-t-without-note is a truth state that varies.
 
 gs-overpay-flier is a truth state that varies. [OH FLIER with >1 quid remaining]

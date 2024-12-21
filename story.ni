@@ -74,7 +74,7 @@ chapter move to global
 
 when play begins:
 	say "You forget why your captors took you here, or how, or when. You just remember, every day, they regale you with 'Find a fine day.'[paragraph break]It's sort of hard to, when you're trapped like this. But this time -- you're trapped a little differently. Somewhere new. You overheard something about how they were bored watching over you, and it was your fault for not being very interesting. Maybe you can escape from your prison and your mental fog.";
-	now left hand status line is "[location of player][if sco-an-aim is false and gs-examined-self is true] (needing a name)[end if]";
+	now left hand status line is "[location of player][if sco-an-aim is false and Mike Orr is examined] (needing a name)[end if]";
 
 after printing the locale description of air aww when air aww is unvisited:
 	say "[i][bracket][b]NOTE[r][i]: to see general information about [this-game][i], type [b]ABOUT[r][i]. To see the verbs used, type [b]VERBS[r][i]. If you have trouble with the first few moves, there will be hints.[close bracket][r][line break]";
@@ -456,7 +456,6 @@ check eyeing flier when flier-isle-score < 2:
 	say "Weird. The flier seems to blink between three and four dots on the left, but it's stable at four dots on the right. The dots [if rb-out is ready outcome]do not [end if]blink." instead;
 
 report examining the flier:
-	now gs-examined-flier is true;
 	if flier-isle-score is 0:
 		say "You haven't found a way to get to any of the islands yet.";
 	else if flier-isle-score is 1:
@@ -725,9 +724,9 @@ Mike Orr is a privately-named person in Eh Raw Air Aww. the player is Mike Orr. 
 
 understand "mike orr" and "mike/orr" as Mike Orr when sco-an-aim is true.
 
-check examining Mike Orr when sco-an-aim is false:
-	now gs-examined-self is true;
-	say "You think you have a name. Most people do, if you remember things correctly. For better or worse, you can't be special.[paragraph break]You'd really like to have a purpose, too.[paragraph break]The weird thing is, you feel the two must be inter-related in some simple way. A way that will feel dumb once you figure it out. But you haven't, yet.[paragraph break]Hmm. A name. A name. You're focused on finding [b]A NAME[r], and yet, if you just shook up this focus a bit, you might get something else... something that could kick-start you, no matter what your name is." instead;
+carry out examining Mike Orr when sco-an-aim is false:
+	say "You think you have a name. Most people do, if you remember things correctly. For better or worse, you can't be special.[paragraph break]You'd really like to have a purpose, too.[paragraph break]The weird thing is, you feel the two must be inter-related in some simple way. A way that will feel dumb once you figure it out. But you haven't, yet.[paragraph break]Hmm. A name. A name. You're focused on finding [b]A NAME[r], and yet, if you just shook up this focus a bit, you might get something else... something that could kick-start you, no matter what your name is.";
+	the rule succeeds;
 
 volume verbs
 
@@ -956,7 +955,7 @@ check noteating (this is the modified eating rule):
 chapter inventory
 
 after printing the name of flier when taking inventory:
-	if gs-examined-flier is false, continue the action;
+	if flier is unexamined, continue the action;
 	say " (";
 	let slash be false;
 	if sco-grow-vial is false:

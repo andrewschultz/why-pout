@@ -31,7 +31,7 @@ by a point
 >pry stalk
 by a point
 
-#testcase-alt-words-table-of-main-oronyms-5-high-plain-plane
+#testcase-alt-words-table-of-main-oronyms-high-plain-plane
 >high plane
 by a point
 
@@ -40,7 +40,7 @@ by a point
 >high plain
 by a point
 
-#testcase-alt-words-table-of-main-oronyms-6-nah-naah-naw-naa-na-phase
+#testcase-alt-words-table-of-main-oronyms-nah-naah-naw-naa-na-phase
 >naah phase
 by a point
 
@@ -64,7 +64,7 @@ by a point
 >nah phase
 by a point
 
-#testcase-alt-words-table-of-main-oronyms-7-pole-pull-east
+#testcase-alt-words-table-of-main-oronyms-pole-pull-east
 >pull east
 by a point
 
@@ -133,7 +133,7 @@ by a point
 >see design
 by a point
 
-#testcase-alt-words-table-of-main-oronyms-40-knife-right-rite
+#testcase-alt-words-table-of-main-oronyms-knife-right-rite
 >knife rite
 by a point
 
@@ -165,7 +165,7 @@ by a bonus point
 >crew dork
 by a bonus point
 
-#testcase-alt-words-table-of-main-oronyms-52-ass-low-lo
+#testcase-alt-words-table-of-main-oronyms-ass-low-lo
 >ass lo
 by a bonus point
 
@@ -205,7 +205,7 @@ by a bonus point
 >low bend
 by a point
 
-#testcase-alt-words-table-of-main-oronyms-28-bay-sail-sale
+#testcase-alt-words-table-of-main-oronyms-bay-sail-sale
 >bay sail
 by a point
 
@@ -242,7 +242,7 @@ by a point
 >summer chant
 by a point
 
-#testcase-alt-words-table-of-main-oronyms-23-bile-oh-o
+#testcase-alt-words-table-of-main-oronyms-bile-oh-o
 >bile o
 by a point
 
@@ -254,7 +254,7 @@ by a point
 >whee lone
 by a point
 
-#testcase-alt-words-table-of-main-oronyms-25-oh-flier-flyer
+#testcase-alt-words-table-of-main-oronyms-oh-flier-flyer
 >oh flyer
 by a point
 
@@ -272,7 +272,7 @@ by a point
 >plan tracker
 by a point
 
-#testcase-alt-words-table-of-main-oronyms-37-manna-curb-kerb
+#testcase-alt-words-table-of-main-oronyms-manna-curb-kerb
 >manna kerb
 by a point
 
@@ -399,7 +399,7 @@ by a point
 >wipe out
 by a point
 
-#testcase-alt-words-table-of-main-oronyms-48-do-due-mend-mending
+#testcase-alt-words-table-of-main-oronyms-do-due-mend-mending
 >due mending
 by a point
 

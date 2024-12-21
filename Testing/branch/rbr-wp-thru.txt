@@ -2417,6 +2417,9 @@ Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will
 !wharf isle
 
 @li+
+>i
+!grove isle
+\\
 >x flier
 You haven't found a way to get to any of the islands yet.
 \\
