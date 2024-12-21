@@ -20,9 +20,9 @@ quasirand-final-list is a list of numbers variable. quasirand-final-list is {}.
 
 chapter variables
 
-chapter start of game prep
+chapter start of game dialogue shuffling
 
-when play begins:
+when play begins (this is the initial dialogue table seeding rule):
 	sort table of initial dialogues in random order;
 	sort table of initial dialogues in mynum order;
 	let tens be 2;
@@ -36,7 +36,27 @@ when play begins:
 			add tens to numlist;
 			increment tens;
 			now ones is 1;
-			sort numlist in random order;
+			sort numlist in random order; [ reshuffle so we have 5 4 6 2 1 3 or whatever for 7 to pick from ]
+		if tens < 8 and a random chance of 1 in 2 succeeds, increase mynum entry by 100; [ this magic number says to switch t1 and t2 ]
+
+when play begins (this is the further dialogue table seeding rule):
+	let modular-list-index be 0;
+	let final-list-index be 0;
+	if debug-state is false:
+		sort quasirand-init-list in random order;
+		sort table of further dialogues in random order;
+	repeat with QL running through quasirand-init-list:
+		if debug-state is false, sort QL in random order;
+		add QL to quasirand-final-list;
+	now followers-as-joined is list of followers;
+	repeat through table of further dialogues:
+		increment modular-list-index;
+		if modular-list-index > 28:
+			now modular-list-index is 1;
+		let QLE be entry modular-list-index in quasirand-final-list;
+		now mynum entry is QLE;
+		if a random chance of 1 in 2 succeeds, increase mynum entry by 100;
+	now followers-as-joined is {};
 
 chapter shortcuts and definitions
 
@@ -84,8 +104,14 @@ to say nosplur2: say "[nosplur of talker2]";
 volume printing stuff out
 
 to reassign-t1-t2 (nu - a number):
+	let switch-talkers be whether or not nu >= 100;
+	if nu > 100, now nu is nu - 100;
 	now t1 is nu / 10;
 	now t2 is remainder after dividing nu by 10;
+	if switch-talkers is true:
+		let t0 be t1;
+		now t1 is t2;
+		now t2 is t0;
 
 the initial table random dialogue rule is listed last in the every turn rules.
 the further table random dialogue rule is listed before the initial table random dialogue rule in the every turn rules.
@@ -94,10 +120,6 @@ every turn when can-init-dialogue (this is the initial table random dialogue rul
 	increment init-dialogue-row;
 	choose row init-dialogue-row in table of initial dialogues;
 	reassign-t1-t2 mynum entry;
-	if number of friendly followers < 8 and a random chance of 1 in 2 succeeds:
-		let t0 be t1;
-		now t1 is t2;
-		now t2 is t0;
 	if debug-state is true, say "first-npc ([init-dialogue-row]) [mynum entry] ... ";
 	say "[mytext entry][line break]";
 	if init-dialogue-row is number of rows in table of initial dialogues:
@@ -111,15 +133,11 @@ every turn when can-init-dialogue (this is the initial table random dialogue rul
 every turn when can-second-dialogue (this is the further table random dialogue rule):
 	increment second-dialogue-row;
 	choose row second-dialogue-row in table of further dialogues;
-	if mynum entry > 80 and orc is not friendly:
+	if (remainder after dividing mynum entry by 100) > 80 and orc is not friendly:
 		increment missed-this-cycle;
 		if debug-state is true, say "passed on [mynum entry] ...";
 	else:
 		reassign-t1-t2 mynum entry;
-		if number of friendly followers < 8 and a random chance of 1 in 2 succeeds:
-			let t0 be t1;
-			now t1 is t2;
-			now t2 is t0;
 		if debug-state is true, say "second-npc [mynum entry] ... ";
 		say "[mytext entry][line break]";
 	if second-dialogue-row < number of rows in table of further dialogues, continue the action;
@@ -279,28 +297,6 @@ mynum	mytext
 0	"[t1t2] rap out the hit [i]I So Ice, Oh[r]."
 0	"[t1t2] argue over imagery in [i]Stark Old Star, Cold[r]."
 0	"[t1t2] note sturdy baits stir debates."
-
-volume testing without random shuffling
-
-when play begins (this is the seed random final dialogues rule):
-	let modular-list-index be 0;
-	let final-list-index be 0;
-	if debug-state is false:
-		sort quasirand-init-list in random order;
-		sort table of further dialogues in random order;
-	repeat with QL running through quasirand-init-list:
-		if debug-state is false, sort QL in random order;
-		add QL to quasirand-final-list;
-	now followers-as-joined is list of followers;
-	repeat through table of further dialogues:
-		increment modular-list-index;
-		if modular-list-index > 28:
-			now modular-list-index is 1;
-		let QLE be entry modular-list-index in quasirand-final-list;
-		now mynum entry is QLE;
-		now t1 is QLE / 10;
-		now t2 is remainder after dividing QLE by 10;
-	now followers-as-joined is {};
 
 Why Pout Random Text ends here.
 
