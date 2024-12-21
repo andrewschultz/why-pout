@@ -94,8 +94,8 @@ def disqualified(my_string):
     return False
 
 def process_size_stuff(my_quote, file_name, line_count):
-    s = my_quote.split(' ')
     global reverse_flips
+    s = mt.zap_comments(my_quote).split(' ')
     retval = 0
     for x in range(0, len(s) - 3):
         four_array = s[x:x+4]
@@ -115,8 +115,8 @@ def process_size_stuff(my_quote, file_name, line_count):
                 elif y0 not in reverse_flips:
                     reverse_flips.append(y0)
                     mt.okay("{} cycles previous element {}.".format(y0, y))
-                    mt.warn("    that:", so_far[y0][-1])
-                    mt.warn("    this:", (my_quote, file_name, line_count))
+                    mt.warn("    original: {} ({} line {})".format(so_far[y0][-1][0], i7.inform_short_name(so_far[y0][-1][1]), so_far[y0][-1][2]))
+                    mt.warn("     current: {} ({} line {})".format(my_quote, i7.inform_short_name(file_name), line_count))
                     global reverses
                     reverses += 1
                     mt.add_post(file_name, line_count)
