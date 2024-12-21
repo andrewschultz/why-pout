@@ -20,7 +20,7 @@ track_bad = False
 core_files_too = True
 open_after = True
 note_reverse = False
-full_context = False
+full_context = False # can we set this in the options file?
 
 totals = 0
 reverses = 0
@@ -149,12 +149,18 @@ while cmd_count < len(sys.argv):
         smart_size_detect = int(arg[1:])
     elif arg == 'rv':
         note_reverse = True
+    elif arg in ( 'rn', 'nr' ):
+        note_reverse = False
     elif arg in ( 'fc', 'c', 'f' ):
         full_context = True
+    elif arg in ( 'nc', 'c', 'n' ):
+        full_context = False
     elif arg == 'e':
         print("Opening file of exceptions", ver_cfg)
         os.system(ver_cfg)
         sys.exit()
+    elif arg in ( 'no', 'on' ):
+        open_after = False
     else:
         usage()
     cmd_count += 1

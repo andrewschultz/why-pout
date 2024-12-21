@@ -3,11 +3,9 @@ can only go
 went up
 get back
 you cant,you dont,you already,you can,you want,you know,you need,you havent,you must
-we craft weak raft
 blood at
 your companions
 wish to
-november
 bad guys
 that sort
 to do
@@ -17,3 +15,41 @@ looking with distaste
 hard not to hear
 the right place to
 better off waiting
+voice in your
+you have no
+south east
+its a bit
+didnt know you had
+never need
+you look at it
+must be a way
+to in the future
+to go but you
+just a bit more
+your party is
+they hand you
+seem quite proud of
+to show theyre tough
+a bit left out
+####################similar but not identical branch: we need to try "to eye a follower" and see if that trumps other stuff
+the general area though
+things may provide a
+####################think-command
+think cue
+think of stuff
+stuff you tried
+you tried before
+####################cluing
+four dots on the
+####################WP specific
+we craft weak raft
+to the crude orc
+stall labeled my
+counting the mice
+####################Us Too specific
+you make the stew
+####################credits-y stuff
+november
+october
+####################
+<from daily keep file
