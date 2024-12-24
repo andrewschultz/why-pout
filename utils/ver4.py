@@ -22,6 +22,8 @@ open_after = True
 note_reverse = False
 full_context = False # can we set this in the options file?
 
+sort_regexes = True
+
 totals = 0
 reverses = 0
 
@@ -155,6 +157,10 @@ while cmd_count < len(sys.argv):
         full_context = True
     elif arg in ( 'nc', 'c', 'n' ):
         full_context = False
+    elif arg in ( 'rs', 'sr' ):
+        sort_regexes = True
+    elif arg in ( 'rsn', 'srn', 'nsr', 'nrs' ):
+        sort_regexes = False
     elif arg == 'e':
         print("Opening file of exceptions", ver_cfg)
         os.system(ver_cfg)
