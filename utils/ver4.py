@@ -170,8 +170,8 @@ for this_file in my_files:
     this_table = ''
     bnx = os.path.basename(this_file)
     this_needs_table = needs_table(this_file)
-    this_needs_quotes = 'txt' not in this_file
-    quote_idx = 2 if this_needs_quotes else 1
+    in_source_file = 'txt' not in this_file
+    quote_idx = 2 if in_source_file else 1
     with open(this_file) as file:
         for (line_count, line) in enumerate (file, 1):
             line_dict[this_file].append(line)
@@ -189,12 +189,12 @@ for this_file in my_files:
             if x:
                 this_rule = x[0]
                 continue
-            if this_needs_quotes and '"' not in line:
+            if in_source_file and '"' not in line:
                 continue
             if this_needs_table and section_disqualified(this_table):
                 continue
             quote_ary = line.lower().strip().split('"')
-            if this_needs_quotes:
+            if in_source_file:
                 quote_ary = quote_ary[1::2]
             for quote in quote_ary:
                 q = re.sub("[\.\?!]", "", quote)
