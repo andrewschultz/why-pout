@@ -95,12 +95,21 @@ def disqualified(my_string):
             return True
     return False
 
-def process_size_stuff(my_quote, file_name, line_count):
+def process_size_stuff(my_quote, file_name, line_count, expand_regex = False):
     global reverse_flips
     s = mt.zap_comments(my_quote).split(' ')
     retval = 0
+    big_array = []
+
     for x in range(0, len(s) - 3):
-        four_array = s[x:x+4]
+        raw_string = ' '.join(s[x:x+4])
+        if expand_regex:
+            big_array.extend(list(mt.generate_all_poss(raw_string)))
+        else:
+            big_array.append(raw_string)
+
+    for my_string in big_array:
+        four_array = my_string.split(' ')
         y = ' '.join(four_array)
         if smart_size_detect:
             delta = len(four_array[2]) + len(four_array[3]) - len(four_array[1]) - len(four_array[0])
@@ -178,6 +187,7 @@ for this_file in my_files:
     this_needs_table = needs_table(this_file)
     in_source_file = 'txt' not in this_file
     quote_idx = 2 if in_source_file else 1
+    is_notes_file = ('notes.txt' in this_file) or ('notes-' in this_file and this_file.endswith('.txt'))
     with open(this_file) as file:
         for (line_count, line) in enumerate (file, 1):
             line_dict[this_file].append(line)
@@ -199,19 +209,25 @@ for this_file in my_files:
                 continue
             if this_needs_table and section_disqualified(this_table):
                 continue
+            if is_notes_file:
+                line = mt.zap_comment(line)
             quote_ary = line.lower().strip().split('"')
             if in_source_file:
                 quote_ary = quote_ary[1::2]
             for quote in quote_ary:
                 q = re.sub("[\.\?!]", "", quote)
                 q = re.sub("\[.*?\]", "", q).strip()
-                q = re.sub("[',.:;]", "", q).replace('-', ' ').replace('(', '').replace(')', '').replace('/', ' ').replace('~', ' ')
+                q = re.sub("[',.:;]", "", q).replace('-', ' ').replace('(', '').replace(')', '').replace('~', ' ').replace(' / ', ' ')
                 q = re.sub(' +', ' ', q)
+                if is_notes_file and sort_regexes and '/' in q and re.search("[a-z]/[a-z]", q, flags=re.IGNORECASE) and q.count(' ') > 2:
+                    totals += process_size_stuff(q, this_file, line_count, is_notes_file)
+                    continue
+                q = q.replace('/', ' ')
                 if disqualified(q):
                     continue
                 #print(line_count, q)
                 detail = this_rule if this_rule else (this_table if this_table else 'undefined')
-                temp = process_size_stuff(q, this_file, line_count)
+                temp = process_size_stuff(q, this_file, line_count, is_notes_file)
                 totals += temp
 
 incidents = 0
