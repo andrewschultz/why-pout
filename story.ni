@@ -1281,11 +1281,27 @@ report warponing: follow the check inventory change rule;
 
 volume parser errors
 
+book general
+
 rule for printing a parser error when the latest parser error is the only understood as far as error:
 	say "You may have used a word or two too many or made a typo in the final word.";
 
 rule for printing a parser error when the latest parser error is the I beg your pardon error:
 	say "'Hum, blank,' you muse. No humble ankh pops into your hands, sadly.";
+
+book specific
+
+rule for printing a parser error when player is in brew swears and weird-icks are in brew swears:
+	if the player's command includes "dick":
+		say "Alas, there is more than one of [the earls].";
+		the rule succeeds;
+	continue the action;
+
+rule for printing a parser error when has-quid:
+	if the player's command includes "quid":
+		say "While you have the quid, you don't need to inspect it, or whatever. You'll make transactions when necessary.";
+		the rule succeeds;
+	continue the action;
 
 volume appearance
 

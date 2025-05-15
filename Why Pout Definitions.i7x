@@ -126,6 +126,10 @@ to block-follows:
 
 book statuses
 
+to decide whether has-quid:
+	if sco-six-quid is true and current-quid > 0, yes;
+	no;
+
 to decide whether talk-default-to-player:
 	if player is in Eh Raw Air Aww, yes;
 	if being-policed, yes;
