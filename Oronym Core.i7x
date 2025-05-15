@@ -86,7 +86,7 @@ the block swearing mildly rule is not listed in any rulebook.
 check swearing mildly: try swearing obscenely instead;
 
 carry out swearing obscenely:
-	say "'Cur! Say curse, eh?'";
+	say "'Cur! Say curse, eh?' I scold, ice-cold!";
 
 book honorary default verb
 
@@ -167,7 +167,7 @@ check drop2ing war pawn:
 check drop2ing:
 	if noun is eyes:
 		moot eyes;
-		say "They eyes roll away. 'Ire, ol['] eye roll!', you think to yourself." instead;
+		say "'Ire, ol['] eye. Roll!' you mutter. The eyes roll away.[paragraph break]'A dumb aid, umm,' you think to yourself." instead;
 	say "You don't need to [b]DROP[r] anything in [this-game]. Most of what gets in your inventory will disappear when used successfully.[if player has war pawn]. However, you may [b]DROP[r] the war pawn to remove the temptation to skip a puzzle[end if]." instead;
 
 rule for supplying a missing noun when drop2ing:
@@ -206,7 +206,7 @@ check eyeing war pawn: say "You reflect on the irony of using a hint item on a h
 
 book sly size slice eyes
 
-the sly size slice eyes are a plural-named hintthing. eyes-number of sly size slice eyes is 1. printed name is "sly size-slice eyes". drop-poke of slice eyes is "Are you sure you wish to drop [the noun]? They give a clue as to the length of any solution.". description is "The eyes shift around a lot, looking for stuff normal human eyes can't see. If you wish them to look at something, [b]EYE[r] it, or just [b]EYE[r] the room. You can even [b]EYE[r] the eyes themselves to spell out precisely how they work.". understand "eye" as eyes.
+the sly size slice eyes are a plural-named hintthing. eyes-number of sly size slice eyes is 1. printed name is "sly size-slice eyes". drop-poke of slice eyes is "Are you sure you wish to drop [the noun]? They give a clue as to the length of any solution.". description is "The eyes shift around a lot, looking for stuff normal human eyes can't see.[paragraph break]To have them analyze the room, [b]EYE[r] with no argument. To have them analyze something, [b]EYE[r] it. You can also [b]EYE[r] the eyes themselves to spell out precisely how they work.". understand "eye" as eyes.
 
 chapter eyeing
 
