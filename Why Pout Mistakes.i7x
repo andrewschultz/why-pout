@@ -36,6 +36,10 @@ understand "newt roll" and "nude roll" and "newt role" and "nude role" as a mist
 
 understand "warp" and "warp [text]" as a mistake ("Yes, the war pawn will help you warp, but permit me some pedantry: which way? Backwards?") when player has war pawn.
 
+chapter no notion
+
+understand "no no shin" and "nono shin" as a mistake ("No, you're trying to bring something to light, not fret about what you can't find.") when player is in NoNotion and sco-known-ocean is false.
+
 chapter brew swears and its residents
 
 understand "heck alas" and "heck lass" as a mistake ("Too tame!") when player is in brew swears and heh-class is in brew swears.
