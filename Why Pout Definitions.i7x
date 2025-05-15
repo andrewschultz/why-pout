@@ -71,6 +71,9 @@ to befriend (f - a follower):
 	if f is not shrewd orc:
 		add f to followers-as-joined;
 	if number of friendly followers is 8, add shrewd orc to followers-as-joined;
+	if f is mice or f is elf:
+		if mice are friendly and elf is friendly:
+			say "[line break]'Mice, elf, myself,' you muse to yourself. Not aloud, of course. Anyone who sits around all day thinking up stuff like that just isn't fit for leadership.";
 	if number of friendly followers is 1:
 		say "[line break]It looks like [the f] will be following you around. All that silence might get awkward, so you may wish to [b]T[r] or [b]TALK[r] ([b]TO[r]) them.";
 	else if number of friendly followers is 3:
@@ -193,6 +196,8 @@ to decide which number is pals-made: decide on number of friendly followers;
 to decide which number is pals-overall-needed: decide on number of needed followers;
 
 to decide which number is pals-still-needed: decide on number of needed not friendly followers;
+
+to decide which number is up-for-chat: decide on number of still-chat-needed followers in location of player;
 
 to decide which number is flier-isle-score:
 	decide on (boolval of sco-grow-vial) + (boolval of sco-the-file) + (boolval of sco-war-file);

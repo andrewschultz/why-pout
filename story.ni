@@ -1085,17 +1085,21 @@ rule for supplying a missing noun when ting:
 		now noun is random friendly follower in location of player;
 		continue the action;
 	if number of followers in location of player > 1:
-		if number of still-chat-needed followers in location of player is 0 and orc is in location of player and orc is unchatted:
+		if up-for-chat is 0 and orc is in location of player and orc is unchatted:
 			say "The orc looks left out a bit...";
 			now noun is the orc;
 			continue the action;
-		if number of still-chat-needed followers in location of player is 1:
+		if up-for-chat is 1:
 			let X be random still-chat-needed follower in location of player;
 			say "You realize you've talked with everyone but [the x], who may feel a bit left out. So...";
 			now noun is X;
 			continue the action;
 		say "That's ambiguous--more than one friend you can chat with.";
-		if number of still-chat-needed followers in location of player > 0:
+		if up-for-chat is 1:
+			say "[line break]However, since you have talked to everyone except [the list of still-chat-needed followers in location of player], you decide to break the ice.";
+			now noun is random sentient in location of player;
+			continue the action;
+		if up-for-chat > 0:
 			say "[line break]However, you still haven't talked with [the list of still-chat-needed followers in location of player].";
 		else:
 			say "[line break]You've talked to everyone here, though, so you don't need to talk to them again.";
