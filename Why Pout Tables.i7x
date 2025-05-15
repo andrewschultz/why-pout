@@ -280,7 +280,7 @@ a wordtwisting rule (this is the pre-bay-sale rule):
 		vcp "[if sco-known-ocean is true]There's water here, but it's much more than a bay[else]You can't make out what sort of body of water is here. Well, not yet[end if].";
 		not-yet;
 	if player is not in lobe end:
-		vcp "No water here. Maybe somewhere else.";
+		vcp "That feels right, but there's no water here. Maybe somewhere else.";
 		not-yet;
 	if player is in lobe end and sco-low-bend is false:
 		vcp "No water visible here right now. Maybe if the landscape rearranged.";
@@ -292,7 +292,7 @@ a wordtwisting rule (this is the pre-bay-sale rule):
 
 this is the post-bay-sale rule:
 	now sco-bay-sale is true;
-	say "You have money, and you are ready for a sale, and you get it. Unfortunately, though you were expecting a nice big ship, you get something a little humbler, namely a We-Craft Weak Raft. It seems sturdy and large enough, though, and it is probably easier to operate than a Might-Anchor (My!) Tanker.[paragraph break]You christen it with the base ale, and the bottle fragments shatter and float away in the water.";
+	say "You have money, and you are ready for a sale, and you get it. You hand over the quid and, because the seller asked, the base ale, too.[paragraph break]Though you were expecting a nice big ship, you get something a little humbler, namely a We-Craft Weak Raft.[paragraph break]And unfortunately, the 'we' refers to you and your companion[plur of number of friendly followers].[paragraph break]Which is just fine! Because you really did get a good deal, and it turns out to be a great bonding experience.[paragraph break]Once built, it seems sturdy and large enough, and it is probably way easier to operate than a Might-Anchor (My!) Tanker.[paragraph break]";
 	quid-reduce 2;
 	moot base ale;
 	move We Craft Weak Raft to lobe end;
@@ -372,7 +372,7 @@ this is the post-tree-small rule:
 a wordtwisting rule (this is the pre-tall-cake rule):
 	if player does not have talk ache, unavailable;
 	if player does not have manna and player has knife:
-		vcp "You need ingredients to make a cake.";
+		vcp "The knife is a good utensil, but you need ingredients to make a cake.";
 		not-yet;
 	if player has manna and player does not have knife:
 		vcp "You need some sort of utensil to process the manna.";
@@ -437,6 +437,8 @@ this is the post-pry-stalk rule:
 	now sco-pry-stalk is true;
 	now player has stalk;
 	say "Among all the chatter, you discover a disused booth. Someone is preaching on about environmental stuff, and it's so much less painful than cell phone chat. You worry they're just going to blab on forever, but they're so grateful you listened as long as you did. They hand you a stalk they think can grow quickly. Their own special formula. It looks weird and glittery, and if anything can reach up out of here, this can. But the question is, where can it grow to?";
+	if pre-high-plain rule is guessed-yet:
+		say "[line break]You're pretty sure you already guessed, though you can [b]THINK[r] if you momentarily forgot.";
 	declue prize talk;
 
 a wordtwisting rule (this is the pre-high-plain rule):
@@ -448,7 +450,7 @@ a wordtwisting rule (this is the pre-high-plain rule):
 
 this is the hom-hi-playin rule:
 	if the player's command includes "hi":
-		say "You need to do more than greet the desired location. Desccribe it.";
+		say "You need to do more than greet the desired location. Describe it.";
 	else:
 		say "No playin[']. What is this location, specifically?"
 
@@ -617,7 +619,7 @@ a wordtwisting rule (this is the pre-the-file rule):
 
 this is the post-the-file rule:
 	now sco-the-file is true;
-	say "You have a clue what isle to look through. The thief isle. You get The File.";
+	say "You have a clue what isle to look through. The thief isle. Thanks to your friends, especially the sneaky gnome and rogue, you avoid all sorts of traps that would've snared you on your own.[paragraph break]Congratulations. You now possess, not just any file, but The File.";
 	conditional-flier-mangle;
 
 to ride-squid:
@@ -635,7 +637,7 @@ a wordtwisting rule (this is the pre-grow-vial rule):
 
 this is the post-grow-vial rule:
 	now sco-grow-vial is true;
-	say "In the grove isle, you find a grow vial, which you take. It's relaxing, but you can't afford to loiter too long.";
+	say "In the grove isle, you find a grow vial, which you take. The grove isle's relaxing, but you can't afford to loiter too long. You and your companions pull yourself back to the mainland.";
 	now player has grow vial;
 	conditional-flier-mangle;
 
@@ -716,7 +718,7 @@ a wordtwisting rule (this is the pre-whee-lone rule):
 
 this is the post-whee-lone rule:
 	now sco-whee-lone is true;
-	say "You enjoy your solitude, but ... wait. You lose track of time, and an oaf liar slips in just to babble at you.";
+	say "You begin to enjoy your solitude, along with your companions. Solitude's funny that way.[paragraph break]Unfortunately, in the process, you lose track of time, and an oaf liar slips in just to babble at you.";
 	move oaf liar to we loan;
 	print-the-loc;
 	declue-here;
@@ -888,7 +890,7 @@ a wordtwisting rule (this is the followers-check rule):
 		vcp "Sadly, you have no friends to bring together yet! Yet.";
 		not-yet;
 	if pals-still-needed > 0:
-		vcp "You sense you don't have the full gang together! [if number of still-follow-needed followers is 1]But you must be very, very close[else if pals-still-needed <= 4]You must be getting close, though[else]You've made a start, and you like who you have, but you feel there's not enough variety yet[end if].";
+		vcp "You sense you don't yet have the full gang together! [if number of still-follow-needed followers is 1]But you must be very, very close[else if pals-still-needed <= 4]You must be getting close, though[else]You've made a start, and you like who you have, but you feel there's not enough variety yet[end if].";
 		if gs-top-eight-op-known is false:
 			vcp "[line break]So how many companions do you need? On reflection, a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight[if orc is friendly], but with the orc along, it seems like a courtesy to count them instead of yourself[else]. For now, you assume you are[end if].[paragraph break][pals-short].";
 		else:
@@ -1203,12 +1205,12 @@ rule for printing a parser error (this is the check forks rule):
 check thinking when current-score is 0:
 	say "An inner voice says 'Fry! Twist!' You feel fright, wist. It's hard not to, since you don't have a name or a purpose. For some reason, you're focused on getting a name, but you've got this nagging feeling that's not quite it.[paragraph break][one of]Perhaps if you press a bit more, some thoughts may come out[or]Well, not quite a purpose, but ... what's the word? [one of]'Aww, flake! Awful ache[or]'Dumb pit. Dump it[in random order]!' you think to yourself. Which sounds slightly off, but it's all you have to go on[stopping].";
 	if pre-acts > 0:
-		say "[line break]You've already tried to [b]WIPE OUT[r] in response to taunts of 'why pout,' and you wonder if this all is easier. [if gs-examined-self is false]Perhaps you should [b]X ME[r][else]Maybe your search for a name will turn up something meaningful, regardless of what your name is[end if].";
+		say "[line break]You've already tried to [b]WIPE OUT[r] in response to taunts of 'why pout,' and you wonder if this all is easier. [if Mike Orr is unexamined]Perhaps you should [b]X ME[r][else]Maybe your search for a name will turn up something meaningful, regardless of what your name is[end if].";
 	the rule succeeds;
 
 rule for printing a parser error when the latest parser error is the not a verb I recognise error or the latest parser error is the didn't understand error (this is the catch bad verbs rule):
 	if core-score is 0:
-		say "You're stuck with what to do right now. Perhaps you can use your senses for clues, or [b]THINK[r], or look inward[if gs-examined-self is true] again with X ME[end if], to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.";
+		say "You're stuck with what to do right now. Perhaps you can use your senses for clues, or [b]THINK[r], or look inward[if Mike Orr is examined] again with X ME[end if], to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.";
 		increment first-point-clue-flag;
 		if gs-parser-error-note is false:
 			say "[line break][i][bracket][b]NOTE[r][i]: until the main area, parser verb errors like this will give occasional general hints. So don't be afraid to try stuff.[close bracket][r][line break]";
@@ -1225,15 +1227,14 @@ rule for printing a parser error when the latest parser error is the not a verb 
 	else if core-score is 2:
 		say "Man! The chatter from those phones must be distracting you from what you want and need to do, or maybe see.";
 	else if core-score is 3:
-		say "The prize talk has you distracted. It's got a point: you need to find something to get where you want. What's the something? [where-get-hype]";
+		say "The prize talk has you distracted. It's got a point: you need to find something to get where you want. What's the something, and how to get it? [where-get-hype]";
 	else:
 		say "That thought/action/observation/request brings up nothing. [this-game] has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try [b]VERBS[r].";
 	the rule succeeds;
 
 to say where-get-hype:
-	choose row with check-rule of pre-high-plain rule in table of main oronyms;
-	if think-cue entry is false:
-		say "Where do you want to get?";
+	if pre-high-plain rule is guessed-yet:
+		say "Also, where do you want to get?";
 	else:
 		say "You know where you want to get, the high plain/plane."
 
