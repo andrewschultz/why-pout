@@ -1288,7 +1288,7 @@ by a point
 
 #testcase-check-pre-tall-cake-rule-if-player-does-not-have-manna-and-player-has-knife
 >tall cake
-You need ingredients to make a cake.
+The knife is a good utensil, but you need ingredients to make a cake.
 
 >think
 You may be able to create a TALL CAKE once you have ingredients and cooking instruments.
