@@ -65,6 +65,11 @@ definition: a follower (called f) is still-chat-needed:
 	if f is unneeded, no;
 	yes;
 
+definition: a follower (called f) is usefully-chatted:
+	if f is unneeded, no;
+	if f is chatted, yes;
+	no;
+
 to befriend (f - a follower):
 	now f is friendly;
 	move f to location of player;
@@ -126,6 +131,18 @@ to allow-follows:
 to block-follows:
 	now block-followers is true;
 	if companions are not off-stage, moot companions;
+
+chapter follower chat text
+
+dialogue-list is a list of text variable. dialogue-list is {
+"It makes sense out of something odd you saw. Perhaps other friends will be able to help similarly.",
+"The chat helps reassure you that you've missed nothing big, but you still have more to learn.",
+"You throw around some other observations: a few, you should've realized, but no worries. You got it now.",
+"Your chat nicely pieces together information from your other companions you talked to.",
+"You have a new perspective on something you, with your experience so far, were pretty sure was true. As well as something that would've blown your mind beforehand.",
+"You realize the chat has filled in some holes you were curious about but felt sheepish asking.",
+"Piecing together your chats with all your companions, you have a cohesive what/why/how. It's a bit confusing to spell out, but you've internalized how things fit together, how your friends will cooperate, and so forth."
+}.
 
 book statuses
 
@@ -198,6 +215,8 @@ to decide which number is pals-overall-needed: decide on number of needed follow
 to decide which number is pals-still-needed: decide on number of needed not friendly followers;
 
 to decide which number is up-for-chat: decide on number of still-chat-needed followers in location of player;
+
+to decide which number is useful-chats: decide on number of usefully-chatted followers in location of player;
 
 to decide which number is flier-isle-score:
 	decide on (boolval of sco-grow-vial) + (boolval of sco-the-file) + (boolval of sco-war-file);

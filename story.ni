@@ -1147,6 +1147,8 @@ carry out ting (this is the first t rule):
 		say "You motivate yourself with 'Goal: earn? Go learn!'" instead;
 	if noun is not a follower, say "You don't get a response." instead;
 	if sco-my-corps is true, say "Motivational talk is through. Time to end this thing." instead;
+	if sco-treat-all is true, say "You've talked all you needed, one-on-one. Time to bring the gang together for a big lecture." instead;
+	if sco-tall-cake is true, say "Time to eat, not talk." instead;
 	if number of still-chat-needed followers is 0:
 		if noun is unchatted:
 			say "Sure, why not chat a bit more?";
@@ -1154,8 +1156,13 @@ carry out ting (this is the first t rule):
 			say "You've talked to everyone you needed to, but why not reach at re-chat?";
 
 carry out ting:
-	say "You chat with [the noun] a bit, [if noun is chatted]recapping[else]learning[end if] more about the history of the area you're exploring and why you're here. It fills in some blanks in your memory.";
-	say "[line break][help-chat of noun][line break]";
+	say "You chat with [the noun] a bit, [if noun is chatted]recapping[else]learning[end if] more about the history of the area you're exploring and why you're here.";
+	say "[line break][help-chat of noun]";
+	if noun is unchatted:
+		if noun is orc::
+			say "[paragraph break]You're impressed. You'd not have had that much to say, at the orc's age.";
+		else:
+			say "[paragraph break][entry (useful-chats + 1) in dialogue-list][line break]";
 	the rule succeeds;
 
 the t-only note rule is listed last in the report ting rulebook.
@@ -1171,7 +1178,7 @@ report ting a follower:
 		if number of still-chat-needed followers is 0:
 			say "[line break]Ouch! Still got that talk-ache.";
 			continue the action;
-		say "That was a nice refresher, though ";
+		say "[line break]That was a nice refresher, though ";
 		if number of unchatted followers in location of player > 0:
 			let RF be random unchatted follower in location of player;
 			say "[the RF] seem[if rf is not plural-named]s[end if] to want to cut in a bit for their turn some time.";
@@ -1181,13 +1188,9 @@ report ting a follower:
 			say "[line break][i][bracket][b]NOTE:[r][i] if you want to see whom you haven't talked to yet, [b]T[r][i] by itself will do the trick. If there's only one companion you haven't talked to, you will talk to them[close bracket][r][line break]";
 			now gs-t-special-note is true;
 	else:
-		if number of chatted followers is 0:
-			say "Wow! Things are starting to make sense. Maybe talking to others will help make even more sense.";
-		else:
-			say "Well, that's [one of]even [or][stopping]more useful information worth remembering.";
 		now noun is chatted;
 		if number of still-chat-needed followers is 0 and talk ache is off-stage:
-			say "[line break]That was a lot of talking. After all that time alone, you're not used to it. You develop a talk-ache.";
+			say "[line break]That was a lot of talking. After all that time alone in the Tomb Apse, you feel a bit of social burnout. You develop a talk-ache.";
 			now player has talk ache;
 	continue the action;
 
