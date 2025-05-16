@@ -206,7 +206,7 @@ after printing the locale description for NaffHaze when Bruise Wares is off-stag
 	continue the action;
 
 after going to NaffHaze when Bruise Wares is in NaffHaze and sco-treat-all is true:
-	say "Odd! [wares] has vanished. Well, one less dead end to worry about.";
+	say "Coming back here, you notice [wares] has vanished. But that can't be all bad. It means one less potential place to need to look, if you get a bit lost.";
 	zap-bruise-wares;
 	remove-swear-bonus;
 	continue the action;
@@ -256,7 +256,7 @@ the gross tar is a thing. "Gross tar blocks the way [b]NORTH[r] into darkness.".
 
 chapter keep iller
 
-the keep iller is a thing. "A keep, iller, rises to the [b]WEST[r][if sco-key-pillar is false], but you see no way in[else], and you figured how to enter it[end if].". description is "It [if keepiller is visited]wasn't[else]doesn't look[end if] dangerous, but then, it's not exactly a tourist attraction. Still, [if keepiller is unvisited]there's probably a lot to do there, since it takes up a lot of space to the west[else if keep-score < 6]you've seen there's plenty to do there[else]it helped you a lot[end if].". eyes-number of keep iller is 36. printed name is "keep, iller". eyes-rule of keep iller is the pre-key-pillar rule.
+the keep iller is a thing. "A keep, iller, rises to the [b]WEST[r][if sco-key-pillar is false], but you see no way in yet[else]. You've figured how to enter it[end if].". description is "It [if keepiller is visited]wasn't[else]doesn't look[end if] dangerous, but then, it's not exactly a tourist attraction. Still, [if keepiller is unvisited]there's probably a lot to do there, since it takes up a lot of space to the west[else if keep-score < 6]you've seen there's plenty to do there[else]it helped you a lot[end if].". eyes-number of keep iller is 36. printed name is "keep, iller". eyes-rule of keep iller is the pre-key-pillar rule.
 
 check entering keep iller:
 	if sco-key-pillar is false, say "You will enter the keep to the west, once you find a way. But you haven't, yet." instead;
@@ -341,7 +341,7 @@ the plant racker is a thing in KeepIller. "A plant racker lies here, pretty much
 
 chapter plan tracker
 
-the plan tracker is a thing. description is "[if sco-war-file is true]You have notes for combat and leadership written in here[else]The plan tracker is currently blank, but maybe you can find plans for it[end if].". eyes-number of plan tracker is -1.
+the plan tracker is a thing. description is "[if sco-war-file is true]You have written notes for combat and leadership in here. They will be useful for the rest of your journey[else]The plan tracker is currently blank, but maybe you can find plans for it[end if].". eyes-number of plan tracker is -1.
 
 after printing the name of plan tracker when taking inventory: say " ([if sco-war-file is false]with no ideas yet[else]full of ideas[end if])"
 
@@ -362,7 +362,7 @@ book Wolf Rock
 Wolf Rock is a room in universal. "A big rock in the shape of a wolf looms impressively, blocking all passages except back [b]SOUTH[r]. [if sco-hide-out is true]You can also go [b]DOWN[r] into the hideout you found[else]Also, the high doubt you can go anywhere else here is thick indeed. Maybe there's a way to dispel it[end if].[paragraph break]There's a huge pile of lode ore here, too, [if sco-low-door is true]and you found a low door in it that leads [b]INSIDE[r][else]and perhaps there's something in it[end if].". eyes-number of wolf rock is 45. eyes-rule of wolf rock is the pre-wool-frock rule.
 
 check going inside in Wolf Rock:
-	if sco-oh-flier is true, say "You don't see any need to go back." instead;
+	if sco-oh-flier is true, say "Since you got the flier, you have no need or desire to return." instead;
 	if sco-low-door is true:
 		say "The low door makes it hard for too many people or entities to enter at once. So you go it alone.";
 		block-follows;
@@ -387,7 +387,7 @@ check entering low door: try going inside instead.
 
 book Hideout
 
-Hideout is a room in universal. "You can only go back [b]UP[r]. It wouldn't be a very good hideout if you had too many places to sneak around.". eyes-number of hideout is -1.
+Hideout is a room in universal. "You can only go back [b]UP[r]. You're sort of glad it's not a deluxe or exciting hideout, really, since that'd just mean more to map out.". eyes-number of hideout is -1.
 
 chapter Booze Troll
 
@@ -498,7 +498,7 @@ My Stall is a thing. "A stall labeled [b]MY STALL[r] sits here, abandoned, again
 
 section mice tall
 
-the mice tall are a plural-named followers. printed name is "mice (tall)". description is "Well, they're tall for mice. But they make up enough numbers to be extremely effective at whatever you need them to do. They're a cool blend of 'My skill mice kill' and 'My school mice, cool.'". help-chat is "[one of]You're surprised how easy it is to understand them and how easily they understand you. [or][stopping]They discuss how much bigger opponents can be brought down by, not just arrogance facing many small opponents, but by dexterity and quick maneuvers. Oh, also a lot about the evil in the land killing or corrupting or mutating animals. So presumably finding or destroying it will put a stop to the very worst bits.". eyes-number of mice tall is -1.
+the mice tall are a plural-named followers. printed name is "mice (tall)". description is "Well, they're tall for mice, so they just come up to your thigh. But they make up enough numbers to be extremely effective at whatever you need them to do. They're a cool blend of 'My skill mice kill' and 'My school mice, cool.'". help-chat is "[one of]You're surprised how easy it is to understand them and how easily they understand you. [or][stopping]They discuss how much bigger opponents can be brought down by, not just arrogance facing many small opponents, but by dexterity and quick maneuvers. Oh, also a lot about the evil in the land killing or corrupting or mutating animals. So presumably finding or destroying it will put a stop to the very worst bits.". eyes-number of mice tall is -1.
 
 chapter men shelf
 
@@ -604,7 +604,9 @@ the wan dwarf is a follower. description is "Short and stocky. It wears glasses 
 
 book Brew Swears (optional)
 
-Brew Swears is a bonuspointy room in universal. "[if grinch earls are in brew swears]If you thought Hype Lane was bad, this is even worse[else if sco-gah-wanker is false]It's lonelier her without [the earls], but you could still make it lonelier![else]Now that you got rid of the orc's old associates and their, um, mentor, there's nothing really left to do here[end if]. You can leave back [b]OUT[r].". eyes-number of brew swears is -42. eyes-rule of Brew Swears is pre-weak-us rule.
+to say leave-out: say "leave back [b]OUT[r]"
+
+Brew Swears is a bonuspointy room in universal. "[if grinch earls are in brew swears]If you thought Hype Lane was bad, this is even worse. Fortunately, you don't need to solve any puzzles to [leave-out][else if sco-gah-wanker is false]It's lonelier her without [the earls], but you could still make it lonelier! Or you can just [leave-out][else]Now that you got rid of the orc's old associates and their, um, mentor, there's nothing really left to do here. You can [leave-out][end if].". eyes-number of brew swears is -42. eyes-rule of Brew Swears is pre-weak-us rule.
 
 check going outside in Brew Swears:
 	allow-follows;
@@ -781,7 +783,7 @@ carry out creditsing:
 chapter hinting
 
 report hinting:
-	say "[if slice eyes are off-stage]After two puzzles in this first room, there will be a hint item that gives clues what to do or think next[else if player has slice eyes]You can [b]EYE[r] things with [the slice eyes], or just [b]EYE[r] the whole room[else]You dropped [the eyes], which were the main hint item. You'll have to restart to bring them back again[end if].";
+	say "[if slice eyes are off-stage]After two puzzles in this first room, there will be a hint item that gives clues what to do or think next[one of]. You will get a clue if you [b]HINT[r] again[or]. Try using your senses for a clue[stopping][else if player has slice eyes]You can [b]EYE[r] things with [the slice eyes], or just [b]EYE[r] the whole room[else]You dropped [the eyes], which were the main hint item. You'll have to restart to bring them back again[end if].";
 	continue the action;
 
 chapter verbsing
