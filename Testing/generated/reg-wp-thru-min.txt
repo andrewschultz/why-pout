@@ -212,7 +212,7 @@ by a point
 
 >w
 
-Odd! BRUISE-WARES has vanished. Well, one less dead end to worry about.
+Coming back here, you notice BRUISE-WARES has vanished. But that can't be all bad. It means one less potential place to need to look, if you get a bit lost.
 
 >brew swears
 !point

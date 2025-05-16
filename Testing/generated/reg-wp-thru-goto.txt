@@ -115,7 +115,7 @@ by a point
 
 #testcase-goto-table-of-noways-hideout
 >w
-You can only go back UP. If this hideout had too many passages, it'd risk being less effective.
+You can only go back UP. You're sort of glad it's not a deluxe or exciting hideout, really, since that'd just mean more to map out.
 
 >boost role
 by a point

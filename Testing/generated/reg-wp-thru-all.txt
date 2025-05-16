@@ -397,8 +397,11 @@ by a point
 
 #testcase-check-pre-bay-sale-rule-fallthrough
 #testcase-run-post-bay-sale-rule-default
-You have money, and you are ready for a sale, and you get it. Unfortunately, though you were expecting a nice big ship, you get something a little humbler, namely a We-Craft Weak Raft. It seems sturdy and large enough, though, and it is probably easier to operate than a Might-Anchor (My!) Tanker.
-You christen it with the base ale, and the bottle fragments shatter and float away in the water.
+You have money, and you are ready for a sale, and you get it. You hand over the quid and, because the seller asked, the base ale, too.
+Though you were expecting a nice big ship, you get something a little humbler, namely a We-Craft Weak Raft.
+And unfortunately, the "we" refers to you and your companions.
+Which is just fine! Because you really did get a good deal, and it turns out to be a great bonding experience.
+Once built, it seems sturdy and large enough, and it is probably way easier to operate than a Might-Anchor (My!) Tanker.
 This transaction reduces your wealth from three quid to one quid.
 
 >n
@@ -486,7 +489,8 @@ by a point
 
 #testcase-check-pre-whee-lone-rule-fallthrough
 #testcase-run-post-whee-lone-rule-default
-You enjoy your solitude, but ... wait. You lose track of time, and an oaf liar slips in just to babble at you.
+You begin to enjoy your solitude, along with your companions. Solitude's funny that way.
+Unfortunately, in the process, you lose track of time, and an oaf liar slips in just to babble at you.
 
 #+testcase-room-names-we-loan
 `Whee, Lone?
@@ -559,7 +563,7 @@ by a point
 
 #testcase-check-pre-grow-vial-rule-fallthrough
 #testcase-run-post-grow-vial-rule-default
-In the grove isle, you find a grow vial, which you take. It's relaxing, but you can't afford to loiter too long.
+In the grove isle, you find a grow vial, which you take. The grove isle's relaxing, but you can't afford to loiter too long. You and your companions pull yourself back to the mainland.
 
 >war file
 by a point
@@ -649,7 +653,8 @@ by a point
 
 #testcase-check-pre-the-file-rule-fallthrough
 #testcase-run-post-the-file-rule-default
-You have a clue what isle to look through. The thief isle. You get The File.
+You have a clue what isle to look through. The thief isle. Thanks to your friends, especially the sneaky gnome and rogue, you avoid all sorts of traps that would've snared you on your own.
+Congratulations. You now possess, not just any file, but The File.
 You've visited all the locations in the flier. You crumple it up as if to throw it in a trash bin. The squid makes a gesture as if it wishes to gobble the flier. You're worried it might choke on the flier, as it did for the quid, but then -- well, the water washes the paper brochure down. Odd, but hooray for clearer inventory.
 
 >n

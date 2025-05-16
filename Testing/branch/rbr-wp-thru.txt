@@ -453,7 +453,8 @@ You plant the stalk, which -- well, it's already a bit of a stalk, but it grows 
 INVENTORY CHANGED
 There's that occasional voice ringing in your head asking "Why pout?" Well, you're feeling a bit alone, but there's always the prospect of finding stuff...
 "Good! Some goods, umm...":
-some sly size-slice eyes
+You are also carrying something that may help your quest in general: some sly size-slice eyes.
+!/^  some sly
 You have a name, too, now, you remember: Mike Orr.
 !/^..a stalk
 \\
@@ -530,7 +531,7 @@ The haze seemed too thick at first. But you recognize it doesn't have to be ther
 
 @li
 Things have opened up to where you see potential paths now, with the naff haze lifted.
-A keep, iller, rises to the WEST, but you see no way in.
+A keep, iller, rises to the WEST, but you see no way in yet.
 Gross tar blocks the way NORTH into darkness.
 A short rail leads -- well, not very far. You get the sense it should lead somewhere more.
 You feel policed here. And it's the mean American gung-ho militarized sort of policed, not the (usually) kinder UK brand. Where and what is this policed feeling coming from?
@@ -614,7 +615,7 @@ by a point
 A war pawn, like a chess piece, rolls into view. It looks pretty powerful. As you take it, you reflect that you may wish to save it for down the road when you're really stuck somewhere.
 There's that occasional voice ringing in your head asking "Why pout?" Well, you're feeling a bit alone, but there's always the prospect of finding stuff...
 "Good! Some goods, umm...":
-  a war pawn
+You are also carrying some things that may help your quest in general: a war pawn and some sly size-slice eyes.
 Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will find something special about it some day.
 \\
 >l
@@ -757,7 +758,7 @@ You've changed the landscape a lot, north, south, east and west. But there's mor
 
 @li
 >l
-A keep, iller, rises to the WEST, and you figured how to enter it.
+A keep, iller, rises to the WEST. You've figured how to enter it.
 !but you see no way in
 There's also a way DOWN that opened up once you found passages in all cardinal directions.
 
@@ -990,7 +991,7 @@ There's a huge pile of lode ore here, too, and perhaps there's something in it.
 @gt
 #testcase-goto-table-of-noways-hideout
 >w
-You can only go back UP. If this hideout had too many passages, it'd risk being less effective.
+You can only go back UP. You're sort of glad it's not a deluxe or exciting hideout, really, since that'd just mean more to map out.
 
 @hint
 #testcase-values-eyes-number-of-hideout-is--1
@@ -1010,7 +1011,7 @@ No, the booze troll shouldn't be blown off! They can become a better ... entity.
 @li
 >l
 Hideout
-You can only go back UP. It wouldn't be a very good hideout if you had too many places to sneak around.
+You can only go back UP. You're sort of glad it's not a deluxe or exciting hideout, really, since that'd just mean more to map out.
 A booze troll sulks sullenly here.
 
 @verbs
@@ -1069,11 +1070,17 @@ That would change the new troll for the worse!
 That would change the new troll for the worse!
 
 @verbs
+#balance undo
 >t
-You chat with the new troll a bit, learning more about the history of the area you're exploring and why you're here. It fills in some blanks in your memory.
+You chat with the new troll a bit, learning more about the history of the area you're exploring and why you're here.
+The new troll relates ways to shake oneself free from despair (no! Really! It managed to for a while!) before relating more ways to avoid it in the first place, or help others you care about do the same.
+It makes sense out of something odd you saw. Perhaps other friends will be able to help similarly.
 \\
 >t troll
-You chat with the new troll a bit, recapping more about the history of the area you're exploring and why you're here. It fills in some blanks in your memory.
+That was a nice refresher, though it didn't reveal anything new.
+\\
+>undo
+>undo
 
 >u
 
@@ -1220,21 +1227,38 @@ Nothing here like that. Note that room names are not usually worth examining, as
 >w
 
 @verbs+
+##balance undos
+>t troll
+You chat with the new troll a bit, learning more about the history of the area you're exploring and why you're here.
+The new troll relates ways to shake oneself free from despair (no! Really! It managed to for a while!) before relating more ways to avoid it in the first place, or help others you care about do the same.
+It makes sense out of something odd you saw. Perhaps other friends will be able to help similarly.
+\\
+>t troll
+You chat with the new troll a bit, recapping more about the history of the area you're exploring and why you're here.
+The new troll relates ways to shake oneself free from despair (no! Really! It managed to for a while!) before relating more ways to avoid it in the first place, or help others you care about do the same.
+That was a nice refresher, though 
+(old) seems to want to cut in a bit for their turn some time.
+[NOTE: if you want to see whom you haven't talked to yet, T by itself will do the trick. If there's only one companion you haven't talked to, you will talk to them]
+\\
 >t
 That's ambiguous--more than one friend you can chat with.
 However, you still haven't talked with the rogue (old) and the gnome (old).
 \\
 >t rogue old
-You chat with the rogue (old) a bit, learning more about the history of the area you're exploring and why you're here. It fills in some blanks in your memory.
+You chat with the rogue (old) a bit, learning more about the history of the area you're exploring and why you're here.
 The rogue (old) discusses ways to sneak around so vastly overpowered opponents can't blow you away, and you also learn not to feel guilty or shifty about being good at sneaking around, around much more unsavory entities than yourself.
-Well, that's even more useful information worth remembering.
+The chat helps reassure you that you've missed nothing big, but you still have more to learn.
 \\
 >t
 You realize you've talked with everyone but the gnome (old), who may feel a bit left out. So...
-You chat with the gnome (old) a bit, learning more about the history of the area you're exploring and why you're here. It fills in some blanks in your memory.
+You chat with the gnome (old) a bit, learning more about the history of the area you're exploring and why you're here.
 The gnome (old) discusses ways of finding hidden psychic weaknesses in a very tough opponent. You also hear how whatever force there is, it only cares about things looking good on the outside. The gnome had so much mold to protect against and continually scrape away, even outside of the keep.
-Well, that's more useful information worth remembering.
+You throw around some other observations: a few, you should've realized, but no worries. You got it now.
 \\
+>undo
+>undo
+>undo
+>undo
 >undo
 
 @verbs+
@@ -1464,7 +1488,7 @@ by a point
 @verbs
 >t
 That's ambiguous--more than one friend you can chat with.
-However, you still haven't talked with the gaunt raider and the gnome (old).
+However, you still haven't talked with the gaunt raider, the new troll, the rogue (old) and the gnome (old).
 
 @hint
 #testcase-values-eyes-number-of-gaunt-raider-is--1
@@ -1478,13 +1502,17 @@ After some discussion, you work out a plan to make the gone trader reframe what 
 Hmm. You have a lot of friends following you around, but you haven't talked to them much. Perhaps you could learn something from them.
 
 @verbs
+##balance undo
 >t raider
-You chat with the gaunt raider a bit, learning more about the history of the area you're exploring and why you're here. It fills in some blanks in your memory.
+You chat with the gaunt raider a bit, learning more about the history of the area you're exploring and why you're here.
 The gaunt raider discusses regret for their past actions, as well as some possibilities for how to use it to boost yourself to do the right thing, or when to just drop it without being drowned by guilt.
-Well, that's more useful information worth remembering.
+It makes sense out of something odd you saw. Perhaps other friends will be able to help similarly.
 \\
 >t raider
 to want to cut in a bit for their turn some time.
+\\
+>undo
+>undo
 
 >u
 
@@ -1578,7 +1606,7 @@ But, well, yes. You're in the right place for that.
 @li
 Your companions stay behind. They recognize this is a spiritual fight for you and you alone.
 Brew Swears
-If you thought Hype Lane was bad, this is even worse. You can leave back OUT.
+If you thought Hype Lane was bad, this is even worse. Fortunately, you don't need to solve any puzzles to leave back OUT.
 Some grinch earls parade around here, bragging about how they ruin boring people's fun with their dynamic ways and pointing out that it's easy to be nice if you're boring. They fix you with a "We parse: weep, arse" gaze. They constantly blather "WE CUSS" and seem quite proud of that.
 A crude orc trundles around here, trying to impress the grinch earls.
 
@@ -1997,8 +2025,11 @@ The eyes show nothing. Probably don't need to do anything with the water to the 
 @all
 #testcase-check-pre-bay-sale-rule-fallthrough
 #testcase-run-post-bay-sale-rule-default
-You have money, and you are ready for a sale, and you get it. Unfortunately, though you were expecting a nice big ship, you get something a little humbler, namely a We-Craft Weak Raft. It seems sturdy and large enough, though, and it is probably easier to operate than a Might-Anchor (My!) Tanker.
-You christen it with the base ale, and the bottle fragments shatter and float away in the water.
+You have money, and you are ready for a sale, and you get it. You hand over the quid and, because the seller asked, the base ale, too.
+Though you were expecting a nice big ship, you get something a little humbler, namely a We-Craft Weak Raft.
+And unfortunately, the "we" refers to you and your companions.
+Which is just fine! Because you really did get a good deal, and it turns out to be a great bonding experience.
+Once built, it seems sturdy and large enough, and it is probably way easier to operate than a Might-Anchor (My!) Tanker.
 This transaction reduces your wealth from three quid to one quid.
 
 @li
@@ -2336,7 +2367,8 @@ by a point
 @all
 #testcase-check-pre-whee-lone-rule-fallthrough
 #testcase-run-post-whee-lone-rule-default
-You enjoy your solitude, but ... wait. You lose track of time, and an oaf liar slips in just to babble at you.
+You begin to enjoy your solitude, along with your companions. Solitude's funny that way.
+Unfortunately, in the process, you lose track of time, and an oaf liar slips in just to babble at you.
 
 @all+
 #+testcase-room-names-we-loan
@@ -2671,7 +2703,7 @@ by a point
 @all
 #testcase-check-pre-grow-vial-rule-fallthrough
 #testcase-run-post-grow-vial-rule-default
-In the grove isle, you find a grow vial, which you take. It's relaxing, but you can't afford to loiter too long.
+In the grove isle, you find a grow vial, which you take. The grove isle's relaxing, but you can't afford to loiter too long. You and your companions pull yourself back to the mainland.
 
 @li
 INVENTORY CHANGED
@@ -2836,15 +2868,45 @@ The eyes light up yellow and show five dots, then three dots.
 
 >t dwarf
 
+@verbs
+You chat with the wan dwarf a bit, learning more about the history of the area you're exploring and why you're here.
+The dwarf provides an impressively nuanced view on how to balance magic skill with physical skill and fighting savvy. But the dwarf also notes how to be a good expert in specific areas if need be, as well as how to get experts and generalists to work together. However, the dwarf also expresses worry that this talk is all great in theory but hard in practice.
+It makes sense out of something odd you saw. Perhaps other friends will be able to help similarly.
+
 >t elf
+
+@verbs
+You chat with the mensch elf a bit, learning more about the history of the area you're exploring and why you're here.
+The mensch elf discusses ways to identify people or situations that just need a bit of help, and how to do so without making them feel hopeless or in need of help, or that they got themselves in this position in the first place.
+The chat helps reassure you that you've missed nothing big, but you still have more to learn.
 
 >t gnome
 
+@verbs
+You chat with the gnome (old) a bit, learning more about the history of the area you're exploring and why you're here.
+The gnome (old) discusses ways of finding hidden psychic weaknesses in a very tough opponent. You also hear how whatever force there is, it only cares about things looking good on the outside. The gnome had so much mold to protect against and continually scrape away, even outside of the keep.
+You throw around some other observations: a few, you should've realized, but no worries. You got it now.
+
 >t rogue
+
+@verbs
+You chat with the rogue (old) a bit, learning more about the history of the area you're exploring and why you're here.
+The rogue (old) discusses ways to sneak around so vastly overpowered opponents can't blow you away, and you also learn not to feel guilty or shifty about being good at sneaking around, around much more unsavory entities than yourself.
+Your chat nicely pieces together information from your other companions you talked to.
 
 >t raider
 
+@verbs
+You chat with the gaunt raider a bit, learning more about the history of the area you're exploring and why you're here.
+The gaunt raider discusses regret for their past actions, as well as some possibilities for how to use it to boost yourself to do the right thing, or when to just drop it without being drowned by guilt.
+You have a new perspective on something you, with your experience so far, were pretty sure was true. As well as something that would've blown your mind beforehand.
+
 >t mice
+
+@verbs
+You chat with the mice (tall) a bit, learning more about the history of the area you're exploring and why you're here.
+You're surprised how easy it is to understand them and how easily they understand you. They discuss how much bigger opponents can be brought down by, not just arrogance facing many small opponents, but by dexterity and quick maneuvers. Oh, also a lot about the evil in the land killing or corrupting or mutating animals. So presumably finding or destroying it will put a stop to the very worst bits.
+You realize the chat has filled in some holes you were curious about but felt sheepish asking.
 
 @alt
 ##balance undos
@@ -2857,21 +2919,13 @@ talk-ache
 >undo
 >undo
 
-@verbs
-##balance undos
 >t troll
-That talk-ache is a bit of a nuisance. You've probably got the information you need from your friends.
-\\
->undo
-\\
->t
-!That talk ache is a bit of a nuisance.
-!That was a lot of talking.
-!develop a talk-ache
-\\
->undo
 
->t troll
+@verbs
+You chat with the new troll a bit, learning more about the history of the area you're exploring and why you're here.
+The new troll relates ways to shake oneself free from despair (no! Really! It managed to for a while!) before relating more ways to avoid it in the first place, or help others you care about do the same.
+Piecing together your chats with all your companions, you have a cohesive what/why/how. It's a bit confusing to spell out, but you've internalized how things fit together, how your friends will cooperate, and so forth.
+That was a lot of talking. After all that time alone in the Tomb Apse, you feel a bit of social burnout. You develop a talk-ache.
 
 @all
 talk-ache
@@ -2888,6 +2942,20 @@ There's that occasional voice ringing in your head asking "Why pout?" Well, it's
   a war pawn
 Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will find something special about it some day.
 Oh, man. You still have that talk-ache, too.
+
+@verbs
+##balance undos
+>t troll
+That talk-ache is a bit of a nuisance. You've probably got the information you need from your friends.
+\\
+>undo
+\\
+>t
+!That talk ache is a bit of a nuisance.
+!That was a lot of talking.
+!develop a talk-ache
+\\
+>undo
 
 @hint
 #testcase-values-eyes-number-of-talk-ache-is-44
@@ -2935,6 +3003,10 @@ Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will
 !Oh, man. You still have that talk-ache, too.
 
 @verbs
+>t troll
+Time to eat, not talk.
+
+@+verbs
 >eat tall cake
 You can't eat the cake by yourself! Make it a communal experience in a special place!
 
@@ -2974,6 +3046,10 @@ There's that occasional voice ringing in your head asking "Why pout?" Well, it's
 Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will find something special about it some day.
 
 @verbs
+>t troll
+You've talked all you needed, one-on-one. Time to bring the gang together for a big lecture.
+
+@+verbs
 >eat war pawn
 You already ate the only thing you needed to.
 
@@ -3004,7 +3080,7 @@ You already ate the only thing you needed to.
 /^first-npc \(22\) 8[1-7]
 
 @min
-Odd! BRUISE-WARES has vanished. Well, one less dead end to worry about.
+Coming back here, you notice BRUISE-WARES has vanished. But that can't be all bad. It means one less potential place to need to look, if you get a bit lost.
 \\
 >brew swears
 !point
@@ -3029,7 +3105,8 @@ by a point
 @all
 #testcase-check-pre-the-file-rule-fallthrough
 #testcase-run-post-the-file-rule-default
-You have a clue what isle to look through. The thief isle. You get The File.
+You have a clue what isle to look through. The thief isle. Thanks to your friends, especially the sneaky gnome and rogue, you avoid all sorts of traps that would've snared you on your own.
+Congratulations. You now possess, not just any file, but The File.
 You've visited all the locations in the flier. You crumple it up as if to throw it in a trash bin. The squid makes a gesture as if it wishes to gobble the flier. You're worried it might choke on the flier, as it did for the quid, but then -- well, the water washes the paper brochure down. Odd, but hooray for clearer inventory.
 
 @li

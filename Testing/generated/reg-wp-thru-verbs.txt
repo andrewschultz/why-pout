@@ -227,11 +227,17 @@ The booze troll doesn't seem interested in useful conversation, at least not in 
 >boost role
 by a point
 
+#balance undo
 >t
-You chat with the new troll a bit, learning more about the history of the area you're exploring and why you're here. It fills in some blanks in your memory.
+You chat with the new troll a bit, learning more about the history of the area you're exploring and why you're here.
+The new troll relates ways to shake oneself free from despair (no! Really! It managed to for a while!) before relating more ways to avoid it in the first place, or help others you care about do the same.
+It makes sense out of something odd you saw. Perhaps other friends will be able to help similarly.
 
 >t troll
-You chat with the new troll a bit, recapping more about the history of the area you're exploring and why you're here. It fills in some blanks in your memory.
+That was a nice refresher, though it didn't reveal anything new.
+
+>undo
+>undo
 
 >u
 
@@ -297,21 +303,37 @@ Nothing here like that. Note that room names are not usually worth examining, as
 
 >w
 
+>t troll
+You chat with the new troll a bit, learning more about the history of the area you're exploring and why you're here.
+The new troll relates ways to shake oneself free from despair (no! Really! It managed to for a while!) before relating more ways to avoid it in the first place, or help others you care about do the same.
+It makes sense out of something odd you saw. Perhaps other friends will be able to help similarly.
+
+>t troll
+You chat with the new troll a bit, recapping more about the history of the area you're exploring and why you're here.
+The new troll relates ways to shake oneself free from despair (no! Really! It managed to for a while!) before relating more ways to avoid it in the first place, or help others you care about do the same.
+That was a nice refresher, though 
+(old) seems to want to cut in a bit for their turn some time.
+[NOTE: if you want to see whom you haven't talked to yet, T by itself will do the trick. If there's only one companion you haven't talked to, you will talk to them]
+
 >t
 That's ambiguous--more than one friend you can chat with.
 However, you still haven't talked with the rogue (old) and the gnome (old).
 
 >t rogue old
-You chat with the rogue (old) a bit, learning more about the history of the area you're exploring and why you're here. It fills in some blanks in your memory.
+You chat with the rogue (old) a bit, learning more about the history of the area you're exploring and why you're here.
 The rogue (old) discusses ways to sneak around so vastly overpowered opponents can't blow you away, and you also learn not to feel guilty or shifty about being good at sneaking around, around much more unsavory entities than yourself.
-Well, that's even more useful information worth remembering.
+The chat helps reassure you that you've missed nothing big, but you still have more to learn.
 
 >t
 You realize you've talked with everyone but the gnome (old), who may feel a bit left out. So...
-You chat with the gnome (old) a bit, learning more about the history of the area you're exploring and why you're here. It fills in some blanks in your memory.
+You chat with the gnome (old) a bit, learning more about the history of the area you're exploring and why you're here.
 The gnome (old) discusses ways of finding hidden psychic weaknesses in a very tough opponent. You also hear how whatever force there is, it only cares about things looking good on the outside. The gnome had so much mold to protect against and continually scrape away, even outside of the keep.
-Well, that's more useful information worth remembering.
+You throw around some other observations: a few, you should've realized, but no worries. You got it now.
 
+>undo
+>undo
+>undo
+>undo
 >undo
 
 >eat rogue
@@ -389,15 +411,18 @@ by a point
 
 >t
 That's ambiguous--more than one friend you can chat with.
-However, you still haven't talked with the gaunt raider and the gnome (old).
+However, you still haven't talked with the gaunt raider, the new troll, the rogue (old) and the gnome (old).
 
 >t raider
-You chat with the gaunt raider a bit, learning more about the history of the area you're exploring and why you're here. It fills in some blanks in your memory.
+You chat with the gaunt raider a bit, learning more about the history of the area you're exploring and why you're here.
 The gaunt raider discusses regret for their past actions, as well as some possibilities for how to use it to boost yourself to do the right thing, or when to just drop it without being drowned by guilt.
-Well, that's more useful information worth remembering.
+It makes sense out of something odd you saw. Perhaps other friends will be able to help similarly.
 
 >t raider
 to want to cut in a bit for their turn some time.
+
+>undo
+>undo
 
 >u
 
@@ -625,15 +650,46 @@ by a point
 
 >t dwarf
 
+You chat with the wan dwarf a bit, learning more about the history of the area you're exploring and why you're here.
+The dwarf provides an impressively nuanced view on how to balance magic skill with physical skill and fighting savvy. But the dwarf also notes how to be a good expert in specific areas if need be, as well as how to get experts and generalists to work together. However, the dwarf also expresses worry that this talk is all great in theory but hard in practice.
+It makes sense out of something odd you saw. Perhaps other friends will be able to help similarly.
+
 >t elf
+
+You chat with the mensch elf a bit, learning more about the history of the area you're exploring and why you're here.
+The mensch elf discusses ways to identify people or situations that just need a bit of help, and how to do so without making them feel hopeless or in need of help, or that they got themselves in this position in the first place.
+The chat helps reassure you that you've missed nothing big, but you still have more to learn.
 
 >t gnome
 
+You chat with the gnome (old) a bit, learning more about the history of the area you're exploring and why you're here.
+The gnome (old) discusses ways of finding hidden psychic weaknesses in a very tough opponent. You also hear how whatever force there is, it only cares about things looking good on the outside. The gnome had so much mold to protect against and continually scrape away, even outside of the keep.
+You throw around some other observations: a few, you should've realized, but no worries. You got it now.
+
 >t rogue
+
+You chat with the rogue (old) a bit, learning more about the history of the area you're exploring and why you're here.
+The rogue (old) discusses ways to sneak around so vastly overpowered opponents can't blow you away, and you also learn not to feel guilty or shifty about being good at sneaking around, around much more unsavory entities than yourself.
+Your chat nicely pieces together information from your other companions you talked to.
 
 >t raider
 
+You chat with the gaunt raider a bit, learning more about the history of the area you're exploring and why you're here.
+The gaunt raider discusses regret for their past actions, as well as some possibilities for how to use it to boost yourself to do the right thing, or when to just drop it without being drowned by guilt.
+You have a new perspective on something you, with your experience so far, were pretty sure was true. As well as something that would've blown your mind beforehand.
+
 >t mice
+
+You chat with the mice (tall) a bit, learning more about the history of the area you're exploring and why you're here.
+You're surprised how easy it is to understand them and how easily they understand you. They discuss how much bigger opponents can be brought down by, not just arrogance facing many small opponents, but by dexterity and quick maneuvers. Oh, also a lot about the evil in the land killing or corrupting or mutating animals. So presumably finding or destroying it will put a stop to the very worst bits.
+You realize the chat has filled in some holes you were curious about but felt sheepish asking.
+
+>t troll
+
+You chat with the new troll a bit, learning more about the history of the area you're exploring and why you're here.
+The new troll relates ways to shake oneself free from despair (no! Really! It managed to for a while!) before relating more ways to avoid it in the first place, or help others you care about do the same.
+Piecing together your chats with all your companions, you have a cohesive what/why/how. It's a bit confusing to spell out, but you've internalized how things fit together, how your friends will cooperate, and so forth.
+That was a lot of talking. After all that time alone in the Tomb Apse, you feel a bit of social burnout. You develop a talk-ache.
 
 >t troll
 That talk-ache is a bit of a nuisance. You've probably got the information you need from your friends.
@@ -647,8 +703,6 @@ That talk-ache is a bit of a nuisance. You've probably got the information you n
 
 >undo
 
->t troll
-
 >t orc
 
 >t orc
@@ -660,14 +714,14 @@ You've talked to everyone here, though, so you don't need to talk to them again.
 >tall cake
 by a point
 
->eat tall cake
-You can't eat the cake by yourself! Make it a communal experience in a special place!
+>t troll
+Time to eat, not talk.
 
 >treat all
 by a point
 
->eat war pawn
-You already ate the only thing you needed to.
+>t troll
+You've talked all you needed, one-on-one. Time to bring the gang together for a big lecture.
 
 >s
 

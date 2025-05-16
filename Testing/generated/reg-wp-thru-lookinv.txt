@@ -59,7 +59,8 @@ by a point
 INVENTORY CHANGED
 There's that occasional voice ringing in your head asking "Why pout?" Well, you're feeling a bit alone, but there's always the prospect of finding stuff...
 "Good! Some goods, umm...":
-some sly size-slice eyes
+You are also carrying something that may help your quest in general: some sly size-slice eyes.
+!/^  some sly
 You have a name, too, now, you remember: Mike Orr.
 !/^..a stalk
 
@@ -69,7 +70,7 @@ You're surrounded by some really naff haze. It's naff because you can't go anywh
 by a point
 
 Things have opened up to where you see potential paths now, with the naff haze lifted.
-A keep, iller, rises to the WEST, but you see no way in.
+A keep, iller, rises to the WEST, but you see no way in yet.
 Gross tar blocks the way NORTH into darkness.
 A short rail leads -- well, not very far. You get the sense it should lead somewhere more.
 You feel policed here. And it's the mean American gung-ho militarized sort of policed, not the (usually) kinder UK brand. Where and what is this policed feeling coming from?
@@ -80,7 +81,7 @@ by a point
 A war pawn, like a chess piece, rolls into view. It looks pretty powerful. As you take it, you reflect that you may wish to save it for down the road when you're really stuck somewhere.
 There's that occasional voice ringing in your head asking "Why pout?" Well, you're feeling a bit alone, but there's always the prospect of finding stuff...
 "Good! Some goods, umm...":
-  a war pawn
+You are also carrying some things that may help your quest in general: a war pawn and some sly size-slice eyes.
 Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will find something special about it some day.
 
 >l
@@ -115,7 +116,7 @@ Things have opened up almost all the way now, with the naff haze lifted. You fee
 by a point
 
 >l
-A keep, iller, rises to the WEST, and you figured how to enter it.
+A keep, iller, rises to the WEST. You've figured how to enter it.
 !but you see no way in
 There's also a way DOWN that opened up once you found passages in all cardinal directions.
 
@@ -185,7 +186,7 @@ There's a huge pile of lode ore here, too, and perhaps there's something in it.
 
 >l
 Hideout
-You can only go back UP. It wouldn't be a very good hideout if you had too many places to sneak around.
+You can only go back UP. You're sort of glad it's not a deluxe or exciting hideout, really, since that'd just mean more to map out.
 A booze troll sulks sullenly here.
 
 >boost role
@@ -290,7 +291,7 @@ BRUISE-WARES, some sort of odd disturbing shop, has popped up here. You can prob
 
 Your companions stay behind. They recognize this is a spiritual fight for you and you alone.
 Brew Swears
-If you thought Hype Lane was bad, this is even worse. You can leave back OUT.
+If you thought Hype Lane was bad, this is even worse. Fortunately, you don't need to solve any puzzles to leave back OUT.
 Some grinch earls parade around here, bragging about how they ruin boring people's fun with their dynamic ways and pointing out that it's easy to be nice if you're boring. They fix you with a "We parse: weep, arse" gaze. They constantly blather "WE CUSS" and seem quite proud of that.
 A crude orc trundles around here, trying to impress the grinch earls.
 

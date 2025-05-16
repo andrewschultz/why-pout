@@ -348,7 +348,7 @@ by a point
 
 #testcase-check-pre-self-owns-rule-if-cell-phones-are-not-in-hype-lane
 >self owns
-The prize talk has you distracted. It's got a point: you need to find something to get where you want. What's the something? You know where you want to get, the high plain/plane.
+The prize talk has you distracted. It's got a point: you need to find something to get where you want. What's the something, and how to get it? Also, where do you want to get?
 
 >pry stalk
 by a point
@@ -468,7 +468,7 @@ You already gave the new troll a boost!
 #testcase-check-pre-bay-sale-rule-if-player-is-not-in-lobe-end
 >bay sale
 THINK
-No water here. Maybe somewhere else.
+That feels right, but there's no water here. Maybe somewhere else.
 
 #testcase-think-table-of-main-oronyms-pre-bay-sale-rule
 >think
@@ -482,7 +482,7 @@ You may be able to participate in a BAY SALE if you've found the right location 
 
 #+testcase-check-pre-were-meetin-rule-abide-by-the-followers-check-rule
 >were meetin
-You sense you don't have the full gang together! You've made a start, and you like who you have, but you feel there's not enough variety yet.
+You sense you don't yet have the full gang together! You've made a start, and you like who you have, but you feel there's not enough variety yet.
 So how many companions do you need? On reflection, a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight. For now, you assume you are.
 You're still six followers short.
 
@@ -672,7 +672,7 @@ You already found the mice and destroyed the stall!
 
 #+testcase-check-pre-my-corps-rule-abide-by-the-followers-check-rule
 >my corps
-You sense you don't have the full gang together! You must be getting close, though.
+You sense you don't yet have the full gang together! You must be getting close, though.
 So how many companions do you need? On reflection, a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight. For now, you assume you are.
 You're still four followers short.
 
@@ -923,7 +923,7 @@ by a point
 
 #+testcase-check-pre-were-meetin-rule-abide-by-the-followers-check-rule
 >were meetin
-You sense you don't have the full gang together! You must be getting close, though.
+You sense you don't yet have the full gang together! You must be getting close, though.
 So how many companions do you need? On reflection, a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight. For now, you assume you are.
 You're still two followers short.
 
@@ -974,7 +974,7 @@ You thought you didn't need anyone else, and maybe you don't, but you're glad to
 >d
 
 >were meetin
-You sense you don't have the full gang together! But you must be very, very close.
+You sense you don't yet have the full gang together! But you must be very, very close.
 So how many companions do you need? On reflection, a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight. For now, you assume you are.
 You're still one follower short.
 
