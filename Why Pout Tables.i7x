@@ -1226,7 +1226,7 @@ rule for printing a parser error (this is the check forks rule):
 	continue the action;
 
 check thinking when current-score is 0:
-	say "An inner voice says 'Fry! Twist!' You feel fright, wist. It's hard not to, since you don't have a name or a purpose. For some reason, you're focused on getting a name, but you've got this nagging feeling that's not quite it.[paragraph break][one of]Perhaps if you press a bit more, some thoughts may come out[or]Well, not quite a purpose, but ... what's the word? [one of]'Aww, flake! Awful ache[or]'Dumb pit. Dump it[in random order]!' you think to yourself. Which sounds slightly off, but it's all you have to go on[stopping].";
+	say "An inner voice says 'Fry! Twist!' You feel fright, wist. It's hard not to, since you don't have a name or a purpose. For some reason, you're focused on getting a name, but you've got this nagging feeling that's not quite it.[paragraph break][one of]Perhaps if you press a bit more, some thoughts may come out[or]Well, not quite a purpose, but ... what's the word?[paragraph break][one of]'Aww, flake! Awful ache[or]'Dumb pit. Dump it[in random order]!' you think to yourself. Which sounds slightly off, but maybe something as simple, or simpler, can work. There must be a pattern to all you are thinking and feeling, and maybe you can look at yourself, literally or figuratively, to figure it out[stopping].";
 	if pre-acts > 0:
 		say "[line break]You've already tried to [b]WIPE OUT[r] in response to taunts of 'why pout,' and you wonder if this all is easier. [if Mike Orr is unexamined]Perhaps you should [b]X ME[r][else]Maybe your search for a name will turn up something meaningful, regardless of what your name is[end if].";
 	the rule succeeds;
@@ -1244,7 +1244,10 @@ rule for printing a parser error when the latest parser error is the not a verb 
 			now counter-zero-points is 1;
 		if first-point-clue-flag is 4:
 			now first-point-clue-flag is 0;
-			say "[line break][one of]A cruel voice mocks [or]That cruel voice, again. [stopping][one of]'Way to wait, ooh!'[or]'You'd be better off [b]WAIT[r]ing or typing nothing.'[or][random-taunt][stopping]";
+			say "[line break][one of]A cruel voice mocks [or]That cruel voice, again. [stopping][random-taunt][line break]";
+			if gs-ever-cruel-voice is false:
+				say "You [b]THINK[r] for a bit. The cruel voice probably won't be telling you any direct answers, but it might imply the sort of thing to do.";
+				now gs-ever-cruel-voice is true;
 	else if core-score is 1:
 		say "You need to find something that will get you out of the tomb apse. You remembered a name (yours) by finding an aim. What now?";
 	else if core-score is 2:
@@ -1267,8 +1270,8 @@ to say random-taunt:
 
 table of zero point taunts
 sortval	taunt-text
--3	"'Nothing you've tried has worked. You'd be better off [b]WAIT[r]ing or typing nothing.'"
--2	"'Find a fine day,' just like your original captors."
+-3	"'Way to wait, ooh!'"
+-2	"'Find a fine day,' just like your original captors. But that can't be it."
 -1	"'Oh, fog, oaf! Augh!'"
 0	"'Bro, clues? Broke! Lose!'"
 0	"'Boost-op? Boo! Stop!'"
