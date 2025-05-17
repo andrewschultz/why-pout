@@ -154,7 +154,7 @@ by a point
 #testcase-run-post-wool-frock-rule-default
 #+testcase-run-post-wool-frock-rule-if-sco-hide-out-is-false
 The high doubt still haunts you, though.
-You rummage about and find a wool frock.
+You rummage about and find a wool frock that slipped through the cracks. Man, you'd have missed it if you'd had no idea what to look for!
 
 #testcase-run-post-hide-out-rule-if-sco-wool-frock-is-true
 
@@ -292,7 +292,7 @@ by a bonus point
 #testcase-check-pre-crew-dork-rule-fallthrough
 #testcase-run-post-crew-dork-rule-default
 You break the truth gently to the crude orc that, well, they're at the bottom of the totem pole for this crew. They'll use the crude orc, maybe even not let them into the clique, and then find the next sucker. The grinch earls surprisingly have little response to this besides, well, profanity.
-The crude orc sees it now. The grinch earls weren't as friendly as they seemed. They wanted to use some trusting kid and corrupt them. The crude orc shakes their head. They ask if they can be seen as not just a dirk.
+The crude orc sees it now. The grinch earls weren't as friendly as they seemed. They wanted to use some trusting kid and corrupt them. The crude orc shakes their head. They ask if they can be seen as not just a dork.
 With a bit of quick thinking (you've got experience with this by now) you say of course they don't need to feel like a dork any more. You can see how they'd be an aid orc, instead!
 And thus you've gained another friend! You can stick around to torment the grinch earls further, or you can go on your way.
 Hmm. You have a lot of friends following you around, but you haven't talked to them much. Perhaps you could learn something from them.
@@ -521,7 +521,7 @@ by a point
 
 #testcase-check-pre-plan-tracker-rule-fallthrough
 #testcase-run-post-plan-tracker-rule-default
-Wow! That was ... surprisingly simple. You find a rather new-looking plan tracker behind the plant racker, which crumbles to dust as you push it aside.
+Wow! That was ... surprisingly simple, for having all those letters. You find a rather new-looking plan tracker behind the plant racker, which crumbles to dust as you push it aside. Eh, well. Its purpose was only ornamental.
 
 >manna curb
 by a point
@@ -548,7 +548,7 @@ by a point
 #testcase-run-post-tree-small-rule-default
 #testcase-run-post-tree-small-rule-if-player-has-grow-vial
 #testcase-run-post-tree-small-rule-fallthrough
-Amidst all the fake trees, an actual organic small tree grows. You're a bit disappointed, but you realize you maybe shouldn't have expected much with so little letter-shuffling. Maybe if you want a bigger tree, you'll need to do something else.
+Amidst all the fake trees, an actual organic small tree grows. You're a bit disappointed, but you realize you maybe shouldn't have expected much with so little letter-shuffling. Maybe if you want a larger tree, you'll need to do something else.
 
 >s
 
@@ -596,7 +596,7 @@ There's not much left to do here, so you ride the squid back.
 >n
 
 # this makes sure TREE SMALL then bringing the grow vial back works okay
-The tree (small) that you summoned/discovered grows here, or tries to, at least. What could you use on it to help it really bloom?
+The tree (small) that you summoned/discovered sits here, growing or trying to, at least. What could you use on it to help it really bloom?
 But wait! You can use the grow vial! It makes the tree (small) into a tree (tall)! Then it dissolves once empty.
 
 >t dwarf
@@ -654,7 +654,7 @@ by a point
 #testcase-check-pre-the-file-rule-fallthrough
 #testcase-run-post-the-file-rule-default
 You have a clue what isle to look through. The thief isle. Thanks to your friends, especially the sneaky gnome and rogue, you avoid all sorts of traps that would've snared you on your own.
-Congratulations. You now possess, not just any file, but The File.
+The File is well-hidden. It has to be, given the sensitive information in it. Information so sensitive, I can't detail it here, just in case someone unworthy is looking over your shoulder. But it's in your head. Trust me.
 You've visited all the locations in the flier. You crumple it up as if to throw it in a trash bin. The squid makes a gesture as if it wishes to gobble the flier. You're worried it might choke on the flier, as it did for the quid, but then -- well, the water washes the paper brochure down. Odd, but hooray for clearer inventory.
 
 >n
@@ -701,9 +701,12 @@ by a point
 
 #testcase-check-pre-wipe-out-rule-fallthrough
 #testcase-run-post-wipe-out-rule-default
-Easier said than done, but since you all studied the plan tracker so well, it isn't impossible!
-Your makeshift weapons are just enough to distract the sea skull. It starts to focus on one party member, then the others taunt it with "Aid! Eek, a deek!"
+You don't feel confident as you mumble "Ace, cull a skull." But of course it wouldn't work on your own.
+However, since you all studied the plan tracker so well, it isn't impossible! You know the taunts to give and how to deflect the skull's likely taunts. So, with a "You'd reign? You drain!" you commence combat. The skull roars back, trying to summon a tier-x T-Rex and a new clever nuke lever. You recognize those would wipe out the skull, too, so you aren't worried. "Mo' strong? Most wrong!" you fire back. You worry it's a bit redundant, but you also realize you're not in English class.
+The skull uncovers one more machine, ominously labeled The Make-Them-Ache. Loud whirring indicates it has started up, but thinking quickly, you grasp your thumb and scream. Pronunciation pedantry for the win!
+But there is real pain. And you'd be cooked if it weren't spread among your companions. They dilute the machine's effect and distract the skull. Whenever the skull focuses on one companion, the others taunt it with "Aid! Eek, a deek!"
 It's exhausting for you but even more exhausting for the skull, which after constant spinning eventually collapses and incinerates, but not before a self-pitying "Meek old me! Cold!"
+"On ice! Aw, nice!" you proclaim, expecting big cheers.
 But after all the fireworks, there's a letdown. You feel something odd come between you and your companions now you're done. They wonder why they need to do any more. You could call the whole zeitgeist a why-division.
 
 >do mending

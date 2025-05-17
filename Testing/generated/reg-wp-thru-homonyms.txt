@@ -398,10 +398,6 @@ Close, but you don't need a whirr noise.
 >warm meetin
 You don't need to change this place's complexion here. It's cozy, a place for people to be together. But how?
 
-#testcase-homonym-detail-hom-whirr-meetin-rule-if-the-player's-command-includes-meeting
->were meeting
-That sounds a bit too informal and serious. Especially since the room has no ending g.
-
 >were meetin
 by a point
 

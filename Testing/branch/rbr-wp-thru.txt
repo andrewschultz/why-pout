@@ -8,6 +8,7 @@
 #--
 
 #NOTE: PRC.PY has a bug where it double-prints the text at the end if the final command fails
+# note: reject1 being here and not in think exposed a bug.
 
 file=reg-wp-thru-min.txt,abbr=min,desc=minimum walkthrough,flags=stable
 file=reg-wp-thru-all.txt,abbr=all,desc=walkthrough with all points and potential neutral retries
@@ -20,7 +21,7 @@ file=reg-wp-thru-lookinv.txt,abbr=li/look/inv,desc=walkthrough testing inventory
 file=reg-wp-thru-verbs.txt,abbr=v/verb/verbs,desc=special verb testing
 file=reg-wp-thru-npctalk.txt,abbr=npc/talk/npctalk,desc=NPC random chatter
 
-}$REJECT1=You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+}$REJECT1=You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 }$REJECT2=That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 }$REJHOM=Hmm. That really, really SOUNDED like it should work, but it didn't.
 
@@ -48,7 +49,8 @@ file=reg-wp-thru-npctalk.txt,abbr=npc/talk/npctalk,desc=NPC random chatter
 `Eh, Raw Air, Aww
 
 @li
-The air chokes you a bit. It's too thick to see far beyond yourself. You barely know who you are, even. Ugh. You can't see much beyond yourself, really, so that'd be somewhere to start.
+The air chokes you a bit. It's too thick to see far beyond yourself. You barely know who you are, even. Ugh.
+Maybe if you took a good look at yourself, it could provide some clues.
 
 @li+
 >ion
@@ -58,11 +60,13 @@ The air chokes you a bit. It's too thick to see far beyond yourself. You barely 
 @goto
 #testcase-goto-table-of-noways-eh-raw-air-aww
 >n
-"Grey trek? Great wreck!" you moon. You can't see anywhere. You know almost nothing. I mean, you don't even have a name. What would you do even if there was a passage?
+"Grey trek? Great wreck!" you moon. You can't see anywhere. You know almost nothing. You don't even have a name.
+What would you do even if there was a passage?
 \\
 #+testcase-goto-table-of-noways-eh-raw-air-aww
 >e
-"I sit? Ice it!" you moon. You can't see anywhere. You know almost nothing. I mean, you don't even have a name. What would you do even if there was a passage?
+"I sit? Ice it!" you moon. You can't see anywhere. You know almost nothing. You don't even have a name.
+What would you do even if there was a passage?
 
 @verbs
 >about
@@ -353,7 +357,7 @@ You want something better than good chat.
 >listen
 You hear no thud in the din.
 Hard not to hear the prize talk, though.
-The prize talk also discusses things that aren't so worth it, like -- well, plants and stuff. BORING.
+The prize talk discusses many things, jumping from subject to subject. It's not what it says, but how it keeps you ensnared without being interested. Like a predatory plant grabbing you or something.
 
 @verbs+
 >verbs
@@ -458,7 +462,7 @@ You are also carrying something that may help your quest in general: some sly si
 You have a name, too, now, you remember: Mike Orr.
 !/^..a stalk
 \\
-You're surrounded by some really naff haze. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it.
+You're surrounded by some really naff haze. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it, and it'll be here forever and ever.
 
 @verbs
 >listen
@@ -812,7 +816,7 @@ by a point
 @li
 #testcase-isledescription-0-without-guess
 >l
-It looks like there is an ocean, or some large body of water, as you can't see islands in the distance. If they're there, they're too far to swim to.
+It looks like there is an ocean, or some large body of water, as you can't see islands in the distance. If they're there, they're too far to swim to--you'd need a map and help to navigate things. You can go back north to the high plain.
 
 @all
 #testcase-check-pre-known-ocean-rule-fallthrough
@@ -830,10 +834,10 @@ You can only go back NORTH or, if you know where you want to go, give the squid 
 
 @verbs
 >t
-It seems to be choking a bit.
+It seems to be choking a bit, but on what?
 \\
 >t squid
-It seems to be choking a bit.
+It seems to be choking a bit, but on what?
 
 @hint
 #+testcase-values-eyes-number-of-nonotion-is-55
@@ -925,7 +929,7 @@ The eyes show nothing. You've done everything you need to with the general area,
 by a point
 
 @li
-You rummage about and find a wool frock.
+You rummage about and find a wool frock that slipped through the cracks. Man, you'd have missed it if you'd had no idea what to look for!
 INVENTORY CHANGED
 There's that occasional voice ringing in your head asking "Why pout?" Well, you're feeling a bit alone, but there's always the prospect of finding stuff...
 "Good! Some goods, umm...":
@@ -939,7 +943,7 @@ Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will
 #testcase-run-post-wool-frock-rule-default
 #+testcase-run-post-wool-frock-rule-if-sco-hide-out-is-false
 The high doubt still haunts you, though.
-You rummage about and find a wool frock.
+You rummage about and find a wool frock that slipped through the cracks. Man, you'd have missed it if you'd had no idea what to look for!
 
 @alt
 >hideout
@@ -1698,7 +1702,7 @@ The eyes show nothing. You've done everything you need to make friends with the 
 #testcase-check-pre-crew-dork-rule-fallthrough
 #testcase-run-post-crew-dork-rule-default
 You break the truth gently to the crude orc that, well, they're at the bottom of the totem pole for this crew. They'll use the crude orc, maybe even not let them into the clique, and then find the next sucker. The grinch earls surprisingly have little response to this besides, well, profanity.
-The crude orc sees it now. The grinch earls weren't as friendly as they seemed. They wanted to use some trusting kid and corrupt them. The crude orc shakes their head. They ask if they can be seen as not just a dirk.
+The crude orc sees it now. The grinch earls weren't as friendly as they seemed. They wanted to use some trusting kid and corrupt them. The crude orc shakes their head. They ask if they can be seen as not just a dork.
 With a bit of quick thinking (you've got experience with this by now) you say of course they don't need to feel like a dork any more. You can see how they'd be an aid orc, instead!
 And thus you've gained another friend! You can stick around to torment the grinch earls further, or you can go on your way.
 Hmm. You have a lot of friends following you around, but you haven't talked to them much. Perhaps you could learn something from them.
@@ -1812,11 +1816,11 @@ The eyes glow dimly and show six dots, then three dots.
 @mis
 #testcase-mistake-why-pout-heck-alas-heck-lass
 >heck alas
-Too tame!
+"Heck" is the right idea but too tame for here.
 \\
 #+testcase-mistake-why-pout-heck-alas-heck-lass
 >heck lass
-Too tame!
+"Heck" is the right idea but too tame for here.
 
 @!min
 >heckle ass
@@ -2503,7 +2507,7 @@ Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will
 @all
 #testcase-check-pre-plan-tracker-rule-fallthrough
 #testcase-run-post-plan-tracker-rule-default
-Wow! That was ... surprisingly simple. You find a rather new-looking plan tracker behind the plant racker, which crumbles to dust as you push it aside.
+Wow! That was ... surprisingly simple, for having all those letters. You find a rather new-looking plan tracker behind the plant racker, which crumbles to dust as you push it aside. Eh, well. Its purpose was only ornamental.
 
 @alt
 ##balance undos
@@ -2602,7 +2606,7 @@ by a point
 >n
 >n
 >tree small
-Amidst all the fake trees, an actual organic small tree grows. You're a bit disappointed, but you realize you maybe shouldn't have expected much with so little letter-shuffling. Maybe if you want a bigger tree, you'll need to do something else.
+Amidst all the fake trees, an actual organic small tree grows. You're a bit disappointed, but you realize you maybe shouldn't have expected much with so little letter-shuffling. Maybe if you want a larger tree, you'll need to do something else.
 But wait! You can use the grow vial! It makes the tree (small) into a tree (tall)! Then it dissolves once empty.
 \\
 >undo
@@ -2654,7 +2658,7 @@ The eyes show nothing. But the tree should be bigger! Perhaps there is a more or
 #testcase-run-post-tree-small-rule-default
 #testcase-run-post-tree-small-rule-if-player-has-grow-vial
 #testcase-run-post-tree-small-rule-fallthrough
-Amidst all the fake trees, an actual organic small tree grows. You're a bit disappointed, but you realize you maybe shouldn't have expected much with so little letter-shuffling. Maybe if you want a bigger tree, you'll need to do something else.
+Amidst all the fake trees, an actual organic small tree grows. You're a bit disappointed, but you realize you maybe shouldn't have expected much with so little letter-shuffling. Maybe if you want a larger tree, you'll need to do something else.
 
 @gt
 #testcase-goto-table-of-noways-trees-mall
@@ -2663,7 +2667,7 @@ You can only go back south.
 
 @li
 >l
-The tree (small) that you summoned/discovered grows here, or tries to, at least. What could you use on it to help it really bloom?
+The tree (small) that you summoned/discovered sits here, growing or trying to, at least. What could you use on it to help it really bloom?
 
 >s
 
@@ -2837,7 +2841,7 @@ The eyes show nothing. You've done everything you need to make friends with the 
 
 @all
 # this makes sure TREE SMALL then bringing the grow vial back works okay
-The tree (small) that you summoned/discovered grows here, or tries to, at least. What could you use on it to help it really bloom?
+The tree (small) that you summoned/discovered sits here, growing or trying to, at least. What could you use on it to help it really bloom?
 But wait! You can use the grow vial! It makes the tree (small) into a tree (tall)! Then it dissolves once empty.
 
 @li
@@ -3106,7 +3110,7 @@ by a point
 #testcase-check-pre-the-file-rule-fallthrough
 #testcase-run-post-the-file-rule-default
 You have a clue what isle to look through. The thief isle. Thanks to your friends, especially the sneaky gnome and rogue, you avoid all sorts of traps that would've snared you on your own.
-Congratulations. You now possess, not just any file, but The File.
+The File is well-hidden. It has to be, given the sensitive information in it. Information so sensitive, I can't detail it here, just in case someone unworthy is looking over your shoulder. But it's in your head. Trust me.
 You've visited all the locations in the flier. You crumple it up as if to throw it in a trash bin. The squid makes a gesture as if it wishes to gobble the flier. You're worried it might choke on the flier, as it did for the quid, but then -- well, the water washes the paper brochure down. Odd, but hooray for clearer inventory.
 
 @li
@@ -3202,14 +3206,19 @@ Close, but you don't need a whirr noise.
 #+testcase-homonym-detail-hom-whirr-meetin-rule-else-if-the-player's-command-includes-whirr
 >warm meetin
 You don't need to change this place's complexion here. It's cozy, a place for people to be together. But how?
-\\
-#testcase-homonym-detail-hom-whirr-meetin-rule-if-the-player's-command-includes-meeting
->were meeting
-That sounds a bit too informal and serious. Especially since the room has no ending g.
 
 @hint
 >eye
 The eyes light up green and show four dots, then six dots.
+
+@alt
+#balance undos
+>were meeting
+You worry about how formal you need to be, but you realize perfect diction and everything can't be important. "We're meeting" is fine, but "we're meetin'" sounds a bit more welcoming.
+You meet with the friends you've made over your adventure. You all have one goal in mind. And yet you don't have a rallying cry. Perhaps it can come from within you.
+by a point
+\\
+>undo
 
 >were meetin
 by a point
@@ -3350,9 +3359,12 @@ by a point
 @all
 #testcase-check-pre-wipe-out-rule-fallthrough
 #testcase-run-post-wipe-out-rule-default
-Easier said than done, but since you all studied the plan tracker so well, it isn't impossible!
-Your makeshift weapons are just enough to distract the sea skull. It starts to focus on one party member, then the others taunt it with "Aid! Eek, a deek!"
+You don't feel confident as you mumble "Ace, cull a skull." But of course it wouldn't work on your own.
+However, since you all studied the plan tracker so well, it isn't impossible! You know the taunts to give and how to deflect the skull's likely taunts. So, with a "You'd reign? You drain!" you commence combat. The skull roars back, trying to summon a tier-x T-Rex and a new clever nuke lever. You recognize those would wipe out the skull, too, so you aren't worried. "Mo' strong? Most wrong!" you fire back. You worry it's a bit redundant, but you also realize you're not in English class.
+The skull uncovers one more machine, ominously labeled The Make-Them-Ache. Loud whirring indicates it has started up, but thinking quickly, you grasp your thumb and scream. Pronunciation pedantry for the win!
+But there is real pain. And you'd be cooked if it weren't spread among your companions. They dilute the machine's effect and distract the skull. Whenever the skull focuses on one companion, the others taunt it with "Aid! Eek, a deek!"
 It's exhausting for you but even more exhausting for the skull, which after constant spinning eventually collapses and incinerates, but not before a self-pitying "Meek old me! Cold!"
+"On ice! Aw, nice!" you proclaim, expecting big cheers.
 But after all the fireworks, there's a letdown. You feel something odd come between you and your companions now you're done. They wonder why they need to do any more. You could call the whole zeitgeist a why-division.
 
 @alt

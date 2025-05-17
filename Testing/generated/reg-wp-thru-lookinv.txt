@@ -9,7 +9,8 @@
 
 * main-thru
 
-The air chokes you a bit. It's too thick to see far beyond yourself. You barely know who you are, even. Ugh. You can't see much beyond yourself, really, so that'd be somewhere to start.
+The air chokes you a bit. It's too thick to see far beyond yourself. You barely know who you are, even. Ugh.
+Maybe if you took a good look at yourself, it could provide some clues.
 
 >ion
 
@@ -64,7 +65,7 @@ You are also carrying something that may help your quest in general: some sly si
 You have a name, too, now, you remember: Mike Orr.
 !/^..a stalk
 
-You're surrounded by some really naff haze. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it.
+You're surrounded by some really naff haze. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it, and it'll be here forever and ever.
 
 >nah phase
 by a point
@@ -148,7 +149,7 @@ by a point
 
 #testcase-isledescription-0-without-guess
 >l
-It looks like there is an ocean, or some large body of water, as you can't see islands in the distance. If they're there, they're too far to swim to.
+It looks like there is an ocean, or some large body of water, as you can't see islands in the distance. If they're there, they're too far to swim to--you'd need a map and help to navigate things. You can go back north to the high plain.
 
 >six quid
 by a point
@@ -166,7 +167,7 @@ There's a huge pile of lode ore here, too, and perhaps there's something in it.
 >wool frock
 by a point
 
-You rummage about and find a wool frock.
+You rummage about and find a wool frock that slipped through the cracks. Man, you'd have missed it if you'd had no idea what to look for!
 INVENTORY CHANGED
 There's that occasional voice ringing in your head asking "Why pout?" Well, you're feeling a bit alone, but there's always the prospect of finding stuff...
 "Good! Some goods, umm...":
@@ -577,7 +578,7 @@ There's a bunch of manic herb here the mensch elf sifted through.
 by a point
 
 >l
-The tree (small) that you summoned/discovered grows here, or tries to, at least. What could you use on it to help it really bloom?
+The tree (small) that you summoned/discovered sits here, growing or trying to, at least. What could you use on it to help it really bloom?
 
 >s
 

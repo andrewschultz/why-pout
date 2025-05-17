@@ -19,287 +19,287 @@ THINK
 #testcase-check-pre-ass-low-rule-if-player-is-not-in-brew-swears
 #testcase-reject-start-table-of-main-oronyms-pre-ass-low-rule
 >ass low
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-bastard-eee-rule-if-player-is-not-in-brew-swears
 #testcase-reject-start-table-of-main-oronyms-pre-bastard-eee-rule
 >bastard eee
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-bay-sale-rule-if-player-does-not-have-base-ale
 #testcase-reject-start-table-of-main-oronyms-pre-bay-sale-rule
 >bay sale
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-bile-oh-rule-if-player-is-not-in-we-loan-or-merchant-is-not-in-we-loan
 #testcase-reject-start-table-of-main-oronyms-pre-bile-oh-rule
 >bile oh
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-boost-role-rule-if-booze-troll-is-not-touchable
 #testcase-reject-start-table-of-main-oronyms-pre-boost-role-rule
 >boost role
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-brew-swears-rule-if-player-is-not-in-naffhaze
 #testcase-reject-start-table-of-main-oronyms-pre-brew-swears-rule
 >brew swears
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-cease-cull-rule-if-player-is-not-in-doom-ending-or-sea-skull-is-not-in-doom-ending
 #testcase-reject-start-table-of-main-oronyms-pre-cease-cull-rule
 >cease cull
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-crew-dork-rule-if-player-is-not-in-brew-swears
 #testcase-reject-start-table-of-main-oronyms-pre-crew-dork-rule
 >crew dork
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-damn-peons-rule-if-player-is-not-in-brew-swears
 #testcase-reject-start-table-of-main-oronyms-pre-damn-peons-rule
 >peons damn
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-do-due-mend-rule-if-player-is-not-in-doom-ending
 #testcase-reject-start-table-of-main-oronyms-pre-do-due-mend-rule
 >do mending
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-gah-wanker-rule-if-player-is-not-in-brew-swears
 #testcase-reject-start-table-of-main-oronyms-pre-gah-wanker-rule
 >gah wanker
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-gaunt-raider-rule-if-player-is-not-in-worm-eaten-or-gone-traitor-is-not-in-worm-eaten
 #testcase-reject-start-table-of-main-oronyms-pre-gaunt-raider-rule
 >gaunt raider
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-gnome-old-rule-if-player-is-not-in-keepiller
 #testcase-reject-start-table-of-main-oronyms-pre-gnome-old-rule
 >gnome old
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-grin-churls-rule-if-player-is-not-in-brew-swears
 #testcase-reject-start-table-of-main-oronyms-pre-grin-churls-rule
 >grin churls
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-grow-star-rule-if-player-is-not-in-naffhaze
 #testcase-reject-start-table-of-main-oronyms-pre-grow-star-rule
 >grow star
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-grow-vial-rule-abide-by-the-three-isle-rule
 #testcase-reject-start-table-of-main-oronyms-pre-grow-vial-rule
 >grow vial
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-heckle-ass-rule-if-player-is-not-in-brew-swears
 #testcase-reject-start-table-of-main-oronyms-pre-heckle-ass-rule
 >heckle ass
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-hide-out-rule-if-player-is-not-in-wolf-rock
 #testcase-reject-start-table-of-main-oronyms-pre-hide-out-rule
 >hideout
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-high-plain-rule-if-player-is-not-in-hype-lane
 #testcase-reject-start-table-of-main-oronyms-pre-high-plain-rule
 >high plain
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-huh-shit-rule-if-player-is-not-in-brew-swears
 #testcase-reject-start-table-of-main-oronyms-pre-huh-shit-rule
 >huh shit
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-key-pillar-rule-if-player-is-not-in-naffhaze
 #testcase-reject-start-table-of-main-oronyms-pre-key-pillar-rule
 >key pillar
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-knife-right-rule-if-player-is-not-in-nigh-fright
 #testcase-reject-start-table-of-main-oronyms-pre-knife-right-rule
 >knife right
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-known-ocean-rule-if-player-is-not-in-nonotion
 #testcase-reject-start-table-of-main-oronyms-pre-known-ocean-rule
 >known ocean
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-lie-fuckers-rule-if-life-occurs-is-not-in-brew-swears
 #testcase-reject-start-table-of-main-oronyms-pre-lie-fuckers-rule
 >lie fuckers
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-low-bend-rule-if-player-is-not-in-lobe-end
 #testcase-reject-start-table-of-main-oronyms-pre-low-bend-rule
 >low bend
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-low-door-rule-if-player-is-not-in-wolf-rock
 #testcase-reject-start-table-of-main-oronyms-pre-low-door-rule
 >low door
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-manna-curb-rule-if-player-is-not-in-keepiller
 #testcase-reject-start-table-of-main-oronyms-pre-manna-curb-rule
 >manna curb
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-mensch-elf-rule-if-player-is-not-in-storm-isle
 #testcase-reject-start-table-of-main-oronyms-pre-mensch-elf-rule
 >mensch elf
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-mice-tall-rule-if-player-is-not-in-storm-isle
 #testcase-reject-start-table-of-main-oronyms-pre-mice-tall-rule
 >mice tall
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-my-corps-rule-if-sco-an-aim-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-my-corps-rule
 >my corps
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-nab-aye-rule-if-player-is-not-in-naffhaze
 #testcase-reject-start-table-of-main-oronyms-pre-nab-aye-rule
 >nab aye
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-nah-phase-rule-if-player-is-not-in-naffhaze
 #testcase-reject-start-table-of-main-oronyms-pre-nah-phase-rule
 >nah phase
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-oh-flier-rule-if-player-is-not-in-we-loan
 #testcase-reject-start-table-of-main-oronyms-pre-oh-flier-rule
 >oh flier
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-plan-tracker-rule-if-player-is-not-in-keepiller-or-plant-racker-is-not-touchable
 #testcase-reject-start-table-of-main-oronyms-pre-plan-tracker-rule
 >plan tracker
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-pole-east-rule-if-player-is-not-in-naffhaze
 #testcase-reject-start-table-of-main-oronyms-pre-pole-east-rule
 >pole east
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-pry-stalk-rule-if-player-is-not-in-hype-lane
 #testcase-reject-start-table-of-main-oronyms-pre-pry-stalk-rule
 >pry stalk
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-rogue-old-rule-if-player-is-not-in-keepiller
 #testcase-reject-start-table-of-main-oronyms-pre-rogue-old-rule
 >rogue old
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-see-design-rule-if-player-is-not-in-keepiller
 #testcase-reject-start-table-of-main-oronyms-pre-see-design-rule
 >see design
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-self-owns-rule-if-player-is-not-in-hype-lane
 #testcase-reject-start-table-of-main-oronyms-pre-self-owns-rule
 >self owns
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-shore-trail-rule-if-player-is-not-in-naffhaze
 #testcase-reject-start-table-of-main-oronyms-pre-shore-trail-rule
 >shore trail
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-six-quid-rule-if-player-is-not-in-nonotion
 #testcase-reject-start-table-of-main-oronyms-pre-six-quid-rule
 >six quid
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-store-mile-rule-if-player-is-not-in-storm-isle
 #testcase-reject-start-table-of-main-oronyms-pre-store-mile-rule
 >store mile
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-summer-chant-rule-if-player-is-not-in-we-loan-or-merchant-is-not-in-we-loan
 #testcase-reject-start-table-of-main-oronyms-pre-summer-chant-rule
 >summer chant
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-tall-cake-rule-if-player-does-not-have-talk-ache
 #testcase-reject-start-table-of-main-oronyms-pre-tall-cake-rule
 >tall cake
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-the-file-rule-abide-by-the-three-isle-rule
 #testcase-reject-start-table-of-main-oronyms-pre-the-file-rule
 >the file
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-treat-all-rule-if-player-is-not-in-trees-mall
 #testcase-reject-start-table-of-main-oronyms-pre-treat-all-rule
 >treat all
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-tree-small-rule-if-player-is-not-in-trees-mall
 #testcase-reject-start-table-of-main-oronyms-pre-tree-small-rule
 >tree small
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-two-maps-rule-if-player-is-not-in-air-aww-or-sco-an-aim-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-two-maps-rule
 >two maps
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-wan-dwarf-rule-if-player-is-not-in-wand-wharf
 #testcase-reject-start-table-of-main-oronyms-pre-wan-dwarf-rule
 >wan dwarf
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-war-file-rule-abide-by-the-three-isle-rule
 #testcase-reject-start-table-of-main-oronyms-pre-war-file-rule
 >war file
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-weak-us-rule-if-player-is-not-in-brew-swears
 #testcase-reject-start-table-of-main-oronyms-pre-weak-us-rule
 >weak us
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-well-own-rule-if-player-is-not-in-we-loan
 #testcase-reject-start-table-of-main-oronyms-pre-well-own-rule
 >well own
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-were-dicks-rule-if-weird-icks-is-not-in-brew-swears
 #testcase-reject-start-table-of-main-oronyms-pre-were-dicks-rule
 >were dicks
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-were-meetin-rule-if-player-is-not-in-worm-eaten
 #testcase-reject-start-table-of-main-oronyms-pre-were-meetin-rule
 >were meetin
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-whee-lone-rule-if-player-is-not-in-we-loan
 #testcase-reject-start-table-of-main-oronyms-pre-whee-lone-rule
 >whee lone
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-wide-vision-rule-if-player-is-not-in-doom-ending
 #testcase-reject-start-table-of-main-oronyms-pre-wide-vision-rule
 >wide vision
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 #testcase-check-pre-wool-frock-rule-if-player-is-not-in-wolf-rock
 #testcase-reject-start-table-of-main-oronyms-pre-wool-frock-rule
 >wool frock
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 >an aim
 by a point
@@ -482,7 +482,7 @@ You may be able to participate in a BAY SALE if you've found the right location 
 
 #+testcase-check-pre-were-meetin-rule-abide-by-the-followers-check-rule
 >were meetin
-You sense you don't yet have the full gang together! You've made a start, and you like who you have, but you feel there's not enough variety yet.
+While you'll want to hold a meetin(') some time, you sense you don't yet have the full gang together! You've made a start, and you like who you have, but you feel there's not enough variety yet.
 So how many companions do you need? On reflection, a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight. For now, you assume you are.
 You're still six followers short.
 
@@ -672,7 +672,7 @@ You already found the mice and destroyed the stall!
 
 #+testcase-check-pre-my-corps-rule-abide-by-the-followers-check-rule
 >my corps
-You sense you don't yet have the full gang together! You must be getting close, though.
+While you'll want to hold a meetin(') some time, you sense you don't yet have the full gang together! You must be getting close, though.
 So how many companions do you need? On reflection, a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight. For now, you assume you are.
 You're still four followers short.
 
@@ -923,7 +923,7 @@ by a point
 
 #+testcase-check-pre-were-meetin-rule-abide-by-the-followers-check-rule
 >were meetin
-You sense you don't yet have the full gang together! You must be getting close, though.
+While you'll want to hold a meetin(') some time, you sense you don't yet have the full gang together! You must be getting close, though.
 So how many companions do you need? On reflection, a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight. For now, you assume you are.
 You're still two followers short.
 
@@ -974,7 +974,7 @@ You thought you didn't need anyone else, and maybe you don't, but you're glad to
 >d
 
 >were meetin
-You sense you don't yet have the full gang together! But you must be very, very close.
+While you'll want to hold a meetin(') some time, you sense you don't yet have the full gang together! But you must be very, very close.
 So how many companions do you need? On reflection, a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight. For now, you assume you are.
 You're still one follower short.
 
@@ -1137,7 +1137,7 @@ But you've already opened the passage through BRUISE-WARES!
 
 #testcase-check-pre-crew-dork-rule-if-sco-weak-us-is-false
 >crew dork
-The crude orc doesn't believe they're being used by the grinch earls. Why, it's part of the hazing! They have to show they're tough!
+The crude orc doesn't believe they're being used by the grinch earls. Why, it's part of the hazing! They have to show they're as tough as the grinch earls! Uh, right?
 THINK
 
 #testcase-think-table-of-main-oronyms-pre-crew-dork-rule

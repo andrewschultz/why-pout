@@ -294,7 +294,7 @@ by a point
 >n
 >n
 >tree small
-Amidst all the fake trees, an actual organic small tree grows. You're a bit disappointed, but you realize you maybe shouldn't have expected much with so little letter-shuffling. Maybe if you want a bigger tree, you'll need to do something else.
+Amidst all the fake trees, an actual organic small tree grows. You're a bit disappointed, but you realize you maybe shouldn't have expected much with so little letter-shuffling. Maybe if you want a larger tree, you'll need to do something else.
 But wait! You can use the grow vial! It makes the tree (small) into a tree (tall)! Then it dissolves once empty.
 
 >undo
@@ -384,6 +384,14 @@ by a point
 >n
 
 >d
+
+#balance undos
+>were meeting
+You worry about how formal you need to be, but you realize perfect diction and everything can't be important. "We're meeting" is fine, but "we're meetin'" sounds a bit more welcoming.
+You meet with the friends you've made over your adventure. You all have one goal in mind. And yet you don't have a rallying cry. Perhaps it can come from within you.
+by a point
+
+>undo
 
 >were meetin
 by a point

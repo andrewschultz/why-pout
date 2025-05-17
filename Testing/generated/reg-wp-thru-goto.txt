@@ -11,11 +11,13 @@
 
 #testcase-goto-table-of-noways-eh-raw-air-aww
 >n
-"Grey trek? Great wreck!" you moon. You can't see anywhere. You know almost nothing. I mean, you don't even have a name. What would you do even if there was a passage?
+"Grey trek? Great wreck!" you moon. You can't see anywhere. You know almost nothing. You don't even have a name.
+What would you do even if there was a passage?
 
 #+testcase-goto-table-of-noways-eh-raw-air-aww
 >e
-"I sit? Ice it!" you moon. You can't see anywhere. You know almost nothing. I mean, you don't even have a name. What would you do even if there was a passage?
+"I sit? Ice it!" you moon. You can't see anywhere. You know almost nothing. You don't even have a name.
+What would you do even if there was a passage?
 
 >z
 

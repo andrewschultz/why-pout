@@ -337,7 +337,7 @@ Perhaps if you press a bit more, some thoughts may come out.
 >think
 An inner voice says "Fry! Twist!" You feel fright, wist. It's hard not to, since you don't have a name or a purpose. For some reason, you're focused on getting a name, but you've got this nagging feeling that's not quite it.
 Well, not quite a purpose, but ... what's the word?
-" you think to yourself. Which sounds slightly off, but it's all you have to go on.
+"Aww, flake! Awful ache!" you think to yourself. Which sounds slightly off, but maybe something as simple, or simpler, can work. There must be a pattern to all you are thinking and feeling, and maybe you can look at yourself, literally or figuratively, to figure it out.
 
 >an aim
 by a point
@@ -888,7 +888,7 @@ You may be able to participate in a BAY SALE if you've found the right location 
 \\
 #+testcase-check-pre-were-meetin-rule-abide-by-the-followers-check-rule
 >were meetin
-You sense you don't yet have the full gang together! You've made a start, and you like who you have, but you feel there's not enough variety yet.
+While you'll want to hold a meetin(') some time, you sense you don't yet have the full gang together! You've made a start, and you like who you have, but you feel there's not enough variety yet.
 So how many companions do you need? On reflection, a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight. For now, you assume you are.
 You're still six followers short.
 \\
@@ -1254,7 +1254,7 @@ You already found the mice and destroyed the stall!
 @rej+
 #+testcase-check-pre-my-corps-rule-abide-by-the-followers-check-rule
 >my corps
-You sense you don't yet have the full gang together! You must be getting close, though.
+While you'll want to hold a meetin(') some time, you sense you don't yet have the full gang together! You must be getting close, though.
 So how many companions do you need? On reflection, a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight. For now, you assume you are.
 You're still four followers short.
 \\
@@ -1709,7 +1709,7 @@ by a point
 ##balance undo
 #+testcase-check-pre-were-meetin-rule-abide-by-the-followers-check-rule
 >were meetin
-You sense you don't yet have the full gang together! You must be getting close, though.
+While you'll want to hold a meetin(') some time, you sense you don't yet have the full gang together! You must be getting close, though.
 So how many companions do you need? On reflection, a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight. For now, you assume you are.
 You're still two followers short.
 \\
@@ -1781,7 +1781,7 @@ You thought you didn't need anyone else, and maybe you don't, but you're glad to
 >d
 \\
 >were meetin
-You sense you don't yet have the full gang together! But you must be very, very close.
+While you'll want to hold a meetin(') some time, you sense you don't yet have the full gang together! But you must be very, very close.
 So how many companions do you need? On reflection, a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight. For now, you assume you are.
 You're still one follower short.
 \\
@@ -2080,7 +2080,7 @@ But you've already opened the passage through BRUISE-WARES!
 @rej
 #testcase-check-pre-crew-dork-rule-if-sco-weak-us-is-false
 >crew dork
-The crude orc doesn't believe they're being used by the grinch earls. Why, it's part of the hazing! They have to show they're tough!
+The crude orc doesn't believe they're being used by the grinch earls. Why, it's part of the hazing! They have to show they're as tough as the grinch earls! Uh, right?
 THINK
 \\
 #testcase-think-table-of-main-oronyms-pre-crew-dork-rule

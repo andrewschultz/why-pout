@@ -13,7 +13,7 @@
 
 #apocryphal test case
 >eye me
-You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward, to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.
+You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
 >purloin eyes
 >eye me

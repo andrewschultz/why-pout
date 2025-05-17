@@ -129,7 +129,7 @@ You want something better than good chat.
 >listen
 You hear no thud in the din.
 Hard not to hear the prize talk, though.
-The prize talk also discusses things that aren't so worth it, like -- well, plants and stuff. BORING.
+The prize talk discusses many things, jumping from subject to subject. It's not what it says, but how it keeps you ensnared without being interested. Like a predatory plant grabbing you or something.
 
 >verbs
 !Most point-scoring commands will consist of two words.
@@ -192,10 +192,10 @@ by a point
 by a point
 
 >t
-It seems to be choking a bit.
+It seems to be choking a bit, but on what?
 
 >t squid
-It seems to be choking a bit.
+It seems to be choking a bit, but on what?
 
 >six quid
 by a point

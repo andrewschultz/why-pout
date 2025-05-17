@@ -183,11 +183,11 @@ by a bonus point
 
 #testcase-mistake-why-pout-heck-alas-heck-lass
 >heck alas
-Too tame!
+"Heck" is the right idea but too tame for here.
 
 #+testcase-mistake-why-pout-heck-alas-heck-lass
 >heck lass
-Too tame!
+"Heck" is the right idea but too tame for here.
 
 >heckle ass
 by a bonus point
