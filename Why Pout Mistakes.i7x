@@ -38,11 +38,19 @@ understand "warp" and "warp [text]" as a mistake ("Yes, the war pawn will help y
 
 chapter no notion
 
-understand "no no shin" and "nono shin" as a mistake ("No, you're trying to bring something to light, not fret about what you can't find.") when player is in NoNotion and sco-known-ocean is false.
+understand "no no shin" and "nono shin" and "no no shun" and "nono shun" as a mistake ("No, you're trying to bring something to light, not fret about what you can't find.") when player is in NoNotion and sco-known-ocean is false.
+
+understand "isle and" and "eye land" and "eye lands" as a mistake (".")
+
+to say isle-and-error:
+	if flier-isle-score is 3:
+		say "There are no other islands.";
+	else:
+		say "The right idea, but you'll want to find a[if flier-isle-score > 0]nother[end if] specific island or isle"
 
 chapter brew swears and its residents
 
-understand "heck alas" and "heck lass" as a mistake ("Too tame!") when player is in brew swears and heh-class is in brew swears.
+understand "heck alas" and "heck lass" as a mistake ("'Heck' is the right idea but too tame for here.") when player is in brew swears and heh-class is in brew swears.
 
 understand "so fucking" as a mistake ("Not a complete sentence. So there might be a positive adjective at the end. Focus on Gawain Kerr's name.")
 
