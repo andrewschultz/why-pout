@@ -991,9 +991,12 @@ Carry out taking inventory (this is the get rid of ache standard inventory rule)
 	now all things carried by player are marked for listing;
 	now companions are not marked for listing;
 	now talk ache is not marked for listing;
+	now all hintthings are not marked for listing;
 	say "[if sco-high-plain is true]'Good! Some goods, umm...':[else]You are carrying:[end if][line break]";
 	list the contents of the player, with newlines, indented, including contents, listing marked items only,
-		giving inventory information, with extra indentation.
+		giving inventory information, with extra indentation;
+	if number of carried hintthings > 0:
+		say "[line break]You are also carrying [if number of carried hintthings is 1]something[else]some things[end if] that may help your quest in general: [a list of carried hintthings].";
 
 report taking inventory when sco-six-quid is true and current-quid > 0:
 	say "You [if current-quid < 6]still [end if]have [current-quid in words] quid [if current-quid < 6]left [end if]from helping the sick squid.";
