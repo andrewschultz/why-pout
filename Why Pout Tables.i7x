@@ -6,11 +6,13 @@ volume the main tables
 
 book very general stuff
 
+[keep the preferred word 1st in w1/w2]
+
 table of main oronyms
 w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	first-close	second-exact	second-close	part-explain	think-cue	okflip	core	idid	everfail	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "an"	"aim"	--	--	--	false	false	false	false	"any sort of purpose at all"	false	true	true	false	false	eh raw air aww	pre-an-aim rule	post-an-aim rule	--	--
 "two"	"maps"	"too"	--	hom-too-maps rule	false	false	false	false	"anything documenting a way out"	false	true	true	false	false	eh raw air aww	pre-two-maps rule	post-two-maps rule	--	--
-"self"	"own|owns"	--	--	--	false	false	false	false	"what to do with the cell phones"	false	true	true	false	false	hype lane	pre-self-owns rule	post-self-owns rule	--	--
+"self"	"owns|own"	--	--	--	false	false	false	false	"what to do with the cell phones"	false	true	true	false	false	hype lane	pre-self-owns rule	post-self-owns rule	--	--
 "pry"	"stalk"	--	--	--	false	false	false	false	"something physical amidst the prize talk"	false	true	true	false	false	hype lane	pre-pry-stalk rule	post-pry-stalk rule	--	--
 "high"	"plain|plane"	"hi"	"playin"	hom-hi-playin rule	false	false	false	false	"where to go from Hype Lane"	false	true	true	false	false	hype lane	pre-high-plain rule	post-high-plain rule	--	"You can find a [b]HIGH PLAIN[r] [once-now of sco-pry-stalk] you have something that can reach that far up."
 "nah|naah|naw|naa|na"	"phase"	--	"phaze"	hom-nah-phaze rule	false	false	false	false	"how to cut through the naff haze"	false	true	true	false	false	NaffHaze	pre-nah-phase rule	post-nah-phase rule	--	--
@@ -924,15 +926,15 @@ a wordtwisting rule (this is the followers-check rule):
 to say pals-short: say "You're still [pals-still-needed in words] follower[splur of pals-still-needed] short"
 
 this is the hom-whirr-meetin rule:
-	if the player's command includes "meeting":
-		say "That sounds a bit too informal and serious. Especially since the room has no ending g.";
-	else if the player's command includes "whirr":
+	if the player's command includes "whirr":
 		say "Close, but you don't need a whirr noise.";
 	else:
 		say "You don't need to change this place's complexion here. It's cozy, a place for people to be together. But how?"
 
 this is the post-were-meetin rule:
 	now sco-were-meetin is true;
+	if the player's command includes "meeting":
+		say "You worry about how formal you need to be, but you realize perfect diction and everything can't be important. 'We're meeting' is fine, but 'we're meetin[']' sounds a bit more welcoming.[paragraph break]";
 	say "You meet with the friends you've made over your adventure. You all have one goal in mind. And yet you don't have a rallying cry. Perhaps it can come from within you.";
 	print-the-loc;
 	declue-here;
