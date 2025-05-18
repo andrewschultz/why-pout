@@ -1230,8 +1230,9 @@ rule for printing a parser error (this is the check forks rule):
 		the rule succeeds;
 	if got-partial-done is true:
 		if debug-state is true, say "[partial-row] row ...";
-		say "Hmm, no, you already did that, or something like that. You'll know if and when you need to flip between things.";
-		the rule succeeds;
+		if number of words in the player's command < 4:
+			say "Hmm, no, you already did that, or something like that. You'll know if and when you need to flip between things.";
+			the rule succeeds;
 	continue the action;
 
 check thinking when current-score is 0:

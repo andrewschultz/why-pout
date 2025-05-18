@@ -733,6 +733,8 @@ carry out examining Mike Orr when sco-an-aim is false:
 
 volume verbs
 
+understand the command "sit" as something new.
+
 book exiting
 
 the can't exit when not inside anything rule is not listed in any rulebook.
@@ -1215,6 +1217,16 @@ check taking:
 	if noun is tree small or noun is tree tall, say "Don't undo your beautifying!" instead;
 	if player does not have noun, say "Everything you need will be implicitly taken in [this-game]." instead;
 
+book touching
+
+understand "feel" as touching.
+
+rule for supplying a missing noun when touching: now the noun is the player.
+
+report touching when current-score is 0:
+	say "Maybe it's not a cue to weep, though, but ... something else.";
+	the rule succeeds;
+
 book waiting
 
 check waiting:
@@ -1297,6 +1309,9 @@ volume parser errors
 book general
 
 rule for printing a parser error when the latest parser error is the only understood as far as error:
+	if action-to-be is the ting action:
+		say "It looks like you tried to ask about a subject. [this-game] doesn't support detailed conversation like [b]ASK THEM ABOUT THAT[r]. Only [b]ASK THEM[r] or [b]T[r]/[b]TALK THEM[r].";
+		the rule succeeds;
 	say "You may have used a word or two too many or made a typo in the final word.";
 
 rule for printing a parser error when the latest parser error is the I beg your pardon error:
