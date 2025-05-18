@@ -1304,6 +1304,18 @@ rule for printing a parser error when the latest parser error is the I beg your 
 
 book specific
 
+rule for printing a parser error when player is in Eh Raw Air Aww and sco-an-aim is true:
+	if the player's command includes "tomb" or the player's command includes "apse":
+		say "You can do something with the location name, but not either word directly. Think of what you did before: getting [b]AN AIM[r] on remembering [b]A NAME[r].";
+		the rule succeeds;
+	continue the action;
+
+rule for printing a parser error when player is in Eh Raw Air Aww and sco-an-aim is false:
+	if the player's command includes "eh" or the player's command includes "raw" or the player's command includes "aww" or the player's command includes "air":
+		say "You can't do much with the location name, as you can't see it, and it's a bit general. But maybe you can look at yourself [if mike orr is examined]again [end if]to discover something you have or need.";
+		the rule succeeds;
+	continue the action;
+
 rule for printing a parser error when player is in brew swears and weird-icks are in brew swears:
 	if the player's command includes "dick":
 		say "Alas, there is more than one of [the earls].";
@@ -1313,6 +1325,12 @@ rule for printing a parser error when player is in brew swears and weird-icks ar
 rule for printing a parser error when has-quid:
 	if the player's command includes "quid":
 		say "While you have the quid, you don't need to inspect it, or whatever. You'll make transactions when necessary.";
+		the rule succeeds;
+	continue the action;
+
+rule for printing a parser error when can-lump-party and player does not have companions:
+	if the player's command includes "companion" or the player's command includes "companions":
+		say "There's no need to refer to your companions as a group, though you can lump them together with [b]COMPS[r].";
 		the rule succeeds;
 	continue the action;
 
