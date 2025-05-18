@@ -728,7 +728,7 @@ Mike Orr is a privately-named person in Eh Raw Air Aww. the player is Mike Orr. 
 understand "mike orr" and "mike/orr" as Mike Orr when sco-an-aim is true.
 
 carry out examining Mike Orr when sco-an-aim is false:
-	say "You think you have a name. Most people do, if you remember things correctly. For better or worse, you can't be special.[paragraph break]You'd really like to have a purpose, too.[paragraph break]The weird thing is, you feel the two must be inter-related in some simple way. A way that will feel dumb once you figure it out. But you haven't, yet.[paragraph break]Hmm. A name. A name. You're focused on finding [b]A NAME[r], and yet, if you just shook up this focus a bit, you might get something else... something that could kick-start you, no matter what your name is.";
+	say "You think you have a name. Most people do, if you remember things correctly. For better or worse, you can't be special.[paragraph break]You'd really like to have a purpose, too.[paragraph break]The weird thing is, you feel the two must be inter-related in some simple way. A way that will feel dumb once you figure it out. But you haven't, yet.[paragraph break]Hmm. A name. A name. You're focused on finding [b]A NAME[r], and yet, if you just shook up this focus a bit, you might get something else. Something that could kick-start you, no matter what your name is!";
 	the rule succeeds;
 
 volume verbs
@@ -1131,7 +1131,7 @@ check ting a follower:
 		say "You haven't gained [the noun]'s trust enough yet for a chat." instead;
 
 carry out ting a sentient:
-	if noun is skull, say "You doubt the skull would have anything to say beyond 'I'm all I MAUL!' or 'Help our hell-power!'" instead;
+	if noun is skull, say "You doubt the skull would have anything to say beyond 'I'm all I MAUL!' or 'Help our hell-power!' or even 'WAKE, rule way cruel!'" instead;
 	if noun is oaf liar, say "The oaf liar is talking over you. Perhaps you can shut them up by buying something really cheap." instead;
 	if noun is companions, say "You can only talk to one companion at a time with [b]T[r], [if sco-my-corps is false]though you will need to give a big speech with a special command later[else]and you've already given your big speech[end if]." instead;
 	if noun is merchant, say "You want to figure a way to kill conversation, [if sco-summer-chant is true]even if your summer chant made it more bearable[else]instead[end if]." instead;

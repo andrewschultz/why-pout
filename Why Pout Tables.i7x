@@ -206,7 +206,11 @@ a wordtwisting rule (this is the pre-wipe-out rule):
 
 this is the post-wipe-out rule:
 	now sco-wipe-out is true;
-	say "Easier said than done, but since you all studied the plan tracker so well, it isn't impossible![paragraph break]Your makeshift weapons are just enough to distract the sea skull. It starts to focus on one party member, then the others taunt it with 'Aid! Eek, a deek!'[paragraph break]It's exhausting for you but even more exhausting for the skull, which after constant spinning eventually collapses and incinerates, but not before a self-pitying 'Meek old me! Cold!'[paragraph break]'On ice! Aw, nice!' you proclaim, expecting big cheers.[paragraph break]But after all the fireworks, there's a letdown. You feel something odd come between you and your companions now you're done. They wonder why they need to do any more. You could call the whole zeitgeist a why-division.";
+	say "You don't feel confident as you mumble 'Ace, cull a skull.' But you have to say something.";
+	say "[line break]However, since you and your companions studied the plan tracker so well, it starts a rally! You know the taunts to give and how to deflect the skull's likely taunts. So, with a 'You'd reign? You drain!' you commence combat. The skull roars back, trying to summon a tier-x T-Rex and a new clever nuke lever. You recognize those would wipe out the skull, too, so you aren't worried. 'Mo['] strong? Most wrong!' you fire back. You worry it's a bit redundant, but you also realize you're not in English class.";
+	say "[line break]The skull uncovers one more machine, ominously labeled The Make-Them-Ache. Loud whirring indicates it has started up, but thinking quickly, you grasp your thumb and scream. Pronunciation pedantry for the win!";
+	say "[line break]But there is real pain. And you'd be cooked if it weren't spread among your companions. They dilute the machine's effect and distract the skull. Whenever the skull focuses on one companion, the others taunt it with 'Aid! Eek, a deek!'";
+	say "[line break]It's exhausting for you but even more exhausting for the skull, which after constant spinning eventually collapses and incinerates, but not before a self-pitying 'Meek old me! Cold!'[paragraph break]'On ice! Aw, nice!' you proclaim, expecting big cheers.[paragraph break]But after all the fireworks, there's a letdown. You feel something odd come between you and your companions now you're done. They wonder why they need to do any more. You could call the whole zeitgeist a why-division.";
 	move why division to Doom Ending;
 	moot sea skull;
 
@@ -1233,12 +1237,12 @@ rule for printing a parser error (this is the check forks rule):
 check thinking when current-score is 0:
 	say "An inner voice says 'Fry! Twist!' You feel fright, wist. It's hard not to, since you don't have a name or a purpose. For some reason, you're focused on getting a name, but you've got this nagging feeling that's not quite it.[paragraph break][one of]Perhaps if you press a bit more, some thoughts may come out[or]Well, not quite a purpose, but ... what's the word?[paragraph break][one of]'Aww, flake! Awful ache[or]'Dumb pit. Dump it[in random order]!' you think to yourself. Which sounds slightly off, but maybe something as simple, or simpler, can work. There must be a pattern to all you are thinking and feeling, and maybe you can look at yourself, literally or figuratively, to figure it out[stopping].";
 	if pre-acts > 0:
-		say "[line break]You've already tried to [b]WIPE OUT[r] in response to taunts of 'why pout,' and you wonder if this all is easier. [if Mike Orr is unexamined]Perhaps you should [b]X ME[r][else]Maybe your search for a name will turn up something meaningful, regardless of what your name is[end if].";
+		say "[line break]You've already tried to [b]WIPE OUT[r] in response to taunts of 'why pout,' which seemed like it should do something. But it did not. Maybe there is an easier way to get started. [if Mike Orr is unexamined]Perhaps you should [b]X ME[r][else]Maybe your search for a name (started with [b]X ME[r]) will turn up something meaningful, regardless of what your name is[end if].";
 	the rule succeeds;
 
 rule for printing a parser error when the latest parser error is the not a verb I recognise error or the latest parser error is the didn't understand error (this is the catch bad verbs rule):
 	if core-score is 0:
-		say "You're stuck with what to do right now. Perhaps you can use your senses for clues, or [b]THINK[r], or look inward[if Mike Orr is examined] again with X ME[end if], to give you an idea of how to get started. Not just a what, but a how or a why. You can't exactly look outward.";
+		say "You're stuck with what to do right now. Perhaps you can use your senses for clues, or [b]THINK[r], or look inward[if Mike Orr is examined] again[end if] with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.";
 		increment first-point-clue-flag;
 		if gs-parser-error-note is false:
 			say "[line break][i][bracket][b]NOTE[r][i]: until the main area, parser verb errors like this will give occasional general hints. So don't be afraid to try stuff.[close bracket][r][line break]";
