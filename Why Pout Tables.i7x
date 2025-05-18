@@ -185,6 +185,9 @@ a wordtwisting rule (this is the pre-wipe-out rule):
 	if sco-wipe-out is true:
 		vcal "You already wiped out the sea skull! Now is the time for healing.";
 		already-done;
+	if core-score is 0:
+		vcp "Wipe out. Why pout. Perhaps that will come in handy one day, when you know more about who you are and why you are here![paragraph break]But now, you're not even sure you have a name. Or ... something else, also important.";
+		not-yet;
 	if pals-made is 0:
 		vcp "You aren't feeling too great, but you don't want or need to wipe yourself out, yet. Perhaps you can find the root of your problems and wipe it out one day, though.";
 		not-yet;
@@ -989,7 +992,7 @@ a wordtwisting rule (this is the pre-wide-vision rule):
 	if why division is not in doom ending, unavailable;
 	if pre-acts < pre-max:
 		vcp "[remove-widevision-bonus][one of]You try to declare a wide vision, but as you do, you trip yourself up on pronunciation. Wide vision? Why division? You worry you haven't fought through enough to have a truly wide vision--sure, you solved all the puzzles you needed to, but you feel like you're missing some necessary experience and struggle you need for true, long-term leadership.[paragraph break]But surely you must give it a try![paragraph break][entry thinkcue-index of wide-vision-rejects][war-pawn-musings][or]You are unable to express your wide vision. You'll have to settle for just repairing things pretty well[stopping].";
-		not-yet;
+		not-ever;
 	ready;
 
 to say war-pawn-musings:

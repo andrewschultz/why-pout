@@ -250,7 +250,7 @@ eyeguessing a number (called n):
 	now verb-dont-print is false;
 	let rb-out be outcome of the rulebook;
 	say "The eyes ";
-	if rb-out is the not-yet outcome:
+	if rb-out is the not-yet outcome or rb-out is the not-ever outcome:
 		say "light up [if dimly is true]a dim [end if]yellow";
 	else if dimly is true:
 		say "glow dimly";
