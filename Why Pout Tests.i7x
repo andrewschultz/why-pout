@@ -388,7 +388,7 @@ volume post parser error stuff
 
 after printing a parser error when found-think-case is true:
 	now found-think-case is false;
-	say "[line break]Add 1.";
+	say "[line break]NOTE: (testing only) found-think-case is true.";
 
 Why Pout Tests ends here.
 

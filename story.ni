@@ -103,12 +103,13 @@ check thinking (this is the right phrase wrong time rule):
 		if think-cue entry is true:
 			now got-think is true;
 			if idid entry is true:
-				say "Oops, I somehow forgot to reset think-cue entry for [w1 entry] [w2 entry]. This is a trivial bug--but please let me know!";
+				say "Oops, I somehow forgot to reset the think-cue entry for [w1 entry] [w2 entry]. This is a trivial bug in under-the-hood code that won't cause an unwinnable state or anything--but still, I'd like to know so I can fix it!";
+				now think-cue entry is false;
 			else:
 				if there is a think-advice entry:
 					say "[think-advice entry][line break]";
 				else:
-					say "[first-of-ors of w1 entry] [first-of-ors of w2 entry] is something you tried before it was perfectly ready. I should write in more details later.";
+					say "[first-of-ors of w1 entry] [first-of-ors of w2 entry] is something you tried before it was perfectly ready. That I can offer no further details is a BUG I need to fix--I need to add a think-advice entry.";
 	repeat through table of main oronyms:
 		if think-cue entry is true or idid entry is true, next;
 		if first-exact entry is false and first-close entry is false and second-exact entry is false and second-close entry is false, next;
