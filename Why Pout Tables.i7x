@@ -219,7 +219,7 @@ a wordtwisting rule (this is the pre-wool-frock rule):
 
 this is the post-wool-frock rule:
 	now sco-wool-frock is true;
-	say "You rummage about and find a wool frock.";
+	say "You rummage about and find a wool frock that slipped through the cracks. Man, you'd have missed it if you'd had no idea what to look for!";
 	now player has wool frock;
 	if sco-hide-out is false:
 		now eyes-number of Wolf Rock is 43;
@@ -366,7 +366,7 @@ a wordtwisting rule (this is the pre-tree-small rule):
 
 this is the post-tree-small rule:
 	now sco-tree-small is true;
-	say "Amidst all the fake trees, an actual organic small tree grows. You're a bit disappointed, but you realize you maybe shouldn't have expected much with so little letter-shuffling. Maybe if you want a bigger tree, you'll need to do something else.";
+	say "Amidst all the fake trees, an actual organic small tree grows. You're a bit disappointed, but you realize you maybe shouldn't have expected much with so little letter-shuffling. Maybe if you want a larger tree, you'll need to do something else.";
 	move tree small to Trees Mall;
 	if player has grow vial, say "[line break]";
 	declue-here;
@@ -636,7 +636,7 @@ a wordtwisting rule (this is the pre-the-file rule):
 
 this is the post-the-file rule:
 	now sco-the-file is true;
-	say "You have a clue what isle to look through. The thief isle. Thanks to your friends, especially the sneaky gnome and rogue, you avoid all sorts of traps that would've snared you on your own.[paragraph break]Congratulations. You now possess, not just any file, but The File.";
+	say "You have a clue what isle to look through. The thief isle. Thanks to your friends, especially the sneaky gnome and rogue, you avoid all sorts of traps that would've snared you on your own.[paragraph break]The File is well-hidden. It has to be, given the sensitive information in it. Information so sensitive, I can't detail it here, just in case someone unworthy is looking over your shoulder. But it's in your head. Trust me.";
 	conditional-flier-mangle;
 
 to ride-squid:
@@ -844,7 +844,7 @@ a wordtwisting rule (this is the pre-plan-tracker rule):
 
 this is the post-plan-tracker rule:
 	now sco-plan-tracker is true;
-	say "Wow! That was ... surprisingly simple. You find a rather new-looking plan tracker behind the plant racker, which crumbles to dust as you push it aside.";
+	say "Wow! That was ... surprisingly simple, for having all those letters. You find a rather new-looking plan tracker behind the plant racker, which crumbles to dust as you push it aside. Eh, well. Its purpose was only ornamental.";
 	moot plant racker;
 	now player has plan tracker;
 
@@ -913,7 +913,7 @@ a wordtwisting rule (this is the followers-check rule):
 		vcp "Sadly, you have no friends to bring together yet! Yet.";
 		not-yet;
 	if pals-still-needed > 0:
-		vcp "You sense you don't yet have the full gang together! [if number of still-follow-needed followers is 1]But you must be very, very close[else if pals-still-needed <= 4]You must be getting close, though[else]You've made a start, and you like who you have, but you feel there's not enough variety yet[end if].";
+		vcp "While you'll want to hold a meetin([']) some time, you sense you don't yet have the full gang together! [if number of still-follow-needed followers is 1]But you must be very, very close[else if pals-still-needed <= 4]You must be getting close, though[else]You've made a start, and you like who you have, but you feel there's not enough variety yet[end if].";
 		if gs-top-eight-op-known is false:
 			vcp "[line break]So how many companions do you need? On reflection, a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight[if orc is friendly], but with the orc along, it seems like a courtesy to count them instead of yourself[else]. For now, you assume you are[end if].[paragraph break][pals-short].";
 		else:
@@ -1064,7 +1064,7 @@ this is the post-grin-churls rule:
 a wordtwisting rule (this is the pre-crew-dork rule):
 	if player is not in brew swears, unavailable;
 	if sco-weak-us is false:
-		vcp "The crude orc doesn't believe they're being used by [the grinch]. Why, it's part of the hazing! They have to show they're tough!";
+		vcp "The crude orc doesn't believe they're being used by [the grinch]. Why, it's part of the hazing! They have to show they're as tough as [the grinch]! Uh, right?";
 		not-yet;
 	if sco-crew-dork is true:
 		vcal "You already broke the truth to the crude orc as gently as you could!";
@@ -1078,7 +1078,7 @@ this is the post-crew-dork rule:
 
 to check-orc-friendliness:
 	if orc-score is 2:
-		say "[line break]The crude orc sees it now. [The earls] weren't as friendly as they seemed. They wanted to use some trusting kid and corrupt them. The crude orc shakes their head. They ask if they can be seen as not just a dirk.[paragraph break]With a bit of quick thinking (you've got experience with this by now) you say of course they don't need to feel like a dork any more. You can see how they'd be an aid orc, instead!";
+		say "[line break]The crude orc sees it now. [The earls] weren't as friendly as they seemed. They wanted to use some trusting kid and corrupt them. The crude orc shakes their head. They ask if they can be seen as not just a dork.[paragraph break]With a bit of quick thinking (you've got experience with this by now) you say of course they don't need to feel like a dork any more. You can see how they'd be an aid orc, instead!";
 		say "[line break]And thus you've gained another friend! [if grinch earls are moot]There's really nothing left to do here[else]You can stick around to torment the grinch earls further, or you can go on your way[end if].";
 		orc-top-eight;
 	else if orc-score is 1:
@@ -1289,7 +1289,7 @@ volume can't go that way
 
 table of noways
 noway-rm	noway-txt
-Eh Raw Air Aww	"[if sco-an-aim is false][one of]'Grey trek? Great wreck!' [or]'I sit? Ice it!' [stopping]you moon. You can't see anywhere. You know almost nothing. I mean, you don't even have a name. What would you do even if there was a passage?[else]It looks like there are ways out, but you're disoriented enough, directions don't matter. You sure would like a way to see where you're going.[end if]"
+Eh Raw Air Aww	"[if sco-an-aim is false][one of]'Grey trek? Great wreck!' [or]'I sit? Ice it!' [stopping]you moon. You can't see anywhere. You know almost nothing. You don't even have a name.[paragraph break]What would you do even if there was a passage?[else]It looks like there are ways out, but you're disoriented enough, directions don't matter. You sure would like a way to see where you're going.[end if][paragraph break]But as it is, you don't even have [b]A NAME[r]. Well, one you can remember."
 Hype Lane	"[if noun is not up]No sense faffing around horizontally. You're sick of being stuck underground[else if sco-pry-stalk is false]You need to find something that will help you go up[else]You need to name where to go up to[end if]."
 NaffHaze	"[if sco-nah-phase is false]Too risky to stumble around until the haze lifts. How to make that happen?[else if number of viable directions is 0]You feel like eventually you should be able to wander around, but you can't see anywhere to go, yet. There seem to be clues where to go, and how, if you look around.[else if plane-dir-score is 4]You can go down or in the cardinal directions, but not [noun].[else]You can't go [noun], but you can go [list of viable directions].[end if]"
 KeepIller	"Apart from finding a way beyond the seedy sign[if sco-see-design is true], which you don't need to again[end if], the keep doesn't have many twisty passages. Well, any."
@@ -1299,7 +1299,7 @@ Storm Isle	"You can only go back south to Lobe End[if sco-store-mile is true] or
 Trees Mall	"You can only go back south."
 Wolf Rock	"Wolf Rock blocks every planar passage except back [b]SOUTH[r]. [if sco-low-door is true]Well, you can go [b]IN[r] where the lode ore was as well[else]Maybe something's under the lode ore as well--it's dense[end if][if sco-hide-out is true]. You discovered the hideout [b]DOWN[r], too[end if]." [??use is-thought here]
 We Loan	"You can only go back [b]OUT[r] here."
-Hideout	"You can only go back [b]UP[r]. If this hideout had too many passages, it'd risk being less effective."
+Hideout	"You can only go back [b]UP[r]. You're sort of glad it's not a deluxe or exciting hideout, really, since that'd just mean more to map out."
 NoNotion	"You can only go back [b]NORTH[r][if squid is in NoNotion] or, if you know where you want to go, give the squid instructions where to go[else], or that's your notion, right now[end if]."
 Wand Wharf	"You're not in the mood for exploring the wharf randomly. It seems like a good way to get lost. Perhaps if you focus on a specific sort of companion you need nearby, that would be better. Then you could find them and leave."
 Worm Eaten	"No tricky passages here, just [b]UP[r] back to safer ground or [b]DOWN[r] to your fate."

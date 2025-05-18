@@ -157,7 +157,7 @@ volume rooms
 
 book Eh Raw Air Aww
 
-Eh Raw Air Aww is a room in first-rooms. printed name is "[if sco-an-aim is false]Eh, Raw Air, Aww[else]Tomb Apse[end if]". description is "[if sco-an-aim is false]The air chokes you a bit. It's too thick to see far beyond yourself. You barely know who you are, even. Ugh. You can't see much beyond yourself, really, so that'd be somewhere to start.[else]It's a bit clearer now. You still seem trapped. But there must be secrets hidden, and maybe one or more can get you out of here.[end if]". eyes-number of Eh Raw Air Aww is 2. eyes-rule of Air Aww is pre-an-aim rule. [okay, we don't get the eyes until later.]
+Eh Raw Air Aww is a room in first-rooms. printed name is "[if sco-an-aim is false]Eh, Raw Air, Aww[else]Tomb Apse[end if]". description is "[if sco-an-aim is false]The air chokes you a bit. It's too thick to see far beyond yourself. You barely know who you are, even. Ugh.[paragraph break]Maybe if you took a good look at yourself, it could provide some clues.[else]It's a bit clearer now. You still seem trapped. But there must be secrets hidden, and maybe one or more can get you out of here.[end if]". eyes-number of Eh Raw Air Aww is 2. eyes-rule of Air Aww is pre-an-aim rule. [okay, we don't get the eyes until later.]
 
 book Hype Lane
 
@@ -174,7 +174,7 @@ every turn when noun is cell phones:
 
 chapter prize talk
 
-the prize talk is a hostile sentient. "[if sco-pry-stalk is false]You'd like to DO something about the prize talk. Or seek out something that would give you passage away from it[else]The prize talk is all around, but you're able to ignore it, now you feel you might have a way out[end if].". description is "[if sco-pry-stalk is false]The prize talk also discusses things that aren't so worth it, like -- well, plants and stuff. BORING[else]You can see your way around the prize talk now. You don't want to get sucked back in[end if].". eyes-number of prize talk is 35. eyes-rule of prize talk is the pre-pry-stalk rule.
+the prize talk is a hostile sentient. "[if sco-pry-stalk is false]You'd like to DO something about the prize talk. Or seek out something that would give you passage away from it[else]The prize talk is all around, but you're able to ignore it, now you feel you might have a way out[end if].". description is "[if sco-pry-stalk is false]The prize talk discusses many things, jumping from subject to subject. It's not what it says, but how it keeps you ensnared without being interested. Like a predatory plant grabbing you or something[else]You can see your way around the prize talk now. You don't want to get sucked back in[end if].". eyes-number of prize talk is 35. eyes-rule of prize talk is the pre-pry-stalk rule.
 
 section stalk
 
@@ -182,7 +182,7 @@ the stalk is a thing. description is "Apparently, it's magical or something, and
 
 book Naff Haze
 
-NaffHaze is a privately-named room in universal. "[if sco-nah-phase is false]You're surrounded by some really naff haze. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it[else]Things have opened up [ways-open] now, with the naff haze lifted[end if][if sco-pole-east is true]. You feel less policed, too, since you found a path [b]EAST[r][end if][if sco-grow-star is true].[paragraph break]You got rid of the gross tar blocking your way [b]NORTH[r][end if].". printed name is "[if sco-nah-phase is false]Naff Haze[else]High Plain[end if]". eyes-number of NaffHaze is 35. eyes-rule of naffhaze is the pre-nah-phase rule.
+NaffHaze is a privately-named room in universal. "[if sco-nah-phase is false]You're surrounded by some really naff haze. It's naff because you can't go anywhere, and it also just makes you feel naff, and it seems so universal, like there's no escaping from it, and it'll be here forever and ever[else]Things have opened up [ways-open] now, with the naff haze lifted[end if][if sco-pole-east is true]. You feel less policed, too, since you found a path [b]EAST[r][end if][if sco-grow-star is true].[paragraph break]You got rid of the gross tar blocking your way [b]NORTH[r][end if].". printed name is "[if sco-nah-phase is false]Naff Haze[else]High Plain[end if]". eyes-number of NaffHaze is 35. eyes-rule of naffhaze is the pre-nah-phase rule.
 
 to say ways-open:
 	if plane-dir-score is 0:
@@ -303,7 +303,7 @@ book Keep Iller
 KeepIller is a room in Universal. printed name is "Keep (Iller)". "This keep has seen better days, but there seems to be a lot in its ruins. You can go back [b]EAST[r]. [if sco-see-design is true]You explored south already, so no need to go back[else]You also sense something fearsome from a passage south[end if].". eyes-number of KeepIller is -1.
 
 check going south in KeepIller:
-	if sco-knife-right is true, say "You don't need or want to go back there." instead;
+	if sco-knife-right is true, say "You don't need or want to revisit the Nigh Fright. You're not scared, of course, just focused on what needs to be done" instead;
 	if pals-made is 0:
 		say "You try to go south, but with no support, you're just too scared." instead;
 	else if pals-made is 1:
@@ -321,7 +321,7 @@ the gnome old is a follower. printed name is "gnome (old)". help-chat is "The gn
 
 chapter row gold
 
-there is a thing called row gold. It is in KeepIller. printed name is "row (gold)". "A row (gold) shines in this otherwise forbidding keep[if pre-rogue-old rule is guessed-yet]. You've met its proprietor, the rogue (old,) but they require payment[else if sco-rogue-old is true], and you're glad the rogue (old) had enough faith in you to leave it for a while[end if].". description is "You're surprised someone hasn't taken it yet. Perhaps it has an unseen guardian.". eyes-number of row gold is 53. eyes-rule of row gold is the pre-rogue-old rule.
+there is a thing called row gold. It is in KeepIller. printed name is "row (gold)". "A row (gold) shines in this otherwise forbidding keep[if sco-rogue-old is true], and you're glad the rogue (old) had enough faith in you to leave it for a while[else if pre-rogue-old rule is guessed-yet]. You've met its proprietor, the rogue (old,) but they require payment[end if].". description is "You're surprised someone hasn't taken it yet. Perhaps it has an unseen guardian.". eyes-number of row gold is 53. eyes-rule of row gold is the pre-rogue-old rule.
 
 section rogue old
 
@@ -531,7 +531,7 @@ after printing the locale description for Trees Mall:
 
 chapter tree small
 
-the tree small is a thing. "The tree (small) that you summoned/discovered grows here, or tries to, at least. What could you use on it to help it really bloom?". description is "It's a nice tree, but it's a bit small.". eyes-number of tree small is -1. printed name is "tree (small)".
+the tree small is a thing. "The tree (small) that you summoned/discovered sits here, growing or trying to, at least. What could you use on it to help it really bloom?". description is "It's a nice tree, but you wish you could make it bigger.". eyes-number of tree small is -1. printed name is "tree (small)".
 
 check eyeing tree small: say "The eyes show nothing. But the tree should be bigger! Perhaps there is a more organic method to achieve this." instead;
 
@@ -566,7 +566,7 @@ to say island-status:
 		if remaining-flier-guessed:
 			say "You feel confident you will see, based on your previous thoughts, if there are islands far away";
 		else:
-			say "If they're there, they're too far to swim to";
+			say "If they're there, they're too far to swim to--you'd need a map and help to navigate things";
 	else if flier-isle-score is 1:
 		if remaining-flier-guessed:
 			say "You have figured more than one place to go, but you didn't have the capability to visit everywhere, yet";
@@ -1133,7 +1133,7 @@ carry out ting a sentient:
 	if noun is merchant, say "You want to figure a way to kill conversation, [if sco-summer-chant is true]even if your summer chant made it more bearable[else]instead[end if]." instead;
 	if noun is Gawain Kerr, say "You don't need him to riff on your name. But maybe you can riff on his." instead;
 	if noun is booze troll, say "The booze troll doesn't seem interested in useful conversation, at least not in their present form." instead;
-	if noun is squid, say "[if sco-six-quid is false]It seems to be choking a bit[else]The squid can't speak, but you get very good vibes from it. It will understand where to go when you have a way to show it where to go[end if]." instead;
+	if noun is squid, say "[if sco-six-quid is false]It seems to be choking a bit, but on what?[else]The squid can't speak, but you get very good vibes from it. It will understand where to go when you have a way to show it where to go.[end if]" instead;
 	if noun is traitor, say "[The traitor] mumbles apologetically for who they were. Perhaps you can show [the traitor] a small shift to change them." instead;
 	if noun is grinch earls, say "[if sco-grin-churls is true][The earls] feel beaten down by your renaming. Okay, maybe you'd get schadenfreude from a whiny 'Mean? Oh, me? No!'[else]You can't imagine any chat with them would be pleasant. 'Help our hell-power?!'[end if][paragraph break]Staunch, specific verbal defense is the way to get rid of them, here." instead;
 	if noun is cell phones, say "No, you don't want to get swept up in that." instead;

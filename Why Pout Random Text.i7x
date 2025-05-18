@@ -128,7 +128,7 @@ every turn when can-init-dialogue (this is the initial table random dialogue rul
 		say "[line break][i][bracket][b]NOTE[r][i]: you've made it through all the random dialogues you can with necessary companions. You're missing an optional one, who is not critical to the game. There will be more random ones after this.[close bracket][r][line break]";
 	if gs-note-chatopt is false:
 		now gs-note-chatopt is true;
-		say "[line break][b]NOTE[r][i]: this is random dialogue you can shut off with [b]SCORCH AT[r] or turn back on with [b]SCORE CHAT[r][i].[close bracket][r][line break]";
+		say "[line break][b]NOTE[r][i]: this is random dialogue you can shut off with [b]SCORCH AT[r][i] or turn back on with [b]SCORE CHAT[r][i].[close bracket][r][line break]";
 
 every turn when can-second-dialogue (this is the further table random dialogue rule):
 	increment second-dialogue-row;
