@@ -658,13 +658,37 @@ rule for printing a parser error when the latest parser error is the I beg your 
 	say "Ideally I-D-L-E!";
 	the rule succeeds;
 
+volume command to eye everything you can - not for release
 
+chapter eye all
 
+eyeall-test is a truth state that varies
 
+test e with "how so/ea".
 
+eaing is an action out of world.
 
+understand the command "ea" as something new.
 
+understand "ea" as eaing when debug-state is true.
 
+carry out eaing:
+	if eyeall-test is false, follow the eyeall rule;
+	now eyeall-test is true;
+
+this is the eyeall rule:
+	if player does not have eyes, now player has eyes;
+	say "ROOM:[line break]";
+	try eyering;
+	say "[line break]THINGS:[line break]";
+	repeat with X running through eyeable things:
+		say "[X]...";
+		try eyeing X;
+	the rule succeeds;
+
+definition: a thing (called th) is eyeable: [this can and should be changed by game, so there is less of a text dump]
+	if th is touchable, yes;
+	no;
 
 volume generalizable parser errors
 
