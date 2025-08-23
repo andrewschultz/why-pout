@@ -355,6 +355,8 @@ check warponing:
 	if war-pawn-available-charges < 0:
 		say "The war pawn is still sleeping from previous use. Get further in your quest, and the pawn will re-awaken[one of]. I promise![or].[stopping]" instead;
 
+our-run-rule is a rule that varies.
+
 carry out warponing:
 	let flag-almost-cheat be false;
 	let flag-this-room be false;
@@ -376,6 +378,7 @@ carry out warponing:
 			say "[r]...";
 			if idid entry is false, up-reg;
 			max-down;
+			now our-run-rule is run-rule entry;
 			check-run-rules;
 			now idid entry is true;
 			now think-cue entry is false;

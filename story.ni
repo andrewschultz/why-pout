@@ -1201,7 +1201,7 @@ volume cheating
 chapter warponing
 
 to check-run-rules:
-	if run-rule entry is post-do-due-mend rule, decrement cur-max-bonus;
+	if our-run-rule is post-do-due-mend rule, decrement cur-max-bonus;
 
 section debug testing
 
