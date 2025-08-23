@@ -1225,9 +1225,7 @@ report touching when current-score is 0:
 
 book waiting
 
-check waiting:
-	if number of friendly followers > 0, say "You wait, aware too much 'we're staying' would prompt 'worst, eh'-ing." instead;
-	say "Ideally I-D-L-E!" instead;
+check waiting when number of friendly followers > 0: say "You wait, aware too much 'we're staying' would prompt 'worst, eh'-ing." instead;
 
 book wearing
 

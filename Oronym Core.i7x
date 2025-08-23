@@ -393,6 +393,18 @@ carry out eyeing:
 
 carry out eyering:
 	abide by the eyeguessing rulebook for eyes-number of location of player;
+volume waiting and empty commands
+
+go-dot-known is a truth state that varies.
+
+check waiting:
+	now go-dot-known is true;
+	say "You sense a goad-ought-go dot creeping up on you. Okay, a dot can't do much harm, but it [i]is[r] a hint you don't need to stand around." instead;
+
+understand "godot" as a mistake ("You wait for [this-game] to move beyond English colloquialisms to abusing French pronunciation. You wait a while. You're sure the decision will come soon!") when go-dot-known is true.
+
+rule for printing a parser error when the latest parser error is the I beg your pardon error (this is the Oronym pardon begging rule):
+	say "Ideally I-D-L-E!";
 	the rule succeeds;
 
 report eyeing:
