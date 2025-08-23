@@ -20,6 +20,8 @@ Alternate spellings should work as well for many of the solutions. If they don't
 
 There's also an optional area I won't provide a walkthrough for, because it does not affect the final ending in any way besides "you missed a point or two." In fact, there is no MISSED command at the end of the game for it. There's a reason for this, and I think it's a decent one. You'll know once you manage to enter it. If you got that far, you'll understand what that area is about. If you really want to know everything, you can find the answers in the source code or test scripts.
 
+Also, some words may require an apostrophe or hyphen, but Why Pout doesn't require them. In fact, if you try either, it notifies you they aren't necessary and it will add punctuation as needed.
+
 =============================================
 
 At first, there isn't much to look around at. Maybe at yourself. You can't see much else, anyway, so it's not totally self-centered to do so. You're not exactly getting a lot of help, here.
@@ -340,7 +342,7 @@ Finally. You've been waiting all game for this! Or maybe you haven't.
 
 >wipe out (1)
 
-You'll notice that there is why-division, now. There is an alternate ending where you can change it into something better, but you're locked out of it at this moment.
+You'll notice that there is why-division, now. There is an alternate ending where you can change it into something better, but you're locked out of it at this moment. (As the author, I'm being evasive about this. The code is available on GitHub, if you really want to find it. Also, there is a bonus point for disposing of the War Pawn the right way. Again, go see GitHub.)
 
 Now, to end things. Not with a Doom End but ...
 

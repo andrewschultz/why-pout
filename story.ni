@@ -1321,6 +1321,17 @@ check requesting the score:
 	say ".";
 	the rule succeeds;
 
+volume endgame
+
+table of final question options (continued)
+final question wording	only if victorious	topic	final response rule	final response activity
+"see points [b]MISSED[r]" 	true	"missed"	endgame recap missed points rule	--
+
+this is the endgame recap missed points rule:
+	if brew swears is unvisited:
+		say "All but one bonus point is found in Bruise Wares.";
+	nope-check;
+
 volume painful parser stuff
 
 after reading a command:

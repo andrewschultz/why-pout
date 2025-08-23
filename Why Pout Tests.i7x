@@ -280,7 +280,6 @@ volume final question options for testing only
 table of final question options (continued)
 final question wording	only if victorious	topic	final response rule	final response activity
 "see rules that tripped [b]THINK[r] with [b]TT[r]" 	true	"tt/think"	show tripthinking rule	--
-"see points missed with [b]PM[r]/[b]POINT[r]/[b]POINTS[r]" 	true	"pm/point/points"	track missed points rule	--
 
 volume ediaging, to check eyes values at end
 
