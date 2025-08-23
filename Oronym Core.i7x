@@ -258,6 +258,33 @@ rule for printing a parser error when player has war pawn:
 			say "There's a special command to use the pawn, in the spirit of [this-game].";
 	continue the action;
 
+chapter knowpawning
+
+knowpawn-table-row is a number that varies.
+
+knowpawning is an action out of world.
+
+understand the command "know pawn" as something new.
+
+understand "know pawn" as knowpawning when player has war pawn.
+
+carry out knowpawning:
+	increment knowpawn-table-row;
+	choose row knowpawn-table-row in table of knowpawn chat;
+	say "[kp-chat entry] ([knowpawn-table-row]/[number of rows in table of knowpawn chat])";
+	if knowpawn-table-row is number of rows in table of knowpawn chat:
+		say "[one of] (end of pawn advice. It will now loop)[or][stopping]";
+		now knowpawn-table-row is 0;
+	say "[line break]";
+
+table of knowpawn chat
+kp-chat
+"The pawn requires a special command to use. There is no penalty for trying to use it when it can't help you."
+"The pawn tries to determine if any puzzles are solvable right now. If they are, it picks the first one in the game's internal table. I've tried to sort these so you solve the trickiest available."
+"The pawn may also try and fail. This means there's something you can guess but aren't ready to solve--you need other materials."
+"The pawn has three uses throughout [this-game], though they are spaced out. It doesn't recharge until you've gotten 1/3 of the points on your own, then 2/3."
+"You can store up pawn charges for the endgame."
+
 chapter nopeoning
 
 gs-nope-on-warn is a truth state that varies.
