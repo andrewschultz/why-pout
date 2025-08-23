@@ -377,7 +377,7 @@ carry out warponing:
 			if there is a w2 entry, say " [first-of-ors of w2 entry]";
 			say "[r]...";
 			if idid entry is false, up-reg;
-			max-down;
+			if war-pawn-uses is 0, max-down; [because you lose the chance for the NOPE ON bonus]
 			now our-run-rule is run-rule entry;
 			check-run-rules;
 			now idid entry is true;
