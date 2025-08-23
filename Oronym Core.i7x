@@ -6,6 +6,12 @@ volume includes
 
 use authorial modesty.
 
+section outside stuff
+
+include Conditional Undo by Jesse McGrew. [for UNDO blocking war pawn]
+
+section my stuff
+
 include Spoonerism and Oronym Core by Andrew Schultz.
 
 include Revealing Passages by Andrew Schultz.
@@ -197,12 +203,95 @@ a room has a number called eyes-number. a room has a rule called eyes-rule. eyes
 book war pawn
 
 the war pawn is a hintthing. description is "It's a grey chess pawn with a frown and mean glare carved in the rounded top. If it had fists, you are pretty sure they'd be doubled up in a fighting posture, but it doesn't even have arms.[paragraph break]Looking at it from many different angles gets you all sorts of weird ideas. Perhaps it could help you when you run out of them on your quest. You may wish to wait until you really need to use it, though of course, you don't want to wait too late.". eyes-number of war pawn is -42. drop-poke of war pawn is "The war pawn can get you past a tough puzzle of your choosing. Drop it anyway to resist the temptation to jump ahead?". eyes-rule of war pawn is trivially true rule.
+war-pawn-uses is a number that varies.
+war-pawn-max-uses is a number that varies. war-pawn-max-uses is 3.
+
+to decide what number is war-pawn-available-charges:
+	let temp be (core-score * war-pawn-max-uses) - (war-pawn-uses * (core-max + 1));
+	decide on (temp + core-max) / core-max;
+
 
 after examining war pawn for the first time:
 	say "If you want to resist the temptation of this cheat item, [b]DROP[r] it. There is no penalty for using it.";
 	continue the action;
 
 check eyeing war pawn: say "You reflect on the irony of using a hint item on a hint item, but then, you see a result!";
+to check-run-rules: do nothing;
+
+chapter warponing
+
+warponing is an action out of world.
+
+understand the command "warp on" as something new.
+
+understand "warp on" as warponing when war pawn is not off-stage or debug-state is true.
+
+every turn: say "[war-pawn-uses].";
+
+check warponing:
+	if war pawn is moot, say "You dream of having the war pawn help you at your current impasse. Alas, it is gone. You then picture it cheering all 'I knew you could do it' once you figure what to do, and that makes you feel better." instead;
+	if war-pawn-available-charges < 0:
+		say "The war pawn is still sleeping from previous use. Get further in your quest, and the pawn will re-awaken[one of]. I promise![or].[stopping]" instead;
+
+carry out warponing:
+	let flag-almost-cheat be false;
+	let flag-this-room be false;
+	now gs-war-pawn-try is true;
+	now verb-dont-print is true;
+	repeat through table of main oronyms:
+		unless there is a core entry, next;
+		if core entry is false, next;
+		if idid entry is true, next;
+		process the check-rule entry;
+		let vr be the outcome of the rulebook;
+		if vr is the ready outcome:
+			if think-cue entry is true:
+				say "[one of]The war pawn glows hot in your hand. You drop it and pick it up. Why didn't it give a hint?[paragraph break]As you [b]THINK[r] a bit, you wonder if some things you tried, things that seemed like they should work, might work now.[or]The war pawn glows hot in your hand again. You must've made more progress than you assumed--good time to [b]THINK[r], again.[stopping]";
+				the rule succeeds;
+			say "After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: ";
+			say "[b][first-of-ors of w1 entry]";
+			if there is a w2 entry, say " [first-of-ors of w2 entry]";
+			say "[r]...";
+			if idid entry is false, up-reg;
+			max-down;
+			check-run-rules;
+			now idid entry is true;
+			now think-cue entry is false;
+			process the run-rule entry;
+			now gs-war-pawn-used is true;
+			post-pawn-charge;
+			if debug-state is true:
+				say "[line break]Remember, to keep the war pawn/reset the charges, use WP.";
+			follow the score and thinking changes rule;
+			game-specific-cleanup;
+			if undo-okayed is false, prevent undo;
+			the rule succeeds;
+		else if there is a best-room entry and best-room entry is location of player:
+			if vr is the not-yet outcome:
+				now flag-almost-cheat is true;
+			else:
+				now flag-this-room is true;
+	if flag-almost-cheat is true:
+		say "The war pawn rattles briefly in your hand, like it means to do something, but it's not ready. Or maybe you aren't. Yet.";
+	else if flag-this-room is true:
+		say "The war pawn seems to warm up very briefly. Perhaps there's a bit left to do here, but that may be a way down the road.";
+	else:
+		say "The war pawn stays still and even feels a bit cold. Perhaps there's nothing that specifically needs doing here.";
+	now verb-dont-print is false;
+	the rule succeeds;
+
+rule for deciding whether to allow undo:
+	if undo is prevented, say "Allowing you to undo using the war pawn is a bit too much of a loophole. There's a walkthrough. Or you can save and restore a lot before warping."
+
+section warpon debug check(s) - not for release
+
+check warponing when debug-state is true:
+	if the player's command includes "wp":
+		say "Resetting war pawn uses.";
+		now war-pawn-uses is 0;
+	if war pawn is off-stage and debug-state is true:
+		say "(Grabbing war pawn for testing)";
+		now player has war pawn;
 
 book sly size slice eyes
 
