@@ -1007,6 +1007,9 @@ check listening (this is the WP specific listening rule):
 		else:
 			say "Probably just time to get out.";
 		the rule fails;
+	if player is in doom ending and skull is in doom ending:
+		say "You don't have time to listen for anything like a thud of the dove. You need action!";
+		the rule fails;
 
 report listening when gs-default-listen-yet is false:
 	say "You've figured enough out by now. You can laugh back at this laughing-villain act.";
