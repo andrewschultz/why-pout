@@ -30,6 +30,10 @@ gs-war-pawn-try is a truth state that varies.
 
 gs-eye-note is a truth state that varies.
 
+volume strings in common
+
+to say generic-parser-error: say "That thought/action/observation/request brings up nothing. [this-game] has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try [b]VERBS[r]"
+
 volume I7 standard low-usage default verbs
 
 book senses

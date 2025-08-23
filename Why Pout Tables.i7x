@@ -1265,7 +1265,7 @@ rule for printing a parser error when the latest parser error is the not a verb 
 	else if core-score is 3:
 		say "The prize talk has you distracted. It's got a point: you need to find something to get where you want. What's the something, and how to get it? [where-get-hype]";
 	else:
-		say "That thought/action/observation/request brings up nothing. [this-game] has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try [b]VERBS[r].";
+		say "[generic-parser-error].";
 	the rule succeeds;
 
 to say where-get-hype:
@@ -1288,9 +1288,6 @@ sortval	taunt-text
 0	"'Duh, DO?! Dud, ooh!'"
 0	"'Play some place, umm...'"
 1	"'Take a look where you are.'"
-
-rule for printing a parser error when the latest parser error is the can't see any such thing error:
-	say "Nothing here like that[one of]. Note that room names are not usually worth examining, as you can just [b]L[r] or [b]LOOK[r][or][stopping]."
 
 volume can't go that way
 
