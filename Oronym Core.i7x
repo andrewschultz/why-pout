@@ -22,7 +22,7 @@ volume things
 
 a sentient is a kind of thing.
 
-a sentient can be hostile, agreeable or neutral. a sentient is usually neutral.
+a sentient can be hostile, agreeable, impressable or neutral. a sentient is usually neutral.
 
 volume globals
 
@@ -183,6 +183,9 @@ understand the command "drop" as something new.
 understand "drop [thing]" as drop2ing.
 understand "drop" as drop2ing.
 
+understand the command "throw" as something new.
+understand the command "discard" as something new.
+understand the commands "throw" and "discard" as "drop".
 
 check drop2ing:
 	say "You don't need to [b]DROP[r] anything in [this-game]. Most of what gets in your inventory will disappear when used successfully[if player has war pawn]. However, you may [b]DROP[r] the war pawn to remove the temptation to skip a puzzle[end if]." instead;
