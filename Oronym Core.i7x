@@ -437,8 +437,27 @@ eyeing is an action out of world applying to one thing.
 understand "eye [thing]" as eyeing when player has slice eyes.
 understand "eyes [thing]" as eyeing when player has slice eyes.
 
+check eyeing eyes when player does not have eyes and eyes are touchable:
+	say "(taking the eyes first)[paragraph break]";
+	now player has eyes;
+
+eye-table-num is a number that varies.
+
 check eyeing eyes:
-	say "[one of]The eyes will light up two sets of dots if there is something relevant to clue. (+)[or]The numbers of dots correspond to the number of letters in each word. (+)[or]The dots also have two binary settings: green or yellow, and dimly glowing or glowing. (+)[or]Green dots mean something you can move forward with now. (+)[or]Yellow dots mean something you can guess, but you don't have the right items or assistance to move forward. (+)[or]Finally, a dimly glowing reading is something that is optional for completing [this-game]. (End of hints. Next [b]EYE EYES[r] starts the hint cycle again)[cycling][line break]" instead;
+	increment eye-table-num;
+	choose row eye-table-num in table of eye help;
+	say "[eye-info entry] ([eye-table-num]/[number of rows in table of eye help])[line break]";
+	if eye-table-num is number of rows in table of eye help, now eye-table-num is 0;
+	the rule succeeds;
+
+table of eye help
+eye-info
+"The eyes will light up two sets of dots if there is something you still need to do in the area."
+"The numbers of dots correspond to the number of letters in the first and second words to type, respectively."
+"The dots also have two different types of appearances that clue you to the puzzle nature: green or yellow, and dimly glowing or glowing."
+"Green dots mean the suggested action can score a point right now."
+"Yellow dots mean you have something to guess, but you won't get a point, as you haven't found the right items or assistance from other puzzles to make things work. It will be kept in [b]THINK[r]."
+"Finally, a dimly glowing reading indicates something you can change for a bonus point. It's not critical to complete [this-game][one of]. (End of hints. Next [b]EYE EYES[r] starts the hint cycle again)[or].[stopping]"
 
 chapter eyeguessing
 
