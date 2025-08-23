@@ -429,6 +429,10 @@ book sly size slice eyes
 
 the sly size slice eyes are a plural-named hintthing. eyes-number of sly size slice eyes is 1. printed name is "sly size-slice eyes". drop-poke of slice eyes is "Are you sure you wish to drop [the noun]? They give a clue as to the length of any solution.". description is "The eyes shift around a lot, looking for stuff normal human eyes can't see.[paragraph break]To have them analyze the room, [b]EYE[r] with no argument. To have them analyze something, [b]EYE[r] it. You can also [b]EYE[r] the eyes themselves to spell out precisely how they work.". understand "eye" as eyes.
 
+drop-notify-text of sly size slice eyes is "'Ire, ol['] eye. Roll!' you mutter. The eyes roll away.[paragraph break]'A dumb aid, umm,' you think to yourself."
+
+to eyes-rebuke: if player has eyes, say "[line break]You also swear [the eyes] stared at you, as if to say, we could've told you that was well off the mark. (They're not big on creativity, alas.)";
+
 chapter eyeing
 
 eye-the-room is a truth state that varies.
@@ -568,6 +572,18 @@ eyeguessing a number (called n):
 		say "light up green";
 	say " and show [(n / 10) in words] dots, then [(remainder after dividing n by 10) in words] dots.";
 
+to declue-here: now eyes-number of location of player is -1
+
+to declue (th - a thing): now eyes-number of th is -1
+
+book report / verbs rules
+
+report verbsing when player has eyes:
+	say "Since you have [the eyes], [b]EYE[r] can be used on any item or person. Without an argument, it looks at the whole surrounding area. If you don't need to act on the room, it will flag specific items you can change.";
+	continue the action;
+
+report verbsing when player has pawn: say "A special command is required to use the war pawn. [if core-score > 4]Now[else]Once[end if]you've got a few points, you shouldn't have much trouble figuring it[if core-score < core-max / 5], though you may wish to save it for later[end if].";
+
 volume requesting the score
 
 gs-score-range-note is a truth state that varies.
@@ -645,19 +661,10 @@ rule for printing a parser error when the latest parser error is the I beg your 
 
 
 
-to declue-here: now eyes-number of location of player is -1
 
-to declue (th - a thing): now eyes-number of th is -1
 
-book report / verbs rules
 
-report verbsing when player has eyes:
-	say "With [the eyes], you can [b]EYE[r] the area to see if it can be changed, or you can [b]EYE[r] any object.";
-	continue the action;
 
-report verbsing when player has war pawn:
-	say "With [the war pawn], [if gs-war-pawn-try is true][b]WARP ON[r][else]there must be a way[end if] to gain insight to pass a tricky puzzle.";
-	continue the action;
 
 volume generalizable parser errors
 
