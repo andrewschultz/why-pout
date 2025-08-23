@@ -511,6 +511,26 @@ gs-this-dim-note is a truth state that varies.
 gs-ever-yellow-note is a truth state that varies.
 gs-this-yellow-note is a truth state that varies.
 
+chapter report eyeing rules
+
+report eyeing when gs-ever-dim-note is false and gs-this-dim-note is true:
+	now gs-ever-dim-note is true;
+	say "[i][bracket][b]NOTE[r][i]: the dim dots mean something. You can [b]EYE EYES[r][i] to pin down what, if you don't want to guess.[close bracket][r][line break]";
+	continue the action;
+
+report eyeing when gs-ever-yellow-note is false and gs-this-yellow-note is true:
+	now gs-ever-yellow-note is true;
+	say "[i][bracket][b]NOTE[r][i]: the yellow dots mean something unusual. You can [b]EYE EYES[r][i] to pin down what, if you don't want to guess.[close bracket][r][line break]";
+	continue the action;
+
+the note first time using eyes rule is listed first in the report eyeing rules.
+
+report eyeing (this is the note first time using eyes rule):
+	if gs-eye-note is false:
+		now gs-eye-note is true;
+		say "[i][bracket][b]NOTE[r][i]: while the number of dots on the eyes is the main thing, they also have two binary settings: green or yellow, and glowing or dimly glowing. [b]EYE EYES[r][i] will walk you through what the eyes['] different outputs mean.[close bracket][r][line break]";
+	continue the action;
+
 chapter eyeguessing
 
 eyeguessing is a number based rulebook.
@@ -622,18 +642,8 @@ rule for printing a parser error when the latest parser error is the I beg your 
 	say "Ideally I-D-L-E!";
 	the rule succeeds;
 
-report eyeing:
-	note-not-now;
-	continue the action;
 
-report eyering:
-	note-not-now;
-	continue the action;
 
-to note-not-now:
-	if gs-eye-note is false:
-		now gs-eye-note is true;
-		say "[i][bracket][b]NOTE[r][i]: the eyes have two binary settings: green or yellow, and glowing or dimly glowing. This, along with the hints, may be intuitive, but if it is not, [b]EYE EYES[r][i] will spell things out.[close bracket][line break]";
 
 to declue-here: now eyes-number of location of player is -1
 
