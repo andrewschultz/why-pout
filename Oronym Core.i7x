@@ -211,6 +211,7 @@ check drop2ing hintthing:
 	if noun is war pawn and war-pawn-uses is 0, max-down;
 	moot noun;
 	the rule succeeds;
+
 chapter taking
 
 check taking: if noun is not a hintthing, say "You never need to take anything explicitly in [this-game], though you have the option of taking two hint items. However, trying to take an item may give you a hint as to what you really need to do to acquire or use it." instead;
@@ -430,13 +431,10 @@ the sly size slice eyes are a plural-named hintthing. eyes-number of sly size sl
 
 chapter eyeing
 
-eyering is an action out of world.
+eye-the-room is a truth state that varies.
 
 understand the command "eye" as something new.
 understand the command "eyes" as something new.
-
-understand "eye" as eyering when player has slice eyes.
-understand "eyes" as eyering when player has slice eyes.
 
 eyeing is an action out of world applying to one thing.
 
@@ -465,24 +463,76 @@ eye-info
 "Yellow dots mean you have something to guess, but you won't get a point, as you haven't found the right items or assistance from other puzzles to make things work. It will be kept in [b]THINK[r]."
 "Finally, a dimly glowing reading indicates something you can change for a bonus point. It's not critical to complete [this-game][one of]. (End of hints. Next [b]EYE EYES[r] starts the hint cycle again)[or].[stopping]"
 
+definition: a thing (called th) is wortheyeing:
+	if eyes-number of th is 0 or eyes-number of th is -1, no;
+	let this-rule be eyes-rule of th;
+	process this-rule;
+	let rb-out be outcome of the rulebook;
+	if rb-out is the ready outcome, yes;
+	no;
+
+report eyeing:
+	now eye-the-room is false;
+	continue the action;
+
+carry out eyeing:
+	if eye-the-room is true:
+		if eyes-number of location of player >= -1 and eyes-number of location of player <= 1:
+			now verb-dont-print is true;
+			let mylist be the list of touchable wortheyeing things;
+			now verb-dont-print is false;
+			if number of entries in mylist is 0, say "Nothing for the general area, and [the eyes] don't point to any individual item." instead;
+			if number of entries in mylist is 1:
+				say "The eyes see nothing in the general area but seem to be wandering to [the entry 1 in mylist]." instead;
+			now verb-dont-print is true;
+			say "Nothing for the general area, though [the eyes] seem to wander between [the list of touchable wortheyeing things].";
+			now verb-dont-print is false;
+			the rule succeeds;
+		abide by the eyeguessing rulebook for eyes-number of location of player;
+	else:
+		abide by the eyeguessing rulebook for eyes-number of noun;
+	the rule succeeds;
+
+carry out eyering:
+	now eye-the-room is true;
+	try eyeing the player;
+	the rule succeeds;
+
+eyering is an action out of world.
+
+understand "eye" as eyering when player has slice eyes or slice eyes are examined.
+understand "eyes" as eyering when player has slice eyes or slice eyes are examined.
+
+section first time yellow/dim
+
+gs-ever-dim-note is a truth state that varies.
+gs-this-dim-note is a truth state that varies.
+
+gs-ever-yellow-note is a truth state that varies.
+gs-this-yellow-note is a truth state that varies.
+
 chapter eyeguessing
 
 eyeguessing is a number based rulebook.
 
 eyeguessing a number (called n):
+	now gs-this-yellow-note is false;
+	now gs-this-dim-note is false;
 	if sly size slice eyes are moot, say "But you ditched [the eyes], so you can't [b]EYE[r] any more." instead;
 	if player does not have sly size slice eyes, say "But you don't have what you need to [b]EYE[r] anything." instead;
 	if n is -1:
-		say "The eyes show nothing. You've done everything you need to [eye-with]." instead;
+		say "The eyes show nothing. You've changed up everything you need [eye-with]." instead;
 	else if n is 0 or n is 1:
-		say "The eyes show nothing. Probably don't need to do anything [eye-with]." instead;
+		say "The eyes show nothing. Probably don't need to change up anything [eye-with]." instead;
 	else if n is 2:
 		say "The eyes almost seem to light up. Perhaps you need to do something later [eye-with], when things are noticeably different." instead;
-	let dimly be whether or not n < 0;
+	if n < 0, now gs-this-dim-note is true;
 	if n < 0:
 		now n is 0 - n;
 	let this-rule be eyes-rule of location of player;
-	if current action is eyeing:
+	if eye-the-room is true:
+		now this-rule is eyes-rule of location of player;
+	else:
 		now this-rule is eyes-rule of noun;
 	now verb-dont-print is true;
 	process this-rule;
@@ -490,15 +540,14 @@ eyeguessing a number (called n):
 	let rb-out be outcome of the rulebook;
 	say "The eyes ";
 	if rb-out is the not-yet outcome or rb-out is the not-ever outcome:
-		say "light up [if dimly is true]a dim [end if]yellow";
-	else if dimly is true:
-		say "glow dimly";
+		now gs-this-yellow-note is true;
+		say "light up [if gs-this-dim-note is true]a dim [end if]yellow";
+	else if gs-this-dim-note is true:
+		say "glow dimly green";
 	else:
 		say "light up green";
 	say " and show [(n / 10) in words] dots, then [(remainder after dividing n by 10) in words] dots.";
 
-carry out eyeing:
-	abide by the eyeguessing rulebook for eyes-number of noun;
 volume requesting the score
 
 gs-score-range-note is a truth state that varies.
@@ -559,8 +608,6 @@ this is the partial-oronym-check rule:
 		say "[part-explain entry].";
 		now got-think is true;
 
-carry out eyering:
-	abide by the eyeguessing rulebook for eyes-number of location of player;
 volume waiting and empty commands
 
 go-dot-known is a truth state that varies.
