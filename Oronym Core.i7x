@@ -165,10 +165,6 @@ understand the command "drop" as something new.
 understand "drop [thing]" as drop2ing.
 understand "drop" as drop2ing.
 
-check drop2ing war pawn:
-	if noun is war pawn:
-		moot war pawn;
-		say "It blows away violently. It must've been in Zugzwang or something." instead;
 
 check drop2ing:
 	if noun is eyes:
@@ -202,7 +198,35 @@ a room has a number called eyes-number. a room has a rule called eyes-rule. eyes
 
 book war pawn
 
-the war pawn is a hintthing. description is "It's a grey chess pawn with a frown and mean glare carved in the rounded top. If it had fists, you are pretty sure they'd be doubled up in a fighting posture, but it doesn't even have arms.[paragraph break]Looking at it from many different angles gets you all sorts of weird ideas. Perhaps it could help you when you run out of them on your quest. You may wish to wait until you really need to use it, though of course, you don't want to wait too late.". eyes-number of war pawn is -42. drop-poke of war pawn is "The war pawn can get you past a tough puzzle of your choosing. Drop it anyway to resist the temptation to jump ahead?". eyes-rule of war pawn is trivially true rule.
+the war pawn is a hintthing. description is "It's a grey chess pawn. It's currently [pawn-pose].[paragraph break]Looking at it from many different angles gets you all sorts of weird ideas. Perhaps it could help you when you run out of them on your quest. You may wish to wait until you really need to use it, though of course, you don't want to wait too late.". eyes-number of war pawn is -42. drop-poke of war pawn is "The war pawn can get you past up to three tough puzzles of your choosing. Drop it anyway to resist the temptation to jump ahead?". eyes-rule of war pawn is trivially true rule.
+
+to say pawn-pose:
+	if war-pawn-available-charges is 0:
+		say "sleeping from previous use";
+	else:
+		say "[if war-pawn-available-charges is 2]very [else if war-pawn-available-charges > 2]extremely [end if]alert, with a frown and mean glare carved in the rounded top. Unlike most pawns, it has fists, doubled up in a fighting posture";
+
+to post-pawn-charge:
+	say "[line break]";
+	if war-pawn-uses >= war-pawn-max-uses:
+		say "The war pawn shrugs its shoulders, holds up the number three, waves, and runs off, making occasional diagonal jumps at unseen prey.";
+		moot war pawn;
+	else if war-pawn-available-charges <= 0:
+		say "The war pawn curls up and goes to sleep after all that excitement. It needs some time to recover.";
+	else:
+		say "The war pawn looks slightly less awake after its exertions but still ready if needed."
+
+report examining war pawn when war pawn is unexamined:
+	say "IF you wish to understand the mechanics of the war pawn, [b]KNOW PAWN[r].";
+	continue the action;
+
+report examining war pawn:
+	if war-pawn-uses is 0:
+		say "Oh, yes, you can't just [b]USE[r] the war pawn. You need a specific command, one in the spirit of [this-game].";
+	else:
+		say "You've used it [war-pawn-uses in words] time[if war-pawn-uses > 1]s[end if].";
+	continue the action;
+
 war-pawn-uses is a number that varies.
 war-pawn-max-uses is a number that varies. war-pawn-max-uses is 3.
 
@@ -210,12 +234,20 @@ to decide what number is war-pawn-available-charges:
 	let temp be (core-score * war-pawn-max-uses) - (war-pawn-uses * (core-max + 1));
 	decide on (temp + core-max) / core-max;
 
+drop-notify-text of war pawn is "It blows away violently. It must've been in Zugzwang or something.".
 
 after examining war pawn for the first time:
 	say "If you want to resist the temptation of this cheat item, [b]DROP[r] it. There is no penalty for using it.";
 	continue the action;
 
-check eyeing war pawn: say "You reflect on the irony of using a hint item on a hint item, but then, you see a result!";
+check eyeing war pawn:
+	if war-pawn-uses > 0, say "You already know to [b]WARP ON[r]." instead;
+	say "You reflect on the irony of using a hint item on a hint item, but then, you see a result!";
+
+check ting war pawn:
+	if war-pawn-available-charges is 0, say "Shh! It's (still) sleeping!" instead;
+	say "The war pawn is all about action, not talking. Say the command and it will help you if it can." instead;
+
 to check-run-rules: do nothing;
 
 chapter warponing
