@@ -1167,10 +1167,9 @@ the tall cake is a thing. description is "Wonderful. Can probably serve six or s
 
 book taking
 
-check taking:
+check taking (this is the WP specific take rejects rule):
 	if noun is row gold, say "That's greedy." instead;
 	if noun is tree small or noun is tree tall, say "Don't undo your beautifying!" instead;
-	if player does not have noun, say "Everything you need will be implicitly taken in [this-game]." instead;
 
 book touching
 

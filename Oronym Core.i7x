@@ -208,6 +208,10 @@ check drop2ing hintthing:
 		say "Okay, there will be no nag next time you try to drop [the noun].";
 	the rule succeeds;
 
+chapter taking
+
+check taking: if noun is not a hintthing, say "You never need to take anything explicitly in [this-game], though you have the option of taking two hint items. However, trying to take an item may give you a hint as to what you really need to do to acquire or use it." instead;
+
 volume hint items and properties
 
 a thing has a number called eyes-number. a thing has a rule called eyes-rule. eyes-rule of a thing is usually autoreject rule.
