@@ -258,6 +258,36 @@ rule for printing a parser error when player has war pawn:
 			say "There's a special command to use the pawn, in the spirit of [this-game].";
 	continue the action;
 
+chapter nopeoning
+
+gs-nope-on-warn is a truth state that varies.
+gs-nope-on is a truth state that varies.
+
+nopeoning is an action out of world.
+
+understand the command "nope on" as something new.
+
+understand "nope on" as nopeoning.
+
+check nopeoning when gs-nope-on-warn is false:
+	now gs-nope-on-warn is true;
+	say "Ah! Good job! You've found the secret command to REALLY get rid of the war pawn. [if war-pawn-uses > 0]Sadly, this won't get you a bonus point, since you already used the pawn[else]This will get you a bonus point[end if]. Of course, you won't be able to use the pawn after this. Ditch the pawn?";
+	if the player no-consents:
+		say "Okay.";
+		continue the action;
+	say "Okay. No warning next time.";
+
+carry out nopeoning:
+	say "The war pawn jumps out of your hand and down to the ground with a perfect feet-first landing. It salutes you and then runs off, taking occasional diagonal jumps to gobble up vulnerable ants and insects.";
+	now gs-nope-on is true;
+	if war-pawn-uses is 0:
+		up-min;
+		follow the score and thinking changes rule;
+	moot war pawn;
+	the rule succeeds;
+
+to nope-check: if gs-nope-on is false, say "You had a way to dismiss the war pawn other than [b]DROP[r] to get a bonus point. NB: to do so you need not to actually use it."
+
 chapter warponing
 
 warponing is an action out of world.
