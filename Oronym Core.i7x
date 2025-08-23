@@ -250,6 +250,14 @@ check ting war pawn:
 
 to check-run-rules: do nothing;
 
+rule for printing a parser error when player has war pawn:
+	if the player's command includes "pawn":
+		if gs-war-pawn-try is true:
+			say "[b]WARP ON[r], which you tried earlier, is the way to use the pawn.";
+		else:
+			say "There's a special command to use the pawn, in the spirit of [this-game].";
+	continue the action;
+
 chapter warponing
 
 warponing is an action out of world.
@@ -413,6 +421,20 @@ report verbsing when player has eyes:
 report verbsing when player has war pawn:
 	say "With [the war pawn], [if gs-war-pawn-try is true][b]WARP ON[r][else]there must be a way[end if] to gain insight to pass a tricky puzzle.";
 	continue the action;
+
+volume generalizable parser errors
+
+rule for printing a parser error when the latest parser error is the only understood as far as error:
+	if action-to-be is the ting action:
+		say "It looks like you tried to ask about a subject. [this-game] doesn't support detailed conversation like [b]ASK THEM ABOUT THAT[r]. Only [b]ASK THEM[r] or [b]T[r]/[b]TALK THEM[r].";
+		the rule succeeds;
+	say "The first word was a valid command that could stand on its own. The second may be unnecessary, or a typo.";
+
+to say suggested-cantsee-command:
+	if action-to-be is the eyeing action:
+		say "[b]EYE[r] without a subject for the room, or to see what needs changing in the room";
+	else:
+		say "[b]L[r] or [b]LOOK[r]"
 
 Oronym Core ends here.
 
