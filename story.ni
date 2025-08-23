@@ -1208,14 +1208,13 @@ volume parser errors
 
 book general
 
-rule for printing a parser error when the latest parser error is the only understood as far as error:
-	if action-to-be is the ting action:
-		say "It looks like you tried to ask about a subject. [this-game] doesn't support detailed conversation like [b]ASK THEM ABOUT THAT[r]. Only [b]ASK THEM[r] or [b]T[r]/[b]TALK THEM[r].";
-		the rule succeeds;
-	say "You may have used a word or two too many or made a typo in the final word.";
+the WP pardon begging rule is listed before the Oronym pardon begging rule in the for printing a parser error rulebook.
 
-rule for printing a parser error when the latest parser error is the I beg your pardon error:
-	say "'Hum, blank,' you muse. No humble ankh pops into your hands, sadly.";
+rule for printing a parser error when the latest parser error is the I beg your pardon error (this is the WP pardon begging rule):
+	if core-score < 2:
+		say "'Hum, blank,' you muse. No humble ankh pops into your hands, sadly.";
+		the rule succeeds;
+	continue the action;
 
 book specific
 
