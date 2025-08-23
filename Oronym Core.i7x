@@ -173,9 +173,9 @@ volume meta rooms
 
 Reap Rest is a room. moot-room is Reap Rest. "You should never get here."
 
-volume drop replacement
+volume drop and take replacement
 
-a hintthing is a kind of thing. a hintthing can be dropwarned. a hintthing is usually not dropwarned. a hintthing has text called drop-poke.
+a hintthing is a kind of thing. a hintthing can be dropwarned. a hintthing is usually not dropwarned. a hintthing has text called drop-poke. a hintthing has text called drop-notify-text.
 
 drop2ing is an action applying to one thing.
 
@@ -185,10 +185,7 @@ understand "drop" as drop2ing.
 
 
 check drop2ing:
-	if noun is eyes:
-		moot eyes;
-		say "'Ire, ol['] eye. Roll!' you mutter. The eyes roll away.[paragraph break]'A dumb aid, umm,' you think to yourself." instead;
-	say "You don't need to [b]DROP[r] anything in [this-game]. Most of what gets in your inventory will disappear when used successfully.[if player has war pawn]. However, you may [b]DROP[r] the war pawn to remove the temptation to skip a puzzle[end if]." instead;
+	say "You don't need to [b]DROP[r] anything in [this-game]. Most of what gets in your inventory will disappear when used successfully[if player has war pawn]. However, you may [b]DROP[r] the war pawn to remove the temptation to skip a puzzle[end if]." instead;
 
 rule for supplying a missing noun when drop2ing:
 	now noun is the player;
@@ -197,17 +194,20 @@ chapter drop2ing a hintthing
 
 a wordtwisting rule (this is the autoreject rule): not-yet;
 
-check drop2ing hintthing:
-	if noun is dropwarned, continue the action;
+check drop2ing not dropwarned hintthing:
+	say "[drop-poke of noun][line break]";
 	now noun is dropwarned;
-	say "[drop-poke of noun]";
 	if the player switch-consents:
-		say "Okay.";
-		moot noun;
+		continue the action;
 	else:
 		say "Okay, there will be no nag next time you try to drop [the noun].";
 	the rule succeeds;
 
+check drop2ing hintthing:
+	say "[drop-notify-text of noun][line break]";
+	if noun is war pawn and war-pawn-uses is 0, max-down;
+	moot noun;
+	the rule succeeds;
 chapter taking
 
 check taking: if noun is not a hintthing, say "You never need to take anything explicitly in [this-game], though you have the option of taking two hint items. However, trying to take an item may give you a hint as to what you really need to do to acquire or use it." instead;
