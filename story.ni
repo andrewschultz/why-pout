@@ -130,8 +130,6 @@ book other regular verbs to zap
 
 understand the command "pull" as something new.
 understand the command "push" as something new.
-understand the command "show" as something new.
-understand the command "say" as something new.
 
 book taking and dropping
 
@@ -920,13 +918,6 @@ report attacking: say "You aren't built for that[if pals-made > 0], but maybe yo
 chapter eating
 
 [redefining Inform's eat, which implicitly takes in 6G. Since we can't actually eat/consume, we can just use a dummy verb.]
-
-understand the command "eat" as something new.
-understand the command "eat [thing]" as something new.
-
-understand "eat [thing]" as noteating.
-
-noteating is an action applying to one thing.
 
 rule for supplying a missing noun when noteating:
 	if player has tall cake:

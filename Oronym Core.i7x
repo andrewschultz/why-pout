@@ -36,11 +36,25 @@ to say generic-parser-error: say "That thought/action/observation/request brings
 
 volume I7 standard low-usage default verbs
 
+book verbs to get rid of completely
+
+understand the command "show" as something new.
+understand the command "say" as something new.
+
+book eating redefined
+
+understand the command "eat" as something new.
+understand the command "eat [thing]" as something new.
+
+understand "eat [thing]" as noteating.
+
+noteating is an action applying to one thing.
+
 book senses
 
 the block listening rule is not listed in any rulebook.
 
-carry out listening: say "You hear only a taunting 'Eh? CLUES?! Ache! Lose!'";
+carry out listening: say "A disembodied voice only you can hear taunts 'Eh? CLUES?! Ache! Lose!'" instead;
 
 the block smelling rule is not listed in any rulebook.
 
