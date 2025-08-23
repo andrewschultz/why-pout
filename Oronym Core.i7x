@@ -217,9 +217,13 @@ check taking: if noun is not a hintthing, say "You never need to take anything e
 
 volume hint items and properties
 
-a thing has a number called eyes-number. a thing has a rule called eyes-rule. eyes-rule of a thing is usually autoreject rule.
+a thing has a number called eyes-number. a thing has a rule called eyes-rule. eyes-rule of a thing is usually autoreject rule. eyes-number of a thing is usually 0.
 
-a room has a number called eyes-number. a room has a rule called eyes-rule. eyes-rule of a room is usually autoreject rule.
+a room has a number called eyes-number. a room has a rule called eyes-rule. eyes-rule of a room is usually autoreject rule. eyes-number of a room is usually 0.
+
+check noteating a hintthing:
+	if noun is eyes, say "This is not an EctoComp entry." instead;
+	if noun is pawn, say "Eating pawns can help win the endgame in chess, but not here." instead;
 
 book war pawn
 
@@ -272,6 +276,8 @@ check eyeing war pawn:
 check ting war pawn:
 	if war-pawn-available-charges is 0, say "Shh! It's (still) sleeping!" instead;
 	say "The war pawn is all about action, not talking. Say the command and it will help you if it can." instead;
+
+check ting eyes: say "They have a lot to show you, but they can't say a thing." instead;
 
 to check-run-rules: do nothing;
 
