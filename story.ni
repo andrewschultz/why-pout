@@ -1312,14 +1312,9 @@ for printing a locale paragraph about a follower (called fo):
 
 volume scores
 
-check requesting the score:
-	say "You have scored [core-score] of [core-max] necessary points";
-	if cur-bonus > 0:
-		say " and [cur-bonus] bonus point[if cur-bonus is not 1]s[end if]";
-	if pre-acts > -1:
-		say ". You also performed [pre-acts] of [pre-max] actions ahead of time";
-	say ".";
-	the rule succeeds;
+report requesting the score:
+	if pre-acts > -1, say "You also performed [pre-acts] of [pre-max] actions ahead of time." ;
+	continue the action;
 
 volume endgame
 

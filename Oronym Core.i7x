@@ -446,6 +446,23 @@ eyeguessing a number (called n):
 
 carry out eyeing:
 	abide by the eyeguessing rulebook for eyes-number of noun;
+volume requesting the score
+
+gs-score-range-note is a truth state that varies.
+
+the announce the score rule is not listed in any rulebook.
+
+carry out requesting the score:
+	say "You have scored [core-score] of [core-max] necessary points";
+	if cur-bonus > 0:
+		say " and [cur-bonus] of a possible [max-bonus] bonus point[if max-bonus is not 1]s[end if]";
+	else:
+		say ", though you haven't found any of the [max-bonus] bonus points yet";
+	say ".";
+	if gs-score-range-note is false:
+		say "[line break]The upper right status line provides a range of possible final scores, based on bonus points gained and available.";
+		now gs-score-range-note is true;
+	if doable-hinted > 0, say "[line break]You also figured [doable-hinted in words] thing[if doable-hinted > 1]s[end if] you weren't ready for yet. Revisit [if doable-hinted is 1]it[else]them[end if] with [b]THINK[r].";
 	the rule succeeds;
 
 carry out eyering:
