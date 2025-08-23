@@ -483,6 +483,47 @@ carry out requesting the score:
 	if doable-hinted > 0, say "[line break]You also figured [doable-hinted in words] thing[if doable-hinted > 1]s[end if] you weren't ready for yet. Revisit [if doable-hinted is 1]it[else]them[end if] with [b]THINK[r].";
 	the rule succeeds;
 
+volume thinking
+
+got-think is a truth state that varies.
+
+carry out thinking (this is the right phrase wrong time rule):
+	now got-think is false;
+	say "You try and think of stuff you tried, but the time wasn't quite right, or maybe you only figured it half-way.[paragraph break]";
+	repeat through table of main oronyms:
+		if think-cue entry is true:
+			now got-think is true;
+			if idid entry is true:
+				say "Oops, I somehow forgot to reset the think-cue entry for [w1 entry] [w2 entry]. This is a trivial bug in under-the-hood code that won't cause an unwinnable state or anything--but still, I'd like to know so I can fix it!";
+				now think-cue entry is false;
+			else:
+				if there is a think-advice entry:
+					say "[think-advice entry][line break]";
+				else:
+					say "[first-of-ors of w1 entry] [first-of-ors of w2 entry] is something you tried before it was perfectly ready. That I can offer no further details is a BUG I need to fix--I need to add a think-advice entry.";
+	process the partial-oronym-check rule;
+
+report thinking:
+	if got-think is false:
+		say "Nothing comes to mind."
+
+this is the partial-oronym-check rule:
+	repeat through table of main oronyms:
+		if think-cue entry is true or idid entry is true, next;
+		if first-exact entry is false and first-close entry is false and second-exact entry is false and second-close entry is false, next;
+		let rights be (boolval of first-exact entry + boolval of second-exact entry);
+		let almosts be 0;
+		if first-close entry is true and first-exact entry is false, increment almosts;
+		if second-close entry is true and second-exact entry is false, increment almosts;
+		if rights is 2:
+			say "You feel you've got the words right on separate occasions for ";
+		else if rights is 1:
+			say "You must have one word right[if almosts is 1] and one word close[end if] for ";
+		else if rights is 0:
+			say "You must be close with [if almosts is 1]one word[else]both words[end if] for ";
+		say "[part-explain entry].";
+		now got-think is true;
+
 carry out eyering:
 	abide by the eyeguessing rulebook for eyes-number of location of player;
 volume waiting and empty commands
