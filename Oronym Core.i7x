@@ -399,6 +399,7 @@ carry out warponing:
 				say "[line break]Remember, to keep the war pawn/reset the charges, use WP.";
 			follow the score and thinking changes rule;
 			game-specific-cleanup;
+			game-specific-post-point-debugging-check;
 			if undo-okayed is false, prevent undo;
 			the rule succeeds;
 		else if there is a best-room entry and best-room entry is location of player:
@@ -417,6 +418,10 @@ carry out warponing:
 
 rule for deciding whether to allow undo:
 	if undo is prevented, say "Allowing you to undo using the war pawn is a bit too much of a loophole. There's a walkthrough. Or you can save and restore a lot before warping."
+
+to game-specific-cleanup: do nothing;
+
+to game-specific-post-point-debugging-check: do nothing;
 
 section warpon debug check(s) - not for release
 
@@ -667,9 +672,7 @@ rule for printing a parser error when the latest parser error is the I beg your 
 
 volume command to eye everything you can - not for release
 
-chapter eye all
-
-eyeall-test is a truth state that varies
+eyeall-test is a truth state that varies.
 
 test e with "how so/ea".
 
