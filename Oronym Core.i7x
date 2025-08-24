@@ -252,7 +252,7 @@ to post-pawn-charge:
 		say "The war pawn looks slightly less awake after its exertions but still ready if needed."
 
 report examining war pawn when war pawn is unexamined:
-	say "IF you wish to understand the mechanics of the war pawn, [b]KNOW PAWN[r].";
+	say "IF you wish to understand the mechanics of the war pawn, [b]KNOW PAWN[r]. (This command will be in [b]VERBS[r] if you forget.)";
 	continue the action;
 
 report examining war pawn:
@@ -594,7 +594,7 @@ report verbsing when player has eyes:
 	say "Since you have [the eyes], [b]EYE[r] can be used on any item or person. Without an argument, it looks at the whole surrounding area. If you don't need to act on the room, it will flag specific items you can change.";
 	continue the action;
 
-report verbsing when player has pawn: say "A special command is required to use the war pawn. [if core-score > 4]Now[else]Once[end if]you've got a few points, you shouldn't have much trouble figuring it[if core-score < core-max / 5], though you may wish to save it for later[end if].";
+report verbsing when player has pawn: say "A special command is required to use the war pawn. [if core-score > 4]Now[else]Once[end if]you've got a few points, you shouldn't have much trouble figuring it[if core-score < core-max / 5], though you may wish to save it for later[end if][if war pawn is examined]. You can [b]KNOW PAWN[r] to see its mechanics[end if].";
 
 volume requesting the score
 
@@ -637,7 +637,8 @@ carry out thinking (this is the right phrase wrong time rule):
 
 report thinking:
 	if got-think is false:
-		say "Nothing comes to mind."
+		say "Nothing comes to mind.";
+	continue the action;
 
 this is the partial-oronym-check rule:
 	repeat through table of main oronyms:
