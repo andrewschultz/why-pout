@@ -34,6 +34,11 @@ volume strings in common
 
 to say generic-parser-error: say "That thought/action/observation/request brings up nothing. [this-game] has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try [b]VERBS[r]"
 
+to general-thanks:
+	say "[line break][b]GENERAL THANKS[r]:[paragraph break]";
+	say "Thanks to everyone past and future involved in the administration of IFComp.";
+	say "Thanks to the I7 board on Intfiction.org for their help, as well as the people in the general topics as we discussed our plans.";
+
 volume I7 standard low-usage default verbs
 
 book verbs to get rid of completely
@@ -574,7 +579,11 @@ to declue-here: now eyes-number of location of player is -1
 
 to declue (th - a thing): now eyes-number of th is -1
 
-book report / verbs rules
+volume report (metaverb) rules in common
+
+report abouting:
+	say "[line break][b]CREDITS[r] lists people who helped make [this-game] a reality, or at the very least, a better version than it would've been without them. [b]EXT[r] lists the extensions used, and [b]VERSION[r]/[b]VERSIONS[r] shows version information. [b]VERBS[r] describes what actions are best used with this stripped-down parser.";
+	continue the action;
 
 report verbsing when player has eyes:
 	say "Since you have [the eyes], [b]EYE[r] can be used on any item or person. Without an argument, it looks at the whole surrounding area. If you don't need to act on the room, it will flag specific items you can change.";

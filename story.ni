@@ -722,28 +722,25 @@ carry out abouting:
 	say "[line break]Once I realized bigger projects weren't on the cards for IFComp 2024, I focused on something I could handle. I wound up making forty or so puzzle instead of the usual eighty.";
 	say "[line break]While the drip of ideas started February, 2020, according to my notes, I wasn't getting anything really original, or so it seemed. But the idea was always there. In my weekly writing file 20240429.txt, there's the game's title, and that's when significant ideas started appearing. But it wasn't until I registered for IFComp in July that ideas started clicking together. Deadlines are funny like that!";
 	say "[line break]Like most of my games, [this-game] rates merciful on the Zarfian cruelty scale. However, in this case, I want the puzzles to be more merciful in terms of general difficulty on the player's psyche than usual."
+	say "[line break]I originally thought this would be the only game of its sort. But more ambitious projects stalled out, and so [i]Us Too[r] was my IFComp 2025 entry. It helped with [this-game], too: I slowly built [if hype lane is unvisited]a core file for reusable code (warning: GitHub link ahead may be a spoiler)[else]Oronym Code.i7x (warning: may spoil a bonus point)[end if] that you can find at [ghbase]/why-pout.";
+	say "[line break]I also have a similar game planned in Adventuron for EctoComp 2025 Petite Mort (four hours of programming,) with five rooms and six points. It has graphics, too. There might be a second as well, as I had no time for more ambitious projects.";
 
-report abouting:
+report abouting (this is the WP abouting additional rule):
 	if bruise wares is off-stage:
-		say "Note that an optional room will appear about midway through the game. It may contain profanity, which I hope is amusing, but I don't blame you if you wish to skip it.[paragraph break]";
-	say "[email] is my email, and [ghbase]/why-pout is the github site, where you can report issues. I'm open to transcripts.";
-	say "[line break][b]CREDITS[r] lists people who helped make [this-game] a reality, or a better version than it would've been without them.  [b]EXT[r] shows the extensions listed, and [b]VERSION[r] or [b]VERSIONS[r] shows version info.";
+		say "Note that an optional room will appear about midway through the game. It may contain profanity, which I hope is amusing, but I don't blame you if you wish to skip it. It's only there for the bonus points.[paragraph break]";
 	continue the action;
 
 chapter creditsing
 
 carry out creditsing:
 	say "Thanks to Michael Baltes, Clem Bing-Storrs, Wade Clarke (who also tested post-release,) Hanon Ondricek, P. B. Parjeter, Fred Snyder, and Daniel Stelzer for testing. They found stuff I just didn't have the time to find, or stuff I convinced myself I'd checked, honest I did, or even broke down cases for stuff where I was muddled and not sure how to test stuff. Oh and they inspired several ideas, too. It's always hard to ask someone for their time and energy, but I appreciate it so much![paragraph break]Michael, Fred and Daniel had IFComp [']24 entries as well, and I always appreciate being able to trade testing with a fellow competitor, so it doesn't feel cutthroat.";
-	say "[line break]B. J. Best and Arthur DiBianca (he is also in IFComp [']24,) who've written a lot of good stuff, both found bugs within two hours of IFComp starting. So thanks to them!";
-	say "[line break]Viv Dunstan, yet another fellow IFComp [']24 author, found some nontrivial bugs I fixed mid-comp and suggested a more granular approach to [b]THINK[r], implemented post-comp.";
+	say "[line break]B. J. Best and Arthur DiBianca (a fellow IFComp participant, too,) who've written a lot of good stuff, both found bugs within two hours of IFComp starting. So thanks to them!";
+	say "[line break]Viv Dunstan, yet another fellow IFComp [']24 author, found some nontrivial bugs I fixed mid-comp and suggested a more granular approach to [b]THINK[r], implemented in release 5.";
 	say "[line break]DemonApologist, who wrote reviews for all IFComp [']24[']s entries, and Wolfbiter, who also ran the gauntlet, found nontrivial bugs, too.";
 	say "[line break]Tabitha found several bugs in post-comp versions which were a great catalyst for putting releases out quickly.";
 	say "[line break]The cover art is my fault, and my fault alone.";
 	say "[line break]Thanks also to David Welbourn for writing a walkthrough during IFComp. He has a Patreon account at patreon.com/dswxyz. Support it if you can!";
-	say "[line break][b]GENERAL THANKS[r]:[paragraph break]";
-	say "Thanks to everyone past and future involved in the administration of IFComp.";
-	say "Thanks to the I7 board on Intfiction.org for their help, as well as the people in the general topics as we discussed our plans.";
-	the rule succeeds;
+	general-thanks;
 
 chapter hinting
 
@@ -774,13 +771,14 @@ report verbsing when can-lump-party:
 chapter versioning
 
 carry out versioning:
-	say "Pretty much every version has trivial flavor tweaks added, so I'm just listing the big things.";
+	say "Pretty much every version has trivial flavor tweaks added, as well as twenty-eight more bits of random dialogue among your companions, so I'm just listing the big things.";
 	say "[line break]Version 1 was released to IFComp on August 28, 2024.";
 	say "[line break]Version 2 was released on October 18, 2024. It rolls up many fixes made during IFComp but also includes a hint device and [b]UNDO[r] protection for using the pawn to advance through a puzzle. For version 1, I'd had a great idea for a hint device. The only thing not-great was the timing: six hours before the comp deadline!";
 	say "[line break]Version 3 was released on October 22, 2024. It includes one more point in the optional room, as well as a big boss there, of sorts. There are some trivial fixes, too.";
 	say "[line break]Version 4 was released on November 9, 2024. It features game-mechanic-relevant dialogue between friendly NPCs, as well as general text flavor tweaks.";
 	say "[line break]Version 5 was released on November 12, 2024. It contains more granular hints about what you got right, e.g. one word right, both words right, or either very close.";
-	say "[line break]Version 6 will be release on November xx, 2024. It adds a point in the optional area, allows for a bypass, and allows COMPANIONS as a noun. It fixes trivial but persistent line break issues too.";
+	say "[line break]Version 6 was released on May 18, 2024. It adds a point in the optional area, allows for a bypass, and allows COMPANIONS as a noun. It fixes trivial but persistent line break issues too.";
+	say "[line break]Version 7 should be released early during 2025 IFComp. It contains a lot of fixes from my IFComp 2025 entry, [i]Us Too[r], and adds a bonus point for knowing how to ditch the war pawn. adds a point in the optional area, allows for a bypass, and allows COMPANIONS as a noun. It fixes trivial but persistent line break issues too.";
 	say "[line break]For details on fixes, see fixes.txt, which should be packaged with the binary. Or visit the GitHub site https://github.com/andrewschultz/why-pout, which may provide a view of bugs to be fixed for potential future releases. Although as of release 6, I don't want this project to drag on, fun as it's been. There are other games to write!";
 	the rule succeeds;
 
