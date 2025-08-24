@@ -355,8 +355,6 @@ understand the command "warp on" as something new.
 
 understand "warp on" as warponing when war pawn is not off-stage or debug-state is true.
 
-every turn: say "[war-pawn-uses].";
-
 check warponing:
 	if war pawn is moot, say "You dream of having the war pawn help you at your current impasse. Alas, it is gone. You then picture it cheering all 'I knew you could do it' once you figure what to do, and that makes you feel better." instead;
 	if war-pawn-available-charges < 0:
@@ -689,6 +687,38 @@ this is the eyeall rule:
 definition: a thing (called th) is eyeable: [this can and should be changed by game, so there is less of a text dump]
 	if th is touchable, yes;
 	no;
+
+volume THINK 1/2
+
+the check forks rule is listed first in the for printing a parser error rulebook.
+
+gs-ever-partial-noted is a truth state that varies.
+
+rule for printing a parser error (this is the check forks rule):
+	now partial-row is 0;
+	now got-partial-done is false;
+	abide by the main-wordtwisting-checker rule for table of main oronyms;
+	[if mrlp is valid, abide by the main-wordtwisting-checker rule for spoontable of mrlp;]
+	if partial-row > 0:
+		if partial-now is true:
+			say "A voice in your head encourages you: 'Seem, or see, more!' You've got SOMETHING right, here.";
+			if gs-ever-partial-noted is false:
+				say "[line break][i][bracket][b]NOTE[r][i]: this and other half-right guesses will be tracked in [b]THINK[r][i] until you figure the right phrase.[close bracket][line break]";
+				now gs-ever-partial-noted is true;
+		else:
+			if debug-state is true:
+				choose row partial-row in table of main oronyms;
+				say "(DEBUG: [check-rule entry] tripped) ";
+			say "Not much happens, but you feel like that might help, at least halfway, some time later. Much later, or just a little, you can't tell.";
+		if partial-but-got-before is true:
+			say "[line break][i][bracket][b]NOTE[r][i]: you've actually already figured both words before. [b]THINK[r][i] may refresh your memory.[close bracket][i][line break]";
+		the rule succeeds;
+	if got-partial-done is true:
+		if debug-state is true, say "[partial-row] row ...";
+		if number of words in the player's command < 4:
+			say "Hmm, no, you already did that, or something like that. You'll know if and when you need to flip between things.";
+			the rule succeeds;
+	continue the action;
 
 volume generalizable parser errors
 
