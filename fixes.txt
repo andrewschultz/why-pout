@@ -1,6 +1,21 @@
 List of in-comp and post-comp updates
 
-11/11/2024 new release (5.00)
+5/18/2025 new release (6.00)
+--fixed case where the game still tried to "help" with a half-right prompt for a solved puzzle
+--you now are told how many friends you (still) need, if you figure what to do with your name or the "worm" room early
+--you can now skip the optional area and gain the optional friend if you read the sign twice and solve a puzzle
+--name change for said optional companion once you leave optional area
+--fixes from a few transcripts, including game text clarity
+--the game now recognizes COMPANIONS, a concept alluded to in the game text and now treated as an item unlistable in the inventory
+--fixed line spacing issues (bug in core code)
+--more tweaking of standard verb rejects (ATTACK in particular)
+--item allegedly revealed by lode ore was not moved to Wolf Rock
+--minor EYE (thing) bugs fixed
+--specific "mistake" rejects for good guesses
+--made it clear the why-division at the end was unsolvable without prior prep
+--alternate solutions for 2nd room 1st point / room below hub
+
+11/12/2024 new release (5.00)
 --added more granular guess information to THINK (note 1-2 words guessed right, 1-2 close guesses)
 --LOAN room has better description that keeps pace with your progress
 --clarified "mice" seen as one entity, "follow/follows" text fixes
