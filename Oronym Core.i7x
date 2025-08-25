@@ -24,6 +24,8 @@ a sentient is a kind of thing.
 
 a sentient can be hostile, agreeable, impressable or neutral. a sentient is usually neutral.
 
+rule for deciding whether all includes a sentient when taking: it does not; [disable TAKE ALL]
+
 volume globals
 
 gs-war-pawn-try is a truth state that varies.
@@ -196,7 +198,6 @@ understand "drop" as drop2ing.
 
 understand the command "throw" as something new.
 understand the command "discard" as something new.
-understand the commands "throw" and "discard" as "drop".
 
 check drop2ing:
 	say "You don't need to [b]DROP[r] anything in [this-game]. Most of what gets in your inventory will disappear when used successfully[if player has war pawn]. However, you may [b]DROP[r] the war pawn to remove the temptation to skip a puzzle[end if]." instead;
@@ -385,8 +386,8 @@ carry out warponing:
 		process the check-rule entry;
 		let vr be the outcome of the rulebook;
 		if vr is the ready outcome:
-			if think-cue entry is true:
-				say "[one of]The war pawn glows hot in your hand. You drop it and pick it up. Why didn't it give a hint?[paragraph break]As you [b]THINK[r] a bit, you wonder if some things you tried, things that seemed like they should work, might work now.[or]The war pawn glows hot in your hand again. You must've made more progress than you assumed--good time to [b]THINK[r], again.[stopping]";
+			if think-cue entry is true or (first-exact entry is true and second-exact entry is true):
+				say "[one of]The war pawn glows hot in your hand, then taps its head several times. You feel slightly insulted. Why didn't it give a hint?[paragraph break]As you [b]THINK[r] a bit, you [if think-cue entry is false]realize you had figured something by halves and never put it together--perhaps you can [b]THINK[r] to see what[else]wonder if some things you tried, things that seemed like they should work, might work now[end if]. Perhaps the war pawn is just making sure its help is not wasted![or]The war pawn glows hot in your hand and taps its head again. You must've made more progress than you assumed--if you [b]THINK[r], you might realize what you can do now.[stopping]";
 				the rule succeeds;
 			say "After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: ";
 			say "[b][first-of-ors of w1 entry]";
@@ -456,8 +457,8 @@ understand the command "eyes" as something new.
 
 eyeing is an action out of world applying to one thing.
 
-understand "eye [thing]" as eyeing when player has slice eyes.
-understand "eyes [thing]" as eyeing when player has slice eyes.
+understand "eye [thing]" as eyeing when eyes are touchable.
+understand "eyes [thing]" as eyeing when eyes are touchable.
 
 check eyeing eyes when player does not have eyes and eyes are touchable:
 	say "(taking the eyes first)[paragraph break]";
