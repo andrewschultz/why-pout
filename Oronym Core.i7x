@@ -489,7 +489,17 @@ definition: a thing (called th) is wortheyeing:
 	if rb-out is the ready outcome, yes;
 	no;
 
-report eyeing:
+the see if EYE is in THINK rule is listed first in the report eyeing rulebook.
+
+report eyeing (this is the see if EYE is in THINK rule):
+	let rule-to-look be eyes-rule of location of player;
+	if eye-the-room is false:
+		let rule-to-look be eyes-rule of noun;
+	choose row with check-rule of rule-to-look in table of main oronyms;
+	if think-cue entry is true or (first-exact entry is true and second-exact entry is true):
+		say "Hmm. After using the eyes, you realize you may've already worked things out. Maybe [b]THINK[r] and revisit what you tried.";
+		now eye-the-room is true;
+		the rule succeeds;
 	now eye-the-room is false;
 	continue the action;
 
