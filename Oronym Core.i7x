@@ -55,6 +55,12 @@ understand "eat [thing]" as noteating.
 
 noteating is an action applying to one thing.
 
+book entering
+
+the can't enter what's not enterable rule is not listed in any rulebook.
+
+check entering: say "You don't explicitly need to [b]ENTER[r] anything in [this-game]." instead;
+
 book senses
 
 the block listening rule is not listed in any rulebook.
