@@ -145,7 +145,7 @@ every turn when can-second-dialogue (this is the further table random dialogue r
 	if gs-full-chat-notify is true, continue the action;
 	now gs-full-chat-notify is true;
 	if missed-this-cycle > 0:
-		say "[i][bracket][b]NOTE[r][i]: you [if shrewd orc is friendly]missed [missed-this-cycle][else]saw about three-quarters of the[end if] random additional chat[if missed-this-cycle > 1]s[end if], because you didn't [if orc is friendly]have the orc along for it all[else]find an additional optional companion[end if]. If you want to see the rest, it's in the source code on my GitHub site.[close bracket][r][line break]";
+		say "[i][bracket][b]NOTE[r][i]: the dialogue text will now cycle. You [if shrewd orc is friendly]missed [missed-this-cycle][else]saw about three-quarters of the[end if] random additional chat[if missed-this-cycle > 1]s[end if], because you didn't [if orc is friendly]have the orc along for it all, which is why no dialogue showed up every four turns. You hadn't gotten one member in the selected random companion pairs to join[else]find an additional optional companion[end if]. If you want to see/revisit all this without a long re-playthrough, it's in Why Pout Random Text.i7x at [ghbase]/why-pout. I hope you enjoyed it, whether you just typed Z a lot or were adventuring through it all.[close bracket][r][line break]";
 		now missed-this-cycle is 0;
 	else:
 		say "[i][bracket][b]NOTE[r][i]: you've seen all the random dialogues.[close bracket][r][line break]";
