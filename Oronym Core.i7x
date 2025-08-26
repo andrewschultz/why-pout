@@ -321,7 +321,7 @@ understand "know pawn" as knowpawning when player has war pawn.
 carry out knowpawning:
 	increment knowpawn-table-row;
 	choose row knowpawn-table-row in table of knowpawn chat;
-	say "[kp-chat entry] ([knowpawn-table-row]/[number of rows in table of knowpawn chat])";
+	say "[kp-chat entry] ([knowpawn-table-row]/[number of rows in table of knowpawn chat][one of], [b]X PAWN[r] again (or [b]G[r] repeats a command) to see more[or][stopping])";
 	if knowpawn-table-row is number of rows in table of knowpawn chat:
 		say "[one of] (end of pawn advice. It will now loop)[or][stopping]";
 		now knowpawn-table-row is 0;
@@ -475,7 +475,7 @@ eye-table-num is a number that varies.
 check eyeing eyes:
 	increment eye-table-num;
 	choose row eye-table-num in table of eye help;
-	say "[eye-info entry] ([eye-table-num]/[number of rows in table of eye help])[line break]";
+	say "[eye-info entry] ([eye-table-num]/[number of rows in table of eye help][one of], [b]EYE EYES[r] again (or [b]G[r] repeats a command) to see more[or][stopping])[line break]";
 	if eye-table-num is number of rows in table of eye help, now eye-table-num is 0;
 	the rule succeeds;
 
