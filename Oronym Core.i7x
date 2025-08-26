@@ -241,12 +241,14 @@ a thing has a number called eyes-number. a thing has a rule called eyes-rule. ey
 a room has a number called eyes-number. a room has a rule called eyes-rule. eyes-rule of a room is usually autoreject rule. eyes-number of a room is usually 0.
 
 check noteating a hintthing:
-	if noun is eyes, say "This is not an EctoComp entry." instead;
+	if noun is sly size slice eyes, say "[this-game] is an IFComp entry, not an EctoComp entry." instead;
 	if noun is pawn, say "Eating pawns can help win the endgame in chess, but not here." instead;
 
 book war pawn
 
 the war pawn is a hintthing. description is "It's a grey chess pawn. It's currently [pawn-pose].[paragraph break]Looking at it from many different angles gets you all sorts of weird ideas. Perhaps it could help you when you run out of them on your quest. You may wish to wait until you really need to use it, though of course, you don't want to wait too late.". eyes-number of war pawn is -42. drop-poke of war pawn is "The war pawn can get you past up to three tough puzzles of your choosing. Drop it anyway to resist the temptation to jump ahead?". eyes-rule of war pawn is trivially true rule.
+
+gs-war-pawn-used is a truth state that varies.
 
 to say pawn-pose:
 	if war-pawn-available-charges is 0:
@@ -618,7 +620,7 @@ report verbsing when player has eyes:
 	say "Since you have [the eyes], [b]EYE[r] can be used on any item or person. Without an argument, it looks at the whole surrounding area. If you don't need to act on the room, it will flag specific items you can change.";
 	continue the action;
 
-report verbsing when player has pawn: say "A special command is required to use the war pawn. [if core-score > 4]Now[else]Once[end if]you've got a few points, you shouldn't have much trouble figuring it[if core-score < core-max / 5], though you may wish to save it for later[end if][if war pawn is examined]. You can [b]KNOW PAWN[r] to see its mechanics[end if].";
+report verbsing when player has pawn: say "A special command is required to use the war pawn. [if core-score > 4]Now[else]Once[end if] you've got a few points, you shouldn't have much trouble figuring it[if core-score < core-max / 5], though you may wish to save it for later[end if][if war pawn is examined]. You can [b]KNOW PAWN[r] to see its mechanics[end if].";
 
 volume requesting the score
 
@@ -675,9 +677,9 @@ this is the partial-oronym-check rule:
 		if rights is 2:
 			say "You feel you've got the words right on separate occasions for ";
 		else if rights is 1:
-			say "You must have one word right[if almosts is 1] and one word close[end if] for ";
+			say "You're pretty sure you have one word right[if almosts is 1] and one word close[end if] for ";
 		else if rights is 0:
-			say "You must be close with [if almosts is 1]one word[else]both words[end if] for ";
+			say "You're pretty sure you're close with [if almosts is 1]one word[else]both words[end if] for ";
 		say "[part-explain entry].";
 		now got-think is true;
 
