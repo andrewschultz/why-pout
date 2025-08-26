@@ -45,8 +45,14 @@ volume I7 standard low-usage default verbs
 
 book verbs to get rid of completely
 
+understand the command "give" as something new.
 understand the command "show" as something new.
 understand the command "say" as something new.
+
+understand "give [text]" as a mistake ("[give-show-err].").
+understand "show [text]" as a mistake ("[give-show-err].").
+
+to say give-show-err: say "You may need to swap items in [this-game], but instead of GIVE, you should specify what you want in return"
 
 book eating redefined
 
