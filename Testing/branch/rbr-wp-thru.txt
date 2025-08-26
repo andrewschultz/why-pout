@@ -3010,7 +3010,7 @@ Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will
 >t troll
 Time to eat, not talk.
 
-@+verbs
+@verbs+
 >eat tall cake
 You can't eat the cake by yourself! Make it a communal experience in a special place!
 
@@ -3053,7 +3053,7 @@ Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will
 >t troll
 You've talked all you needed, one-on-one. Time to bring the gang together for a big lecture.
 
-@+verbs
+@verbs+
 >eat war pawn
 You already ate the only thing you needed to.
 

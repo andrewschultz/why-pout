@@ -717,11 +717,17 @@ by a point
 >t troll
 Time to eat, not talk.
 
+>eat tall cake
+You can't eat the cake by yourself! Make it a communal experience in a special place!
+
 >treat all
 by a point
 
 >t troll
 You've talked all you needed, one-on-one. Time to bring the gang together for a big lecture.
+
+>eat war pawn
+You already ate the only thing you needed to.
 
 >s
 
