@@ -259,18 +259,19 @@ to say pawn-pose:
 	else:
 		say "[if war-pawn-available-charges is 2]very [else if war-pawn-available-charges > 2]extremely [end if]alert, with a frown and mean glare carved in the rounded top. Unlike most pawns, it has fists, doubled up in a fighting posture";
 
-to post-pawn-charge:
+to process-successful-pawn-use:
 	say "[line break]";
+	increment war-pawn-uses;
 	if war-pawn-uses >= war-pawn-max-uses:
 		say "The war pawn shrugs its shoulders, holds up the number three, waves, and runs off, making occasional diagonal jumps at unseen prey.";
 		moot war pawn;
-	else if war-pawn-available-charges <= 0:
+	else if war-pawn-available-charges < 1:
 		say "The war pawn curls up and goes to sleep after all that excitement. It needs some time to recover.";
 	else:
 		say "The war pawn looks slightly less awake after its exertions but still ready if needed."
 
 report examining war pawn when war pawn is unexamined:
-	say "IF you wish to understand the mechanics of the war pawn, [b]KNOW PAWN[r]. (This command will be in [b]VERBS[r] if you forget.)";
+	say "If you wish to understand the mechanics of the war pawn, [b]KNOW PAWN[r]. (This command will be in [b]VERBS[r] if you forget.)";
 	continue the action;
 
 report examining war pawn:
@@ -380,7 +381,7 @@ understand "warp on" as warponing when war pawn is not off-stage or debug-state 
 
 check warponing:
 	if war pawn is moot, say "You dream of having the war pawn help you at your current impasse. Alas, it is gone. You then picture it cheering all 'I knew you could do it' once you figure what to do, and that makes you feel better." instead;
-	if war-pawn-available-charges < 0:
+	if war-pawn-available-charges < 1:
 		say "The war pawn is still sleeping from previous use. Get further in your quest, and the pawn will re-awaken[one of]. I promise![or].[stopping]" instead;
 
 our-run-rule is a rule that varies.
@@ -412,7 +413,7 @@ carry out warponing:
 			now think-cue entry is false;
 			process the run-rule entry;
 			now gs-war-pawn-used is true;
-			post-pawn-charge;
+			process-successful-pawn-use;
 			if debug-state is true:
 				say "[line break]Remember, to keep the war pawn/reset the charges, use WP.";
 			follow the score and thinking changes rule;
@@ -447,8 +448,11 @@ check warponing when debug-state is true:
 	if the player's command includes "wp":
 		say "Resetting war pawn uses.";
 		now war-pawn-uses is 0;
-	if war pawn is off-stage and debug-state is true:
-		say "(Grabbing war pawn for testing)";
+	if debug-state is true:
+		if war pawn is off-stage:
+			say "(Grabbing war pawn for testing)";
+		else if war pawn is moot:
+			say "(Recalling war pawn for testing)";
 		now player has war pawn;
 
 book sly size slice eyes
@@ -471,7 +475,7 @@ eyeing is an action out of world applying to one thing.
 understand "eye [thing]" as eyeing when eyes are touchable.
 understand "eyes [thing]" as eyeing when eyes are touchable.
 
-check eyeing eyes when player does not have eyes and eyes are touchable:
+check eyeing when player does not have eyes and eyes are touchable:
 	say "(taking the eyes first)[paragraph break]";
 	now player has eyes;
 
@@ -490,7 +494,7 @@ eye-info
 "The numbers of dots correspond to the number of letters in the first and second words to type, respectively."
 "The dots also have two different types of appearances that clue you to the puzzle nature: green or yellow, and dimly glowing or glowing."
 "Green dots mean the suggested action can score a point right now."
-"Yellow dots mean you have something to guess, but you won't get a point, as you haven't found the right items or assistance from other puzzles to make things work. It will be kept in [b]THINK[r]."
+"Yellow dots mean you have something to guess, but you won't get a point, as you haven't found the right items or assistance from other puzzles to make things work. A successful guess will be kept in [b]THINK[r]."
 "Finally, a dimly glowing reading indicates something you can change for a bonus point. It's not critical to complete [this-game][one of]. (End of hints. Next [b]EYE EYES[r] starts the hint cycle again)[or].[stopping]"
 
 definition: a thing (called th) is wortheyeing:
@@ -770,9 +774,11 @@ rule for printing a parser error when the latest parser error is the only unders
 		the rule succeeds;
 	say "The first word was a valid command that could stand on its own. The second may be unnecessary, or a typo.";
 
+to say given-cantsee-command: say "X[r]/[b]EYE"
+
 to say suggested-cantsee-command:
 	if action-to-be is the eyeing action:
-		say "[b]EYE[r] without a subject for the room, or to see what needs changing in the room";
+		say "[b]L[r]/[b]EYE[r] without a subject";
 	else:
 		say "[b]L[r] or [b]LOOK[r]"
 
