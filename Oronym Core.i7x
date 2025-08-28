@@ -232,6 +232,9 @@ check drop2ing hintthing:
 
 chapter taking
 
+the can't take scenery rule is not listed in any rulebook.
+the can't take what's fixed in place rule is not listed in any rulebook.
+
 check taking: if noun is not a hintthing, say "You never need to take anything explicitly in [this-game], though you have the option of taking two hint items. However, trying to take an item may give you a hint as to what you really need to do to acquire or use it." instead;
 
 volume hint items and properties
