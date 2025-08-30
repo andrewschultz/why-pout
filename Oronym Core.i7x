@@ -801,7 +801,7 @@ rule for printing a parser error (this is the check forks rule):
 				say "(DEBUG: [check-rule entry] tripped) ";
 			say "Not much happens, but you feel like that might help, at least halfway, some time later. Much later, or just a little, you can't tell.";
 		if partial-but-got-before is true:
-			say "[line break][i][bracket][b]NOTE[r][i]: you've actually already figured both words before. [b]THINK[r][i] may refresh your memory.[close bracket][i][line break]";
+			say "[line break][i][bracket][b]NOTE[r][i]: you've [if changed-this-time is true]just figured a two-word solution by parts[else]actually already figured both words before[end if]. [b]THINK[r][i] may refresh your memory.[close bracket][i][line break]";
 		the rule succeeds;
 	if got-partial-done is true:
 		if debug-state is true, say "[partial-row] row ...";
