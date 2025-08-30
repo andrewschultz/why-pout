@@ -624,7 +624,7 @@ to declue (th - a thing): now eyes-number of th is -1
 volume report (metaverb) rules in common
 
 report abouting:
-	say "[line break][b]CREDITS[r] lists people who helped make [this-game] a reality, or at the very least, a better version than it would've been without them. [b]EXT[r] lists the extensions used, and [b]VERSION[r]/[b]VERSIONS[r] shows version information. [b]VERBS[r] describes what actions are best used with this stripped-down parser.";
+	say "[b]CREDITS[r] lists people who helped make [this-game] a reality, or at the very least, a better version than it would've been without them. [b]EXT[r] lists the extensions used, and [b]VERSION[r]/[b]VERSIONS[r] shows version information. [b]VERBS[r] describes what actions are best used with this stripped-down parser.";
 	continue the action;
 
 report verbsing when player has eyes:
