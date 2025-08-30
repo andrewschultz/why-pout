@@ -778,6 +778,7 @@ carry out thinquelling:
 	say "Revealing commands half-thought two different ways is [if opt-think-well is false]already[else]now[end if] off.";
 	now opt-think-well is false;
 	the rule succeeds;
+
 volume THINK 1/2
 
 the check forks rule is listed first in the for printing a parser error rulebook.
@@ -795,7 +796,7 @@ rule for printing a parser error (this is the check forks rule):
 	[if mrlp is valid, abide by the main-wordtwisting-checker rule for spoontable of mrlp;]
 	if partial-row > 0:
 		if partial-now is true:
-			say "A voice in your head encourages you: 'Seem, or see, more!' You've got SOMETHING right, here.";
+			give-partial-encouragement;
 			if gs-ever-partial-noted is false:
 				say "[line break][i][bracket][b]NOTE[r][i]: this and other half-right guesses will be tracked in [b]THINK[r][i] until you figure the right phrase.[close bracket][line break]";
 				now gs-ever-partial-noted is true;
@@ -803,7 +804,7 @@ rule for printing a parser error (this is the check forks rule):
 			if debug-state is true:
 				choose row partial-row in table of main oronyms;
 				say "(DEBUG: [check-rule entry] tripped) ";
-			say "Not much happens, but you feel like that might help, at least halfway, some time later. Much later, or just a little, you can't tell.";
+			give-partial-later-encouragement;
 		if partial-but-got-before is true:
 			say "[line break][i][bracket][b]NOTE[r][i]: you've [if changed-this-time is true]just figured a two-word solution by parts[else]actually already figured both words before[end if]. [b]THINK[r][i] may refresh your memory.[close bracket][i][line break]";
 		the rule succeeds;
@@ -813,6 +814,12 @@ rule for printing a parser error (this is the check forks rule):
 			say "Hmm, no, you already did that, or something like that. You'll know if and when you need to flip between things.";
 			the rule succeeds;
 	continue the action;
+
+to give-partial-later-encouragement:
+	say "Not much happens, but you feel like that might help, at least halfway, some time later. Much later, or just a little, you can't tell.";
+
+to give-partial-encouragement:
+	say "A voice in your head encourages you: 'Seem, or see, more!' You've got SOMETHING right, here.";
 
 volume generalizable parser errors
 
