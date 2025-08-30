@@ -335,11 +335,15 @@ carry out knowpawning:
 
 table of knowpawn chat
 kp-chat
-"The pawn requires a special command to use. There is no penalty for trying to use it when it can't help you."
-"The pawn tries to determine if any puzzles are solvable right now. If they are, it picks the first one in the game's internal table. I've tried to sort these so you solve the trickiest available."
-"The pawn may also try and fail. This means there's something you can guess but aren't ready to solve--you need other materials."
-"The pawn has three uses throughout [this-game], though they are spaced out. It doesn't recharge until you've gotten 1/3 of the points on your own, then 2/3."
-"You can store up pawn charges for the endgame."
+"The pawn requires a special command to use. There is no penalty for trying to use it when it can't help you. It will give a slight clue if there's something to do in the area, but you're not ready."
+"A caveat: the pawn's action also blocks [b]UNDO[r]. I don't have a problem with saving, using it, and restoring, especially since it may on odd occasions solve a different puzzle from the one you want. However, I did want to provide some barriers to the temptation to use the pawn to plow through."
+"The pawn tries to determine if any puzzles are solvable right now. If they are, it picks the first one in the game's internal table you can currently solve. I've tried to sort these to prioritize puzzles that unlock others, then the trickier ones."
+"However, the pawn isn't perfect. It can potentially solve a puzzle you don't want to, especially if you're not ready to solve a puzzle you want a clue for. [if eyes are moot]You've dropped the eye, but [b]EYE[r] could've helped you see how many puzzles could be solved[else]To verify that it doesn't solve a side puzzle accidentally, [b]EYE[r] (with no argument) for a list of things that can change now before using the pawn[eye-is-back][end if]."
+"The pawn has three uses throughout [this-game], though you can't use them all at the start. It doesn't recharge until you've gotten 1/3 of the core points on your own, then 2/3."
+"Thus, you may wish to store up pawn uses for the endgame."
+
+to say eye-is-back:
+	if eyes are in mine, say ". The eye is [if player is in mine]here[else]back[end if] in the mine";
 
 chapter nopeoning
 
