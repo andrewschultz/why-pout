@@ -787,6 +787,10 @@ gs-ever-partial-noted is a truth state that varies.
 rule for printing a parser error (this is the check forks rule):
 	now partial-row is 0;
 	now got-partial-done is false;
+	if number of words in the player's command > 2:
+		if action-to-be is not the eyeing action and action-to-be is not the examining action:
+			say "That action brought up nothing. It's more than two words long, so I didn't search if it was a point-scoring command due to the potential for abuse (just guessing a bunch of words). If it was a standard action, try using one word or looking for typos.";
+			the rule succeeds;
 	abide by the main-wordtwisting-checker rule for table of main oronyms;
 	[if mrlp is valid, abide by the main-wordtwisting-checker rule for spoontable of mrlp;]
 	if partial-row > 0:
