@@ -672,9 +672,13 @@ carry out thinking (this is the right phrase wrong time rule):
 					say "[first-of-ors of w1 entry] [first-of-ors of w2 entry] is something you tried before it was perfectly ready. That I can offer no further details is a BUG I need to fix--I need to add a think-advice entry.";
 	process the partial-oronym-check rule;
 
-report thinking:
+report thinking (this is the summarize thinkings rule):
 	if got-think is false:
 		say "Nothing comes to mind.";
+	else if gs-warn-think-well is true:
+		now gs-warn-think-well is false;
+		say "You can have [b]THINK[r] verify the identity of the separate words with [b]THINK WELL[r]. [b]THIN QUELL[r] turns the option off.";
+		now gs-know-think-well is true;
 	continue the action;
 
 this is the partial-oronym-check rule:
@@ -687,11 +691,14 @@ this is the partial-oronym-check rule:
 		if second-close entry is true and second-exact entry is false, increment almosts;
 		if rights is 2:
 			say "You feel you've got the words right on separate occasions for ";
+			if gs-know-think-well is false, now gs-warn-think-well is true;
 		else if rights is 1:
 			say "You're pretty sure you have one word right[if almosts is 1] and one word close[end if] for ";
 		else if rights is 0:
 			say "You're pretty sure you're close with [if almosts is 1]one word[else]both words[end if] for ";
-		say "[part-explain entry].";
+		say "[part-explain entry]";
+		if rights is 2 and opt-think-well is true, say ": [b][first-of-ors of w1 entry] [first-of-ors of w2 entry][r]";
+		say ".";
 		now got-think is true;
 
 volume waiting and empty commands
@@ -738,6 +745,39 @@ definition: a thing (called th) is eyeable: [this can and should be changed by g
 	if th is touchable, yes;
 	no;
 
+volume option (s)
+
+gs-know-think-well is a truth state that varies.
+gs-warn-think-well is a truth state that varies.
+opt-think-well is a truth state that varies.
+
+chapter thinkwelling
+
+thinkwelling is an action out of world.
+
+understand the command "think well" as something new.
+
+understand "think well" as thinkwelling.
+
+carry out thinkwelling:
+	now gs-know-think-well is true;
+	say "Revealing commands half-thought two different ways is [if opt-think-well is true]already[else]now[end if] on.";
+	now opt-think-well is true;
+	the rule succeeds;
+
+chapter thinquelling
+
+thinquelling is an action out of world.
+
+understand the command "thin quell" as something new.
+
+understand "thin quell" as thinquelling.
+
+carry out thinquelling:
+	now gs-know-think-well is true;
+	say "Revealing commands half-thought two different ways is [if opt-think-well is false]already[else]now[end if] off.";
+	now opt-think-well is false;
+	the rule succeeds;
 volume THINK 1/2
 
 the check forks rule is listed first in the for printing a parser error rulebook.
