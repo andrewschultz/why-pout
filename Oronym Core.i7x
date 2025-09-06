@@ -175,6 +175,16 @@ to decide which number is doable-hinted:
 		if think-cue entry is true and idid entry is false and core entry is true, increment temp;
 	decide on temp;
 
+the check final score rule is listed after the print player's obituary rule in the shutdown rulebook.
+
+this is the check final score rule:
+	follow the score and thinking changes rule;
+	if core-score is core-max:
+		if cur-bonus is max-bonus:
+			choose row with final response rule of track missed points rule in table of final question options;
+			blank out the whole row;
+			say "[line break]By the way, congratulations! You found all the bonus points.";
+
 volume meta verbs
 
 book meta stuff
