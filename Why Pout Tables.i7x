@@ -23,9 +23,9 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "brew"	"swears"	--	--	--	false	false	false	false	"seeing [wares]'s true nature"	false	true	false	false	false	NaffHaze	pre-brew-swears rule	post-brew-swears rule	--	--
 "known"	"ocean"	--	--	--	false	false	false	false	"finding the surroundings [here-in of NoNotion]"	false	true	true	false	false	NoNotion	pre-known-ocean rule	post-known-ocean rule	--	--
 "six"	"quid"	--	--	--	false	false	false	false	"discovering what ails the sick squid"	false	true	true	false	false	NoNotion	pre-six-quid rule	post-six-quid rule	--	--
-"war"	"file"	--	--	--	false	false	false	false	"what is on Wharf Isle"	false	true	true	false	false	nonotion	pre-war-file rule	post-war-file rule	--	"You may be able to recover the [b]WAR FILE[r] on the wharf isle [here-in of nonotion] [once-now of sco-plan-tracker] you have something you can write down its main ideas in."
-"the"	"file"	"thee"	--	--	false	false	false	false	"what is on Thief Isle"	false	true	true	false	false	nonotion	pre-the-file rule	post-the-file rule	--	"You may be able to make sense of [b]THE FILE[r] [here-in of nonotion] [once-now of whether or not number of still-chat-needed followers is 0] you've gotten enough information from companions."
-"grow"	"vial"	--	"vile"	--	false	false	false	false	"what is on Grove Isle"	false	true	true	false	false	nonotion	pre-grow-vial rule	post-grow-vial rule	--	"You may be able to find a [b]GROW VIAL[r] [here-in of nonotion] [once-now of sco-six-quid] you have long-range water transport."
+"war"	"file"	--	--	--	false	false	false	false	"what is on Wharf Isle"	false	true	true	false	false	nonotion	pre-war-file rule	post-war-file rule	--	"You may be able to recover the [b]WAR FILE[r] on Wharf Isle [via-known] [once-now of sco-plan-tracker] you have something you can write down its main ideas in."
+"the"	"file"	"thee"	--	--	false	false	false	false	"what is on Thief Isle"	false	true	true	false	false	nonotion	pre-the-file rule	post-the-file rule	--	"You may be able to make sense of [b]THE FILE[r] on Thief Isle [via-known] [once-now of whether or not number of still-chat-needed followers is 0] you've gotten enough information from companions."
+"grow"	"vial"	--	"vile"	--	false	false	false	false	"what is on Grove Isle"	false	true	true	false	false	nonotion	pre-grow-vial rule	post-grow-vial rule	--	"You may be able to find a [b]GROW VIAL[r] on Grove Isle [via-known] [once-now of sco-six-quid] you have long-range water transport."
 "wan"	"dwarf"	"won|one"	--	hom-wan-dwarf rule	false	false	false	false	"who is on Wand Wharf"	false	true	true	false	false	wand wharf	pre-wan-dwarf rule	post-wan-dwarf rule	--	--
 "wool"	"frock"	--	--	--	false	false	false	false	"what is hidden in Wolf Rock"	false	true	true	false	false	Wolf Rock	pre-wool-frock rule	post-wool-frock rule	--	--
 "hide"	"out"	--	--	--	false	false	false	false	"how to dispel your high doubt"	false	true	true	false	false	Wolf Rock	pre-hide-out rule	post-hide-out rule	"hide out" or "hideout"	--
@@ -663,6 +663,12 @@ this is the post-grow-vial rule:
 	say "In the grove isle, you find a grow vial, which you take. The grove isle's relaxing, but you can't afford to loiter too long. You and your companions pull yourself back to the mainland.";
 	now player has grow vial;
 	conditional-flier-mangle;
+
+to say via-known:
+	if sco-six-quid is false:
+		say "once you have long-range water transport";
+	else:
+		say "across the water [if player is in NoNotion]here[else]via Known Ocean[end if]";
 
 chapter wand wharf scoring
 
