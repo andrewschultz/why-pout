@@ -248,7 +248,7 @@ this is the post-hide-out rule:
 	if sco-wool-frock is true, declue-here
 
 a wordtwisting rule (this is the pre-low-door rule):
-	if player is not in Wolf Rock, unavailable;
+	if player is not in Wolf Rock and once-now-hunt is false, unavailable;
 	if sco-mice-tall is false:
 		vcp "Maybe there's a low door beneath the lode ore, which definitely has small holes. But not small enough for you to fit through and scrabble and scrape to find one[if pals-made > 0], and nobody around is quite small enough to help you. Well, yet[end if].";
 		not-yet;
@@ -284,7 +284,7 @@ this is the post-low-bend rule:
 section lobe end scoring
 
 a wordtwisting rule (this is the pre-bay-sale rule):
-	if player does not have base ale, unavailable;
+	if player does not have base ale and once-now-hunt is false, unavailable;
 	if player is in NoNotion:
 		vcp "[if sco-known-ocean is true]There's water here, but it's much more than a bay[else]You can't make out what sort of body of water is here. Well, not yet[end if].";
 		not-yet;
@@ -328,7 +328,7 @@ this is the post-store-mile rule:
 	declue-here;
 
 a wordtwisting rule (this is the pre-mice-tall rule):
-	if player is not in storm isle, unavailable;
+	if player is not in storm isle and once-now-hunt is false, unavailable;
 	if sco-store-mile is false, unavailable;
 	if sco-gnome-old is false:
 		vcp "Maybe there are mice behind there, but you can't figure a way to locate them. It requires some sort of clever inhuman perception, you'd think.";
@@ -415,7 +415,7 @@ this is the post-tall-cake rule:
 section trees mall scoring
 
 a wordtwisting rule (this is the pre-treat-all rule):
-	if tree tall is not in trees mall, unavailable;
+	if tree tall is not in trees mall and once-now-hunt is false, unavailable;
 	if player is in doom ending, unavailable;
 	if sco-treat-all is true:
 		vcal "You already shared treats!";
@@ -465,7 +465,7 @@ this is the post-pry-stalk rule:
 	declue prize talk;
 
 a wordtwisting rule (this is the pre-high-plain rule):
-	if player is not in hype lane, unavailable;
+	if player is not in hype lane and once-now-hunt is false, unavailable;
 	if sco-pry-stalk is false:
 		vcp "That would be a nicer place! But you have nothing that could help you move up yet. You'll have to observe the general area a bit more.";
 		not-yet;
@@ -597,10 +597,10 @@ this is the post-six-quid rule:
 
 a wordtwisting rule (this is the three-isle rule):
 	if player does not have flier, unavailable;
-	if (player is in lobe end or player is in storm isle) and sco-low-bend is true:
+	if (player is in lobe end or player is in storm isle) and sco-low-bend is true and (once-now-hunt is false and sco-known-ocean is true):
 		vcp "No, there's water here, but it's more a river. There seems to be much more than an isle across from it.";
 		not-yet;
-	if player is not in nonotion:
+	if player is not in nonotion and (once-now-hunt is false and sco-known-ocean is true):
 		vcp "This isn't the right place to look for an isle. No large body of water nearby.";
 		not-yet;
 
@@ -721,7 +721,7 @@ this is the post-summer-chant rule:
 	now eyes-rule of some merchant is the pre-bile-oh rule;
 
 a wordtwisting rule (this is the pre-bile-oh rule):
-	if player is not in we loan or merchant is not in we loan, unavailable;
+	if (player is not in we loan or merchant is not in we loan) and once-now-hunt is false, unavailable;
 	if sco-summer-chant is false:
 		vcp "That should work, but you're a bit intimidated right now. You need a way to show your assailant 'Ah, you're just some merchant' and not 'Wow! You're SOME merchant!'[paragraph break]It doesn't have to be particularly rigorous or sensible, but it has to deflect from their aggression.";
 		not-yet;
@@ -736,7 +736,7 @@ this is the post-bile-oh rule:
 	moot merchant;
 
 a wordtwisting rule (this is the pre-whee-lone rule):
-	if player is not in we loan, unavailable;
+	if player is not in we loan and once-now-hunt is false, unavailable;
 	if sco-well-own is false:
 		vcp "It's nice to be alone here. But you sense there's a challenge here, to earn solitude, first.";
 		not-yet;
@@ -756,7 +756,7 @@ this is the post-whee-lone rule:
 	declue-here;
 
 a wordtwisting rule (this is the pre-oh-flier rule):
-	if player is not in we loan, unavailable;
+	if player is not in we loan and once-now-hunt is false, unavailable;
 	if oaf liar is not in we loan, unavailable;
 	if sco-six-quid is false:
 		vcp "[one of]You notice a flier behind their back, and you nudge them as if to say, can I have it for free? No, no, you cannot[or]You still haven't found any way to pay for the flier[stopping].";
@@ -786,7 +786,7 @@ this is the post-oh-flier rule:
 section keepiller scoring
 
 a wordtwisting rule (this is the pre-gnome-old rule):
-	if player is not in keepiller, unavailable;
+	if player is not in keepiller and once-now-hunt is false, unavailable;
 	if sco-wool-frock is false:
 		vcp "You summon a gnome, old, to compliment them on keeping the keep looking so nice all these years. They thank you but mention they're a bit sick of it and they seek adventure. Yet they can't go adventuring in these tatty clothes.";
 		not-yet;
@@ -803,7 +803,7 @@ this is the post-gnome-old rule:
 	moot wool frock; [now gnome has wool frock?]
 
 a wordtwisting rule (this is the pre-rogue-old rule):
-	if player is not in keepiller, unavailable;
+	if player is not in keepiller and once-now-hunt is false, unavailable;
 	if sco-six-quid is false:
 		vcp "[rogue-hi], but after some conversation, you realize you don't have any money to pay them with. They'd like to help, but they worked for free once and felt ripped off. Maybe later.";
 		not-yet;
@@ -832,7 +832,7 @@ to quid-reduce (nu - a number):
 		say "[line break]Well, easy come, easy go. You're pretty sure you've visited everywhere and found everyone who might need money.";
 
 a wordtwisting rule (this is the pre-manna-curb rule):
-	if player is not in keepiller, unavailable;
+	if player is not in keepiller and once-now-hunt is false, unavailable;
 	if sco-mensch-elf is false:
 		vcp "Perhaps there is a lot of good stuff beneath the manic herb, but you don't have the specialized knowledge to figure it out.";
 		not-yet;
@@ -851,7 +851,7 @@ this is the post-manna-curb rule:
 	declue manic herb;
 
 a wordtwisting rule (this is the pre-plan-tracker rule):
-	if player is not in keepiller or plant racker is not touchable, unavailable;
+	if (player is not in keepiller and once-now-hunt is false) or plant racker is not touchable, unavailable;
 	ready;
 
 this is the post-plan-tracker rule:
@@ -864,7 +864,7 @@ this is the hom-c-sea-design rule:
 	say "Close, but there are other waterways. Action (well, sort of) is needed here."
 
 a wordtwisting rule (this is the pre-see-design rule):
-	if player is not in keepiller, unavailable;
+	if player is not in keepiller and once-now-hunt is false, unavailable;
 	if pals-made < 2:
 		vcp "You sort of want to see the hidden design, but you're sort of scared what will happen once you do. [if pals-made is 1][The random friendly follower] can only help so much. [end if]You feel like you need some [if pals-made is 1]more [end if]support before you can give it your all.";
 		not-yet;
@@ -913,7 +913,7 @@ this is the post-gaunt-raider rule:
 	befriend gaunt raider;
 
 a wordtwisting rule (this is the pre-were-meetin rule):
-	if player is not in worm eaten, unavailable;
+	if player is not in worm eaten and once-now-hunt is false, unavailable;
 	if sco-were-meetin is true:
 		vcal "You already held a meeting! Too many meetings get in the way of doing.";
 		already-done;
@@ -960,7 +960,7 @@ a wordtwisting rule (this is the pre-my-corps rule):
 	if sco-treat-all is false:
 		vcp "They are your corps, and yet, there's something to share with them. Something to enjoy together, first.";
 		not-yet;
-	if player is not in worm eaten:
+	if player is not in worm eaten and once-now-hunt is false:
 		vcp "This doesn't seem to be the right place to pep up the troops.";
 		not-yet;
 	if sco-were-meetin is false:
