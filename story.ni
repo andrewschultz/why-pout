@@ -1089,7 +1089,16 @@ check ting a follower:
 		say "You haven't gained [the noun]'s trust enough yet for a chat." instead;
 
 carry out ting a sentient:
-	if noun is skull, say "You doubt the skull would have anything to say beyond 'I'm all I MAUL!' or 'Help our hell-power!' or even 'WAKE, rule way cruel!'" instead;
+	if noun is skull:
+		say "There's no time for talk, but if there were, the skull would say something like '[silly-skull-babble]'[line break]";
+		if gs-skull-talk-all is false:
+			if skull-row is number of rows in table of skull babble:
+				say "[line break]You've read all the taunts now.";
+				now skull-row is 0;
+			now gs-skull-talk-all is true;
+		if gs-skull-talk-yet is false:
+			now gs-skull-talk-yet is true;
+			say "[line break]Or something else. There are [number of rows in table of skull babble in words] taunts in total." instead;
 	if noun is oaf liar, say "The oaf liar is talking over you. Perhaps you can shut them up by buying something really cheap." instead;
 	if noun is companions, say "You can only talk to one companion at a time with [b]T[r], [if sco-my-corps is false]though you will need to give a big speech with a special command later[else]and you've already given your big speech[end if]." instead;
 	if noun is merchant, say "You want to figure a way to kill conversation, [if sco-summer-chant is true]even if your summer chant made it more bearable[else]instead[end if]." instead;

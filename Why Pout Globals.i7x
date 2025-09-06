@@ -47,6 +47,9 @@ gs-note-chatopt is a truth state that varies.
 
 missed-this-cycle is a number that varies.
 
+gs-skull-talk-yet is a truth state that varies.
+gs-skull-talk-all is a truth state that varies.
+
 section option(s)
 
 opt-lump-party is a truth state that varies.
@@ -83,7 +86,9 @@ wide-vision-rejects is a list of text variable. wide-vision-rejects is {
   "You make your sales pitch for more than just saving one's own skin. And it's more than a sales pitch! You try not to worry whether you have a captive audience, and you don't, until -- one small glib slip, where you were pretty sure you had to be right, but you weren't. Ouch. Your companions say there's nobody else they'd rather have lead them. Why, they look up to you almost as much as their parents! It hurts them to move on. And the issue is finely balanced. But they'll need to, with things done here. They'll take this lesson back to their villages, or wherever. Honest they will!"
 }
 
-volume follower random dialogue variables
+volume random dialogue variables
+
+book followers
 
 followers-as-joined is a list of followers variable.
 
@@ -91,6 +96,10 @@ t1 is a number that varies. t2 is a number that varies.
 
 init-dialogue-row is a number that varies.
 second-dialogue-row is a number that varies.
+
+book the skull
+
+skull-row is a number that varies.
 
 volume point scoring variables
 

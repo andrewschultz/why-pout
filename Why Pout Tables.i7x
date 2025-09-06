@@ -1285,6 +1285,25 @@ Worm Eaten	"No tricky passages here, just [b]UP[r] back to safer ground or [b]DO
 Doom Ending	"[if sco-wipe-out is true]You need to prep for making things right in general. Then, once the game's over, you'll leave[else]Unsurprisingly, all the action is here[end if]."
 Brew Swears	"You don't want to get into the guts of this place. [if sco-crew-dork is true]You've gotten the crude orc on your side, and the only way to go is[else]Just get the crude orc, if you'd like, then get[end if] [b]OUT[r]."
 
+volume random skull talk
+
+table of skull babble
+babble
+"Warn: OW! War, now!"
+"I'm all I MAUL!"
+"Help our hell-power!"
+"WAKE, rule way cruel!"
+"Do make doom-ache!"
+"Eh, Cruel Ache: RULE!!!!"
+"Whee! Preps: weep-reps!"
+
+when play begins: sort table of skull babble in random order;
+
+to say silly-skull-babble:
+	increment skull-row;
+	choose row skull-row in table of skull babble;
+	say "[babble entry]";
+
 volume scoring to move [see RoL Defs if I add bonus points]
 
 the score and thinking changes rule is listed instead of the notify score changes rule in the turn sequence rulebook.
