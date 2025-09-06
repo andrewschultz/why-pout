@@ -359,12 +359,13 @@ chapter nopeoning
 
 gs-nope-on-warn is a truth state that varies.
 gs-nope-on is a truth state that varies.
+sco-nope-on is a truth state that varies.
 
 nopeoning is an action out of world.
 
 understand the command "nope on" as something new.
 
-understand "nope on" as nopeoning.
+understand "nope on" as nopeoning when player has war pawn.
 
 check nopeoning when gs-nope-on-warn is false:
 	now gs-nope-on-warn is true;
@@ -378,12 +379,19 @@ carry out nopeoning:
 	say "The war pawn jumps out of your hand and down to the ground with a perfect feet-first landing. It salutes you and then runs off, taking occasional diagonal jumps to gobble up vulnerable ants and insects.";
 	now gs-nope-on is true;
 	if war-pawn-uses is 0:
+		now sco-nope-on is true;
 		up-min;
 		follow the score and thinking changes rule;
+	else:
+		say "[i][bracket][b]NOTE[r][i]: this would have scored a point if you hadn't used the war pawn. It was intended as a tricky bonus point across games. Nice job finding it![close bracket][r][line break]";
 	moot war pawn;
 	the rule succeeds;
 
-to nope-check: if gs-nope-on is false, say "You had a way to dismiss the war pawn other than [b]DROP[r] to get a bonus point. NB: to do so you need not to actually use it."
+to nope-check:
+	if gs-nope-on is false:
+		say "There's a way besides [b]DROP[r] to dismiss the war pawn, when unused, to get a bonus point, if you observe and understand it carefully.";
+	else if sco-nope-on is false:
+		say "You managed to say [b]NOPE ON[r] to the war pawn, but you'd already used it, so you didn't get the bonus point.";
 
 chapter warponing
 
