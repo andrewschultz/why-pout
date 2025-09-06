@@ -207,9 +207,9 @@ a wordtwisting rule (this is the pre-wipe-out rule):
 this is the post-wipe-out rule:
 	now sco-wipe-out is true;
 	say "You don't feel confident as you mumble 'Ace, cull a skull.' But you have to say something.";
-	say "[line break]However, since you and your companions studied the plan tracker so well, it starts a rally! You know the taunts to give and how to deflect the skull's likely taunts. So, with a 'You'd reign? You drain!' you commence combat. The skull roars back, trying to summon a tier-x T-Rex and a new clever nuke lever. You recognize those would wipe out the skull, too, so you aren't worried. 'Mo['] strong? Most wrong!' you fire back. You worry it's a bit redundant, but you also realize you're not in English class.";
+	say "[line break]However, since you and your companions studied the plan tracker so well, it starts a rally! You know the taunts to give and how to deflect the skull's likely taunts. So, with a 'You'd reign? You drain!' you commence combat. The skull roars back, trying to summon a tier-x T-Rex and a new clever nuke lever. You recognize those would wipe out the skull, too, so you aren't worried. 'Mo['] strong? Most wrong!' you fire back. You worry it's a bit redundant, but you also realize you're not in English class, here.";
 	say "[line break]The skull uncovers one more machine, ominously labeled The Make-Them-Ache. Loud whirring indicates it has started up, but thinking quickly, you grasp your thumb and scream. Pronunciation pedantry for the win!";
-	say "[line break]But there is real pain. And you'd be cooked if it weren't spread among your companions. They dilute the machine's effect and distract the skull. Whenever the skull focuses on one companion, the others taunt it with 'Aid! Eek, a deek!'";
+	say "[line break]But there is real pain. And you'd be cooked if it weren't spread among your companions. They dilute the machine's effect and distract the skull. Whenever the skull focuses on one companion, the others taunt it with 'Aid! Eek, a deek!' The mice have their own chant: 'My, small mice maul!'";
 	say "[line break]It's exhausting for you but even more exhausting for the skull, which after constant spinning eventually collapses and incinerates, but not before a self-pitying 'Meek old me! Cold!'[paragraph break]'On ice! Aw, nice!' you proclaim, expecting big cheers.[paragraph break]But after all the fireworks, there's a letdown. You feel something odd come between you and your companions now you're done. They wonder why they need to do any more. You could call the whole zeitgeist a why-division.";
 	move why division to Doom Ending;
 	moot sea skull;
@@ -259,7 +259,7 @@ a wordtwisting rule (this is the pre-low-door rule):
 
 this is the post-low-door rule:
 	now sco-low-door is true;
-	say "The lode and the ore are tough to shift around for someone as big as yourself. But the tall mice manage to get into those small niches you can't. And they work so fast, you daren't even ironically say 'My! Slow mice, lo!'[paragraph break]They locate a low door, then, point to where you can remove the ore to create a passage. You'll have to duck a bit to get in, but you can now go [b]INSIDE[r]. Hooray!";
+	say "The lode and the ore are tough to shift around for someone as big as yourself. But the tall mice manage to get into those small niches you can't. They work so thorougly and quickly, you think 'My, SCAN, mice can!' and daren't even ironically say 'My! Slow mice, lo!'[paragraph break]They locate a low door, then, point to where you can remove the ore to create a passage. You'll have to duck a bit to get in, but you can now go [b]INSIDE[r]. Hooray!";
 	if gnome is friendly:
 		say "[line break]The gnome also rifles through, quickly, saying 'no more gnome ore.'";
 	reveal We Loan to inside;
@@ -407,7 +407,7 @@ a wordtwisting rule (this is the pre-tall-cake rule):
 
 this is the post-tall-cake rule:
 	now sco-tall-cake is true;
-	say "All this preparing food means you don't talk a bit, and as a bonus, your talk-ache is gone.[paragraph break]But now where to eat the cake?";
+	say "All this preparing food means you don't talk a bit, except for an ironic 'Ache, ache, a cake!' Doing stuff for friends helps your ache go away, or at least helps you not feel it, which is life-affirming, and stuff.[paragraph break]But now where to eat the cake?";
 	moot talk ache;
 	moot manna;
 	now player has tall cake;
@@ -945,7 +945,9 @@ this is the post-were-meetin rule:
 	now sco-were-meetin is true;
 	if the player's command includes "meeting":
 		say "You worry about how formal you need to be, but you realize perfect diction and everything can't be important. 'We're meeting' is fine, but 'we're meetin[']' sounds a bit more welcoming.[paragraph break]";
-	say "You meet with the friends you've made over your adventure. You all have one goal in mind. And yet you don't have a rallying cry. Perhaps it can come from within you.";
+	if orc is friendly:
+		say "[The orc] stays back until you wave them over. 'Meet? Ooh! Me too?!'[paragraph break]";
+	say "It's a good meeting. You worry you're lousy at that sort of thing, but you let everyone talk, and you all have one goal in mind and each adds ideas how to get there. You all have one goal in mind. And yet you don't have a rallying cry. Perhaps it can come from within you.";
 	print-the-loc;
 	declue-here;
 
@@ -1038,7 +1040,6 @@ this is the post-do-due-mend rule:
 		say "Yes. It's time to get healing. Your companions don't have as much time or energy to help as you hoped they would, but they do enough. Everyone feels better for their part in defeating the sea skull. And yet you worry it, or something like it, may be back sooner rather than later, and your companions have gone their separate ways for good. Still, you should be pleased with yourself.";
 	else:
 		say "You and your companions work together not just to make sure bad things won't happen right away, but to help prevent evil from spawning. Perhaps it will happen some day. But everyone remembers how they got sidetracked into irrelevance or worse, and they work to make sure others risk the same fate much less.";
-	follow the score and thinking changes rule;
 	end the story finally saying "[if sco-wide-vision is true]Beat all! Be tall![else]Gray day?! Grade A![end if]";
 	follow the shutdown rules;
 

@@ -284,7 +284,7 @@ the gnome old is a follower. printed name is "gnome (old)". help-chat is "The gn
 
 chapter row gold
 
-there is a thing called row gold. It is in KeepIller. printed name is "row (gold)". "A row (gold) shines in this otherwise forbidding keep[if sco-rogue-old is true], and you're glad the rogue (old) had enough faith in you to leave it for a while[else if pre-rogue-old rule is guessed-yet]. You've met its proprietor, the rogue (old,) but they require payment[end if].". description is "You're surprised someone hasn't taken it yet. Perhaps it has an unseen guardian.". eyes-number of row gold is 53. eyes-rule of row gold is the pre-rogue-old rule.
+there is a thing called row gold. It is in KeepIller. printed name is "the row (gold)". "A row (gold) shines in this otherwise forbidding keep[if sco-rogue-old is true], and you're glad the rogue (old) had enough faith in you to leave it for a while[else if pre-rogue-old rule is guessed-yet]. You've met its proprietor, the rogue (old,) but they require payment[end if].". description is "You're surprised someone hasn't taken it yet. Perhaps it has an unseen guardian.". eyes-number of row gold is 53. eyes-rule of row gold is the pre-rogue-old rule.
 
 section rogue old
 
@@ -721,7 +721,7 @@ carry out abouting:
 	say "[line break]It reuses a lot of code from [i]Roads of Liches[r] and my [i]Prime Pro Rhyme Row[r] games, which have different mechanics but a similar conceit: guess the right two-word phrase. However, it's narrower in scope, and I didn't want to rely on too well-known examples of possible phrases for point scoring.";
 	say "[line break]Once I realized bigger projects weren't on the cards for IFComp 2024, I focused on something I could handle. I wound up making forty or so puzzle instead of the usual eighty.";
 	say "[line break]While the drip of ideas started February, 2020, according to my notes, I wasn't getting anything really original, or so it seemed. But the idea was always there. In my weekly writing file 20240429.txt, there's the game's title, and that's when significant ideas started appearing. But it wasn't until I registered for IFComp in July that ideas started clicking together. Deadlines are funny like that!";
-	say "[line break]Like most of my games, [this-game] rates merciful on the Zarfian cruelty scale. However, in this case, I want the puzzles to be more merciful in terms of general difficulty on the player's psyche than usual."
+	say "[line break]Like most of my games, [this-game] rates merciful on the Zarfian cruelty scale. However, in this case, I want the puzzles to be more merciful in terms of general difficulty on the player's psyche than usual.";
 	say "[line break]I originally thought this would be the only game of its sort. But more ambitious projects stalled out, and so [i]Us Too[r] was my IFComp 2025 entry. It helped with [this-game], too: I slowly built [if hype lane is unvisited]a core file for reusable code (warning: GitHub link ahead may be a spoiler)[else]Oronym Code.i7x (warning: may spoil a bonus point)[end if] that you can find at [ghbase]/why-pout.";
 	say "[line break]I also have a similar game planned in Adventuron for EctoComp 2025 Petite Mort (four hours of programming,) with five rooms and six points. It has graphics, too. There might be a second as well, as I had no time for more ambitious projects.";
 
