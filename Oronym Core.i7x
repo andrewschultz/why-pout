@@ -358,8 +358,7 @@ kp-chat
 "The pawn has three uses throughout [this-game], though you can't use them all at the start. It doesn't recharge until you've gotten 1/3 of the core points on your own, then 2/3."
 "Thus, you may wish to store up pawn uses for the endgame."
 
-to say eye-is-back:
-	if eyes are in mine, say ". The eye is [if player is in mine]here[else]back[end if] in the mine";
+to say eye-loc-notes: say ""
 
 chapter nopeoning
 
@@ -488,6 +487,10 @@ check warponing when debug-state is true:
 book sly size slice eyes
 
 the sly size slice eyes are a plural-named hintthing. eyes-number of sly size slice eyes is 1. printed name is "sly size-slice eyes". drop-poke of slice eyes is "Are you sure you wish to drop [the noun]? They give a clue as to the length of any solution.". description is "The eyes shift around a lot, looking for stuff normal human eyes can't see.[paragraph break]To have them analyze the room, [b]EYE[r] with no argument. To have them analyze something, [b]EYE[r] it. You can also [b]EYE[r] the eyes themselves to spell out precisely how they work.". understand "eye" as eyes.
+
+report examining eyes when eyes are unexamined:
+	say "[b]AUTHOR'S NOTE[r]: It was tough to pick between this and swell size-well eyes.";
+	continue the action;
 
 drop-notify-text of sly size slice eyes is "'Ire, ol['] eye. Roll!' you mutter. The eyes roll away.[paragraph break]'A dumb aid, umm,' you think to yourself."
 
@@ -627,7 +630,7 @@ eyeguessing a number (called n):
 	else if n is 0 or n is 1:
 		say "The eyes show nothing. Probably don't need to change up anything [eye-with]." instead;
 	else if n is 2:
-		say "The eyes almost seem to light up. Perhaps you need to do something later [eye-with], when things are noticeably different." instead;
+		say "The eyes almost seem to light up. Perhaps you need to change something [eye-with] later, when things are noticeably different." instead;
 	if n < 0, now gs-this-dim-note is true;
 	if n < 0:
 		now n is 0 - n;
