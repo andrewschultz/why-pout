@@ -18,6 +18,10 @@ include Revealing Passages by Andrew Schultz.
 
 include Trivial Niceties by Andrew Schultz.
 
+volume WP/US specific
+
+main-table is table of main oronyms.
+
 volume things
 
 a sentient is a kind of thing.
@@ -261,6 +265,8 @@ book war pawn
 
 the war pawn is a hintthing. description is "It's a grey chess pawn. It's currently [pawn-pose].[paragraph break]Looking at it from many different angles gets you all sorts of weird ideas. Perhaps it could help you when you run out of them on your quest. You may wish to wait until you really need to use it, though of course, you don't want to wait too late.". eyes-number of war pawn is -42. drop-poke of war pawn is "The war pawn can get you past up to three tough puzzles of your choosing. Drop it anyway to resist the temptation to jump ahead?". eyes-rule of war pawn is trivially true rule.
 
+understand "you spawn" as a mistake ("You look to use the pawn. That seems like it should work, but it's already spawned, as a war pawn.") when player has war pawn.
+
 gs-war-pawn-used is a truth state that varies.
 
 to say pawn-pose:
@@ -348,7 +354,7 @@ kp-chat
 "The pawn requires a special command to use. There is no penalty for trying to use it when it can't help you. It will give a slight clue if there's something to do in the area, but you're not ready."
 "A caveat: the pawn's action also blocks [b]UNDO[r]. I don't have a problem with saving, using it, and restoring, especially since it may on odd occasions solve a different puzzle from the one you want. However, I did want to provide some barriers to the temptation to use the pawn to plow through."
 "The pawn tries to determine if any puzzles are solvable right now. If they are, it picks the first one in the game's internal table you can currently solve. I've tried to sort these to prioritize puzzles that unlock others, then the trickier ones."
-"However, the pawn isn't perfect. It can potentially solve a puzzle you don't want to, especially if you're not ready to solve a puzzle you want a clue for. [if eyes are moot]You've dropped the eye, but [b]EYE[r] could've helped you see how many puzzles could be solved[else]To verify that it doesn't solve a side puzzle accidentally, [b]EYE[r] (with no argument) for a list of things that can change now before using the pawn[eye-is-back][end if]."
+"However, the pawn isn't perfect. It can potentially solve a puzzle you don't want to, especially if you're not ready to solve a puzzle you want a clue for. [if eyes are moot]You've dropped the eye, but [b]EYE[r] could've helped you see how many puzzles could be solved[else]To verify that it doesn't solve a side puzzle accidentally, [b]EYE[r] (with no argument) for a list of things that can change now before using the pawn[eye-loc-notes][end if]."
 "The pawn has three uses throughout [this-game], though you can't use them all at the start. It doesn't recharge until you've gotten 1/3 of the core points on your own, then 2/3."
 "Thus, you may wish to store up pawn uses for the endgame."
 
@@ -464,7 +470,9 @@ to game-specific-cleanup: do nothing;
 
 to game-specific-post-point-debugging-check: do nothing;
 
-section warpon debug check(s) - not for release
+section warpon debug check(s) and shortcut(s) - not for release
+
+understand "wp" as warponing.
 
 check warponing when debug-state is true:
 	if the player's command includes "wp":
