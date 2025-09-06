@@ -542,15 +542,22 @@ carry out eyeing:
 			now verb-dont-print is false;
 			if number of entries in mylist is 0, say "Nothing for the general area, and [the eyes] don't point to any individual item." instead;
 			if number of entries in mylist is 1:
-				say "The eyes see nothing in the general area but seem to be wandering to [the entry 1 in mylist]." instead;
+				now you-not-yourself is true;
+				say "The eyes see nothing in the general area but seem to be wandering to [the entry 1 in mylist].";
+				now you-not-yourself is false;
+				the rule succeeds;
 			now verb-dont-print is true;
-			say "Nothing for the general area, though [the eyes] seem to wander between [the list of touchable wortheyeing things].";
+			say "Nothing for the general area, though [the eyes] seem to wander between [run paragraph on][the list of touchable wortheyeing things].";
 			now verb-dont-print is false;
 			the rule succeeds;
 		abide by the eyeguessing rulebook for eyes-number of location of player;
 	else:
 		abide by the eyeguessing rulebook for eyes-number of noun;
 	the rule succeeds;
+
+you-not-yourself is a truth state that varies.
+
+rule for printing the name of the player when you-not-yourself is true: say "you";
 
 carry out eyering:
 	now eye-the-room is true;
