@@ -2,7 +2,7 @@
 
 volume top level stuff
 
-the release number is 6.
+the release number is 7.
 
 release along with a website.
 
@@ -73,7 +73,7 @@ when play begins:
 	now left hand status line is "[location of player][if sco-an-aim is false and Mike Orr is examined] (needing a name)[end if]";
 
 after printing the locale description of air aww when air aww is unvisited:
-	say "[i][bracket][b]NOTE[r][i]: to see general information about [this-game][i], type [b]ABOUT[r][i]. To see the verbs used, type [b]VERBS[r][i]. If you have trouble with the first few moves, there will be hints.[close bracket][r][line break]";
+	say "[i][bracket][b]NOTE[r][i]: to see general information about [this-game][i], type [b]ABOUT[r][i]. To see the verbs used, type [b]VERBS[r][i]. If you have trouble with the first few moves, try anything. There will be hints with the standard parser error.[close bracket][r][line break]";
 	continue the action;
 
 universal is a region.
@@ -786,9 +786,9 @@ carry out versioning:
 	say "[line break]Version 3 was released on October 22, 2024. It includes one more point in the optional room, as well as a big boss there, of sorts. There are some trivial fixes, too.";
 	say "[line break]Version 4 was released on November 9, 2024. It features game-mechanic-relevant dialogue between friendly NPCs, as well as general text flavor tweaks.";
 	say "[line break]Version 5 was released on November 12, 2024. It contains more granular hints about what you got right, e.g. one word right, both words right, or either very close.";
-	say "[line break]Version 6 was released on May 18, 2024. It adds a point in the optional area, allows for a bypass, and allows COMPANIONS as a noun. It fixes trivial but persistent line break issues too.";
-	say "[line break]Version 7 should be released early during 2025 IFComp. It contains a lot of fixes from my IFComp 2025 entry, [i]Us Too[r], and adds a bonus point for knowing how to ditch the war pawn. adds a point in the optional area, allows for a bypass, and allows COMPANIONS as a noun. It fixes trivial but persistent line break issues too.";
-	say "[line break]For details on fixes, see fixes.txt, which should be packaged with the binary. Or visit the GitHub site https://github.com/andrewschultz/why-pout, which may provide a view of bugs to be fixed for potential future releases. Although as of release 6, I don't want this project to drag on, fun as it's been. There are other games to write!";
+	say "[line break]Version 6 was released on May 18, 2025. It adds a point in the optional area, allows for a bypass, and allows COMPANIONS as a noun. It fixes trivial but persistent line break issues too.";
+	say "[line break]Version 7 was released on September 8, 2025. It contains a lot of fixes and quality-of-life boosts (better hinting, etc.) from my IFComp 2025 entry, [i]Us Too[r], and adds a bonus point for knowing how to ditch the war pawn.";
+	say "[line break]For details on fixes, see fixes.txt, which should be packaged with the binary. Or visit the GitHub site https://github.com/andrewschultz/why-pout, which may provide a view of bugs to be fixed for potential future releases. Although as of release 7, I don't want this project to drag on, fun as it's been. There are other games to write!";
 	the rule succeeds;
 
 [the text below is added to Versioning and Extensions Tweak]
