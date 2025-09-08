@@ -431,7 +431,7 @@ a wordtwisting rule (this is the pre-treat-all rule):
 	if player does not have tall cake:
 		vcp "You don't have anything to treat your companions with!";
 		not-yet;
-	if player is not in trees mall:
+	if player is not in trees mall and once-now-hunt is false:
 		vcp "You have the treat. Why not go back to the tree?";
 		not-yet;
 	ready;

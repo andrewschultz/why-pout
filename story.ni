@@ -367,11 +367,11 @@ book We Loan
 We Loan is a room in universal. printed name is "[if sco-well-own is false]We Loan[else if sco-whee-lone is false]We'll Own[else if sco-oh-flier is false]Whee, Lone[else]Whee! [']Lone[end if][loan-end-punc]". "[loan-starter][line break]You can only go back [b]OUT[r] here[if sco-well-own is false].[paragraph break]You don't really trust the whole 'financial services' vibe here. Maybe there's a double meaning to deduce[end if].". eyes-number of we loan is 43. eyes-rule of we loan is the pre-well-own rule.
 
 to say loan-end-punc:
-	if player is not in we loan or sco-whee-lone is true, continue the action;
-	if sco-oh-flier is false:
-		say "?";
-	else:
-		say "!"
+	if player is not in we loan or sco-well-own is false, continue the action;
+	if sco-oh-flier is true:
+		say "!";
+	else if sco-whee-lone is true:
+		say "?"
 
 to say loan-starter:
 	if sco-oh-flier is true:
