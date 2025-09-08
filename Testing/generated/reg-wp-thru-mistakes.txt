@@ -89,11 +89,39 @@ by a point
 
 >s
 
+#testcase-mistake-why-pout-no-no-shin-nono-shin-no-no-shun-nono-shun
+>no no shin
+No, you're trying to bring something to light, not fret about what you can't find.
+
+#+testcase-mistake-why-pout-no-no-shin-nono-shin-no-no-shun-nono-shun
+>nono shin
+No, you're trying to bring something to light, not fret about what you can't find.
+
+#+testcase-mistake-why-pout-no-no-shin-nono-shin-no-no-shun-nono-shun
+>no no shun
+No, you're trying to bring something to light, not fret about what you can't find.
+
+#+testcase-mistake-why-pout-no-no-shin-nono-shin-no-no-shun-nono-shun
+>nono shun
+No, you're trying to bring something to light, not fret about what you can't find.
+
 >known ocean
 by a point
 
 >six quid
 by a point
+
+#testcase-mistake-why-pout-isle-and-eye-land-eye-lands
+>isle and
+It's the island names and how to get there that are important.
+
+#+testcase-mistake-why-pout-isle-and-eye-land-eye-lands
+>eye land
+It's the island names and how to get there that are important.
+
+#+testcase-mistake-why-pout-isle-and-eye-land-eye-lands
+>eye lands
+It's the island names and how to get there that are important.
 
 >n
 

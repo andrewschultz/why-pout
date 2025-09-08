@@ -9,52 +9,52 @@
 
 >purloin war pawn
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: AN AIM...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: AN AIM...
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: TWO MAPS...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: TWO MAPS...
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: SELF OWNS...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: SELF OWNS...
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: PRY STALK...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: PRY STALK...
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: HIGH PLAIN...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: HIGH PLAIN...
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: NAH PHASE...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: NAH PHASE...
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: POLE EAST...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: POLE EAST...
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: GROW STAR...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: GROW STAR...
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: SHORE TRAIL...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: SHORE TRAIL...
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: KEY PILLAR...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: KEY PILLAR...
 
 #"everything is done" test
->warp on
-The war pawn stays still and even feels a bit cold. Perhaps there's nothing left that specifically needs doing here.
+>wp
+The war pawn stays still and even feels a bit cold. Perhaps there's nothing that specifically needs doing here.
 
 >n
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: WOOL FROCK...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: WOOL FROCK...
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: HIDE OUT...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: HIDE OUT...
 
 >d
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: BOOST ROLE...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: BOOST ROLE...
 
 >u
 
@@ -62,68 +62,68 @@ After some thought, the war pawn vibrates and explodes! You suddenly have insigh
 
 >w
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: GNOME OLD...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: GNOME OLD...
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: PLAN TRACKER...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: PLAN TRACKER...
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: SEE DESIGN...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: SEE DESIGN...
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: KNIFE RIGHT...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: KNIFE RIGHT...
 
 #rogue old should not be achievable. Check the different error message.
->warp on
+>wp
 The war pawn rattles briefly in your hand, like it means to do something, but it's not ready. Or maybe you aren't. Yet.
 
 >e
 
 >s
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: KNOWN OCEAN...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: KNOWN OCEAN...
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: SIX QUID...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: SIX QUID...
 
 #test "unavailable, but you're in the right room" with the cases being the three isles
->warp on
+>wp
 The war pawn seems to warm up very briefly. Perhaps there's a bit left to do here, but that may be a way down the road.
 
 >n
 
 >w
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: ROGUE OLD...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: ROGUE OLD...
 
 >e
 
 >e
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: LOW BEND...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: LOW BEND...
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: BAY SAIL...
-
->n
-
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: STORE MILE...
-
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: MENSCH ELF...
-
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: MICE TALL...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: BAY SAIL...
 
 >n
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: TREE SMALL...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: STORE MILE...
+
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: MENSCH ELF...
+
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: MICE TALL...
+
+>n
+
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: TREE SMALL...
 
 >s
 
@@ -139,21 +139,21 @@ It's been vandalized a bit, though, and maybe if you X again, you might find a f
 >x bruise
 Oh, hey! You notice something scrawled on BRUISE-WARES. It says NAH, BYE. It seems negative on the surface but makes you believe if you can do the minimum you need to get in and out of that place and bypass the spicier stuff.
 !It's been vandalized
->warp on
-The war pawn stays still and even feels a bit cold. Perhaps there's nothing left that specifically needs doing here.
+>wp
+The war pawn stays still and even feels a bit cold. Perhaps there's nothing that specifically needs doing here.
 
 #now we go inside to verify nothing is hintable
 >brew swears
 
 >in
 
->warp on
+>wp
 The war pawn stays still and even feels a bit cold. Perhaps there's nothing that specifically needs doing here.
 
 >weak us
 by a bonus point
 
->warp on
+>wp
 The war pawn stays still and even feels a bit cold. Perhaps there's nothing that specifically needs doing here.
 
 >crew dork
@@ -169,7 +169,7 @@ by a bonus point
 >z
 >z
 
->warp on
+>wp
 The war pawn stays still and even feels a bit cold. Perhaps there's nothing that specifically needs doing here.
 
 >grin churls
@@ -196,7 +196,7 @@ by a bonus point
 >were dicks
 by a bonus point
 
->warp on
+>wp
 The war pawn stays still and even feels a bit cold. Perhaps there's nothing that specifically needs doing here.
 
 >gah wanker
@@ -206,25 +206,25 @@ by a bonus point
 
 >n
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: LOW DOOR...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: LOW DOOR...
 
 >in
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: WELL OWN...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: WELL OWN...
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: SUMMER CHANT...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: SUMMER CHANT...
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: BILE OH...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: BILE OH...
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: WHEE LONE...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: WHEE LONE...
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: OH FLIER...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: OH FLIER...
 
 >out
 
@@ -232,28 +232,28 @@ After some thought, the war pawn vibrates and explodes! You suddenly have insigh
 
 >s
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: WAR FILE...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: WAR FILE...
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: WAN DWARF...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: WAN DWARF...
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: GROW VIAL...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: GROW VIAL...
 
 >n
 
 >d
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: GAUNT RAIDER...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: GAUNT RAIDER...
 
 >u
 
 >w
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: MANNA CURB...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: MANNA CURB...
 
 >e
 
@@ -275,15 +275,15 @@ After some thought, the war pawn vibrates and explodes! You suddenly have insigh
 
 >t troll
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: TALL CAKE...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: TALL CAKE...
 
 >e
 
 >n
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: TREAT ALL...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: TREAT ALL...
 
 >s
 
@@ -293,29 +293,29 @@ After some thought, the war pawn vibrates and explodes! You suddenly have insigh
 
 >s
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: THE FILE...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: THE FILE...
 
 >n
 
 >d
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: WERE MEETIN...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: WERE MEETIN...
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: MY CORPS...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: MY CORPS...
 
 >d
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: CEASE CULL...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: CEASE CULL...
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: WIPE OUT...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: WIPE OUT...
 
->warp on
-After some thought, the war pawn vibrates and explodes! You suddenly have insight into a good way forward: DO MEND...
+>wp
+After some thought, the war pawn vibrates and gestures wildly! You suddenly have insight into a good way forward: DO MEND...
 
 * undo_test
 
@@ -351,8 +351,8 @@ by a point
 >shore trail
 by a point
 
->warp on
-The war pawn stays still and even feels a bit cold. Perhaps there's nothing left that specifically needs doing here.
+>wp
+The war pawn stays still and even feels a bit cold. Perhaps there's nothing that specifically needs doing here.
 !by a point
 
 >undo
@@ -360,7 +360,7 @@ The war pawn stays still and even feels a bit cold. Perhaps there's nothing left
 
 >n
 
->warp on
+>wp
 way forward
 WOOL FROCK
 

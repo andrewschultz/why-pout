@@ -159,7 +159,7 @@ by three bonus points
 
 #testcase-run-post-brew-swears-rule-if-nah-bye-is-in-naffhaze
 >x nah
-Nothing here like that. Note that room names are not usually worth examining, as you can just L or LOOK.
+Nothing (significant) here like that. Note that while you may need to act on room names, X/EYE (THIS ROOM'S NAME) is often not implemented because L or LOOK takes less characters to type.
 
 >brew swears
 That thought/action/observation/request brings up nothing.

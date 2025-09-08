@@ -13,7 +13,10 @@
 
 >z
 
+#testcase-check-pre-wipe-out-rule-if-core-score-is-0
 >wipe out
+Wipe out. Why pout. Perhaps that will come in handy one day, when you know more about who you are and why you are here!
+But now, you're not even sure you have a name. Or ... something else, also important.
 THINK
 
 #testcase-check-pre-ass-low-rule-if-player-is-not-in-brew-swears
@@ -26,12 +29,12 @@ You're stuck with what to do right now. Perhaps you can use your senses for clue
 >bastard eee
 You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
-#testcase-check-pre-bay-sale-rule-if-player-does-not-have-base-ale
+#testcase-check-pre-bay-sale-rule-if-player-does-not-have-base-ale-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-bay-sale-rule
 >bay sale
 You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
-#testcase-check-pre-bile-oh-rule-if-player-is-not-in-we-loan-or-merchant-is-not-in-we-loan
+#testcase-check-pre-bile-oh-rule-if-player-is-not-in-we-loan-or-merchant-is-not-in-we-loan-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-bile-oh-rule
 >bile oh
 You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
@@ -76,7 +79,7 @@ You're stuck with what to do right now. Perhaps you can use your senses for clue
 >gaunt raider
 You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
-#testcase-check-pre-gnome-old-rule-if-player-is-not-in-keepiller
+#testcase-check-pre-gnome-old-rule-if-player-is-not-in-keepiller-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-gnome-old-rule
 >gnome old
 You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
@@ -106,7 +109,7 @@ You're stuck with what to do right now. Perhaps you can use your senses for clue
 >hideout
 You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
-#testcase-check-pre-high-plain-rule-if-player-is-not-in-hype-lane
+#testcase-check-pre-high-plain-rule-if-player-is-not-in-hype-lane-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-high-plain-rule
 >high plain
 You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
@@ -141,12 +144,12 @@ You're stuck with what to do right now. Perhaps you can use your senses for clue
 >low bend
 You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
-#testcase-check-pre-low-door-rule-if-player-is-not-in-wolf-rock
+#testcase-check-pre-low-door-rule-if-player-is-not-in-wolf-rock-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-low-door-rule
 >low door
 You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
-#testcase-check-pre-manna-curb-rule-if-player-is-not-in-keepiller
+#testcase-check-pre-manna-curb-rule-if-player-is-not-in-keepiller-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-manna-curb-rule
 >manna curb
 You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
@@ -156,11 +159,12 @@ You're stuck with what to do right now. Perhaps you can use your senses for clue
 >mensch elf
 You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
-#testcase-check-pre-mice-tall-rule-if-player-is-not-in-storm-isle
+#testcase-check-pre-mice-tall-rule-if-player-is-not-in-storm-isle-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-mice-tall-rule
 >mice tall
 You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
+#testcase-check-pre-my-corps-rule-if-player-is-not-in-worm-eaten-and-once-now-hunt-is-false
 #testcase-check-pre-my-corps-rule-if-sco-an-aim-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-my-corps-rule
 >my corps
@@ -176,12 +180,12 @@ You're stuck with what to do right now. Perhaps you can use your senses for clue
 >nah phase
 You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
-#testcase-check-pre-oh-flier-rule-if-player-is-not-in-we-loan
+#testcase-check-pre-oh-flier-rule-if-player-is-not-in-we-loan-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-oh-flier-rule
 >oh flier
 You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
-#testcase-check-pre-plan-tracker-rule-if-player-is-not-in-keepiller-or-plant-racker-is-not-touchable
+#testcase-check-pre-plan-tracker-rule-if-player-is-not-in-keepiller-and-once-now-hunt-is-false-or-plant-racker-is-not-touchable
 #testcase-reject-start-table-of-main-oronyms-pre-plan-tracker-rule
 >plan tracker
 You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
@@ -196,12 +200,12 @@ You're stuck with what to do right now. Perhaps you can use your senses for clue
 >pry stalk
 You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
-#testcase-check-pre-rogue-old-rule-if-player-is-not-in-keepiller
+#testcase-check-pre-rogue-old-rule-if-player-is-not-in-keepiller-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-rogue-old-rule
 >rogue old
 You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
-#testcase-check-pre-see-design-rule-if-player-is-not-in-keepiller
+#testcase-check-pre-see-design-rule-if-player-is-not-in-keepiller-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-see-design-rule
 >see design
 You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
@@ -241,7 +245,7 @@ You're stuck with what to do right now. Perhaps you can use your senses for clue
 >the file
 You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
-#testcase-check-pre-treat-all-rule-if-player-is-not-in-trees-mall
+#testcase-check-pre-treat-all-rule-if-tree-tall-is-not-in-trees-mall-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-treat-all-rule
 >treat all
 You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
@@ -281,12 +285,12 @@ You're stuck with what to do right now. Perhaps you can use your senses for clue
 >were dicks
 You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
-#testcase-check-pre-were-meetin-rule-if-player-is-not-in-worm-eaten
+#testcase-check-pre-were-meetin-rule-if-player-is-not-in-worm-eaten-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-were-meetin-rule
 >were meetin
 You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 
-#testcase-check-pre-whee-lone-rule-if-player-is-not-in-we-loan
+#testcase-check-pre-whee-lone-rule-if-player-is-not-in-we-loan-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-whee-lone-rule
 >whee lone
 You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
@@ -313,8 +317,8 @@ You aren't feeling too great, but you don't want or need to wipe yourself out, y
 >my corps
 Sadly, you have no friends to bring together yet! Yet.
 
-#testcase-think-table-of-main-oronyms-pre-wipe-out-rule
-#testcase-think-table-of-main-oronyms-pre-my-corps-rule
+#testcase-think-once-table-of-main-oronyms-pre-wipe-out-rule
+#testcase-think-once-table-of-main-oronyms-pre-my-corps-rule
 >think
 You will want to WIPE OUT the cause of your problems once you have them in your crosshairs. That's probably not for a while, though.
 You can call your companions MY CORPS once you have companions.
@@ -339,7 +343,7 @@ That would be a nicer place! But you have nothing that could help you move up ye
 Hmph. That still doesn't quite work! You'll figure out the how and when and where, though.
 !THINK
 
-#testcase-think-table-of-main-oronyms-pre-high-plain-rule
+#testcase-think-once-table-of-main-oronyms-pre-high-plain-rule
 >think
 You can find a HIGH PLAIN once you have something that can reach that far up.
 
@@ -357,7 +361,7 @@ by a point
 >pry stalk
 You already pried a stalk!
 
-#+testcase-think-table-of-main-oronyms-pre-high-plain-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-high-plain-rule
 >think
 You can find a HIGH PLAIN now you have something that can reach that far up.
 
@@ -445,7 +449,7 @@ Sadly, you have no friends to bring together yet! Yet.
 Maybe there's a low door beneath the lode ore, which definitely has small holes. But not small enough for you to fit through and scrabble and scrape to find one.
 THINK
 
-#testcase-think-table-of-main-oronyms-pre-low-door-rule
+#testcase-think-once-table-of-main-oronyms-pre-low-door-rule
 >think
 You may be able to find a LOW DOOR here once you have a companion or companions small enough to dig a bit better.
 
@@ -470,9 +474,9 @@ You already gave the new troll a boost!
 THINK
 That feels right, but there's no water here. Maybe somewhere else.
 
-#testcase-think-table-of-main-oronyms-pre-bay-sale-rule
+#testcase-think-once-table-of-main-oronyms-pre-bay-sale-rule
 >think
-You may be able to participate in a BAY SALE if you've found the right location and once you have money.
+You may be able to participate in a BAY SALE once you've found an appropriate location and once you have money.
 
 >u
 
@@ -510,10 +514,10 @@ THINK
 >see design
 You sort of want to see the hidden design, but you're sort of scared what will happen once you do. The new troll can only help so much. You feel like you need some more support before you can give it your all.
 
-#testcase-think-table-of-main-oronyms-pre-see-design-rule
-#testcase-think-table-of-main-oronyms-pre-gnome-old-rule
-#testcase-think-table-of-main-oronyms-pre-manna-curb-rule
-#testcase-think-table-of-main-oronyms-pre-rogue-old-rule
+#testcase-think-once-table-of-main-oronyms-pre-see-design-rule
+#testcase-think-once-table-of-main-oronyms-pre-gnome-old-rule
+#testcase-think-once-table-of-main-oronyms-pre-manna-curb-rule
+#testcase-think-once-table-of-main-oronyms-pre-rogue-old-rule
 >think
 You may be able to recruit the GNOME OLD here once you have adventuring gear.
 You may be able to recruit the ROGUE OLD here once you have money.
@@ -535,7 +539,7 @@ by a point
 >wool frock
 You already found one wool frock. You can't imagine you'd need two.
 
-#+testcase-think-table-of-main-oronyms-pre-gnome-old-rule
+#testcase-think-nowfar-table-of-main-oronyms-pre-gnome-old-rule
 >think
 You may be able to recruit the GNOME OLD in Keep (Iller) now you have adventuring gear.
 
@@ -587,14 +591,19 @@ by a point
 >six quid
 You don't need any more money, and the squid doesn't need any more help.
 
-#+testcase-think-table-of-main-oronyms-pre-see-design-rule
+#testcase-think-nowfar-table-of-main-oronyms-pre-rogue-old-rule
+#+testcase-think-once-table-of-main-oronyms-pre-see-design-rule
 >think
 You may be able to recruit the ROGUE OLD in Keep (Iller) now you have money.
 You may be able to SEE DESIGN in Keep (Iller) once you have more support and are less scared.
+You may be able to participate in a BAY SALE once you've found an appropriate location and now you have money.
 
 >n
 
 >e
+
+>bay sale
+No water visible here right now. Maybe if the landscape rearranged.
 
 >low bend
 by a point
@@ -602,6 +611,19 @@ by a point
 #testcase-check-pre-low-bend-rule-if-sco-low-bend-is-true
 >low bend
 You already found a low bend!
+
+#testcase-think-nownear-table-of-main-oronyms-pre-bay-sale-rule
+>think
+You may be able to participate in a BAY SALE here now you have money.
+
+>w
+
+#testcase-think-nowfar-table-of-main-oronyms-pre-bay-sale-rule
+>think
+You may be able to participate in a BAY SALE in Low Bend now you have money.
+
+>undo
+>undo
 
 >bay sale
 by a point
@@ -628,7 +650,7 @@ But you already transformed the storm isle!
 Maybe there are mice behind there, but you can't figure a way to locate them. It requires some sort of clever inhuman perception, you'd think.
 THINK
 
-#testcase-think-table-of-main-oronyms-pre-mice-tall-rule
+#testcase-think-once-table-of-main-oronyms-pre-mice-tall-rule
 >think
 You may be able to locate the MICE TALL here once you have a companion with good perception.
 
@@ -638,10 +660,14 @@ You may be able to locate the MICE TALL here once you have a companion with good
 
 >w
 
+#testcase-think-nownear-table-of-main-oronyms-pre-gnome-old-rule
+>think
+You may be able to recruit the GNOME OLD here now you have adventuring gear.
+
 >gnome old
 by a point
 
-#+testcase-think-table-of-main-oronyms-pre-mice-tall-rule
+#testcase-think-nowfar-table-of-main-oronyms-pre-mice-tall-rule
 >think
 You may be able to locate the MICE TALL in Store Mile now you have a companion with good perception.
 
@@ -659,10 +685,14 @@ You don't want to wipe out the friendships you made.
 
 >n
 
+#testcase-think-nownear-table-of-main-oronyms-pre-mice-tall-rule
+>think
+You may be able to locate the MICE TALL here now you have a companion with good perception.
+
 >mice tall
 by a point
 
-#+testcase-think-table-of-main-oronyms-pre-low-door-rule
+#testcase-think-nowfar-table-of-main-oronyms-pre-low-door-rule
 >think
 You may be able to find a LOW DOOR in Wolf Rock now you have a companion or companions small enough to dig a bit better.
 
@@ -739,6 +769,10 @@ You take some time to consider how the shrewd orc fits into a top-eight op. It o
 
 >n
 
+#testcase-think-nownear-table-of-main-oronyms-pre-low-door-rule
+>think
+You may be able to find a LOW DOOR here now you have a companion or companions small enough to dig a bit better.
+
 >low door
 by a point
 
@@ -770,17 +804,17 @@ That should work, but you're a bit intimidated right now. You need a way to show
 It doesn't have to be particularly rigorous or sensible, but it has to deflect from their aggression.
 THINK
 
-#testcase-think-table-of-main-oronyms-pre-bile-oh-rule
-#+testcase-think-table-of-main-oronyms-pre-my-corps-rule
+#testcase-think-once-table-of-main-oronyms-pre-bile-oh-rule
+#+testcase-think-once-table-of-main-oronyms-pre-my-corps-rule
 >think
-You may be able to expose some merchant's BILE OH once you've found something positive to say to prep yourself.
+You may be able to expose some merchant's BILE OH here once you've found something positive to say to prep yourself.
 You can call your companions MY CORPS once you have enough of them.
 
 #testcase-check-pre-whee-lone-rule-if-merchant-is-in-we-loan
 >whee lone
 You can't enjoy solitude with that merchant around.
 
-#testcase-think-table-of-main-oronyms-pre-whee-lone-rule
+#testcase-think-once-table-of-main-oronyms-pre-whee-lone-rule
 >think
 You may be able to enjoy your solitude with WHEE LONE here once you actually have solitude.
 
@@ -791,16 +825,20 @@ by a point
 >summer chant
 You already found cheeriness outside of the merchant!
 
-#+testcase-think-table-of-main-oronyms-pre-bile-oh-rule
->think
-You may be able to expose some merchant's BILE OH now you've found something positive to say to prep yourself.
-
 >bile oh
 by a point
 
-#+testcase-think-table-of-main-oronyms-pre-whee-lone-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-whee-lone-rule
 >think
 You may be able to enjoy your solitude with WHEE LONE here now you actually have solitude.
+
+>out
+
+#testcase-think-nowfar-table-of-main-oronyms-pre-whee-lone-rule
+>think
+You may be able to enjoy your solitude with WHEE LONE in We'll Own now you actually have solitude.
+
+>in
 
 >whee lone
 by a point
@@ -811,18 +849,22 @@ You try and pull out one quid, but you wind up pulling them all out. The oaf lia
 "Have it your way. Information's valuable. Don't try to lowball me."
 THINK
 
-#testcase-think-table-of-main-oronyms-pre-oh-flier-rule
+#testcase-think-once-table-of-main-oronyms-pre-oh-flier-rule
 >think
-You may be able to say OH FLIER around the oaf liar once you have exactly one quid left.
+You may be able to say OH FLIER to the oaf liar here once you have exactly one quid left.
 
 >out
 
 >s
 
+#testcase-think-nowfar-table-of-main-oronyms-pre-see-design-rule
+>think
+You may be able to SEE DESIGN in Keep (Iller) now you have more support and are less scared.
+
 >w
 
-#+testcase-think-table-of-main-oronyms-pre-see-design-rule
-#+testcase-think-table-of-main-oronyms-pre-rogue-old-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-see-design-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-rogue-old-rule
 >think
 You may be able to SEE DESIGN here now you have more support and are less scared.
 You may be able to recruit the ROGUE OLD here now you have money.
@@ -838,11 +880,15 @@ But you already got the rogue (old) to join you!
 
 >n
 
+#testcase-think-nowfar-table-of-main-oronyms-pre-oh-flier-rule
+>think
+You may be able to say OH FLIER to the oaf liar in Whee, Lone now you have exactly one quid left.
+
 >in
 
-#+testcase-think-table-of-main-oronyms-pre-oh-flier-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-oh-flier-rule
 >think
-You may be able to say OH FLIER around the oaf liar now you have exactly one quid left.
+You may be able to say OH FLIER to the oaf liar here now you have exactly one quid left.
 
 >oh flier
 by a point
@@ -867,13 +913,13 @@ THINK
 This isn't the right place to look for an isle. No large body of water nearby.
 THINK
 
-#testcase-think-table-of-main-oronyms-pre-grow-vial-rule
-#testcase-think-table-of-main-oronyms-pre-war-file-rule
-#testcase-think-table-of-main-oronyms-pre-the-file-rule
+#testcase-think-once-table-of-main-oronyms-pre-war-file-rule
+#testcase-think-once-table-of-main-oronyms-pre-the-file-rule
+#testcase-think-once-table-of-main-oronyms-pre-grow-vial-rule
 >think
-You may be able to make sense of THE FILE in Known Ocean once you've gotten enough information from companions.
-You may be able to recover the WAR FILE on the wharf isle in Known Ocean once you have something you can write down its main ideas in.
-You may be able to find a GROW VIAL with the right water transport.
+You may be able to recover the WAR FILE on Wharf Isle across the water via Known Ocean once you have something you can write down its main ideas in.
+You may be able to make sense of THE FILE on Thief Isle across the water via Known Ocean once you've gotten enough information from companions.
+You may be able to find a GROW VIAL on Grove Isle across the water via Known Ocean now you have long-range water transport.
 
 >out
 
@@ -978,11 +1024,18 @@ While you'll want to hold a meetin(') some time, you sense you don't yet have th
 So how many companions do you need? On reflection, a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight. For now, you assume you are.
 You're still one follower short.
 
-#testcase-think-table-of-main-oronyms-pre-were-meetin-rule
+#testcase-think-once-table-of-main-oronyms-pre-were-meetin-rule
 >think
-You will be able to say WERE MEETIN once you have a full party available.
+You will be able to say WERE MEETIN here once you have a full party available.
 
 >u
+
+#testcase-think-nowfar-table-of-main-oronyms-pre-war-file-rule
+#testcase-think-nowfar-table-of-main-oronyms-pre-grow-vial-rule
+>think
+You may be able to recover the WAR FILE on Wharf Isle across the water via Known Ocean now you have something you can write down its main ideas in.
+You may be able to make sense of THE FILE on Thief Isle across the water via Known Ocean once you've gotten enough information from companions.
+You may be able to find a GROW VIAL on Grove Isle across the water via Known Ocean now you have long-range water transport.
 
 >s
 
@@ -990,10 +1043,11 @@ You will be able to say WERE MEETIN once you have a full party available.
 >the file
 You know there is THE FILE, but which file is THE FILE? The thief isle has probably stolen a lot, and it wouldn't do to hang around there guessing where to look! You need information from your companions, or maybe just more companions.
 
-#+testcase-think-table-of-main-oronyms-pre-war-file-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-war-file-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-grow-vial-rule
 >think
-You may be able to recover the WAR FILE on the wharf isle here now you have something you can write down its main ideas in.
-You may be able to make sense of THE FILE here once you've gotten enough information from companions.
+You may be able to recover the WAR FILE on Wharf Isle across the water here now you have something you can write down its main ideas in.
+You may be able to find a GROW VIAL on Grove Isle across the water here now you have long-range water transport.
 
 >war file
 by a point
@@ -1008,10 +1062,6 @@ You already got the war file. See where else you can visit.
 #+testcase-check-pre-the-file-rule-if-number-of-still-chat-needed-followers->-0
 >the file
 You know there is THE FILE, but which file is THE FILE? The thief isle has probably stolen a lot, and it wouldn't do to hang around there guessing where to look! You need information from your companions.
-
-#+testcase-think-table-of-main-oronyms-pre-the-file-rule
->think
-You may be able to make sense of THE FILE here once you've gotten enough information from companions.
 
 >t dwarf
 
@@ -1051,7 +1101,7 @@ by a point
 >grow vial
 You already got the grow vial. See where else you can visit.
 
-#+testcase-think-table-of-main-oronyms-pre-manna-curb-rule
+#testcase-think-nowfar-table-of-main-oronyms-pre-manna-curb-rule
 >think
 You may be able to find a MANNA CURB beneath the manna curb in Keep (Iller) now you have someone with knowledge of wildlife and wildflowers.
 
@@ -1063,7 +1113,7 @@ You may be able to find a MANNA CURB beneath the manna curb in Keep (Iller) now 
 
 >n
 
-#testcase-check-pre-treat-all-rule-if-tree-tall-is-not-in-trees-mall
+#+testcase-check-pre-treat-all-rule-if-tree-tall-is-not-in-trees-mall-and-once-now-hunt-is-false
 >treat all
 That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
@@ -1082,9 +1132,9 @@ You already got a tree (small) to grow!
 
 >s
 
-#+testcase-think-table-of-main-oronyms-pre-the-file-rule
+#testcase-think-nowfar-table-of-main-oronyms-pre-the-file-rule
 >think
-You may be able to make sense of THE FILE here once you've gotten enough information from companions.
+You may be able to make sense of THE FILE on Thief Isle across the water here once you've gotten enough information from companions.
 
 >undo
 >undo
@@ -1110,13 +1160,13 @@ You may be able to make sense of THE FILE here once you've gotten enough informa
 You have neither the utensils nor the ingredients to make a cake.
 THINK
 
-#testcase-think-table-of-main-oronyms-pre-tall-cake-rule
+#testcase-think-once-table-of-main-oronyms-pre-tall-cake-rule
 >think
 You may be able to create a TALL CAKE once you have ingredients and cooking instruments.
 
-#+testcase-think-table-of-main-oronyms-pre-the-file-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-the-file-rule
 >think
-You may be able to make sense of THE FILE in Known Ocean now you've gotten enough information from companions.
+You may be able to make sense of THE FILE on Thief Isle across the water via Known Ocean now you've gotten enough information from companions.
 
 >u
 
@@ -1140,9 +1190,9 @@ But you've already opened the passage through BRUISE-WARES!
 The crude orc doesn't believe they're being used by the grinch earls. Why, it's part of the hazing! They have to show they're as tough as the grinch earls! Uh, right?
 THINK
 
-#testcase-think-table-of-main-oronyms-pre-crew-dork-rule
+#testcase-think-once-table-of-main-oronyms-pre-crew-dork-rule
 >think
-You can explain the grinch earls see the crude orc as a CREW DORK once they seem a bit less strong.
+You can explain the grinch earls here see the crude orc as a CREW DORK once they seem a bit less strong.
 
 #testcase-check-pre-ass-low-rule-if-aah-slow-is-not-in-brew-swears
 >ass low
@@ -1185,9 +1235,17 @@ You lost the chance to say CREW DORK to the crude orc a bit more gently, as you 
 >weak us
 by a bonus point
 
-#+testcase-think-table-of-main-oronyms-pre-crew-dork-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-crew-dork-rule
 >think
-You can explain the grinch earls see the crude orc as a CREW DORK now they seem a bit less strong.
+You can explain the grinch earls here see the crude orc as a CREW DORK now they seem a bit less strong.
+
+>out
+
+#testcase-think-nowfar-table-of-main-oronyms-pre-crew-dork-rule
+>think
+You can explain the grinch earls in Brew Swears see the crude orc as a CREW DORK now they seem a bit less strong.
+
+>in
 
 >gonear doom ending
 >think
@@ -1297,6 +1355,10 @@ You may be able to create a TALL CAKE once you have ingredients and cooking inst
 >see design
 You already saw the design in the seedy sign. You don't need to redo things.
 
+#testcase-think-nownear-table-of-main-oronyms-pre-manna-curb-rule
+>think
+You may be able to find a MANNA CURB beneath the manna curb here now you have someone with knowledge of wildlife and wildflowers.
+
 >manna curb
 by a point
 
@@ -1304,7 +1366,7 @@ by a point
 >manna curb
 You already found enough manna beneath the manic herb!
 
-#+testcase-think-table-of-main-oronyms-pre-tall-cake-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-tall-cake-rule
 >think
 You may be able to create a TALL CAKE now you have ingredients and cooking instruments.
 
@@ -1323,21 +1385,17 @@ THINK
 
 >s
 
-#testcase-think-table-of-main-oronyms-pre-treat-all-rule
+#testcase-think-once-table-of-main-oronyms-pre-treat-all-rule
 >think
 You may be able to TREAT ALL in Trees Mall once you have a tasty treat.
 
 >n
 
-#+testcase-think-table-of-main-oronyms-pre-the-file-rule
->think
-You may be able to make sense of THE FILE in Known Ocean now you've gotten enough information from companions.
-
 >tall cake
 by a point
 
-#+testcase-think-table-of-main-oronyms-pre-my-corps-rule
-#+testcase-think-table-of-main-oronyms-pre-treat-all-rule
+#+testcase-think-once-table-of-main-oronyms-pre-my-corps-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-treat-all-rule
 >think
 You may be able to TREAT ALL here now you have a tasty treat.
 You can call your companions MY CORPS once you've shared something together.
@@ -1346,10 +1404,22 @@ You can call your companions MY CORPS once you've shared something together.
 >my corps
 They are your corps, and yet, there's something to share with them. Something to enjoy together, first.
 
+>s
+
+#testcase-check-pre-treat-all-rule-if-player-is-not-in-trees-mall-and-once-now-hunt-is-false
+>treat all
+You have the treat. Why not go back to the tree?
+
+#testcase-think-nowfar-table-of-main-oronyms-pre-treat-all-rule
+>think
+You may be able to TREAT ALL in Trees Mall now you have a tasty treat.
+
+>n
+
 >treat all
 by a point
 
-#testcase-check-pre-my-corps-rule-if-player-is-not-in-worm-eaten
+#+testcase-check-pre-my-corps-rule-if-player-is-not-in-worm-eaten-and-once-now-hunt-is-false
 >my corps
 This doesn't seem to be the right place to pep up the troops.
 
@@ -1370,11 +1440,15 @@ by a point
 
 >n
 
+#testcase-think-nowfar-table-of-main-oronyms-pre-were-meetin-rule
+>think
+You will be able to say WERE MEETIN in Worm-Eaten now you have a full party available.
+
 >d
 
-#+testcase-think-table-of-main-oronyms-pre-were-meetin-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-were-meetin-rule
 >think
-You will be able to say WERE MEETIN now you have a full party available.
+You will be able to say WERE MEETIN here now you have a full party available.
 
 #testcase-check-pre-my-corps-rule-if-sco-were-meetin-is-false
 >my corps
@@ -1390,9 +1464,17 @@ You already held a meeting! Too many meetings get in the way of doing.
 >wipe out
 You haven't identified anyone terribly evil you want to wipe out.
 
-#+testcase-think-table-of-main-oronyms-pre-my-corps-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-my-corps-rule
 >think
-You can call your companions MY CORPS now you've shared something together.
+You can call your companions MY CORPS here now you've shared something together.
+
+>u
+
+#testcase-think-nowfar-table-of-main-oronyms-pre-my-corps-rule
+>think
+You can call your companions MY CORPS in We're Meetin' now you've shared something together.
+
+>d
 
 >my corps
 by a point
@@ -1421,7 +1503,7 @@ You try to declare a wide vision, but as you do, you trip yourself up on pronunc
 >wide vision
 You are unable to express your wide vision. You'll have to settle for just repairing things pretty well.
 
-#testcase-think-table-of-main-oronyms-pre-wide-vision-rule
+#testcase-think-once-table-of-main-oronyms-pre-wide-vision-rule
 >think
 Sadly, you didn't quite experience enough to spread your wide vision.
 
@@ -1447,8 +1529,8 @@ You try to charge and wipe out the sea skull, but you bounce against an invisibl
 >why division
 That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
-#+testcase-think-table-of-main-oronyms-pre-wipe-out-rule
-#testcase-think-table-of-main-oronyms-pre-do-due-mend-rule
+#+testcase-think-once-table-of-main-oronyms-pre-wipe-out-rule
+#testcase-think-once-table-of-main-oronyms-pre-do-due-mend-rule
 >think
 You can think DO/DUE MEND/MENDING once you've disposed of the sea skull.
 You will want to WIPE OUT the cause of your problems once you have them in your crosshairs.
@@ -1461,7 +1543,7 @@ by a point
 >cease cull
 You already played defense. Now's the time to go on offense!
 
-#+testcase-think-table-of-main-oronyms-pre-wipe-out-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-wipe-out-rule
 >think
 You will want to WIPE OUT the cause of your problems now you have them in your crosshairs.
 !not for a while
@@ -1481,7 +1563,7 @@ Your score just went up by a bonus point!
 Your experiences and failures give you a leadership you don't know you had. You convince your companions to do more than just save their own hides. You lay out a vision so scourges from the likes of the sea skull are less likely to happen again, or it will take longer. And everyone listens! A few even say "Worth inking, we're thinking!"
 They're eager for the final step, to get out there. You look around. It's pretty clear what must occur, or it will be, soon.
 
-#+testcase-think-table-of-main-oronyms-pre-do-due-mend-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-do-due-mend-rule
 >think
 You can think DO/DUE MEND/MENDING now you've disposed of the sea skull.
 

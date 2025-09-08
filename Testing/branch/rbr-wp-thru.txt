@@ -23,7 +23,7 @@ file=reg-wp-thru-npctalk.txt,abbr=npc/talk/npctalk,desc=NPC random chatter
 
 }$REJECT1=You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 }$REJECT2=That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
-}$REJHOM=Hmm. That really, really SOUNDED like it should work, but it didn't.
+}$REJHOM=Hmm. That felt more than halfway there. You've GOT to be very close.
 
 }}MAX=55
 }}CURMAX=55
@@ -70,10 +70,15 @@ What would you do even if there was a passage?
 
 @verbs
 >about
+Why Pout was written for IFComp 2024. It's something I originally thought about writing for EctoComp, but I never managed to mash enough ideas together.
+It reuses a lot of code from Roads of Liches and my Prime Pro Rhyme Row games, which have different mechanics but a similar conceit: guess the right two-word phrase. However, it's narrower in scope, and I didn't want to rely on too well-known examples of possible phrases for point scoring.
+Once I realized bigger projects weren't on the cards for IFComp 2024, I focused on something I could handle. I wound up making forty or so puzzle instead of the usual eighty.
+While the drip of ideas started February, 2020, according to my notes, I wasn't getting anything really original, or so it seemed. But the idea was always there. In my weekly writing file 20240429.txt, there's the game's title, and that's when significant ideas started appearing. But it wasn't until I registered for IFComp in July that ideas started clicking together. Deadlines are funny like that!
 Like most of my games, Why Pout rates merciful on the Zarfian cruelty scale. However, in this case, I want the puzzles to be more merciful in terms of general difficulty on the player's psyche than usual.
-Note that an optional room will appear about midway through the game. It may contain profanity, which I hope is amusing, but I don't blame you if you wish to skip it.
-blurglecruncheon@gmail.com is my email, and http://github.com/andrewschultz/why-pout is the github site, where you can report issues. I'm open to transcripts.
-CREDITS lists people who helped make Why Pout a reality, or a better version than it would've been without them.  EXT shows the extensions listed, and VERSION or VERSIONS shows version info.
+I originally thought this would be the only game of its sort. But more ambitious projects stalled out, and so Us Too was my IFComp 2025 entry. It helped with Why Pout, too: I slowly built a core file for reusable code (warning: GitHub link ahead may be a spoiler) that you can find at http://github.com/andrewschultz/why-pout.
+I also have a similar game planned in Adventuron for EctoComp 2025 Petite Mort (four hours of programming,) with five rooms and six points. It has graphics, too. There might be a second as well, as I had no time for more ambitious projects.
+Note that an optional room will appear about midway through the game. It may contain profanity, which I hope is amusing, but I don't blame you if you wish to skip it. It's only there for the bonus points.
+CREDITS lists people who helped make Why Pout a reality, or at the very least, a better version than it would've been without them. EXT lists the extensions used, and VERSION/VERSIONS shows version information. VERBS describes what actions are best used with this stripped-down parser.
 \\
 >credits
 Thanks to everyone past and future involved in the administration of IFComp.
@@ -157,7 +162,7 @@ You need to look inward to find something you lost before dealing with external 
 The eyes light up green and show two dots, then three dots.
 \\
 >eye
-The eyes almost seem to light up. Perhaps you need to do something later with the general area, though specific things may provide a clue, when things are noticeably different.
+The eyes almost seem to light up. Perhaps you need to change something with yourself later, when things are noticeably different.
 \\
 >undo
 >undo
@@ -211,7 +216,8 @@ It's a bit clearer now. You still seem trapped. But there must be secrets hidden
 >purloin eyes
 >eye me
 The eyes light up yellow and show two dots, then five dots.
-[NOTE: the eyes have two binary settings: green or yellow, and glowing or dimly glowing. This, along with the hints, may be intuitive, but if it is not, EYE EYES will spell things out.]
+NOTE: while the number of dots on the eyes is the main thing, they also have two binary settings: green or yellow, and glowing or dimly glowing. EYE EYES will walk you through what the eyes' different outputs mean.
+NOTE: the yellow dots mean something unusual. You can EYE EYES to pin down what, if you don't want to guess.
 \\
 >eye
 The eyes light up green and show three dots, then four dots.
@@ -260,25 +266,25 @@ You dropped the sly size-slice eyes, which were the main hint item. You'll have 
 #testcase-values-eyes-number-of-sly-size-slice-eyes-is-1@
 >eye eye
 !The eyes light
-The eyes will light up two sets of dots if there is something relevant to clue. (+)
+The eyes will light up two sets of dots if there is something you still need to do in the area. (1/6, EYE EYES again (or G repeats a command) to see more)
 \\
 >eye eye
-The numbers of dots correspond to the number of letters in each word. (+)
+The numbers of dots correspond to the number of letters in the first and second words to type, respectively. (2/6)
 \\
 >eye eye
-The dots also have two binary settings: green or yellow, and dimly glowing or glowing. (+)
+The dots also have two different types of appearances that clue you to the puzzle nature: green or yellow, and dimly glowing or glowing. (3/6)
 \\
 >eye eye
-Green dots mean something you can move forward with now. (+)
+Green dots mean the suggested action can score a point right now. (4/6)
 \\
 >eye eye
-Yellow dots mean something you can guess, but you don't have the right items or assistance to move forward. (+)
+Yellow dots mean you have something to guess, but you won't get a point, as you haven't found the right items or assistance from other puzzles to make things work. A successful guess will be kept in THINK. (5/6)
 \\
 >eye eye
-Finally, a dimly glowing reading is something that is optional for completing Why Pout. (End of hints. Next EYE EYES starts the hint cycle again)
+Finally, a dimly glowing reading indicates something you can change for a bonus point. It's not critical to complete Why Pout. (End of hints. Next EYE EYES starts the hint cycle again) (6/6)
 \\
 >eye eye
-The eyes will light up two sets of dots if there is something relevant to clue. (+)
+The eyes will light up two sets of dots if there is something you still need to do in the area. (1/6)
 
 @hint+
 #testcase-values-eyes-number-of-hype-lane-is-45
@@ -331,6 +337,13 @@ Whether or not the cell phones are the latest models, you don't want to pay atte
 Whether or not the cell phones are the latest models, you don't want to pay attention to them too much. Just figure out a way for a harmless calamity that may make their users quiet down a bit.
 It's more the cell phones you need to focus on. They're what's making the chatter extra distracting.
 
+@alt+
+#testcase-alt-words-table-of-main-oronyms-self-owns-own
+>self own
+by a point
+\\
+>undo
+
 >self owns
 by a point
 
@@ -372,20 +385,34 @@ The talk itself gives you indigestion.
 >eye talk
 The eyes light up green and show three dots, then five dots.
 
+@all
+##balance undos
+>high plain
+!by a point
+\\
+#testcase-run-post-pry-stalk-rule-if-pre-high-plain-rule-is-guessed-yet
+>pry stalk
+by a point
+You're pretty sure you already guessed, though you can THINK if you momentarily forgot.
+\\
+>undo
+>undo
+
 >pry stalk
 by a point
 
 @hint
 #+testcase-values-eyes-number-of-prize-talk-is-35
 >eye talk
-The eyes show nothing. You've done everything you need to neutralize the prize talk.
+The eyes show nothing. You've changed up everything you need to neutralize the prize talk.
 \\
 #testcase-values-eyes-number-of-stalk-is--1
 >eye stalk
-The eyes show nothing. You've done everything you need to with the stalk.
+The eyes show nothing. You've changed up everything you need with the stalk.
 
 @all
 #testcase-check-pre-pry-stalk-rule-fallthrough
+#testcase-run-post-pry-stalk-rule-fallthrough
 #testcase-run-post-pry-stalk-rule-default
 Among all the chatter, you discover a disused booth. Someone is preaching on about environmental stuff, and it's so much less painful than cell phone chat. You worry they're just going to blab on forever, but they're so grateful you listened as long as you did. They hand you a stalk they think can grow quickly. Their own special formula. It looks weird and glittery, and if anything can reach up out of here, this can. But the question is, where can it grow to?
 
@@ -466,11 +493,11 @@ You're surrounded by some really naff haze. It's naff because you can't go anywh
 
 @verbs
 >listen
-You hear only a taunting "Eh? CLUES?! Ache! Lose!"
+A disembodied voice only you can hear taunts "Eh? CLUES?! Ache! Lose!"
 You've figured enough out by now. You can laugh back at this laughing-villain act.
 \\
 >listen
-You hear only a taunting "Eh? CLUES?! Ache! Lose!"
+A disembodied voice only you can hear taunts "Eh? CLUES?! Ache! Lose!"
 !laugh back
 
 @gt
@@ -626,17 +653,6 @@ Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will
 !You feel policed here.
 You feel less policed, too, since you found a path EAST.
 
-@li+
-##balance undos
->doff
->warp on
-by a point
-INVENTORY CHANGED
-!/  a war pawn
-\\
->undo
->undo
-
 @all
 #testcase-check-pre-pole-east-rule-fallthrough
 #testcase-run-post-pole-east-rule-default
@@ -662,7 +678,7 @@ The keep (iller) is locked. You will need to find the key.
 
 @hint
 >eye
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+Nothing for the general area, though the sly size-slice eyes seem to wander between the keep, iller, the gross tar and the short rail.
 \\
 #testcase-values-eyes-number-of-short-rail-is-55
 >eye short rail
@@ -679,7 +695,8 @@ The eyes light up green and show four dots, then four dots.
 #testcase-values-eyes-number-of-war-pawn-is--42
 >eye war pawn
 You reflect on the irony of using a hint item on a hint item, but then, you see a result!
-The eyes glow dimly and show four dots, then two dots.
+The eyes glow dimly green and show four dots, then two dots.
+NOTE: the dim dots mean something. You can EYE EYES to pin down what, if you don't want to guess.
 
 @hom
 #testcase-homonym-detail-hom-sure-trail-rule-default
@@ -704,13 +721,13 @@ Things have opened up a bit more now, with the naff haze lifted. You feel less p
 >eat tar
 Too much to eat, even if it were edible.
 \\
->eat war pawn
+>eat me
 If you need to eat anything, it requires a slightly different approach.
 
 @hint
 #testcase-values-eyes-number-of-shore-trail-is--1
 >eye trail
-The eyes show nothing. You've done everything you need to with the shore trail.
+The eyes show nothing. You've changed up everything you need with the shore trail.
 
 >grow star
 by a point
@@ -729,7 +746,7 @@ Things have opened up almost all the way now, with the naff haze lifted. You fee
 @hom
 #testcase-homonym-reject-table-of-main-oronyms-piller
 >xxx piller
-Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+Hmm. That SOUNDED like it should work at least part way, but it didn't.
 
 >key pillar
 by a point
@@ -789,7 +806,7 @@ You are really impressed by how no mold grows here. The gnome (old,) who keeps i
 
 @hint
 >eye keep
-The eyes show nothing. You've done everything you need to with the keep, iller.
+The eyes show nothing. You've changed up everything you need with the keep, iller.
 
 >s
 
@@ -809,6 +826,23 @@ You simply have no notion what lies beyond here. You hope something does. Surely
 #testcase-values-eyes-number-of-nonotion-is-55
 >eye
 The eyes light up green and show five dots, then five dots.
+
+@mis
+#testcase-mistake-why-pout-no-no-shin-nono-shin-no-no-shun-nono-shun
+>no no shin
+No, you're trying to bring something to light, not fret about what you can't find.
+\\
+#+testcase-mistake-why-pout-no-no-shin-nono-shin-no-no-shun-nono-shun
+>nono shin
+No, you're trying to bring something to light, not fret about what you can't find.
+\\
+#+testcase-mistake-why-pout-no-no-shin-nono-shin-no-no-shun-nono-shun
+>no no shun
+No, you're trying to bring something to light, not fret about what you can't find.
+\\
+#+testcase-mistake-why-pout-no-no-shin-nono-shin-no-no-shun-nono-shun
+>nono shun
+No, you're trying to bring something to light, not fret about what you can't find.
 
 >known ocean
 by a point
@@ -842,11 +876,11 @@ It seems to be choking a bit, but on what?
 @hint
 #+testcase-values-eyes-number-of-nonotion-is-55
 >eye
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+The eyes see nothing in the general area but seem to be wandering to the sick squid.
 \\
 #testcase-values-eyes-number-of-ocean-is--1
 >eye ocean
-The eyes show nothing. You've done everything you need to with the ocean.
+The eyes show nothing. You've changed up everything you need with the ocean.
 \\
 #testcase-values-eyes-number-of-sick-squid-is-34
 >eye squid
@@ -861,10 +895,23 @@ by a point
 You have an idea what is bothering the squid. Yes, a few coins stuck. Surprisingly, it lets you help out. "Current, sea, currency," you mutter as you poke around. Ah, there you go.
 You offer to give it some of the coins it almost choked on, but it does not need them. It seems to wait around, as if to help you with travel to places you may get to go. It's willing to wait.
 
+@mis
+#testcase-mistake-why-pout-isle-and-eye-land-eye-lands
+>isle and
+It's the island names and how to get there that are important.
+\\
+#+testcase-mistake-why-pout-isle-and-eye-land-eye-lands
+>eye land
+It's the island names and how to get there that are important.
+\\
+#+testcase-mistake-why-pout-isle-and-eye-land-eye-lands
+>eye lands
+It's the island names and how to get there that are important.
+
 @hint
 #+testcase-values-eyes-number-of-sick-squid-is-34
 >eye squid
-The eyes show nothing. You've done everything you need to aid the sick squid.
+The eyes show nothing. You've changed up everything you need to aid the sick squid.
 
 @li
 >i
@@ -919,7 +966,7 @@ by a point
 !The high doubt
 \\
 >eyes
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+Nothing for the general area, and the sly size-slice eyes don't point to any individual item.
 \\
 >undo
 >undo
@@ -964,7 +1011,7 @@ The eyes light up green and show four dots, then three dots.
 @hint
 #testcase-values-eyes-number-of-wool-frock-is--1
 >eye wool frock
-The eyes show nothing. You've done everything you need to with the wool frock.
+The eyes show nothing. You've changed up everything you need with the wool frock.
 
 >hide out
 by a point
@@ -972,7 +1019,8 @@ by a point
 @hint
 #+testcase-values-eyes-number-of-wolf-rock-is-45
 >eye
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+Nothing for the general area, and the sly size-slice eyes don't point to any individual item.
+!NOTE:
 
 @all
 #testcase-check-pre-hide-out-rule-fallthrough
@@ -1000,7 +1048,7 @@ You can only go back UP. You're sort of glad it's not a deluxe or exciting hideo
 @hint
 #testcase-values-eyes-number-of-hideout-is--1
 >eye
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+The eyes see nothing in the general area but seem to be wandering to the booze troll.
 
 @hom
 #testcase-homonym-reject-table-of-main-oronyms-roll
@@ -1036,7 +1084,7 @@ by a point
 @hint
 #testcase-values-eyes-number-of-new-troll-is--1
 >eye troll
-The eyes show nothing. You've done everything you need to make friends with the new troll.
+The eyes show nothing. You've changed up everything you need to make friends with the new troll.
 
 @li
 INVENTORY CHANGED
@@ -1109,7 +1157,7 @@ Yes, mold is one of many things you should never eat.
 @hint
 #testcase-values-eyes-number-of-keepiller-is--1
 >eye
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+Nothing for the general area, though the sly size-slice eyes seem to wander between no mold, the row (gold) and the plant racker.
 \\
 #testcase-values-eyes-number-of-manic-herb-is-54
 >eye herb
@@ -1125,10 +1173,10 @@ by a point
 @hint
 #testcase-values-eyes-number-of-gnome-is--1
 >eye gnome
-The eyes show nothing. You've done everything you need to make friends with the gnome (old).
+The eyes show nothing. You've changed up everything you need to make friends with the gnome (old).
 \\
 >eye mold
-Nothing here like that. Note that room names are not usually worth examining, as you can just L or LOOK.
+Nothing (significant) here like that. Note that while you may need to act on room names, X/EYE (THIS ROOM'S NAME) is often not implemented because L/EYE without a subject takes less characters to type.
 
 @all
 #testcase-check-pre-gnome-old-rule-fallthrough
@@ -1168,7 +1216,7 @@ by a point
 @hint
 #testcase-values-eyes-number-of-rogue-old-is--1
 >eye rogue
-The eyes show nothing. You've done everything you need to make friends with the rogue (old).
+The eyes show nothing. You've changed up everything you need to make friends with the rogue (old).
 
 @all
 #testcase-check-pre-rogue-old-rule-fallthrough
@@ -1226,7 +1274,7 @@ Your party is already listed separately in room descriptions.
 Your party is already listed separately in room descriptions.
 \\
 >x comps
-Nothing here like that. Note that room names are not usually worth examining, as you can just L or LOOK.
+Nothing (significant) here like that. Note that while you may need to act on room names, X/EYE (THIS ROOM'S NAME) is often not implemented because L or LOOK takes less characters to type.
 \\
 >w
 
@@ -1307,7 +1355,7 @@ The eyes light up green and show three dots, then six dots.
 by a point
 \\
 >x comps
-Nothing here like that.
+Nothing (significant) here like that. (Once-per-room reminder:) while you may need to act on room names, X/EYE (THIS ROOM'S NAME) is often not implemented because L or LOOK takes less characters to type.
 \\
 >uh party
 Your party is already lumped together in room descriptions, or they will be, once you rejoin them.
@@ -1316,7 +1364,8 @@ Your party is already lumped together in room descriptions, or they will be, onc
 Your party is now listed separately in room descriptions, or they will be, once you rejoin them.
 \\
 >x comps
-Nothing here like that.
+Nothing (significant) here like that.
+!Once-per-room
 \\
 >undo
 >undo
@@ -1378,7 +1427,7 @@ You can only talk to one companion at a time with T, though you will need to giv
 Your party is now listed separately in room descriptions.
 \\
 >x comps
-Nothing here like that.
+Nothing (significant) here like that. (Once-per-room reminder:) while you may need to act on room names, X/EYE (THIS ROOM'S NAME) is often not implemented because L or LOOK takes less characters to type.
 \\
 >undo
 >undo
@@ -1401,11 +1450,11 @@ With your friends boosting your spirits, you look for a sacred/profane weapon. I
 @hint
 #+testcase-values-eyes-number-of-seedy-sign-is-36
 >eye sign
-The eyes show nothing. You've done everything you need to with the seedy sign.
+The eyes show nothing. You've changed up everything you need with the seedy sign.
 \\
 #testcase-values-eyes-number-of-knife-right-is--1
 >eye knife
-The eyes show nothing. You've done everything you need to with the knife (right).
+The eyes show nothing. You've changed up everything you need with the knife (right).
 
 @li
 INVENTORY CHANGED
@@ -1481,10 +1530,14 @@ Better ways to assimilate the gone traitor.
 The eyes light up green and show five dots, then six dots.
 
 @hom
-#testcase-homonym-detail-hom-gaunt-rater-rule-default
-#testcase-homonym-reject-table-of-main-oronyms-rater-hom-gaunt-rater-rule
+#testcase-homonym-reject-table-of-main-oronyms-trader-rater-hom-gaunt-raider-rule
+#testcase-homonym-detail-hom-gaunt-raider-rule-if-the-player's-command-includes-trader
 >xxx rater
 Hmm. You need someone much more active than that. Someone who can help with rebellion, not just whine about things that are wrong.
+\\
+#+testcase-homonym-detail-hom-gaunt-raider-rule-if-the-player's-command-includes-trader
+>xxx trader
+Knowing a trader might be useful, but given you don't want to deal with guns, maybe you should try and find another side to the gone traitor.
 
 >gaunt raider
 by a point
@@ -1497,12 +1550,12 @@ However, you still haven't talked with the gaunt raider, the new troll, the rogu
 @hint
 #testcase-values-eyes-number-of-gaunt-raider-is--1
 >eye raider
-The eyes show nothing. You've done everything you need to make friends with the gaunt raider.
+The eyes show nothing. You've changed up everything you need to make friends with the gaunt raider.
 
 @all
 #testcase-check-pre-gaunt-raider-rule-fallthrough
 #testcase-run-post-gaunt-raider-rule-default
-After some discussion, you work out a plan to make the gone trader reframe what they did. Whoever they were, the evil powers, they rejected them instead of doubling down. Perhaps there is a way to get back at them. They know things you never could hope to.
+After some discussion, you work out a plan to make the gone traitor reframe what they did. Whoever they were, the evil powers, they rejected them instead of doubling down. Perhaps there is a way to get back at them. They know things you never could hope to.
 Hmm. You have a lot of friends following you around, but you haven't talked to them much. Perhaps you could learn something from them.
 
 @verbs
@@ -1536,7 +1589,7 @@ BRUISE-WARES, some sort of odd disturbing shop, has popped up here. You can prob
 @hint
 #testcase-values-eyes-number-of-bruise-wares-is--46
 >eye bruise wares
-The eyes glow dimly and show four dots, then six dots.
+The eyes glow dimly green and show four dots, then six dots.
 
 @hint+
 >x wares
@@ -1546,7 +1599,7 @@ Oh, hey!
 \\
 #testcase-values-eyes-number-of-nah-bye-is--33
 >eye bye
-The eyes glow dimly and show three dots, then three dots.
+The eyes glow dimly green and show three dots, then three dots.
 
 @verbs
 ##balance undos
@@ -1650,7 +1703,7 @@ They'd be, uh, tasteless.
 #testcase-values-eyes-number-of-brew-swears-is--42
 >eye
 It's not the room so much as the "we cuss" vibes the eyes seem to be picking up.
-The eyes glow dimly and show four dots, then two dots.
+The eyes glow dimly green and show four dots, then two dots.
 \\
 #testcase-values-eyes-number-of-shrewd-orc-is--44
 >eye orc
@@ -1658,7 +1711,7 @@ The eyes light up a dim yellow and show four dots, then four dots.
 \\
 #testcase-values-eyes-number-of-grinch-earls-is--46
 >eye earls
-The eyes glow dimly and show four dots, then six dots.
+The eyes glow dimly green and show four dots, then six dots.
 
 @!min
 >weak us
@@ -1667,7 +1720,7 @@ by a bonus point
 @hint
 #+testcase-values-eyes-number-of-shrewd-orc-is--44
 >eye orc
-The eyes glow dimly and show four dots, then four dots.
+The eyes glow dimly green and show four dots, then four dots.
 
 @all
 #testcase-run-post-weak-us-rule-fallthrough
@@ -1696,7 +1749,7 @@ by a bonus point
 @hint
 #+testcase-values-eyes-number-of-shrewd-orc-is--44
 >eye orc
-The eyes show nothing. You've done everything you need to make friends with the crude orc.
+The eyes show nothing. You've changed up everything you need to make friends with the crude orc.
 
 @all
 #testcase-check-pre-crew-dork-rule-fallthrough
@@ -1730,7 +1783,7 @@ Some grin churls
 by a bonus point
 \\
 >eye churls
-The eyes show nothing. You've done everything you need to neutralize the grin churls.
+The eyes show nothing. You've changed up everything you need to neutralize the grin churls.
 \\
 >undo
 >undo
@@ -1755,7 +1808,7 @@ You don't want to get into the guts of this place. You've gotten the crude orc o
 @hint
 #testcase-values-eyes-number-of-aah-slow-is--34
 >eye
-The eyes glow dimly and show three dots, then four dots.
+The eyes glow dimly green and show three dots, then four dots.
 
 @alt
 #testcase-alt-words-table-of-main-oronyms-ass-low-lo
@@ -1776,7 +1829,7 @@ The grinch earls shake their heads at you: "Bah! Sturdy?!"
 @hint
 #testcase-values-eyes-number-of-bah-sturdy-is--73
 >eye
-The eyes glow dimly and show seven dots, then three dots.
+The eyes glow dimly green and show seven dots, then three dots.
 
 @!min
 >bastard eee
@@ -1791,12 +1844,12 @@ The grinch earls dismiss you: "Damp! Yawns!"
 @hint
 #testcase-values-eyes-number-of-damp-yawns-is--45
 >eye
-The eyes glow dimly and show four dots, then five dots.
+The eyes glow dimly green and show four dots, then five dots.
 
 @hom
 #testcase-homonym-reject-table-of-main-oronyms-dam
 >dam xxx
-Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+Hmm. That SOUNDED like it should work at least part way, but it didn't.
 
 @!min
 >damn peons
@@ -1811,7 +1864,7 @@ The grinch earls mock you, or maybe boost themselves, with "Heh, class!"
 @hint
 #testcase-values-eyes-number-of-heh-class-is--63
 >eye
-The eyes glow dimly and show six dots, then three dots.
+The eyes glow dimly green and show six dots, then three dots.
 
 @mis
 #testcase-mistake-why-pout-heck-alas-heck-lass
@@ -1835,7 +1888,7 @@ The grinch earls laugh and say "Hush it."
 @hint
 #testcase-values-eyes-number-of-hush-it-is--34
 >eye
-The eyes glow dimly and show three dots, then four dots.
+The eyes glow dimly green and show three dots, then four dots.
 
 @!min
 >huh shit
@@ -1850,7 +1903,7 @@ The grinch earls take cheap shots and say "Life occurs."
 @hint
 #testcase-values-eyes-number-of-life-occurs-is--37
 >eye
-The eyes glow dimly and show three dots, then seven dots.
+The eyes glow dimly green and show three dots, then seven dots.
 
 @!min
 >lie fuckers
@@ -1866,7 +1919,13 @@ s at enemies real and imagined.
 @hint
 #testcase-values-eyes-number-of-weird-icks-is--45
 >eye
-The eyes glow dimly and show four dots, then five dots.
+The eyes glow dimly green and show four dots, then five dots.
+
+@hom
+#testcase-homonym-reject-table-of-main-oronyms-dick-hom-were-dicks-rule
+#testcase-homonym-detail-hom-were-dicks-rule-default
+>xxx dick
+There are many icks and many grinch earls. Thus, I must grammar police this minor profanity and suggest the plural form.
 
 @!min
 >were dicks
@@ -1880,7 +1939,7 @@ The grinch earls, out of insults, give up on it all, claiming you just make ever
 
 @hint
 >eye
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+The eyes see nothing in the general area but seem to be wandering to the grinch earls.
 
 @li
 >l
@@ -1914,7 +1973,7 @@ Ah, this would work around people who feel shame for their flaws, but Gawain Ker
 @hint
 #testcase-values-eyes-number-of-gawain-kerr-is--36
 >eye gawain kerr
-The eyes glow dimly and show three dots, then six dots.
+The eyes glow dimly green and show three dots, then six dots.
 
 @!min
 >gah wanker
@@ -2020,11 +2079,11 @@ by a point
 @hint
 #testcase-values-eyes-number-of-we-craft-weak-raft-is-1
 >eye raft
-The eyes show nothing. Probably don't need to do anything with the We-Craft Weak Raft.
+The eyes show nothing. Probably don't need to change up anything with the We-Craft Weak Raft.
 \\
 #testcase-values-eyes-number-of-water-to-the-north-is-1
 >eye water north
-The eyes show nothing. Probably don't need to do anything with the water to the north.
+The eyes show nothing. Probably don't need to change up anything with the water to the north.
 
 @all
 #testcase-check-pre-bay-sale-rule-fallthrough
@@ -2080,7 +2139,7 @@ by a point
 @hint
 #+testcase-values-eyes-number-of-storm-isle-is-55
 >eye
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+Nothing for the general area, though the sly size-slice eyes seem to wander between the MEN shelf and My Stall.
 
 @all
 #testcase-check-pre-store-mile-rule-fallthrough
@@ -2119,7 +2178,7 @@ by a point
 @hint
 #testcase-values-eyes-number-of-mensch-elf-is--1
 >eye elf
-The eyes show nothing. You've done everything you need to make friends with the mensch elf.
+The eyes show nothing. You've changed up everything you need to make friends with the mensch elf.
 
 @all
 #testcase-check-pre-mensch-elf-rule-fallthrough
@@ -2157,7 +2216,7 @@ Your party is now listed separately in room descriptions.
 @hint
 #testcase-values-eyes-number-of-mice-tall-is--1
 >eye mice
-The eyes show nothing. You've done everything you need to make friends with the mice (tall).
+The eyes show nothing. You've changed up everything you need to make friends with the mice (tall).
 
 @all
 #testcase-check-pre-mice-tall-rule-fallthrough
@@ -2205,17 +2264,18 @@ by a point
 @hint
 #+testcase-values-eyes-number-of-lode-ore-is-34
 >eye lode ore
-The eyes show nothing. You've done everything you need to with the pile of lode ore.
+The eyes show nothing. You've changed up everything you need with the pile of lode ore.
 \\
 #testcase-values-eyes-number-of-low-door-is--1
 >eye low door
-The eyes show nothing. You've done everything you need to with the low door.
+The eyes show nothing. You've changed up everything you need with the low door.
 
 @all
 #testcase-check-pre-low-door-rule-fallthrough
 #testcase-run-post-low-door-rule-default
 #testcase-run-post-low-door-rule-if-gnome-is-friendly
-The lode and the ore are tough to shift around for someone as big as yourself. But the tall mice manage to get into those small niches you can't. And they work so fast, you daren't even ironically say "My! Slow mice, lo!"
+The lode and the ore are tough to shift around for someone as big as yourself. But the tall mice manage to get into those small niches you can't. They work so thorougly and quickly, you think "My, SCAN, mice can!" and daren't even ironically say "My! Slow mice, lo!"
+They locate a low door, then, point to where you can remove the ore to create a passage. You'll have to duck a bit to get in, but you can now go INSIDE. Hooray!
 The gnome also rifles through, quickly, saying "no more gnome ore."
 
 @gt
@@ -2389,7 +2449,7 @@ by a point
 @hint
 #+testcase-values-eyes-number-of-we-loan-is-43
 >eye
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+The eyes see nothing in the general area but seem to be wandering to the oaf liar.
 
 @hom
 #testcase-homonym-reject-table-of-main-oronyms-owe-hom-owe-flier-rule
@@ -2420,7 +2480,7 @@ by a point
 
 @hint
 >eye
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+Nothing for the general area, and the sly size-slice eyes don't point to any individual item.
 \\
 #testcase-values-eyes-number-of-flier-is-34
 >eye flier
@@ -2494,7 +2554,7 @@ by a point
 @hint
 #testcase-values-eyes-number-of-plan-tracker-is--1
 >eye tracker
-The eyes show nothing. You've done everything you need to with the plan tracker.
+The eyes show nothing. You've changed up everything you need with the plan tracker.
 
 @li
 INVENTORY CHANGED
@@ -2553,11 +2613,11 @@ by a point
 @hint
 #+testcase-values-eyes-number-of-manic-herb-is-54
 >eye herb
-The eyes show nothing. You've done everything you need to with the manic herb.
+The eyes show nothing. You've changed up everything you need with the manic herb.
 \\
 #testcase-values-eyes-number-of-manna-is--1
 >eye manna
-The eyes show nothing. You've done everything you need to with the manna.
+The eyes show nothing. You've changed up everything you need with the manna.
 
 @all
 #testcase-check-pre-manna-curb-rule-fallthrough
@@ -2647,7 +2707,7 @@ by a point
 
 @hint
 >eye
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+Nothing for the general area, and the sly size-slice eyes don't point to any individual item.
 \\
 #testcase-values-eyes-number-of-tree-small-is--1
 >eye tree small
@@ -2683,7 +2743,7 @@ The tree (small) that you summoned/discovered sits here, growing or trying to, a
 {$REJHOM}
 \\
 >bzzt vile
-Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+Hmm. That SOUNDED like it should work at least part way, but it didn't.
 
 @li
 ##balance undos
@@ -2745,7 +2805,7 @@ You can't ever eat calamari again, now the squid helped you!
 @hint
 #testcase-values-eyes-number-of-grow-vial-is--1
 >eye grow vial
-The eyes show nothing. You've done everything you need to with the grow vial.
+The eyes show nothing. You've changed up everything you need with the grow vial.
 
 >war file
 by a point
@@ -2787,6 +2847,16 @@ You rode the squid here, and there are all sorts of magical symbols here. It's a
 You don't really trust your sense of direction here, but maybe if you knew the sort of companion you were looking for, it would help.
 wait here for what to do or where to go next.
 
+@hom
+#testcase-homonym-reject-table-of-main-oronyms-won-one-hom-wan-dwarf-rule
+#testcase-homonym-detail-hom-wan-dwarf-rule-default
+>won xxx
+That first word. It doesn't sound quite right. More uhh than ahh seems more like it.
+\\
+#+testcase-homonym-detail-hom-wan-dwarf-rule-default
+>one xxx
+That first word. It doesn't sound quite right. More uhh than ahh seems more like it.
+
 >wan dwarf
 by a point
 
@@ -2817,7 +2887,7 @@ The ocean surrounds you on all sides, but it's less intimidating now you rode th
 @hint
 #testcase-values-eyes-number-of-wan-dwarf-is--1
 >eye wan dwarf
-The eyes show nothing. You've done everything you need to make friends with the wan dwarf.
+The eyes show nothing. You've changed up everything you need to make friends with the wan dwarf.
 
 >n
 
@@ -2864,7 +2934,7 @@ A tree (tall) has grown here, thanks to you and the grow vial you found. It's qu
 @hint
 #testcase-values-eyes-number-of-lawn-gold-is-1
 >eye lawn gold
-The eyes show nothing. Probably don't need to do anything with the long old lawn, gold.
+The eyes show nothing. Probably don't need to change up anything with the long old lawn, gold.
 \\
 #testcase-values-eyes-number-of-tree-tall-is-53
 >eye tree tall
@@ -2979,13 +3049,25 @@ That talk-ache is a bit of a nuisance.
 >t
 You've talked to everyone here, though, so you don't need to talk to them again.
 
+@hom
+#testcase-homonym-reject-table-of-main-oronyms-tau-taw-hom-tall-cake-rule
+#testcase-homonym-detail-hom-tall-cake-rule-fallthrough
+#testcase-homonym-detail-hom-tall-cake-rule-default
+>tau xxx
+The thing to make might be Greek or not, but what's important is that there's enough for everyone.
+\\
+#testcase-homonym-detail-hom-tall-cake-rule-if-the-player's-command-includes-taw
+#+testcase-homonym-detail-hom-tall-cake-rule-default
+>taw xxx
+The thing to make might be marbled or not, but what's important is that there's enough for everyone.
+
 >tall cake
 by a point
 
 @all
 #testcase-check-pre-tall-cake-rule-fallthrough
 #testcase-run-post-tall-cake-rule-default
-All this preparing food means you don't talk a bit, and as a bonus, your talk-ache is gone.
+All this preparing food means you don't talk a bit, except for an ironic "Ache, ache, a cake!" Doing stuff for friends helps your ache go away, or at least helps you not feel it, which is life-affirming, and stuff.
 But now where to eat the cake?
 
 @hom
@@ -3017,7 +3099,7 @@ You can't eat the cake by yourself! Make it a communal experience in a special p
 @hint
 #testcase-values-eyes-number-of-tall-cake-is--1
 >eye cake
-The eyes show nothing. You've done everything you need to with the tall cake.
+The eyes show nothing. You've changed up everything you need with the tall cake.
 \\
 #+testcase-values-eyes-number-of-tree-tall-is-53
 >eye tree
@@ -3028,7 +3110,7 @@ by a point
 
 @hint
 >eye tree
-The eyes show nothing. You've done everything you need to with the tree (tall).
+The eyes show nothing. You've changed up everything you need with the tree (tall).
 
 @all
 #testcase-check-pre-treat-all-rule-fallthrough
@@ -3054,7 +3136,7 @@ Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will
 You've talked all you needed, one-on-one. Time to bring the gang together for a big lecture.
 
 @verbs+
->eat war pawn
+>eat me
 You already ate the only thing you needed to.
 
 >s
@@ -3101,7 +3183,7 @@ Coming back here, you notice BRUISE-WARES has vanished. But that can't be all ba
 
 @hint
 >eye
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+The eyes see nothing in the general area but seem to be wandering to the flier.
 
 >the file
 by a point
@@ -3198,24 +3280,43 @@ second-npc
 No tricky passages here, just UP back to safer ground or DOWN to your fate.
 
 @hom
-#testcase-homonym-detail-hom-whirr-meetin-rule-else-if-the-player's-command-includes-whirr
+#testcase-homonym-detail-hom-whirr-meetin-rule-if-the-player's-command-includes-whirr
 >whirr meetin
 Close, but you don't need a whirr noise.
 \\
-#testcase-homonym-reject-table-of-main-oronyms-wier-whirr-warm-eden-war-meeting-hom-whirr-meetin-rule
-#+testcase-homonym-detail-hom-whirr-meetin-rule-else-if-the-player's-command-includes-whirr
+#testcase-homonym-reject-table-of-main-oronyms-wier-whirr-warm-eden-war-hom-whirr-meetin-rule
+#+testcase-homonym-detail-hom-whirr-meetin-rule-if-the-player's-command-includes-whirr
 >warm meetin
+You don't need to change this place's complexion here. It's cozy, a place for people to be together. But how?
+\\
+>war xxx
+You don't need to change this place's complexion here. It's cozy, a place for people to be together. But how?
+\\
+>warm xxx
+You don't need to change this place's complexion here. It's cozy, a place for people to be together. But how?
+\\
+>whirr xxx
+Close, but you don't need a whirr noise.
+\\
+>wier xxx
+You don't need to change this place's complexion here. It's cozy, a place for people to be together. But how?
+\\
+>xxx eden
 You don't need to change this place's complexion here. It's cozy, a place for people to be together. But how?
 
 @hint
 >eye
 The eyes light up green and show four dots, then six dots.
 
-@alt
+@alt,all
+{--all}#testcase-run-post-were-meetin-rule-if-the-player's-command-includes-meeting
+{--alt}#testcase-alt-words-table-of-main-oronyms-were-meetin-meeting
+{--all}#testcase-run-post-were-meetin-rule-if-orc-is-friendly
 #balance undos
 >were meeting
 You worry about how formal you need to be, but you realize perfect diction and everything can't be important. "We're meeting" is fine, but "we're meetin'" sounds a bit more welcoming.
-You meet with the friends you've made over your adventure. You all have one goal in mind. And yet you don't have a rallying cry. Perhaps it can come from within you.
+The shrewd orc stays back until you wave them over. "Meet? Ooh! Me too?!"
+It's a good meeting. You worry you're lousy at that sort of thing, but you let everyone talk, and you all have one goal in mind and each adds ideas how to get there. You all have one goal in mind. And yet you don't have a rallying cry. Perhaps it can come from within you.
 by a point
 \\
 >undo
@@ -3226,7 +3327,10 @@ by a point
 @all
 #testcase-check-pre-were-meetin-rule-fallthrough
 #testcase-run-post-were-meetin-rule-default
-You meet with the friends you've made over your adventure. You all have one goal in mind. And yet you don't have a rallying cry. Perhaps it can come from within you.
+#testcase-run-post-were-meetin-rule-fallthrough
+!about how formal
+The shrewd orc stays back until you wave them over. "Meet? Ooh! Me too?!"
+It's a good meeting. You worry you're lousy at that sort of thing, but you let everyone talk, and you all have one goal in mind and each adds ideas how to get there. You all have one goal in mind. And yet you don't have a rallying cry. Perhaps it can come from within you.
 
 @all+
 #+testcase-room-names-worm-eaten
@@ -3240,7 +3344,7 @@ You feel like your companions are just about ready to go. But you still need to 
 @hint
 #+testcase-values-eyes-number-of-worm-eaten-is-46
 >eye
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+The eyes see nothing in the general area but seem to be wandering to you.
 \\
 #testcase-values-eyes-number-of-mike-orr-is-23
 >eye me
@@ -3272,7 +3376,7 @@ You can only talk to one companion at a time with T, and you've already given yo
 @hint
 #+testcase-values-eyes-number-of-mike-orr-is-23
 >eye me
-The eyes show nothing. You've done everything you need to with yourself.
+The eyes show nothing. You've changed up everything you need with yourself.
 
 @all
 #testcase-check-pre-my-corps-rule-fallthrough
@@ -3318,8 +3422,73 @@ You don't need to see more seas. In fact, you need things to settle down.
 No, seizing is the last thing you want the skull to do. And you aren't foolish enough to want to seize power.
 
 @verbs
+#testcase-talk-table-of-skull-babble-1
 >t skull
-You doubt the skull would have anything to say beyond "I'm all I MAUL!" or "Help our hell-power!"
+There's no time for talk, but if there were, the skull would say something like
+Or something else. There are eight taunts in total.
+\\
+#testcase-talk-table-of-skull-babble-2
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+\\
+#testcase-talk-table-of-skull-babble-3
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+\\
+#testcase-talk-table-of-skull-babble-4
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+\\
+#testcase-talk-table-of-skull-babble-5
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+\\
+#testcase-talk-table-of-skull-babble-6
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+\\
+#testcase-talk-table-of-skull-babble-7
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+\\
+#testcase-talk-table-of-skull-babble-8
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+You've read all the taunts now.
+\\
+#+testcase-talk-table-of-skull-babble-1
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+!taunts in total
+\\
+#+testcase-talk-table-of-skull-babble-2
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+\\
+#+testcase-talk-table-of-skull-babble-3
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+\\
+#+testcase-talk-table-of-skull-babble-4
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+\\
+#+testcase-talk-table-of-skull-babble-5
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+\\
+#+testcase-talk-table-of-skull-babble-6
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+\\
+#+testcase-talk-table-of-skull-babble-7
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+\\
+#+testcase-talk-table-of-skull-babble-8
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+!all the taunts
 \\
 >t raider
 Now's not the time for chat.
@@ -3359,10 +3528,10 @@ by a point
 @all
 #testcase-check-pre-wipe-out-rule-fallthrough
 #testcase-run-post-wipe-out-rule-default
-You don't feel confident as you mumble "Ace, cull a skull." But of course it wouldn't work on your own.
-However, since you all studied the plan tracker so well, it isn't impossible! You know the taunts to give and how to deflect the skull's likely taunts. So, with a "You'd reign? You drain!" you commence combat. The skull roars back, trying to summon a tier-x T-Rex and a new clever nuke lever. You recognize those would wipe out the skull, too, so you aren't worried. "Mo' strong? Most wrong!" you fire back. You worry it's a bit redundant, but you also realize you're not in English class.
+You don't feel confident as you mumble "Ace, cull a skull." But you have to say something.
+However, since you and your companions studied the plan tracker so well, it starts a rally! You know the taunts to give and how to deflect the skull's likely taunts. So, with a "You'd reign? You drain!" you commence combat. The skull roars back, trying to summon a tier-x T-Rex and a new clever nuke lever. You recognize those would wipe out the skull, too, so you aren't worried. "Mo' strong? Most wrong!" you fire back. You worry it's a bit redundant, but you also realize you're not in English class, here.
 The skull uncovers one more machine, ominously labeled The Make-Them-Ache. Loud whirring indicates it has started up, but thinking quickly, you grasp your thumb and scream. Pronunciation pedantry for the win!
-But there is real pain. And you'd be cooked if it weren't spread among your companions. They dilute the machine's effect and distract the skull. Whenever the skull focuses on one companion, the others taunt it with "Aid! Eek, a deek!"
+But there is real pain. And you'd be cooked if it weren't spread among your companions. They dilute the machine's effect and distract the skull. Whenever the skull focuses on one companion, the others taunt it with "Aid! Eek, a deek!" The mice have their own chant: "My, small mice maul!"
 It's exhausting for you but even more exhausting for the skull, which after constant spinning eventually collapses and incinerates, but not before a self-pitying "Meek old me! Cold!"
 "On ice! Aw, nice!" you proclaim, expecting big cheers.
 But after all the fireworks, there's a letdown. You feel something odd come between you and your companions now you're done. They wonder why they need to do any more. You could call the whole zeitgeist a why-division.
@@ -3430,8 +3599,42 @@ by a point
 #testcase-check-pre-do-due-mend-rule-fallthrough
 #testcase-run-post-do-due-mend-rule-default
 #testcase-run-post-do-due-mend-rule-fallthrough
-#testcase-run-post-do-due-mend-rule-follow-the-score-and-thinking-changes-rule
 #testcase-run-post-do-due-mend-rule-follow-the-shutdown-rules
 #testcase-run-post-do-due-mend-rule-if-sco-wide-vision-is-false
 Yes. It's time to get healing. Your companions don't have as much time or energy to help as you hoped they would, but they do enough. Everyone feels better for their part in defeating the sea skull. And yet you worry it, or something like it, may be back sooner rather than later, and your companions have gone their separate ways for good. Still, you should be pleased with yourself.
 !not just to make
+!you MISSED
+
+@min
+>missed
+All but one bonus point is found in Bruise Wares.
+\\
+>undo
+>nope on
+by a bonus point
+\\
+>wp
+by a point
+\\
+>missed
+All but one bonus point, the one you got for NOPE ON with the war pawn, is found in Bruise Wares.
+\\
+>undo
+>undo
+>undo
+\\
+>warp on
+by a point
+\\
+>nope on
+Ah! Good job! You've found the secret command to REALLY get rid of the war pawn. Sadly, this won't get you a bonus point, since you already used the pawn. Of course, you won't be able to use the pawn after this. Ditch the pawn?
+Okay. No warning next time.
+The war pawn jumps out of your hand and down to the ground with a perfect feet-first landing. It salutes you and then runs off, taking occasional diagonal jumps to gobble up vulnerable ants and insects.
+NOTE: this would have scored a point if you hadn't used the war pawn. It was intended as a tricky bonus point across games. Nice job finding it!
+\\
+>do mend
+by a point
+\\
+>missed
+All but one bonus point is found in Bruise Wares.
+You managed to say NOPE ON to the war pawn, but you'd already used it, so you didn't get the bonus point.

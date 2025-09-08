@@ -243,3 +243,35 @@ by a point
 >do mending
 by a point
 
+>missed
+All but one bonus point is found in Bruise Wares.
+
+>undo
+>nope on
+by a bonus point
+
+>wp
+by a point
+
+>missed
+All but one bonus point, the one you got for NOPE ON with the war pawn, is found in Bruise Wares.
+
+>undo
+>undo
+>undo
+
+>warp on
+by a point
+
+>nope on
+Ah! Good job! You've found the secret command to REALLY get rid of the war pawn. Sadly, this won't get you a bonus point, since you already used the pawn. Of course, you won't be able to use the pawn after this. Ditch the pawn?
+Okay. No warning next time.
+The war pawn jumps out of your hand and down to the ground with a perfect feet-first landing. It salutes you and then runs off, taking occasional diagonal jumps to gobble up vulnerable ants and insects.
+NOTE: this would have scored a point if you hadn't used the war pawn. It was intended as a tricky bonus point across games. Nice job finding it!
+
+>do mend
+by a point
+
+>missed
+All but one bonus point is found in Bruise Wares.
+You managed to say NOPE ON to the war pawn, but you'd already used it, so you didn't get the bonus point.

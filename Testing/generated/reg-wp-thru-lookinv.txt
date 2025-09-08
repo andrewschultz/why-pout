@@ -89,15 +89,6 @@ Also, you almost forgot you forgot your name, Mike Orr, at first. Maybe you will
 !You feel policed here.
 You feel less policed, too, since you found a path EAST.
 
->doff
->warp on
-by a point
-INVENTORY CHANGED
-!/  a war pawn
-
->undo
->undo
-
 >shore trail
 by a point
 

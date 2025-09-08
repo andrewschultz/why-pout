@@ -10,10 +10,15 @@
 * main-thru
 
 >about
+Why Pout was written for IFComp 2024. It's something I originally thought about writing for EctoComp, but I never managed to mash enough ideas together.
+It reuses a lot of code from Roads of Liches and my Prime Pro Rhyme Row games, which have different mechanics but a similar conceit: guess the right two-word phrase. However, it's narrower in scope, and I didn't want to rely on too well-known examples of possible phrases for point scoring.
+Once I realized bigger projects weren't on the cards for IFComp 2024, I focused on something I could handle. I wound up making forty or so puzzle instead of the usual eighty.
+While the drip of ideas started February, 2020, according to my notes, I wasn't getting anything really original, or so it seemed. But the idea was always there. In my weekly writing file 20240429.txt, there's the game's title, and that's when significant ideas started appearing. But it wasn't until I registered for IFComp in July that ideas started clicking together. Deadlines are funny like that!
 Like most of my games, Why Pout rates merciful on the Zarfian cruelty scale. However, in this case, I want the puzzles to be more merciful in terms of general difficulty on the player's psyche than usual.
-Note that an optional room will appear about midway through the game. It may contain profanity, which I hope is amusing, but I don't blame you if you wish to skip it.
-blurglecruncheon@gmail.com is my email, and http://github.com/andrewschultz/why-pout is the github site, where you can report issues. I'm open to transcripts.
-CREDITS lists people who helped make Why Pout a reality, or a better version than it would've been without them.  EXT shows the extensions listed, and VERSION or VERSIONS shows version info.
+I originally thought this would be the only game of its sort. But more ambitious projects stalled out, and so Us Too was my IFComp 2025 entry. It helped with Why Pout, too: I slowly built a core file for reusable code (warning: GitHub link ahead may be a spoiler) that you can find at http://github.com/andrewschultz/why-pout.
+I also have a similar game planned in Adventuron for EctoComp 2025 Petite Mort (four hours of programming,) with five rooms and six points. It has graphics, too. There might be a second as well, as I had no time for more ambitious projects.
+Note that an optional room will appear about midway through the game. It may contain profanity, which I hope is amusing, but I don't blame you if you wish to skip it. It's only there for the bonus points.
+CREDITS lists people who helped make Why Pout a reality, or at the very least, a better version than it would've been without them. EXT lists the extensions used, and VERSION/VERSIONS shows version information. VERBS describes what actions are best used with this stripped-down parser.
 
 >credits
 Thanks to everyone past and future involved in the administration of IFComp.
@@ -155,11 +160,11 @@ That stalk is your way out of here.
 by a point
 
 >listen
-You hear only a taunting "Eh? CLUES?! Ache! Lose!"
+A disembodied voice only you can hear taunts "Eh? CLUES?! Ache! Lose!"
 You've figured enough out by now. You can laugh back at this laughing-villain act.
 
 >listen
-You hear only a taunting "Eh? CLUES?! Ache! Lose!"
+A disembodied voice only you can hear taunts "Eh? CLUES?! Ache! Lose!"
 !laugh back
 
 >nah phase
@@ -177,7 +182,7 @@ by a point
 >eat tar
 Too much to eat, even if it were edible.
 
->eat war pawn
+>eat me
 If you need to eat anything, it requires a slightly different approach.
 
 >grow star
@@ -299,7 +304,7 @@ Your party is already listed separately in room descriptions.
 Your party is already listed separately in room descriptions.
 
 >x comps
-Nothing here like that. Note that room names are not usually worth examining, as you can just L or LOOK.
+Nothing (significant) here like that. Note that while you may need to act on room names, X/EYE (THIS ROOM'S NAME) is often not implemented because L or LOOK takes less characters to type.
 
 >w
 
@@ -348,7 +353,7 @@ If you need to eat anything, it requires a slightly different approach.
 by a point
 
 >x comps
-Nothing here like that.
+Nothing (significant) here like that. (Once-per-room reminder:) while you may need to act on room names, X/EYE (THIS ROOM'S NAME) is often not implemented because L or LOOK takes less characters to type.
 
 >uh party
 Your party is already lumped together in room descriptions, or they will be, once you rejoin them.
@@ -357,7 +362,8 @@ Your party is already lumped together in room descriptions, or they will be, onc
 Your party is now listed separately in room descriptions, or they will be, once you rejoin them.
 
 >x comps
-Nothing here like that.
+Nothing (significant) here like that.
+!Once-per-room
 
 >undo
 >undo
@@ -384,7 +390,7 @@ You can only talk to one companion at a time with T, though you will need to giv
 Your party is now listed separately in room descriptions.
 
 >x comps
-Nothing here like that.
+Nothing (significant) here like that. (Once-per-room reminder:) while you may need to act on room names, X/EYE (THIS ROOM'S NAME) is often not implemented because L or LOOK takes less characters to type.
 
 >undo
 >undo
@@ -726,7 +732,7 @@ by a point
 >t troll
 You've talked all you needed, one-on-one. Time to bring the gang together for a big lecture.
 
->eat war pawn
+>eat me
 You already ate the only thing you needed to.
 
 >s
@@ -767,8 +773,73 @@ Motivational talk is through. Time to end this thing.
 
 >d
 
+#testcase-talk-table-of-skull-babble-1
 >t skull
-You doubt the skull would have anything to say beyond "I'm all I MAUL!" or "Help our hell-power!"
+There's no time for talk, but if there were, the skull would say something like
+Or something else. There are eight taunts in total.
+
+#testcase-talk-table-of-skull-babble-2
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+
+#testcase-talk-table-of-skull-babble-3
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+
+#testcase-talk-table-of-skull-babble-4
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+
+#testcase-talk-table-of-skull-babble-5
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+
+#testcase-talk-table-of-skull-babble-6
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+
+#testcase-talk-table-of-skull-babble-7
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+
+#testcase-talk-table-of-skull-babble-8
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+You've read all the taunts now.
+
+#+testcase-talk-table-of-skull-babble-1
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+!taunts in total
+
+#+testcase-talk-table-of-skull-babble-2
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+
+#+testcase-talk-table-of-skull-babble-3
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+
+#+testcase-talk-table-of-skull-babble-4
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+
+#+testcase-talk-table-of-skull-babble-5
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+
+#+testcase-talk-table-of-skull-babble-6
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+
+#+testcase-talk-table-of-skull-babble-7
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+
+#+testcase-talk-table-of-skull-babble-8
+>t skull
+There's no time for talk, but if there were, the skull would say something like
+!all the taunts
 
 >t raider
 Now's not the time for chat.

@@ -14,6 +14,7 @@ file=reg-wp-think-div.txt,abbr=div/rej,desc=walkthrough with all relevant THINK
 file=reg-wp-think-partright.txt,abbr=part,desc=walkthrough with partially right guesses
 
 }$ONEWORD=A voice in your head encourages you: "Seem, or see, more!" You've got SOMETHING right, here.
+}$REJECT1=You're stuck with what to do right now. Perhaps you can use your senses for clues, or THINK, or look inward with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.
 }$REJECT2=That thought/action/observation/request brings up nothing. Why Pout has a limited set of verbs, and the main thing is to guess a two-word phrase. To see what verbs are used, try VERBS.
 
 ## *FILE
@@ -32,7 +33,10 @@ file=reg-wp-think-partright.txt,abbr=part,desc=walkthrough with partially right 
 >z
 
 @rej
+#testcase-check-pre-wipe-out-rule-if-core-score-is-0
 >wipe out
+Wipe out. Why pout. Perhaps that will come in handy one day, when you know more about who you are and why you are here!
+But now, you're not even sure you have a name. Or ... something else, also important.
 THINK
 
 @rej+
@@ -46,12 +50,12 @@ THINK
 >bastard eee
 {$REJECT1}
 \\
-#testcase-check-pre-bay-sale-rule-if-player-does-not-have-base-ale
+#testcase-check-pre-bay-sale-rule-if-player-does-not-have-base-ale-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-bay-sale-rule
 >bay sale
 {$REJECT1}
 \\
-#testcase-check-pre-bile-oh-rule-if-player-is-not-in-we-loan-or-merchant-is-not-in-we-loan
+#testcase-check-pre-bile-oh-rule-if-player-is-not-in-we-loan-or-merchant-is-not-in-we-loan-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-bile-oh-rule
 >bile oh
 {$REJECT1}
@@ -96,7 +100,7 @@ THINK
 >gaunt raider
 {$REJECT1}
 \\
-#testcase-check-pre-gnome-old-rule-if-player-is-not-in-keepiller
+#testcase-check-pre-gnome-old-rule-if-player-is-not-in-keepiller-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-gnome-old-rule
 >gnome old
 {$REJECT1}
@@ -126,7 +130,7 @@ THINK
 >hideout
 {$REJECT1}
 \\
-#testcase-check-pre-high-plain-rule-if-player-is-not-in-hype-lane
+#testcase-check-pre-high-plain-rule-if-player-is-not-in-hype-lane-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-high-plain-rule
 >high plain
 {$REJECT1}
@@ -161,12 +165,12 @@ THINK
 >low bend
 {$REJECT1}
 \\
-#testcase-check-pre-low-door-rule-if-player-is-not-in-wolf-rock
+#testcase-check-pre-low-door-rule-if-player-is-not-in-wolf-rock-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-low-door-rule
 >low door
 {$REJECT1}
 \\
-#testcase-check-pre-manna-curb-rule-if-player-is-not-in-keepiller
+#testcase-check-pre-manna-curb-rule-if-player-is-not-in-keepiller-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-manna-curb-rule
 >manna curb
 {$REJECT1}
@@ -176,11 +180,12 @@ THINK
 >mensch elf
 {$REJECT1}
 \\
-#testcase-check-pre-mice-tall-rule-if-player-is-not-in-storm-isle
+#testcase-check-pre-mice-tall-rule-if-player-is-not-in-storm-isle-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-mice-tall-rule
 >mice tall
 {$REJECT1}
 \\
+#testcase-check-pre-my-corps-rule-if-player-is-not-in-worm-eaten-and-once-now-hunt-is-false
 #testcase-check-pre-my-corps-rule-if-sco-an-aim-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-my-corps-rule
 >my corps
@@ -196,12 +201,12 @@ THINK
 >nah phase
 {$REJECT1}
 \\
-#testcase-check-pre-oh-flier-rule-if-player-is-not-in-we-loan
+#testcase-check-pre-oh-flier-rule-if-player-is-not-in-we-loan-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-oh-flier-rule
 >oh flier
 {$REJECT1}
 \\
-#testcase-check-pre-plan-tracker-rule-if-player-is-not-in-keepiller-or-plant-racker-is-not-touchable
+#testcase-check-pre-plan-tracker-rule-if-player-is-not-in-keepiller-and-once-now-hunt-is-false-or-plant-racker-is-not-touchable
 #testcase-reject-start-table-of-main-oronyms-pre-plan-tracker-rule
 >plan tracker
 {$REJECT1}
@@ -216,12 +221,12 @@ THINK
 >pry stalk
 {$REJECT1}
 \\
-#testcase-check-pre-rogue-old-rule-if-player-is-not-in-keepiller
+#testcase-check-pre-rogue-old-rule-if-player-is-not-in-keepiller-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-rogue-old-rule
 >rogue old
 {$REJECT1}
 \\
-#testcase-check-pre-see-design-rule-if-player-is-not-in-keepiller
+#testcase-check-pre-see-design-rule-if-player-is-not-in-keepiller-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-see-design-rule
 >see design
 {$REJECT1}
@@ -261,7 +266,7 @@ THINK
 >the file
 {$REJECT1}
 \\
-#testcase-check-pre-treat-all-rule-if-player-is-not-in-trees-mall
+#testcase-check-pre-treat-all-rule-if-tree-tall-is-not-in-trees-mall-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-treat-all-rule
 >treat all
 {$REJECT1}
@@ -301,12 +306,12 @@ THINK
 >were dicks
 {$REJECT1}
 \\
-#testcase-check-pre-were-meetin-rule-if-player-is-not-in-worm-eaten
+#testcase-check-pre-were-meetin-rule-if-player-is-not-in-worm-eaten-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-were-meetin-rule
 >were meetin
 {$REJECT1}
 \\
-#testcase-check-pre-whee-lone-rule-if-player-is-not-in-we-loan
+#testcase-check-pre-whee-lone-rule-if-player-is-not-in-we-loan-and-once-now-hunt-is-false
 #testcase-reject-start-table-of-main-oronyms-pre-whee-lone-rule
 >whee lone
 {$REJECT1}
@@ -337,7 +342,8 @@ Perhaps if you press a bit more, some thoughts may come out.
 >think
 An inner voice says "Fry! Twist!" You feel fright, wist. It's hard not to, since you don't have a name or a purpose. For some reason, you're focused on getting a name, but you've got this nagging feeling that's not quite it.
 Well, not quite a purpose, but ... what's the word?
-"Aww, flake! Awful ache!" you think to yourself. Which sounds slightly off, but maybe something as simple, or simpler, can work. There must be a pattern to all you are thinking and feeling, and maybe you can look at yourself, literally or figuratively, to figure it out.
+/(Dumb pit|Aww, flake)
+you think to yourself. Which sounds slightly off, but maybe something as simple, or simpler, can work. There must be a pattern to all you are thinking and feeling, and maybe you can look at yourself, literally or figuratively, to figure it out.
 
 >an aim
 by a point
@@ -352,8 +358,8 @@ You aren't feeling too great, but you don't want or need to wipe yourself out, y
 >my corps
 Sadly, you have no friends to bring together yet! Yet.
 \\
-#testcase-think-table-of-main-oronyms-pre-wipe-out-rule
-#testcase-think-table-of-main-oronyms-pre-my-corps-rule
+#testcase-think-once-table-of-main-oronyms-pre-wipe-out-rule
+#testcase-think-once-table-of-main-oronyms-pre-my-corps-rule
 >think
 You will want to WIPE OUT the cause of your problems once you have them in your crosshairs. That's probably not for a while, though.
 You can call your companions MY CORPS once you have companions.
@@ -368,7 +374,7 @@ You already found a name and an aim!
 >wipe xxx
 {$ONEWORD}
 >think
-You must have one word right for how to do something generally awesome down the road.
+You're pretty sure you have one word right for how to do something generally awesome down the road.
 \\
 >undo
 >undo
@@ -379,7 +385,7 @@ You must have one word right for how to do something generally awesome down the 
 {$ONEWORD}
 \\
 >think
-You must have one word right for anything documenting a way out.
+You're pretty sure you have one word right for anything documenting a way out.
 \\
 >undo
 >undo
@@ -389,7 +395,7 @@ You must have one word right for anything documenting a way out.
 {$ONEWORD}
 \\
 >think
-You must have one word right for anything documenting a way out.
+You're pretty sure you have one word right for anything documenting a way out.
 
 >two maps
 by a point
@@ -408,27 +414,27 @@ That would be a nicer place! But you have nothing that could help you move up ye
 Hmph. That still doesn't quite work! You'll figure out the how and when and where, though.
 !THINK
 \\
-#testcase-think-table-of-main-oronyms-pre-high-plain-rule
+#testcase-think-once-table-of-main-oronyms-pre-high-plain-rule
 >think
 You can find a HIGH PLAIN once you have something that can reach that far up.
 
 @part
-#testcase-one-right-table-of-main-oronyms-self-owns-1-self
+#testcase-one-right-table-of-main-oronyms-self-owns-own-1-self
 >xxx owns
 {$ONEWORD}
 \\
 >think
-You must have one word right for what to do with the cell phones.
+You're pretty sure you have one word right for what to do with the cell phones.
 \\
 >undo
 >undo
 \\
-#testcase-one-right-table-of-main-oronyms-self-owns-2-owns
+#testcase-one-right-table-of-main-oronyms-self-owns-own-2-owns-own
 >self xxx
 {$ONEWORD}
 \\
 >think
-You must have one word right for what to do with the cell phones.
+You're pretty sure you have one word right for what to do with the cell phones.
 
 >self owns
 by a point
@@ -444,7 +450,7 @@ The prize talk has you distracted. It's got a point: you need to find something 
 {$ONEWORD}
 \\
 >think
-You must have one word right for something physical amidst the prize talk.
+You're pretty sure you have one word right for something physical amidst the prize talk.
 \\
 >undo
 >undo
@@ -454,7 +460,7 @@ You must have one word right for something physical amidst the prize talk.
 {$ONEWORD}
 \\
 >think
-You must have one word right for something physical amidst the prize talk.
+You're pretty sure you have one word right for something physical amidst the prize talk.
 
 >pry stalk
 by a point
@@ -465,7 +471,7 @@ by a point
 You already pried a stalk!
 
 @rej+
-#+testcase-think-table-of-main-oronyms-pre-high-plain-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-high-plain-rule
 >think
 You can find a HIGH PLAIN now you have something that can reach that far up.
 
@@ -478,7 +484,7 @@ You can find a HIGH PLAIN now you have something that can reach that far up.
 You need to do more than greet the desired location. Describe it.
 #s-0
 >think
-You must be close with one word for where to go from Hype Lane.
+You're pretty sure you're close with one word for where to go from Hype Lane.
 \\
 >undo
 \\
@@ -486,7 +492,7 @@ You must be close with one word for where to go from Hype Lane.
 No playin'. What is this location, specifically?
 #s-s
 >think
-You must be close with both words for where to go from Hype Lane.
+You're pretty sure you're close with both words for where to go from Hype Lane.
 \\
 >undo
 >undo
@@ -496,7 +502,7 @@ You must be close with both words for where to go from Hype Lane.
 \\
 #s-e
 >think
-You must have one word right and one word close for where to go from Hype Lane.
+You're pretty sure you have one word right and one word close for where to go from Hype Lane.
 \\
 >undo
 >undo
@@ -508,7 +514,7 @@ You must have one word right and one word close for where to go from Hype Lane.
 {$ONEWORD}
 #e-0
 >think
-You must have one word right for where to go from Hype Lane.
+You're pretty sure you have one word right for where to go from Hype Lane.
 \\
 >undo
 \\
@@ -516,7 +522,7 @@ You must have one word right for where to go from Hype Lane.
 No playin'. What is this location, specifically?
 #e-s
 >think
-You must have one word right and one word close for where to go from Hype Lane.
+You're pretty sure you have one word right and one word close for where to go from Hype Lane.
 \\
 >undo
 >undo
@@ -538,7 +544,7 @@ You feel you've got the words right on separate occasions for where to go from H
 No playin'. What is this location, specifically?
 #0-s
 >think
-You must be close with one word for where to go from Hype Lane.
+You're pretty sure you're close with one word for where to go from Hype Lane.
 \\
 >undo
 >undo
@@ -548,7 +554,7 @@ You must be close with one word for where to go from Hype Lane.
 \\
 #0-e
 >think
-You must have one word right for where to go from Hype Lane.
+You're pretty sure you have one word right for where to go from Hype Lane.
 \\
 >undo
 >undo
@@ -559,13 +565,13 @@ You must have one word right for where to go from Hype Lane.
 You need to do more than greet the desired location. Describe it.
 \\
 >think
-You must be close with one word for where to go from Hype Lane.
+You're pretty sure you're close with one word for where to go from Hype Lane.
 \\
 >high xxx
 {$ONEWORD}
 \\
 >think
-You must have one word right for where to go from Hype Lane.
+You're pretty sure you have one word right for where to go from Hype Lane.
 \\
 >undo
 >undo
@@ -576,13 +582,13 @@ You must have one word right for where to go from Hype Lane.
 No playin'. What is this location, specifically?
 \\
 >think
-You must be close with one word for where to go from Hype Lane.
+You're pretty sure you're close with one word for where to go from Hype Lane.
 \\
 >xxx plane
 {$ONEWORD}
 \\
 >think
-You must have one word right for where to go from Hype Lane.
+You're pretty sure you have one word right for where to go from Hype Lane.
 \\
 >undo
 >undo
@@ -595,7 +601,7 @@ You must have one word right for where to go from Hype Lane.
 {$ONEWORD}
 \\
 >think
-You must have one word right for where to go from Hype Lane.
+You're pretty sure you have one word right for where to go from Hype Lane.
 \\
 >undo
 >undo
@@ -609,7 +615,7 @@ You must have one word right for where to go from Hype Lane.
 {$ONEWORD}
 \\
 >think
-You must have one word right for where to go from Hype Lane.
+You're pretty sure you have one word right for where to go from Hype Lane.
 
 >high plain
 by a point
@@ -641,7 +647,7 @@ by a point
 {$ONEWORD}
 \\
 >think
-You must have one word right for how to cut through the naff haze.
+You're pretty sure you have one word right for how to cut through the naff haze.
 \\
 >undo
 >undo
@@ -651,7 +657,7 @@ You must have one word right for how to cut through the naff haze.
 {$ONEWORD}
 \\
 >think
-You must have one word right for how to cut through the naff haze.
+You're pretty sure you have one word right for how to cut through the naff haze.
 \\
 #+testcase-one-right-table-of-main-oronyms-nah-naah-naw-naa-na-phase-1-nah-naah-naw-naa-na
 >naah xxx
@@ -683,7 +689,7 @@ You already dispelled the haze!
 {$ONEWORD}
 \\
 >think
-You must have one word right for the source of your feeling policed.
+You're pretty sure you have one word right for the source of your feeling policed.
 \\
 >undo
 >undo
@@ -696,7 +702,7 @@ You must have one word right for the source of your feeling policed.
 {$ONEWORD}
 \\
 >think
-You must have one word right for the source of your feeling policed.
+You're pretty sure you have one word right for the source of your feeling policed.
 
 >pole east
 by a point
@@ -712,7 +718,7 @@ You already discovered how you were being policed!
 {$ONEWORD}
 \\
 >think
-You must have one word right for making it beyond the gross tar.
+You're pretty sure you have one word right for making it beyond the gross tar.
 \\
 >undo
 >undo
@@ -722,7 +728,7 @@ You must have one word right for making it beyond the gross tar.
 {$ONEWORD}
 \\
 >think
-You must have one word right for making it beyond the gross tar.
+You're pretty sure you have one word right for making it beyond the gross tar.
 
 >grow star
 by a point
@@ -738,7 +744,7 @@ You already got rid of the tar!
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding a way into the keep.
+You're pretty sure you have one word right for finding a way into the keep.
 \\
 >undo
 >undo
@@ -748,7 +754,7 @@ You must have one word right for finding a way into the keep.
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding a way into the keep.
+You're pretty sure you have one word right for finding a way into the keep.
 
 >key pillar
 by a point
@@ -773,7 +779,7 @@ THINK
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding where the short rail could lead.
+You're pretty sure you have one word right for finding where the short rail could lead.
 \\
 >undo
 >undo
@@ -783,7 +789,7 @@ You must have one word right for finding where the short rail could lead.
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding where the short rail could lead.
+You're pretty sure you have one word right for finding where the short rail could lead.
 
 >shore trail
 by a point
@@ -812,7 +818,7 @@ Sadly, you have no friends to bring together yet! Yet.
 Maybe there's a low door beneath the lode ore, which definitely has small holes. But not small enough for you to fit through and scrabble and scrape to find one.
 THINK
 \\
-#testcase-think-table-of-main-oronyms-pre-low-door-rule
+#testcase-think-once-table-of-main-oronyms-pre-low-door-rule
 >think
 You may be able to find a LOW DOOR here once you have a companion or companions small enough to dig a bit better.
 
@@ -822,7 +828,7 @@ You may be able to find a LOW DOOR here once you have a companion or companions 
 {$ONEWORD}
 \\
 >think
-You must have one word right for how to dispel your high doubt.
+You're pretty sure you have one word right for how to dispel your high doubt.
 \\
 >undo
 >undo
@@ -832,7 +838,7 @@ You must have one word right for how to dispel your high doubt.
 {$ONEWORD}
 \\
 >think
-You must have one word right for how to dispel your high doubt.
+You're pretty sure you have one word right for how to dispel your high doubt.
 
 >hideout
 by a point
@@ -850,7 +856,7 @@ You already dispelled doubt and found the hideout!
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to make the booze troll feel less awful.
+You're pretty sure you have one word right for a way to make the booze troll feel less awful.
 \\
 >undo
 >undo
@@ -860,7 +866,7 @@ You must have one word right for a way to make the booze troll feel less awful.
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to make the booze troll feel less awful.
+You're pretty sure you have one word right for a way to make the booze troll feel less awful.
 
 >boost role
 by a point
@@ -875,9 +881,9 @@ You already gave the new troll a boost!
 THINK
 That feels right, but there's no water here. Maybe somewhere else.
 \\
-#testcase-think-table-of-main-oronyms-pre-bay-sale-rule
+#testcase-think-once-table-of-main-oronyms-pre-bay-sale-rule
 >think
-You may be able to participate in a BAY SALE if you've found the right location and once you have money.
+You may be able to participate in a BAY SALE once you've found an appropriate location and once you have money.
 
 >u
 
@@ -917,10 +923,10 @@ THINK
 >see design
 You sort of want to see the hidden design, but you're sort of scared what will happen once you do. The new troll can only help so much. You feel like you need some more support before you can give it your all.
 \\
-#testcase-think-table-of-main-oronyms-pre-see-design-rule
-#testcase-think-table-of-main-oronyms-pre-gnome-old-rule
-#testcase-think-table-of-main-oronyms-pre-manna-curb-rule
-#testcase-think-table-of-main-oronyms-pre-rogue-old-rule
+#testcase-think-once-table-of-main-oronyms-pre-see-design-rule
+#testcase-think-once-table-of-main-oronyms-pre-gnome-old-rule
+#testcase-think-once-table-of-main-oronyms-pre-manna-curb-rule
+#testcase-think-once-table-of-main-oronyms-pre-rogue-old-rule
 >think
 You may be able to recruit the GNOME OLD here once you have adventuring gear.
 You may be able to recruit the ROGUE OLD here once you have money.
@@ -942,7 +948,7 @@ You don't want to wipe out the friendship you made.
 {$ONEWORD}
 \\
 >think
-You must have one word right for what is hidden in Wolf Rock.
+You're pretty sure you have one word right for what is hidden in Wolf Rock.
 \\
 >undo
 >undo
@@ -952,7 +958,7 @@ You must have one word right for what is hidden in Wolf Rock.
 {$ONEWORD}
 \\
 >think
-You must have one word right for what is hidden in Wolf Rock.
+You're pretty sure you have one word right for what is hidden in Wolf Rock.
 
 >wool frock
 by a point
@@ -962,7 +968,7 @@ by a point
 >wool frock
 You already found one wool frock. You can't imagine you'd need two.
 \\
-#+testcase-think-table-of-main-oronyms-pre-gnome-old-rule
+#testcase-think-nowfar-table-of-main-oronyms-pre-gnome-old-rule
 >think
 You may be able to recruit the GNOME OLD in Keep (Iller) now you have adventuring gear.
 
@@ -1005,7 +1011,7 @@ You can't make out what sort of body of water is here. Well, not yet.
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding the surroundings here.
+You're pretty sure you have one word right for finding the surroundings here.
 \\
 >undo
 >undo
@@ -1015,7 +1021,7 @@ You must have one word right for finding the surroundings here.
 {$ONEWORD}
 \\
 >think
-You must have one word right for finding the surroundings here.
+You're pretty sure you have one word right for finding the surroundings here.
 
 >known ocean
 by a point
@@ -1035,7 +1041,7 @@ There's water here, but it's much more than a bay.
 {$ONEWORD}
 \\
 >think
-You must have one word right for discovering what ails the sick squid.
+You're pretty sure you have one word right for discovering what ails the sick squid.
 \\
 >undo
 >undo
@@ -1045,7 +1051,7 @@ You must have one word right for discovering what ails the sick squid.
 {$ONEWORD}
 \\
 >think
-You must have one word right for discovering what ails the sick squid.
+You're pretty sure you have one word right for discovering what ails the sick squid.
 
 >six quid
 by a point
@@ -1056,10 +1062,12 @@ by a point
 You don't need any more money, and the squid doesn't need any more help.
 
 @rej+
-#+testcase-think-table-of-main-oronyms-pre-see-design-rule
+#testcase-think-nowfar-table-of-main-oronyms-pre-rogue-old-rule
+#+testcase-think-once-table-of-main-oronyms-pre-see-design-rule
 >think
 You may be able to recruit the ROGUE OLD in Keep (Iller) now you have money.
 You may be able to SEE DESIGN in Keep (Iller) once you have more support and are less scared.
+You may be able to participate in a BAY SALE once you've found an appropriate location and now you have money.
 
 >n
 
@@ -1071,7 +1079,7 @@ You may be able to SEE DESIGN in Keep (Iller) once you have more support and are
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to rearrange the landscape here.
+You're pretty sure you have one word right for a way to rearrange the landscape here.
 \\
 >undo
 >undo
@@ -1081,7 +1089,11 @@ You must have one word right for a way to rearrange the landscape here.
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to rearrange the landscape here.
+You're pretty sure you have one word right for a way to rearrange the landscape here.
+
+@rej
+>bay sale
+No water visible here right now. Maybe if the landscape rearranged.
 
 >low bend
 by a point
@@ -1090,6 +1102,19 @@ by a point
 #testcase-check-pre-low-bend-rule-if-sco-low-bend-is-true
 >low bend
 You already found a low bend!
+\\
+#testcase-think-nownear-table-of-main-oronyms-pre-bay-sale-rule
+>think
+You may be able to participate in a BAY SALE here now you have money.
+\\
+>w
+\\
+#testcase-think-nowfar-table-of-main-oronyms-pre-bay-sale-rule
+>think
+You may be able to participate in a BAY SALE in Low Bend now you have money.
+\\
+>undo
+>undo
 
 @part
 ##balance undos
@@ -1098,7 +1123,7 @@ You already found a low bend!
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to repurpose the base ale.
+You're pretty sure you have one word right for a way to repurpose the base ale.
 \\
 >undo
 >undo
@@ -1108,7 +1133,7 @@ You must have one word right for a way to repurpose the base ale.
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to repurpose the base ale.
+You're pretty sure you have one word right for a way to repurpose the base ale.
 \\
 >undo
 >undo
@@ -1118,7 +1143,7 @@ You must have one word right for a way to repurpose the base ale.
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to repurpose the base ale.
+You're pretty sure you have one word right for a way to repurpose the base ale.
 \\
 >undo
 >undo
@@ -1143,7 +1168,7 @@ by a point
 {$ONEWORD}
 \\
 >think
-You must have one word right for the storm isle's alternate nature.
+You're pretty sure you have one word right for the storm isle's alternate nature.
 \\
 >undo
 >undo
@@ -1153,7 +1178,7 @@ You must have one word right for the storm isle's alternate nature.
 {$ONEWORD}
 \\
 >think
-You must have one word right for the storm isle's alternate nature.
+You're pretty sure you have one word right for the storm isle's alternate nature.
 
 >store mile
 by a point
@@ -1169,7 +1194,7 @@ But you already transformed the storm isle!
 Maybe there are mice behind there, but you can't figure a way to locate them. It requires some sort of clever inhuman perception, you'd think.
 THINK
 \\
-#testcase-think-table-of-main-oronyms-pre-mice-tall-rule
+#testcase-think-once-table-of-main-oronyms-pre-mice-tall-rule
 >think
 You may be able to locate the MICE TALL here once you have a companion with good perception.
 
@@ -1185,7 +1210,7 @@ You may be able to locate the MICE TALL here once you have a companion with good
 {$ONEWORD}
 \\
 >think
-You must have one word right for who has made sure there's no mold.
+You're pretty sure you have one word right for who has made sure there's no mold.
 \\
 >undo
 >undo
@@ -1195,13 +1220,18 @@ You must have one word right for who has made sure there's no mold.
 {$ONEWORD}
 \\
 >think
-You must have one word right for who has made sure there's no mold.
+You're pretty sure you have one word right for who has made sure there's no mold.
+
+@rej
+#testcase-think-nownear-table-of-main-oronyms-pre-gnome-old-rule
+>think
+You may be able to recruit the GNOME OLD here now you have adventuring gear.
 
 >gnome old
 by a point
 
 @rej
-#+testcase-think-table-of-main-oronyms-pre-mice-tall-rule
+#testcase-think-nowfar-table-of-main-oronyms-pre-mice-tall-rule
 >think
 You may be able to locate the MICE TALL in Store Mile now you have a companion with good perception.
 
@@ -1227,7 +1257,7 @@ You don't want to wipe out the friendships you made.
 {$ONEWORD}
 \\
 >think
-You must have one word right for what's inside MY STALL.
+You're pretty sure you have one word right for what's inside MY STALL.
 \\
 >undo
 >undo
@@ -1237,13 +1267,18 @@ You must have one word right for what's inside MY STALL.
 {$ONEWORD}
 \\
 >think
-You must have one word right for what's inside MY STALL.
+You're pretty sure you have one word right for what's inside MY STALL.
+
+@rej
+#testcase-think-nownear-table-of-main-oronyms-pre-mice-tall-rule
+>think
+You may be able to locate the MICE TALL here now you have a companion with good perception.
 
 >mice tall
 by a point
 
 @rej
-#+testcase-think-table-of-main-oronyms-pre-low-door-rule
+#testcase-think-nowfar-table-of-main-oronyms-pre-low-door-rule
 >think
 You may be able to find a LOW DOOR in Wolf Rock now you have a companion or companions small enough to dig a bit better.
 \\
@@ -1331,7 +1366,7 @@ You take some time to consider how the shrewd orc fits into a top-eight op. It o
 {$ONEWORD}
 \\
 >think
-You must have one word right for what the lode ore is hiding.
+You're pretty sure you have one word right for what the lode ore is hiding.
 \\
 >undo
 >undo
@@ -1341,7 +1376,12 @@ You must have one word right for what the lode ore is hiding.
 {$ONEWORD}
 \\
 >think
-You must have one word right for what the lode ore is hiding.
+You're pretty sure you have one word right for what the lode ore is hiding.
+
+@rej
+#testcase-think-nownear-table-of-main-oronyms-pre-low-door-rule
+>think
+You may be able to find a LOW DOOR here now you have a companion or companions small enough to dig a bit better.
 
 >low door
 by a point
@@ -1369,7 +1409,7 @@ THINK
 {$ONEWORD}
 \\
 >think
-You must have one word right for the sinister meaning behind We Loan.
+You're pretty sure you have one word right for the sinister meaning behind We Loan.
 \\
 >undo
 >undo
@@ -1379,7 +1419,7 @@ You must have one word right for the sinister meaning behind We Loan.
 {$ONEWORD}
 \\
 >think
-You must have one word right for the sinister meaning behind We Loan.
+You're pretty sure you have one word right for the sinister meaning behind We Loan.
 
 >well own
 by a point
@@ -1396,17 +1436,17 @@ That should work, but you're a bit intimidated right now. You need a way to show
 It doesn't have to be particularly rigorous or sensible, but it has to deflect from their aggression.
 THINK
 \\
-#testcase-think-table-of-main-oronyms-pre-bile-oh-rule
-#+testcase-think-table-of-main-oronyms-pre-my-corps-rule
+#testcase-think-once-table-of-main-oronyms-pre-bile-oh-rule
+#+testcase-think-once-table-of-main-oronyms-pre-my-corps-rule
 >think
-You may be able to expose some merchant's BILE OH once you've found something positive to say to prep yourself.
+You may be able to expose some merchant's BILE OH here once you've found something positive to say to prep yourself.
 You can call your companions MY CORPS once you have enough of them.
 \\
 #testcase-check-pre-whee-lone-rule-if-merchant-is-in-we-loan
 >whee lone
 You can't enjoy solitude with that merchant around.
 \\
-#testcase-think-table-of-main-oronyms-pre-whee-lone-rule
+#testcase-think-once-table-of-main-oronyms-pre-whee-lone-rule
 >think
 You may be able to enjoy your solitude with WHEE LONE here once you actually have solitude.
 
@@ -1416,7 +1456,7 @@ You may be able to enjoy your solitude with WHEE LONE here once you actually hav
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to zone some merchant out.
+You're pretty sure you have one word right for a way to zone some merchant out.
 \\
 >undo
 >undo
@@ -1426,7 +1466,7 @@ You must have one word right for a way to zone some merchant out.
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to zone some merchant out.
+You're pretty sure you have one word right for a way to zone some merchant out.
 
 >summer chant
 by a point
@@ -1435,10 +1475,6 @@ by a point
 #testcase-check-pre-summer-chant-rule-if-sco-summer-chant-is-true
 >summer chant
 You already found cheeriness outside of the merchant!
-\\
-#+testcase-think-table-of-main-oronyms-pre-bile-oh-rule
->think
-You may be able to expose some merchant's BILE OH now you've found something positive to say to prep yourself.
 
 @part
 #testcase-one-right-table-of-main-oronyms-bile-oh-o-1-bile
@@ -1446,7 +1482,7 @@ You may be able to expose some merchant's BILE OH now you've found something pos
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to counter the buy-low rhetoric.
+You're pretty sure you have one word right for a way to counter the buy-low rhetoric.
 \\
 >undo
 >undo
@@ -1460,15 +1496,23 @@ You must have one word right for a way to counter the buy-low rhetoric.
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to counter the buy-low rhetoric.
+You're pretty sure you have one word right for a way to counter the buy-low rhetoric.
 
 >bile oh
 by a point
 
 @rej
-#+testcase-think-table-of-main-oronyms-pre-whee-lone-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-whee-lone-rule
 >think
 You may be able to enjoy your solitude with WHEE LONE here now you actually have solitude.
+\\
+>out
+\\
+#testcase-think-nowfar-table-of-main-oronyms-pre-whee-lone-rule
+>think
+You may be able to enjoy your solitude with WHEE LONE in We'll Own now you actually have solitude.
+\\
+>in
 
 @part
 #testcase-one-right-table-of-main-oronyms-whee-lone-2-lone
@@ -1476,7 +1520,7 @@ You may be able to enjoy your solitude with WHEE LONE here now you actually have
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to enjoy solitude.
+You're pretty sure you have one word right for a way to enjoy solitude.
 \\
 >undo
 >undo
@@ -1486,7 +1530,7 @@ You must have one word right for a way to enjoy solitude.
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to enjoy solitude.
+You're pretty sure you have one word right for a way to enjoy solitude.
 
 >whee lone
 by a point
@@ -1498,19 +1542,24 @@ You try and pull out one quid, but you wind up pulling them all out. The oaf lia
 "Have it your way. Information's valuable. Don't try to lowball me."
 THINK
 \\
-#testcase-think-table-of-main-oronyms-pre-oh-flier-rule
+#testcase-think-once-table-of-main-oronyms-pre-oh-flier-rule
 >think
-You may be able to say OH FLIER around the oaf liar once you have exactly one quid left.
+You may be able to say OH FLIER to the oaf liar here once you have exactly one quid left.
 
 >out
 
 >s
 
+@rej
+#testcase-think-nowfar-table-of-main-oronyms-pre-see-design-rule
+>think
+You may be able to SEE DESIGN in Keep (Iller) now you have more support and are less scared.
+
 >w
 
 @rej
-#+testcase-think-table-of-main-oronyms-pre-see-design-rule
-#+testcase-think-table-of-main-oronyms-pre-rogue-old-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-see-design-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-rogue-old-rule
 >think
 You may be able to SEE DESIGN here now you have more support and are less scared.
 You may be able to recruit the ROGUE OLD here now you have money.
@@ -1521,7 +1570,7 @@ You may be able to recruit the ROGUE OLD here now you have money.
 {$ONEWORD}
 \\
 >think
-You must have one word right for who is responsible for the row, gold.
+You're pretty sure you have one word right for who is responsible for the row, gold.
 \\
 >undo
 >undo
@@ -1531,7 +1580,7 @@ You must have one word right for who is responsible for the row, gold.
 {$ONEWORD}
 \\
 >think
-You must have one word right for who is responsible for the row, gold.
+You're pretty sure you have one word right for who is responsible for the row, gold.
 
 >rogue old
 by a point
@@ -1545,12 +1594,17 @@ But you already got the rogue (old) to join you!
 
 >n
 
+@rej
+#testcase-think-nowfar-table-of-main-oronyms-pre-oh-flier-rule
+>think
+You may be able to say OH FLIER to the oaf liar in Whee, Lone now you have exactly one quid left.
+
 >in
 
 @rej
-#+testcase-think-table-of-main-oronyms-pre-oh-flier-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-oh-flier-rule
 >think
-You may be able to say OH FLIER around the oaf liar now you have exactly one quid left.
+You may be able to say OH FLIER to the oaf liar here now you have exactly one quid left.
 
 @part
 >think
@@ -1561,7 +1615,7 @@ You may be able to say OH FLIER around the oaf liar now you have exactly one qui
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to get something from the oaf liar.
+You're pretty sure you have one word right for a way to get something from the oaf liar.
 \\
 >undo
 >undo
@@ -1571,7 +1625,7 @@ You must have one word right for a way to get something from the oaf liar.
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to get something from the oaf liar.
+You're pretty sure you have one word right for a way to get something from the oaf liar.
 \\
 >undo
 >undo
@@ -1581,7 +1635,7 @@ You must have one word right for a way to get something from the oaf liar.
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to get something from the oaf liar.
+You're pretty sure you have one word right for a way to get something from the oaf liar.
 \\
 >undo
 >undo
@@ -1611,13 +1665,13 @@ THINK
 This isn't the right place to look for an isle. No large body of water nearby.
 THINK
 \\
-#testcase-think-table-of-main-oronyms-pre-grow-vial-rule
-#testcase-think-table-of-main-oronyms-pre-war-file-rule
-#testcase-think-table-of-main-oronyms-pre-the-file-rule
+#testcase-think-once-table-of-main-oronyms-pre-war-file-rule
+#testcase-think-once-table-of-main-oronyms-pre-the-file-rule
+#testcase-think-once-table-of-main-oronyms-pre-grow-vial-rule
 >think
-You may be able to make sense of THE FILE in Known Ocean once you've gotten enough information from companions.
-You may be able to recover the WAR FILE on the wharf isle in Known Ocean once you have something you can write down its main ideas in.
-You may be able to find a GROW VIAL with the right water transport.
+You may be able to recover the WAR FILE on Wharf Isle across the water via Known Ocean once you have something you can write down its main ideas in.
+You may be able to make sense of THE FILE on Thief Isle across the water via Known Ocean once you've gotten enough information from companions.
+You may be able to find a GROW VIAL on Grove Isle across the water via Known Ocean now you have long-range water transport.
 
 >out
 
@@ -1642,7 +1696,7 @@ A war file might be useful, but you'd have no way to organize the information ri
 {$ONEWORD}
 \\
 >think
-You must have one word right for an alternate form of the plant racker.
+You're pretty sure you have one word right for an alternate form of the plant racker.
 \\
 >undo
 >undo
@@ -1652,7 +1706,7 @@ You must have one word right for an alternate form of the plant racker.
 {$ONEWORD}
 \\
 >think
-You must have one word right for an alternate form of the plant racker.
+You're pretty sure you have one word right for an alternate form of the plant racker.
 
 >plan tracker
 by a point
@@ -1690,7 +1744,7 @@ Hmm. You
 {$ONEWORD}
 \\
 >think
-You must have one word right for who the traitor was or can become.
+You're pretty sure you have one word right for who the traitor was or can become.
 \\
 >undo
 >undo
@@ -1700,7 +1754,7 @@ You must have one word right for who the traitor was or can become.
 {$ONEWORD}
 \\
 >think
-You must have one word right for who the traitor was or can become.
+You're pretty sure you have one word right for who the traitor was or can become.
 
 >gaunt raider
 by a point
@@ -1727,7 +1781,7 @@ You're still two followers short.
 {$ONEWORD}
 \\
 >think
-You must have one word right for a nicer form of the MEN shelf.
+You're pretty sure you have one word right for a nicer form of the MEN shelf.
 \\
 >undo
 >undo
@@ -1737,7 +1791,7 @@ You must have one word right for a nicer form of the MEN shelf.
 {$ONEWORD}
 \\
 >think
-You must have one word right for a nicer form of the MEN shelf.
+You're pretty sure you have one word right for a nicer form of the MEN shelf.
 
 >mensch elf
 by a point
@@ -1785,11 +1839,19 @@ While you'll want to hold a meetin(') some time, you sense you don't yet have th
 So how many companions do you need? On reflection, a top-eight op ought to do the trick. It's unclear whether you will need to be one of the eight. For now, you assume you are.
 You're still one follower short.
 \\
-#testcase-think-table-of-main-oronyms-pre-were-meetin-rule
+#testcase-think-once-table-of-main-oronyms-pre-were-meetin-rule
 >think
-You will be able to say WERE MEETIN once you have a full party available.
+You will be able to say WERE MEETIN here once you have a full party available.
 \\
 >u
+
+@rej+
+#testcase-think-nowfar-table-of-main-oronyms-pre-war-file-rule
+#testcase-think-nowfar-table-of-main-oronyms-pre-grow-vial-rule
+>think
+You may be able to recover the WAR FILE on Wharf Isle across the water via Known Ocean now you have something you can write down its main ideas in.
+You may be able to make sense of THE FILE on Thief Isle across the water via Known Ocean once you've gotten enough information from companions.
+You may be able to find a GROW VIAL on Grove Isle across the water via Known Ocean now you have long-range water transport.
 
 >s
 
@@ -1798,10 +1860,11 @@ You will be able to say WERE MEETIN once you have a full party available.
 >the file
 You know there is THE FILE, but which file is THE FILE? The thief isle has probably stolen a lot, and it wouldn't do to hang around there guessing where to look! You need information from your companions, or maybe just more companions.
 \\
-#+testcase-think-table-of-main-oronyms-pre-war-file-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-war-file-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-grow-vial-rule
 >think
-You may be able to recover the WAR FILE on the wharf isle here now you have something you can write down its main ideas in.
-You may be able to make sense of THE FILE here once you've gotten enough information from companions.
+You may be able to recover the WAR FILE on Wharf Isle across the water here now you have something you can write down its main ideas in.
+You may be able to find a GROW VIAL on Grove Isle across the water here now you have long-range water transport.
 
 @part
 #testcase-one-right-table-of-main-oronyms-war-file-2-file
@@ -1809,7 +1872,7 @@ You may be able to make sense of THE FILE here once you've gotten enough informa
 {$ONEWORD}
 \\
 >think
-You must have one word right for what is on Wharf Isle.
+You're pretty sure you have one word right for what is on Wharf Isle.
 \\
 >undo
 >undo
@@ -1819,7 +1882,7 @@ You must have one word right for what is on Wharf Isle.
 {$ONEWORD}
 \\
 >think
-You must have one word right for what is on Wharf Isle.
+You're pretty sure you have one word right for what is on Wharf Isle.
 
 >war file
 by a point
@@ -1830,7 +1893,7 @@ by a point
 {$ONEWORD}
 \\
 >think
-You must have one word right for who is on Wand Wharf.
+You're pretty sure you have one word right for who is on Wand Wharf.
 \\
 >undo
 >undo
@@ -1840,7 +1903,7 @@ You must have one word right for who is on Wand Wharf.
 {$ONEWORD}
 \\
 >think
-You must have one word right for who is on Wand Wharf.
+You're pretty sure you have one word right for who is on Wand Wharf.
 
 >wan dwarf
 by a point
@@ -1853,10 +1916,6 @@ You already got the war file. See where else you can visit.
 #+testcase-check-pre-the-file-rule-if-number-of-still-chat-needed-followers->-0
 >the file
 You know there is THE FILE, but which file is THE FILE? The thief isle has probably stolen a lot, and it wouldn't do to hang around there guessing where to look! You need information from your companions.
-\\
-#+testcase-think-table-of-main-oronyms-pre-the-file-rule
->think
-You may be able to make sense of THE FILE here once you've gotten enough information from companions.
 
 @rej+
 ##balance undos
@@ -1897,7 +1956,7 @@ You already got THE FILE. See where else you can visit.
 {$ONEWORD}
 \\
 >think
-You must have one word right for what is on Grove Isle.
+You're pretty sure you have one word right for what is on Grove Isle.
 \\
 >undo
 >undo
@@ -1907,7 +1966,7 @@ You must have one word right for what is on Grove Isle.
 {$ONEWORD}
 \\
 >think
-You must have one word right for what is on Grove Isle.
+You're pretty sure you have one word right for what is on Grove Isle.
 
 >grow vial
 by a point
@@ -1918,7 +1977,7 @@ by a point
 You already got the grow vial. See where else you can visit.
 
 @rej+
-#+testcase-think-table-of-main-oronyms-pre-manna-curb-rule
+#testcase-think-nowfar-table-of-main-oronyms-pre-manna-curb-rule
 >think
 You may be able to find a MANNA CURB beneath the manna curb in Keep (Iller) now you have someone with knowledge of wildlife and wildflowers.
 
@@ -1931,7 +1990,7 @@ You may be able to find a MANNA CURB beneath the manna curb in Keep (Iller) now 
 >n
 
 @rej
-#testcase-check-pre-treat-all-rule-if-tree-tall-is-not-in-trees-mall
+#+testcase-check-pre-treat-all-rule-if-tree-tall-is-not-in-trees-mall-and-once-now-hunt-is-false
 >treat all
 {$REJECT2}
 
@@ -1941,7 +2000,7 @@ You may be able to find a MANNA CURB beneath the manna curb in Keep (Iller) now 
 {$ONEWORD}
 \\
 >think
-You must have one word right for something hidden here.
+You're pretty sure you have one word right for something hidden here.
 \\
 >undo
 >undo
@@ -1951,7 +2010,7 @@ You must have one word right for something hidden here.
 {$ONEWORD}
 \\
 >think
-You must have one word right for something hidden here.
+You're pretty sure you have one word right for something hidden here.
 
 >tree small
 by a point
@@ -1971,9 +2030,9 @@ You already got a tree (small) to grow!
 ##balance undos
 >s
 \\
-#+testcase-think-table-of-main-oronyms-pre-the-file-rule
+#testcase-think-nowfar-table-of-main-oronyms-pre-the-file-rule
 >think
-You may be able to make sense of THE FILE here once you've gotten enough information from companions.
+You may be able to make sense of THE FILE on Thief Isle across the water here once you've gotten enough information from companions.
 \\
 >undo
 >undo
@@ -2000,13 +2059,13 @@ You may be able to make sense of THE FILE here once you've gotten enough informa
 You have neither the utensils nor the ingredients to make a cake.
 THINK
 \\
-#testcase-think-table-of-main-oronyms-pre-tall-cake-rule
+#testcase-think-once-table-of-main-oronyms-pre-tall-cake-rule
 >think
 You may be able to create a TALL CAKE once you have ingredients and cooking instruments.
 \\
-#+testcase-think-table-of-main-oronyms-pre-the-file-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-the-file-rule
 >think
-You may be able to make sense of THE FILE in Known Ocean now you've gotten enough information from companions.
+You may be able to make sense of THE FILE on Thief Isle across the water via Known Ocean now you've gotten enough information from companions.
 
 >u
 
@@ -2028,7 +2087,7 @@ Oh, hey! You notice something scrawled on BRUISE-WARES. It says NAH, BYE. It see
 {$ONEWORD}
 \\
 >think
-You must have one word right for what to do with NAH BYE.
+You're pretty sure you have one word right for what to do with NAH BYE.
 \\
 >undo
 >undo
@@ -2038,7 +2097,7 @@ You must have one word right for what to do with NAH BYE.
 {$ONEWORD}
 \\
 >think
-You must have one word right for what to do with NAH BYE.
+You're pretty sure you have one word right for what to do with NAH BYE.
 \\
 >undo
 >undo
@@ -2051,7 +2110,7 @@ You must have one word right for what to do with NAH BYE.
 {$ONEWORD}
 \\
 >think
-You must have one word right for seeing BRUISE-WARES's true nature.
+You're pretty sure you have one word right for seeing BRUISE-WARES's true nature.
 \\
 >undo
 >undo
@@ -2061,7 +2120,7 @@ You must have one word right for seeing BRUISE-WARES's true nature.
 {$ONEWORD}
 \\
 >think
-You must have one word right for seeing BRUISE-WARES's true nature.
+You're pretty sure you have one word right for seeing BRUISE-WARES's true nature.
 
 @!min
 >ao
@@ -2083,9 +2142,9 @@ But you've already opened the passage through BRUISE-WARES!
 The crude orc doesn't believe they're being used by the grinch earls. Why, it's part of the hazing! They have to show they're as tough as the grinch earls! Uh, right?
 THINK
 \\
-#testcase-think-table-of-main-oronyms-pre-crew-dork-rule
+#testcase-think-once-table-of-main-oronyms-pre-crew-dork-rule
 >think
-You can explain the grinch earls see the crude orc as a CREW DORK once they seem a bit less strong.
+You can explain the grinch earls here see the crude orc as a CREW DORK once they seem a bit less strong.
 \\
 #testcase-check-pre-ass-low-rule-if-aah-slow-is-not-in-brew-swears
 >ass low
@@ -2133,7 +2192,7 @@ You lost the chance to say CREW DORK to the crude orc a bit more gently, as you 
 {$ONEWORD}
 \\
 >think
-You must have one word right for how to deflate the grinch earls' bravado.
+You're pretty sure you have one word right for how to deflate the grinch earls' bravado.
 \\
 >undo
 >undo
@@ -2143,16 +2202,24 @@ You must have one word right for how to deflate the grinch earls' bravado.
 {$ONEWORD}
 \\
 >think
-You must have one word right for how to deflate the grinch earls' bravado.
+You're pretty sure you have one word right for how to deflate the grinch earls' bravado.
 
 @!min
 >weak us
 by a bonus point
 
 @rej
-#+testcase-think-table-of-main-oronyms-pre-crew-dork-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-crew-dork-rule
 >think
-You can explain the grinch earls see the crude orc as a CREW DORK now they seem a bit less strong.
+You can explain the grinch earls here see the crude orc as a CREW DORK now they seem a bit less strong.
+\\
+>out
+\\
+#testcase-think-nowfar-table-of-main-oronyms-pre-crew-dork-rule
+>think
+You can explain the grinch earls in Brew Swears see the crude orc as a CREW DORK now they seem a bit less strong.
+\\
+>in
 
 @rej+
 ##balance undos
@@ -2168,7 +2235,7 @@ You lost the chance to say CREW DORK to the crude orc a bit more gently, even th
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to explain the crude orc's status.
+You're pretty sure you have one word right for a way to explain the crude orc's status.
 \\
 >undo
 >undo
@@ -2178,7 +2245,7 @@ You must have one word right for a way to explain the crude orc's status.
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to explain the crude orc's status.
+You're pretty sure you have one word right for a way to explain the crude orc's status.
 
 @!min
 >crew dork
@@ -2202,7 +2269,7 @@ You already established the grinch earls cursed out of weakness or, at least, no
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to counter the ah-slow taunts.
+You're pretty sure you have one word right for a way to counter the ah-slow taunts.
 \\
 >undo
 >undo
@@ -2212,13 +2279,13 @@ You must have one word right for a way to counter the ah-slow taunts.
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to counter the ah-slow taunts.
+You're pretty sure you have one word right for a way to counter the ah-slow taunts.
 \\
 >xxx lo
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to counter the ah-slow taunts.
+You're pretty sure you have one word right for a way to counter the ah-slow taunts.
 
 @!min
 >ass low
@@ -2230,7 +2297,7 @@ by a bonus point
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to counter the bah-sturdy taunts.
+You're pretty sure you have one word right for a way to counter the bah-sturdy taunts.
 \\
 >undo
 >undo
@@ -2240,7 +2307,7 @@ You must have one word right for a way to counter the bah-sturdy taunts.
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to counter the bah-sturdy taunts.
+You're pretty sure you have one word right for a way to counter the bah-sturdy taunts.
 
 @!min
 >bastard eee
@@ -2252,7 +2319,7 @@ by a bonus point
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to counter the damp-yawns taunts.
+You're pretty sure you have one word right for a way to counter the damp-yawns taunts.
 \\
 >undo
 >undo
@@ -2262,7 +2329,7 @@ You must have one word right for a way to counter the damp-yawns taunts.
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to counter the damp-yawns taunts.
+You're pretty sure you have one word right for a way to counter the damp-yawns taunts.
 
 @!min
 >damn peons
@@ -2274,7 +2341,7 @@ by a bonus point
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to counter the heh-class taunts.
+You're pretty sure you have one word right for a way to counter the heh-class taunts.
 \\
 >undo
 >undo
@@ -2284,7 +2351,7 @@ You must have one word right for a way to counter the heh-class taunts.
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to counter the heh-class taunts.
+You're pretty sure you have one word right for a way to counter the heh-class taunts.
 
 @!min
 >heckle ass
@@ -2296,7 +2363,7 @@ by a bonus point
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to counter the hush-it taunts.
+You're pretty sure you have one word right for a way to counter the hush-it taunts.
 \\
 >undo
 >undo
@@ -2306,7 +2373,7 @@ You must have one word right for a way to counter the hush-it taunts.
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to counter the hush-it taunts.
+You're pretty sure you have one word right for a way to counter the hush-it taunts.
 
 @!min
 >huh shit
@@ -2318,7 +2385,7 @@ by a bonus point
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to counter the life-occurs taunts.
+You're pretty sure you have one word right for a way to counter the life-occurs taunts.
 \\
 >undo
 >undo
@@ -2328,7 +2395,7 @@ You must have one word right for a way to counter the life-occurs taunts.
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to counter the life-occurs taunts.
+You're pretty sure you have one word right for a way to counter the life-occurs taunts.
 
 @!min
 >lie fuckers
@@ -2363,7 +2430,7 @@ by a bonus point
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to counter the taunting weird-icks.
+You're pretty sure you have one word right for a way to counter the taunting weird-icks.
 \\
 >undo
 >undo
@@ -2373,7 +2440,7 @@ You must have one word right for a way to counter the taunting weird-icks.
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to counter the taunting weird-icks.
+You're pretty sure you have one word right for a way to counter the taunting weird-icks.
 
 @!min
 >were dicks
@@ -2385,7 +2452,7 @@ by a bonus point
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to reclassify the grinch earls.
+You're pretty sure you have one word right for a way to reclassify the grinch earls.
 \\
 >undo
 >undo
@@ -2395,7 +2462,7 @@ You must have one word right for a way to reclassify the grinch earls.
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to reclassify the grinch earls.
+You're pretty sure you have one word right for a way to reclassify the grinch earls.
 
 @!min
 >grin churls
@@ -2414,7 +2481,7 @@ The grin churls remark that you seemed so open-minded, really, and they're all f
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to counter Gawain Kerr's taunts.
+You're pretty sure you have one word right for a way to counter Gawain Kerr's taunts.
 \\
 >undo
 >undo
@@ -2424,7 +2491,7 @@ You must have one word right for a way to counter Gawain Kerr's taunts.
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to counter Gawain Kerr's taunts.
+You're pretty sure you have one word right for a way to counter Gawain Kerr's taunts.
 
 @!min
 >gah wanker
@@ -2456,7 +2523,7 @@ You may be able to create a TALL CAKE once you have ingredients and cooking inst
 {$ONEWORD}
 \\
 >think
-You must have one word right for what the sign hides.
+You're pretty sure you have one word right for what the sign hides.
 \\
 >undo
 >undo
@@ -2466,7 +2533,7 @@ You must have one word right for what the sign hides.
 {$ONEWORD}
 \\
 >think
-You must have one word right for what the sign hides.
+You're pretty sure you have one word right for what the sign hides.
 
 >see design
 by a point
@@ -2477,7 +2544,7 @@ by a point
 {$ONEWORD}
 \\
 >think
-You must have one word right for what to find or do to leave.
+You're pretty sure you have one word right for what to find or do to leave.
 \\
 >undo
 >undo
@@ -2487,14 +2554,14 @@ You must have one word right for what to find or do to leave.
 {$ONEWORD}
 \\
 >think
-You must have one word right for what to find or do to leave.
+You're pretty sure you have one word right for what to find or do to leave.
 \\
 #+testcase-one-right-table-of-main-oronyms-knife-right-rite-2-right-rite
 >xxx rite
 {$ONEWORD}
 \\
 >think
-You must have one word right for what to find or do to leave.
+You're pretty sure you have one word right for what to find or do to leave.
 
 >knife rite
 by a point
@@ -2518,7 +2585,7 @@ You already saw the design in the seedy sign. You don't need to redo things.
 {$ONEWORD}
 \\
 >think
-You must have one word right for what lies under or near the manic herb.
+You're pretty sure you have one word right for what lies under or near the manic herb.
 \\
 >undo
 >undo
@@ -2528,7 +2595,7 @@ You must have one word right for what lies under or near the manic herb.
 {$ONEWORD}
 \\
 >think
-You must have one word right for what lies under or near the manic herb.
+You're pretty sure you have one word right for what lies under or near the manic herb.
 \\
 >undo
 >undo
@@ -2538,7 +2605,12 @@ You must have one word right for what lies under or near the manic herb.
 {$ONEWORD}
 \\
 >think
-You must have one word right for what lies under or near the manic herb.
+You're pretty sure you have one word right for what lies under or near the manic herb.
+
+@rej
+#testcase-think-nownear-table-of-main-oronyms-pre-manna-curb-rule
+>think
+You may be able to find a MANNA CURB beneath the manna curb here now you have someone with knowledge of wildlife and wildflowers.
 
 >manna curb
 by a point
@@ -2548,7 +2620,7 @@ by a point
 >manna curb
 You already found enough manna beneath the manic herb!
 \\
-#+testcase-think-table-of-main-oronyms-pre-tall-cake-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-tall-cake-rule
 >think
 You may be able to create a TALL CAKE now you have ingredients and cooking instruments.
 
@@ -2568,15 +2640,11 @@ THINK
 \\
 >s
 \\
-#testcase-think-table-of-main-oronyms-pre-treat-all-rule
+#testcase-think-once-table-of-main-oronyms-pre-treat-all-rule
 >think
 You may be able to TREAT ALL in Trees Mall once you have a tasty treat.
 \\
 >n
-\\
-#+testcase-think-table-of-main-oronyms-pre-the-file-rule
->think
-You may be able to make sense of THE FILE in Known Ocean now you've gotten enough information from companions.
 
 @part
 #testcase-one-right-table-of-main-oronyms-tall-cake-2-cake
@@ -2584,7 +2652,7 @@ You may be able to make sense of THE FILE in Known Ocean now you've gotten enoug
 {$ONEWORD}
 \\
 >think
-You must have one word right for how to get rid of your talk-ache.
+You're pretty sure you have one word right for how to get rid of your talk-ache.
 \\
 >undo
 >undo
@@ -2594,7 +2662,7 @@ You must have one word right for how to get rid of your talk-ache.
 {$ONEWORD}
 \\
 >think
-You must have one word right for how to get rid of your talk-ache.
+You're pretty sure you have one word right for how to get rid of your talk-ache.
 \\
 >undo
 >undo
@@ -2603,8 +2671,8 @@ You must have one word right for how to get rid of your talk-ache.
 by a point
 
 @rej
-#+testcase-think-table-of-main-oronyms-pre-my-corps-rule
-#+testcase-think-table-of-main-oronyms-pre-treat-all-rule
+#+testcase-think-once-table-of-main-oronyms-pre-my-corps-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-treat-all-rule
 >think
 You may be able to TREAT ALL here now you have a tasty treat.
 You can call your companions MY CORPS once you've shared something together.
@@ -2620,7 +2688,7 @@ They are your corps, and yet, there's something to share with them. Something to
 {$ONEWORD}
 \\
 >think
-You must have one word right for what to do under the tree, tall.
+You're pretty sure you have one word right for what to do under the tree, tall.
 \\
 >undo
 >undo
@@ -2630,16 +2698,29 @@ You must have one word right for what to do under the tree, tall.
 {$ONEWORD}
 \\
 >think
-You must have one word right for what to do under the tree, tall.
+You're pretty sure you have one word right for what to do under the tree, tall.
 \\
 >undo
 >undo
+
+@rej
+>s
+\\
+#testcase-check-pre-treat-all-rule-if-player-is-not-in-trees-mall-and-once-now-hunt-is-false
+>treat all
+You have the treat. Why not go back to the tree?
+\\
+#testcase-think-nowfar-table-of-main-oronyms-pre-treat-all-rule
+>think
+You may be able to TREAT ALL in Trees Mall now you have a tasty treat.
+\\
+>n
 
 >treat all
 by a point
 
 @rej
-#testcase-check-pre-my-corps-rule-if-player-is-not-in-worm-eaten
+#+testcase-check-pre-my-corps-rule-if-player-is-not-in-worm-eaten-and-once-now-hunt-is-false
 >my corps
 This doesn't seem to be the right place to pep up the troops.
 \\
@@ -2661,7 +2742,7 @@ You already shared treats!
 {$ONEWORD}
 \\
 >think
-You must have one word right for what is on Thief Isle.
+You're pretty sure you have one word right for what is on Thief Isle.
 \\
 >undo
 >undo
@@ -2671,19 +2752,24 @@ You must have one word right for what is on Thief Isle.
 {$ONEWORD}
 \\
 >think
-You must have one word right for what is on Thief Isle.
+You're pretty sure you have one word right for what is on Thief Isle.
 
 >the file
 by a point
 
 >n
 
+@rej
+#testcase-think-nowfar-table-of-main-oronyms-pre-were-meetin-rule
+>think
+You will be able to say WERE MEETIN in Worm-Eaten now you have a full party available.
+
 >d
 
 @rej
-#+testcase-think-table-of-main-oronyms-pre-were-meetin-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-were-meetin-rule
 >think
-You will be able to say WERE MEETIN now you have a full party available.
+You will be able to say WERE MEETIN here now you have a full party available.
 
 @rej+
 #testcase-check-pre-my-corps-rule-if-sco-were-meetin-is-false
@@ -2691,22 +2777,22 @@ You will be able to say WERE MEETIN now you have a full party available.
 You sense you have a full party, and you're in a good place, but the atmosphere is wrong for planning and discussions.
 
 @part
-#testcase-one-right-table-of-main-oronyms-were-meetin-2-meetin
+#testcase-one-right-table-of-main-oronyms-were-meetin-meeting-2-meetin-meeting
 >xxx meetin
 {$ONEWORD}
 \\
 >think
-You must have one word right for how Worm Eaten could feel more homey.
+You're pretty sure you have one word right for how Worm Eaten could feel more homey.
 \\
 >undo
 >undo
 \\
-#testcase-one-right-table-of-main-oronyms-were-meetin-1-were
+#testcase-one-right-table-of-main-oronyms-were-meetin-meeting-1-were
 >were xxx
 {$ONEWORD}
 \\
 >think
-You must have one word right for how Worm Eaten could feel more homey.
+You're pretty sure you have one word right for how Worm Eaten could feel more homey.
 
 >were meetin
 by a point
@@ -2719,9 +2805,17 @@ You already held a meeting! Too many meetings get in the way of doing.
 >wipe out
 You haven't identified anyone terribly evil you want to wipe out.
 \\
-#+testcase-think-table-of-main-oronyms-pre-my-corps-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-my-corps-rule
 >think
-You can call your companions MY CORPS now you've shared something together.
+You can call your companions MY CORPS here now you've shared something together.
+\\
+>u
+\\
+#testcase-think-nowfar-table-of-main-oronyms-pre-my-corps-rule
+>think
+You can call your companions MY CORPS in We're Meetin' now you've shared something together.
+\\
+>d
 
 @part
 #testcase-one-right-table-of-main-oronyms-my-corps-2-corps
@@ -2729,7 +2823,7 @@ You can call your companions MY CORPS now you've shared something together.
 {$ONEWORD}
 \\
 >think
-You must have one word right for why your name is special.
+You're pretty sure you have one word right for why your name is special.
 \\
 >undo
 >undo
@@ -2739,7 +2833,7 @@ You must have one word right for why your name is special.
 {$ONEWORD}
 \\
 >think
-You must have one word right for why your name is special.
+You're pretty sure you have one word right for why your name is special.
 
 >my corps
 by a point
@@ -2771,7 +2865,7 @@ You try to declare a wide vision, but as you do, you trip yourself up on pronunc
 >wide vision
 You are unable to express your wide vision. You'll have to settle for just repairing things pretty well.
 \\
-#testcase-think-table-of-main-oronyms-pre-wide-vision-rule
+#testcase-think-once-table-of-main-oronyms-pre-wide-vision-rule
 >think
 Sadly, you didn't quite experience enough to spread your wide vision.
 \\
@@ -2799,8 +2893,8 @@ You try to charge and wipe out the sea skull, but you bounce against an invisibl
 {$REJECT2}
 
 @rej+
-#+testcase-think-table-of-main-oronyms-pre-wipe-out-rule
-#testcase-think-table-of-main-oronyms-pre-do-due-mend-rule
+#+testcase-think-once-table-of-main-oronyms-pre-wipe-out-rule
+#testcase-think-once-table-of-main-oronyms-pre-do-due-mend-rule
 >think
 You can think DO/DUE MEND/MENDING once you've disposed of the sea skull.
 You will want to WIPE OUT the cause of your problems once you have them in your crosshairs.
@@ -2812,7 +2906,7 @@ You will want to WIPE OUT the cause of your problems once you have them in your 
 {$ONEWORD}
 \\
 >think
-You must have one word right for alerting the sea skull.
+You're pretty sure you have one word right for alerting the sea skull.
 \\
 >undo
 >undo
@@ -2822,7 +2916,7 @@ You must have one word right for alerting the sea skull.
 {$ONEWORD}
 \\
 >think
-You must have one word right for alerting the sea skull.
+You're pretty sure you have one word right for alerting the sea skull.
 
 >cease cull
 by a point
@@ -2833,7 +2927,7 @@ by a point
 You already played defense. Now's the time to go on offense!
 
 @rej+
-#+testcase-think-table-of-main-oronyms-pre-wipe-out-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-wipe-out-rule
 >think
 You will want to WIPE OUT the cause of your problems now you have them in your crosshairs.
 !not for a while
@@ -2844,7 +2938,7 @@ You will want to WIPE OUT the cause of your problems now you have them in your c
 {$ONEWORD}
 \\
 >think
-You must have one word right for how to take down the skull.
+You're pretty sure you have one word right for how to take down the skull.
 \\
 >undo
 >undo
@@ -2854,7 +2948,7 @@ You must have one word right for how to take down the skull.
 {$ONEWORD}
 \\
 >think
-You must have one word right for how to take down the skull.
+You're pretty sure you have one word right for how to take down the skull.
 
 >wipe out
 by a point
@@ -2870,7 +2964,7 @@ You already wiped out the sea skull! Now is the time for healing.
 {$ONEWORD}
 \\
 >think
-You must have one word right for something more positive than the why-division.
+You're pretty sure you have one word right for something more positive than the why-division.
 \\
 >undo
 >undo
@@ -2880,7 +2974,7 @@ You must have one word right for something more positive than the why-division.
 {$ONEWORD}
 \\
 >think
-You must have one word right for something more positive than the why-division.
+You're pretty sure you have one word right for something more positive than the why-division.
 
 @rej
 >wide vision
@@ -2892,7 +2986,7 @@ Your experiences and failures give you a leadership you don't know you had. You 
 They're eager for the final step, to get out there. You look around. It's pretty clear what must occur, or it will be, soon.
 
 @rej+
-#+testcase-think-table-of-main-oronyms-pre-do-due-mend-rule
+#testcase-think-nownear-table-of-main-oronyms-pre-do-due-mend-rule
 >think
 You can think DO/DUE MEND/MENDING now you've disposed of the sea skull.
 
@@ -3120,7 +3214,7 @@ You can think DO/DUE MEND/MENDING now you've disposed of the sea skull.
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to steer things from a doom ending.
+You're pretty sure you have one word right for a way to steer things from a doom ending.
 \\
 >undo
 >undo
@@ -3130,7 +3224,7 @@ You must have one word right for a way to steer things from a doom ending.
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to steer things from a doom ending.
+You're pretty sure you have one word right for a way to steer things from a doom ending.
 \\
 >undo
 >undo
@@ -3140,7 +3234,7 @@ You must have one word right for a way to steer things from a doom ending.
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to steer things from a doom ending.
+You're pretty sure you have one word right for a way to steer things from a doom ending.
 \\
 >undo
 >undo
@@ -3150,7 +3244,7 @@ You must have one word right for a way to steer things from a doom ending.
 {$ONEWORD}
 \\
 >think
-You must have one word right for a way to steer things from a doom ending.
+You're pretty sure you have one word right for a way to steer things from a doom ending.
 
 >do mending
 by a point

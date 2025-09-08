@@ -60,13 +60,13 @@ by a point
 
 #testcase-homonym-reject-table-of-main-oronyms-poll-paul-pall
 >poll east
-Hmm. That really, really SOUNDED like it should work, but it didn't.
+Hmm. That felt more than halfway there. You've GOT to be very close.
 
 >paul east
-Hmm. That really, really SOUNDED like it should work, but it didn't.
+Hmm. That felt more than halfway there. You've GOT to be very close.
 
 >pall east
-Hmm. That really, really SOUNDED like it should work, but it didn't.
+Hmm. That felt more than halfway there. You've GOT to be very close.
 
 >pole east
 by a point
@@ -84,7 +84,7 @@ by a point
 
 #testcase-homonym-reject-table-of-main-oronyms-piller
 >xxx piller
-Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+Hmm. That SOUNDED like it should work at least part way, but it didn't.
 
 >key pillar
 by a point
@@ -111,7 +111,7 @@ by a point
 
 #testcase-homonym-reject-table-of-main-oronyms-roll
 >boost roll
-Hmm. That really, really SOUNDED like it should work, but it didn't.
+Hmm. That felt more than halfway there. You've GOT to be very close.
 
 >boost role
 by a point
@@ -151,10 +151,14 @@ by a point
 
 >d
 
-#testcase-homonym-detail-hom-gaunt-rater-rule-default
-#testcase-homonym-reject-table-of-main-oronyms-rater-hom-gaunt-rater-rule
+#testcase-homonym-reject-table-of-main-oronyms-trader-rater-hom-gaunt-raider-rule
+#testcase-homonym-detail-hom-gaunt-raider-rule-if-the-player's-command-includes-trader
 >xxx rater
 Hmm. You need someone much more active than that. Someone who can help with rebellion, not just whine about things that are wrong.
+
+#+testcase-homonym-detail-hom-gaunt-raider-rule-if-the-player's-command-includes-trader
+>xxx trader
+Knowing a trader might be useful, but given you don't want to deal with guns, maybe you should try and find another side to the gone traitor.
 
 >gaunt raider
 by a point
@@ -183,7 +187,7 @@ by a bonus point
 
 #testcase-homonym-reject-table-of-main-oronyms-dam
 >dam xxx
-Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+Hmm. That SOUNDED like it should work at least part way, but it didn't.
 
 >damn peons
 by a bonus point
@@ -196,6 +200,11 @@ by a bonus point
 
 >lie fuckers
 by a bonus point
+
+#testcase-homonym-reject-table-of-main-oronyms-dick-hom-were-dicks-rule
+#testcase-homonym-detail-hom-were-dicks-rule-default
+>xxx dick
+There are many icks and many grinch earls. Thus, I must grammar police this minor profanity and suggest the plural form.
 
 >were dicks
 by a bonus point
@@ -268,7 +277,7 @@ by a point
 
 #testcase-homonym-reject-table-of-main-oronyms-wee-loan
 >wee lone
-Hmm. That really, really SOUNDED like it should work, but it didn't.
+Hmm. That felt more than halfway there. You've GOT to be very close.
 
 >whee lone
 by a point
@@ -322,16 +331,25 @@ by a point
 
 #testcase-homonym-reject-table-of-main-oronyms-vile
 >grow vile
-Hmm. That really, really SOUNDED like it should work, but it didn't.
+Hmm. That felt more than halfway there. You've GOT to be very close.
 
 >bzzt vile
-Hmm. That kind of partway SOUNDED like it should work, but it didn't.
+Hmm. That SOUNDED like it should work at least part way, but it didn't.
 
 >grow vial
 by a point
 
 >war file
 by a point
+
+#testcase-homonym-reject-table-of-main-oronyms-won-one-hom-wan-dwarf-rule
+#testcase-homonym-detail-hom-wan-dwarf-rule-default
+>won xxx
+That first word. It doesn't sound quite right. More uhh than ahh seems more like it.
+
+#+testcase-homonym-detail-hom-wan-dwarf-rule-default
+>one xxx
+That first word. It doesn't sound quite right. More uhh than ahh seems more like it.
 
 >wan dwarf
 by a point
@@ -360,12 +378,23 @@ by a point
 
 >t orc
 
+#testcase-homonym-reject-table-of-main-oronyms-tau-taw-hom-tall-cake-rule
+#testcase-homonym-detail-hom-tall-cake-rule-fallthrough
+#testcase-homonym-detail-hom-tall-cake-rule-default
+>tau xxx
+The thing to make might be Greek or not, but what's important is that there's enough for everyone.
+
+#testcase-homonym-detail-hom-tall-cake-rule-if-the-player's-command-includes-taw
+#+testcase-homonym-detail-hom-tall-cake-rule-default
+>taw xxx
+The thing to make might be marbled or not, but what's important is that there's enough for everyone.
+
 >tall cake
 by a point
 
 #testcase-homonym-reject-table-of-main-oronyms-awl
 >treat awl
-Hmm. That really, really SOUNDED like it should work, but it didn't.
+Hmm. That felt more than halfway there. You've GOT to be very close.
 
 >treat all
 by a point
@@ -380,7 +409,7 @@ by a point
 
 #testcase-homonym-reject-table-of-main-oronyms-thee
 >thee file
-Hmm. That really, really SOUNDED like it should work, but it didn't.
+Hmm. That felt more than halfway there. You've GOT to be very close.
 
 >the file
 by a point
@@ -389,13 +418,28 @@ by a point
 
 >d
 
-#testcase-homonym-detail-hom-whirr-meetin-rule-else-if-the-player's-command-includes-whirr
+#testcase-homonym-detail-hom-whirr-meetin-rule-if-the-player's-command-includes-whirr
 >whirr meetin
 Close, but you don't need a whirr noise.
 
-#testcase-homonym-reject-table-of-main-oronyms-wier-whirr-warm-eden-war-meeting-hom-whirr-meetin-rule
-#+testcase-homonym-detail-hom-whirr-meetin-rule-else-if-the-player's-command-includes-whirr
+#testcase-homonym-reject-table-of-main-oronyms-wier-whirr-warm-eden-war-hom-whirr-meetin-rule
+#+testcase-homonym-detail-hom-whirr-meetin-rule-if-the-player's-command-includes-whirr
 >warm meetin
+You don't need to change this place's complexion here. It's cozy, a place for people to be together. But how?
+
+>war xxx
+You don't need to change this place's complexion here. It's cozy, a place for people to be together. But how?
+
+>warm xxx
+You don't need to change this place's complexion here. It's cozy, a place for people to be together. But how?
+
+>whirr xxx
+Close, but you don't need a whirr noise.
+
+>wier xxx
+You don't need to change this place's complexion here. It's cozy, a place for people to be together. But how?
+
+>xxx eden
 You don't need to change this place's complexion here. It's cozy, a place for people to be together. But how?
 
 >were meetin
@@ -422,7 +466,7 @@ by a point
 
 #testcase-homonym-reject-table-of-main-oronyms-dew
 >dew mending
-Hmm. That really, really SOUNDED like it should work, but it didn't.
+Hmm. That felt more than halfway there. You've GOT to be very close.
 
 >do mending
 by a point

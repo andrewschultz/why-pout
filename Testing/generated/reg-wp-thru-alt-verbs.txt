@@ -25,6 +25,12 @@ Whether or not the cell phones are the latest models, you don't want to pay atte
 Whether or not the cell phones are the latest models, you don't want to pay attention to them too much. Just figure out a way for a harmless calamity that may make their users quiet down a bit.
 It's more the cell phones you need to focus on. They're what's making the chatter extra distracting.
 
+#testcase-alt-words-table-of-main-oronyms-self-owns-own
+>self own
+by a point
+
+>undo
+
 >self owns
 by a point
 
@@ -385,10 +391,12 @@ by a point
 
 >d
 
+#testcase-alt-words-table-of-main-oronyms-were-meetin-meeting
 #balance undos
 >were meeting
 You worry about how formal you need to be, but you realize perfect diction and everything can't be important. "We're meeting" is fine, but "we're meetin'" sounds a bit more welcoming.
-You meet with the friends you've made over your adventure. You all have one goal in mind. And yet you don't have a rallying cry. Perhaps it can come from within you.
+The shrewd orc stays back until you wave them over. "Meet? Ooh! Me too?!"
+It's a good meeting. You worry you're lousy at that sort of thing, but you let everyone talk, and you all have one goal in mind and each adds ideas how to get there. You all have one goal in mind. And yet you don't have a rallying cry. Perhaps it can come from within you.
 by a point
 
 >undo

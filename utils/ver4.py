@@ -104,7 +104,10 @@ def process_size_stuff(my_quote, file_name, line_count, expand_regex = False):
     for x in range(0, len(s) - 3):
         raw_string = ' '.join(s[x:x+4])
         if expand_regex:
-            big_array.extend(list(mt.generate_all_poss(raw_string)))
+            try:
+                big_array.extend(list(mt.generate_all_poss(raw_string)))
+            except:
+                sys.exit(raw_string + " failed, file {} line {}".format(file_name, line_count))
         else:
             big_array.append(raw_string)
 

@@ -20,7 +20,7 @@ You're stuck with what to do right now. Perhaps you can use your senses for clue
 The eyes light up green and show two dots, then three dots.
 
 >eye
-The eyes almost seem to light up. Perhaps you need to do something later with the general area, though specific things may provide a clue, when things are noticeably different.
+The eyes almost seem to light up. Perhaps you need to change something with yourself later, when things are noticeably different.
 
 >undo
 >undo
@@ -34,7 +34,8 @@ by a point
 >purloin eyes
 >eye me
 The eyes light up yellow and show two dots, then five dots.
-[NOTE: the eyes have two binary settings: green or yellow, and glowing or dimly glowing. This, along with the hints, may be intuitive, but if it is not, EYE EYES will spell things out.]
+NOTE: while the number of dots on the eyes is the main thing, they also have two binary settings: green or yellow, and glowing or dimly glowing. EYE EYES will walk you through what the eyes' different outputs mean.
+NOTE: the yellow dots mean something unusual. You can EYE EYES to pin down what, if you don't want to guess.
 
 >eye
 The eyes light up green and show three dots, then four dots.
@@ -51,25 +52,25 @@ by a point
 #testcase-values-eyes-number-of-sly-size-slice-eyes-is-1@
 >eye eye
 !The eyes light
-The eyes will light up two sets of dots if there is something relevant to clue. (+)
+The eyes will light up two sets of dots if there is something you still need to do in the area. (1/6, EYE EYES again (or G repeats a command) to see more)
 
 >eye eye
-The numbers of dots correspond to the number of letters in each word. (+)
+The numbers of dots correspond to the number of letters in the first and second words to type, respectively. (2/6)
 
 >eye eye
-The dots also have two binary settings: green or yellow, and dimly glowing or glowing. (+)
+The dots also have two different types of appearances that clue you to the puzzle nature: green or yellow, and dimly glowing or glowing. (3/6)
 
 >eye eye
-Green dots mean something you can move forward with now. (+)
+Green dots mean the suggested action can score a point right now. (4/6)
 
 >eye eye
-Yellow dots mean something you can guess, but you don't have the right items or assistance to move forward. (+)
+Yellow dots mean you have something to guess, but you won't get a point, as you haven't found the right items or assistance from other puzzles to make things work. A successful guess will be kept in THINK. (5/6)
 
 >eye eye
-Finally, a dimly glowing reading is something that is optional for completing Why Pout. (End of hints. Next EYE EYES starts the hint cycle again)
+Finally, a dimly glowing reading indicates something you can change for a bonus point. It's not critical to complete Why Pout. (End of hints. Next EYE EYES starts the hint cycle again) (6/6)
 
 >eye eye
-The eyes will light up two sets of dots if there is something relevant to clue. (+)
+The eyes will light up two sets of dots if there is something you still need to do in the area. (1/6)
 
 #testcase-values-eyes-number-of-hype-lane-is-45
 >eye
@@ -92,11 +93,11 @@ by a point
 
 #+testcase-values-eyes-number-of-prize-talk-is-35
 >eye talk
-The eyes show nothing. You've done everything you need to neutralize the prize talk.
+The eyes show nothing. You've changed up everything you need to neutralize the prize talk.
 
 #testcase-values-eyes-number-of-stalk-is--1
 >eye stalk
-The eyes show nothing. You've done everything you need to with the stalk.
+The eyes show nothing. You've changed up everything you need with the stalk.
 
 >high plain
 by a point
@@ -124,7 +125,7 @@ The eyes light up green and show four dots, then four dots.
 by a point
 
 >eye
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+Nothing for the general area, though the sly size-slice eyes seem to wander between the keep, iller, the gross tar and the short rail.
 
 #testcase-values-eyes-number-of-short-rail-is-55
 >eye short rail
@@ -141,14 +142,15 @@ The eyes light up green and show four dots, then four dots.
 #testcase-values-eyes-number-of-war-pawn-is--42
 >eye war pawn
 You reflect on the irony of using a hint item on a hint item, but then, you see a result!
-The eyes glow dimly and show four dots, then two dots.
+The eyes glow dimly green and show four dots, then two dots.
+NOTE: the dim dots mean something. You can EYE EYES to pin down what, if you don't want to guess.
 
 >shore trail
 by a point
 
 #testcase-values-eyes-number-of-shore-trail-is--1
 >eye trail
-The eyes show nothing. You've done everything you need to with the shore trail.
+The eyes show nothing. You've changed up everything you need with the shore trail.
 
 >grow star
 by a point
@@ -175,7 +177,7 @@ The eyes light up yellow and show three dots, then six dots.
 >undo
 
 >eye keep
-The eyes show nothing. You've done everything you need to with the keep, iller.
+The eyes show nothing. You've changed up everything you need with the keep, iller.
 
 >s
 
@@ -188,11 +190,11 @@ by a point
 
 #+testcase-values-eyes-number-of-nonotion-is-55
 >eye
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+The eyes see nothing in the general area but seem to be wandering to the sick squid.
 
 #testcase-values-eyes-number-of-ocean-is--1
 >eye ocean
-The eyes show nothing. You've done everything you need to with the ocean.
+The eyes show nothing. You've changed up everything you need with the ocean.
 
 #testcase-values-eyes-number-of-sick-squid-is-34
 >eye squid
@@ -203,7 +205,7 @@ by a point
 
 #+testcase-values-eyes-number-of-sick-squid-is-34
 >eye squid
-The eyes show nothing. You've done everything you need to aid the sick squid.
+The eyes show nothing. You've changed up everything you need to aid the sick squid.
 
 >n
 
@@ -231,20 +233,21 @@ The eyes light up green and show four dots, then three dots.
 
 #testcase-values-eyes-number-of-wool-frock-is--1
 >eye wool frock
-The eyes show nothing. You've done everything you need to with the wool frock.
+The eyes show nothing. You've changed up everything you need with the wool frock.
 
 >hide out
 by a point
 
 #+testcase-values-eyes-number-of-wolf-rock-is-45
 >eye
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+Nothing for the general area, and the sly size-slice eyes don't point to any individual item.
+!NOTE:
 
 >d
 
 #testcase-values-eyes-number-of-hideout-is--1
 >eye
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+The eyes see nothing in the general area but seem to be wandering to the booze troll.
 
 #testcase-values-eyes-number-of-booze-troll-is-54
 >eye troll
@@ -255,7 +258,7 @@ by a point
 
 #testcase-values-eyes-number-of-new-troll-is--1
 >eye troll
-The eyes show nothing. You've done everything you need to make friends with the new troll.
+The eyes show nothing. You've changed up everything you need to make friends with the new troll.
 
 >u
 
@@ -265,7 +268,7 @@ The eyes show nothing. You've done everything you need to make friends with the 
 
 #testcase-values-eyes-number-of-keepiller-is--1
 >eye
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+Nothing for the general area, though the sly size-slice eyes seem to wander between no mold, the row (gold) and the plant racker.
 
 #testcase-values-eyes-number-of-manic-herb-is-54
 >eye herb
@@ -280,10 +283,10 @@ by a point
 
 #testcase-values-eyes-number-of-gnome-is--1
 >eye gnome
-The eyes show nothing. You've done everything you need to make friends with the gnome (old).
+The eyes show nothing. You've changed up everything you need to make friends with the gnome (old).
 
 >eye mold
-Nothing here like that. Note that room names are not usually worth examining, as you can just L or LOOK.
+Nothing (significant) here like that. Note that while you may need to act on room names, X/EYE (THIS ROOM'S NAME) is often not implemented because L/EYE without a subject takes less characters to type.
 
 #+testcase-values-eyes-number-of-row-gold-is-53
 >eye gold
@@ -294,7 +297,7 @@ by a point
 
 #testcase-values-eyes-number-of-rogue-old-is--1
 >eye rogue
-The eyes show nothing. You've done everything you need to make friends with the rogue (old).
+The eyes show nothing. You've changed up everything you need to make friends with the rogue (old).
 
 #testcase-values-eyes-number-of-seedy-sign-is-36
 >eye sign
@@ -312,11 +315,11 @@ by a point
 
 #+testcase-values-eyes-number-of-seedy-sign-is-36
 >eye sign
-The eyes show nothing. You've done everything you need to with the seedy sign.
+The eyes show nothing. You've changed up everything you need with the seedy sign.
 
 #testcase-values-eyes-number-of-knife-right-is--1
 >eye knife
-The eyes show nothing. You've done everything you need to with the knife (right).
+The eyes show nothing. You've changed up everything you need with the knife (right).
 
 >e
 
@@ -335,13 +338,13 @@ by a point
 
 #testcase-values-eyes-number-of-gaunt-raider-is--1
 >eye raider
-The eyes show nothing. You've done everything you need to make friends with the gaunt raider.
+The eyes show nothing. You've changed up everything you need to make friends with the gaunt raider.
 
 >u
 
 #testcase-values-eyes-number-of-bruise-wares-is--46
 >eye bruise wares
-The eyes glow dimly and show four dots, then six dots.
+The eyes glow dimly green and show four dots, then six dots.
 
 >x wares
 It's been
@@ -350,7 +353,7 @@ Oh, hey!
 
 #testcase-values-eyes-number-of-nah-bye-is--33
 >eye bye
-The eyes glow dimly and show three dots, then three dots.
+The eyes glow dimly green and show three dots, then three dots.
 
 #unscramble the order the swears appear in
 >ao
@@ -363,7 +366,7 @@ by a bonus point
 #testcase-values-eyes-number-of-brew-swears-is--42
 >eye
 It's not the room so much as the "we cuss" vibes the eyes seem to be picking up.
-The eyes glow dimly and show four dots, then two dots.
+The eyes glow dimly green and show four dots, then two dots.
 
 #testcase-values-eyes-number-of-shrewd-orc-is--44
 >eye orc
@@ -371,89 +374,89 @@ The eyes light up a dim yellow and show four dots, then four dots.
 
 #testcase-values-eyes-number-of-grinch-earls-is--46
 >eye earls
-The eyes glow dimly and show four dots, then six dots.
+The eyes glow dimly green and show four dots, then six dots.
 
 >weak us
 by a bonus point
 
 #+testcase-values-eyes-number-of-shrewd-orc-is--44
 >eye orc
-The eyes glow dimly and show four dots, then four dots.
+The eyes glow dimly green and show four dots, then four dots.
 
 >crew dork
 by a bonus point
 
 #+testcase-values-eyes-number-of-shrewd-orc-is--44
 >eye orc
-The eyes show nothing. You've done everything you need to make friends with the crude orc.
+The eyes show nothing. You've changed up everything you need to make friends with the crude orc.
 
 >grin churls
 by a bonus point
 
 >eye churls
-The eyes show nothing. You've done everything you need to neutralize the grin churls.
+The eyes show nothing. You've changed up everything you need to neutralize the grin churls.
 
 >undo
 >undo
 
 #testcase-values-eyes-number-of-aah-slow-is--34
 >eye
-The eyes glow dimly and show three dots, then four dots.
+The eyes glow dimly green and show three dots, then four dots.
 
 >ass low
 by a bonus point
 
 #testcase-values-eyes-number-of-bah-sturdy-is--73
 >eye
-The eyes glow dimly and show seven dots, then three dots.
+The eyes glow dimly green and show seven dots, then three dots.
 
 >bastard eee
 by a bonus point
 
 #testcase-values-eyes-number-of-damp-yawns-is--45
 >eye
-The eyes glow dimly and show four dots, then five dots.
+The eyes glow dimly green and show four dots, then five dots.
 
 >damn peons
 by a bonus point
 
 #testcase-values-eyes-number-of-heh-class-is--63
 >eye
-The eyes glow dimly and show six dots, then three dots.
+The eyes glow dimly green and show six dots, then three dots.
 
 >heckle ass
 by a bonus point
 
 #testcase-values-eyes-number-of-hush-it-is--34
 >eye
-The eyes glow dimly and show three dots, then four dots.
+The eyes glow dimly green and show three dots, then four dots.
 
 >huh shit
 by a bonus point
 
 #testcase-values-eyes-number-of-life-occurs-is--37
 >eye
-The eyes glow dimly and show three dots, then seven dots.
+The eyes glow dimly green and show three dots, then seven dots.
 
 >lie fuckers
 by a bonus point
 
 #testcase-values-eyes-number-of-weird-icks-is--45
 >eye
-The eyes glow dimly and show four dots, then five dots.
+The eyes glow dimly green and show four dots, then five dots.
 
 >were dicks
 by a bonus point
 
 >eye
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+The eyes see nothing in the general area but seem to be wandering to the grinch earls.
 
 >grin churls
 by a bonus point
 
 #testcase-values-eyes-number-of-gawain-kerr-is--36
 >eye gawain kerr
-The eyes glow dimly and show three dots, then six dots.
+The eyes glow dimly green and show three dots, then six dots.
 
 >gah wanker
 by a bonus point
@@ -482,11 +485,11 @@ by a point
 
 #testcase-values-eyes-number-of-we-craft-weak-raft-is-1
 >eye raft
-The eyes show nothing. Probably don't need to do anything with the We-Craft Weak Raft.
+The eyes show nothing. Probably don't need to change up anything with the We-Craft Weak Raft.
 
 #testcase-values-eyes-number-of-water-to-the-north-is-1
 >eye water north
-The eyes show nothing. Probably don't need to do anything with the water to the north.
+The eyes show nothing. Probably don't need to change up anything with the water to the north.
 
 >n
 
@@ -499,7 +502,7 @@ by a point
 
 #+testcase-values-eyes-number-of-storm-isle-is-55
 >eye
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+Nothing for the general area, though the sly size-slice eyes seem to wander between the MEN shelf and My Stall.
 
 #testcase-values-eyes-number-of-men-shelf-is-63
 >eye shelf
@@ -510,7 +513,7 @@ by a point
 
 #testcase-values-eyes-number-of-mensch-elf-is--1
 >eye elf
-The eyes show nothing. You've done everything you need to make friends with the mensch elf.
+The eyes show nothing. You've changed up everything you need to make friends with the mensch elf.
 
 #testcase-values-eyes-number-of-my-stall-is-44
 >eye stall
@@ -521,7 +524,7 @@ by a point
 
 #testcase-values-eyes-number-of-mice-tall-is--1
 >eye mice
-The eyes show nothing. You've done everything you need to make friends with the mice (tall).
+The eyes show nothing. You've changed up everything you need to make friends with the mice (tall).
 
 >s
 
@@ -538,11 +541,11 @@ by a point
 
 #+testcase-values-eyes-number-of-lode-ore-is-34
 >eye lode ore
-The eyes show nothing. You've done everything you need to with the pile of lode ore.
+The eyes show nothing. You've changed up everything you need with the pile of lode ore.
 
 #testcase-values-eyes-number-of-low-door-is--1
 >eye low door
-The eyes show nothing. You've done everything you need to with the low door.
+The eyes show nothing. You've changed up everything you need with the low door.
 
 >in
 
@@ -580,7 +583,7 @@ by a point
 
 #+testcase-values-eyes-number-of-we-loan-is-43
 >eye
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+The eyes see nothing in the general area but seem to be wandering to the oaf liar.
 
 #testcase-values-eyes-number-of-oaf-liar-is-25
 >eye liar
@@ -590,7 +593,7 @@ The eyes light up green and show two dots, then five dots.
 by a point
 
 >eye
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+Nothing for the general area, and the sly size-slice eyes don't point to any individual item.
 
 #testcase-values-eyes-number-of-flier-is-34
 >eye flier
@@ -611,7 +614,7 @@ by a point
 
 #testcase-values-eyes-number-of-plan-tracker-is--1
 >eye tracker
-The eyes show nothing. You've done everything you need to with the plan tracker.
+The eyes show nothing. You've changed up everything you need with the plan tracker.
 
 #+testcase-values-eyes-number-of-manic-herb-is-54
 >eye herb
@@ -622,11 +625,11 @@ by a point
 
 #+testcase-values-eyes-number-of-manic-herb-is-54
 >eye herb
-The eyes show nothing. You've done everything you need to with the manic herb.
+The eyes show nothing. You've changed up everything you need with the manic herb.
 
 #testcase-values-eyes-number-of-manna-is--1
 >eye manna
-The eyes show nothing. You've done everything you need to with the manna.
+The eyes show nothing. You've changed up everything you need with the manna.
 
 >e
 
@@ -644,7 +647,7 @@ The eyes light up green and show four dots, then five dots.
 by a point
 
 >eye
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+Nothing for the general area, and the sly size-slice eyes don't point to any individual item.
 
 #testcase-values-eyes-number-of-tree-small-is--1
 >eye tree small
@@ -663,7 +666,7 @@ by a point
 
 #testcase-values-eyes-number-of-grow-vial-is--1
 >eye grow vial
-The eyes show nothing. You've done everything you need to with the grow vial.
+The eyes show nothing. You've changed up everything you need with the grow vial.
 
 >war file
 by a point
@@ -681,7 +684,7 @@ by a point
 
 #testcase-values-eyes-number-of-wan-dwarf-is--1
 >eye wan dwarf
-The eyes show nothing. You've done everything you need to make friends with the wan dwarf.
+The eyes show nothing. You've changed up everything you need to make friends with the wan dwarf.
 
 >n
 
@@ -693,7 +696,7 @@ The eyes show nothing. You've done everything you need to make friends with the 
 
 #testcase-values-eyes-number-of-lawn-gold-is-1
 >eye lawn gold
-The eyes show nothing. Probably don't need to do anything with the long old lawn, gold.
+The eyes show nothing. Probably don't need to change up anything with the long old lawn, gold.
 
 #testcase-values-eyes-number-of-tree-tall-is-53
 >eye tree tall
@@ -724,7 +727,7 @@ by a point
 
 #testcase-values-eyes-number-of-tall-cake-is--1
 >eye cake
-The eyes show nothing. You've done everything you need to with the tall cake.
+The eyes show nothing. You've changed up everything you need with the tall cake.
 
 #+testcase-values-eyes-number-of-tree-tall-is-53
 >eye tree
@@ -734,7 +737,7 @@ The eyes light up green and show five dots, then three dots.
 by a point
 
 >eye tree
-The eyes show nothing. You've done everything you need to with the tree (tall).
+The eyes show nothing. You've changed up everything you need with the tree (tall).
 
 >s
 
@@ -745,7 +748,7 @@ The eyes show nothing. You've done everything you need to with the tree (tall).
 >s
 
 >eye
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+The eyes see nothing in the general area but seem to be wandering to the flier.
 
 >the file
 by a point
@@ -762,7 +765,7 @@ by a point
 
 #+testcase-values-eyes-number-of-worm-eaten-is-46
 >eye
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+The eyes see nothing in the general area but seem to be wandering to you.
 
 #testcase-values-eyes-number-of-mike-orr-is-23
 >eye me
@@ -779,7 +782,7 @@ by a point
 
 #+testcase-values-eyes-number-of-mike-orr-is-23
 >eye me
-The eyes show nothing. You've done everything you need to with yourself.
+The eyes show nothing. You've changed up everything you need with yourself.
 
 >d
 

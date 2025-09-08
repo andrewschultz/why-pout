@@ -1,5 +1,15 @@
 List of in-comp and post-comp updates
 
+9/1?/2025 new release (7.00)
+--testing for Us Too allowed me to fix lots of core issues/move code to core
+--Eyes and War Pawn now have individual help
+--Eyes have some bugfixes and upgrades e.g. they note if you eye something in THINK
+--War Pawn now has 3 uses and bonus points
+--WAIT now gives silly response
+--56 more dialogues (2 per companion pair)
+--TALK SKULL now has random dialogue
+--general fun flavor text from notes
+
 5/18/2025 new release (6.00)
 --fixed case where the game still tried to "help" with a half-right prompt for a solved puzzle
 --you now are told how many friends you (still) need, if you figure what to do with your name or the "worm" room early

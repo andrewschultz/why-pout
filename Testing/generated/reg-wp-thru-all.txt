@@ -46,10 +46,22 @@ You take a step back from all the confident, constant chatter in the cell phones
 Your confrontation did not go unnoticed by other cell phoners. They take the hint and moderate their voices.
 However, now, a prize talk blasts through hidden loudspeakers. It exhorts you to find your dream, to find something that will help you move above and beyond everyone else. It's probably talking about money or power, but you're looking for something different.
 
+>high plain
+!by a point
+
+#testcase-run-post-pry-stalk-rule-if-pre-high-plain-rule-is-guessed-yet
+>pry stalk
+by a point
+You're pretty sure you already guessed, though you can THINK if you momentarily forgot.
+
+>undo
+>undo
+
 >pry stalk
 by a point
 
 #testcase-check-pre-pry-stalk-rule-fallthrough
+#testcase-run-post-pry-stalk-rule-fallthrough
 #testcase-run-post-pry-stalk-rule-default
 Among all the chatter, you discover a disused booth. Someone is preaching on about environmental stuff, and it's so much less painful than cell phone chat. You worry they're just going to blab on forever, but they're so grateful you listened as long as you did. They hand you a stalk they think can grow quickly. Their own special formula. It looks weird and glittery, and if anything can reach up out of here, this can. But the question is, where can it grow to?
 
@@ -141,7 +153,7 @@ by a point
 !The high doubt
 
 >eyes
-The eyes show nothing. You've done everything you need to with the general area, though specific things may provide a clue.
+Nothing for the general area, and the sly size-slice eyes don't point to any individual item.
 
 >undo
 >undo
@@ -252,7 +264,7 @@ by a point
 
 #testcase-check-pre-gaunt-raider-rule-fallthrough
 #testcase-run-post-gaunt-raider-rule-default
-After some discussion, you work out a plan to make the gone trader reframe what they did. Whoever they were, the evil powers, they rejected them instead of doubling down. Perhaps there is a way to get back at them. They know things you never could hope to.
+After some discussion, you work out a plan to make the gone traitor reframe what they did. Whoever they were, the evil powers, they rejected them instead of doubling down. Perhaps there is a way to get back at them. They know things you never could hope to.
 Hmm. You have a lot of friends following you around, but you haven't talked to them much. Perhaps you could learn something from them.
 
 >u
@@ -448,7 +460,8 @@ by a point
 #testcase-check-pre-low-door-rule-fallthrough
 #testcase-run-post-low-door-rule-default
 #testcase-run-post-low-door-rule-if-gnome-is-friendly
-The lode and the ore are tough to shift around for someone as big as yourself. But the tall mice manage to get into those small niches you can't. And they work so fast, you daren't even ironically say "My! Slow mice, lo!"
+The lode and the ore are tough to shift around for someone as big as yourself. But the tall mice manage to get into those small niches you can't. They work so thorougly and quickly, you think "My, SCAN, mice can!" and daren't even ironically say "My! Slow mice, lo!"
+They locate a low door, then, point to where you can remove the ore to create a passage. You'll have to duck a bit to get in, but you can now go INSIDE. Hooray!
 The gnome also rifles through, quickly, saying "no more gnome ore."
 
 >in
@@ -625,7 +638,7 @@ by a point
 
 #testcase-check-pre-tall-cake-rule-fallthrough
 #testcase-run-post-tall-cake-rule-default
-All this preparing food means you don't talk a bit, and as a bonus, your talk-ache is gone.
+All this preparing food means you don't talk a bit, except for an ironic "Ache, ache, a cake!" Doing stuff for friends helps your ache go away, or at least helps you not feel it, which is life-affirming, and stuff.
 But now where to eat the cake?
 
 >treat all
@@ -661,12 +674,26 @@ You've visited all the locations in the flier. You crumple it up as if to throw 
 
 >d
 
+#testcase-run-post-were-meetin-rule-if-the-player's-command-includes-meeting
+#testcase-run-post-were-meetin-rule-if-orc-is-friendly
+#balance undos
+>were meeting
+You worry about how formal you need to be, but you realize perfect diction and everything can't be important. "We're meeting" is fine, but "we're meetin'" sounds a bit more welcoming.
+The shrewd orc stays back until you wave them over. "Meet? Ooh! Me too?!"
+It's a good meeting. You worry you're lousy at that sort of thing, but you let everyone talk, and you all have one goal in mind and each adds ideas how to get there. You all have one goal in mind. And yet you don't have a rallying cry. Perhaps it can come from within you.
+by a point
+
+>undo
+
 >were meetin
 by a point
 
 #testcase-check-pre-were-meetin-rule-fallthrough
 #testcase-run-post-were-meetin-rule-default
-You meet with the friends you've made over your adventure. You all have one goal in mind. And yet you don't have a rallying cry. Perhaps it can come from within you.
+#testcase-run-post-were-meetin-rule-fallthrough
+!about how formal
+The shrewd orc stays back until you wave them over. "Meet? Ooh! Me too?!"
+It's a good meeting. You worry you're lousy at that sort of thing, but you let everyone talk, and you all have one goal in mind and each adds ideas how to get there. You all have one goal in mind. And yet you don't have a rallying cry. Perhaps it can come from within you.
 
 #+testcase-room-names-worm-eaten
 `We're Meetin'!
@@ -701,10 +728,10 @@ by a point
 
 #testcase-check-pre-wipe-out-rule-fallthrough
 #testcase-run-post-wipe-out-rule-default
-You don't feel confident as you mumble "Ace, cull a skull." But of course it wouldn't work on your own.
-However, since you all studied the plan tracker so well, it isn't impossible! You know the taunts to give and how to deflect the skull's likely taunts. So, with a "You'd reign? You drain!" you commence combat. The skull roars back, trying to summon a tier-x T-Rex and a new clever nuke lever. You recognize those would wipe out the skull, too, so you aren't worried. "Mo' strong? Most wrong!" you fire back. You worry it's a bit redundant, but you also realize you're not in English class.
+You don't feel confident as you mumble "Ace, cull a skull." But you have to say something.
+However, since you and your companions studied the plan tracker so well, it starts a rally! You know the taunts to give and how to deflect the skull's likely taunts. So, with a "You'd reign? You drain!" you commence combat. The skull roars back, trying to summon a tier-x T-Rex and a new clever nuke lever. You recognize those would wipe out the skull, too, so you aren't worried. "Mo' strong? Most wrong!" you fire back. You worry it's a bit redundant, but you also realize you're not in English class, here.
 The skull uncovers one more machine, ominously labeled The Make-Them-Ache. Loud whirring indicates it has started up, but thinking quickly, you grasp your thumb and scream. Pronunciation pedantry for the win!
-But there is real pain. And you'd be cooked if it weren't spread among your companions. They dilute the machine's effect and distract the skull. Whenever the skull focuses on one companion, the others taunt it with "Aid! Eek, a deek!"
+But there is real pain. And you'd be cooked if it weren't spread among your companions. They dilute the machine's effect and distract the skull. Whenever the skull focuses on one companion, the others taunt it with "Aid! Eek, a deek!" The mice have their own chant: "My, small mice maul!"
 It's exhausting for you but even more exhausting for the skull, which after constant spinning eventually collapses and incinerates, but not before a self-pitying "Meek old me! Cold!"
 "On ice! Aw, nice!" you proclaim, expecting big cheers.
 But after all the fireworks, there's a letdown. You feel something odd come between you and your companions now you're done. They wonder why they need to do any more. You could call the whole zeitgeist a why-division.
@@ -715,8 +742,9 @@ by a point
 #testcase-check-pre-do-due-mend-rule-fallthrough
 #testcase-run-post-do-due-mend-rule-default
 #testcase-run-post-do-due-mend-rule-fallthrough
-#testcase-run-post-do-due-mend-rule-follow-the-score-and-thinking-changes-rule
 #testcase-run-post-do-due-mend-rule-follow-the-shutdown-rules
 #testcase-run-post-do-due-mend-rule-if-sco-wide-vision-is-false
 Yes. It's time to get healing. Your companions don't have as much time or energy to help as you hoped they would, but they do enough. Everyone feels better for their part in defeating the sea skull. And yet you worry it, or something like it, may be back sooner rather than later, and your companions have gone their separate ways for good. Still, you should be pleased with yourself.
 !not just to make
+!you MISSED
+
