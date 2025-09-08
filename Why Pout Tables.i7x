@@ -1321,6 +1321,7 @@ babble
 "Do make doom-ache!"
 "Eh, Cruel Ache: RULE!!!!"
 "Whee! Preps: weep-reps!"
+"Spy no spine, oh!"
 
 when play begins: sort table of skull babble in random order;
 
