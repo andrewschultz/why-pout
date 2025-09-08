@@ -1301,11 +1301,11 @@ volume endgame
 
 table of final question options (continued)
 final question wording	only if victorious	topic	final response rule	final response activity
-"see points [b]MISSED[r]" 	true	"missed"	endgame recap missed points rule	--
+"see points [b]MISSED[r]" 	true	"missed"	track missed points rule	--
 
-this is the endgame recap missed points rule:
+this is the track missed points rule:
 	if brew swears is unvisited:
-		say "All but one bonus point is found in Bruise Wares.";
+		say "All but one bonus point[if sco-nope-on is true], the one you got for [b]NOPE ON[r] with the war pawn,[end if] is found in Bruise Wares.";
 	nope-check;
 
 volume painful parser stuff

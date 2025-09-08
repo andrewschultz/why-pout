@@ -166,7 +166,7 @@ to track-thinks:
 	else:
 		say "No commands in THINK limbo."
 
-carry out pointsmisseding (this is the track missed points rule):
+carry out pointsmisseding (this is the in-game debug track missed points rule):
 	track-criticals true;
 	track-criticals false;
 	track-thinks;
