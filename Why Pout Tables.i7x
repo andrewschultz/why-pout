@@ -1263,17 +1263,17 @@ to say where-get-hype:
 
 to say random-taunt:
 	choose row counter-zero-points in table of zero point taunts;
-	say "[taunt-text entry][if counter-zero-points is number of rows in table of zero point taunts] (that's the last of the specific hints.)[end if][line break]";
+	say "[taunt-text entry][if counter-zero-points is number of rows in table of zero point taunts][one of] (that's the last of the specific hints. They will cycle from now on.)[or][stopping][end if][line break]";
 
 table of zero point taunts
 sortval	taunt-text
 -3	"'Way to wait, ooh!'"
 -2	"'Find a fine day,' just like your original captors. But that can't be it."
 -1	"'Oh, fog, oaf! Augh!'"
-0	"'Bro, clues? Broke! Lose!'"
-0	"'Boost-op? Boo! Stop!'"
-0	"'Duh, DO?! Dud, ooh!'"
-0	"'Play some place, umm...'"
+0	"[rt]'Bro, clues? Broke! Lose!'"
+0	"[rt]'Boost-op? Boo! Stop!'"
+0	"[rt]'Duh, DO?! Dud, ooh!'"
+0	"[rt]'Play some place, umm...'"
 1	"'Take a look where you are.'"
 
 volume can't go that way
