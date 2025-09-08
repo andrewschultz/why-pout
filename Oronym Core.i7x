@@ -751,9 +751,12 @@ volume waiting and empty commands
 
 go-dot-known is a truth state that varies.
 
-check waiting:
+the standard report waiting rule is not listed in any rulebook.
+
+carry out waiting:
 	now go-dot-known is true;
-	say "You sense a goad-ought-go dot creeping up on you. Okay, a dot can't do much harm, but it [i]is[r] a hint you don't need to stand around." instead;
+	say "You sense a goad-ought-go dot creeping up on you. Okay, a dot can't do much harm, but it [i]is[r] a hint you don't need to stand around.";
+	the rule succeeds;
 
 understand "godot" as a mistake ("You wait for [this-game] to move beyond English colloquialisms to abusing French pronunciation. You wait a while. You're sure the decision will come soon!") when go-dot-known is true.
 
