@@ -283,6 +283,8 @@ this is the post-low-bend rule:
 
 section lobe end scoring
 
+to say know-bay-sale-loc: now gs-guessed-bay-sale-loc is true;
+
 a wordtwisting rule (this is the pre-bay-sale rule):
 	if player does not have base ale and once-now-hunt is false, unavailable;
 	if player is in NoNotion:
@@ -952,6 +954,8 @@ this is the post-were-meetin rule:
 	declue-here;
 
 section worm eaten scoring
+
+to say know-corps-worm-eaten: now gs-know-corps-worm-eaten is true;
 
 a wordtwisting rule (this is the pre-my-corps rule):
 	if sco-an-aim is false, unavailable;

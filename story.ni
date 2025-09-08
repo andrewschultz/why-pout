@@ -364,7 +364,14 @@ the Base Ale is a thing. description is "Uck. It's a nasty color, really. But pe
 
 book We Loan
 
-We Loan is a room in universal. printed name is "[if sco-well-own is false]We Loan[else if sco-whee-lone is false]We'll Own[else if sco-oh-flier is false]Whee, Lone?[else]Whee! [']Lone![end if]". "[loan-starter][line break]You can only go back [b]OUT[r] here[if sco-well-own is false].[paragraph break]You don't really trust the whole 'financial services' vibe here. Maybe there's a double meaning to deduce[end if].". eyes-number of we loan is 43. eyes-rule of we loan is the pre-well-own rule.
+We Loan is a room in universal. printed name is "[if sco-well-own is false]We Loan[else if sco-whee-lone is false]We'll Own[else if sco-oh-flier is false]Whee, Lone[else]Whee! [']Lone[end if][loan-end-punc]". "[loan-starter][line break]You can only go back [b]OUT[r] here[if sco-well-own is false].[paragraph break]You don't really trust the whole 'financial services' vibe here. Maybe there's a double meaning to deduce[end if].". eyes-number of we loan is 43. eyes-rule of we loan is the pre-well-own rule.
+
+to say loan-end-punc:
+	if player is not in we loan or sco-whee-lone is true, continue the action;
+	if sco-oh-flier is false:
+		say "?";
+	else:
+		say "!"
 
 to say loan-starter:
 	if sco-oh-flier is true:
@@ -642,7 +649,9 @@ volume endgame or endgame-ish rooms
 
 book Worm Eaten
 
-Worm Eaten is a room in universal. printed name is "[if sco-my-corps is true]A Play-[']Er-Up Lair[else if sco-were-meetin is false]Worm-Eaten[else]We're Meetin[']![end if]". "[if sco-were-meetin is false]This place seems very run-down. But it feels homey and inspires camaraderie in an odd way[else]Having had your meeting here, there's not much else to do[end if].". eyes-number of worm eaten is 46. eyes-rule of worm eaten is the pre-were-meetin rule.
+Worm Eaten is a room in universal. printed name is "[if sco-my-corps is true]A Play-[']Er-Up Lair[else if sco-were-meetin is false]Worm-Eaten[else]We're Meetin['][meet-exclam][end if]". "[if sco-were-meetin is false]This place seems very run-down. But it feels homey and inspires camaraderie in an odd way[else]Having had your meeting here, there's not much else to do[end if].". eyes-number of worm eaten is 46. eyes-rule of worm eaten is the pre-were-meetin rule.
+
+to say meet-exclam: if player is in worm eaten, say "!"
 
 after printing the locale description of Worm Eaten when sco-were-meetin is true and sco-my-corps is false:
 	say "[line break]You feel like your companions are just about ready to go. But you still need to say something, something that can only come uniquely inside of you, to establish what a great team you are.";
