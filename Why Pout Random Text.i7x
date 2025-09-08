@@ -4,6 +4,10 @@ Version 1/241021 of Why Pout Random Text by Andrew Schultz begins here.
 
 volume initialization
 
+[ran.py checks that needed plurals are ok e.g. talker1 has nosplur = s or not depending
+ver4.py verifies all 4-word strings, with the in-code matchups at the very bottom
+]
+
 chapter lists
 
 quasirand-init-list is a list of lists of numbers variable. quasirand-init-list is {
@@ -353,6 +357,34 @@ mynum	flipnpcs	mytext
 0	--	"[t1t2] rap out the hit [i]I So Ice, Oh[r]."
 0	--	"[t1t2] argue over imagery in [i]Stark Old Star, Cold[r]."
 0	--	"[t1t2] note sturdy baits stir debates." [e]
+0	--	"[t1t2] both give each other different epiphanies. 'Thaw to thought, OOH!' they exclaim in unison."
+0	--	"[t1t2] wonder how society lets people like the protagonist of [i]A Slender Ace Lender[r] exist and thrive."
+0	--	"[t1t2] reckon [i]Weep, Land we planned[r] isn't just about big-picture dreams."
+0	--	"[t1t2] think back to simpler times, forgetting the simply awful parts: 'K-Mart Came: ART!!!'"
+0	--	"[t1] look[nosplur1] a bit dejected. [t2] changes that with a quick 'Spy new spine, ooh!'"
+0	--	"[t1t2] remind each other of hidden funny details in [i]The Sin-Thus Inn[r]."
+0	--	"[t1t2] excoriate the intentionally lowbrow [i]Ike, Andy, Eye Candy[r]."
+0	--	"[t1t2] discuss strategies for the game [i]Hun to Hunt, Ooh[r]."
+0	--	"[t1t2] play out the final overwrought ending of [i]Aye, Mabel, I'm Able[r]."
+0	--	"[t1t2] discuss whether the self-help book [i]Vie, Bright Vibe Right[r] is too fluffy."
+0	--	"[t1t2] raise everyone's spirits singing [i]Keep On, Key Pawn[r]."
+0	--	"[t1t2] laugh ruefully at the truest jokes of [i]Work and We're Canned[r]."
+0	--	"[t1t2] find [i]Why Speak, Wise Peak[r] very overwrought indeed."
+0	--	"[t1t2] discuss the documentary of kids finding ways to avoid stigma for nerdiness: [i]Slide Rules' Sly Drools[r]."
+0	--	"[t1t2] discuss whether [i]Sing, Low Sin, Glow[r] is really about the occult."
+0	--	"[t1t2] point out plot weaknesses in the RPG [i]Grow Venomy, Grove Enemy[r]."
+0	--	"[t1t2] recite the stirring marching song [i]I Rally, Ire Alley[r]."
+0	--	"[t1t2] motivate each other, knowing Grove Urge-Grow-Verge is but a myth."
+0	--	"[t1t2] can't really feel camaraderie with the protagonist of [i]A Dare-Aid Heir[r]."
+0	--	"[t1t2] mock the jingle of the Shape-All-Chez-Paul fitness center."
+0	--	"[t1t2] note [i]Law Scum Loss, Come[r] is a bit too cynical."
+0	--	"[t1t2] discuss a unique app you kneecap."
+0	--	"[t1t2] hold a brief diss-a-thon, teasing each other with 'Oh, now own! OW!'"
+0	--	"[t1t2] laugh at the comedy flick [i]Scamp, Liars, Scam Plyers[r]."
+0	--	"[t1t2] find [i]Will Treason Wilt Reason?[r] a bit circular."
+0	--	"[t1t2] discuss the Guess-Trite-Guest-Write writing boot camp. They both have dreams..."
+0	--	"[t1t2] provide a quick pep talk: 'Win-Seek! Wince? Eek!'"
+0	--	"[t1t2] mock the sappy made-for-TV movie [i]A Mother's Aim: Others[r]."
 
 Why Pout Random Text ends here.
 
