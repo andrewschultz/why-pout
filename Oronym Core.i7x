@@ -61,6 +61,13 @@ understand "show [text]" as a mistake ("[give-show-err].").
 
 to say give-show-err: say "You may need to swap items in [this-game], but instead of GIVE, you should specify what you want in return"
 
+book attacking
+
+the block attacking rule is not listed in any rulebook.
+
+carry out attacking:
+	say "You lack the resolve, thankfully, for me-now-mean-OW nonsense." instead;
+
 book eating redefined
 
 understand the command "eat" as something new.
