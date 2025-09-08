@@ -1194,6 +1194,10 @@ book waiting
 
 check waiting when number of friendly followers > 0: say "You wait, aware too much 'we're staying' would prompt 'worst, eh'-ing." instead;
 
+report waiting:
+	check-initial-hinting false;
+	continue the action;
+
 book wearing
 
 the can't wear what's not clothing rule is not listed in any rulebook.
@@ -1222,6 +1226,7 @@ the WP pardon begging rule is listed before the Oronym pardon begging rule in th
 rule for printing a parser error when the latest parser error is the I beg your pardon error (this is the WP pardon begging rule):
 	if core-score < 2:
 		say "'Hum, blank,' you muse. No humble ankh pops into your hands, sadly.";
+		check-initial-hinting true;
 		the rule succeeds;
 	continue the action;
 

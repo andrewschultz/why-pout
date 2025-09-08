@@ -1226,20 +1226,11 @@ check thinking when current-score is 0:
 rule for printing a parser error when the latest parser error is the not a verb I recognise error or the latest parser error is the didn't understand error (this is the catch bad verbs rule):
 	if core-score is 0:
 		say "You're stuck with what to do right now. Perhaps you can use your senses for clues, or [b]THINK[r], or look inward[if Mike Orr is examined] again[end if] with X ME, to give you an idea of how to get started. Not just a what, but a how or a why.";
-		increment first-point-clue-flag;
 		if gs-parser-error-note is false:
 			say "[line break][i][bracket][b]NOTE[r][i]: until the main area, parser verb errors like this will give occasional general hints. So don't be afraid to try stuff.[close bracket][r][line break]";
 			now gs-parser-error-note is true;
 			the rule succeeds;
-		increment counter-zero-points;
-		if counter-zero-points > number of rows in table of zero point taunts:
-			now counter-zero-points is 1;
-		if first-point-clue-flag is 4:
-			now first-point-clue-flag is 0;
-			say "[line break][one of]A cruel voice mocks [or]That cruel voice, again. [stopping][random-taunt][line break]";
-			if gs-ever-cruel-voice is false:
-				say "You [b]THINK[r] for a bit. The cruel voice probably won't be telling you any direct answers, but it might imply the sort of thing to do.";
-				now gs-ever-cruel-voice is true;
+		check-initial-hinting true;
 	else if core-score is 1:
 		say "You need to find something that will get you out of the tomb apse. You remembered a name (yours) by finding an aim. What now?";
 	else if core-score is 2:
@@ -1249,6 +1240,20 @@ rule for printing a parser error when the latest parser error is the not a verb 
 	else:
 		say "[generic-parser-error].";
 	the rule succeeds;
+
+to check-initial-hinting (ts - a truth state):
+	if core-score > 0, continue the action;
+	increment first-point-clue-flag;
+	if first-point-clue-flag is 4:
+		now first-point-clue-flag is 0;
+		increment counter-zero-points;
+		if counter-zero-points > number of rows in table of zero point taunts:
+			now counter-zero-points is 1;
+		if ts is true, say "[line break]";
+		say "[one of]A cruel voice mocks [or]That cruel voice, again. [stopping][random-taunt]";
+		if gs-ever-cruel-voice is false:
+			say "[line break]You [b]THINK[r] for a bit. The cruel voice probably won't be telling you any direct answers, but it might imply the sort of thing to do.";
+			now gs-ever-cruel-voice is true;
 
 to say where-get-hype:
 	if pre-high-plain rule is guessed-yet:
