@@ -32,12 +32,12 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "low"	"door"	--	--	--	false	false	false	false	"what the lode ore is hiding"	false	true	true	false	false	Wolf Rock	pre-low-door rule	post-low-door rule	--	"You may be able to find a [b]LOW DOOR[r] [here-in of Wolf Rock] [once-now of sco-mice-tall] you have a companion or companions small enough to dig a bit better."
 "well"	"own"	"wheel"	--	hom-wheel-own rule	false	false	false	false	"the sinister meaning behind We Loan"	false	true	true	false	false	we loan	pre-well-own rule	post-well-own rule	--	--
 "summer"	"chant"	--	--	--	false	false	false	false	"a way to zone some merchant out"	false	true	true	false	false	we loan	pre-summer-chant rule	post-summer-chant rule	--	--
-"bile"	"oh|o"	--	"owe"	hom-bile-owe rule	false	false	false	false	"a way to counter the buy-low rhetoric"	false	true	true	false	false	we loan	pre-bile-oh rule	post-bile-oh rule	--	"You may be able to expose some merchant's [b]BILE OH[r] [once-now of sco-summer-chant] you've found something positive to say to prep yourself."
+"bile"	"oh|o"	--	"owe"	hom-bile-owe rule	false	false	false	false	"a way to counter the buy-low rhetoric"	false	true	true	false	false	we loan	pre-bile-oh rule	post-bile-oh rule	--	"You may be able to expose some merchant's [b]BILE OH[r] [here-in of we loan] [once-now of sco-summer-chant] you've found something positive to say to prep yourself."
 "whee"	"lone"	"wee|loan"	--	--	false	false	false	false	"a way to enjoy solitude"	false	true	true	false	false	we loan	pre-whee-lone rule	post-whee-lone rule	--	"You may be able to enjoy your solitude with [b]WHEE LONE[r] [here-in of we loan] [once-now of sco-bile-oh] you actually have solitude."
-"oh"	"flier|flyer"	"owe"	--	hom-owe-flier rule	false	false	false	false	"a way to get something from the oaf liar"	false	true	true	false	false	we loan	pre-oh-flier rule	post-oh-flier rule	--	"You may be able to say [b]OH FLIER[r] around the oaf liar [if current-quid is 0]once you've got some money[else if gs-overpay-flier is true][once-now of whether or not current-quid is 1] you have exactly one quid left[else]since you have money[end if]."
+"oh"	"flier|flyer"	"owe"	--	hom-owe-flier rule	false	false	false	false	"a way to get something from the oaf liar"	false	true	true	false	false	we loan	pre-oh-flier rule	post-oh-flier rule	--	"You may be able to say [b]OH FLIER[r] to the oaf liar [here-in of We Loan] [if current-quid is 0]once you've got some money[else if gs-overpay-flier is true][once-now of whether or not current-quid is 1] you have exactly one quid left[else]since you have money[end if]."
 "boost"	"role"	--	"roll"	--	false	false	false	false	"a way to make the booze troll feel less awful"	false	true	true	false	false	hideout	pre-boost-role rule	post-boost-role rule	--	--
 "low"	"bend"	--	--	--	false	false	false	false	"a way to rearrange the landscape [here-in of lobe end]"	false	true	true	false	false	lobe end	pre-low-bend rule	post-low-bend rule	--	--
-"bay"	"sail|sale"	--	--	--	false	false	false	false	"a way to repurpose the base ale"	false	true	true	false	false	lobe end	pre-bay-sale rule	post-bay-sale rule	--	"You may be able to participate in a [b]BAY SALE[r] if you've found the right location and [once-now of sco-six-quid] you have money." [?? very detailed fix: we need to set a boolean somehow if this was guessed in Lobe End ]
+"bay"	"sail|sale"	--	--	--	false	false	false	false	"a way to repurpose the base ale"	false	true	true	false	false	lobe end	pre-bay-sale rule	post-bay-sale rule	--	"You may be able to participate in a [b]BAY SALE[r] [bay-located] [once-now of sco-six-quid] you have money." [?? very detailed fix: we need to set a boolean somehow if this was guessed in Lobe End ]
 "store"	"mile"	--	--	--	false	false	false	false	"the storm isle's alternate nature"	false	true	true	false	false	storm isle	pre-store-mile rule	post-store-mile rule	--	--
 "mensch"	"elf"	"mensh|mench|munch"	--	hom-mensch-elf rule	false	false	false	false	"a nicer form of the MEN shelf"	false	true	true	false	false	storm isle	pre-mensch-elf rule	post-mensch-elf rule	--	--
 "mice"	"tall"	--	--	--	false	false	false	false	"what's inside MY STALL"	false	true	true	false	false	storm isle	pre-mice-tall rule	post-mice-tall rule	--	"You may be able to locate the [b]MICE TALL[r] [here-in of storm isle] [once-now of sco-gnome-old] you have a companion with good perception."
@@ -50,9 +50,9 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "plan"	"tracker"	--	--	--	false	false	false	false	"an alternate form of the plant racker"	false	true	true	false	false	keepiller	pre-plan-tracker rule	post-plan-tracker rule	--	--
 "see"	"design"	"c|sea"	--	hom-c-sea-design rule	false	false	false	false	"what the sign hides"	false	true	true	false	false	keep iller	pre-see-design rule	post-see-design rule	--	"You may be able to [b]SEE DESIGN[r] [here-in of keepiller] [once-now of whether or not pals-made >= 2] you have more support and are less scared."
 "knife"	"right|rite"	--	--	--	false	false	false	false	"what to find or do to leave"	false	true	true	false	false	nigh fright	pre-knife-right rule	post-knife-right rule	--	--
-"gaunt"	"raider"	--	"rater"	hom-gaunt-rater rule	false	false	false	false	"who the traitor was or can become"	false	true	true	false	false	worm eaten	pre-gaunt-raider rule	post-gaunt-raider rule	--	--
-"were"	"meetin|meeting"	"wier|whirr|warm|eden|war"	--	hom-whirr-meetin rule	false	false	false	false	"how Worm Eaten could feel more homey"	false	true	true	false	false	worm eaten	pre-were-meetin rule	post-were-meetin rule	--	"You will be able to say [b]WERE MEETIN[r] [once-now of pre-were-meetin rule] you have a full party available."
-"my"	"corps"	--	"core"	hom-my-core rule	false	false	false	false	"why your name is special"	false	true	true	false	false	worm eaten	pre-my-corps rule	post-my-corps rule	--	"You can call your companions [b]MY CORPS[r] [if pals-made < 2]once you have companions[else if pals-still-needed > 0]once you have enough of them[else][once-now of sco-treat-all] you've shared something together[end if]."
+"gaunt"	"raider"	--	"trader|rater"	hom-gaunt-raider rule	false	false	false	false	"who the traitor was or can become"	false	true	true	false	false	worm eaten	pre-gaunt-raider rule	post-gaunt-raider rule	--	--
+"were"	"meetin|meeting"	"wier|whirr|warm|eden|war"	--	hom-whirr-meetin rule	false	false	false	false	"how Worm Eaten could feel more homey"	false	true	true	false	false	worm eaten	pre-were-meetin rule	post-were-meetin rule	--	"You will be able to say [b]WERE MEETIN[r] [here-in of Worm Eaten] [once-now of pre-were-meetin rule] you have a full party available."
+"my"	"corps"	--	"core"	hom-my-core rule	false	false	false	false	"why your name is special"	false	true	true	false	false	worm eaten	pre-my-corps rule	post-my-corps rule	--	"You can call your companions [b]MY CORPS[r][corps-worm-eaten] [if pals-made < 2]once you have companions[else if pals-still-needed > 0]once you have enough of them[else][once-now of sco-treat-all] you've shared something together[end if]."
 "cease"	"cull"	"seas|sees|seize"	--	hom-cease-cull rule	false	false	false	false	"alerting the sea skull"	false	true	true	false	false	Doom Ending	pre-cease-cull rule	post-cease-cull rule	--	--
 "wipe"	"out"	--	--	--	false	false	false	false	"how to [if player is in doom ending]take down the skull[else]do something generally awesome down the road[end if]"	false	true	true	false	false	Doom Ending	pre-wipe-out rule	post-wipe-out rule	"wipeout" or "wipe out"	"You will want to [b]WIPE OUT[r] the cause of your problems [once-now of sco-cease-cull] you have them in your crosshairs[if the room down from naffhaze is nowhere]. That's probably not for a while, though[end if]."
 "nab"	"aye"	--	--	--	false	false	false	false	"what to do with [b]NAH BYE[r]"	false	true	false	false	false	naff haze	pre-nab-aye rule	post-nab-aye rule	--	--
@@ -60,7 +60,7 @@ w1 (text)	w2 (text)	first-hom (text)	second-hom	hom-txt-rule (rule)	first-exact	
 "do|due"	"mend|mending"	--	"dew"	--	false	false	false	false	"a way to steer things from a doom ending"	false	true	true	false	false	Doom Ending	pre-do-due-mend rule	post-do-due-mend rule	--	"You can think [b]DO/DUE MEND/MENDING[r] [once-now of sco-wipe-out] you've disposed of the sea skull."
 "weak"	"us"	--	--	--	false	false	false	false	"how to deflate [the earls]['] bravado"	false	true	false	false	false	brew swears	pre-weak-us rule	post-weak-us rule	--	--
 "grin"	"churls"	--	--	--	false	false	false	false	"a way to reclassify the grinch earls"	false	true	false	false	false	brew swears	pre-grin-churls rule	post-grin-churls rule	--	--
-"crew"	"dork"	--	--	--	false	false	false	false	"a way to explain the crude orc's status"	false	true	false	false	false	brew swears	pre-crew-dork rule	post-crew-dork rule	--	"[if doom ending is visited][dork-lockout][else]You can explain [the earls] see the crude orc as a [b]CREW DORK[r] [once-now of sco-weak-us] they seem a bit less strong[end if]."
+"crew"	"dork"	--	--	--	false	false	false	false	"a way to explain the crude orc's status"	false	true	false	false	false	brew swears	pre-crew-dork rule	post-crew-dork rule	--	"[if doom ending is visited][dork-lockout][else]You can explain [the earls] [here-in of brew swears] see the crude orc as a [b]CREW DORK[r] [once-now of sco-weak-us] they seem a bit less strong[end if]."
 "ass"	"low|lo"	--	--	--	false	false	false	false	"a way to counter the ah-slow taunts"	false	true	false	false	false	brew swears	pre-ass-low rule	post-ass-low rule	--	--
 "bastard"	"e+h*"	--	--	--	false	false	false	false	"a way to counter the bah-sturdy taunts"	false	true	false	false	false	brew swears	pre-bastard-eee rule	post-bastard-eee rule	--	--
 "damn"	"peons"	"dam"	--	--	false	false	false	false	"a way to counter the damp-yawns taunts"	false	true	false	false	false	brew swears	pre-damn-peons rule	post-damn-peons rule	--	--
@@ -285,6 +285,12 @@ section lobe end scoring
 
 to say know-bay-sale-loc: now gs-guessed-bay-sale-loc is true;
 
+to say bay-located:
+	if gs-guessed-bay-sale-loc is true and sco-low-bend is true:
+		say "[here-in of lobe end]";
+	else:
+		say "once you've found an appropriate location and";
+
 a wordtwisting rule (this is the pre-bay-sale rule):
 	if player does not have base ale and once-now-hunt is false, unavailable;
 	if player is in NoNotion:
@@ -294,10 +300,10 @@ a wordtwisting rule (this is the pre-bay-sale rule):
 		vcp "That feels right, but there's no water here. Maybe somewhere else.";
 		not-yet;
 	if player is in lobe end and sco-low-bend is false:
-		vcp "No water visible here right now. Maybe if the landscape rearranged.";
+		vcp "[know-bay-sale-loc]No water visible here right now. Maybe if the landscape rearranged.";
 		not-yet;
 	if sco-six-quid is false:
-		vcp "You realize that, in order to participate in a bay sale for a bay sail, you need some form of currency. You don't have that yet.";
+		vcp "[know-bay-sale-loc]You realize that, in order to participate in a bay sale for a bay sail, you need some form of currency. You don't have that yet.";
 		not-yet;
 	ready;
 
@@ -902,15 +908,15 @@ a wordtwisting rule (this is the pre-gaunt-raider rule):
 	if player is not in worm eaten or gone traitor is not in worm eaten, unavailable;
 	ready;
 
-this is the hom-gaunt-rater rule:
+this is the hom-gaunt-raider rule:
 	if the player's command includes "trader":
-		say "Knowing a trader might be useful, but given you don't want to deal with guns, maybe you should try and find another side to the gaunt raider.";
+		say "Knowing a trader might be useful, but given you don't want to deal with guns, maybe you should try and find another side to the gone traitor.";
 	else:
 		say "Hmm. You need someone much more active than that. Someone who can help with rebellion, not just whine about things that are wrong."
 
 this is the post-gaunt-raider rule:
 	now sco-gaunt-raider is true;
-	say "After some discussion, you work out a plan to make the gone trader reframe what they did. Whoever they were, the evil powers, they rejected them instead of doubling down. Perhaps there is a way to get back at them. They know things you never could hope to.";
+	say "After some discussion, you work out a plan to make the gone traitor reframe what they did. Whoever they were, the evil powers, they rejected them instead of doubling down. Perhaps there is a way to get back at them. They know things you never could hope to.";
 	moot gone traitor;
 	befriend gaunt raider;
 
@@ -957,6 +963,9 @@ section worm eaten scoring
 
 to say know-corps-worm-eaten: now gs-know-corps-worm-eaten is true;
 
+to say corps-worm-eaten:
+	if gs-know-corps-worm-eaten is true, say " [here-in of worm eaten]";
+
 a wordtwisting rule (this is the pre-my-corps rule):
 	if sco-an-aim is false, unavailable;
 	abide by the followers-check rule;
@@ -970,7 +979,7 @@ a wordtwisting rule (this is the pre-my-corps rule):
 		vcp "This doesn't seem to be the right place to pep up the troops.";
 		not-yet;
 	if sco-were-meetin is false:
-		vcp "You sense you have a full party, and you're in a good place, but the atmosphere is wrong for planning and discussions.";
+		vcp "[know-corps-worm-eaten]You sense you have a full party, and you're in a good place, but the atmosphere is wrong for planning and discussions.";
 		not-yet;
 	ready;
 
