@@ -40,7 +40,7 @@ chapter no notion
 
 understand "no no shin" and "nono shin" and "no no shun" and "nono shun" as a mistake ("No, you're trying to bring something to light, not fret about what you can't find.") when player is in NoNotion and sco-known-ocean is false.
 
-understand "isle and" and "eye land" and "eye lands" as a mistake (".")
+understand "isle and" and "eye land" and "eye lands" as a mistake ("It's the island names and how to get there that are important.") when player has flier or (player is in NoNotion and sco-six-quid is true).
 
 to say isle-and-error:
 	if flier-isle-score is 3:

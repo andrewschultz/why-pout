@@ -400,7 +400,7 @@ report examining merchant when sco-summer-chant is false:
 	say "It strikes you you don't see them as [i]a[r] merchant, or [i]the[r] merchant, but [i]some[r] merchant.";
 	continue the action;
 
-check going outside in we loan when merchant is in we loan: say "Alas, that merchant is some merchant, able to capture your attention as you want to pull away.[paragraph break]You'll have to deal with the merchant, uhh, some merchant, sometime, anyway." instead;
+check going outside in we loan when merchant is in we loan: say "Alas, that merchant is some merchant, able to capture your attention as you want to pull away. 'C'mon! Who doesn't want to [b]BUY LOW[r]? What's wrong with you?'[paragraph break]You'll have to deal with the merchant, uhh, some merchant, sometime, anyway." instead;
 
 chapter oaf liar
 
